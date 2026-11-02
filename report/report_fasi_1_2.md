@@ -8,13 +8,13 @@ Generato da `script/report.py` su `dati/inventario.sqlite`. Sorgente: `sorgenti/
 |---|---|
 | Paragrafi del documento | 11275 |
 | Paragrafi preliminari saltati (prima della voce 1) | 7 |
-| **Voci** | **4668** |
+| **Voci** | **4669** |
 | Intestazioni di sezione | 7 |
 | Annotazioni | 196 |
-| Voci con coda / senza coda | 1914 / 2754 |
+| Voci con coda / senza coda | 1914 / 2755 |
 | Voci con residuo | 1 |
 | **Voci segmentate** (con almeno un riferimento) | **407** |
-| **Segmenti** (comprese le voci intere) | **8492** |
+| **Segmenti** (comprese le voci intere) | **8493** |
 
 ### Paragrafi preliminari saltati
 
@@ -54,16 +54,15 @@ Sezioni con ambito (aperte e chiuse da una riga «Fine …»); le intestazioni s
 - **bis** (13): `1596-bis`, `2094 bis.`, `2528 bis.`, `2559 bis.`, `2706 bis.`, `2711 bis.`, `3014 bis.`, `3083 bis.`, `3249 bis.`, `3523-bis.`, `3652 bis.`, `3959/bis.`, `3982/bis.`
 - **fusa** (3): `2565/66.`, `2569/70.`, `3202-3203-3204.`
 - **lettera** (15): `542 a.`, `542 b.`, `560 a.`, `560 b.`, `873 a.`, `873 b.`, `2673/a.`, `2673/b.`, `2927/a.`, `2927/b.`, `3359/A.`, `3359/B.`, `3388 A.`, `3388 B.`, `3932-b.`
-- **omesso** (1): `3078`
+- **omesso** (2): `2726`, `3078`
 - **sottonumero** (140): `2623/1.`, `2623/2.`, `2623/3.`, `2623/4.`, `2623/5.`, `2623/6.`, `2623/7.`, `2623/8.`, `2630/1.`, `2630/2.`, `2630/3.`, `2630/4.`, `2630/5.`, `2630/6.`, `2630/7.`, `2630/8.`, `2630/9.`, `2630/10.`, `2630/11.`, `2630/12.`, `2631/1.`, `2631/2.`, `2631/3.`, `2631/4.`, `2631/5.`, `2631/6.`, `2631/7.`, `2631/8.`, `2631/9.`, `2631/10.`, `2631/11.`, `2632/1.`, `2632/2.`, `2632/3.`, `2632/4.`, `2632/5.`, `2632/6.`, `2632/7.`, `2632/8.`, `2632/9.`, `2632/10.`, `2632/11.`, `2632/12.`, `2632/13.`, `2632/14.`, `2632/15.`, `2633/16.`, `2633/17.`, `2633/18.`, `2633/19.`, `2633/20.`, `2633/21.`, `2633/22.`, `2633/23.`, `2633/24.`, `2634/1.`, `2634/2.`, `2634/3.`, `2634/4.`, `2634/5.`, `2634/6.`, `2634/7.`, `2634/8.`, `2634/9.`, `2634/10.`, `2634/11.`, `2634/12.`, `2634/13.`, `2634/14.`, `2634/15.`, `2634/16.`, `2634/17.`, `2635/1.`, `2635/2.`, `2635/3.`, `2635/4.`, `2635/5.`, `2635/6.`, `2635/7.`, `2635/8.`, `2635/9.`, `2635/10.`, `2635/11.`, `2635/12.`, `2635/13.`, `2635/14.`, `2635/15.`, `2635/16.`, `2635/17.`, `2635/18.`, `2635/19.`, `2635/20.`, `2635/21.`, `2636/1.`, `2636/2.`, `2636/3.`, `2636/4.`, `2636/5.`, `2636/6.`, `2636/7.`, `2637/1.`, `2637/2.`, `2637/3.`, `2637/4.`, `2637/5.`, `2637/6.`, `2637/7.`, `2637/8.`, `2637/9.`, `2637/10.`, `2637/11.`, `2637/12.`, `2637/13.`, `2637/14.`, `2637/15.`, `2637/16.`, `2637/17.`, `2637/18.`, `2637/19.`, `2637/20.`, `2638/1.`, `2638/2.`, `2639/1.`, `2639/2.`, `2639/3.`, `2639/4.`, `2639/5.`, `2639/6.`, `2639/7.`, `2639/8.`, `2639/9.`, `2639/10.`, `2639/11.`, `2639/12.`, `2639/13.`, `2639/23.`, `2639/24.`, `2639/25.`, `4132/1.`, `4132/2.`
 - **sottonumero_bis** (3): `2634/3 bis.`, `2635/16 bis.`, `2635/17 bis.`
 - **sottonumero_intervallo** (2): `2639/14-22.`, `4107/1-5.`
 
 ### Numeri mancanti
 
-Numeri da 1 a 4519 senza voce (le voci fuse coprono entrambi i numeri): **1** — 2726
+Numeri da 1 a 4519 senza voce (le voci fuse coprono entrambi i numeri): **0** — nessuno
 
-- 2726: annotazioni della voce precedente (2725.): «Omissione di un numero»
 
 ### Numeri fuori sequenza
 
@@ -71,14 +70,14 @@ Voci il cui numero base è minore del precedente, o lo supera di più di uno.
 
 | Voce precedente | Voce | Problema |
 |---|---|---|
-| 2725. | 2727. | salto di 1 |
-| 3907. | 3909. | salto di 1 |
-| 3909. | 3908. | indietro |
-| 3908. | 3910. | salto di 1 |
+
+Anomalie note, verificate dal curatore (`dati/anomalie_note.json`), non segnalate sopra:
+
+- 3908: nel documento la voce 3908 segue la 3909; l'ordinamento corretto è dato da chiave_ordinamento
 
 ## 3. Riga di coda
 
-Voci senza coda: **2754**. Numeri base (intervalli): 310–317, 366, 378, 401–404, 542, 560, 606–867, 884, 902, 909, 1001, 1051, 1120, 1250, 1314, 1564, 1596–2564, 2567–2569, 2571–2581, 2595–2596, 2602–2604, 2606–2610, 2613, 2619–2620, 2622–2625, 2628–2645, 2652–2657, 2659–2674, 2686, 2688, 2698, 2703, 2705–2725, 2727–3196, 3198, 3201–3202, 3206–3496, 3499, 3502–3503, 3507, 3509, 3516, 3518, 3521, 3526–3577, 3579–3585, 3590–3591, 3596–3597, 3600, 3624–3625, 3628–3629, 3633–3640, 3642–3647, 3649–3656, 3658–3659, 3661, 3663–3674, 3676–3677, 3679–3681, 3697–3698, 3700, 3702–3703, 3705–3707, 3710–3714, 3716, 3718–3719, 3722–3787, 3789, 3795, 3798, 3800, 3802, 3804–3805, 3807–3809, 3811–3813, 3816, 3822, 3828, 3862, 3864, 3868–3875, 3877–3886, 3898–3899, 3902–3907, 3911, 3913, 3932–3934, 3959, 3982, 4083, 4101–4104, 4108–4109, 4180, 4201, 4216, 4284–4513, 4519
+Voci senza coda: **2755**. Numeri base (intervalli): 310–317, 366, 378, 401–404, 542, 560, 606–867, 884, 902, 909, 1001, 1051, 1120, 1250, 1314, 1564, 1596–2564, 2567–2569, 2571–2581, 2595–2596, 2602–2604, 2606–2610, 2613, 2619–2620, 2622–2625, 2628–2645, 2652–2657, 2659–2674, 2686, 2688, 2698, 2703, 2705–3196, 3198, 3201–3202, 3206–3496, 3499, 3502–3503, 3507, 3509, 3516, 3518, 3521, 3526–3577, 3579–3585, 3590–3591, 3596–3597, 3600, 3624–3625, 3628–3629, 3633–3640, 3642–3647, 3649–3656, 3658–3659, 3661, 3663–3674, 3676–3677, 3679–3681, 3697–3698, 3700, 3702–3703, 3705–3707, 3710–3714, 3716, 3718–3719, 3722–3787, 3789, 3795, 3798, 3800, 3802, 3804–3805, 3807–3809, 3811–3813, 3816, 3822, 3828, 3862, 3864, 3868–3875, 3877–3886, 3898–3899, 3902–3907, 3911, 3913, 3932–3934, 3959, 3982, 4083, 4101–4104, 4108–4109, 4180, 4201, 4216, 4284–4513, 4519
 
 Forme di coda: «… · …» 1311, supporto solo 1, «Provenienza: …» 603
 
@@ -144,7 +143,7 @@ La coda riguarda il testo che la precede; il testo che la segue resta testo dell
 
 | Tipo di segmento | Numero |
 |---|---|
-| voce_intera | 4261 |
+| voce_intera | 4262 |
 | riferimento | 3834 |
 | preambolo | 394 |
 | chiusura | 3 |
@@ -462,11 +461,11 @@ Depositato presso l'Archivio di stato - 8.6.1959.
 
 - voce_intera (senza etichetta) [0–51]: Del Torso, Enrico. Appunti di araldica. 2 cartelle.
 
-### 3306.
+### 3305.
 
 **Testo**
 
-> Pleyel (Ignazio). Sonata per Piano-forte con violino e violon.lo.
+> Fioravanti. Cavatina "La placida campagna".
 >
 > Musica 24.
 
@@ -474,14 +473,14 @@ Depositato presso l'Archivio di stato - 8.6.1959.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–76]: Pleyel (Ignazio). Sonata per Piano-forte con violino e violon.lo.
+- voce_intera (senza etichetta) [0–54]: Fioravanti. Cavatina "La placida campagna".
 Musica 24.
 
-### 3471.
+### 3470.
 
 **Testo**
 
-> Bach. Concertoni N° VI, corno primo.
+> Bach. Concertoni N° VI, oboè primo.
 >
 > Unito al ms. 3403.
 >
@@ -491,17 +490,17 @@ Musica 24.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–66]: Bach. Concertoni N° VI, corno primo.
+- voce_intera (senza etichetta) [0–65]: Bach. Concertoni N° VI, oboè primo.
 Unito al ms. 3403.
 Musica 28.
 
-### 3540.
+### 3539.
 
 **Testo**
 
-> Predica in friul. ("Non turbetur cor vestrum …").
+> Prediche in friul. (Capo d'anno e Pasqua).
 >
-> Fasc. in-fol., sec. XIX.
+> Fasc. in-4°, sec. XIX (1872 ?).
 >
 > Si trova nella cartella del ms. 3510.
 
@@ -509,93 +508,80 @@ Musica 28.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–112]: Predica in friul. ("Non turbetur cor vestrum …").
-Fasc. in-fol., sec. XIX.
+- voce_intera (senza etichetta) [0–112]: Prediche in friul. (Capo d'anno e Pasqua).
+Fasc. in-4°, sec. XIX (1872 ?).
 Si trova nella cartella del ms. 3510.
 
-### 3872.
+### 3871.
 
 **Testo**
 
-> Tractatus in tertiam partem Doctoris Angelici De Sacramentis. Finisce: "Tractatus de Sacramentis in genere, et de Eucharistia in particulari, praelegente admodum R. D. D. Augustino Perugino Sedeanensi ego Gaspar Antonius Tosonus Nespolettensis finem imposui die 13 Martij anno MDCCXX."
+> Tractatus theologicus in tertiam partem Doctoris Angelici De Augustissimo Verbi incarnati Mysterio. Finisce: "R.mo D. D. Augustino Perugino in Seminario Aquileiensi Lectore dignissimo, scribente Gasparo Antonio Tosono Nespolettensi. Finis. IV Nonas Aprilis MDCCXXI."
 >
-> In-4°, pp. 317, più l'indice; pergam.
+> In-4°, pp. 287; pergam.
 
 **Coda**: —
 
-**Segmenti**
-
-- voce_intera (senza etichetta) [0–323]: Tractatus in tertiam partem Doctoris Angelici De Sacramentis. Finisce: "Tractatus de Sacramentis in genere, et de Eucharistia in particulari, praelegente admodu […+163 caratteri]
-
-### 3877.
-
-**Testo**
-
-> Tractatus in primam partem Doctoris Angelici De Deo Uno, et Trino.
->
-> Finisce: "Explicit Tractatus … sub Augustino Perugino … Gaspar Antonius Tosonus emscripsit MDCCLXVIII."
->
-> In-4°, pp. 447; perg.
-
-**Coda**: —
+**Annotazioni**: [nota_a_margine] «Perugino Agostino»
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–192]: Tractatus in primam partem Doctoris Angelici De Deo Uno, et Trino.
-Finisce: "Explicit Tractatus … sub Augustino Perugino … Gaspar Antonius Tosonus emscripsit MD […+32 caratteri]
+- voce_intera (senza etichetta) [0–290]: Tractatus theologicus in tertiam partem Doctoris Angelici De Augustissimo Verbi incarnati Mysterio. Finisce: "R.mo D. D. Augustino Perugino in Seminario Aquilei […+130 caratteri]
 
-### 3970.
+### 3876.
 
 **Testo**
 
-> Bertani, Agostino. Lettera a Ippolito Nievo: Genova 30.7.1860.
+> Tractatus de Gratia. Finisce: "Explicit Tractatus de Merito sub R.mo D. D. Augustino Perugino Sedeanen. AA. LL. et Philosophiae Magistro, necnon S. Theol. Lectore dignissimo … a Gaspare Antonio Tosono scriptus anno MDCCXIX."
 >
-> Fogli 1.
+> In-4°, pp. 382; perg.
+
+**Coda**: `Provenienza: Ex libris Rubini - Dono Corgnali.` → supporto: —; volumi: —; stato: —; provenienza: Ex libris Rubini - Dono Corgnali.
+
+**Segmenti**
+
+- voce_intera (senza etichetta) [0–246]: Tractatus de Gratia. Finisce: "Explicit Tractatus de Merito sub R.mo D. D. Augustino Perugino Sedeanen. AA. LL. et Philosophiae Magistro, necnon S. Theol. Lecto […+86 caratteri]
+
+### 3969.
+
+**Testo**
+
+> Maiolini, A. Lettere a Ippolito Nievo: 5.11.1860 . Palermo 1.1.1861.
+>
+> Fogli 2.
 
 **Coda**: `Provenienza: D.r Luigi Ciceri 6.VI.1961.` → supporto: —; volumi: —; stato: —; provenienza: D.r Luigi Ciceri 6.VI.1961.
 
+**Annotazioni**: [nota_a_margine] «manca - marzo 1993»
+
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–71]: Bertani, Agostino. Lettera a Ippolito Nievo: Genova 30.7.1860.
-Fogli 1.
+- voce_intera (senza etichetta) [0–77]: Maiolini, A. Lettere a Ippolito Nievo: 5.11.1860 . Palermo 1.1.1861.
+Fogli 2.
 
-### 4045.
+### 4044.
 
 **Testo**
 
-> Percoto, Caterina. Adelina. Racconto pubblicato in "Racconti", Firenze, 1858 col titolo "I gamberi", di pp. 26 mss. + minuta di lettera accompagnatoria. (Altra copia col titolo "I gamberi" di pp. 28 mss. e frammento di 2pp.). Com.: "Era mesta Adelina…". Fin.: "pagina piena di lagrime!".
+> Percoto, Caterina. Una semina d'Imperatori. Racconto pubblicato in "Dieci raccontini", Trieste, 1865, col titolo "Riparazione", pp. 10 mss. (Con la minuta di una lettera ad A. Coiz). Com.: "In un piccolo villaggio del Friuli". Fin.: "… da quelli dell'amicizia".
 
 **Coda**: `Provenienza: 1954 Acquistato dal prof. Minelli.` → supporto: —; volumi: —; stato: —; provenienza: 1954 Acquistato dal prof. Minelli.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–287]: Percoto, Caterina. Adelina. Racconto pubblicato in "Racconti", Firenze, 1858 col titolo "I gamberi", di pp. 26 mss. + minuta di lettera accompagnatoria. (Altra  […+127 caratteri]
+- voce_intera (senza etichetta) [0–261]: Percoto, Caterina. Una semina d'Imperatori. Racconto pubblicato in "Dieci raccontini", Trieste, 1865, col titolo "Riparazione", pp. 10 mss. (Con la minuta di un […+101 caratteri]
 
-### 4339.
+### 4338.
 
 **Testo**
 
-> Misc.
+> Rāj Som autore. "Narak kò coḍhālyo" (in antico gujarātī? in antico mārwāṛī?).
 >
-> 1) "Jñānapañcamī stavanaṃ" (in Jaina māhārāṣṭrī?).
+> F. 1 r. Inc.: / Śrī Jināyanamaḥ / Narak kò coḍhālyo liṣpate / Sivsarvadā kasāṃ (bha)lo…
 >
-> F. 1 r. Inc.: / Paṇmiya pās Jiṇaṃ davaṃ danimma laguṇ dha(ma)raṇ / Paṃc nāṇ saṃ (tha) vaṇ bhaṇi suatrāṇ nivāraṇ /…
+> F. 5 v. Expl.: … Iti śrī Narak kò coḍhālyo Rāj Som kṛt samāptaṃ śrī raktaḥ…
 >
-> F. 1 r. Expl.: … /16/ Iti Śrī Nā(ṇ) Paṃcamī stavanaṃ samāptaṃ /
->
-> F. 1 r.; mm. 100x250; non datato; copista anonimo.
->
-> 2) "Gauḍt pārśvanāth vṛddha stavanaṃ" (in antico gujarātī?).
->
-> F. 1 v. Inc.: Im Śrī Gauḍī pāsataṇ guṇ Jenaragāvai tenaranārī ihaparalo gasuṃ vaṃbitpāvaih /…
->
-> F. 1 v. Expl.: … Iti Śrī Gauḍī Pārśvanāth vṛdalha stavanāṃ /
->
-> F. 1 v.; mm. 100x250; non datato; copista anonimo.
->
-> Unito con: Jñānapañcamī stavanaṃ.
->
-> Complessivamente 1 f.
+> 5 ff.; mm. 110x260; datato saṃvat (1766) 1709; copista anonimo.
 >
 > Fondo Tessitori.
 
@@ -603,26 +589,22 @@ Fogli 1.
 
 **Segmenti**
 
-- preambolo (senza etichetta) [0–5]: Misc.
-- riferimento «1)» [6–286]: 1) "Jñānapañcamī stavanaṃ" (in Jaina māhārāṣṭrī?).
-F. 1 r. Inc.: / Paṇmiya pās Jiṇaṃ davaṃ danimma laguṇ dha(ma)raṇ / Paṃc nāṇ saṃ (tha) vaṇ bhaṇi suatrāṇ nivār […+120 caratteri]
-- riferimento «2)» [287–626]: 2) "Gauḍt pārśvanāth vṛddha stavanaṃ" (in antico gujarātī?).
-F. 1 v. Inc.: Im Śrī Gauḍī pāsataṇ guṇ Jenaragāvai tenaranārī ihaparalo gasuṃ vaṃbitpāvaih /…
-F. 1  […+179 caratteri]
+- voce_intera (senza etichetta) [0–322]: Rāj Som autore. "Narak kò coḍhālyo" (in antico gujarātī? in antico mārwāṛī?).
+F. 1 r. Inc.: / Śrī Jināyanamaḥ / Narak kò coḍhālyo liṣpate / Sivsarvadā kasāṃ (bh […+162 caratteri]
 
-### 4411.
+### 4410.
 
 **Testo**
 
-> Ciraṃ Govindā copista. "Har ras" (in ardh māgadhī? in Jaina māhārāṣṭrī?).
+> Nagarjun autore? "Karakan ko ūkārakan" (in ardh māgadhī).
 >
-> F. 1 r. Inc.: /Ath Har Ras liṣpate dūhā iṇ avsarmat ālase iṃśarasi…
+> F. 1 r. Inc.: /Uṃnamaḥ sarvkelyaḥ / Niddha (ja)nacam (kār) / Kāvakaṃ kau(tru) Kārakaṃ /…
 >
-> F. 9 r. Expl.: … /36/ Iti Śrī Savāsau 125 sīṣ samāptā / Śrī /
+> F. 2 v. Expl.: … /54/ Iti Kau(tru) kāni samāptāni /baḥ/
 >
-> 9 ff.; mm. 100 x 240; datato saṃvat/varṣ (1793) 1736.
+> 2 ff.; mm. 100 x 200; non datato; copista anonimo.
 >
-> FF. 2/9 con numerazione originale; f. 1 non numerato; ultimo v. bianco; tit. scritto sul margine.
+> 2 ff. senza numerazione originale.
 >
 > Fondo Tessitori.
 
@@ -630,9 +612,9 @@ F. 1  […+179 caratteri]
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–372]: Ciraṃ Govindā copista. "Har ras" (in ardh māgadhī? in Jaina māhārāṣṭrī?).
-F. 1 r. Inc.: /Ath Har Ras liṣpate dūhā iṇ avsarmat ālase iṃśarasi…
-F. 9 r. Expl.: … / […+212 caratteri]
+- voce_intera (senza etichetta) [0–305]: Nagarjun autore? "Karakan ko ūkārakan" (in ardh māgadhī).
+F. 1 r. Inc.: /Uṃnamaḥ sarvkelyaḥ / Niddha (ja)nacam (kār) / Kāvakaṃ kau(tru) Kārakaṃ /…
+F. 2 v. Expl. […+145 caratteri]
 
 ## 8. Venti voci segmentate estratte a caso (seme 2027)
 

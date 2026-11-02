@@ -334,6 +334,16 @@ def leggi(percorso_docx):
             continue
         ann = trova_annotazioni(t)
         pulito, _ = togli_annotazioni(t, ann)
+        # numero omesso segnalato da una nota («[Nota a margine: «Omissione di un
+        # numero»]» dopo la 2725): il paragrafo diventa la voce del numero saltato
+        if (corrente and ann and not pulito.strip() and len(ann) == 1
+                and "omissione di un numero" in ann[0]["contenuto"].lower()
+                and inizi.get(prossimo_non_vuoto(i), (None, None))[1] == corrente["base"] + 2):
+            b = corrente["base"] + 1
+            corrente = {"numero_originale": str(b), "base": b, "prefisso": 0,
+                        "paragrafi": [i], "omesso": True}
+            voci.append(corrente)
+            continue
         # paragrafo fatto solo di annotazioni di indice
         if ann and not pulito.strip() and all(annotazione_di_indice(a) for a in ann):
             for a in ann:

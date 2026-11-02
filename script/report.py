@@ -18,6 +18,7 @@ RADICE = Path(__file__).resolve().parent.parent
 DB = RADICE / "dati" / "inventario.sqlite"
 DIAG_PARSER = RADICE / "dati" / "diagnostica_parser.json"
 DIAG_SEGMENTA = RADICE / "dati" / "diagnostica_segmenta.json"
+ANOMALIE_NOTE = RADICE / "dati" / "anomalie_note.json"
 USCITA = RADICE / "report" / "report_fasi_1_2.md"
 ULTIMO_NUMERO = 4519
 
@@ -127,19 +128,28 @@ def main():
 
     w("### Numeri fuori sequenza\n")
     w("Voci il cui numero base è minore del precedente, o lo supera di più di uno.\n")
+    note = json.loads(ANOMALIE_NOTE.read_text(encoding="utf-8")) if ANOMALIE_NOTE.exists() else {}
+    note = {k: v for k, v in note.items() if not k.startswith("_")}
     w("| Voce precedente | Voce | Problema |\n|---|---|---|")
     prec = None
     for v in voci:
-        if prec is not None:
+        if prec is not None and (v["numero"] in note or prec["numero"] in note):
+            pass                              # anomalia nota, verificata dal curatore
+        elif prec is not None:
             b, pb = v["numero_base"], prec["numero_base"]
             if prec["numeri_compresi"]:
                 pb = max(int(x) for x in prec["numeri_compresi"].split(","))
             if b < pb:
                 w(f"| {prec['numero_originale']} | {v['numero_originale']} | indietro |")
-            elif b > pb + 1:
+            elif b > pb + 1 and not all(str(n) in note for n in range(pb + 1, b)):
                 w(f"| {prec['numero_originale']} | {v['numero_originale']} | salto di {b - pb - 1} |")
         prec = v
     w("")
+    if note:
+        w("Anomalie note, verificate dal curatore (`dati/anomalie_note.json`), non segnalate sopra:\n")
+        for k, v in note.items():
+            w(f"- {k}: {v}")
+        w("")
 
     # --- Coda -------------------------------------------------------------------
     w("## 3. Riga di coda\n")
