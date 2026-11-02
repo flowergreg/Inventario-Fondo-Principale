@@ -48,9 +48,18 @@ RX_NUMERO_SPAZIO = re.compile(
 )
 
 
+# Numero omesso dichiarato nel testo: «Omissione del n.° 3078: numero omesso.»
+# Il paragrafo diventa la voce di quel numero; il testo resta intatto.
+RX_OMISSIONE = re.compile(r"^Omissione del n\.°\s?(?P<base>\d+)\b")
+
+
 def riconosci_inizio(testo, base_corrente):
     """Restituisce (numero_originale, base, lunghezza_prefisso) se il paragrafo
-    apre una voce, altrimenti None."""
+    apre una voce, altrimenti None. Per i numeri omessi il prefisso è 0 (tutto
+    il paragrafo è testo) e il numero originale è ricavato dal testo."""
+    m = RX_OMISSIONE.match(testo)
+    if m:
+        return m.group("base"), int(m.group("base")), 0
     m = RX_NUMERO_TAB.match(testo)
     if m:
         return m.group("num"), int(m.group("base")), m.end()
@@ -272,6 +281,9 @@ def e_intestazione(paragrafo, testo_pulito, apre_voce_dopo):
     t = testo_pulito.strip()
     if paragrafo.style.name.lower().startswith("heading"):
         return True
+    # righe di chiusura: «Fine Archivio Braida», «Fine sezione «Archivio della Porta»»
+    if re.match(r"^Fine\s", t) and len(t) < 70:
+        return True
     if not t or not apre_voce_dopo or len(t) >= 70:
         return False
     if e_coda(t) or re.match(r"^[\d(\[-]", t):
@@ -308,14 +320,13 @@ def leggi(percorso_docx):
         return j
 
     voci, annot_indice, intestazioni, vuoti = [], [], [], 0
-    sezione = None
     corrente = None
     for i in range(primo, len(testi)):
         t = testi[i]
         if i in inizi:
             num, b, lp = inizi[i]
             corrente = {"numero_originale": num, "base": b, "prefisso": lp,
-                        "paragrafi": [i], "sezione": sezione}
+                        "paragrafi": [i], "omesso": lp == 0}
             voci.append(corrente)
             continue
         if not t.strip():
@@ -332,9 +343,21 @@ def leggi(percorso_docx):
         if e_intestazione(paragrafi[i], pulito, prossimo_non_vuoto(i) in inizi):
             intestazioni.append((i, t.strip(),
                                  corrente["numero_originale"] if corrente else None))
-            sezione = None if t.strip().lower().startswith("fine ") else t.strip()
             continue
         corrente["paragrafi"].append(i)
+
+    # 2) ambito delle sezioni: un'intestazione vale come sezione solo se la
+    # chiude una riga «Fine …» prima della successiva intestazione di apertura
+    # (es. «Letteratura storica Friulana» non ha fine: non si propaga)
+    ambiti = []
+    for k, (i, t, _) in enumerate(intestazioni):
+        if t.lower().startswith("fine"):
+            continue
+        succ = intestazioni[k + 1] if k + 1 < len(intestazioni) else None
+        if succ and succ[1].lower().startswith("fine"):
+            ambiti.append((i, succ[0], t))
+    for v in voci:
+        v["sezione"] = next((t for a, b, t in ambiti if a < v["paragrafi"][0] < b), None)
     return paragrafi, testi, preliminari, voci, annot_indice, intestazioni, vuoti
 
 
@@ -419,6 +442,8 @@ def main():
     avvisi_totali, annot_senza_grassetto = {}, []
     for idx, v in enumerate(voci, start=1):
         numero, tipo, chiave, compresi = analizza_numero(v["numero_originale"], v["base"])
+        if v["omesso"]:
+            tipo = "omesso"
         d = costruisci_voce(v, paragrafi, testi)
         con.execute(
             "INSERT INTO voci (id, numero_originale, numero, numero_base, chiave_ordinamento,"

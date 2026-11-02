@@ -86,6 +86,14 @@ def main():
     for i, t, dopo in dp["intestazioni"]:
         w(f"| {i} | {t} | {dopo} |")
     w("")
+    w("Sezioni con ambito (aperte e chiuse da una riga «Fine …»); le intestazioni senza "
+      "chiusura (es. «Letteratura storica Friulana») non si propagano alle voci.\n")
+    w("| Sezione | Voci | Da | A |\n|---|---|---|---|")
+    for sez, n, da, a in con.execute(
+            "SELECT sezione, count(*), min(numero_base), max(numero_base) FROM voci "
+            "WHERE sezione IS NOT NULL GROUP BY 1 ORDER BY 3"):
+        w(f"| {sez} | {n} | {da} | {a} |")
+    w("")
 
     # --- Numeri ---------------------------------------------------------------
     w("## 2. Numeri di voce\n")
@@ -147,7 +155,8 @@ def main():
     w("Campi della coda valorizzati: "
       + ", ".join(f"{c} {sum(1 for v in voci if v[c])}" for c in ("supporto", "volumi", "stato", "provenienza"))
       + "\n")
-    w("### Avvisi sulla coda (testo dopo la coda, code multiple)\n")
+    w("### Code intermedie e multiple\n")
+    w("La coda riguarda il testo che la precede; il testo che la segue resta testo della voce.\n")
     for num, avvisi in dp["avvisi"].items():
         w(f"- **{num}**: " + " / ".join(avvisi))
     w("")
@@ -203,6 +212,9 @@ def main():
     for num, dubbi in ds["dubbie"].items():
         w(f"- **{num}**: " + "; ".join(dubbi))
     w("")
+    man = json.loads((RADICE / "dati" / "segmentazioni_manuali.json").read_text(encoding="utf-8"))
+    w("### Segmentazioni manuali (dati/segmentazioni_manuali.json)\n")
+    w(", ".join(k for k in man if not k.startswith("_")) + "\n")
     w("### Riferimenti candidati scartati\n")
     motivi = collections.Counter(m for lista in ds["scartati"].values() for _, m in lista)
     w("Riepilogo: " + ", ".join(f"{m} {n}" for m, n in motivi.most_common()) + "\n")
@@ -211,9 +223,7 @@ def main():
     w("")
 
     # --- Campione -----------------------------------------------------------------
-    w(f"## 7. Venti voci estratte a caso (seme {seme})\n")
-    rnd = random.Random(seme)
-    for v in sorted(rnd.sample(list(voci), 20), key=lambda x: x["id"]):
+    def mostra(v):
         w(f"### {v['numero_originale']}\n")
         w(f"**Testo**\n\n> " + tronca(v["testo"], 1500).replace("\n", "\n>\n> ") + "\n")
         if v["coda"]:
@@ -229,6 +239,17 @@ def main():
             etichetta = f"«{s['etichetta']}»" if s["etichetta"] else "(senza etichetta)"
             w(f"- {s['tipo']} {etichetta} [{s['inizio']}–{s['fine']}]: {tronca(s['testo'], 160)}")
         w("")
+
+    w(f"## 7. Venti voci estratte a caso (seme {seme})\n")
+    rnd = random.Random(seme)
+    for v in sorted(rnd.sample(list(voci), 20), key=lambda x: x["id"]):
+        mostra(v)
+    segmentate = [v for v in voci if con.execute(
+        "SELECT 1 FROM segmenti WHERE voce=? AND tipo='riferimento'", (v["id"],)).fetchone()]
+    w(f"## 8. Venti voci segmentate estratte a caso (seme {seme + 1})\n")
+    rnd = random.Random(seme + 1)
+    for v in sorted(rnd.sample(segmentate, 20), key=lambda x: x["id"]):
+        mostra(v)
 
     USCITA.parent.mkdir(parents=True, exist_ok=True)
     USCITA.write_text("\n".join(r) + "\n", encoding="utf-8")

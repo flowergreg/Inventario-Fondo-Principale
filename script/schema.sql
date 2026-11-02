@@ -12,7 +12,7 @@ CREATE TABLE IF NOT EXISTS voci (
     numero              TEXT NOT NULL,        -- numero ripulito del punto finale («542 a», «2528 bis»)
     numero_base         INTEGER NOT NULL,     -- parte numerica iniziale (542, 2528, 2630…)
     chiave_ordinamento  TEXT NOT NULL,        -- base.sottonumero.variante, es. 02635.016.1 = 2635/16 bis
-    tipo_numero         TEXT NOT NULL,        -- semplice | lettera | bis | sottonumero | fusa | annotato
+    tipo_numero         TEXT NOT NULL,        -- semplice | lettera | bis | sottonumero | sottonumero_bis | sottonumero_intervallo | fusa | annotato | omesso
     numeri_compresi     TEXT,                 -- per le voci fuse: numeri coperti (es. «2565,2566»)
     sezione             TEXT,                 -- intestazione di sezione in vigore (es. «Archivio Manzano»)
     testo_integrale     TEXT NOT NULL,        -- tutto il contenuto della voce nel .docx, intatto (paragrafi uniti da \n)

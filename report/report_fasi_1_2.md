@@ -8,13 +8,13 @@ Generato da `script/report.py` su `dati/inventario.sqlite`. Sorgente: `sorgenti/
 |---|---|
 | Paragrafi del documento | 11275 |
 | Paragrafi preliminari saltati (prima della voce 1) | 7 |
-| **Voci** | **4667** |
-| Intestazioni di sezione | 6 |
+| **Voci** | **4668** |
+| Intestazioni di sezione | 7 |
 | Annotazioni | 196 |
-| Voci con coda / senza coda | 1914 / 2753 |
+| Voci con coda / senza coda | 1914 / 2754 |
 | Voci con residuo | 1 |
-| **Voci segmentate** (con almeno un riferimento) | **243** |
-| **Segmenti** (comprese le voci intere) | **7004** |
+| **Voci segmentate** (con almeno un riferimento) | **407** |
+| **Segmenti** (comprese le voci intere) | **8492** |
 
 ### Paragrafi preliminari saltati
 
@@ -34,8 +34,17 @@ Generato da `script/report.py` su `dati/inventario.sqlite`. Sorgente: `sorgenti/
 | 3595 | Archivio Manzano | 1685. |
 | 3786 | Fine Archivio Manzano | 1851. |
 | 3792 | Archivio della Porta | 1856. |
+| 3873 | Fine sezione «Archivio della Porta» | 1913. |
 | 3997 | Archivio della Nob. Famiglia Braida | 1999. |
 | 4118 | Fine Archivio Braida | 2094 bis. |
+
+Sezioni con ambito (aperte e chiuse da una riga «Fine …»); le intestazioni senza chiusura (es. «Letteratura storica Friulana») non si propagano alle voci.
+
+| Sezione | Voci | Da | A |
+|---|---|---|---|
+| Archivio Manzano | 166 | 1686 | 1851 |
+| Archivio della Porta | 57 | 1857 | 1913 |
+| Archivio della Nob. Famiglia Braida | 96 | 2000 | 2094 |
 
 ## 2. Numeri di voce
 
@@ -45,13 +54,14 @@ Generato da `script/report.py` su `dati/inventario.sqlite`. Sorgente: `sorgenti/
 - **bis** (13): `1596-bis`, `2094 bis.`, `2528 bis.`, `2559 bis.`, `2706 bis.`, `2711 bis.`, `3014 bis.`, `3083 bis.`, `3249 bis.`, `3523-bis.`, `3652 bis.`, `3959/bis.`, `3982/bis.`
 - **fusa** (3): `2565/66.`, `2569/70.`, `3202-3203-3204.`
 - **lettera** (15): `542 a.`, `542 b.`, `560 a.`, `560 b.`, `873 a.`, `873 b.`, `2673/a.`, `2673/b.`, `2927/a.`, `2927/b.`, `3359/A.`, `3359/B.`, `3388 A.`, `3388 B.`, `3932-b.`
+- **omesso** (1): `3078`
 - **sottonumero** (140): `2623/1.`, `2623/2.`, `2623/3.`, `2623/4.`, `2623/5.`, `2623/6.`, `2623/7.`, `2623/8.`, `2630/1.`, `2630/2.`, `2630/3.`, `2630/4.`, `2630/5.`, `2630/6.`, `2630/7.`, `2630/8.`, `2630/9.`, `2630/10.`, `2630/11.`, `2630/12.`, `2631/1.`, `2631/2.`, `2631/3.`, `2631/4.`, `2631/5.`, `2631/6.`, `2631/7.`, `2631/8.`, `2631/9.`, `2631/10.`, `2631/11.`, `2632/1.`, `2632/2.`, `2632/3.`, `2632/4.`, `2632/5.`, `2632/6.`, `2632/7.`, `2632/8.`, `2632/9.`, `2632/10.`, `2632/11.`, `2632/12.`, `2632/13.`, `2632/14.`, `2632/15.`, `2633/16.`, `2633/17.`, `2633/18.`, `2633/19.`, `2633/20.`, `2633/21.`, `2633/22.`, `2633/23.`, `2633/24.`, `2634/1.`, `2634/2.`, `2634/3.`, `2634/4.`, `2634/5.`, `2634/6.`, `2634/7.`, `2634/8.`, `2634/9.`, `2634/10.`, `2634/11.`, `2634/12.`, `2634/13.`, `2634/14.`, `2634/15.`, `2634/16.`, `2634/17.`, `2635/1.`, `2635/2.`, `2635/3.`, `2635/4.`, `2635/5.`, `2635/6.`, `2635/7.`, `2635/8.`, `2635/9.`, `2635/10.`, `2635/11.`, `2635/12.`, `2635/13.`, `2635/14.`, `2635/15.`, `2635/16.`, `2635/17.`, `2635/18.`, `2635/19.`, `2635/20.`, `2635/21.`, `2636/1.`, `2636/2.`, `2636/3.`, `2636/4.`, `2636/5.`, `2636/6.`, `2636/7.`, `2637/1.`, `2637/2.`, `2637/3.`, `2637/4.`, `2637/5.`, `2637/6.`, `2637/7.`, `2637/8.`, `2637/9.`, `2637/10.`, `2637/11.`, `2637/12.`, `2637/13.`, `2637/14.`, `2637/15.`, `2637/16.`, `2637/17.`, `2637/18.`, `2637/19.`, `2637/20.`, `2638/1.`, `2638/2.`, `2639/1.`, `2639/2.`, `2639/3.`, `2639/4.`, `2639/5.`, `2639/6.`, `2639/7.`, `2639/8.`, `2639/9.`, `2639/10.`, `2639/11.`, `2639/12.`, `2639/13.`, `2639/23.`, `2639/24.`, `2639/25.`, `4132/1.`, `4132/2.`
 - **sottonumero_bis** (3): `2634/3 bis.`, `2635/16 bis.`, `2635/17 bis.`
 - **sottonumero_intervallo** (2): `2639/14-22.`, `4107/1-5.`
 
 ### Numeri mancanti
 
-Numeri da 1 a 4519 senza voce (le voci fuse coprono entrambi i numeri): **2** — 2726, 3078
+Numeri da 1 a 4519 senza voce (le voci fuse coprono entrambi i numeri): **1** — 2726
 
 - 2726: annotazioni della voce precedente (2725.): «Omissione di un numero»
 
@@ -62,20 +72,21 @@ Voci il cui numero base è minore del precedente, o lo supera di più di uno.
 | Voce precedente | Voce | Problema |
 |---|---|---|
 | 2725. | 2727. | salto di 1 |
-| 3077. | 3079 (con 3074 - 4.8.89). | salto di 1 |
 | 3907. | 3909. | salto di 1 |
 | 3909. | 3908. | indietro |
 | 3908. | 3910. | salto di 1 |
 
 ## 3. Riga di coda
 
-Voci senza coda: **2753**. Numeri base (intervalli): 310–317, 366, 378, 401–404, 542, 560, 606–867, 884, 902, 909, 1001, 1051, 1120, 1250, 1314, 1564, 1596–2564, 2567–2569, 2571–2581, 2595–2596, 2602–2604, 2606–2610, 2613, 2619–2620, 2622–2625, 2628–2645, 2652–2657, 2659–2674, 2686, 2688, 2698, 2703, 2705–2725, 2727–3077, 3079–3196, 3198, 3201–3202, 3206–3496, 3499, 3502–3503, 3507, 3509, 3516, 3518, 3521, 3526–3577, 3579–3585, 3590–3591, 3596–3597, 3600, 3624–3625, 3628–3629, 3633–3640, 3642–3647, 3649–3656, 3658–3659, 3661, 3663–3674, 3676–3677, 3679–3681, 3697–3698, 3700, 3702–3703, 3705–3707, 3710–3714, 3716, 3718–3719, 3722–3787, 3789, 3795, 3798, 3800, 3802, 3804–3805, 3807–3809, 3811–3813, 3816, 3822, 3828, 3862, 3864, 3868–3875, 3877–3886, 3898–3899, 3902–3907, 3911, 3913, 3932–3934, 3959, 3982, 4083, 4101–4104, 4108–4109, 4180, 4201, 4216, 4284–4513, 4519
+Voci senza coda: **2754**. Numeri base (intervalli): 310–317, 366, 378, 401–404, 542, 560, 606–867, 884, 902, 909, 1001, 1051, 1120, 1250, 1314, 1564, 1596–2564, 2567–2569, 2571–2581, 2595–2596, 2602–2604, 2606–2610, 2613, 2619–2620, 2622–2625, 2628–2645, 2652–2657, 2659–2674, 2686, 2688, 2698, 2703, 2705–2725, 2727–3196, 3198, 3201–3202, 3206–3496, 3499, 3502–3503, 3507, 3509, 3516, 3518, 3521, 3526–3577, 3579–3585, 3590–3591, 3596–3597, 3600, 3624–3625, 3628–3629, 3633–3640, 3642–3647, 3649–3656, 3658–3659, 3661, 3663–3674, 3676–3677, 3679–3681, 3697–3698, 3700, 3702–3703, 3705–3707, 3710–3714, 3716, 3718–3719, 3722–3787, 3789, 3795, 3798, 3800, 3802, 3804–3805, 3807–3809, 3811–3813, 3816, 3822, 3828, 3862, 3864, 3868–3875, 3877–3886, 3898–3899, 3902–3907, 3911, 3913, 3932–3934, 3959, 3982, 4083, 4101–4104, 4108–4109, 4180, 4201, 4216, 4284–4513, 4519
 
 Forme di coda: «… · …» 1311, supporto solo 1, «Provenienza: …» 603
 
 Campi della coda valorizzati: supporto 1312, volumi 1232, stato 1214, provenienza 752
 
-### Avvisi sulla coda (testo dopo la coda, code multiple)
+### Code intermedie e multiple
+
+La coda riguarda il testo che la precede; il testo che la segue resta testo della voce.
 
 - **2565/66.**: testo dopo la coda (par. 4920): Fuso in un solo volume.
 - **2691.**: testo dopo la coda (par. 5403): + alleg. a stampa Prospetti di confronto fra le soppresse numerazioni delle case / 2 righe di coda
@@ -133,525 +144,169 @@ Campi della coda valorizzati: supporto 1312, volumi 1232, stato 1214, provenienz
 
 | Tipo di segmento | Numero |
 |---|---|
-| voce_intera | 4424 |
-| riferimento | 2346 |
-| preambolo | 233 |
-| chiusura | 1 |
+| voce_intera | 4261 |
+| riferimento | 3834 |
+| preambolo | 394 |
+| chiusura | 3 |
 
 Voci con più segmenti:
 
-- 10.: 178 segmenti
+- 10.: 179 segmenti
+- 606.: 145 segmenti
 - 2134.: 91 segmenti
 - 18.: 86 segmenti
 - 4505.: 78 segmenti
 - 3591.: 77 segmenti
 - 23.: 73 segmenti
-- 102.: 66 segmenti
+- 340.: 71 segmenti
 - 2642.: 58 segmenti
-- 525.: 46 segmenti
-- 618.: 36 segmenti
+- 102.: 57 segmenti
 
 ### Segmentazioni dubbie
 
 Criteri: segmento quasi vuoto (solo l'etichetta), preambolo lungo prima del primo riferimento (>600 caratteri), famiglie di riferimenti diverse nella stessa voce.
 
-- **24**: segmento quasi vuoto «pag. 206»; famiglie di riferimenti miste: fogli, numerato
-- **116**: famiglie di riferimenti miste: fogli, numerato
-- **279**: famiglie di riferimenti miste: fogli, numerato
-- **340**: preambolo lungo (2784 caratteri)
-- **471**: preambolo lungo (813 caratteri)
-- **484**: preambolo lungo (632 caratteri)
-- **487**: preambolo lungo (1069 caratteri)
-- **491**: preambolo lungo (936 caratteri); famiglie di riferimenti miste: fascicolo, fogli
-- **493**: preambolo lungo (763 caratteri); famiglie di riferimenti miste: fascicolo, fogli
-- **496**: segmento quasi vuoto «Fasc. 1»; famiglie di riferimenti miste: fascicolo, fogli
-- **503**: famiglie di riferimenti miste: fogli, numerato
-- **509**: famiglie di riferimenti miste: fascicolo, fogli
-- **511**: famiglie di riferimenti miste: fascicolo, fogli, nudo
+- **60**: famiglie di riferimenti miste: coda, fogli
+- **111**: famiglie di riferimenti miste: coda, fogli
+- **112**: famiglie di riferimenti miste: coda, fogli
+- **356**: preambolo lungo (823 caratteri)
+- **467**: preambolo lungo (2901 caratteri)
+- **476**: preambolo lungo (816 caratteri)
+- **484**: preambolo lungo (649 caratteri)
+- **489**: famiglie di riferimenti miste: coda, fascicolo
 - **524**: preambolo lungo (854 caratteri)
 - **555**: preambolo lungo (648 caratteri)
 - **563**: preambolo lungo (872 caratteri)
+- **565**: preambolo lungo (904 caratteri)
+- **566**: segmento quasi vuoto «carte 1-154»; preambolo lungo (1080 caratteri)
 - **593**: preambolo lungo (2608 caratteri)
-- **596**: famiglie di riferimenti miste: fascicolo, fogli
-- **606**: famiglie di riferimenti miste: fogli, numerato
-- **608**: famiglie di riferimenti miste: fascicolo, lettera, numerato
-- **610**: famiglie di riferimenti miste: fogli, numerato
-- **616**: famiglie di riferimenti miste: fogli, nudo, numerato
-- **617**: famiglie di riferimenti miste: fogli, lettera, nudo, numerato
-- **618**: famiglie di riferimenti miste: lettera, numerato
-- **619**: famiglie di riferimenti miste: fogli, nudo, numerato
-- **620**: famiglie di riferimenti miste: fogli, numerato
-- **621**: famiglie di riferimenti miste: lettera, numerato
-- **622**: famiglie di riferimenti miste: fogli, nudo, numerato
-- **637**: famiglie di riferimenti miste: fascicolo, lettera
-- **681**: segmento quasi vuoto «pag. 26»; famiglie di riferimenti miste: fogli, lettera
-- **691**: segmento quasi vuoto «23»
-- **715**: segmento quasi vuoto «fogli 1»; famiglie di riferimenti miste: fogli, nudo, numerato
-- **721**: famiglie di riferimenti miste: fascicolo, fogli
-- **723**: famiglie di riferimenti miste: fogli, lettera
-- **804**: segmento quasi vuoto «Fogli 5»; segmento quasi vuoto «20»; famiglie di riferimenti miste: fogli, nudo, numerato
-- **836**: famiglie di riferimenti miste: fogli, lettera
-- **853**: preambolo lungo (1049 caratteri)
-- **891**: famiglie di riferimenti miste: lettera, numerato
+- **601**: famiglie di riferimenti miste: coda, fogli
+- **606**: segmento quasi vuoto «54)»; segmento quasi vuoto «108)»; segmento quasi vuoto «110)»; segmento quasi vuoto «138)»
+- **608**: preambolo lungo (1120 caratteri)
+- **615**: famiglie di riferimenti miste: coda, fogli
+- **824**: famiglie di riferimenti miste: numerato, romano
+- **1010**: preambolo lungo (801 caratteri)
+- **1237**: segmento quasi vuoto «2°»
 - **2134**: segmento quasi vuoto «Antivari Pietro Antonio»; segmento quasi vuoto «Ardigò Roberto»; segmento quasi vuoto «Ascoli G. I.»; segmento quasi vuoto «Bailo Luigi»; segmento quasi vuoto «Barbieri Gio. Mario»; segmento quasi vuoto «Barbieri Nini Marianna»; segmento quasi vuoto «Bassi G.B.»; segmento quasi vuoto «Beretta cav. Antonio»; segmento quasi vuoto «Bignami Giulio»; segmento quasi vuoto «Billia G.B.»; segmento quasi vuoto «Bini Giuseppe»; segmento quasi vuoto «Bodio Luigi»; segmento quasi vuoto «Bonghi Ruggero»; segmento quasi vuoto «Borbone (di) Ferdinando Carlo»; segmento quasi vuoto «Borbone (di) Farnese Carlo»; segmento quasi vuoto «Botta Nicolò»; segmento quasi vuoto «Bottacin Nicolò»; segmento quasi vuoto «Bozzoli ? Giuseppe»; segmento quasi vuoto «Brambilla Camillo»; segmento quasi vuoto «Bricito Zaccaria»; segmento quasi vuoto «Brofferio Angelo»; segmento quasi vuoto «Bulgarini G.B.»; segmento quasi vuoto «Cadorna Luigi (1 bigl. visita)»; segmento quasi vuoto «Candotti G.B.»; segmento quasi vuoto «Cairoli Benedetto»; segmento quasi vuoto «Candotti prof. Luigi»; segmento quasi vuoto «Capponi Gino»; segmento quasi vuoto «Cassetti don Giacomo (+ 1 epigramma)»; segmento quasi vuoto «Ciconi Teobaldo»; segmento quasi vuoto «Cosimo III di Toscana»; segmento quasi vuoto «Francesco Saverio Augusto di Sassonia»; segmento quasi vuoto «Fusinato Arnaldo»; segmento quasi vuoto «Ghinozzi Carlo»; segmento quasi vuoto «Giacomelli Giuseppe»; segmento quasi vuoto «Gioberti Vincenzo»; segmento quasi vuoto «Gnecchi Ercole»; segmento quasi vuoto «Grando A.»; segmento quasi vuoto «Guadagnoli Antonio»; segmento quasi vuoto «Guasti Cesare»; segmento quasi vuoto «Guerrazzi Francesco Dom.°»; segmento quasi vuoto «Lambros Paolo»; segmento quasi vuoto «Lambruschini Raffaello»; segmento quasi vuoto «Lazzaretti G.»; segmento quasi vuoto «Leicht Michele»; segmento quasi vuoto «Lodi Emanuele»; segmento quasi vuoto «Lovera di Maria Ottavio»; segmento quasi vuoto «Luschin Arnaldo»; segmento quasi vuoto «Magni Basilio»; segmento quasi vuoto «Mancini Lorenzo»; segmento quasi vuoto «Marchiori Giuseppe»; segmento quasi vuoto «Marignoli Filippo»; segmento quasi vuoto «Marinelli Giovanni»; segmento quasi vuoto «Marini Virginia»; segmento quasi vuoto «Mariotti Filippo»; segmento quasi vuoto «Martini Archimede»; segmento quasi vuoto «Martini Ferdinando»; segmento quasi vuoto «Mayer Enrico»; segmento quasi vuoto «Mazzarosa Antonio»; segmento quasi vuoto «Mazzetti Antonio»; segmento quasi vuoto «Miari Fulvio Luigi»; segmento quasi vuoto «Milanesi Carlo»; segmento quasi vuoto «Milli Cassone Giannina»; segmento quasi vuoto «Monico Giacomo»; segmento quasi vuoto «Morghen (vedi Vopato)»; segmento quasi vuoto «Muschietti Giovanni»; segmento quasi vuoto «Nerucci Gherardo»; segmento quasi vuoto «Nogara Giuseppe (2)»; segmento quasi vuoto «Nyrop Cristoforo»; segmento quasi vuoto «Osterman Valentino»; segmento quasi vuoto «Percoto Caterina»; segmento quasi vuoto «Palamidessi Cosimo»; segmento quasi vuoto «Prampero (di) Antonino»; segmento quasi vuoto «Puccini Nicolò»; segmento quasi vuoto «Radetzki Gio. Gius.»; segmento quasi vuoto «Ribotti Ignazio»; segmento quasi vuoto «Riccio Gennaro»; segmento quasi vuoto «Ristori Adelaide»; segmento quasi vuoto «Saletta Tancredi»; segmento quasi vuoto «Salvagnoli Vincenzo»; segmento quasi vuoto «Santoni Mitriade»; segmento quasi vuoto «Savini Teodoro»; segmento quasi vuoto «Savorgnan (di) Antonio»; segmento quasi vuoto «Siauve E. M.»; segmento quasi vuoto «Sivori Camillo»; segmento quasi vuoto «Tecchio Sebastiano»; segmento quasi vuoto «Trevisanato Giuseppe Luigi»; segmento quasi vuoto «Turchetti Odoardo»; segmento quasi vuoto «Vittorelli Giacomo»; segmento quasi vuoto «Volpato Morghen Domenica»
-- **2557**: preambolo lungo (793 caratteri); famiglie di riferimenti miste: numerato, numero
-- **4423**: famiglie di riferimenti miste: fogli, nudo, numerato
-- **4498**: famiglie di riferimenti miste: fogli, numerato
-- **4506**: famiglie di riferimenti miste: fogli, nudo, numerato
-- **4511**: famiglie di riferimenti miste: fogli, nudo, numerato
-- **4518**: famiglie di riferimenti miste: fogli, nudo, numerato
+- **2557**: preambolo lungo (793 caratteri)
+- **3939**: segmento quasi vuoto «2)»; segmento quasi vuoto «7)»
+- **4061**: famiglie di riferimenti miste: coda, fogli
+- **4251**: famiglie di riferimenti miste: coda, fogli
+
+### Segmentazioni manuali (dati/segmentazioni_manuali.json)
+
+5, 56, 1006, 1250
 
 ### Riferimenti candidati scartati
 
-Riepilogo: numerazione fuori sequenza 1058, riferimento isolato 97, elenco di un solo elemento 60, lettera iniziale diversa da a 36, lettera fuori sequenza 4
+Riepilogo: riferimento isolato 99, numerazione fuori sequenza 5, lettera iniziale diversa da a 4, lettera fuori sequenza 2
 
-- 5: «folio 12» (riferimento isolato)
 - 17: «fogli 252-255» (riferimento isolato)
 - 28: «fasc. 3» (riferimento isolato)
-- 31: «fol. 35-38 v» (riferimento isolato)
-- 42: «carte 236-237 v» (riferimento isolato)
-- 43: «1°» (elenco di un solo elemento)
-- 47: «pag. 151-170» (riferimento isolato)
-- 56: «fol. 7-10» (riferimento isolato)
-- 60: «fol. 4» (riferimento isolato)
+- 31: «fol. 35-38» (riferimento isolato)
+- 42: «carte 236-237» (riferimento isolato)
+- 49: «fol. VI» (riferimento isolato)
 - 80: «carte 9-11» (riferimento isolato)
-- 97: «carte 1» (riferimento isolato)
-- 103: «16°» (numerazione fuori sequenza)
-- 111: «fol. 24 v» (riferimento isolato)
-- 112: «fol. 2» (riferimento isolato)
-- 135: «156)» (numerazione fuori sequenza)
-- 159: «carte 3 v» (riferimento isolato)
-- 185: «carte 46» (riferimento isolato)
-- 190: «2°» (numerazione fuori sequenza); «pag. 18» (riferimento isolato)
+- 159: «carte 3» (riferimento isolato)
+- 192: «carte 1» (riferimento isolato)
+- 197: «carte 6-7» (riferimento isolato)
+- 198: «carte 1» (riferimento isolato)
 - 199: «carte 36-37» (riferimento isolato)
-- 200: «1737)» (numerazione fuori sequenza)
-- 280: «1.» (elenco di un solo elemento)
-- 282: «pag. 2 v» (riferimento isolato)
-- 284: «pag. 197 v» (riferimento isolato)
-- 285: «carte 34 v» (riferimento isolato)
-- 291: «5)» (numerazione fuori sequenza); «223)» (numerazione fuori sequenza)
-- 338: «carte 116» (riferimento isolato)
-- 339: «carte 156» (riferimento isolato)
-- 341: «1)» (elenco di un solo elemento)
-- 343: «pag. 424 r» (riferimento isolato)
-- 346: «pag. 386» (riferimento isolato)
-- 347: «carte 164 v» (riferimento isolato)
-- 348: «carte 93 v» (riferimento isolato)
-- 351: «carte 100 v» (riferimento isolato)
+- 282: «pag. 2» (riferimento isolato)
+- 283: «carte 55» (riferimento isolato)
+- 284: «pag. 197» (riferimento isolato)
+- 285: «carte 34» (riferimento isolato)
+- 330: «carte 1» (riferimento isolato)
+- 334: «carte 723-724» (riferimento isolato)
+- 348: «carte 93» (riferimento isolato)
 - 352: «carte 1» (riferimento isolato)
-- 353: «8°» (numerazione fuori sequenza)
-- 370: «1897)» (numerazione fuori sequenza)
-- 379: «fol. 1» (riferimento isolato)
 - 384: «Fogli 13» (riferimento isolato)
-- 402: «20°» (numerazione fuori sequenza)
-- 411: «carte 20» (riferimento isolato)
+- 406: «carte 27-29» (riferimento isolato)
 - 456: «carte 10» (riferimento isolato)
-- 458: «carte 64» (riferimento isolato)
-- 464: «carte 1-10» (riferimento isolato)
-- 467: «carte 47-58» (riferimento isolato)
-- 469: «1649)» (numerazione fuori sequenza); «1692)» (numerazione fuori sequenza); «carte 1-12» (riferimento isolato)
-- 470: «1782)» (numerazione fuori sequenza); «1780)» (numerazione fuori sequenza)
-- 471: «1820)» (numerazione fuori sequenza); «1887)» (numerazione fuori sequenza); «1853)» (numerazione fuori sequenza)
+- 458: «carte 64 a 75» (riferimento isolato)
 - 475: «carte 56» (riferimento isolato)
-- 488: «carte 10» (riferimento isolato)
-- 495: «1794)» (numerazione fuori sequenza)
-- 497: «carte 60 v» (riferimento isolato)
+- 495: «carte 131 a 155» (riferimento isolato)
 - 498: «carte 28» (riferimento isolato)
-- 503: «1°» (numerazione fuori sequenza)
-- 507: «1734)» (numerazione fuori sequenza)
-- 518: «1753)» (numerazione fuori sequenza); «1753)» (numerazione fuori sequenza); «1837)» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 519: «8°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 534: «2°» (numerazione fuori sequenza)
-- 538: «pag. 61» (riferimento isolato)
-- 542 a: «fogli 6» (riferimento isolato)
-- 543: «pag. 38» (riferimento isolato)
-- 548: «fogli 22» (riferimento isolato)
-- 557: «pag. 55» (riferimento isolato)
-- 558: «pag. 10» (riferimento isolato)
-- 564: «carte 10» (riferimento isolato)
-- 565: «c. 159» (riferimento isolato)
-- 566: «carte 67» (riferimento isolato)
-- 568: «1588.» (numerazione fuori sequenza); «1588.» (numerazione fuori sequenza); «1587.» (numerazione fuori sequenza); «1590.» (numerazione fuori sequenza); «1581.» (numerazione fuori sequenza); «1584)» (numerazione fuori sequenza); «1593.» (numerazione fuori sequenza); «1672.» (numerazione fuori sequenza)
-- 571: «1862)» (numerazione fuori sequenza)
-- 572: «1780)» (numerazione fuori sequenza)
-- 577: «carte 11» (riferimento isolato)
-- 585: «carte 17» (riferimento isolato)
-- 590: «carte 41» (riferimento isolato)
-- 601: «carte 126» (riferimento isolato)
-- 606: «1696.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1694.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1694.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1694.» (numerazione fuori sequenza); «1692.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1694.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1696.» (numerazione fuori sequenza); «1694.» (numerazione fuori sequenza); «30.» (numerazione fuori sequenza); «1727.» (numerazione fuori sequenza); «1727.» (numerazione fuori sequenza); «2°» (numerazione fuori sequenza); «51) a 52)» (numerazione fuori sequenza); «53)» (numerazione fuori sequenza); «54)» (numerazione fuori sequenza); «56)» (numerazione fuori sequenza); «57)» (numerazione fuori sequenza); «58)» (numerazione fuori sequenza); «59)» (numerazione fuori sequenza); «60)» (numerazione fuori sequenza); «61)» (numerazione fuori sequenza); «65)» (numerazione fuori sequenza); «67)» (numerazione fuori sequenza); «68)» (numerazione fuori sequenza); «69) a 70)» (numerazione fuori sequenza); «71)» (numerazione fuori sequenza); «72)» (numerazione fuori sequenza); «73) a 74)» (numerazione fuori sequenza); «1727.» (numerazione fuori sequenza); «75)» (numerazione fuori sequenza); «76)» (numerazione fuori sequenza); «77)» (numerazione fuori sequenza); «78)» (numerazione fuori sequenza); «1337.» (numerazione fuori sequenza); «79)» (numerazione fuori sequenza); «80)» (numerazione fuori sequenza); «81) a 82)» (numerazione fuori sequenza); «83)» (numerazione fuori sequenza); «84)» (numerazione fuori sequenza); «85)» (numerazione fuori sequenza); «86)» (numerazione fuori sequenza); «87)» (numerazione fuori sequenza); «88)» (numerazione fuori sequenza); «89)» (numerazione fuori sequenza); «1629.» (numerazione fuori sequenza); «90)» (numerazione fuori sequenza); «91)» (numerazione fuori sequenza); «92)» (numerazione fuori sequenza); «93)» (numerazione fuori sequenza); «94)» (numerazione fuori sequenza); «95)» (numerazione fuori sequenza); «97)» (numerazione fuori sequenza); «98)» (numerazione fuori sequenza); «99)» (numerazione fuori sequenza); «100)» (numerazione fuori sequenza); «101)» (numerazione fuori sequenza); «102)-103)» (numerazione fuori sequenza); «104)» (numerazione fuori sequenza); «105)» (numerazione fuori sequenza); «106)» (numerazione fuori sequenza); «107)» (numerazione fuori sequenza); «108)» (numerazione fuori sequenza); «110)» (numerazione fuori sequenza); «118)» (numerazione fuori sequenza); «1587.» (numerazione fuori sequenza); «119)» (numerazione fuori sequenza); «120)» (numerazione fuori sequenza); «121)» (numerazione fuori sequenza); «126)» (numerazione fuori sequenza); «129)» (numerazione fuori sequenza); «130)» (numerazione fuori sequenza); «131)-132)» (numerazione fuori sequenza); «133)» (numerazione fuori sequenza); «134)» (numerazione fuori sequenza); «135)» (numerazione fuori sequenza); «136)» (numerazione fuori sequenza); «137)» (numerazione fuori sequenza); «138)» (numerazione fuori sequenza); «140)» (numerazione fuori sequenza); «141)» (numerazione fuori sequenza); «144)» (numerazione fuori sequenza); «145)» (numerazione fuori sequenza); «146)» (numerazione fuori sequenza); «147)» (numerazione fuori sequenza); «148)» (numerazione fuori sequenza); «149)» (numerazione fuori sequenza); «150)» (numerazione fuori sequenza); «1700.» (numerazione fuori sequenza); «151)» (numerazione fuori sequenza); «152)» (numerazione fuori sequenza); «1689.» (numerazione fuori sequenza); «153)» (numerazione fuori sequenza); «1711.» (numerazione fuori sequenza); «156)» (numerazione fuori sequenza); «157)» (numerazione fuori sequenza); «1711.» (numerazione fuori sequenza); «158)» (numerazione fuori sequenza); «159)» (numerazione fuori sequenza); «164)» (numerazione fuori sequenza); «165)» (numerazione fuori sequenza); «167)» (numerazione fuori sequenza); «168)» (numerazione fuori sequenza); «169)» (numerazione fuori sequenza); «170)» (numerazione fuori sequenza); «172)» (numerazione fuori sequenza); «1711.» (numerazione fuori sequenza); «173)» (numerazione fuori sequenza); «174)» (numerazione fuori sequenza); «175)» (numerazione fuori sequenza); «176)» (numerazione fuori sequenza); «171.» (numerazione fuori sequenza); «179)» (numerazione fuori sequenza); «180)» (numerazione fuori sequenza); «181)» (numerazione fuori sequenza); «1708.» (numerazione fuori sequenza); «182)» (numerazione fuori sequenza); «183)» (numerazione fuori sequenza); «184)» (numerazione fuori sequenza); «185)» (numerazione fuori sequenza); «186)» (numerazione fuori sequenza); «187)» (numerazione fuori sequenza); «190)» (numerazione fuori sequenza)
-- 608: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza)
-- 609: «Fogli 101» (riferimento isolato)
-- 610: «1660.» (numerazione fuori sequenza); «1°» (numerazione fuori sequenza)
+- 503: «carte 214-216» (riferimento isolato)
+- 577: «carte 11 a 14» (riferimento isolato)
+- 583: «carte 27» (riferimento isolato)
+- 603: «carte 16 a carte 29» (riferimento isolato)
+- 605: «carte I-VI» (riferimento isolato)
 - 614: «Fogli 48» (riferimento isolato)
-- 615: «fogli 167» (riferimento isolato)
-- 616: «1724.» (numerazione fuori sequenza); «1444.» (numerazione fuori sequenza); «12)» (numerazione fuori sequenza); «1633.» (numerazione fuori sequenza); «13)» (numerazione fuori sequenza); «14)» (numerazione fuori sequenza); «15)» (numerazione fuori sequenza); «16)» (numerazione fuori sequenza); «17)» (numerazione fuori sequenza); «18)» (numerazione fuori sequenza); «19)» (numerazione fuori sequenza); «20)» (numerazione fuori sequenza); «21)» (numerazione fuori sequenza); «1740.» (numerazione fuori sequenza); «22)» (numerazione fuori sequenza); «23)» (numerazione fuori sequenza); «24)» (numerazione fuori sequenza); «19)» (numerazione fuori sequenza); «25)» (numerazione fuori sequenza); «26)» (numerazione fuori sequenza); «1563.» (numerazione fuori sequenza); «27)» (numerazione fuori sequenza); «28)» (numerazione fuori sequenza); «29)» (numerazione fuori sequenza); «1581.» (numerazione fuori sequenza); «30)» (numerazione fuori sequenza); «31)» (numerazione fuori sequenza); «32)» (numerazione fuori sequenza); «1731.» (numerazione fuori sequenza); «33)» (numerazione fuori sequenza); «33bis)» (numerazione fuori sequenza); «34)» (numerazione fuori sequenza); «36)» (numerazione fuori sequenza); «37)» (numerazione fuori sequenza)
-- 617: «1366.» (numerazione fuori sequenza); «664.» (numerazione fuori sequenza); «1031.» (numerazione fuori sequenza); «518)» (numerazione fuori sequenza); «1445.» (numerazione fuori sequenza); «b)» (lettera fuori sequenza)
-- 618: «2°» (numerazione fuori sequenza); «1434.» (numerazione fuori sequenza); «1436.» (numerazione fuori sequenza); «1442.» (numerazione fuori sequenza); «1463.» (numerazione fuori sequenza); «1440.» (numerazione fuori sequenza); «1441.» (numerazione fuori sequenza); «1451.» (numerazione fuori sequenza); «1439.» (numerazione fuori sequenza); «4)» (numerazione fuori sequenza); «5)» (numerazione fuori sequenza); «6)» (numerazione fuori sequenza); «1341)» (numerazione fuori sequenza); «7)» (numerazione fuori sequenza); «1466.» (numerazione fuori sequenza); «8)» (numerazione fuori sequenza); «9)» (numerazione fuori sequenza); «1555.» (numerazione fuori sequenza); «10)» (numerazione fuori sequenza); «11)» (numerazione fuori sequenza); «1584.» (numerazione fuori sequenza); «12)» (numerazione fuori sequenza); «13)» (numerazione fuori sequenza); «1595.» (numerazione fuori sequenza); «14)» (numerazione fuori sequenza); «15)» (numerazione fuori sequenza); «16)» (numerazione fuori sequenza); «17)» (numerazione fuori sequenza); «1642.» (numerazione fuori sequenza); «18)» (numerazione fuori sequenza); «19)» (numerazione fuori sequenza); «20)» (numerazione fuori sequenza); «21)» (numerazione fuori sequenza); «22)» (numerazione fuori sequenza); «1761.» (numerazione fuori sequenza)
-- 619: «8)» (numerazione fuori sequenza); «10)» (numerazione fuori sequenza); «10)» (numerazione fuori sequenza); «11)» (numerazione fuori sequenza); «12)» (numerazione fuori sequenza); «13)» (numerazione fuori sequenza); «14)» (numerazione fuori sequenza); «15)» (numerazione fuori sequenza); «16)» (numerazione fuori sequenza); «17)» (numerazione fuori sequenza); «18)» (numerazione fuori sequenza); «19)» (numerazione fuori sequenza); «20)» (numerazione fuori sequenza); «21)» (numerazione fuori sequenza); «22)» (numerazione fuori sequenza); «23)» (numerazione fuori sequenza); «24)» (numerazione fuori sequenza); «25)» (numerazione fuori sequenza); «26)» (numerazione fuori sequenza); «22.» (numerazione fuori sequenza); «27)» (numerazione fuori sequenza); «28)» (numerazione fuori sequenza); «1457.» (numerazione fuori sequenza); «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a); «d)» (lettera iniziale diversa da a); «e)» (lettera iniziale diversa da a); «1496.» (numerazione fuori sequenza); «29)» (numerazione fuori sequenza); «30)» (numerazione fuori sequenza); «31)» (numerazione fuori sequenza); «32)» (numerazione fuori sequenza); «1575.» (numerazione fuori sequenza); «33)» (numerazione fuori sequenza); «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a); «d)» (lettera iniziale diversa da a); «34)» (numerazione fuori sequenza); «35)» (numerazione fuori sequenza); «36)» (numerazione fuori sequenza); «37)» (numerazione fuori sequenza); «38)» (numerazione fuori sequenza); «39)» (numerazione fuori sequenza); «40)» (numerazione fuori sequenza); «41)» (numerazione fuori sequenza); «42)» (numerazione fuori sequenza); «43)» (numerazione fuori sequenza); «44)» (numerazione fuori sequenza)
-- 621: «1471)» (numerazione fuori sequenza); «1660.» (numerazione fuori sequenza); «1520.» (numerazione fuori sequenza)
-- 622: «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a); «d)» (lettera iniziale diversa da a); «e)» (lettera iniziale diversa da a); «f)» (lettera iniziale diversa da a); «b)» (lettera iniziale diversa da a)
-- 625: «pag. 516» (riferimento isolato)
+- 616: «19)» (numerazione fuori sequenza)
+- 617: «518)» (numerazione fuori sequenza)
+- 618: «12°» (numerazione fuori sequenza)
 - 639: «l)» (lettera fuori sequenza); «m)» (lettera fuori sequenza)
-- 641: «pag. 126» (riferimento isolato)
-- 650: «2°» (numerazione fuori sequenza)
-- 651: «I)» (lettera iniziale diversa da a); «V)» (lettera iniziale diversa da a); «X)» (lettera iniziale diversa da a)
+- 647: «pag. III» (riferimento isolato)
+- 650: «2°» (riferimento isolato)
 - 661: «pag. 53-54» (riferimento isolato)
-- 666: «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a); «d)» (lettera iniziale diversa da a); «e)» (lettera iniziale diversa da a); «f)» (lettera iniziale diversa da a); «1751)» (numerazione fuori sequenza)
 - 686: «Pag. 124» (riferimento isolato)
 - 693: «Fogli 50» (riferimento isolato)
-- 717: «19)» (numerazione fuori sequenza)
-- 721: «1763.» (numerazione fuori sequenza); «1764.» (numerazione fuori sequenza); «1765.» (numerazione fuori sequenza); «65.» (numerazione fuori sequenza); «1766.» (numerazione fuori sequenza); «12.» (numerazione fuori sequenza); «1902.» (numerazione fuori sequenza); «1°» (elenco di un solo elemento)
-- 723: «f)» (lettera fuori sequenza)
+- 720: «2°» (riferimento isolato)
 - 724: «pag. 32» (riferimento isolato)
 - 753: «Pag. 107» (riferimento isolato)
-- 773: «I)» (lettera iniziale diversa da a)
-- 776: «C)» (lettera iniziale diversa da a); «D)» (lettera iniziale diversa da a); «pag. 834» (riferimento isolato)
-- 780: «16°» (numerazione fuori sequenza)
-- 782: «2)» (numerazione fuori sequenza); «3)» (numerazione fuori sequenza); «4)» (numerazione fuori sequenza)
-- 786: «16°» (numerazione fuori sequenza)
-- 787: «Fogli 70» (riferimento isolato)
-- 795: «1719)» (numerazione fuori sequenza)
 - 803: «Pag. 68» (riferimento isolato)
-- 804: «24°» (numerazione fuori sequenza)
-- 805: «1818.» (numerazione fuori sequenza); «1824.» (numerazione fuori sequenza)
-- 824: «V)» (lettera iniziale diversa da a); «X)» (lettera iniziale diversa da a); «1836.» (numerazione fuori sequenza); «13.» (numerazione fuori sequenza); «1808.» (numerazione fuori sequenza)
-- 825: «307)» (numerazione fuori sequenza); «I)» (lettera iniziale diversa da a); «V)» (lettera iniziale diversa da a); «X)» (lettera iniziale diversa da a)
-- 850: «1739)» (numerazione fuori sequenza)
-- 853: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «4)» (numerazione fuori sequenza)
-- 866: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 868: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza); «16°» (numerazione fuori sequenza); «17°» (numerazione fuori sequenza); «18°» (numerazione fuori sequenza); «19°» (numerazione fuori sequenza)
-- 869: «2.» (numerazione fuori sequenza); «3.» (numerazione fuori sequenza)
-- 870: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza)
-- 874: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza); «16°» (numerazione fuori sequenza); «37°, 40°» (numerazione fuori sequenza); «40°» (numerazione fuori sequenza); «17°» (numerazione fuori sequenza); «18°» (numerazione fuori sequenza); «19°» (numerazione fuori sequenza); «20°» (numerazione fuori sequenza); «21°» (numerazione fuori sequenza); «22°» (numerazione fuori sequenza); «23°» (numerazione fuori sequenza); «24°» (numerazione fuori sequenza); «25°» (numerazione fuori sequenza)
-- 875: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza); «16°» (numerazione fuori sequenza); «17°» (numerazione fuori sequenza); «18°» (numerazione fuori sequenza); «19°» (numerazione fuori sequenza); «20°» (numerazione fuori sequenza); «21°» (numerazione fuori sequenza); «22°» (numerazione fuori sequenza); «23°» (numerazione fuori sequenza); «24°» (numerazione fuori sequenza); «25°» (numerazione fuori sequenza); «26°» (numerazione fuori sequenza); «27°» (numerazione fuori sequenza); «28°» (numerazione fuori sequenza); «29°» (numerazione fuori sequenza)
-- 880: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza)
-- 888: «1603)» (numerazione fuori sequenza)
-- 905: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza)
-- 906: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 923: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza); «16°» (numerazione fuori sequenza); «17°» (numerazione fuori sequenza); «18°» (numerazione fuori sequenza); «19°» (numerazione fuori sequenza); «20°» (numerazione fuori sequenza)
-- 928: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 934: «14° e 15°» (numerazione fuori sequenza)
-- 944: «14° e 15°» (numerazione fuori sequenza); «12° e 13°» (numerazione fuori sequenza)
-- 983: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 993: «1780)» (numerazione fuori sequenza)
-- 994: «1°» (elenco di un solo elemento)
-- 1000: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza); «16°» (numerazione fuori sequenza)
-- 1024: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza)
-- 1034: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza)
-- 1095: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza)
-- 1098: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza)
-- 1101: «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza)
-- 1109: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza)
-- 1111: «2° - 4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza)
-- 1150: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza)
-- 1151: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza)
-- 1152: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 1164: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4° e 6°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 1197: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «15° e 16°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 1198: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza); «13°» (numerazione fuori sequenza); «14°» (numerazione fuori sequenza); «15°» (numerazione fuori sequenza); «16°» (numerazione fuori sequenza); «17°» (numerazione fuori sequenza); «18°» (numerazione fuori sequenza); «19°» (numerazione fuori sequenza)
-- 1200: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza)
-- 1231: «1°» (elenco di un solo elemento)
-- 1237: «2°» (numerazione fuori sequenza)
-- 1241: «16° e 17°» (numerazione fuori sequenza)
-- 1243: «2°» (numerazione fuori sequenza)
-- 1253: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza)
-- 1258: «15°» (numerazione fuori sequenza)
-- 1261: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 1265: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «1503)» (numerazione fuori sequenza); «1490)» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza)
-- 1286: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza)
-- 1287: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza)
-- 1289: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza)
-- 1290: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza)
-- 1294: «2° e 3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza)
-- 1307: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 1311: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza)
-- 1312: «2°, 3° e 4°» (numerazione fuori sequenza); «3° e 4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 1313: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza)
-- 1317: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza)
-- 1318: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 1319: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 1330: «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 1337: «2°, 3°, 4° e 5°» (numerazione fuori sequenza); «3°, 4° e 5°» (numerazione fuori sequenza); «4° e 5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza)
-- 1356: «2°» (numerazione fuori sequenza)
-- 1357: «2°» (numerazione fuori sequenza); «3°, 4° e 5°» (numerazione fuori sequenza); «4° e 5°» (numerazione fuori sequenza)
-- 1358: «2°» (numerazione fuori sequenza); «3° e 4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza)
-- 1359: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza)
-- 1361: «2°» (numerazione fuori sequenza); «3° e 4°» (numerazione fuori sequenza)
-- 1365: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 1366: «2°» (numerazione fuori sequenza); «3°, 4°, 5°» (numerazione fuori sequenza); «4°, 5°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 1367: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «16° e 17°» (numerazione fuori sequenza)
-- 1368: «2°» (numerazione fuori sequenza); «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza)
-- 1369: «2°» (numerazione fuori sequenza)
-- 1370: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza)
-- 1375: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza)
-- 1376: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza)
-- 1380: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°, 9°, 10°» (numerazione fuori sequenza); «9°, 10°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza)
-- 1389: «3° e 4°» (numerazione fuori sequenza); «2°» (numerazione fuori sequenza)
-- 1433: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza); «12°» (numerazione fuori sequenza)
-- 1507: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 1530: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «1°» (numerazione fuori sequenza); «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza)
-- 1537: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 1541: «2°» (numerazione fuori sequenza); «3° e 4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza)
-- 1562: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza)
-- 1582: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza); «10°» (numerazione fuori sequenza); «11°» (numerazione fuori sequenza)
-- 1583: «3°, 4°, 5°» (numerazione fuori sequenza); «4°, 5°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6° e 7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza); «9°» (numerazione fuori sequenza)
-- 1593: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «5°» (numerazione fuori sequenza); «6°» (numerazione fuori sequenza); «7°» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 1736: «pag. 2
-V» (riferimento isolato)
-- 1753: «1779)» (numerazione fuori sequenza)
-- 1887: «7)» (numerazione fuori sequenza)
+- 944: «9°» (numerazione fuori sequenza)
+- 984: «2°» (riferimento isolato)
+- 994: «1°» (riferimento isolato)
+- 1026: «2°» (riferimento isolato)
+- 1197: «8°» (numerazione fuori sequenza)
+- 1231: «1°» (riferimento isolato)
+- 1243: «2°» (riferimento isolato)
+- 1256: «1°» (riferimento isolato)
+- 1304: «1°» (riferimento isolato)
+- 1320: «1°» (riferimento isolato)
+- 1500: «1°» (riferimento isolato)
 - 1941: «pag. 140» (riferimento isolato)
-- 2110: «1915)» (numerazione fuori sequenza)
-- 2115: «10)» (numerazione fuori sequenza)
 - 2191: «p. 95» (riferimento isolato)
 - 2194: «p. 644» (riferimento isolato)
 - 2308: «Fasc. 3» (riferimento isolato)
-- 2383: «25)» (numerazione fuori sequenza)
-- 2406: «1935)» (numerazione fuori sequenza)
-- 2557: «1857)» (numerazione fuori sequenza); «1861)» (numerazione fuori sequenza); «1861)» (numerazione fuori sequenza); «1861)» (numerazione fuori sequenza); «1871)» (numerazione fuori sequenza)
-- 2588: «4°» (numerazione fuori sequenza)
-- 2589: «1926)» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 2590: «4°» (numerazione fuori sequenza)
-- 2591: «1940)» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «p. 180» (riferimento isolato)
-- 2592: «4°» (numerazione fuori sequenza)
-- 2593: «8°» (numerazione fuori sequenza); «p. 49» (riferimento isolato)
-- 2594: «4°» (numerazione fuori sequenza)
-- 2596: «4°» (numerazione fuori sequenza); «p. 120» (riferimento isolato)
-- 2602: «16°» (numerazione fuori sequenza)
-- 2610: «1940)» (numerazione fuori sequenza)
-- 2621: «1542)» (numerazione fuori sequenza)
-- 2622: «1939)» (numerazione fuori sequenza)
-- 2626: «16°» (numerazione fuori sequenza)
-- 2627: «16°» (numerazione fuori sequenza)
-- 2629: «4°» (numerazione fuori sequenza)
-- 2630/1: «16°» (numerazione fuori sequenza)
-- 2630/2: «16°» (numerazione fuori sequenza)
-- 2630/3: «16°» (numerazione fuori sequenza)
-- 2630/4: «16°» (numerazione fuori sequenza)
-- 2630/5: «16°» (numerazione fuori sequenza)
-- 2630/6: «16°» (numerazione fuori sequenza)
-- 2630/7: «4°» (numerazione fuori sequenza)
-- 2630/8: «16°» (numerazione fuori sequenza)
-- 2630/9: «8°» (numerazione fuori sequenza)
-- 2630/10: «8°» (numerazione fuori sequenza)
-- 2630/11: «8°» (numerazione fuori sequenza)
-- 2631/1: «16°» (numerazione fuori sequenza)
-- 2631/2: «16°» (numerazione fuori sequenza)
-- 2631/3: «16°» (numerazione fuori sequenza)
-- 2631/4: «16°» (numerazione fuori sequenza)
-- 2631/5: «1884)» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 2631/6: «8°» (numerazione fuori sequenza)
-- 2631/7: «8°» (numerazione fuori sequenza)
-- 2631/8: «8°» (numerazione fuori sequenza)
-- 2631/9: «8°» (numerazione fuori sequenza)
-- 2631/10: «8°» (numerazione fuori sequenza)
-- 2631/11: «8°» (numerazione fuori sequenza)
-- 2632/1: «8°» (numerazione fuori sequenza)
-- 2632/3: «8°» (numerazione fuori sequenza)
-- 2632/4: «8°» (numerazione fuori sequenza)
-- 2632/5: «8°» (numerazione fuori sequenza)
-- 2632/6: «8°» (numerazione fuori sequenza)
-- 2632/7: «4°» (numerazione fuori sequenza)
-- 2632/8: «4°» (numerazione fuori sequenza)
-- 2632/9: «16°» (numerazione fuori sequenza)
-- 2632/10: «16°» (numerazione fuori sequenza)
-- 2632/11: «8°» (numerazione fuori sequenza)
-- 2632/12: «8°» (numerazione fuori sequenza)
-- 2632/14: «16°» (numerazione fuori sequenza)
-- 2632/15: «4°» (numerazione fuori sequenza)
-- 2633/17: «16°» (numerazione fuori sequenza)
-- 2633/18: «4°» (numerazione fuori sequenza)
-- 2633/19: «16°» (numerazione fuori sequenza)
-- 2633/20: «16°» (numerazione fuori sequenza)
-- 2633/21: «16°» (numerazione fuori sequenza)
-- 2633/22: «16°» (numerazione fuori sequenza)
-- 2633/23: «16°» (numerazione fuori sequenza)
-- 2633/24: «16°» (numerazione fuori sequenza)
-- 2634/1: «4°» (numerazione fuori sequenza)
-- 2634/2: «4°» (numerazione fuori sequenza)
-- 2634/5: «4°» (numerazione fuori sequenza)
-- 2634/6: «4°» (numerazione fuori sequenza)
-- 2634/7: «4°» (numerazione fuori sequenza)
-- 2634/8: «4°» (numerazione fuori sequenza)
-- 2634/9: «4°» (numerazione fuori sequenza)
-- 2634/10: «4°» (numerazione fuori sequenza); «p. 59» (riferimento isolato)
-- 2634/11: «1884)» (numerazione fuori sequenza)
-- 2634/12: «4°» (numerazione fuori sequenza)
-- 2634/17: «1901.» (numerazione fuori sequenza); «1901.» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «1901.» (numerazione fuori sequenza); «1901.» (numerazione fuori sequenza); «1901.» (numerazione fuori sequenza); «1901.» (numerazione fuori sequenza); «1912.» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 2635/1: «16°» (numerazione fuori sequenza)
-- 2635/2: «16°» (numerazione fuori sequenza)
-- 2635/3: «16°» (numerazione fuori sequenza)
-- 2635/4: «8°» (numerazione fuori sequenza)
-- 2635/5: «8°» (numerazione fuori sequenza)
-- 2635/6: «8°» (numerazione fuori sequenza)
-- 2635/7: «8°» (numerazione fuori sequenza)
-- 2635/8: «8°» (numerazione fuori sequenza)
-- 2635/10: «8°» (numerazione fuori sequenza)
-- 2635/11: «8°» (numerazione fuori sequenza)
-- 2635/13: «8°» (numerazione fuori sequenza)
-- 2635/14: «8°» (numerazione fuori sequenza)
-- 2635/15: «8°» (numerazione fuori sequenza)
-- 2635/16: «4°» (numerazione fuori sequenza)
-- 2635/16 bis: «8°» (numerazione fuori sequenza)
-- 2635/17: «8°» (numerazione fuori sequenza)
-- 2635/17 bis: «8°» (numerazione fuori sequenza)
-- 2635/19: «8°» (numerazione fuori sequenza)
-- 2635/20: «8°» (numerazione fuori sequenza)
-- 2635/21: «8°» (numerazione fuori sequenza)
+- 2591: «p. 180» (riferimento isolato)
+- 2593: «p. 49» (riferimento isolato)
+- 2596: «p. 120» (riferimento isolato)
+- 2634/10: «p. 59» (riferimento isolato)
 - 2636/2: «N° 100» (riferimento isolato)
 - 2636/3: «N° 100» (riferimento isolato)
-- 2637/2: «1902)» (numerazione fuori sequenza)
-- 2639/14-22: «1917)» (numerazione fuori sequenza)
-- 2642: «1892.» (numerazione fuori sequenza); «1893)» (numerazione fuori sequenza)
-- 2650: «4°» (numerazione fuori sequenza)
 - 2653: «c. 97» (riferimento isolato)
-- 2666: «1791.» (numerazione fuori sequenza)
-- 2668: «1793.» (numerazione fuori sequenza)
-- 2681: «4°» (numerazione fuori sequenza)
-- 2689: «4°» (numerazione fuori sequenza)
-- 2697: «1934)» (numerazione fuori sequenza); «4°» (numerazione fuori sequenza)
-- 2698: «4°» (numerazione fuori sequenza)
-- 2701: «8°» (numerazione fuori sequenza)
 - 2706 bis: «Fasc. 1» (riferimento isolato)
 - 2711 bis: «Fasc. 1» (riferimento isolato)
 - 3102: «c)» (lettera iniziale diversa da a); «d)» (lettera iniziale diversa da a)
-- 3197: «1921)» (numerazione fuori sequenza)
-- 3499: «8°» (numerazione fuori sequenza)
-- 3505: «1°» (elenco di un solo elemento)
-- 3506: «4°» (numerazione fuori sequenza); «p. 16» (riferimento isolato)
-- 3507: «4°» (numerazione fuori sequenza)
+- 3505: «1°» (riferimento isolato)
+- 3506: «p. 16» (riferimento isolato)
 - 3511: «N° 1» (riferimento isolato)
-- 3512: «4°» (numerazione fuori sequenza)
-- 3513: «4°» (numerazione fuori sequenza)
-- 3521: «8°» (numerazione fuori sequenza)
-- 3525: «1°» (elenco di un solo elemento)
-- 3572: «8°» (numerazione fuori sequenza)
-- 3582: «1884)» (numerazione fuori sequenza)
-- 3597: «1807)» (numerazione fuori sequenza)
-- 3606: «4°» (numerazione fuori sequenza)
-- 3623: «8°» (numerazione fuori sequenza)
-- 3629: «2°» (numerazione fuori sequenza); «3°» (numerazione fuori sequenza)
+- 3525: «1°» (riferimento isolato)
 - 3651: «Cc. 155» (riferimento isolato)
-- 3655: «1803.» (numerazione fuori sequenza)
-- 3662: «139.» (numerazione fuori sequenza)
-- 3663: «551.» (numerazione fuori sequenza)
-- 3719: «12.» (numerazione fuori sequenza)
-- 3765: «1934)» (numerazione fuori sequenza)
-- 3790: «1939)» (numerazione fuori sequenza)
-- 3806: «8°» (numerazione fuori sequenza)
-- 3807: «24°» (numerazione fuori sequenza)
-- 3808: «24°» (numerazione fuori sequenza)
-- 3809: «24°» (numerazione fuori sequenza)
-- 3810: «8°» (numerazione fuori sequenza)
-- 3818: «4°» (numerazione fuori sequenza)
-- 3820: «8°» (numerazione fuori sequenza)
 - 3826: «pag 164» (riferimento isolato)
-- 3837: «4°» (numerazione fuori sequenza)
-- 3839: «1864)» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 3841: «8°» (numerazione fuori sequenza)
-- 3843: «1864)» (numerazione fuori sequenza)
-- 3844: «8°» (numerazione fuori sequenza)
-- 3845: «1879)» (numerazione fuori sequenza)
-- 3846: «1884)» (numerazione fuori sequenza); «1872)» (numerazione fuori sequenza); «1869)» (numerazione fuori sequenza); «8°» (numerazione fuori sequenza)
-- 3847: «8°» (numerazione fuori sequenza)
-- 3848: «4°» (numerazione fuori sequenza)
-- 3866: «4°» (numerazione fuori sequenza)
-- 3895: «8°» (numerazione fuori sequenza)
-- 3896: «8°» (numerazione fuori sequenza)
-- 3897: «16°» (numerazione fuori sequenza)
-- 3899: «8°» (numerazione fuori sequenza)
-- 3900: «2°» (numerazione fuori sequenza)
-- 3934: «1954)» (numerazione fuori sequenza)
-- 3939: «2)» (numerazione fuori sequenza); «3)» (numerazione fuori sequenza); «4)» (numerazione fuori sequenza); «5)» (numerazione fuori sequenza); «6)» (numerazione fuori sequenza); «7)» (numerazione fuori sequenza); «8)» (numerazione fuori sequenza); «9)» (numerazione fuori sequenza)
+- 3900: «2°» (riferimento isolato)
 - 3941: «Fogli 40» (riferimento isolato)
 - 3947: «Fogli 7» (riferimento isolato)
 - 3956: «N.° 30» (riferimento isolato)
-- 3958: «8)» (numerazione fuori sequenza); «Fogli 2» (riferimento isolato)
-- 3997: «3998)» (numerazione fuori sequenza)
-- 4061: «P. 1» (riferimento isolato)
-- 4104: «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a); «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a); «d)» (lettera iniziale diversa da a)
-- 4107/1-5: «3)» (numerazione fuori sequenza)
-- 4110: «4°» (numerazione fuori sequenza)
-- 4111: «4°» (numerazione fuori sequenza)
-- 4112: «4°» (numerazione fuori sequenza)
-- 4113: «4°» (numerazione fuori sequenza)
-- 4114: «4°» (numerazione fuori sequenza)
-- 4115: «4°» (numerazione fuori sequenza)
-- 4116: «4°» (numerazione fuori sequenza)
-- 4117: «4°» (numerazione fuori sequenza)
-- 4118: «4°» (numerazione fuori sequenza)
-- 4119: «4°» (numerazione fuori sequenza)
-- 4158: «4°» (numerazione fuori sequenza)
-- 4159: «4°» (numerazione fuori sequenza)
-- 4160: «4°» (numerazione fuori sequenza)
-- 4162: «4°» (numerazione fuori sequenza)
-- 4163: «4°» (numerazione fuori sequenza)
-- 4164: «4°» (numerazione fuori sequenza)
-- 4167: «4°» (numerazione fuori sequenza)
-- 4168: «4°» (numerazione fuori sequenza)
-- 4169: «4°» (numerazione fuori sequenza)
-- 4232: «1752.» (numerazione fuori sequenza); «1°» (elenco di un solo elemento)
-- 4248: «23 bis)» (numerazione fuori sequenza)
-- 4250: «3)» (numerazione fuori sequenza); «4)» (numerazione fuori sequenza); «5)» (numerazione fuori sequenza); «6)» (numerazione fuori sequenza); «7)» (numerazione fuori sequenza); «8)» (numerazione fuori sequenza); «9)» (numerazione fuori sequenza); «10)» (numerazione fuori sequenza); «12)» (numerazione fuori sequenza); «1)» (elenco di un solo elemento)
-- 4268: «8°» (numerazione fuori sequenza)
-- 4289: «FF. 1» (riferimento isolato)
-- 4301: «1°» (elenco di un solo elemento)
-- 4303: «1°» (elenco di un solo elemento)
-- 4305: «1°» (elenco di un solo elemento)
-- 4308: «1°» (elenco di un solo elemento)
-- 4309: «1°» (elenco di un solo elemento)
-- 4311: «1°» (elenco di un solo elemento)
-- 4313: «1°» (elenco di un solo elemento)
-- 4314: «1°» (elenco di un solo elemento)
-- 4316: «1°» (elenco di un solo elemento)
-- 4318: «1°» (elenco di un solo elemento)
-- 4323: «1°» (elenco di un solo elemento)
-- 4324: «1°» (elenco di un solo elemento)
-- 4326: «1°» (elenco di un solo elemento)
-- 4330: «1°» (elenco di un solo elemento)
-- 4332: «1°» (elenco di un solo elemento)
-- 4333: «1°» (elenco di un solo elemento)
-- 4334: «1°» (elenco di un solo elemento)
-- 4335: «1°» (elenco di un solo elemento)
-- 4337: «1°» (elenco di un solo elemento)
-- 4344: «1°» (elenco di un solo elemento)
-- 4351: «1°» (elenco di un solo elemento)
-- 4352: «1°» (elenco di un solo elemento)
-- 4353: «1°» (elenco di un solo elemento)
-- 4355: «1°» (elenco di un solo elemento)
-- 4356: «1°» (elenco di un solo elemento)
-- 4357: «1°» (elenco di un solo elemento)
-- 4370: «1°» (elenco di un solo elemento)
+- 3958: «Fogli 2» (riferimento isolato)
+- 4104: «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a)
+- 4232: «1°» (riferimento isolato)
+- 4303: «1°» (riferimento isolato)
+- 4305: «1°» (riferimento isolato)
+- 4309: «1°» (riferimento isolato)
+- 4326: «1°» (riferimento isolato)
+- 4333: «1°» (riferimento isolato)
+- 4353: «1°» (riferimento isolato)
+- 4355: «1°» (riferimento isolato)
+- 4356: «1°» (riferimento isolato)
+- 4370: «1°» (riferimento isolato)
 - 4372: «F. 1» (riferimento isolato)
-- 4392: «1°» (elenco di un solo elemento)
-- 4397: «1°» (elenco di un solo elemento)
-- 4404: «1°» (elenco di un solo elemento)
-- 4411: «FF. 2» (riferimento isolato)
+- 4392: «1°» (riferimento isolato)
 - 4414: «F. 1» (riferimento isolato)
-- 4428: «1°» (elenco di un solo elemento)
-- 4433: «1°» (elenco di un solo elemento)
-- 4435: «1°» (elenco di un solo elemento)
-- 4438: «1°» (elenco di un solo elemento)
-- 4446: «1°» (elenco di un solo elemento)
-- 4447: «1°» (elenco di un solo elemento)
-- 4453: «1°» (elenco di un solo elemento)
-- 4455: «1°» (elenco di un solo elemento)
-- 4458: «1°» (elenco di un solo elemento)
-- 4461: «1°» (elenco di un solo elemento)
-- 4462: «1°» (elenco di un solo elemento)
+- 4446: «1°» (riferimento isolato)
+- 4453: «1°» (riferimento isolato)
+- 4458: «1°» (riferimento isolato)
+- 4462: «1°» (riferimento isolato)
 - 4467: «F. 1» (riferimento isolato)
-- 4468: «1°» (elenco di un solo elemento)
-- 4469: «1°» (elenco di un solo elemento)
-- 4477: «1°» (elenco di un solo elemento)
-- 4479: «1°» (elenco di un solo elemento)
+- 4469: «1°» (riferimento isolato)
 - 4485: «F. 1» (riferimento isolato)
-- 4489: «1°» (elenco di un solo elemento)
-- 4490: «1°» (elenco di un solo elemento)
-- 4496: «1°» (elenco di un solo elemento)
-- 4500: «1°» (elenco di un solo elemento)
-- 4501: «F. 1» (riferimento isolato)
-- 4510: «1°» (elenco di un solo elemento)
-- 4512: «Cc. 1» (riferimento isolato)
+- 4490: «1°» (riferimento isolato)
+- 4497: «1°» (riferimento isolato)
+- 4500: «1°» (riferimento isolato)
+- 4510: «1°» (riferimento isolato)
 - 4515: «cc. 198-199» (riferimento isolato)
 
 ## 7. Venti voci estratte a caso (seme 2026)
@@ -732,7 +387,14 @@ V» (riferimento isolato)
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–1002]: G. Bianchi: Miscellanea. Questo cartolare consta di fascicoli messi insieme dall'ab. G. Bianchi. Essi sono 7: 1° contiene regesti e documenti friulani, carintia […+842 caratteri]
+- preambolo (senza etichetta) [0–109]: G. Bianchi: Miscellanea. Questo cartolare consta di fascicoli messi insieme dall'ab. G. Bianchi. Essi sono 7:
+- riferimento «1°» [110–418]: 1° contiene regesti e documenti friulani, carintiani, istriani e carniolici, per lo più estratti dai documenti raccolti dal Bianchi stesso; Indice della collezi […+148 caratteri]
+- riferimento «2°» [419–527]: 2° Note, brevi regesti e indici di documenti riguardanti i possessi oltremontani del patriarcato aquileiese;
+- riferimento «3°» [528–599]: 3° Elenchi di gastaldi, podestà e capitani di Udine, Gemona e Cividale;
+- riferimento «4°» [600–831]: 4° Varia, cioè parrocchi di Carniola; Regesti di documenti di Portogruaro; note sui Fiorentini in Friuli; sui Santuari del Friuli; brani di documenti; e atti de […+71 caratteri]
+- riferimento «5°» [832–852]: 5° Elenchi di notai;
+- riferimento «6°» [853–925]: 6° Statuti di Udine in 2 fascicoli: sono quelli del patriarca Marquardo;
+- riferimento «7°» [926–1002]: 7° Atti desunti dalle memorie e dagli istrumenti del notaio Antonio Belloni.
 
 ### 973.
 
@@ -800,11 +462,11 @@ Depositato presso l'Archivio di stato - 8.6.1959.
 
 - voce_intera (senza etichetta) [0–51]: Del Torso, Enrico. Appunti di araldica. 2 cartelle.
 
-### 3307.
+### 3306.
 
 **Testo**
 
-> Pleyel Ignazio. Sonata per cembalo con accompagnamento di violino obbligato.
+> Pleyel (Ignazio). Sonata per Piano-forte con violino e violon.lo.
 >
 > Musica 24.
 
@@ -812,14 +474,16 @@ Depositato presso l'Archivio di stato - 8.6.1959.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–87]: Pleyel Ignazio. Sonata per cembalo con accompagnamento di violino obbligato.
+- voce_intera (senza etichetta) [0–76]: Pleyel (Ignazio). Sonata per Piano-forte con violino e violon.lo.
 Musica 24.
 
-### 3472.
+### 3471.
 
 **Testo**
 
-> Gewaiy (?) Carlo. Concerto con flauto Travertier obbligato e con violino principale e due violini, alto viola e basso del sig. Carlo Gewaiy (?).
+> Bach. Concertoni N° VI, corno primo.
+>
+> Unito al ms. 3403.
 >
 > Musica 28.
 
@@ -827,118 +491,111 @@ Musica 24.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–155]: Gewaiy (?) Carlo. Concerto con flauto Travertier obbligato e con violino principale e due violini, alto viola e basso del sig. Carlo Gewaiy (?).
+- voce_intera (senza etichetta) [0–66]: Bach. Concertoni N° VI, corno primo.
+Unito al ms. 3403.
 Musica 28.
 
-### 3541.
+### 3540.
 
 **Testo**
 
-> Predica in friul. ("Dicite filiae Sion …").
+> Predica in friul. ("Non turbetur cor vestrum …").
 >
-> Fascic. in-fol., sec. XIX.
+> Fasc. in-fol., sec. XIX.
 >
 > Si trova nella cartella del ms. 3510.
 
 **Coda**: —
 
-**Annotazioni**: [nota_a_margine] «Di Antonio Cuntigh»
-
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–108]: Predica in friul. ("Dicite filiae Sion …").
-Fascic. in-fol., sec. XIX.
+- voce_intera (senza etichetta) [0–112]: Predica in friul. ("Non turbetur cor vestrum …").
+Fasc. in-fol., sec. XIX.
 Si trova nella cartella del ms. 3510.
 
-### 3873.
+### 3872.
 
 **Testo**
 
-> Tractatus de beatitudine.
+> Tractatus in tertiam partem Doctoris Angelici De Sacramentis. Finisce: "Tractatus de Sacramentis in genere, et de Eucharistia in particulari, praelegente admodum R. D. D. Augustino Perugino Sedeanensi ego Gaspar Antonius Tosonus Nespolettensis finem imposui die 13 Martij anno MDCCXX."
 >
-> In-4°, pp. 121; perg.
+> In-4°, pp. 317, più l'indice; pergam.
 
 **Coda**: —
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–47]: Tractatus de beatitudine.
-In-4°, pp. 121; perg.
+- voce_intera (senza etichetta) [0–323]: Tractatus in tertiam partem Doctoris Angelici De Sacramentis. Finisce: "Tractatus de Sacramentis in genere, et de Eucharistia in particulari, praelegente admodu […+163 caratteri]
 
-### 3878.
+### 3877.
 
 **Testo**
 
-> Tractatus in Libros Metaphysicorum Aristotelis. Finisce: "Finis. MDCCXVII."
+> Tractatus in primam partem Doctoris Angelici De Deo Uno, et Trino.
 >
-> In-4°, pp. 531; perg.
+> Finisce: "Explicit Tractatus … sub Augustino Perugino … Gaspar Antonius Tosonus emscripsit MDCCLXVIII."
+>
+> In-4°, pp. 447; perg.
 
 **Coda**: —
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–97]: Tractatus in Libros Metaphysicorum Aristotelis. Finisce: "Finis. MDCCXVII."
-In-4°, pp. 531; perg.
+- voce_intera (senza etichetta) [0–192]: Tractatus in primam partem Doctoris Angelici De Deo Uno, et Trino.
+Finisce: "Explicit Tractatus … sub Augustino Perugino … Gaspar Antonius Tosonus emscripsit MD […+32 caratteri]
 
-### 3971.
+### 3970.
 
 **Testo**
 
-> Depretis, Agostino. Lettera a Ippolito Nievo: Palermo, 26.10.1860 (in calce autografo di I. N.). Fogli 1.
+> Bertani, Agostino. Lettera a Ippolito Nievo: Genova 30.7.1860.
+>
+> Fogli 1.
 
 **Coda**: `Provenienza: D.r Luigi Ciceri 6.VI.1961.` → supporto: —; volumi: —; stato: —; provenienza: D.r Luigi Ciceri 6.VI.1961.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–105]: Depretis, Agostino. Lettera a Ippolito Nievo: Palermo, 26.10.1860 (in calce autografo di I. N.). Fogli 1.
+- voce_intera (senza etichetta) [0–71]: Bertani, Agostino. Lettera a Ippolito Nievo: Genova 30.7.1860.
+Fogli 1.
 
-### 4046.
+### 4045.
 
 **Testo**
 
-> Percoto, Caterina. Bozzetto funebre. Ms. di pp. 2. Com.: "Era morta la Nonna…". Fin.: "anche noi approderemo".
+> Percoto, Caterina. Adelina. Racconto pubblicato in "Racconti", Firenze, 1858 col titolo "I gamberi", di pp. 26 mss. + minuta di lettera accompagnatoria. (Altra copia col titolo "I gamberi" di pp. 28 mss. e frammento di 2pp.). Com.: "Era mesta Adelina…". Fin.: "pagina piena di lagrime!".
 
 **Coda**: `Provenienza: 1954 Acquistato dal prof. Minelli.` → supporto: —; volumi: —; stato: —; provenienza: 1954 Acquistato dal prof. Minelli.
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–110]: Percoto, Caterina. Bozzetto funebre. Ms. di pp. 2. Com.: "Era morta la Nonna…". Fin.: "anche noi approderemo".
+- voce_intera (senza etichetta) [0–287]: Percoto, Caterina. Adelina. Racconto pubblicato in "Racconti", Firenze, 1858 col titolo "I gamberi", di pp. 26 mss. + minuta di lettera accompagnatoria. (Altra  […+127 caratteri]
 
-### 4340.
+### 4339.
 
 **Testo**
 
 > Misc.
 >
-> 1) "Sumatīsijjhāya" (in antico gujarātī? in antico mārwāṛī?).
+> 1) "Jñānapañcamī stavanaṃ" (in Jaina māhārāṣṭrī?).
 >
-> F. 1 r. Inc.: / Dhā(l) morā demātā kāe daśā / Sumate sadādi(l) madharo /…
+> F. 1 r. Inc.: / Paṇmiya pās Jiṇaṃ davaṃ danimma laguṇ dha(ma)raṇ / Paṃc nāṇ saṃ (tha) vaṇ bhaṇi suatrāṇ nivāraṇ /…
 >
-> F. 1 v. Expl.: … Iti Śrī Sumat kī Sijjhāya saṃpurṇ / ba /
+> F. 1 r. Expl.: … /16/ Iti Śrī Nā(ṇ) Paṃcamī stavanaṃ samāptaṃ /
 >
-> 1 f.; mm. 100x250; non datato; copista anonimo.
+> F. 1 r.; mm. 100x250; non datato; copista anonimo.
 >
-> 2) "Sthūlibhadrsajjhāya" (in antico gujarātī? in antico mārwāṛī?).
+> 2) "Gauḍt pārśvanāth vṛddha stavanaṃ" (in antico gujarātī?).
 >
-> F. 2 r. Inc.: /9/ Imaj patāṃ baj mās / (Sthū)li bhadr…
+> F. 1 v. Inc.: Im Śrī Gauḍī pāsataṇ guṇ Jenaragāvai tenaranārī ihaparalo gasuṃ vaṃbitpāvaih /…
 >
-> F. 2 v. Expl.: … Iti Śrī Sthūlibhadr Saiyā(ya) saṃpurṇ /
+> F. 1 v. Expl.: … Iti Śrī Gauḍī Pārśvanāth vṛdalha stavanāṃ /
 >
-> 1 f.; mm. 100x250; non datato; copista anonimo.
+> F. 1 v.; mm. 100x250; non datato; copista anonimo.
 >
-> Unito con: Sumatīsijjhāya.
+> Unito con: Jñānapañcamī stavanaṃ.
 >
-> 3) "Nemsijjhāya" (in antico gujarātī).
->
-> F. 2 v. Inc.: Karm satrugaḍhajātāyā / Pahutā amarbī māṇrā / Saṃ / 23 /
->
-> F. 2 v. Expl.: … Iti Śrī Namjā kā Sijjhāya samāptaṃ /
->
-> F. 2 v.; mm. 100x250; non datato; copista anonimo.
->
-> Unito con: Sumatīsijjhāya.
->
-> Complessivamente 2 ff.
+> Complessivamente 1 f.
 >
 > Fondo Tessitori.
 
@@ -947,29 +604,25 @@ In-4°, pp. 531; perg.
 **Segmenti**
 
 - preambolo (senza etichetta) [0–5]: Misc.
-- riferimento «1)» [6–247]: 1) "Sumatīsijjhāya" (in antico gujarātī? in antico mārwāṛī?).
-F. 1 r. Inc.: / Dhā(l) morā demātā kāe daśā / Sumate sadādi(l) madharo /…
-F. 1 v. Expl.: … Iti Śrī […+81 caratteri]
-- riferimento «2)» [248–501]: 2) "Sthūlibhadrsajjhāya" (in antico gujarātī? in antico mārwāṛī?).
-F. 2 r. Inc.: /9/ Imaj patāṃ baj mās / (Sthū)li bhadr…
-F. 2 v. Expl.: … Iti Śrī Sthūlibhadr S […+93 caratteri]
-- riferimento «3)» [502–783]: 3) "Nemsijjhāya" (in antico gujarātī).
-F. 2 v. Inc.: Karm satrugaḍhajātāyā / Pahutā amarbī māṇrā / Saṃ / 23 /
-F. 2 v. Expl.: … Iti Śrī Namjā kā Sijjhāya samāpta […+121 caratteri]
+- riferimento «1)» [6–286]: 1) "Jñānapañcamī stavanaṃ" (in Jaina māhārāṣṭrī?).
+F. 1 r. Inc.: / Paṇmiya pās Jiṇaṃ davaṃ danimma laguṇ dha(ma)raṇ / Paṃc nāṇ saṃ (tha) vaṇ bhaṇi suatrāṇ nivār […+120 caratteri]
+- riferimento «2)» [287–626]: 2) "Gauḍt pārśvanāth vṛddha stavanaṃ" (in antico gujarātī?).
+F. 1 v. Inc.: Im Śrī Gauḍī pāsataṇ guṇ Jenaragāvai tenaranārī ihaparalo gasuṃ vaṃbitpāvaih /…
+F. 1  […+179 caratteri]
 
-### 4412.
+### 4411.
 
 **Testo**
 
-> "Bāramās" (in antico gujarātī? in antico mārwāṛī?).
+> Ciraṃ Govindā copista. "Har ras" (in ardh māgadhī? in Jaina māhārāṣṭrī?).
 >
-> F. 1 r. Inc.: /Ath rāg karah jākī / Sarī(pūr) ratnī yāmṇo re / Yārā samad vījarā jān /…
+> F. 1 r. Inc.: /Ath Har Ras liṣpate dūhā iṇ avsarmat ālase iṃśarasi…
 >
-> F. 15 r. Expl.: … Nemi /5/ Sampūrṇ / Pad rāg jaṃgatā / Sunai nadāye sa(bhā) vapa(dyā) (nā) ho /…
+> F. 9 r. Expl.: … /36/ Iti Śrī Savāsau 125 sīṣ samāptā / Śrī /
 >
-> 15 ff.; mm. 110 x 200; non datato; copista anonimo.
+> 9 ff.; mm. 100 x 240; datato saṃvat/varṣ (1793) 1736.
 >
-> Ultimo v. bianco; tit. scritto sul margine.
+> FF. 2/9 con numerazione originale; f. 1 non numerato; ultimo v. bianco; tit. scritto sul margine.
 >
 > Fondo Tessitori.
 
@@ -977,7 +630,475 @@ F. 2 v. Expl.: … Iti Śrī Namjā kā Sijjhāya samāpta […+121 caratteri]
 
 **Segmenti**
 
-- voce_intera (senza etichetta) [0–349]: "Bāramās" (in antico gujarātī? in antico mārwāṛī?).
-F. 1 r. Inc.: /Ath rāg karah jākī / Sarī(pūr) ratnī yāmṇo re / Yārā samad vījarā jān /…
-F. 15 r. Expl.: … Ne […+189 caratteri]
+- voce_intera (senza etichetta) [0–372]: Ciraṃ Govindā copista. "Har ras" (in ardh māgadhī? in Jaina māhārāṣṭrī?).
+F. 1 r. Inc.: /Ath Har Ras liṣpate dūhā iṇ avsarmat ālase iṃśarasi…
+F. 9 r. Expl.: … / […+212 caratteri]
+
+## 8. Venti voci segmentate estratte a caso (seme 2027)
+
+### 21.
+
+**Testo**
+
+> Dal Colle. Versi. Contenente: L'opuscolo a stampa "l'eremo di S. Giovanni", Spilimbergo Andreola 1830, ed a pag. 9-25 altre poesie colla dedica Gio. Dal Colle ai suoi figli Sebastiano Vittor, Gio. Angelo, Angelo Maria e Antonietta. Dal fol. 25 in poi altri versi dedicati a diversi. Nei tre primi fol. sta una lettera di Pietro… e poi la dedica in versi al Nob. Dottor Perucchini datata da Spilimbergo 30 marzo 1833.
+>
+> Scrittura del sec. XIX, di fol. 97, legato in cartone.
+
+**Coda**: `Cartaceo · 1 vol. · stato: m.` → supporto: Cartaceo; volumi: 1 vol.; stato: m.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–102]: Dal Colle. Versi. Contenente: L'opuscolo a stampa "l'eremo di S. Giovanni", Spilimbergo Andreola 1830,
+- riferimento «pag. 9-25» [103–231]: ed a pag. 9-25 altre poesie colla dedica Gio. Dal Colle ai suoi figli Sebastiano Vittor, Gio. Angelo, Angelo Maria e Antonietta.
+- riferimento «fol. 25» [232–471]: Dal fol. 25 in poi altri versi dedicati a diversi. Nei tre primi fol. sta una lettera di Pietro… e poi la dedica in versi al Nob. Dottor Perucchini datata da Sp […+79 caratteri]
+
+### 289.
+
+**Testo**
+
+> Pironeo Paride. Versi latini ed italiani parte editi e parte inediti. Da pag. 1-162 latini; pag. 163-185 italiani; pag. 186-188 versi latini già stampati. Scrittura del sec. XIX, di pag. complessive 188, legato in cartone. In fine vi ha la nota: «Trascritto dall'autografo esistente presso gli Eredi del Conte Alfonso Belgrado, e diligentemente riscontrato. J. Pirona». Il Pirona era mansionario del Capitolo del Duomo di Udine.
+
+**Coda**: `Cartaceo · 1 vol. · stato: b.` → supporto: Cartaceo; volumi: 1 vol.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–69]: Pironeo Paride. Versi latini ed italiani parte editi e parte inediti.
+- riferimento «pag. 1-162» [70–91]: Da pag. 1-162 latini;
+- riferimento «pag. 163-185» [92–114]: pag. 163-185 italiani;
+- riferimento «pag. 186-188» [115–428]: pag. 186-188 versi latini già stampati. Scrittura del sec. XIX, di pag. complessive 188, legato in cartone. In fine vi ha la nota: «Trascritto dall'autografo es […+153 caratteri]
+
+### 296.
+
+**Testo**
+
+> Dramma per musica, adespota. «Il Conclave». A carte 3 è detto che «la poesia è in gran parte di Pietro Metastasio»; a carte 41 vi ha la supplica a Pio VI, dell'ab. Sertor, in versi, che come presunto autore del dramma fu carcerato e dopo tre mesi rimesso in libertà.
+>
+> Scrittura del sec. XIX, di carte 48, legate in carta.
+
+**Coda**: `Cartaceo · 1 vol. · stato: b.` → supporto: Cartaceo; volumi: 1 vol.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–43]: Dramma per musica, adespota. «Il Conclave».
+- riferimento «carte 3» [44–115]: A carte 3 è detto che «la poesia è in gran parte di Pietro Metastasio»;
+- riferimento «carte 41» [116–320]: a carte 41 vi ha la supplica a Pio VI, dell'ab. Sertor, in versi, che come presunto autore del dramma fu carcerato e dopo tre mesi rimesso in libertà.
+Scrittura […+44 caratteri]
+
+### 385.
+
+**Testo**
+
+> Zorutti Pietro. Raccolta di poesie, contenente: Carte 1-2 la poesia "Gentil signora Anetta / … e così sia"; Udine 31 dicembre 1845; autografo; fol. 3-8 copie di altre poesie dello stesso; fol. 9 e 10, due poesie friulane a stampa intitolate "Pre Tile Miott" e "La gnot d'avril". Scrittura del sec. XIX, di ff. 9 [10] sciolti.
+
+**Coda**: `Cartaceo · stato: b.` → supporto: Cartaceo; volumi: —; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–47]: Zorutti Pietro. Raccolta di poesie, contenente:
+- riferimento «Carte 1-2» [48–142]: Carte 1-2 la poesia "Gentil signora Anetta / … e così sia"; Udine 31 dicembre 1845; autografo;
+- riferimento «fol. 3-8» [143–187]: fol. 3-8 copie di altre poesie dello stesso;
+- riferimento «fol. 9» [188–325]: fol. 9 e 10, due poesie friulane a stampa intitolate "Pre Tile Miott" e "La gnot d'avril". Scrittura del sec. XIX, di ff. 9 [10] sciolti.
+
+### 509.
+
+**Testo**
+
+> Accademia de' Filomazi (desiderosi d'apprendere) e degli Asciti (da adscitos, aggiunti, nel senso forse di aggregati ai Filomazi). Contenente: Fascicolo 1° comprende le carte 1-49, Capitoli costitutivi dell'Accad. dei Filomazi (1788) di Udine in casa de' co. Gallici: discorsi e lettere di varii, cioè: Tommaso Franceschinis; Udine 1788, Giovanni Cortolezis, Fabio Gallici, Carlo Caiselli, Girolamo Caiselli; 1788, Alfonso Belgrado secretario (copia); Udine 1788, fir.° Giuseppe Gallici, Alfonso Belgrado, Steffano Tartagna, Antonio Simonetti, Steffano Sabbatini, Giuseppe Lombardini; 1789, Alfonso Belgrado; carte 39-49, lettera ad un amico "Sul passaggio degli uccelli", del co. Alfonso Belgrado (autografo): le lettere da carte 18 a 49 sono unite.
+>
+> Fasc.° 2°, da carte 50 a 144 contiene: Parte prima, i discorsi accademici e gli esercizii in versi ed in prosa, fino a carte 116: parte seconda, versi del co. Alfonso Belgrado (carte 117-144) autografi.
+>
+> Fasc. 3°. Capitoli dell'Accademia degli Asciti in Udine, fondata il 6 sett. 1789 con Alfonso Belgrado suo secretario, di cui è pure la scrittura (carte 145-147).
+>
+> Scrittura del sec. XVIII di carte complessive 147 in copertina.
+
+**Coda**: `Cartaceo · stato: b.` → supporto: Cartaceo; volumi: —; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–142]: Accademia de' Filomazi (desiderosi d'apprendere) e degli Asciti (da adscitos, aggiunti, nel senso forse di aggregati ai Filomazi). Contenente:
+- riferimento «Fascicolo 1°» [143–953]: Fascicolo 1° comprende le carte 1-49, Capitoli costitutivi dell'Accad. dei Filomazi (1788) di Udine in casa de' co. Gallici: discorsi e lettere di varii, cioè:  […+650 caratteri]
+- riferimento «Fasc. 3°» [954–1179]: Fasc. 3°. Capitoli dell'Accademia degli Asciti in Udine, fondata il 6 sett. 1789 con Alfonso Belgrado suo secretario, di cui è pure la scrittura (carte 145-147) […+65 caratteri]
+
+### 510.
+
+**Testo**
+
+> Accademie scolastiche dei sec. XVIII e XIX. Contenente:
+>
+> Fasc. 1° componimenti scolastici tratti da Virgilio (scuole dei Barnabiti in Udine, scorcio sec. XVIII?): carte 23.
+>
+> Fasc. 2° Composizioni accademiche recitate sotto la direzione del R. P. Sigismondo Mantelli pubblico precettore di rettorica nella città d'Udine l'anno 1779 (scuole dei Barnabiti) con indice generale degli autori a carte 1. Scrittura del sec. XVIII di carte 80, rilegato in cartone.
+>
+> Fasc. 3°, Accademie del Seminario Arciv. di Udine, secolo XIX (precettore D. Pietro Peruzzi): pag. 25 legato in cartone.
+>
+> Fasc. 4° Accademie del "Collegio dei Nobili di Udine" con una nota a carte 1 di Jacopo Pirona, e un folio a stampa (Murero-1783); Carte 4-13, prefazioni accademiche adesp. del sec. XIX; Carte 14-63, composizioni accademiche in versi dei convittori. Scritture di varie mani del sec. XIX, carte complessive 63 numerate e riunite in copertina.
+>
+> Fasc. 5° Accademie del Liceo di Udine, 1821, con note di mano del prof. Jacopo Pirona e componimenti in versi di varii scolari, fra cui G. B. d'Arcano, Francesco Gumirato, Campiutti Pietro, A. Angeli: è unito folio a stampa con saggio di composizioni letterarie e morali degli alunni del R. Liceo di Udine intitolato "Il cimitero". Scritture di varie mani del sec. XIX, di carte compl. 30 riunite in copertina.
+
+**Coda**: `Cartaceo · 5 voll. · stato: b.` → supporto: Cartaceo; volumi: 5 voll.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–55]: Accademie scolastiche dei sec. XVIII e XIX. Contenente:
+- riferimento «Fasc. 1°» [56–171]: Fasc. 1° componimenti scolastici tratti da Virgilio (scuole dei Barnabiti in Udine, scorcio sec. XVIII?): carte 23.
+- riferimento «Fasc. 2°» [172–454]: Fasc. 2° Composizioni accademiche recitate sotto la direzione del R. P. Sigismondo Mantelli pubblico precettore di rettorica nella città d'Udine l'anno 1779 (sc […+122 caratteri]
+- riferimento «Fasc. 3°» [455–575]: Fasc. 3°, Accademie del Seminario Arciv. di Udine, secolo XIX (precettore D. Pietro Peruzzi): pag. 25 legato in cartone.
+- riferimento «Fasc. 4°» [576–916]: Fasc. 4° Accademie del "Collegio dei Nobili di Udine" con una nota a carte 1 di Jacopo Pirona, e un folio a stampa (Murero-1783); Carte 4-13, prefazioni accadem […+180 caratteri]
+- riferimento «Fasc. 5°» [917–1327]: Fasc. 5° Accademie del Liceo di Udine, 1821, con note di mano del prof. Jacopo Pirona e componimenti in versi di varii scolari, fra cui G. B. d'Arcano, Francesc […+250 caratteri]
+
+### 511.
+
+**Testo**
+
+> Accademia Udinese di scienze, lettere ed arti. Contiene:
+>
+> Fasc. I Dissertazione sulla musica, letta nell'Accademia di Udine (Agraria-Aquileiese) prima del 1814 da Leopoldo Zuccolo: carte 1 a 17 in copertina.
+>
+> Fasc. II Memorie accademiche del sec. XIX dell'ab. Giuseppe Bianchi, dott. Antonio Zambaldi, avv. Antonio Lirutti: carte 18 a 75 (alcune adesp. edite ed inedite) cioè: Dei premi dovuti agli eccellenti scrittori italiani (Zambaldi); Degli illustri giureconsulti ed oratori friulani (Liruti 1812), stampata in Udine-Biasutti-1836 (riassunto dell'orazione criminale di Cornelio Frangipane il vecchio pro Matthias Hofer di Duino tenuta in Vienna), carte 38-59, con copia della stessa ed Imprimatur di Pirona Jacopo.
+>
+> Fasc. III Discorsi accademici e note di Giand.° Ciconi, letti nell'Accademia di Udine (1843-1858), da carte 76 a 118. Carte 82-92, discorso intorno al Friuli del dott. Ciconi con note di Giuseppe Sacchi (edito negli Annali di statis. di Milano vol. 76 pag. 129, maggio 1843). Carte 96-117, prolusione di G. D. Ciconi letta il 19 dic. 1858, (due copie). Provenienza dalla Collezione G. D.° Ciconi.
+>
+> Fasc. IV (carte 119-149) lettere varie dirette all'accademia Udinese o ad altri, cioè: 1822, Zecchini pres. dell'Accad. al vesc. Em. Lodi; 1823, lo stesso all'Accad.; 1824, Stratico pres. della statistica al prof. Aprilis (tre lettere); 1824, I. dott. Kohen all'accad. agraria; 1825, Alfonso Franceschinis cano. a Bart. Aprilis; 1825, Francesco Cocconi allo stesso; 1828, Girolamo de  […+538 caratteri]
+
+**Coda**: `Cartaceo · stato: b.` → supporto: Cartaceo; volumi: —; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–56]: Accademia Udinese di scienze, lettere ed arti. Contiene:
+- riferimento «Fasc. I» [57–206]: Fasc. I Dissertazione sulla musica, letta nell'Accademia di Udine (Agraria-Aquileiese) prima del 1814 da Leopoldo Zuccolo: carte 1 a 17 in copertina.
+- riferimento «Fasc. II» [207–718]: Fasc. II Memorie accademiche del sec. XIX dell'ab. Giuseppe Bianchi, dott. Antonio Zambaldi, avv. Antonio Lirutti: carte 18 a 75 (alcune adesp. edite ed inedite […+351 caratteri]
+- riferimento «Fasc. III» [719–1115]: Fasc. III Discorsi accademici e note di Giand.° Ciconi, letti nell'Accademia di Udine (1843-1858), da carte 76 a 118. Carte 82-92, discorso intorno al Friuli de […+236 caratteri]
+- riferimento «Fasc. IV» [1116–1845]: Fasc. IV (carte 119-149) lettere varie dirette all'accademia Udinese o ad altri, cioè: 1822, Zecchini pres. dell'Accad. al vesc. Em. Lodi; 1823, lo stesso all'A […+569 caratteri]
+- riferimento «Fasc. V» [1846–2038]: Fasc. V (carte 150-187) Discorso accademico, 1830 circa, "Stato delle scienze, lettere ed arti nell'Italia durante la dimora de' Longobardi." Monografia adesp.  […+32 caratteri]
+
+### 636.
+
+**Testo**
+
+> Nicoletti (Marco Antonio). Patriarcato d'Aquileja di Raimondo Della Torre, Pietro Gerra ed Ottobono, non leg. sotto copertina. a) Patriarcato di Raimondo della Torre e di Pietro Gerra, rispett. f. 9 e 9, l'ultimo bianco. b) Patriarcato di Ottobono di Padova fasc. 5, i primi quattro di f. 10, l'ultimo di f. scritti 49 e bianchi 9. Formato cm. 30 x 21 Scritt. sec. XVIII.
+
+**Coda**: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–126]: Nicoletti (Marco Antonio). Patriarcato d'Aquileja di Raimondo Della Torre, Pietro Gerra ed Ottobono, non leg. sotto copertina.
+- riferimento «a)» [127–220]: a) Patriarcato di Raimondo della Torre e di Pietro Gerra, rispett. f. 9 e 9, l'ultimo bianco.
+- riferimento «b)» [221–371]: b) Patriarcato di Ottobono di Padova fasc. 5, i primi quattro di f. 10, l'ultimo di f. scritti 49 e bianchi 9. Formato cm. 30 x 21 Scritt. sec. XVIII.
+
+### 681.
+
+**Testo**
+
+> Valvasone, Passerino, Monticoli (ed altri autori). Storie, cronache, aneddoti. Ms. di M. A. Montegnacco 1769. Contiene: a) Valvasone di Maniago (Jacopo), Li successi nella Patria del Friuli, da pag. 1 a pag. 25. b) Valvasone di Maniago (Giacomo), Altro discorso d'intorno la Città d'Udine (1566), pag. 26 a 30. c) Passerino (Pietro), Brevissimo compendio di tutte le famiglie notabili della Città d'Udine, a guisa di Cronichetta annotata, etc. da pag. 31 a 36. d) Di Montegnacco (Marco Antonio), Cronaca aneddota dal 1729 al 1789, da pag. 37 a 41. e) Nomina Patriarcharum, copia cavata dal Tesoro di Aquileja, da pag. 42 a 46. f) Praecipui ministeriales Ecclesiae Aquilejensis, da pag. 57 a 59 (i fogli interm. bianchi). g) Diplomata de familia Monteniaca, da perg. dell'archivio domestico, da pag. 60 a 70. h) Monticoli (Niccolò), Cronaca delle famiglie di Udine, da pag. 71 a 160. i) Di Montegnacco (Antonio), Copia di diploma del 1570 (tre facciate). Leg. in cart. cm. 21 x 31.
+
+**Coda**: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–119]: Valvasone, Passerino, Monticoli (ed altri autori). Storie, cronache, aneddoti. Ms. di M. A. Montegnacco 1769. Contiene:
+- riferimento «a)» [120–211]: a) Valvasone di Maniago (Jacopo), Li successi nella Patria del Friuli, da pag. 1 a pag. 25.
+- riferimento «b)» [212–310]: b) Valvasone di Maniago (Giacomo), Altro discorso d'intorno la Città d'Udine (1566), pag. 26 a 30.
+- riferimento «c)» [311–460]: c) Passerino (Pietro), Brevissimo compendio di tutte le famiglie notabili della Città d'Udine, a guisa di Cronichetta annotata, etc. da pag. 31 a 36.
+- riferimento «d)» [461–547]: d) Di Montegnacco (Marco Antonio), Cronaca aneddota dal 1729 al 1789, da pag. 37 a 41.
+- riferimento «e)» [548–626]: e) Nomina Patriarcharum, copia cavata dal Tesoro di Aquileja, da pag. 42 a 46.
+- riferimento «f)» [627–720]: f) Praecipui ministeriales Ecclesiae Aquilejensis, da pag. 57 a 59 (i fogli interm. bianchi).
+- riferimento «g)» [721–807]: g) Diplomata de familia Monteniaca, da perg. dell'archivio domestico, da pag. 60 a 70.
+- riferimento «h)» [808–882]: h) Monticoli (Niccolò), Cronaca delle famiglie di Udine, da pag. 71 a 160.
+- riferimento «i)» [883–980]: i) Di Montegnacco (Antonio), Copia di diploma del 1570 (tre facciate). Leg. in cart. cm. 21 x 31.
+
+### 825.
+
+**Testo**
+
+> Miscellanea di cose storiche friulane. Volume di cm. 22 x 31, copert. di cartone, fogli numerati e scritti 154 (= facc. 307). Contiene: I) Vita del B. Simone Martire da Trento, copia tratta da un libro di Fr. Jacopo dell'Ordine degli Agostiniani, 1347 (excerpta). II) Notizie sul B. Odorico da Pordenone (id., dal med. libro). III) Rimedio contro la peste. IV) Donazione dei dazi (1348) alla Città di Udine. V) Lettere al Comune di Marano (1350) ed al Capitano di Flambro (1350). Seguono altre lettere della Co.ssa Caterina di Gorizia (1362). Deliberazioni del Consiglio di Udine, ducali, salvocondotti, memorie diverse fino al 1682. VI) Dell'uso antivenereo del tabacco (tratto dalla vita del P. Giuseppe di Copertino. VII) Supplica del C.te Lucio della Torre all'Ecc.mo Consiglio dei X. VIII) Magistrati e cariche di Terraferma, 1663. IX) Memoria ai posteri del C.te Lucio della Torre. X) Cronica di casate antiche di Udine (Monticoli). XI) L'anno meraviglioso 1748. XII) Discorso dell'Ambasciatore dello Stato ecclesiastico al Conclave per la sede vacante di Clemento XII. XIII) Compendio del Vecchio e Nuovo Testamento. XIV) Ville sottoposte alla giurisdizione del Cap.lo di Aquileja. XV) Indulgenze, rosari e corone di S.ta Brigida. XVI) Id. di S. Francesco d'Assisi. XVII) Descrizione di Aquileja. XVIII) Descrizione della Regata di Venezia. XIX) Per la nobiltà di Udine. Decreto del L.te, 1751. XX) Aggiustamento per Aquileja, 1751. XXI) Miracoli di S. Antonio di Padova, da un libro stamp. ne […+427 caratteri]
+
+**Coda**: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–135]: Miscellanea di cose storiche friulane. Volume di cm. 22 x 31, copert. di cartone, fogli numerati e scritti 154 (= facc. 307). Contiene:
+- riferimento «I)» [136–263]: I) Vita del B. Simone Martire da Trento, copia tratta da un libro di Fr. Jacopo dell'Ordine degli Agostiniani, 1347 (excerpta).
+- riferimento «II)» [264–326]: II) Notizie sul B. Odorico da Pordenone (id., dal med. libro).
+- riferimento «III)» [327–356]: III) Rimedio contro la peste.
+- riferimento «IV)» [357–407]: IV) Donazione dei dazi (1348) alla Città di Udine.
+- riferimento «V)» [408–633]: V) Lettere al Comune di Marano (1350) ed al Capitano di Flambro (1350). Seguono altre lettere della Co.ssa Caterina di Gorizia (1362). Deliberazioni del Consigl […+65 caratteri]
+- riferimento «VI)» [634–719]: VI) Dell'uso antivenereo del tabacco (tratto dalla vita del P. Giuseppe di Copertino.
+- riferimento «VII)» [720–788]: VII) Supplica del C.te Lucio della Torre all'Ecc.mo Consiglio dei X.
+- riferimento «VIII)» [789–836]: VIII) Magistrati e cariche di Terraferma, 1663.
+- riferimento «IX)» [837–887]: IX) Memoria ai posteri del C.te Lucio della Torre.
+- riferimento «X)» [888–938]: X) Cronica di casate antiche di Udine (Monticoli).
+- riferimento «XI)» [939–968]: XI) L'anno meraviglioso 1748.
+- riferimento «XII)» [969–1075]: XII) Discorso dell'Ambasciatore dello Stato ecclesiastico al Conclave per la sede vacante di Clemento XII.
+- riferimento «XIII)» [1076–1123]: XIII) Compendio del Vecchio e Nuovo Testamento.
+- riferimento «XIV)» [1124–1188]: XIV) Ville sottoposte alla giurisdizione del Cap.lo di Aquileja.
+- riferimento «XV)» [1189–1237]: XV) Indulgenze, rosari e corone di S.ta Brigida.
+- riferimento «XVI)» [1238–1272]: XVI) Id. di S. Francesco d'Assisi.
+- riferimento «XVII)» [1273–1303]: XVII) Descrizione di Aquileja.
+- riferimento «XVIII)» [1304–1347]: XVIII) Descrizione della Regata di Venezia.
+- riferimento «XIX)» [1348–1401]: XIX) Per la nobiltà di Udine. Decreto del L.te, 1751.
+- riferimento «XX)» [1402–1439]: XX) Aggiustamento per Aquileja, 1751.
+- riferimento «XXI)» [1440–1507]: XXI) Miracoli di S. Antonio di Padova, da un libro stamp. nel 1748.
+- riferimento «XXII)» [1508–1927]: XXII) Segue nel volume sotto questo numero l'indice delle lettere e documenti qui indicati sommariamente al n. V. Zibaldone scritto verso la fine del sec. XVIII […+259 caratteri]
+
+### 878.
+
+**Testo**
+
+> Cronache friulane e nobili del Friuli. Cartolare contenente: 1° Cronaca di Vincenzo Giusti del 1678 delle famiglie nobili di Udine, per alfabeto; 2° Cronaca di Nicolò Monticoli delle famiglie nobili di Udine con notizie sulla loro origine meno schematiche di quelle della cronaca Giusti; 3° Altra copia delle Cronaca Monticoli; 4° Altra copia della medesima: questa l'originale autografo [errato: la scrittura è posteriore]; 5° Libro d'oro: è un grosso fascicolo contenente in copia le cronache di N. Monticoli, di V. Giusti con le giunte di M. A. Clapiceo, di U. Ugolini e di P. Passerini, e con l'indice e le copie d'una deliberazione del Consiglio del 25 aprile 1518; 6° Grosso volume contenente la storia della vertenza con cui Udine rivendica alla propria nobiltà il titolo per entrare nell'Ordine dei cavalieri di Malta, corredata di tutte le scritture e memorie difensive e storiche (1740-1750): erano proprietà del canonico Ant. Montegnacco, e furono raccolte da G. D. Ciconi; 7° Documenti delle famiglie Rubeis di Gorisizza, coll'albero genealogico; 8° Elenco dei nobili della provincia di Udine (1841); 9° Altro elenco più antico delle medesime; 10° Terzo elenco numerale delle stesse.
+
+**Coda**: `Cartaceo · 1 vol. in 10 numeri · stato: b.` → supporto: Cartaceo; volumi: 1 vol. in 10 numeri; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–60]: Cronache friulane e nobili del Friuli. Cartolare contenente:
+- riferimento «1°» [61–145]: 1° Cronaca di Vincenzo Giusti del 1678 delle famiglie nobili di Udine, per alfabeto;
+- riferimento «2°» [146–287]: 2° Cronaca di Nicolò Monticoli delle famiglie nobili di Udine con notizie sulla loro origine meno schematiche di quelle della cronaca Giusti;
+- riferimento «3°» [288–327]: 3° Altra copia delle Cronaca Monticoli;
+- riferimento «4°» [328–424]: 4° Altra copia della medesima: questa l'originale autografo [errato: la scrittura è posteriore];
+- riferimento «5°» [425–670]: 5° Libro d'oro: è un grosso fascicolo contenente in copia le cronache di N. Monticoli, di V. Giusti con le giunte di M. A. Clapiceo, di U. Ugolini e di P. Passe […+85 caratteri]
+- riferimento «6°» [671–984]: 6° Grosso volume contenente la storia della vertenza con cui Udine rivendica alla propria nobiltà il titolo per entrare nell'Ordine dei cavalieri di Malta, corr […+153 caratteri]
+- riferimento «7°» [985–1058]: 7° Documenti delle famiglie Rubeis di Gorisizza, coll'albero genealogico;
+- riferimento «8°» [1059–1112]: 8° Elenco dei nobili della provincia di Udine (1841);
+- riferimento «9°» [1113–1155]: 9° Altro elenco più antico delle medesime;
+- riferimento «10°» [1156–1195]: 10° Terzo elenco numerale delle stesse.
+
+### 967.
+
+**Testo**
+
+> Friuli: Atti della contadinanza. Cartolare che contiene: 1° fascicolo di vari atti riguardanti la contadinanza, le sue contribuzioni di carreggi, pel governo delle acque, per il riattamento delle fortezze, per la condotta delle cernide, per i contagi, per l'elezione dei suoi sindaci e dei suoi protettori, per le regalie di legna che solevansi pagare agli ex luogotenenti del governo veneto (1444-1801); 2° Sei ducali ai luogotenenti, in pergamena, riguardanti 5 processi criminali, e 1 concessione di limitazione di dazio del pestrino alla contadinanza; 3° Atti di un processo dei Savorgnan contro la contadinanza (1515-1691); 4° grosso pacco di carte raccolte senz'ordine riferibili nella massima parte a questioni della contadinanza (1558-1750).
+
+**Coda**: `Cartaceo · 1 vol. in 4 num. · stato: b.` → supporto: Cartaceo; volumi: 1 vol. in 4 num.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–56]: Friuli: Atti della contadinanza. Cartolare che contiene:
+- riferimento «1°» [57–404]: 1° fascicolo di vari atti riguardanti la contadinanza, le sue contribuzioni di carreggi, pel governo delle acque, per il riattamento delle fortezze, per la cond […+187 caratteri]
+- riferimento «2°» [405–555]: 2° Sei ducali ai luogotenenti, in pergamena, riguardanti 5 processi criminali, e 1 concessione di limitazione di dazio del pestrino alla contadinanza;
+- riferimento «3°» [556–628]: 3° Atti di un processo dei Savorgnan contro la contadinanza (1515-1691);
+- riferimento «4°» [629–749]: 4° grosso pacco di carte raccolte senz'ordine riferibili nella massima parte a questioni della contadinanza (1558-1750).
+
+### 985.
+
+**Testo**
+
+> Atti dei deputati della Patria. Sono 4 volumi, tre rilegati in carta pecora, il 2° in cartone, di formato differente l'uno dall'altro, ma identici per il contenuto. Il 1° va dal 1638 al 1672, il 2° dal 1650 al 1704, il 3° dal 1670 al 1730, il 4° dal 1780 al 1799. Contengono atti e deliberazioni del Parlamento di ogni genere ed argomento, fedi, decreti, questioni tra la nobiltà e il clero e la città ecc.
+
+**Coda**: `Cartaceo · 4 voll. · stato: b.` → supporto: Cartaceo; volumi: 4 voll.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–76]: Atti dei deputati della Patria. Sono 4 volumi, tre rilegati in carta pecora,
+- riferimento «2°» [77–164]: il 2° in cartone, di formato differente l'uno dall'altro, ma identici per il contenuto.
+- riferimento «1°» [165–191]: Il 1° va dal 1638 al 1672,
+- riferimento «2°» [192–215]: il 2° dal 1650 al 1704,
+- riferimento «3°» [216–239]: il 3° dal 1670 al 1730,
+- riferimento «4°» [240–406]: il 4° dal 1780 al 1799. Contengono atti e deliberazioni del Parlamento di ogni genere ed argomento, fedi, decreti, questioni tra la nobiltà e il clero e la citt […+6 caratteri]
+
+### 1198.
+
+**Testo**
+
+> Cartolare contenente varie cose: 1° un fascicolo comprendente un discorso in friulano di G. P. De Domini; un altro sulla dilezion dei nemici, in friulano; due prediche in friulano; un dialogo in versi, e una breve istruzione sacramentale; 2° un dialogo in 114 sestine di Pietro Tamburini; 3° un fascicoletto di orazioni latine con copertina in pergamena (1813); 4° un altro fascicoletto simile di S. D'Apollonia; 5° un fascicoletto contenente una predica in friulano; 6° un'orazione in morte di Maria Lodovica (1816); 7° un'orazione del p. Girolamo Tornielli (1750); 8° pochi fogli d'un codice membranaceo del Breviario romano del secolo 15°; 9° un trattatello sulla cognizione di se stesso, fascicolo slegato, senza numerazione di pagine nè nome d'autore, nè data; 10° Rotulo delli affitti della Vergine intemerata del Sasso in Plebe Invilini, del secolo XVI, codicetto di 16 carte in pergamena, di cui però mancano le 7-12, rilegato in cuoio, di 21½ x 15, malandato; 11° Inni sacri pro ecclesie Glemonae (1489), di 20 pagine in pergamena, di 23 x 16, con copertina di carta semplice; 12° Lettere del sig. di S. Andrè (1725) medico del re, in 60 pagine, cui segue un altro fascicolo di pagine 76 sulla Falsità delle virtù umane di M. Esprit (1692), riuniti sotto una copertina di cartone; 13° Variae metaphysicae generalis quaestiones di Giacomo Bini di Bertiolo (1772), fascicolo con pagine non numerate con copertina di cuoio nero lavorato; 14° Vita di Dorotea Bojani di Fr. Giusti (1776), fascico […+676 caratteri]
+
+**Coda**: `Cartaceo e pergam. · 1 in 18 num.` → supporto: Cartaceo e pergam.; volumi: 1 in 18 num.; stato: —; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–32]: Cartolare contenente varie cose:
+- riferimento «1°» [33–238]: 1° un fascicolo comprendente un discorso in friulano di G. P. De Domini; un altro sulla dilezion dei nemici, in friulano; due prediche in friulano; un dialogo i […+45 caratteri]
+- riferimento «2°» [239–288]: 2° un dialogo in 114 sestine di Pietro Tamburini;
+- riferimento «3°» [289–361]: 3° un fascicoletto di orazioni latine con copertina in pergamena (1813);
+- riferimento «4°» [362–412]: 4° un altro fascicoletto simile di S. D'Apollonia;
+- riferimento «5°» [413–467]: 5° un fascicoletto contenente una predica in friulano;
+- riferimento «6°» [468–517]: 6° un'orazione in morte di Maria Lodovica (1816);
+- riferimento «7°» [518–566]: 7° un'orazione del p. Girolamo Tornielli (1750);
+- riferimento «8°» [567–642]: 8° pochi fogli d'un codice membranaceo del Breviario romano del secolo 15°;
+- riferimento «9°» [643–765]: 9° un trattatello sulla cognizione di se stesso, fascicolo slegato, senza numerazione di pagine nè nome d'autore, nè data;
+- riferimento «10°» [766–968]: 10° Rotulo delli affitti della Vergine intemerata del Sasso in Plebe Invilini, del secolo XVI, codicetto di 16 carte in pergamena, di cui però mancano le 7-12,  […+42 caratteri]
+- riferimento «11°» [969–1085]: 11° Inni sacri pro ecclesie Glemonae (1489), di 20 pagine in pergamena, di 23 x 16, con copertina di carta semplice;
+- riferimento «12°» [1086–1289]: 12° Lettere del sig. di S. Andrè (1725) medico del re, in 60 pagine, cui segue un altro fascicolo di pagine 76 sulla Falsità delle virtù umane di M. Esprit (169 […+43 caratteri]
+- riferimento «13°» [1290–1443]: 13° Variae metaphysicae generalis quaestiones di Giacomo Bini di Bertiolo (1772), fascicolo con pagine non numerate con copertina di cuoio nero lavorato;
+- riferimento «14°» [1444–1547]: 14° Vita di Dorotea Bojani di Fr. Giusti (1776), fascicolo rilegato in cartone, di pagine non numerate;
+- riferimento «15°» [1548–1714]: 15° Frammento di Breviario aquileiese del secolo 15° di 55 fogli in pergamena, tutti staccati l'un dall'altro, di 23 o 25 x 16 o 17½, con copertina di cartone g […+6 caratteri]
+- riferimento «16°» [1715–1835]: 16° Frammenti di lezioni di Ermeneutica e di Filosofia, in latino, del secolo 18°, divisi in 2 fascicoli, ma incompleti;
+- riferimento «17°» [1836–1914]: 17° Frammenti di lezioni di filosofia, in latino, senza nome d'autore nè data;
+- riferimento «18°» [1915–2016]: 18° Fr. Trento: lettera sulla preparazione alla morte, opuscoletto di 70 pagine, già stampato (1786);
+- riferimento «19°» [2017–2176]: 19° Canzone francese «Jeu doit amours…» con musica (pergamena tolta dalla copertina di un quaderno del 1535. Arch. Florio 290); pubblicata da P. L. Petrobelli.
+
+### 1473.
+
+**Testo**
+
+> Protocolli di Eusebio da Romagnano, cancelliere patriarcale. Due volumi rilegati in cartone, di 25½ x 17 (anni 1330-35) e di 32½ x 23½ (anni 1318-33), il 1° di 78 carte, il 2° di 45, alquanto guasto.
+
+**Coda**: `Cartaceo · 2 vol. · stato: m.` → supporto: Cartaceo; volumi: 2 vol.; stato: m.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–150]: Protocolli di Eusebio da Romagnano, cancelliere patriarcale. Due volumi rilegati in cartone, di 25½ x 17 (anni 1330-35) e di 32½ x 23½ (anni 1318-33),
+- riferimento «1°» [151–169]: il 1° di 78 carte,
+- riferimento «2°» [170–199]: il 2° di 45, alquanto guasto.
+
+### 1504.
+
+**Testo**
+
+> Brumati ab. Leonardo: Manoscritti e corrispondenza. Cartolare contenente: 1° grosso fascicolo di lettere a lui dirette, disposte per ordine alfabetico; 2° studi sulle malattie della vite (1851-54); 3° Studi vari d'agronomia; 4° Delle risaie nel territorio di Monfalcone e delle loro malattie; 5° Note sui fossili di Lussin grande (1839); 6° Catalogo sistematico delle piante state osservate in Friuli sino al 1845; 7° Nomenclatura delle 4 classi degli animali vertebrati del paese (1843); 8° Abbozzi, note e memorie per un nomenclatore fitologico.
+
+**Coda**: `Cartaceo · 1 vol. in 8 num. · stato: b.` → supporto: Cartaceo; volumi: 1 vol. in 8 num.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–73]: Brumati ab. Leonardo: Manoscritti e corrispondenza. Cartolare contenente:
+- riferimento «1°» [74–151]: 1° grosso fascicolo di lettere a lui dirette, disposte per ordine alfabetico;
+- riferimento «2°» [152–197]: 2° studi sulle malattie della vite (1851-54);
+- riferimento «3°» [198–224]: 3° Studi vari d'agronomia;
+- riferimento «4°» [225–292]: 4° Delle risaie nel territorio di Monfalcone e delle loro malattie;
+- riferimento «5°» [293–337]: 5° Note sui fossili di Lussin grande (1839);
+- riferimento «6°» [338–414]: 6° Catalogo sistematico delle piante state osservate in Friuli sino al 1845;
+- riferimento «7°» [415–488]: 7° Nomenclatura delle 4 classi degli animali vertebrati del paese (1843);
+- riferimento «8°» [489–547]: 8° Abbozzi, note e memorie per un nomenclatore fitologico.
+
+### 1562.
+
+**Testo**
+
+> Al. Wolf: Cartolare contenente 7 fascicoli comprendenti: 1° docenti e scolari friulani all'Università di Padova; 2° Nomi di uomini e donne di Aquileia, Concordia, Cividale e Giulio carnico; 3° Studi e note sul Friuli romano e preromano; 4° Patti fra Cividale e Venezia; atti del capitolo cividalese e iscrizioni del palazzo pubblico di Cividale; 5° Pievi di Aquileia, Cividale, Concordia, Cadore, Tolmezzo, Tarcento, Travesio; 6° Regesti d'Istria, Trieste e Marca Trivigiana; 7° Documenti di beni allodiali in pertinenze di Osoppo.
+
+**Coda**: `Cartaceo · 1 vol. in 7 fasc.` → supporto: Cartaceo; volumi: 1 vol. in 7 fasc.; stato: —; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–56]: Al. Wolf: Cartolare contenente 7 fascicoli comprendenti:
+- riferimento «1°» [57–112]: 1° docenti e scolari friulani all'Università di Padova;
+- riferimento «2°» [113–189]: 2° Nomi di uomini e donne di Aquileia, Concordia, Cividale e Giulio carnico;
+- riferimento «3°» [190–236]: 3° Studi e note sul Friuli romano e preromano;
+- riferimento «4°» [237–345]: 4° Patti fra Cividale e Venezia; atti del capitolo cividalese e iscrizioni del palazzo pubblico di Cividale;
+- riferimento «5°» [346–426]: 5° Pievi di Aquileia, Cividale, Concordia, Cadore, Tolmezzo, Tarcento, Travesio;
+- riferimento «6°» [427–475]: 6° Regesti d'Istria, Trieste e Marca Trivigiana;
+- riferimento «7°» [476–531]: 7° Documenti di beni allodiali in pertinenze di Osoppo.
+
+### 2637/2.
+
+**Testo**
+
+> a) Görki, Maksim. Zascebrina (versione di P. Loschi, 1902).
+>
+> b) Sienkiewicz, H. Schizzo letterario di Carlo Meuth (1900).
+>
+> c) Sulla questione della convenzione letteraria.
+>
+> (Versioni dal russo).
+
+**Coda**: —
+
+**Segmenti**
+
+- riferimento «a)» [0–59]: a) Görki, Maksim. Zascebrina (versione di P. Loschi, 1902).
+- riferimento «b)» [60–120]: b) Sienkiewicz, H. Schizzo letterario di Carlo Meuth (1900).
+- riferimento «c)» [121–191]: c) Sulla questione della convenzione letteraria.
+(Versioni dal russo).
+
+### 4104.
+
+**Testo**
+
+> Percoto, Caterina. Manoscritti e produzioni varie. Una cartella con 18 fascicoli comprendenti:
+>
+> 1) Poesie di vari autori in copia (cc. 67).
+>
+> 2) Traduzioni friul. della novella IX della I giornata del Boccaccio.
+>
+> 3) Descrizioni (26 pp.).
+>
+> 4) Minute di lettere e di prefazioni (9 pezzi).
+>
+> 5) Agricoltura (pp. 16 + 1 frammento e pp. 3).
+>
+> 6) Corrispondenza riguardante Giulia Petrejo 1880-81 (n. 14 pezzi).
+>
+> 7) Ispettorato agli educandati veneti (n. 64 pezzi).
+>
+> 8) Il giornale di mia zia (fasc. di pp. 72).
+>
+> 9) Note ascetiche (pp. 13).
+>
+> 10) Scelta di voci tolte dai classici (cc. 16).
+>
+> 11) Articolo su C. P. in "Civiltà Cattolica" a. IX, n. 209 trascritto da C. P. (pp. 4).
+>
+> 12) Maffei (pp. 3).
+>
+> 13) Pensieri (cc. 41).
+>
+> 14) Giornale 16.12.1852 (pp. 6). 1.I-13.I.1853 (pp. 9). 1879 (pp. 29).
+>
+> 15) Miscellanea di appunti, conti, note di contratti editoriali ecc. (n. 147 pezzi).
+>
+> 16) Dalla Bibbia a) Ruth (pp. 26); b) Genesi Capo XXIV (pp. 32); c) Parole del Signore… (pp. 21).
+>
+> 17) Note linguistiche in friul. (cc. 63 + 14).
+>
+> 18) a) Della vita e degli studi di Klopstok (47 pp.); b) Giudizio di Abbadona (pp. 11); c) Dalla Messiade c. XIV (cc. 41); d) Traduz. da Klopstok (pp. 13 + 3 fogli sciolti).
+
+**Coda**: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–94]: Percoto, Caterina. Manoscritti e produzioni varie. Una cartella con 18 fascicoli comprendenti:
+- riferimento «1)» [95–138]: 1) Poesie di vari autori in copia (cc. 67).
+- riferimento «2)» [139–208]: 2) Traduzioni friul. della novella IX della I giornata del Boccaccio.
+- riferimento «3)» [209–233]: 3) Descrizioni (26 pp.).
+- riferimento «4)» [234–281]: 4) Minute di lettere e di prefazioni (9 pezzi).
+- riferimento «5)» [282–328]: 5) Agricoltura (pp. 16 + 1 frammento e pp. 3).
+- riferimento «6)» [329–396]: 6) Corrispondenza riguardante Giulia Petrejo 1880-81 (n. 14 pezzi).
+- riferimento «7)» [397–449]: 7) Ispettorato agli educandati veneti (n. 64 pezzi).
+- riferimento «8)» [450–494]: 8) Il giornale di mia zia (fasc. di pp. 72).
+- riferimento «9)» [495–522]: 9) Note ascetiche (pp. 13).
+- riferimento «10)» [523–570]: 10) Scelta di voci tolte dai classici (cc. 16).
+- riferimento «11)» [571–658]: 11) Articolo su C. P. in "Civiltà Cattolica" a. IX, n. 209 trascritto da C. P. (pp. 4).
+- riferimento «12)» [659–678]: 12) Maffei (pp. 3).
+- riferimento «13)» [679–701]: 13) Pensieri (cc. 41).
+- riferimento «14)» [702–772]: 14) Giornale 16.12.1852 (pp. 6). 1.I-13.I.1853 (pp. 9). 1879 (pp. 29).
+- riferimento «15)» [773–857]: 15) Miscellanea di appunti, conti, note di contratti editoriali ecc. (n. 147 pezzi).
+- riferimento «16)» [858–955]: 16) Dalla Bibbia a) Ruth (pp. 26); b) Genesi Capo XXIV (pp. 32); c) Parole del Signore… (pp. 21).
+- riferimento «17)» [956–1002]: 17) Note linguistiche in friul. (cc. 63 + 14).
+- riferimento «18)» [1003–1176]: 18) a) Della vita e degli studi di Klopstok (47 pp.); b) Giudizio di Abbadona (pp. 11); c) Dalla Messiade c. XIV (cc. 41); d) Traduz. da Klopstok (pp. 13 + 3 fo […+13 caratteri]
+
+### 4518.
+
+**Testo**
+
+> Nievo, Ippolito. Lettere e biglietto da visita.
+>
+> Cart., XIX sec. (1848-1860), 7 pezzi:
+>
+> 1) Lettera ad Attilio Magri, Sabbioneta, 29 agosto [1848]; 2 c. (1 foglio con funzione di busta), mm 228 x 178. A c. 2v due timbri postali: a inchiostro rosso «Sabbioneta 30 ago.», a inchiostro nero «S. Benedetto 1 set.»; tracce di ceralacca rossa di chiusura.
+>
+> 2) Lettera ad Attilio Magri, s.l., [1850?]; 2 c. (1 foglio con funzione di busta), mm 251 x 135. Carta con marca a secco: quadrato con croce e ?; ceralacca rossa di chiusura.
+>
+> 3) Lettera ad Attilio Magri, Milano, 1 [gennaio] 1858; 2 c. (1 foglio con funzione di busta), c. 1 mm 202 x 118, c. 2 mm 202 x 136. Ceralacca nera di chiusura.
+>
+> 4) Lettera a [Maria Della Chiave] de Rubeis, [Milano], 21 [gennaio] 1860; 2 c. (1 foglio con funzione di busta), mm 228 x 145. A c. 1r: «di casa».
+>
+> 5) Biglietto da visita, mm 82 x 47.
+>
+> 6) Lettera a Cesare [Calabi], Colloredo [di Monte Albano], 11 novembre 1856; 2 c. (1 foglio), mm 213 x 135.
+>
+> 7) Lettera a Cesare [Calabi], Regoledo [di Cosio Valtellino], 8 ottobre 1858; 2 c. (1 foglio), mm 208 x 138.
+
+**Coda**: `Provenienza: nn. 1-5 Dono di Giovanni Comelli, dicembre 2003; nn. 6-7 Acquisto, 2020.` → supporto: —; volumi: —; stato: —; provenienza: nn. 1-5 Dono di Giovanni Comelli, dicembre 2003; nn. 6-7 Acquisto, 2020.
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–85]: Nievo, Ippolito. Lettere e biglietto da visita.
+Cart., XIX sec. (1848-1860), 7 pezzi:
+- riferimento «1)» [86–346]: 1) Lettera ad Attilio Magri, Sabbioneta, 29 agosto [1848]; 2 c. (1 foglio con funzione di busta), mm 228 x 178. A c. 2v due timbri postali: a inchiostro rosso « […+100 caratteri]
+- riferimento «2)» [347–521]: 2) Lettera ad Attilio Magri, s.l., [1850?]; 2 c. (1 foglio con funzione di busta), mm 251 x 135. Carta con marca a secco: quadrato con croce e ?; ceralacca ross […+14 caratteri]
+- riferimento «3)» [522–681]: 3) Lettera ad Attilio Magri, Milano, 1 [gennaio] 1858; 2 c. (1 foglio con funzione di busta), c. 1 mm 202 x 118, c. 2 mm 202 x 136. Ceralacca nera di chiusura.
+- riferimento «4)» [682–828]: 4) Lettera a [Maria Della Chiave] de Rubeis, [Milano], 21 [gennaio] 1860; 2 c. (1 foglio con funzione di busta), mm 228 x 145. A c. 1r: «di casa».
+- riferimento «5)» [829–864]: 5) Biglietto da visita, mm 82 x 47.
+- riferimento «6)» [865–972]: 6) Lettera a Cesare [Calabi], Colloredo [di Monte Albano], 11 novembre 1856; 2 c. (1 foglio), mm 213 x 135.
+- riferimento «7)» [973–1081]: 7) Lettera a Cesare [Calabi], Regoledo [di Cosio Valtellino], 8 ottobre 1858; 2 c. (1 foglio), mm 208 x 138.
 

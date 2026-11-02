@@ -47,3 +47,10 @@ Decisioni confermate dal curatore:
 - Elenchi alfabetici dichiarati in `segmenta.py` (2134, 525): il nome fa da etichetta.
 - Preambolo e chiusura sono segmenti senza etichetta, di tipo distinto da `voce_intera`.
 - Le annotazioni sul cambio di mano e sui catalogatori (es. dopo la voce 1596-bis) riguardano l'indice, non la voce: `annotazioni.sede = 'indice'`, `voce` vuota.
+- Intestazioni di sezione: valgono come sezione solo se chiuse da una riga «Fine …» («Fine Archivio Manzano», «Fine sezione «Archivio della Porta»», «Fine Archivio Braida»); «Letteratura storica Friulana» non ha fine e non si propaga.
+- «Omissione del n.° 3078: numero omesso.» diventa la voce 3078 (`tipo_numero = omesso`), con il testo intatto.
+- Code intermedie (2691, 3790): la coda riguarda il testo che la precede; il testo successivo resta testo della voce.
+- Segmentazione per livelli: fascicoli > numeri romani > elenchi numerati (1°, 1), 1.) > lettere > N. > carte/pagine. Le carte/pagine contano solo se non c'è una suddivisione più alta (es. 24: valgono 1°…10°, le pagine indicano solo la posizione).
+- Esclusi: anni, formati («in-8°», «16°, pp. 8»), ordinali aggettivi («1° foglio», «del 1° libro»), consistenze («carte 21 legate», «FF. 2/9»), riferimenti isolati.
+- Rinvii in coda o tra parentesi («…, carte 3-23;», «(carte 1-18)») aprono segmenti se sono almeno due.
+- Voci a suddivisione discorsiva non riducibile a regole: `dati/segmentazioni_manuali.json` (5, 56, 1006, 1250), modificabile dal curatore.
