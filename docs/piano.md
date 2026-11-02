@@ -5,8 +5,8 @@ Obiettivo: nome (in qualsiasi grafia) → tutte le sue varianti → tutti i punt
 | Fase | Contenuto | Stato |
 |---|---|---|
 | 0 | Struttura del repository, `CLAUDE.md`, `docs/piano.md`, sorgente in `sorgenti/` | da fare |
-| 1 | Parsing delle voci (testo, coda, annotazioni, numeri anomali) | da fare |
-| 2 | Segmentazione interna con i soli riferimenti originali | da fare |
+| 1 | Parsing delle voci (testo, coda, annotazioni, numeri anomali) | fatto, da verificare sul report |
+| 2 | Segmentazione interna con i soli riferimenti originali | fatto, da verificare sul report |
 | 3 | Estrazione delle menzioni di persone e luoghi, con posizione | da fare |
 | 4 | Raggruppamento delle varianti in entità (proposte) | da fare |
 | 5 | Arricchimento da fonti esterne: forma d'intestazione e varianti note | da fare |
@@ -33,3 +33,17 @@ Pagina semplice per confermare o scartare raggruppamenti e collegamenti, ordinat
 
 ## Fase 7 — Ricerca
 L'utente digita una grafia qualsiasi; la ricerca passa per normalizzazione + varianti e restituisce l'elenco dei punti (numero di voce, etichetta del segmento, testo del segmento con il nome evidenziato).
+
+## Esecuzione (fasi 1 e 2)
+```
+python3 script/parser.py     # crea dati/inventario.sqlite (voci, annotazioni)
+python3 script/segmenta.py   # popola la tabella segmenti
+python3 script/report.py     # scrive report/report_fasi_1_2.md
+```
+Decisioni confermate dal curatore:
+- `voci.testo` esclude coda e annotazioni; `voci.testo_integrale` conserva tutto; ogni annotazione registra la posizione.
+- Valgono come coda anche «Provenienza: …» e il supporto isolato («Cartaceo»).
+- Riferimenti ammessi oltre a quelli elencati: folio, foglio, f., ff., cc., elenchi «1)», «1.», «A)», «A.2)», «E bis)», solo a inizio proposizione e in sequenza.
+- Elenchi alfabetici dichiarati in `segmenta.py` (2134, 525): il nome fa da etichetta.
+- Preambolo e chiusura sono segmenti senza etichetta, di tipo distinto da `voce_intera`.
+- Le annotazioni sul cambio di mano e sui catalogatori (es. dopo la voce 1596-bis) riguardano l'indice, non la voce: `annotazioni.sede = 'indice'`, `voce` vuota.
