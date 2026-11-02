@@ -1,23 +1,63 @@
 {
- "_nota": "Segmentazioni stabilite a mano per le voci a suddivisione discorsiva. Per ogni voce: elenco ordinato di segmenti; 'inizio' è il testo esatto da cui parte il segmento, 'etichetta' il riferimento come compare nel testo. Un elemento con tipo 'chiusura' chiude l'ultimo segmento.",
+ "_nota": "Segmentazioni stabilite a mano per le voci a suddivisione discorsiva. Per ogni voce: elenco ordinato di segmenti; 'inizio' è il testo esatto da cui parte il segmento, 'etichetta' il riferimento come compare nel testo. Un elemento con tipo 'chiusura' chiude l'ultimo segmento. Un elenco vuoto significa: voce intera (riferimenti solo descrittivi).",
  "5": [
-  {"inizio": "Al folio due comincia", "etichetta": "folio due"},
-  {"inizio": "Al folio 12 comincia", "etichetta": "folio 12"},
-  {"inizio": "Regole grammaticali latine nel primo folio", "tipo": "chiusura"}
+  {
+   "inizio": "Al folio due comincia",
+   "etichetta": "folio due"
+  },
+  {
+   "inizio": "Al folio 12 comincia",
+   "etichetta": "folio 12"
+  },
+  {
+   "inizio": "Regole grammaticali latine nel primo folio",
+   "tipo": "chiusura"
+  }
  ],
  "56": [
-  {"inizio": "Terzine fol. 1-6", "etichetta": "fol. 1-6"},
-  {"inizio": "fol. 7-10 intorno", "etichetta": "fol. 7-10"},
-  {"inizio": "Narrazione della prigionia", "tipo": "chiusura"}
+  {
+   "inizio": "Terzine fol. 1-6",
+   "etichetta": "fol. 1-6"
+  },
+  {
+   "inizio": "fol. 7-10 intorno",
+   "etichetta": "fol. 7-10"
+  },
+  {
+   "inizio": "Narrazione della prigionia",
+   "tipo": "chiusura"
+  }
  ],
  "1006": [
-  {"inizio": "il 1° contiene", "etichetta": "1°"},
-  {"inizio": "e delle famiglie dal G alla Z", "etichetta": "volume II"}
+  {
+   "inizio": "il 1° contiene",
+   "etichetta": "1°"
+  },
+  {
+   "inizio": "e delle famiglie dal G alla Z",
+   "etichetta": "volume II"
+  }
  ],
  "1250": [
-  {"inizio": "Il I fascicolo", "etichetta": "I"},
-  {"inizio": "il II è interamente", "etichetta": "II"},
-  {"inizio": "Il 1° misura", "etichetta": "1°"},
-  {"inizio": "il II è rilegato", "etichetta": "II"}
- ]
+  {
+   "inizio": "Il I fascicolo",
+   "etichetta": "I"
+  },
+  {
+   "inizio": "il II è interamente",
+   "etichetta": "II"
+  },
+  {
+   "inizio": "Il 1° misura",
+   "etichetta": "1°"
+  },
+  {
+   "inizio": "il II è rilegato",
+   "etichetta": "II"
+  }
+ ],
+ "565": [],
+ "1237": [],
+ "2557": [],
+ "1010": []
 }

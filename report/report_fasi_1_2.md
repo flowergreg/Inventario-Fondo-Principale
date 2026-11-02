@@ -13,8 +13,8 @@ Generato da `script/report.py` su `dati/inventario.sqlite`. Sorgente: `sorgenti/
 | Annotazioni | 196 |
 | Voci con coda / senza coda | 1914 / 2755 |
 | Voci con residuo | 1 |
-| **Voci segmentate** (con almeno un riferimento) | **407** |
-| **Segmenti** (comprese le voci intere) | **8493** |
+| **Voci segmentate** (con almeno un riferimento) | **402** |
+| **Segmenti** (comprese le voci intere) | **8563** |
 
 ### Paragrafi preliminari saltati
 
@@ -143,9 +143,9 @@ La coda riguarda il testo che la precede; il testo che la segue resta testo dell
 
 | Tipo di segmento | Numero |
 |---|---|
-| voce_intera | 4262 |
-| riferimento | 3834 |
-| preambolo | 394 |
+| voce_intera | 4267 |
+| riferimento | 3904 |
+| preambolo | 389 |
 | chiusura | 3 |
 
 Voci con più segmenti:
@@ -153,52 +153,46 @@ Voci con più segmenti:
 - 10.: 179 segmenti
 - 606.: 145 segmenti
 - 2134.: 91 segmenti
-- 18.: 86 segmenti
-- 4505.: 78 segmenti
+- 18.: 85 segmenti
 - 3591.: 77 segmenti
+- 4505.: 77 segmenti
 - 23.: 73 segmenti
 - 340.: 71 segmenti
+- 102.: 66 segmenti
 - 2642.: 58 segmenti
-- 102.: 57 segmenti
 
 ### Segmentazioni dubbie
 
-Criteri: segmento quasi vuoto (solo l'etichetta), preambolo lungo prima del primo riferimento (>600 caratteri), famiglie di riferimenti diverse nella stessa voce.
+Criteri: numerazione non continua (salti, inizio diverso da 1), segmento quasi vuoto (solo l'etichetta), preambolo lungo prima del primo riferimento (>600 caratteri). Gli elenchi alfabetici e le voci già verificate non sono segnalati.
 
-- **60**: famiglie di riferimenti miste: coda, fogli
-- **111**: famiglie di riferimenti miste: coda, fogli
-- **112**: famiglie di riferimenti miste: coda, fogli
-- **356**: preambolo lungo (823 caratteri)
-- **467**: preambolo lungo (2901 caratteri)
-- **476**: preambolo lungo (816 caratteri)
-- **484**: preambolo lungo (649 caratteri)
-- **489**: famiglie di riferimenti miste: coda, fascicolo
-- **524**: preambolo lungo (854 caratteri)
-- **555**: preambolo lungo (648 caratteri)
-- **563**: preambolo lungo (872 caratteri)
-- **565**: preambolo lungo (904 caratteri)
-- **566**: segmento quasi vuoto «carte 1-154»; preambolo lungo (1080 caratteri)
-- **593**: preambolo lungo (2608 caratteri)
-- **601**: famiglie di riferimenti miste: coda, fogli
-- **606**: segmento quasi vuoto «54)»; segmento quasi vuoto «108)»; segmento quasi vuoto «110)»; segmento quasi vuoto «138)»
-- **608**: preambolo lungo (1120 caratteri)
-- **615**: famiglie di riferimenti miste: coda, fogli
-- **824**: famiglie di riferimenti miste: numerato, romano
-- **1010**: preambolo lungo (801 caratteri)
-- **1237**: segmento quasi vuoto «2°»
-- **2134**: segmento quasi vuoto «Antivari Pietro Antonio»; segmento quasi vuoto «Ardigò Roberto»; segmento quasi vuoto «Ascoli G. I.»; segmento quasi vuoto «Bailo Luigi»; segmento quasi vuoto «Barbieri Gio. Mario»; segmento quasi vuoto «Barbieri Nini Marianna»; segmento quasi vuoto «Bassi G.B.»; segmento quasi vuoto «Beretta cav. Antonio»; segmento quasi vuoto «Bignami Giulio»; segmento quasi vuoto «Billia G.B.»; segmento quasi vuoto «Bini Giuseppe»; segmento quasi vuoto «Bodio Luigi»; segmento quasi vuoto «Bonghi Ruggero»; segmento quasi vuoto «Borbone (di) Ferdinando Carlo»; segmento quasi vuoto «Borbone (di) Farnese Carlo»; segmento quasi vuoto «Botta Nicolò»; segmento quasi vuoto «Bottacin Nicolò»; segmento quasi vuoto «Bozzoli ? Giuseppe»; segmento quasi vuoto «Brambilla Camillo»; segmento quasi vuoto «Bricito Zaccaria»; segmento quasi vuoto «Brofferio Angelo»; segmento quasi vuoto «Bulgarini G.B.»; segmento quasi vuoto «Cadorna Luigi (1 bigl. visita)»; segmento quasi vuoto «Candotti G.B.»; segmento quasi vuoto «Cairoli Benedetto»; segmento quasi vuoto «Candotti prof. Luigi»; segmento quasi vuoto «Capponi Gino»; segmento quasi vuoto «Cassetti don Giacomo (+ 1 epigramma)»; segmento quasi vuoto «Ciconi Teobaldo»; segmento quasi vuoto «Cosimo III di Toscana»; segmento quasi vuoto «Francesco Saverio Augusto di Sassonia»; segmento quasi vuoto «Fusinato Arnaldo»; segmento quasi vuoto «Ghinozzi Carlo»; segmento quasi vuoto «Giacomelli Giuseppe»; segmento quasi vuoto «Gioberti Vincenzo»; segmento quasi vuoto «Gnecchi Ercole»; segmento quasi vuoto «Grando A.»; segmento quasi vuoto «Guadagnoli Antonio»; segmento quasi vuoto «Guasti Cesare»; segmento quasi vuoto «Guerrazzi Francesco Dom.°»; segmento quasi vuoto «Lambros Paolo»; segmento quasi vuoto «Lambruschini Raffaello»; segmento quasi vuoto «Lazzaretti G.»; segmento quasi vuoto «Leicht Michele»; segmento quasi vuoto «Lodi Emanuele»; segmento quasi vuoto «Lovera di Maria Ottavio»; segmento quasi vuoto «Luschin Arnaldo»; segmento quasi vuoto «Magni Basilio»; segmento quasi vuoto «Mancini Lorenzo»; segmento quasi vuoto «Marchiori Giuseppe»; segmento quasi vuoto «Marignoli Filippo»; segmento quasi vuoto «Marinelli Giovanni»; segmento quasi vuoto «Marini Virginia»; segmento quasi vuoto «Mariotti Filippo»; segmento quasi vuoto «Martini Archimede»; segmento quasi vuoto «Martini Ferdinando»; segmento quasi vuoto «Mayer Enrico»; segmento quasi vuoto «Mazzarosa Antonio»; segmento quasi vuoto «Mazzetti Antonio»; segmento quasi vuoto «Miari Fulvio Luigi»; segmento quasi vuoto «Milanesi Carlo»; segmento quasi vuoto «Milli Cassone Giannina»; segmento quasi vuoto «Monico Giacomo»; segmento quasi vuoto «Morghen (vedi Vopato)»; segmento quasi vuoto «Muschietti Giovanni»; segmento quasi vuoto «Nerucci Gherardo»; segmento quasi vuoto «Nogara Giuseppe (2)»; segmento quasi vuoto «Nyrop Cristoforo»; segmento quasi vuoto «Osterman Valentino»; segmento quasi vuoto «Percoto Caterina»; segmento quasi vuoto «Palamidessi Cosimo»; segmento quasi vuoto «Prampero (di) Antonino»; segmento quasi vuoto «Puccini Nicolò»; segmento quasi vuoto «Radetzki Gio. Gius.»; segmento quasi vuoto «Ribotti Ignazio»; segmento quasi vuoto «Riccio Gennaro»; segmento quasi vuoto «Ristori Adelaide»; segmento quasi vuoto «Saletta Tancredi»; segmento quasi vuoto «Salvagnoli Vincenzo»; segmento quasi vuoto «Santoni Mitriade»; segmento quasi vuoto «Savini Teodoro»; segmento quasi vuoto «Savorgnan (di) Antonio»; segmento quasi vuoto «Siauve E. M.»; segmento quasi vuoto «Sivori Camillo»; segmento quasi vuoto «Tecchio Sebastiano»; segmento quasi vuoto «Trevisanato Giuseppe Luigi»; segmento quasi vuoto «Turchetti Odoardo»; segmento quasi vuoto «Vittorelli Giacomo»; segmento quasi vuoto «Volpato Morghen Domenica»
-- **2557**: preambolo lungo (793 caratteri)
-- **3939**: segmento quasi vuoto «2)»; segmento quasi vuoto «7)»
-- **4061**: famiglie di riferimenti miste: coda, fogli
-- **4251**: famiglie di riferimenti miste: coda, fogli
+Nessuna segmentazione dubbia.
+
+
+### Segnalazioni verificate (dati/segmentazioni_verificate.json)
+
+- **476**: preambolo lungo: elenchi di lettere senza rinvii prima di «A carte 102-103»
+- **524**: preambolo lungo: elenco di autori senza rinvii
+- **555**: preambolo lungo: descrizione del volume prima dei rinvii
+- **563**: preambolo lungo: descrizione del volume prima dei rinvii
+- **597**: la numerazione dei fascicoli prosegue dalla raccolta I (voce 596)
+- **606**: lacune della numerazione nell'originale (127-128, 166); forme irregolari «171 unito al 176)», «177 e 178 (bianco))»
+- **608**: preambolo lungo: descrizione dell'opera prima dei fascicoli
+- **619**: refuso dell'originale «7). (9»
+- **923**: il primo elemento non è numerato nell'originale
+- **1024**: il 5° manca nell'originale («; ; 6°»)
+- **1041**: il primo volume è descritto senza numero
+- **1330**: il 3° non è numerato nell'originale
+- **1345**: «l'8» senza segno di ordinale nell'originale
+- **1537**: il primo elemento del I cartolare non è numerato
+- **3939**: elementi brevi (titoli di frammenti)
 
 ### Segmentazioni manuali (dati/segmentazioni_manuali.json)
 
-5, 56, 1006, 1250
+5, 56, 1006, 1250, 565 (voce intera), 1237 (voce intera), 2557 (voce intera), 1010 (voce intera)
 
 ### Riferimenti candidati scartati
 
-Riepilogo: riferimento isolato 99, numerazione fuori sequenza 5, lettera iniziale diversa da a 4, lettera fuori sequenza 2
+Riepilogo: riferimento isolato 75, numerazione fuori sequenza 5, lettera iniziale diversa da a 4, lettera fuori sequenza 2
 
 - 17: «fogli 252-255» (riferimento isolato)
 - 28: «fasc. 3» (riferimento isolato)
@@ -229,12 +223,10 @@ Riepilogo: riferimento isolato 99, numerazione fuori sequenza 5, lettera inizial
 - 503: «carte 214-216» (riferimento isolato)
 - 577: «carte 11 a 14» (riferimento isolato)
 - 583: «carte 27» (riferimento isolato)
-- 603: «carte 16 a carte 29» (riferimento isolato)
 - 605: «carte I-VI» (riferimento isolato)
 - 614: «Fogli 48» (riferimento isolato)
 - 616: «19)» (numerazione fuori sequenza)
 - 617: «518)» (numerazione fuori sequenza)
-- 618: «12°» (numerazione fuori sequenza)
 - 639: «l)» (lettera fuori sequenza); «m)» (lettera fuori sequenza)
 - 647: «pag. III» (riferimento isolato)
 - 650: «2°» (riferimento isolato)
@@ -245,33 +237,30 @@ Riepilogo: riferimento isolato 99, numerazione fuori sequenza 5, lettera inizial
 - 724: «pag. 32» (riferimento isolato)
 - 753: «Pag. 107» (riferimento isolato)
 - 803: «Pag. 68» (riferimento isolato)
-- 944: «9°» (numerazione fuori sequenza)
 - 984: «2°» (riferimento isolato)
+- 985: «2°» (numerazione fuori sequenza)
 - 994: «1°» (riferimento isolato)
 - 1026: «2°» (riferimento isolato)
-- 1197: «8°» (numerazione fuori sequenza)
+- 1084: «2°» (numerazione fuori sequenza)
 - 1231: «1°» (riferimento isolato)
 - 1243: «2°» (riferimento isolato)
 - 1256: «1°» (riferimento isolato)
+- 1301: «2° e 3°» (numerazione fuori sequenza)
 - 1304: «1°» (riferimento isolato)
 - 1320: «1°» (riferimento isolato)
 - 1500: «1°» (riferimento isolato)
+- 1688: «Vol. 1» (riferimento isolato)
+- 1725: «Vol. 1» (riferimento isolato)
 - 1941: «pag. 140» (riferimento isolato)
-- 2191: «p. 95» (riferimento isolato)
-- 2194: «p. 644» (riferimento isolato)
 - 2308: «Fasc. 3» (riferimento isolato)
-- 2591: «p. 180» (riferimento isolato)
-- 2593: «p. 49» (riferimento isolato)
-- 2596: «p. 120» (riferimento isolato)
-- 2634/10: «p. 59» (riferimento isolato)
+- 2635/1: «libro I» (riferimento isolato)
 - 2636/2: «N° 100» (riferimento isolato)
 - 2636/3: «N° 100» (riferimento isolato)
 - 2653: «c. 97» (riferimento isolato)
 - 2706 bis: «Fasc. 1» (riferimento isolato)
 - 2711 bis: «Fasc. 1» (riferimento isolato)
 - 3102: «c)» (lettera iniziale diversa da a); «d)» (lettera iniziale diversa da a)
-- 3505: «1°» (riferimento isolato)
-- 3506: «p. 16» (riferimento isolato)
+- 3410: «Libro 1» (riferimento isolato)
 - 3511: «N° 1» (riferimento isolato)
 - 3525: «1°» (riferimento isolato)
 - 3651: «Cc. 155» (riferimento isolato)
@@ -283,29 +272,10 @@ Riepilogo: riferimento isolato 99, numerazione fuori sequenza 5, lettera inizial
 - 3958: «Fogli 2» (riferimento isolato)
 - 4104: «b)» (lettera iniziale diversa da a); «c)» (lettera iniziale diversa da a)
 - 4232: «1°» (riferimento isolato)
-- 4303: «1°» (riferimento isolato)
-- 4305: «1°» (riferimento isolato)
-- 4309: «1°» (riferimento isolato)
-- 4326: «1°» (riferimento isolato)
-- 4333: «1°» (riferimento isolato)
-- 4353: «1°» (riferimento isolato)
-- 4355: «1°» (riferimento isolato)
-- 4356: «1°» (riferimento isolato)
-- 4370: «1°» (riferimento isolato)
 - 4372: «F. 1» (riferimento isolato)
-- 4392: «1°» (riferimento isolato)
 - 4414: «F. 1» (riferimento isolato)
-- 4446: «1°» (riferimento isolato)
-- 4453: «1°» (riferimento isolato)
-- 4458: «1°» (riferimento isolato)
-- 4462: «1°» (riferimento isolato)
 - 4467: «F. 1» (riferimento isolato)
-- 4469: «1°» (riferimento isolato)
 - 4485: «F. 1» (riferimento isolato)
-- 4490: «1°» (riferimento isolato)
-- 4497: «1°» (riferimento isolato)
-- 4500: «1°» (riferimento isolato)
-- 4510: «1°» (riferimento isolato)
 - 4515: «cc. 198-199» (riferimento isolato)
 
 ## 7. Venti voci estratte a caso (seme 2026)
@@ -666,20 +636,44 @@ F. 2 v. Expl. […+145 caratteri]
 - riferimento «carte 41» [116–320]: a carte 41 vi ha la supplica a Pio VI, dell'ab. Sertor, in versi, che come presunto autore del dramma fu carcerato e dopo tre mesi rimesso in libertà.
 Scrittura […+44 caratteri]
 
-### 385.
+### 365.
 
 **Testo**
 
-> Zorutti Pietro. Raccolta di poesie, contenente: Carte 1-2 la poesia "Gentil signora Anetta / … e così sia"; Udine 31 dicembre 1845; autografo; fol. 3-8 copie di altre poesie dello stesso; fol. 9 e 10, due poesie friulane a stampa intitolate "Pre Tile Miott" e "La gnot d'avril". Scrittura del sec. XIX, di ff. 9 [10] sciolti.
+> Broili Antonio. Versi friulani varii e cioè: carte 1 Sonetto "Agli amatori delle belle arti"; cart. 2 Canzone "I vott pechiaz mortai"; carte 3-6 sonetti cinque su varii argomenti con note. Mss. autografo.
+>
+> Scrittura del sec. XIX, di carte 6 sciolte e riunite in copertina.
+
+**Coda**: `Cartaceo · 1 vol. · stato: b.` → supporto: Cartaceo; volumi: 1 vol.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–44]: Broili Antonio. Versi friulani varii e cioè:
+- riferimento «carte 1» [45–93]: carte 1 Sonetto "Agli amatori delle belle arti";
+- riferimento «cart. 2» [94–134]: cart. 2 Canzone "I vott pechiaz mortai";
+- riferimento «carte 3-6» [135–271]: carte 3-6 sonetti cinque su varii argomenti con note. Mss. autografo.
+Scrittura del sec. XIX, di carte 6 sciolte e riunite in copertina.
+
+### 508.
+
+**Testo**
+
+> Accademia di Udine, fondata nel 1756. Contenente: carte 1-12, Discorso di D. Giannagostino Gradenigo monaco benedettino Cassinese "Della moneta Veneta-Imperiale" (letto nell'Acc. di Udine nel 1762 circa: pub. da Marco Dabalà per nozze Fracanzani-Fanna, Padova-Prosperini-1869 in-8, p. 24); carte 13, Incisione in rame dell'arma dell'Acc. Udinese; carte 14-17, Discorso del co. Alfonso Antonini recitato nell'Acc. della città di Udine nel principio del 1759; carte 18-24, Discorso sulla decadenza delle arti industriali letto prima del 1762, forse di A. Zanon; carte 25-30, Capitoli della "Società di agricoltura pratica" fondata da Ant.° Zanon il 14 settembre 1762 con le firme autografe di Antonio di Montegnaco, Fabio Asquino, Giuseppe Sabbatini, Gio. Fortunato Bianchini, Antonio Zanon e Pietro Someda; carte 31-32, due circolari a stampa (1768-1791) con quesiti agrarii a premio.
+>
+> Fasc. di carte 18 (numerate 1-18 bis), Discorso accademico "Saggio d'Igiene in quanto agli alimenti ed alle bevande", letto nell'accad. Agraria Aquilejese il giorno 22 agosto 1813 da… + c. 19 bis, Attestato di socio onorario dell'Accademia di Udine a Francesco Caiselli, 15 ag. 1846.
 
 **Coda**: `Cartaceo · stato: b.` → supporto: Cartaceo; volumi: —; stato: b.; provenienza: —
 
 **Segmenti**
 
-- preambolo (senza etichetta) [0–47]: Zorutti Pietro. Raccolta di poesie, contenente:
-- riferimento «Carte 1-2» [48–142]: Carte 1-2 la poesia "Gentil signora Anetta / … e così sia"; Udine 31 dicembre 1845; autografo;
-- riferimento «fol. 3-8» [143–187]: fol. 3-8 copie di altre poesie dello stesso;
-- riferimento «fol. 9» [188–325]: fol. 9 e 10, due poesie friulane a stampa intitolate "Pre Tile Miott" e "La gnot d'avril". Scrittura del sec. XIX, di ff. 9 [10] sciolti.
+- preambolo (senza etichetta) [0–49]: Accademia di Udine, fondata nel 1756. Contenente:
+- riferimento «carte 1-12» [50–289]: carte 1-12, Discorso di D. Giannagostino Gradenigo monaco benedettino Cassinese "Della moneta Veneta-Imperiale" (letto nell'Acc. di Udine nel 1762 circa: pub. d […+79 caratteri]
+- riferimento «carte 13» [290–346]: carte 13, Incisione in rame dell'arma dell'Acc. Udinese;
+- riferimento «carte 14-17» [347–457]: carte 14-17, Discorso del co. Alfonso Antonini recitato nell'Acc. della città di Udine nel principio del 1759;
+- riferimento «carte 18-24» [458–559]: carte 18-24, Discorso sulla decadenza delle arti industriali letto prima del 1762, forse di A. Zanon;
+- riferimento «carte 25-30» [560–805]: carte 25-30, Capitoli della "Società di agricoltura pratica" fondata da Ant.° Zanon il 14 settembre 1762 con le firme autografe di Antonio di Montegnaco, Fabio  […+85 caratteri]
+- riferimento «carte 31-32» [806–1167]: carte 31-32, due circolari a stampa (1768-1791) con quesiti agrarii a premio.
+Fasc. di carte 18 (numerate 1-18 bis), Discorso accademico "Saggio d'Igiene in qua […+201 caratteri]
 
 ### 509.
 
@@ -698,7 +692,8 @@ Scrittura […+44 caratteri]
 **Segmenti**
 
 - preambolo (senza etichetta) [0–142]: Accademia de' Filomazi (desiderosi d'apprendere) e degli Asciti (da adscitos, aggiunti, nel senso forse di aggregati ai Filomazi). Contenente:
-- riferimento «Fascicolo 1°» [143–953]: Fascicolo 1° comprende le carte 1-49, Capitoli costitutivi dell'Accad. dei Filomazi (1788) di Udine in casa de' co. Gallici: discorsi e lettere di varii, cioè:  […+650 caratteri]
+- riferimento «Fascicolo 1°» [143–750]: Fascicolo 1° comprende le carte 1-49, Capitoli costitutivi dell'Accad. dei Filomazi (1788) di Udine in casa de' co. Gallici: discorsi e lettere di varii, cioè:  […+447 caratteri]
+- riferimento «Fasc.° 2°» [751–953]: Fasc.° 2°, da carte 50 a 144 contiene: Parte prima, i discorsi accademici e gli esercizii in versi ed in prosa, fino a carte 116: parte seconda, versi del co. A […+42 caratteri]
 - riferimento «Fasc. 3°» [954–1179]: Fasc. 3°. Capitoli dell'Accademia degli Asciti in Udine, fondata il 6 sett. 1789 con Alfonso Belgrado suo secretario, di cui è pure la scrittura (carte 145-147) […+65 caratteri]
 
 ### 510.
@@ -728,359 +723,270 @@ Scrittura […+44 caratteri]
 - riferimento «Fasc. 4°» [576–916]: Fasc. 4° Accademie del "Collegio dei Nobili di Udine" con una nota a carte 1 di Jacopo Pirona, e un folio a stampa (Murero-1783); Carte 4-13, prefazioni accadem […+180 caratteri]
 - riferimento «Fasc. 5°» [917–1327]: Fasc. 5° Accademie del Liceo di Udine, 1821, con note di mano del prof. Jacopo Pirona e componimenti in versi di varii scolari, fra cui G. B. d'Arcano, Francesc […+250 caratteri]
 
-### 511.
+### 637.
 
 **Testo**
 
-> Accademia Udinese di scienze, lettere ed arti. Contiene:
->
-> Fasc. I Dissertazione sulla musica, letta nell'Accademia di Udine (Agraria-Aquileiese) prima del 1814 da Leopoldo Zuccolo: carte 1 a 17 in copertina.
->
-> Fasc. II Memorie accademiche del sec. XIX dell'ab. Giuseppe Bianchi, dott. Antonio Zambaldi, avv. Antonio Lirutti: carte 18 a 75 (alcune adesp. edite ed inedite) cioè: Dei premi dovuti agli eccellenti scrittori italiani (Zambaldi); Degli illustri giureconsulti ed oratori friulani (Liruti 1812), stampata in Udine-Biasutti-1836 (riassunto dell'orazione criminale di Cornelio Frangipane il vecchio pro Matthias Hofer di Duino tenuta in Vienna), carte 38-59, con copia della stessa ed Imprimatur di Pirona Jacopo.
->
-> Fasc. III Discorsi accademici e note di Giand.° Ciconi, letti nell'Accademia di Udine (1843-1858), da carte 76 a 118. Carte 82-92, discorso intorno al Friuli del dott. Ciconi con note di Giuseppe Sacchi (edito negli Annali di statis. di Milano vol. 76 pag. 129, maggio 1843). Carte 96-117, prolusione di G. D. Ciconi letta il 19 dic. 1858, (due copie). Provenienza dalla Collezione G. D.° Ciconi.
->
-> Fasc. IV (carte 119-149) lettere varie dirette all'accademia Udinese o ad altri, cioè: 1822, Zecchini pres. dell'Accad. al vesc. Em. Lodi; 1823, lo stesso all'Accad.; 1824, Stratico pres. della statistica al prof. Aprilis (tre lettere); 1824, I. dott. Kohen all'accad. agraria; 1825, Alfonso Franceschinis cano. a Bart. Aprilis; 1825, Francesco Cocconi allo stesso; 1828, Girolamo de  […+538 caratteri]
-
-**Coda**: `Cartaceo · stato: b.` → supporto: Cartaceo; volumi: —; stato: b.; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–56]: Accademia Udinese di scienze, lettere ed arti. Contiene:
-- riferimento «Fasc. I» [57–206]: Fasc. I Dissertazione sulla musica, letta nell'Accademia di Udine (Agraria-Aquileiese) prima del 1814 da Leopoldo Zuccolo: carte 1 a 17 in copertina.
-- riferimento «Fasc. II» [207–718]: Fasc. II Memorie accademiche del sec. XIX dell'ab. Giuseppe Bianchi, dott. Antonio Zambaldi, avv. Antonio Lirutti: carte 18 a 75 (alcune adesp. edite ed inedite […+351 caratteri]
-- riferimento «Fasc. III» [719–1115]: Fasc. III Discorsi accademici e note di Giand.° Ciconi, letti nell'Accademia di Udine (1843-1858), da carte 76 a 118. Carte 82-92, discorso intorno al Friuli de […+236 caratteri]
-- riferimento «Fasc. IV» [1116–1845]: Fasc. IV (carte 119-149) lettere varie dirette all'accademia Udinese o ad altri, cioè: 1822, Zecchini pres. dell'Accad. al vesc. Em. Lodi; 1823, lo stesso all'A […+569 caratteri]
-- riferimento «Fasc. V» [1846–2038]: Fasc. V (carte 150-187) Discorso accademico, 1830 circa, "Stato delle scienze, lettere ed arti nell'Italia durante la dimora de' Longobardi." Monografia adesp.  […+32 caratteri]
-
-### 636.
-
-**Testo**
-
-> Nicoletti (Marco Antonio). Patriarcato d'Aquileja di Raimondo Della Torre, Pietro Gerra ed Ottobono, non leg. sotto copertina. a) Patriarcato di Raimondo della Torre e di Pietro Gerra, rispett. f. 9 e 9, l'ultimo bianco. b) Patriarcato di Ottobono di Padova fasc. 5, i primi quattro di f. 10, l'ultimo di f. scritti 49 e bianchi 9. Formato cm. 30 x 21 Scritt. sec. XVIII.
+> Nicoletti (Marco Antonio). a) Patriarcato Aquilejense di Raimondo della Torre, fasc. 1 di f. 12. Scritt. probab. del Liruti. b) Patriarcato Aquilejense di Ottobono, fasc. 2 ciascuno di f. 12, il 2° con 7 f. bianchi. c) Altra copia dello scritto precedente, della stessa mano (sec. XVIII) in 2 fasc. di 12 f. ciascuno, il 2° con 7 f. bianchi. d) Patriarcato di Giovanni di Moravia, Generalato di Engelberto di Gorizia. Patriarcato di Bertoldo, fogli scritti 19, bianchi 5. Scritt. sec. XVIII. e) Frammento del Patriarcato d'Aquileja di Bertoldo. Un fasc. di f. 12. scritt. prob. del Liruti, form. 20 x 31.
 
 **Coda**: —
 
 **Segmenti**
 
-- preambolo (senza etichetta) [0–126]: Nicoletti (Marco Antonio). Patriarcato d'Aquileja di Raimondo Della Torre, Pietro Gerra ed Ottobono, non leg. sotto copertina.
-- riferimento «a)» [127–220]: a) Patriarcato di Raimondo della Torre e di Pietro Gerra, rispett. f. 9 e 9, l'ultimo bianco.
-- riferimento «b)» [221–371]: b) Patriarcato di Ottobono di Padova fasc. 5, i primi quattro di f. 10, l'ultimo di f. scritti 49 e bianchi 9. Formato cm. 30 x 21 Scritt. sec. XVIII.
+- preambolo (senza etichetta) [0–78]: Nicoletti (Marco Antonio). a) Patriarcato Aquilejense di Raimondo della Torre,
+- riferimento «fasc. 1» [79–164]: fasc. 1 di f. 12. Scritt. probab. del Liruti. b) Patriarcato Aquilejense di Ottobono,
+- riferimento «fasc. 2» [165–604]: fasc. 2 ciascuno di f. 12, il 2° con 7 f. bianchi. c) Altra copia dello scritto precedente, della stessa mano (sec. XVIII) in 2 fasc. di 12 f. ciascuno, il 2° c […+279 caratteri]
 
-### 681.
+### 683.
 
 **Testo**
 
-> Valvasone, Passerino, Monticoli (ed altri autori). Storie, cronache, aneddoti. Ms. di M. A. Montegnacco 1769. Contiene: a) Valvasone di Maniago (Jacopo), Li successi nella Patria del Friuli, da pag. 1 a pag. 25. b) Valvasone di Maniago (Giacomo), Altro discorso d'intorno la Città d'Udine (1566), pag. 26 a 30. c) Passerino (Pietro), Brevissimo compendio di tutte le famiglie notabili della Città d'Udine, a guisa di Cronichetta annotata, etc. da pag. 31 a 36. d) Di Montegnacco (Marco Antonio), Cronaca aneddota dal 1729 al 1789, da pag. 37 a 41. e) Nomina Patriarcharum, copia cavata dal Tesoro di Aquileja, da pag. 42 a 46. f) Praecipui ministeriales Ecclesiae Aquilejensis, da pag. 57 a 59 (i fogli interm. bianchi). g) Diplomata de familia Monteniaca, da perg. dell'archivio domestico, da pag. 60 a 70. h) Monticoli (Niccolò), Cronaca delle famiglie di Udine, da pag. 71 a 160. i) Di Montegnacco (Antonio), Copia di diploma del 1570 (tre facciate). Leg. in cart. cm. 21 x 31.
+> Amaseo (Gregorio). Fatto seguito in Udine alli 28 febraro l'anno 1511, nel Giovedì Grasso. Copia del sec. XVIII, anon. Pag. 107. Segue: a) Bellonus (Antonius, notarius). De Turrianis nuper obrutis Rusticorum Populique Tumultui, quaecumque sciam, Ego Antonius Bellonus Utinensis Tabellio cum brevitate subiciam, etc. etc. pag. 5 e ½. Segue: b) Porticus (Franciscus, notarius). Pro Utinensibus inter se, pag. 1 e ½. Segue: c) Decius (Sebastianus, notarius). Relazione, senza titolo, del fatto del Giovedì grasso. Incip.: Casus horrendus eventus in Terra Utini, pag. 9. Il tutto di una stessa mano, cm. 15 x 20 leg. in cart.
 
 **Coda**: —
 
 **Segmenti**
 
-- preambolo (senza etichetta) [0–119]: Valvasone, Passerino, Monticoli (ed altri autori). Storie, cronache, aneddoti. Ms. di M. A. Montegnacco 1769. Contiene:
-- riferimento «a)» [120–211]: a) Valvasone di Maniago (Jacopo), Li successi nella Patria del Friuli, da pag. 1 a pag. 25.
-- riferimento «b)» [212–310]: b) Valvasone di Maniago (Giacomo), Altro discorso d'intorno la Città d'Udine (1566), pag. 26 a 30.
-- riferimento «c)» [311–460]: c) Passerino (Pietro), Brevissimo compendio di tutte le famiglie notabili della Città d'Udine, a guisa di Cronichetta annotata, etc. da pag. 31 a 36.
-- riferimento «d)» [461–547]: d) Di Montegnacco (Marco Antonio), Cronaca aneddota dal 1729 al 1789, da pag. 37 a 41.
-- riferimento «e)» [548–626]: e) Nomina Patriarcharum, copia cavata dal Tesoro di Aquileja, da pag. 42 a 46.
-- riferimento «f)» [627–720]: f) Praecipui ministeriales Ecclesiae Aquilejensis, da pag. 57 a 59 (i fogli interm. bianchi).
-- riferimento «g)» [721–807]: g) Diplomata de familia Monteniaca, da perg. dell'archivio domestico, da pag. 60 a 70.
-- riferimento «h)» [808–882]: h) Monticoli (Niccolò), Cronaca delle famiglie di Udine, da pag. 71 a 160.
-- riferimento «i)» [883–980]: i) Di Montegnacco (Antonio), Copia di diploma del 1570 (tre facciate). Leg. in cart. cm. 21 x 31.
+- preambolo (senza etichetta) [0–135]: Amaseo (Gregorio). Fatto seguito in Udine alli 28 febraro l'anno 1511, nel Giovedì Grasso. Copia del sec. XVIII, anon. Pag. 107. Segue:
+- riferimento «a)» [136–339]: a) Bellonus (Antonius, notarius). De Turrianis nuper obrutis Rusticorum Populique Tumultui, quaecumque sciam, Ego Antonius Bellonus Utinensis Tabellio cum brevi […+43 caratteri]
+- riferimento «b)» [340–420]: b) Porticus (Franciscus, notarius). Pro Utinensibus inter se, pag. 1 e ½. Segue:
+- riferimento «c)» [421–621]: c) Decius (Sebastianus, notarius). Relazione, senza titolo, del fatto del Giovedì grasso. Incip.: Casus horrendus eventus in Terra Utini, pag. 9. Il tutto di un […+40 caratteri]
 
-### 825.
+### 836.
 
 **Testo**
 
-> Miscellanea di cose storiche friulane. Volume di cm. 22 x 31, copert. di cartone, fogli numerati e scritti 154 (= facc. 307). Contiene: I) Vita del B. Simone Martire da Trento, copia tratta da un libro di Fr. Jacopo dell'Ordine degli Agostiniani, 1347 (excerpta). II) Notizie sul B. Odorico da Pordenone (id., dal med. libro). III) Rimedio contro la peste. IV) Donazione dei dazi (1348) alla Città di Udine. V) Lettere al Comune di Marano (1350) ed al Capitano di Flambro (1350). Seguono altre lettere della Co.ssa Caterina di Gorizia (1362). Deliberazioni del Consiglio di Udine, ducali, salvocondotti, memorie diverse fino al 1682. VI) Dell'uso antivenereo del tabacco (tratto dalla vita del P. Giuseppe di Copertino. VII) Supplica del C.te Lucio della Torre all'Ecc.mo Consiglio dei X. VIII) Magistrati e cariche di Terraferma, 1663. IX) Memoria ai posteri del C.te Lucio della Torre. X) Cronica di casate antiche di Udine (Monticoli). XI) L'anno meraviglioso 1748. XII) Discorso dell'Ambasciatore dello Stato ecclesiastico al Conclave per la sede vacante di Clemento XII. XIII) Compendio del Vecchio e Nuovo Testamento. XIV) Ville sottoposte alla giurisdizione del Cap.lo di Aquileja. XV) Indulgenze, rosari e corone di S.ta Brigida. XVI) Id. di S. Francesco d'Assisi. XVII) Descrizione di Aquileja. XVIII) Descrizione della Regata di Venezia. XIX) Per la nobiltà di Udine. Decreto del L.te, 1751. XX) Aggiustamento per Aquileja, 1751. XXI) Miracoli di S. Antonio di Padova, da un libro stamp. ne […+427 caratteri]
+> Frammenti Di Codici Membranacei dei secoli XIV, XV, XVI e XVIII. Contiene: A) P. Ovidii Nasonis Heroides, framm. dell'epist. XIV. Ipermnestra a Linceo, gli ultimi 17 versi, di cui i primi sei illeggibili. Segue l'epist. XVI. Paride ad Elena, fino al verso "Phryx erat Anchises, volucrum cui mater amorum", foglio membranaceo corroso. Scritt. sec. XIV. Dono del Sen. A. di Prampero 25 lug. 1880. A.2) Gli ultimi venti versi dell'ep. VIII, Ermione ad Oreste, e i primi trentanove dell'ep. IX. Dejanira ad Ercole. Foglio membranaceo dilavato, scritt. sec. XV. B) Frammento di breviario, sei f. in 8° membr. scritt. sec. XIV, in parte dilavata. C) Frammento delle Metamorfosi di Ovidio, lib. VII, fab. 1. Un foglio membran. scritto su due facc., la facc. posteriore quasi illeggibile. Incipit: "Ergo ego germanam, fratremque, patremque deosque" (Verso 51 e seg.). Scritt. sec. XV. D) Frammento della Divina Commedia. Paradiso, C. XIII, dal verso 73 al 108. Foglio membran. scr. su due facc. Scritt. sec. XV ineunte . Acquistato Dr. Lorenzo Bianchi di Pordenone 1 genn. 1884. E) Rotolo di esazioni di Tarcento. Frammento, sei fogli membran. Sec. XIV e XV (Comincia dal 1306), f. numer. dal 2 al 17. Acquisto 1879. E bis) Frammento di ducale di Nicolò Contareno f. 1 sec. XVII. F) Frammento di codice membran. in folio, scritto in vari tempi, dal f. 27 al 33. Contiene: F. 27: Nota della scoperta di alcune antichità in Osoppo (P. Biagio Leoncini 1782). A tergo: 1572, 2 ag. Osoppo. La Chiesa di S. Pietro  […+985 caratteri]
+
+**Coda**: —
+
+**Annotazioni**: [nota_a_margine] «pubblicato»
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–74]: Frammenti Di Codici Membranacei dei secoli XIV, XV, XVI e XVIII. Contiene:
+- riferimento «A)» [75–394]: A) P. Ovidii Nasonis Heroides, framm. dell'epist. XIV. Ipermnestra a Linceo, gli ultimi 17 versi, di cui i primi sei illeggibili. Segue l'epist. XVI. Paride ad  […+159 caratteri]
+- riferimento «A.2)» [395–556]: A.2) Gli ultimi venti versi dell'ep. VIII, Ermione ad Oreste, e i primi trentanove dell'ep. IX. Dejanira ad Ercole. Foglio membranaceo dilavato, scritt. sec. XV […+1 caratteri]
+- riferimento «B)» [557–640]: B) Frammento di breviario, sei f. in 8° membr. scritt. sec. XIV, in parte dilavata.
+- riferimento «C)» [641–876]: C) Frammento delle Metamorfosi di Ovidio, lib. VII, fab. 1. Un foglio membran. scritto su due facc., la facc. posteriore quasi illeggibile. Incipit: "Ergo ego g […+75 caratteri]
+- riferimento «D)» [877–1070]: D) Frammento della Divina Commedia. Paradiso, C. XIII, dal verso 73 al 108. Foglio membran. scr. su due facc. Scritt. sec. XV ineunte . Acquistato Dr. Lorenzo B […+33 caratteri]
+- riferimento «E)» [1071–1271]: E) Rotolo di esazioni di Tarcento. Frammento, sei fogli membran. Sec. XIV e XV (Comincia dal 1306), f. numer. dal 2 al 17. Acquisto 1879. E bis) Frammento di du […+40 caratteri]
+- riferimento «F)» [1272–2355]: F) Frammento di codice membran. in folio, scritto in vari tempi, dal f. 27 al 33. Contiene: F. 27: Nota della scoperta di alcune antichità in Osoppo (P. Biagio  […+923 caratteri]
+- riferimento «G)» [2356–2485]: G) (Frammento di pergamena): Confraternita cividalese del XIII sec. Elenco degli iscritti. Dalla Busta Corgnali n. 17, 13.6.1967.
+
+### 879.
+
+**Testo**
+
+> Memorie del patriarcato d'Aquileia e della sua soppressione. Cartolare contenente 9 memorie in separati fascicoli, alcuni rilegati, altri in fogli sciolti; dei quali l'ultimo chiuso in una specie di custodia in pergamena. Le memorie sono le seguenti: 1° Ab. G. Bini: Notizia del patriarcato d'Aquileia dopo l'anno 1400; 2° Quaderno contenente atti e lettere sulla soppressione del patriarcato (1749-1752) e riassunto di tutte le vicende e le pratiche anteriori; 3° Altra copia delle Notizie del Bini sopra indicate; 4° Grosso fascicolo di atti relativi alla soppressione del patriarcato: informazioni, lettere corse tra Benedetto 14° e Carlo d'Attems vescovo di Gorizia, bolle pontificie (1650-1753); 5° Atti della soppressione del patriarcato: convenzione tra Venezia e il patriarca L. Mezzarota nel 1445, informazioni sul patriarcato, sue ragioni sopra Aquileia, pretesa erezione d'un vescovado a Gorizia, proposta di aggregare il Friuli austriaco all'arcivescovado di Vienna (1721), capitoli della traslazione della sede episcopale da Concordia a Portogruaro; 6° Notizia del patriarcato d'Aquileia scritta nel 1709 e atti relativi alla sua soppressione; 7° Notizia del patriarcato d'Aquileia nella parte austriaca dopo l'anno 1400 scritta da mons. Sebastiano Braida: quasi uguale a quella segnata col n. 2; 8° Altra copia delle medesime; 9° Atti sulla soppressione del patriarcato d'Aquileia (1752), bolle pontificie.
+
+**Coda**: `Cartaceo · 1 vol. in 9 numeri · stato: b.` → supporto: Cartaceo; volumi: 1 vol. in 9 numeri; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–250]: Memorie del patriarcato d'Aquileia e della sua soppressione. Cartolare contenente 9 memorie in separati fascicoli, alcuni rilegati, altri in fogli sciolti; dei  […+90 caratteri]
+- riferimento «1°» [251–319]: 1° Ab. G. Bini: Notizia del patriarcato d'Aquileia dopo l'anno 1400;
+- riferimento «2°» [320–461]: 2° Quaderno contenente atti e lettere sulla soppressione del patriarcato (1749-1752) e riassunto di tutte le vicende e le pratiche anteriori;
+- riferimento «3°» [462–515]: 3° Altra copia delle Notizie del Bini sopra indicate;
+- riferimento «4°» [516–700]: 4° Grosso fascicolo di atti relativi alla soppressione del patriarcato: informazioni, lettere corse tra Benedetto 14° e Carlo d'Attems vescovo di Gorizia, bolle […+24 caratteri]
+- riferimento «5°» [701–1062]: 5° Atti della soppressione del patriarcato: convenzione tra Venezia e il patriarca L. Mezzarota nel 1445, informazioni sul patriarcato, sue ragioni sopra Aquile […+201 caratteri]
+- riferimento «6°» [1063–1156]: 6° Notizia del patriarcato d'Aquileia scritta nel 1709 e atti relativi alla sua soppressione;
+- riferimento «7°» [1157–1309]: 7° Notizia del patriarcato d'Aquileia nella parte austriaca dopo l'anno 1400 scritta da mons. Sebastiano Braida: quasi uguale a quella segnata col n. 2;
+- riferimento «8°» [1310–1340]: 8° Altra copia delle medesime;
+- riferimento «9°» [1341–1420]: 9° Atti sulla soppressione del patriarcato d'Aquileia (1752), bolle pontificie.
+
+### 978.
+
+**Testo**
+
+> Friuli: Lettere di luogotenenti. Cartolare contenente tre fasci di lettere, molto malandate. Il 1° contiene lettere della Signoria al luogotenente Francesco Venier (1535-36); il 2° lettere di comunità, di nobili e di cittadini ai luogotenenti per affari giudiziari (1521 a 1533); il 3° lettere della Signoria al luogotenente Fr. Michiel per cose giudiziarie (1551-52).
+
+**Coda**: `Cartaceo · 1 vol. · stato: m.` → supporto: Cartaceo; volumi: 1 vol.; stato: m.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–92]: Friuli: Lettere di luogotenenti. Cartolare contenente tre fasci di lettere, molto malandate.
+- riferimento «1°» [93–174]: Il 1° contiene lettere della Signoria al luogotenente Francesco Venier (1535-36);
+- riferimento «2°» [175–279]: il 2° lettere di comunità, di nobili e di cittadini ai luogotenenti per affari giudiziari (1521 a 1533);
+- riferimento «3°» [280–368]: il 3° lettere della Signoria al luogotenente Fr. Michiel per cose giudiziarie (1551-52).
+
+### 986.
+
+**Testo**
+
+> Friuli: imposte. Cartolare contenente 5 fascicoli, dei quali il 1° gli atti del saldo del sussidio dal 1529 al 1542 e altri atti sulla stessa materia fino al 1606; il 2° Atti di resoconti del Parlamento (1559-1591); il 3° atti di causa tra i castellani e la città di Udine per ragione di sussidi e donativi (1690); il 4° Atti sulla ripartizione delle quote del sussidio e note dei debitori (1546-1686); il 5° un particolareggiato inventario e reso conto dell'amministrazione provinciale alla cassa militare imperiale nel 1797.
+
+**Coda**: `Cartaceo · 1 vol. · stato: b.` → supporto: Cartaceo; volumi: 1 vol.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–50]: Friuli: imposte. Cartolare contenente 5 fascicoli,
+- riferimento «1°» [51–163]: dei quali il 1° gli atti del saldo del sussidio dal 1529 al 1542 e altri atti sulla stessa materia fino al 1606;
+- riferimento «2°» [164–215]: il 2° Atti di resoconti del Parlamento (1559-1591);
+- riferimento «3°» [216–314]: il 3° atti di causa tra i castellani e la città di Udine per ragione di sussidi e donativi (1690);
+- riferimento «4°» [315–402]: il 4° Atti sulla ripartizione delle quote del sussidio e note dei debitori (1546-1686);
+- riferimento «5°» [403–526]: il 5° un particolareggiato inventario e reso conto dell'amministrazione provinciale alla cassa militare imperiale nel 1797.
+
+### 1200.
+
+**Testo**
+
+> Duomo di Udine. Cartolare contenente 11 fascicoli diversi: 1° Memorie sul restauro del duomo e notizie su Aquileia e soppressione del patriarcato; 2° Consulto sul giuspatronato della città sul duomo; 3° Rotolo delle rendite del duomo, del cameraro G. Monticoli del 1438; 4° livelli del duomo nel 1376-77; 5° Rotolo dei livelli del duomo del secolo 14°; 6° Fabbrica del duomo di Udine: rotolo delle rendite e spese, del cameraro Pinzano del Torso del 1440; 7° Cameraria del duomo del 1501; 8° Deliberazioni del comune sulla riforma dei banchi del duomo (1734-36); 9° Ricorso del capitolo al doge contro i magistrati comunali per pretesa violazione dei propri diritti amministrativi (1739 e seguenti); 10° Elenco delle reliquie di Udine; 11° Scritture di vario argomento (accordo tra città e capitolo (1744), iscrizioni, funzioni, predicatori, quadri, organi, lezioni di Sacra Scrittura).
+
+**Coda**: `Cartaceo · 1 in 11 num. · stato: b.` → supporto: Cartaceo; volumi: 1 in 11 num.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–58]: Duomo di Udine. Cartolare contenente 11 fascicoli diversi:
+- riferimento «1°» [59–146]: 1° Memorie sul restauro del duomo e notizie su Aquileia e soppressione del patriarcato;
+- riferimento «2°» [147–199]: 2° Consulto sul giuspatronato della città sul duomo;
+- riferimento «3°» [200–270]: 3° Rotolo delle rendite del duomo, del cameraro G. Monticoli del 1438;
+- riferimento «4°» [271–304]: 4° livelli del duomo nel 1376-77;
+- riferimento «5°» [305–352]: 5° Rotolo dei livelli del duomo del secolo 14°;
+- riferimento «6°» [353–455]: 6° Fabbrica del duomo di Udine: rotolo delle rendite e spese, del cameraro Pinzano del Torso del 1440;
+- riferimento «7°» [456–488]: 7° Cameraria del duomo del 1501;
+- riferimento «8°» [489–562]: 8° Deliberazioni del comune sulla riforma dei banchi del duomo (1734-36);
+- riferimento «9°» [563–699]: 9° Ricorso del capitolo al doge contro i magistrati comunali per pretesa violazione dei propri diritti amministrativi (1739 e seguenti);
+- riferimento «10°» [700–735]: 10° Elenco delle reliquie di Udine;
+- riferimento «11°» [736–886]: 11° Scritture di vario argomento (accordo tra città e capitolo (1744), iscrizioni, funzioni, predicatori, quadri, organi, lezioni di Sacra Scrittura).
+
+### 1475.
+
+**Testo**
+
+> Protocolli del notaio Gabriele da Cremona, cancelliere patriarcale. Due volumi rilegati in cartone, il 1° di carte 53+68; il 2° senza numerazione di carte, entrambi misuranti 33 x 22½: il 1° riguarda gli anni 1306-1314, il 2° il 1325-26.
+
+**Coda**: `Cartaceo · 2 vol. · stato: b.` → supporto: Cartaceo; volumi: 2 vol.; stato: b.; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–99]: Protocolli del notaio Gabriele da Cremona, cancelliere patriarcale. Due volumi rilegati in cartone,
+- riferimento «1°» [100–121]: il 1° di carte 53+68;
+- riferimento «2°» [122–184]: il 2° senza numerazione di carte, entrambi misuranti 33 x 22½:
+- riferimento «1°» [185–219]: il 1° riguarda gli anni 1306-1314,
+- riferimento «2°» [220–237]: il 2° il 1325-26.
+
+### 1509.
+
+**Testo**
+
+> Numismatica, antichità, epigrafi. Cartolare contenente: 1° un grosso fascicolo d'epigrafi, iscrizioni aquileiesi, istriane, romane, cristiane raccolte da parecchi; 2° un fascicolo di numismatica greco-romana, carnica, aquileiese e di stati moderni; 3° un fascicoletto di descrizioni d'oggetti antichi trovati in Friuli e altrove.
+
+**Coda**: `Cartaceo · 1 vol. in 3 num.` → supporto: Cartaceo; volumi: 1 vol. in 3 num.; stato: —; provenienza: —
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–55]: Numismatica, antichità, epigrafi. Cartolare contenente:
+- riferimento «1°» [56–163]: 1° un grosso fascicolo d'epigrafi, iscrizioni aquileiesi, istriane, romane, cristiane raccolte da parecchi;
+- riferimento «2°» [164–248]: 2° un fascicolo di numismatica greco-romana, carnica, aquileiese e di stati moderni;
+- riferimento «3°» [249–329]: 3° un fascicoletto di descrizioni d'oggetti antichi trovati in Friuli e altrove.
+
+### 1583.
+
+**Testo**
+
+> Pontini prof. Antonio. Nove cartolari di lettere  da lui ricevute: 1° e 2° lettere della nipote Maria Gregori Vianelli; 3°, 4°, 5° lettere di diversi, estranei alla sua famiglia; 6° e 7° lettere del padre, della madre, dei fratelli, cugini, cognati e altri suoi congiunti; 8° Partecipazioni (a stampa) di matrimoni; 9° Annunzi di morte (a stampa). In gran parte le lettere trattano di affari famigliari; o sono di augurio, di invito da parte di colleghi e di amici. Notevoli sono quelle del patriota Giacomo Antonelli di Cervignano, morto nel 1927, suo intimo amico.
+
+**Coda**: `Cartaceo · 7 vol. · stato: m.` → supporto: Cartaceo; volumi: 7 vol.; stato: m.; provenienza: —
+
+**Annotazioni**: [nota_a_margine] «anzi 8», «(7 al 20.3.2025)»; [nota_a_margine] «8° e 9° mancanti (20.3.2025) I: 1) lettere di diversi (A-F) 2) " " " (G-Q) 3) " " " (R-Z). II: 1) lettere di familiari 2) " " ". III: 1) lettere della nipote 2) lettere della nipote»
+
+**Segmenti**
+
+- preambolo (senza etichetta) [0–66]: Pontini prof. Antonio. Nove cartolari di lettere  da lui ricevute:
+- riferimento «1° e 2°» [67–119]: 1° e 2° lettere della nipote Maria Gregori Vianelli;
+- riferimento «3°, 4°, 5°» [120–178]: 3°, 4°, 5° lettere di diversi, estranei alla sua famiglia;
+- riferimento «6° e 7°» [179–272]: 6° e 7° lettere del padre, della madre, dei fratelli, cugini, cognati e altri suoi congiunti;
+- riferimento «8°» [273–315]: 8° Partecipazioni (a stampa) di matrimoni;
+- riferimento «9°» [316–566]: 9° Annunzi di morte (a stampa). In gran parte le lettere trattano di affari famigliari; o sono di augurio, di invito da parte di colleghi e di amici. Notevoli s […+90 caratteri]
+
+### 2604.
+
+**Testo**
+
+> Lettere e autografi:
+>
+> 1) di Luigi Lizioli, Crescenzago, 9 giugno 1919, a Isidoro Baroni.
+>
+> 2) di Pacifico Valussi a Gius. Martina.
+>
+> 3) di Quintino Sella, 17 e 23 agosto 1866 a G. Martina.
+>
+> 4) di Antonio Venerio, 30.IV.1852 al co. T. Ottelio.
+>
+> 5) di Feliciano Agricola, 21.VIII.1685, Risano, al padre.
+>
+> 6) di Francesco De Rubeis (sec. XX), da Poggio Renatico, note.
+>
+> 7) di Giuseppe Marcotti (nota).
+>
+> 8) dott. Carlo Fabani o Fabiani, 17 luglio 1900, di Morbegno.
+>
+> 9) Luciano Tavani, Latisana, 19.XI.1925.
 
 **Coda**: —
 
 **Segmenti**
 
-- preambolo (senza etichetta) [0–135]: Miscellanea di cose storiche friulane. Volume di cm. 22 x 31, copert. di cartone, fogli numerati e scritti 154 (= facc. 307). Contiene:
-- riferimento «I)» [136–263]: I) Vita del B. Simone Martire da Trento, copia tratta da un libro di Fr. Jacopo dell'Ordine degli Agostiniani, 1347 (excerpta).
-- riferimento «II)» [264–326]: II) Notizie sul B. Odorico da Pordenone (id., dal med. libro).
-- riferimento «III)» [327–356]: III) Rimedio contro la peste.
-- riferimento «IV)» [357–407]: IV) Donazione dei dazi (1348) alla Città di Udine.
-- riferimento «V)» [408–633]: V) Lettere al Comune di Marano (1350) ed al Capitano di Flambro (1350). Seguono altre lettere della Co.ssa Caterina di Gorizia (1362). Deliberazioni del Consigl […+65 caratteri]
-- riferimento «VI)» [634–719]: VI) Dell'uso antivenereo del tabacco (tratto dalla vita del P. Giuseppe di Copertino.
-- riferimento «VII)» [720–788]: VII) Supplica del C.te Lucio della Torre all'Ecc.mo Consiglio dei X.
-- riferimento «VIII)» [789–836]: VIII) Magistrati e cariche di Terraferma, 1663.
-- riferimento «IX)» [837–887]: IX) Memoria ai posteri del C.te Lucio della Torre.
-- riferimento «X)» [888–938]: X) Cronica di casate antiche di Udine (Monticoli).
-- riferimento «XI)» [939–968]: XI) L'anno meraviglioso 1748.
-- riferimento «XII)» [969–1075]: XII) Discorso dell'Ambasciatore dello Stato ecclesiastico al Conclave per la sede vacante di Clemento XII.
-- riferimento «XIII)» [1076–1123]: XIII) Compendio del Vecchio e Nuovo Testamento.
-- riferimento «XIV)» [1124–1188]: XIV) Ville sottoposte alla giurisdizione del Cap.lo di Aquileja.
-- riferimento «XV)» [1189–1237]: XV) Indulgenze, rosari e corone di S.ta Brigida.
-- riferimento «XVI)» [1238–1272]: XVI) Id. di S. Francesco d'Assisi.
-- riferimento «XVII)» [1273–1303]: XVII) Descrizione di Aquileja.
-- riferimento «XVIII)» [1304–1347]: XVIII) Descrizione della Regata di Venezia.
-- riferimento «XIX)» [1348–1401]: XIX) Per la nobiltà di Udine. Decreto del L.te, 1751.
-- riferimento «XX)» [1402–1439]: XX) Aggiustamento per Aquileja, 1751.
-- riferimento «XXI)» [1440–1507]: XXI) Miracoli di S. Antonio di Padova, da un libro stamp. nel 1748.
-- riferimento «XXII)» [1508–1927]: XXII) Segue nel volume sotto questo numero l'indice delle lettere e documenti qui indicati sommariamente al n. V. Zibaldone scritto verso la fine del sec. XVIII […+259 caratteri]
+- preambolo (senza etichetta) [0–20]: Lettere e autografi:
+- riferimento «1)» [21–87]: 1) di Luigi Lizioli, Crescenzago, 9 giugno 1919, a Isidoro Baroni.
+- riferimento «2)» [88–127]: 2) di Pacifico Valussi a Gius. Martina.
+- riferimento «3)» [128–183]: 3) di Quintino Sella, 17 e 23 agosto 1866 a G. Martina.
+- riferimento «4)» [184–236]: 4) di Antonio Venerio, 30.IV.1852 al co. T. Ottelio.
+- riferimento «5)» [237–294]: 5) di Feliciano Agricola, 21.VIII.1685, Risano, al padre.
+- riferimento «6)» [295–357]: 6) di Francesco De Rubeis (sec. XX), da Poggio Renatico, note.
+- riferimento «7)» [358–389]: 7) di Giuseppe Marcotti (nota).
+- riferimento «8)» [390–451]: 8) dott. Carlo Fabani o Fabiani, 17 luglio 1900, di Morbegno.
+- riferimento «9)» [452–492]: 9) Luciano Tavani, Latisana, 19.XI.1925.
 
-### 878.
+### 3113.
 
 **Testo**
 
-> Cronache friulane e nobili del Friuli. Cartolare contenente: 1° Cronaca di Vincenzo Giusti del 1678 delle famiglie nobili di Udine, per alfabeto; 2° Cronaca di Nicolò Monticoli delle famiglie nobili di Udine con notizie sulla loro origine meno schematiche di quelle della cronaca Giusti; 3° Altra copia delle Cronaca Monticoli; 4° Altra copia della medesima: questa l'originale autografo [errato: la scrittura è posteriore]; 5° Libro d'oro: è un grosso fascicolo contenente in copia le cronache di N. Monticoli, di V. Giusti con le giunte di M. A. Clapiceo, di U. Ugolini e di P. Passerini, e con l'indice e le copie d'una deliberazione del Consiglio del 25 aprile 1518; 6° Grosso volume contenente la storia della vertenza con cui Udine rivendica alla propria nobiltà il titolo per entrare nell'Ordine dei cavalieri di Malta, corredata di tutte le scritture e memorie difensive e storiche (1740-1750): erano proprietà del canonico Ant. Montegnacco, e furono raccolte da G. D. Ciconi; 7° Documenti delle famiglie Rubeis di Gorisizza, coll'albero genealogico; 8° Elenco dei nobili della provincia di Udine (1841); 9° Altro elenco più antico delle medesime; 10° Terzo elenco numerale delle stesse.
-
-**Coda**: `Cartaceo · 1 vol. in 10 numeri · stato: b.` → supporto: Cartaceo; volumi: 1 vol. in 10 numeri; stato: b.; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–60]: Cronache friulane e nobili del Friuli. Cartolare contenente:
-- riferimento «1°» [61–145]: 1° Cronaca di Vincenzo Giusti del 1678 delle famiglie nobili di Udine, per alfabeto;
-- riferimento «2°» [146–287]: 2° Cronaca di Nicolò Monticoli delle famiglie nobili di Udine con notizie sulla loro origine meno schematiche di quelle della cronaca Giusti;
-- riferimento «3°» [288–327]: 3° Altra copia delle Cronaca Monticoli;
-- riferimento «4°» [328–424]: 4° Altra copia della medesima: questa l'originale autografo [errato: la scrittura è posteriore];
-- riferimento «5°» [425–670]: 5° Libro d'oro: è un grosso fascicolo contenente in copia le cronache di N. Monticoli, di V. Giusti con le giunte di M. A. Clapiceo, di U. Ugolini e di P. Passe […+85 caratteri]
-- riferimento «6°» [671–984]: 6° Grosso volume contenente la storia della vertenza con cui Udine rivendica alla propria nobiltà il titolo per entrare nell'Ordine dei cavalieri di Malta, corr […+153 caratteri]
-- riferimento «7°» [985–1058]: 7° Documenti delle famiglie Rubeis di Gorisizza, coll'albero genealogico;
-- riferimento «8°» [1059–1112]: 8° Elenco dei nobili della provincia di Udine (1841);
-- riferimento «9°» [1113–1155]: 9° Altro elenco più antico delle medesime;
-- riferimento «10°» [1156–1195]: 10° Terzo elenco numerale delle stesse.
-
-### 967.
-
-**Testo**
-
-> Friuli: Atti della contadinanza. Cartolare che contiene: 1° fascicolo di vari atti riguardanti la contadinanza, le sue contribuzioni di carreggi, pel governo delle acque, per il riattamento delle fortezze, per la condotta delle cernide, per i contagi, per l'elezione dei suoi sindaci e dei suoi protettori, per le regalie di legna che solevansi pagare agli ex luogotenenti del governo veneto (1444-1801); 2° Sei ducali ai luogotenenti, in pergamena, riguardanti 5 processi criminali, e 1 concessione di limitazione di dazio del pestrino alla contadinanza; 3° Atti di un processo dei Savorgnan contro la contadinanza (1515-1691); 4° grosso pacco di carte raccolte senz'ordine riferibili nella massima parte a questioni della contadinanza (1558-1750).
-
-**Coda**: `Cartaceo · 1 vol. in 4 num. · stato: b.` → supporto: Cartaceo; volumi: 1 vol. in 4 num.; stato: b.; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–56]: Friuli: Atti della contadinanza. Cartolare che contiene:
-- riferimento «1°» [57–404]: 1° fascicolo di vari atti riguardanti la contadinanza, le sue contribuzioni di carreggi, pel governo delle acque, per il riattamento delle fortezze, per la cond […+187 caratteri]
-- riferimento «2°» [405–555]: 2° Sei ducali ai luogotenenti, in pergamena, riguardanti 5 processi criminali, e 1 concessione di limitazione di dazio del pestrino alla contadinanza;
-- riferimento «3°» [556–628]: 3° Atti di un processo dei Savorgnan contro la contadinanza (1515-1691);
-- riferimento «4°» [629–749]: 4° grosso pacco di carte raccolte senz'ordine riferibili nella massima parte a questioni della contadinanza (1558-1750).
-
-### 985.
-
-**Testo**
-
-> Atti dei deputati della Patria. Sono 4 volumi, tre rilegati in carta pecora, il 2° in cartone, di formato differente l'uno dall'altro, ma identici per il contenuto. Il 1° va dal 1638 al 1672, il 2° dal 1650 al 1704, il 3° dal 1670 al 1730, il 4° dal 1780 al 1799. Contengono atti e deliberazioni del Parlamento di ogni genere ed argomento, fedi, decreti, questioni tra la nobiltà e il clero e la città ecc.
-
-**Coda**: `Cartaceo · 4 voll. · stato: b.` → supporto: Cartaceo; volumi: 4 voll.; stato: b.; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–76]: Atti dei deputati della Patria. Sono 4 volumi, tre rilegati in carta pecora,
-- riferimento «2°» [77–164]: il 2° in cartone, di formato differente l'uno dall'altro, ma identici per il contenuto.
-- riferimento «1°» [165–191]: Il 1° va dal 1638 al 1672,
-- riferimento «2°» [192–215]: il 2° dal 1650 al 1704,
-- riferimento «3°» [216–239]: il 3° dal 1670 al 1730,
-- riferimento «4°» [240–406]: il 4° dal 1780 al 1799. Contengono atti e deliberazioni del Parlamento di ogni genere ed argomento, fedi, decreti, questioni tra la nobiltà e il clero e la citt […+6 caratteri]
-
-### 1198.
-
-**Testo**
-
-> Cartolare contenente varie cose: 1° un fascicolo comprendente un discorso in friulano di G. P. De Domini; un altro sulla dilezion dei nemici, in friulano; due prediche in friulano; un dialogo in versi, e una breve istruzione sacramentale; 2° un dialogo in 114 sestine di Pietro Tamburini; 3° un fascicoletto di orazioni latine con copertina in pergamena (1813); 4° un altro fascicoletto simile di S. D'Apollonia; 5° un fascicoletto contenente una predica in friulano; 6° un'orazione in morte di Maria Lodovica (1816); 7° un'orazione del p. Girolamo Tornielli (1750); 8° pochi fogli d'un codice membranaceo del Breviario romano del secolo 15°; 9° un trattatello sulla cognizione di se stesso, fascicolo slegato, senza numerazione di pagine nè nome d'autore, nè data; 10° Rotulo delli affitti della Vergine intemerata del Sasso in Plebe Invilini, del secolo XVI, codicetto di 16 carte in pergamena, di cui però mancano le 7-12, rilegato in cuoio, di 21½ x 15, malandato; 11° Inni sacri pro ecclesie Glemonae (1489), di 20 pagine in pergamena, di 23 x 16, con copertina di carta semplice; 12° Lettere del sig. di S. Andrè (1725) medico del re, in 60 pagine, cui segue un altro fascicolo di pagine 76 sulla Falsità delle virtù umane di M. Esprit (1692), riuniti sotto una copertina di cartone; 13° Variae metaphysicae generalis quaestiones di Giacomo Bini di Bertiolo (1772), fascicolo con pagine non numerate con copertina di cuoio nero lavorato; 14° Vita di Dorotea Bojani di Fr. Giusti (1776), fascico […+676 caratteri]
-
-**Coda**: `Cartaceo e pergam. · 1 in 18 num.` → supporto: Cartaceo e pergam.; volumi: 1 in 18 num.; stato: —; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–32]: Cartolare contenente varie cose:
-- riferimento «1°» [33–238]: 1° un fascicolo comprendente un discorso in friulano di G. P. De Domini; un altro sulla dilezion dei nemici, in friulano; due prediche in friulano; un dialogo i […+45 caratteri]
-- riferimento «2°» [239–288]: 2° un dialogo in 114 sestine di Pietro Tamburini;
-- riferimento «3°» [289–361]: 3° un fascicoletto di orazioni latine con copertina in pergamena (1813);
-- riferimento «4°» [362–412]: 4° un altro fascicoletto simile di S. D'Apollonia;
-- riferimento «5°» [413–467]: 5° un fascicoletto contenente una predica in friulano;
-- riferimento «6°» [468–517]: 6° un'orazione in morte di Maria Lodovica (1816);
-- riferimento «7°» [518–566]: 7° un'orazione del p. Girolamo Tornielli (1750);
-- riferimento «8°» [567–642]: 8° pochi fogli d'un codice membranaceo del Breviario romano del secolo 15°;
-- riferimento «9°» [643–765]: 9° un trattatello sulla cognizione di se stesso, fascicolo slegato, senza numerazione di pagine nè nome d'autore, nè data;
-- riferimento «10°» [766–968]: 10° Rotulo delli affitti della Vergine intemerata del Sasso in Plebe Invilini, del secolo XVI, codicetto di 16 carte in pergamena, di cui però mancano le 7-12,  […+42 caratteri]
-- riferimento «11°» [969–1085]: 11° Inni sacri pro ecclesie Glemonae (1489), di 20 pagine in pergamena, di 23 x 16, con copertina di carta semplice;
-- riferimento «12°» [1086–1289]: 12° Lettere del sig. di S. Andrè (1725) medico del re, in 60 pagine, cui segue un altro fascicolo di pagine 76 sulla Falsità delle virtù umane di M. Esprit (169 […+43 caratteri]
-- riferimento «13°» [1290–1443]: 13° Variae metaphysicae generalis quaestiones di Giacomo Bini di Bertiolo (1772), fascicolo con pagine non numerate con copertina di cuoio nero lavorato;
-- riferimento «14°» [1444–1547]: 14° Vita di Dorotea Bojani di Fr. Giusti (1776), fascicolo rilegato in cartone, di pagine non numerate;
-- riferimento «15°» [1548–1714]: 15° Frammento di Breviario aquileiese del secolo 15° di 55 fogli in pergamena, tutti staccati l'un dall'altro, di 23 o 25 x 16 o 17½, con copertina di cartone g […+6 caratteri]
-- riferimento «16°» [1715–1835]: 16° Frammenti di lezioni di Ermeneutica e di Filosofia, in latino, del secolo 18°, divisi in 2 fascicoli, ma incompleti;
-- riferimento «17°» [1836–1914]: 17° Frammenti di lezioni di filosofia, in latino, senza nome d'autore nè data;
-- riferimento «18°» [1915–2016]: 18° Fr. Trento: lettera sulla preparazione alla morte, opuscoletto di 70 pagine, già stampato (1786);
-- riferimento «19°» [2017–2176]: 19° Canzone francese «Jeu doit amours…» con musica (pergamena tolta dalla copertina di un quaderno del 1535. Arch. Florio 290); pubblicata da P. L. Petrobelli.
-
-### 1473.
-
-**Testo**
-
-> Protocolli di Eusebio da Romagnano, cancelliere patriarcale. Due volumi rilegati in cartone, di 25½ x 17 (anni 1330-35) e di 32½ x 23½ (anni 1318-33), il 1° di 78 carte, il 2° di 45, alquanto guasto.
-
-**Coda**: `Cartaceo · 2 vol. · stato: m.` → supporto: Cartaceo; volumi: 2 vol.; stato: m.; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–150]: Protocolli di Eusebio da Romagnano, cancelliere patriarcale. Due volumi rilegati in cartone, di 25½ x 17 (anni 1330-35) e di 32½ x 23½ (anni 1318-33),
-- riferimento «1°» [151–169]: il 1° di 78 carte,
-- riferimento «2°» [170–199]: il 2° di 45, alquanto guasto.
-
-### 1504.
-
-**Testo**
-
-> Brumati ab. Leonardo: Manoscritti e corrispondenza. Cartolare contenente: 1° grosso fascicolo di lettere a lui dirette, disposte per ordine alfabetico; 2° studi sulle malattie della vite (1851-54); 3° Studi vari d'agronomia; 4° Delle risaie nel territorio di Monfalcone e delle loro malattie; 5° Note sui fossili di Lussin grande (1839); 6° Catalogo sistematico delle piante state osservate in Friuli sino al 1845; 7° Nomenclatura delle 4 classi degli animali vertebrati del paese (1843); 8° Abbozzi, note e memorie per un nomenclatore fitologico.
-
-**Coda**: `Cartaceo · 1 vol. in 8 num. · stato: b.` → supporto: Cartaceo; volumi: 1 vol. in 8 num.; stato: b.; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–73]: Brumati ab. Leonardo: Manoscritti e corrispondenza. Cartolare contenente:
-- riferimento «1°» [74–151]: 1° grosso fascicolo di lettere a lui dirette, disposte per ordine alfabetico;
-- riferimento «2°» [152–197]: 2° studi sulle malattie della vite (1851-54);
-- riferimento «3°» [198–224]: 3° Studi vari d'agronomia;
-- riferimento «4°» [225–292]: 4° Delle risaie nel territorio di Monfalcone e delle loro malattie;
-- riferimento «5°» [293–337]: 5° Note sui fossili di Lussin grande (1839);
-- riferimento «6°» [338–414]: 6° Catalogo sistematico delle piante state osservate in Friuli sino al 1845;
-- riferimento «7°» [415–488]: 7° Nomenclatura delle 4 classi degli animali vertebrati del paese (1843);
-- riferimento «8°» [489–547]: 8° Abbozzi, note e memorie per un nomenclatore fitologico.
-
-### 1562.
-
-**Testo**
-
-> Al. Wolf: Cartolare contenente 7 fascicoli comprendenti: 1° docenti e scolari friulani all'Università di Padova; 2° Nomi di uomini e donne di Aquileia, Concordia, Cividale e Giulio carnico; 3° Studi e note sul Friuli romano e preromano; 4° Patti fra Cividale e Venezia; atti del capitolo cividalese e iscrizioni del palazzo pubblico di Cividale; 5° Pievi di Aquileia, Cividale, Concordia, Cadore, Tolmezzo, Tarcento, Travesio; 6° Regesti d'Istria, Trieste e Marca Trivigiana; 7° Documenti di beni allodiali in pertinenze di Osoppo.
-
-**Coda**: `Cartaceo · 1 vol. in 7 fasc.` → supporto: Cartaceo; volumi: 1 vol. in 7 fasc.; stato: —; provenienza: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–56]: Al. Wolf: Cartolare contenente 7 fascicoli comprendenti:
-- riferimento «1°» [57–112]: 1° docenti e scolari friulani all'Università di Padova;
-- riferimento «2°» [113–189]: 2° Nomi di uomini e donne di Aquileia, Concordia, Cividale e Giulio carnico;
-- riferimento «3°» [190–236]: 3° Studi e note sul Friuli romano e preromano;
-- riferimento «4°» [237–345]: 4° Patti fra Cividale e Venezia; atti del capitolo cividalese e iscrizioni del palazzo pubblico di Cividale;
-- riferimento «5°» [346–426]: 5° Pievi di Aquileia, Cividale, Concordia, Cadore, Tolmezzo, Tarcento, Travesio;
-- riferimento «6°» [427–475]: 6° Regesti d'Istria, Trieste e Marca Trivigiana;
-- riferimento «7°» [476–531]: 7° Documenti di beni allodiali in pertinenze di Osoppo.
-
-### 2637/2.
-
-**Testo**
-
-> a) Görki, Maksim. Zascebrina (versione di P. Loschi, 1902).
+> a) Zorzi Giuseppe, Suonate e Adagio per organo, (scompl.).
 >
-> b) Sienkiewicz, H. Schizzo letterario di Carlo Meuth (1900).
+> b) De Vit Giacomo, Sonate per organo, (scompl.).
 >
-> c) Sulla questione della convenzione letteraria.
->
-> (Versioni dal russo).
+> Musica 18.
 
 **Coda**: —
 
 **Segmenti**
 
-- riferimento «a)» [0–59]: a) Görki, Maksim. Zascebrina (versione di P. Loschi, 1902).
-- riferimento «b)» [60–120]: b) Sienkiewicz, H. Schizzo letterario di Carlo Meuth (1900).
-- riferimento «c)» [121–191]: c) Sulla questione della convenzione letteraria.
-(Versioni dal russo).
+- riferimento «a)» [0–58]: a) Zorzi Giuseppe, Suonate e Adagio per organo, (scompl.).
+- riferimento «b)» [59–118]: b) De Vit Giacomo, Sonate per organo, (scompl.).
+Musica 18.
 
-### 4104.
-
-**Testo**
-
-> Percoto, Caterina. Manoscritti e produzioni varie. Una cartella con 18 fascicoli comprendenti:
->
-> 1) Poesie di vari autori in copia (cc. 67).
->
-> 2) Traduzioni friul. della novella IX della I giornata del Boccaccio.
->
-> 3) Descrizioni (26 pp.).
->
-> 4) Minute di lettere e di prefazioni (9 pezzi).
->
-> 5) Agricoltura (pp. 16 + 1 frammento e pp. 3).
->
-> 6) Corrispondenza riguardante Giulia Petrejo 1880-81 (n. 14 pezzi).
->
-> 7) Ispettorato agli educandati veneti (n. 64 pezzi).
->
-> 8) Il giornale di mia zia (fasc. di pp. 72).
->
-> 9) Note ascetiche (pp. 13).
->
-> 10) Scelta di voci tolte dai classici (cc. 16).
->
-> 11) Articolo su C. P. in "Civiltà Cattolica" a. IX, n. 209 trascritto da C. P. (pp. 4).
->
-> 12) Maffei (pp. 3).
->
-> 13) Pensieri (cc. 41).
->
-> 14) Giornale 16.12.1852 (pp. 6). 1.I-13.I.1853 (pp. 9). 1879 (pp. 29).
->
-> 15) Miscellanea di appunti, conti, note di contratti editoriali ecc. (n. 147 pezzi).
->
-> 16) Dalla Bibbia a) Ruth (pp. 26); b) Genesi Capo XXIV (pp. 32); c) Parole del Signore… (pp. 21).
->
-> 17) Note linguistiche in friul. (cc. 63 + 14).
->
-> 18) a) Della vita e degli studi di Klopstok (47 pp.); b) Giudizio di Abbadona (pp. 11); c) Dalla Messiade c. XIV (cc. 41); d) Traduz. da Klopstok (pp. 13 + 3 fogli sciolti).
-
-**Coda**: —
-
-**Segmenti**
-
-- preambolo (senza etichetta) [0–94]: Percoto, Caterina. Manoscritti e produzioni varie. Una cartella con 18 fascicoli comprendenti:
-- riferimento «1)» [95–138]: 1) Poesie di vari autori in copia (cc. 67).
-- riferimento «2)» [139–208]: 2) Traduzioni friul. della novella IX della I giornata del Boccaccio.
-- riferimento «3)» [209–233]: 3) Descrizioni (26 pp.).
-- riferimento «4)» [234–281]: 4) Minute di lettere e di prefazioni (9 pezzi).
-- riferimento «5)» [282–328]: 5) Agricoltura (pp. 16 + 1 frammento e pp. 3).
-- riferimento «6)» [329–396]: 6) Corrispondenza riguardante Giulia Petrejo 1880-81 (n. 14 pezzi).
-- riferimento «7)» [397–449]: 7) Ispettorato agli educandati veneti (n. 64 pezzi).
-- riferimento «8)» [450–494]: 8) Il giornale di mia zia (fasc. di pp. 72).
-- riferimento «9)» [495–522]: 9) Note ascetiche (pp. 13).
-- riferimento «10)» [523–570]: 10) Scelta di voci tolte dai classici (cc. 16).
-- riferimento «11)» [571–658]: 11) Articolo su C. P. in "Civiltà Cattolica" a. IX, n. 209 trascritto da C. P. (pp. 4).
-- riferimento «12)» [659–678]: 12) Maffei (pp. 3).
-- riferimento «13)» [679–701]: 13) Pensieri (cc. 41).
-- riferimento «14)» [702–772]: 14) Giornale 16.12.1852 (pp. 6). 1.I-13.I.1853 (pp. 9). 1879 (pp. 29).
-- riferimento «15)» [773–857]: 15) Miscellanea di appunti, conti, note di contratti editoriali ecc. (n. 147 pezzi).
-- riferimento «16)» [858–955]: 16) Dalla Bibbia a) Ruth (pp. 26); b) Genesi Capo XXIV (pp. 32); c) Parole del Signore… (pp. 21).
-- riferimento «17)» [956–1002]: 17) Note linguistiche in friul. (cc. 63 + 14).
-- riferimento «18)» [1003–1176]: 18) a) Della vita e degli studi di Klopstok (47 pp.); b) Giudizio di Abbadona (pp. 11); c) Dalla Messiade c. XIV (cc. 41); d) Traduz. da Klopstok (pp. 13 + 3 fo […+13 caratteri]
-
-### 4518.
+### 4154.
 
 **Testo**
 
-> Nievo, Ippolito. Lettere e biglietto da visita.
+> Leitenburg (de) Francesco.
 >
-> Cart., XIX sec. (1848-1860), 7 pezzi:
+> a) Un pari voe di fa' nuje. Commedia in 3 atti in dialetto friulano. Argomento. N. 10 fogli sciolti nn.
 >
-> 1) Lettera ad Attilio Magri, Sabbioneta, 29 agosto [1848]; 2 c. (1 foglio con funzione di busta), mm 228 x 178. A c. 2v due timbri postali: a inchiostro rosso «Sabbioneta 30 ago.», a inchiostro nero «S. Benedetto 1 set.»; tracce di ceralacca rossa di chiusura.
+> b) Il prin d'Avril. Farsa in friulano di Francesco de Leitenburg 10.5.75 (Argomento). N. 3 fogli nn.
 >
-> 2) Lettera ad Attilio Magri, s.l., [1850?]; 2 c. (1 foglio con funzione di busta), mm 251 x 135. Carta con marca a secco: quadrato con croce e ?; ceralacca rossa di chiusura.
+> c) Casi (frammento di commedia), n. 1 foglio.
 >
-> 3) Lettera ad Attilio Magri, Milano, 1 [gennaio] 1858; 2 c. (1 foglio con funzione di busta), c. 1 mm 202 x 118, c. 2 mm 202 x 136. Ceralacca nera di chiusura.
+> d) Madri e figli. Commedia. Argomento. N. 1 foglio.
 >
-> 4) Lettera a [Maria Della Chiave] de Rubeis, [Milano], 21 [gennaio] 1860; 2 c. (1 foglio con funzione di busta), mm 228 x 145. A c. 1r: «di casa».
+> e) Il predi disfatt. Commedia in 3 atti in dialetto friulano. Prima idea… 1874.31.12. N. 8 fogli sciolti.
 >
-> 5) Biglietto da visita, mm 82 x 47.
+> f) Le teste calde (Argomento), n. 1 foglio.
 >
-> 6) Lettera a Cesare [Calabi], Colloredo [di Monte Albano], 11 novembre 1856; 2 c. (1 foglio), mm 213 x 135.
->
-> 7) Lettera a Cesare [Calabi], Regoledo [di Cosio Valtellino], 8 ottobre 1858; 2 c. (1 foglio), mm 208 x 138.
+> g) Il curioso (o la curiosità. Argomento), n. 4 fogli.
 
-**Coda**: `Provenienza: nn. 1-5 Dono di Giovanni Comelli, dicembre 2003; nn. 6-7 Acquisto, 2020.` → supporto: —; volumi: —; stato: —; provenienza: nn. 1-5 Dono di Giovanni Comelli, dicembre 2003; nn. 6-7 Acquisto, 2020.
+**Coda**: `Provenienza: Dono Pilosio 1959.` → supporto: —; volumi: —; stato: —; provenienza: Dono Pilosio 1959.
 
 **Segmenti**
 
-- preambolo (senza etichetta) [0–85]: Nievo, Ippolito. Lettere e biglietto da visita.
-Cart., XIX sec. (1848-1860), 7 pezzi:
-- riferimento «1)» [86–346]: 1) Lettera ad Attilio Magri, Sabbioneta, 29 agosto [1848]; 2 c. (1 foglio con funzione di busta), mm 228 x 178. A c. 2v due timbri postali: a inchiostro rosso « […+100 caratteri]
-- riferimento «2)» [347–521]: 2) Lettera ad Attilio Magri, s.l., [1850?]; 2 c. (1 foglio con funzione di busta), mm 251 x 135. Carta con marca a secco: quadrato con croce e ?; ceralacca ross […+14 caratteri]
-- riferimento «3)» [522–681]: 3) Lettera ad Attilio Magri, Milano, 1 [gennaio] 1858; 2 c. (1 foglio con funzione di busta), c. 1 mm 202 x 118, c. 2 mm 202 x 136. Ceralacca nera di chiusura.
-- riferimento «4)» [682–828]: 4) Lettera a [Maria Della Chiave] de Rubeis, [Milano], 21 [gennaio] 1860; 2 c. (1 foglio con funzione di busta), mm 228 x 145. A c. 1r: «di casa».
-- riferimento «5)» [829–864]: 5) Biglietto da visita, mm 82 x 47.
-- riferimento «6)» [865–972]: 6) Lettera a Cesare [Calabi], Colloredo [di Monte Albano], 11 novembre 1856; 2 c. (1 foglio), mm 213 x 135.
-- riferimento «7)» [973–1081]: 7) Lettera a Cesare [Calabi], Regoledo [di Cosio Valtellino], 8 ottobre 1858; 2 c. (1 foglio), mm 208 x 138.
+- preambolo (senza etichetta) [0–26]: Leitenburg (de) Francesco.
+- riferimento «a)» [27–130]: a) Un pari voe di fa' nuje. Commedia in 3 atti in dialetto friulano. Argomento. N. 10 fogli sciolti nn.
+- riferimento «b)» [131–231]: b) Il prin d'Avril. Farsa in friulano di Francesco de Leitenburg 10.5.75 (Argomento). N. 3 fogli nn.
+- riferimento «c)» [232–277]: c) Casi (frammento di commedia), n. 1 foglio.
+- riferimento «d)» [278–329]: d) Madri e figli. Commedia. Argomento. N. 1 foglio.
+- riferimento «e)» [330–435]: e) Il predi disfatt. Commedia in 3 atti in dialetto friulano. Prima idea… 1874.31.12. N. 8 fogli sciolti.
+- riferimento «f)» [436–479]: f) Le teste calde (Argomento), n. 1 foglio.
+- riferimento «g)» [480–534]: g) Il curioso (o la curiosità. Argomento), n. 4 fogli.
 

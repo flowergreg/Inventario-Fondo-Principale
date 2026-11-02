@@ -51,7 +51,7 @@ ELENCHI_ALFABETICI = {
 
 # Punti in cui può cominciare una proposizione.
 RX_DELIMITATORE = re.compile(
-    r"(?:\n|[.;,:?!)»]\s+|\b(?:[Cc]ontenente|[Cc]ontenendo|[Cc]ontiene|[Cc]ontengono|[Cc]omprende|[Cc]omprendente|[Cc]omprendono)\s+)"
+    r"(?:\n|[.;,:?!)»\]…]\s+|\b(?:[Cc]ontenente|[Cc]ontenendo|[Cc]ontiene|[Cc]ontengono|[Cc]omprende|[Cc]omprendente|[Cc]omprendono)\s+)"
 )
 CONNETTIVI = {
     "a", "al", "ai", "alla", "alle", "da", "dal", "dalla", "dai", "nel", "nella",
@@ -67,25 +67,36 @@ RX_FOGLI = re.compile(
     r"\s?" + INTERVALLO + r"(?![\d°])",
     re.I,
 )
-RX_FASC = re.compile(r"[Ff]asc(?:icolo|\.)\s?(?:\d+°?|[IVXLC]+\b)")
+RX_FASC = re.compile(r"[Ff]asc(?:icolo|\.°?)\s?(?:\d+°?|[IVXLC]+\b)")
+# libri: «libro 1», «lib. 3», «l.15»
+RX_LIBRO = re.compile(r"(?:[Ll]ibro|[Ll]ib\.|l\.)\s?(\d+|[IVXLC]+\b)")
 # parole che dopo un numero indicano una consistenza, non un rinvio
 RX_CONTEGGIO = re.compile(
     r"(?:pezz|fogl|cart|cc\b|lett|fasc|vol|bust|pacc|docum|esempl|copi|pagin|pp?\b)", re.I)
+RX_CONTEGGIO_NUDO = re.compile(r"(?:carte|cc\.|c\.|fogli|ff\.|pagine|pp\.|p\.)", re.I)
 RX_N = re.compile(r"N(?:\.°|°|\.|r\.)\s?\d+")
 RX_NUDO = re.compile(r"(\d+)(?:\s?(?:-|–)\s?\d+)?(?:\.ª\))?(?=\s+[^\d\s°)])")
+# due numeri per un solo elemento: «8 e 9.)», «154 e 155)»
+RX_NUMERATO_COPPIA = re.compile(r"(\d+)\s(?:e|ed)\s(\d+)(°|\.\)|\))")
+# volumi: «Il vol. I contiene», «Volume II»
+RX_VOLUME = re.compile(r"[Vv]ol(?:ume|\.)\s?(\d+°?|[IVXLC]+\b)")
+# opere: «Op. I», «Op. IV.»
+RX_OPERA = re.compile(r"Op\.\s?([IVXLC]+)\b")
 # elenchi numerati, anche a catena: «1°, 2°, 3°, 4° e 5°»
 RX_NUMERATO = re.compile(
-    r"(\d+)(?:\s?(?:-|a)\s?\d+(?=\)))?(?:\s?bis)?(°\)?|\)|\.(?=\s))"
-    r"((?:\s?(?:,|e|ed|-|a)\s?\d+(?:°|\)))*)"
+    r"(\d+)(?:(?:\s?(?:-|a)\s?\d+)+(?=\)))?(?:\s?bis)?(°\)?|\.\)|\)|\.(?=\s))"
+    r"((?:(?:(?<=\))\s|\s?(?:,|e|ed|-|a)\s?)(?:il\s|l')?\d+(?:°|\)))*(?:\s?a\s\d+\s?incl?\.?\)?)?)"
 )
 RX_ABBREVIAZIONE = re.compile(
     r"\b(?:fol|foll|f|ff|c|cc|car|cart|pag|pagg|p|pp|n|nn|fasc|vol|voll|lib|t|tom|cap|sec|ep|fab|art|num|ms|mss|cod|an|ann)$", re.I)
 # parole che dopo «carte N» indicano la consistenza del pezzo
 RX_CONSISTENZA = re.compile(
-    r",?\s*(?:legat|rileg|riunit|sciolt|unit|cucit|numerat|non numer|con numer|bianch|scritt|complessiv|in copert|in-\d|nn\b|/\d)", re.I)
+    r",?\s*(?:legat|rileg|riunit|sciolt|unit|cucit|numerat|non numer|con numer|bianch|scritt|complessiv|in copert|in-\d|nn\b|/\d|di complessiv|di carte|di cc|(?:di\s)?pag(?:\.|ine\b))", re.I)
 # un ordinale seguito da queste parole è un aggettivo («1° foglio», «18° secolo»)
 RX_ORDINALE_AGGETTIVO = re.compile(
-    r"(?>fol(?:io|\.)|foglio|carta|c\.|pagina|pag\.|p\.|secolo|sec\.|verso|recto|r\.|v\.|libro|lib\.)(?!\s?\d)")
+    r"(?>fol(?:io|\.)|foglio|carta|c\.|pagina|pag\.|p\.|secolo|sec\.|verso|recto|r\.|v\.)(?!\s?\d)")
+# un ordinale seguito da queste parole descrive, non elenca («il 2° e l'ultimo bianchi»)
+RX_ORDINALE_DESCRITTIVO = re.compile(r"(?:e l'ultim|ed ultim|e ultim|bian)", re.I)
 # formati del manoscritto: «in-8°», «in 4°», «formato 16°»
 RX_FORMATO_PRIMA = re.compile(r"(?:\bin-?|formato|form\.)\s*$", re.I)
 RX_ROMANO = re.compile(r"([IVXL]+)\)")
@@ -106,11 +117,26 @@ RX_MESE = re.compile(
 RX_LETTERA = re.compile(r"\(?([A-Za-z])(\.\d+)?(\s?bis)?\)")
 
 
+def ultimo_numero(etichetta):
+    """Ultimo numero di un'etichetta, con gli intervalli abbreviati sciolti:
+    «142-43)» → 143, «115-16-17)» → 117, «188-89)» → 189."""
+    numeri = re.findall(r"\d+", etichetta)
+    primo, ultimo = int(numeri[0]), int(numeri[-1])
+    if ultimo < primo:
+        base = 10 ** len(numeri[-1])
+        ultimo = primo - primo % base + ultimo
+    return ultimo
+
+
 def riferimento_a(testo, pos):
     """Se in `pos` comincia un riferimento, restituisce (famiglia, testo, valore)."""
     m = RX_FASC.match(testo, pos)
     if m:
         return "fascicolo", m.group(0), None
+    m = RX_LIBRO.match(testo, pos)
+    if m:
+        n = m.group(1)
+        return "libro", m.group(0), int(n) if n.isdigit() else valore_romano(n)
     m = RX_N.match(testo, pos)
     if m:
         return "numero", m.group(0), None
@@ -118,11 +144,19 @@ def riferimento_a(testo, pos):
     if m:
         v = re.search(r"\d+", m.group(0))
         return "fogli", m.group(0), int(v.group(0)) if v else 0
+    m = RX_OPERA.match(testo, pos)
+    if m:
+        return "opera", m.group(0), valore_romano(m.group(1))
+    m = RX_VOLUME.match(testo, pos)
+    if m:
+        n = m.group(1).rstrip("°")
+        return "volume", m.group(0), int(n) if n.isdigit() else valore_romano(n)
+    m = RX_NUMERATO_COPPIA.match(testo, pos)
+    if m:
+        return "numerato", m.group(0), (int(m.group(1)), int(m.group(2)))
     m = RX_NUMERATO.match(testo, pos)
     if m:
-        ultimi = re.findall(r"\d+", m.group(3)) if m.group(3) else []
-        ultimo = int(ultimi[-1]) if ultimi else int(m.group(1))
-        return "numerato", m.group(0), (int(m.group(1)), ultimo)
+        return "numerato", m.group(0), (int(m.group(1)), ultimo_numero(m.group(0)))
     m = RX_ROMANO.match(testo, pos)
     if m and (pos + len(m.group(0)) >= len(testo) or testo[pos + len(m.group(0))] in " \n"):
         if len(m.group(1)) > 1:
@@ -140,17 +174,21 @@ def riferimento_a(testo, pos):
 
 def candidati(testo):
     """Posizioni di inizio proposizione, con l'eventuale riferimento che le apre."""
-    posizioni = {0}
+    posizioni, deboli = {0}, set()
     for m in RX_DELIMITATORE.finditer(testo):
-        # il punto di un'abbreviazione di riferimento («fol. 33») non chiude
-        # una proposizione
+        # il punto di un'abbreviazione («fol. 33», «sec. 7°», «Un f. XXVII)»)
+        # di norma non chiude una proposizione: la posizione vale solo come
+        # «debole», cioè per proseguire esattamente un elenco già avviato
         if testo[m.start()] == "." and RX_ABBREVIAZIONE.search(testo, 0, m.start()):
+            deboli.add(m.end())
             continue
         posizioni.add(m.end())
-    # ogni a capo apre una proposizione, anche dopo un'abbreviazione («nn.¶b)»)
-    for m in re.finditer(r"\n", testo):
+    # ogni a capo apre una proposizione, anche dopo un'abbreviazione («nn.¶b)»);
+    # così pure la virgoletta d'apertura («1.) Serie…»)
+    for m in re.finditer(r"\n|«", testo):
         posizioni.add(m.end())
-    for inizio in sorted(posizioni):
+    deboli -= posizioni
+    for inizio in sorted(posizioni | deboli):
         if inizio >= len(testo):
             continue
         # salta fino a tre parole di collegamento
@@ -164,15 +202,18 @@ def candidati(testo):
             pos = testo.index(p, pos) + len(p)
             while pos < len(testo) and testo[pos] == " ":
                 pos += 1
+        # elisione: «l'8°», «L'11°»
+        if testo.startswith(("l'", "L'", "l’", "L’"), pos) and pos + 2 < len(testo) and testo[pos + 2].isdigit():
+            pos += 2
         r = riferimento_a(testo, pos)
         if r:
-            yield inizio, pos, r
+            yield inizio, pos, r, inizio in deboli
 
 
 # Livelli di suddivisione, dal più alto: si usa il più alto che abbia almeno
 # due elementi. Pagine e carte (fogli, nudo) indicano spesso solo la posizione
 # nel manoscritto e valgono solo se non c'è una suddivisione più alta.
-LIVELLI = ["fascicolo", "romano", "numerato", "lettera", "numero", "fogli"]
+LIVELLI = ["opera", "volume", "fascicolo", "libro", "romano", "numerato", "lettera", "numero", "fogli"]
 SALTO_MASSIMO = 15   # salto massimo ammesso in un elenco numerato (numeri omessi)
 
 
@@ -180,16 +221,17 @@ def segmenta_riferimenti(testo, scarti):
     """Restituisce la lista di (inizio, etichetta, famiglia) dei confini."""
     accettati = {f: [] for f in LIVELLI}
     serie_fogli = None        # ultimo valore di fogli/pagine accettato
-    ultimo = {"numerato": None, "romano": None}
+    ultimo = {"numerato": None, "romano": None, "libro": None, "opera": None, "volume": None}
     per_stile = {}
     ultima_lettera = None
     fine_ultimo = -1          # fine dell'ultimo riferimento accettato
-    for inizio, pos, (famiglia, etichetta, valore) in candidati(testo):
+    for inizio, pos, (famiglia, etichetta, valore), debole in candidati(testo):
         # niente candidati dentro un riferimento già accettato («Al fol.| 23»)
         if inizio < fine_ultimo:
             continue
-        a_capo = (inizio == 0 or testo[inizio - 1] == "\n"
-                  or testo[:inizio].rstrip().endswith(":"))
+        a_capo_vero = inizio == 0 or testo[inizio - 1] == "\n"
+        dopo_due_punti = testo[:inizio].rstrip().endswith(":")
+        a_capo = a_capo_vero or dopo_due_punti
         con_connettivo = pos > inizio
         dopo = testo[pos + len(etichetta):].lstrip(" ")
         prima = testo[max(0, pos - 12):pos]
@@ -208,23 +250,33 @@ def segmenta_riferimenti(testo, scarti):
             if not dopo or dopo[0] in ".;)\n" or (
                     dopo[0] == "," and serie_fogli is None and not con_connettivo and not a_capo):
                 continue
-        if famiglia in ("numero", "nudo") and RX_CONTEGGIO.match(dopo):
+        if famiglia == "numero" and RX_CONTEGGIO.match(dopo):
             continue
-        if famiglia == "fogli" and RX_CONSISTENZA.match(dopo):
+        if famiglia == "nudo" and RX_CONTEGGIO_NUDO.match(dopo):
+            continue                          # «seguono 12 carte bianche»
+        if famiglia in ("fogli", "nudo", "fascicolo") and RX_CONSISTENZA.match(dopo):
+            continue                          # «Fasc. 4 di complessive carte 78»
+        if debole and famiglia not in ("numerato", "romano", "libro", "lettera"):
             continue                          # «carte 21 legate in copertina»
         if famiglia == "fogli":
             # «cc. 31», «carte 35», «ff. 18», «pp. 8» senza parola di
             # collegamento sono di norma consistenze: valgono solo a capo
             # (dentro una serie già avviata valgono anche senza collegamento)
-            if (re.match(r"(?:cc?\.|cart[ea.]|ff?\.|pp\.)", etichetta, re.I)
-                    and not con_connettivo and not a_capo and serie_fogli is None):
+            conteggio = re.match(r"(?:cc?\.|cart[ea.]|ff?\.|pp?\.)", etichetta, re.I)
+            if conteggio and not con_connettivo and not a_capo and serie_fogli is None:
+                continue
+            # dopo i due punti una serie di carte comincia da 1 («e cioè: cart. 1 …»);
+            # altrimenti è una consistenza («3 copie: cc. 45 …»)
+            if (conteggio and not con_connettivo and not a_capo_vero and dopo_due_punti
+                    and serie_fogli is None and valore > 1):
                 continue
             serie_fogli = valore
         elif famiglia == "nudo" and ultimo["numerato"] is not None and re.match(
-                r"\d+\s?(?:a|-)\s?\d+\s+incl", testo[pos:]) and (
+                r"\d+\s?(?:a|-)\s?\d+\s+incl?\b", testo[pos:]) and (
                 ultimo["numerato"] < valore <= ultimo["numerato"] + SALTO_MASSIMO):
             # «32 a 40 incl.»: voce di un elenco numerato che copre più numeri
             famiglia = "numerato"
+            etichetta = re.match(r"\d+\s?(?:a|-)\s?\d+\s+incl?\.?", testo[pos:]).group(0)
             ultimo["numerato"] = int(re.findall(r"\d+", etichetta)[-1])
         elif famiglia == "nudo":
             if serie_fogli is None or valore >= 1000 or not (serie_fogli <= valore <= serie_fogli + 300):
@@ -233,14 +285,26 @@ def segmenta_riferimenti(testo, scarti):
                 continue
             serie_fogli = valore
             famiglia = "fogli"
-        elif famiglia in ("numerato", "romano"):
+        elif famiglia in ("numerato", "romano", "libro", "opera", "volume"):
             primo, fine_catena = valore if famiglia == "numerato" else (valore, valore)
             if primo >= 1000:
                 continue                      # è un anno, non una numerazione
+            # prosecuzione esatta dell'elenco in corso (anche con altra forma:
+            # «4° …; 5. …; 6° …»)
+            seguito = ultimo[famiglia] is not None and primo == ultimo[famiglia] + 1
+            if debole and (not seguito or not re.match(r"[^\W\d_]|[«\"(]", dopo)):
+                continue
+            if famiglia == "volume" and RX_CONSISTENZA.match(dopo):
+                continue
             if etichetta.endswith("°") or etichetta.endswith("°."):
-                # formato («in-8°», «16°, pp. 8») o aggettivo («1° foglio»)
-                if (RX_FORMATO_PRIMA.search(prima) or (dopo and dopo[0] in ",;)")
-                        or RX_ORDINALE_AGGETTIVO.match(dopo)):
+                # formato («in-8°», «16°, pp. 8»), aggettivo («1° foglio»), data
+                # («1° aprile»), descrizione («il 2° e l'ultimo bianchi»), oppure
+                # parte di un'enumerazione di ordinali («dei secoli 11°, 12° e 13°»)
+                if (RX_FORMATO_PRIMA.search(prima)
+                        or (dopo and dopo[0] in ";)") or (dopo[:1] == "," and not seguito)
+                        or RX_ORDINALE_AGGETTIVO.match(dopo) or RX_MESE.match(dopo)
+                        or RX_ORDINALE_DESCRITTIVO.match(dopo)
+                        or re.search(r"\d°\s*,\s*$", testo[:inizio])):
                     continue
             # la forma «1.» apre un elenco solo a capo o dopo i due punti
             if (famiglia == "numerato" and etichetta.endswith(".") and ultimo["numerato"] is None
@@ -248,11 +312,13 @@ def segmenta_riferimenti(testo, scarti):
                 continue
             # ogni forma («1°», «1)», «1°)», «1.») ha la sua sequenza: un
             # sottoelenco «1°) 2°)» dentro «23)» non interrompe l'elenco principale
-            stile = famiglia if famiglia == "romano" else (
+            stile = famiglia if famiglia in ("romano", "libro", "opera", "volume") else (
                 "°)" if etichetta.endswith("°)") else etichetta[-1])
             prec = per_stile.get(stile)
             if prec is None and famiglia == "romano" and ultimo["numerato"] == primo - 1:
                 ok = True                     # «1) … II) … III)»: serie mista
+            elif seguito:
+                ok = True
             elif prec is None:
                 ok = primo in (0, 1, 2)       # a volte il primo elemento non è numerato
             else:
@@ -267,6 +333,8 @@ def segmenta_riferimenti(testo, scarti):
             per_stile[stile] = fine_catena
         elif famiglia == "lettera":
             l = valore.lower()
+            if debole and not (ultima_lettera and ord(l) - ord(ultima_lettera) == 1):
+                continue
             if l == "a":
                 pass                          # un nuovo elenco può ricominciare
             elif ultima_lettera is None:
@@ -287,6 +355,13 @@ def segmenta_riferimenti(testo, scarti):
     for livello in LIVELLI:
         if peso(accettati[livello]) >= 2:
             scelti = accettati[livello]
+            # «il 2° in cartone» prima di «Il 1° …, il 2° …»: un elenco che
+            # comincia da 2 vale solo se prosegue con 3
+            if livello == "numerato" and len(scelti) >= 2:
+                v = [int(re.findall(r"\d+", e)[0]) for _, e, _ in scelti[:2]]
+                if v[0] == 2 and v[1] != 3:
+                    scarti.append((scelti[0][1], "numerazione fuori sequenza"))
+                    scelti = scelti[1:]
             if livello == "romano" and accettati["numerato"][:1] and (
                     accettati["numerato"][0][0] < scelti[0][0]):
                 scelti = accettati["numerato"][:1] + scelti   # «1)» che apre una serie romana
@@ -349,7 +424,7 @@ def elenco_paragrafi(testo):
 # Riferimenti posti dopo il contenuto o tra parentesi:
 # «Domenico Ongaro, 9 lett. (…), carte 3-23; Giuseppe Bini…, carte 26-44;»
 # «A. Altan (carte 1-18) Estratti…», «(Fasc. I da carte 1 a 39)».
-_REF = r"(?:carte|cart\.|cc?\.|fol\.|ff?\.|pag\.|pp?\.)\s?(?:\d+|[IVXLC]+\b)(?:\s?(?:-|a)\s?(?:\d+|[IVXLC]+\b))?(?:\s?[rv]\b)?"
+_REF = r"(?:carte|cart\.|c\.|fol\.|pag\.)\s?(?:\d+|[IVXLC]+\b)(?:\s?(?:-|a)\s?(?:\d+|[IVXLC]+\b))?(?:\s?[rv]\b)?"
 RX_REF_INTERNO = re.compile(
     r"\(\s*(?P<par>(?:[Ff]asc\.\s?(?:[IVX]+|\d+)\s)?(?:da\s)?" + _REF + r")\s*\)"
     r"|,\s(?P<coda>" + _REF + r")(?=\s*(?:[;.\n]|$))")
@@ -385,9 +460,18 @@ def riferimenti_in_coda(testo, minimo=2):
     return confini if len(confini) >= minimo else []
 
 
+RX_RINVIO_FINALE = re.compile(
+    r"(?:da\s)?((?:carte|cart\.|c\.|fol\.|pag\.)\s?\d+(?:\s?(?:-|a)\s?\d+)?)[.;]?\s*$")
+
+
 # Segmentazioni stabilite a mano per le voci a suddivisione discorsiva:
 # dati/segmentazioni_manuali.json → {numero: [{"inizio": testo, "etichetta": …, "tipo": …}]}
 MANUALI = RADICE / "dati" / "segmentazioni_manuali.json"
+# Voci le cui segnalazioni sono state verificate (numerazione davvero lacunosa
+# nell'originale, ecc.): dati/segmentazioni_verificate.json → {numero: nota}
+_VER = RADICE / "dati" / "segmentazioni_verificate.json"
+VERIFICATE = {k: v for k, v in (json.loads(_VER.read_text(encoding="utf-8")) if _VER.exists() else {}).items()
+              if not k.startswith("_")}
 
 
 def segmentazione_manuale(numero, testo, regole):
@@ -433,6 +517,17 @@ def costruisci_segmenti(numero, testo, scarti, manuali=None):
                     scarti.append((c[1], "riferimento isolato"))
     if not confini:
         return [("voce_intera", "", 0, len(testo), None)]
+    # il primo pezzo può avere il rinvio in coda («…; da carte 1 a 35. Da carte 36 …»):
+    # il preambolo che termina con un rinvio diventa un segmento con quell'etichetta
+    if modo is None and confini[0][2] in ("fogli", "coda"):
+        pre = testo[:confini[0][0]]
+        m = RX_RINVIO_FINALE.search(pre)
+        if m:
+            dp = pre.rfind(":", 0, m.start())
+            inizio = dp + 1 if dp >= 0 else 0
+            while inizio < len(pre) and pre[inizio] in " \n":
+                inizio += 1
+            confini = [(inizio, m.group(1), "coda")] + confini
     segmenti = []
     if testo[: confini[0][0]].strip():
         segmenti.append(("preambolo", "", 0, confini[0][0], None))
@@ -450,18 +545,58 @@ def costruisci_segmenti(numero, testo, scarti, manuali=None):
     return puliti
 
 
+def valore_etichetta(etichetta, famiglia):
+    """Valore numerico di un'etichetta di elenco (per controllarne la continuità)."""
+    if famiglia == "lettera":
+        m = re.search(r"[A-Za-z]", etichetta)
+        return ord(m.group(0).lower()) - ord("a") + 1 if m else None
+    m = re.search(r"\d+", etichetta)
+    if m:
+        return int(m.group(0))
+    m = re.search(r"\b[IVXL]+\b", etichetta)
+    return valore_romano(m.group(0)) if m else None
+
+
 def dubbi_per_voce(numero, testo, segmenti):
+    """Segnalazioni da controllare: soprattutto la continuità delle numerazioni,
+    che rivela riferimenti persi (es. «Fasc.° 2°») o presi per errore."""
     dubbi = []
+    if numero in ELENCHI_ALFABETICI or numero in VERIFICATE:
+        return dubbi                          # elenco di nomi o voce già verificata
     rif = [s for s in segmenti if s[0] == "riferimento"]
-    for tipo, etichetta, a, b, famiglia in segmenti:
-        if tipo == "riferimento" and len(testo[a:b].strip()) - len(etichetta) < 8:
+    for tipo, etichetta, a, b, famiglia in rif:
+        if len(testo[a:b].strip()) - len(etichetta) < 8:
             dubbi.append(f"segmento quasi vuoto «{etichetta}»")
     pre = [s for s in segmenti if s[0] == "preambolo"]
     if rif and pre and (pre[0][3] - pre[0][2]) > 600:
         dubbi.append(f"preambolo lungo ({pre[0][3] - pre[0][2]} caratteri)")
-    famiglie = {s[4] for s in rif}
-    if len(famiglie - {"nudo"}) > 1:
-        dubbi.append("famiglie di riferimenti miste: " + ", ".join(sorted(f for f in famiglie if f)))
+    prec = None
+    per_stile = {}
+    tutti = {valore_etichetta(e, f) for _, e, _, _, f in rif}
+    for _, e, _, _, f in rif:
+        if f == "numerato":
+            n = re.findall(r"\d+", e)
+            tutti.update(range(int(n[0]), ultimo_numero(e) + 1))
+    if any(s[4] == "coda" for s in rif):
+        rif = []                              # rinvii a carte: niente controllo di continuità
+    for tipo, etichetta, a, b, famiglia in rif:
+        if famiglia not in ("numerato", "romano", "libro", "fascicolo", "lettera", "opera", "volume"):
+            continue
+        v = valore_etichetta(etichetta, famiglia)
+        if v is None:
+            continue
+        # ogni forma di numerazione ha la sua sequenza («6° … 1. 2. 3. … 7°»)
+        m = re.search(r"(°\)|\.\)|°|\)|\.)\s*$", etichetta)
+        stile = famiglia if famiglia != "numerato" else (
+            ")" if re.search(r"incl?\b", etichetta) or not m else m.group(1))
+        prec = per_stile.get(stile)
+        if prec is None and not per_stile and v > 1:
+            dubbi.append(f"la numerazione comincia da «{etichetta}»")
+        elif (prec is not None and v > prec[0] + 1 and v != 1
+              and not (famiglia == "lettera" and prec[0] == 9 and v == 11)   # i) k): niente j
+              and not set(range(prec[0] + 1, v)) <= tutti):   # mancanti presenti in altra forma («5.»)
+            dubbi.append(f"la numerazione salta da «{prec[1]}» a «{etichetta}»")
+        per_stile[stile] = (ultimo_numero(etichetta) if famiglia == "numerato" else v, etichetta)
     return dubbi
 
 

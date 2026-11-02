@@ -54,3 +54,6 @@ Decisioni confermate dal curatore:
 - Esclusi: anni, formati («in-8°», «16°, pp. 8»), ordinali aggettivi («1° foglio», «del 1° libro»), consistenze («carte 21 legate», «FF. 2/9»), riferimenti isolati.
 - Rinvii in coda o tra parentesi («…, carte 3-23;», «(carte 1-18)») aprono segmenti se sono almeno due.
 - Voci a suddivisione discorsiva non riducibile a regole: `dati/segmentazioni_manuali.json` (5, 56, 1006, 1250), modificabile dal curatore.
+- Nuovi livelli: opere («Op. I»), volumi («Il vol. I»), libri («libro 1», «lib. 3», «l.15»); forme «1.)», «8 e 9.)», «54) 55)», «32 a 40 incl.», «Fasc.° 2°», intervalli abbreviati («142-43)»).
+- Il rinvio in coda al primo pezzo («…; da carte 1 a 35. Da carte 36…») apre il primo segmento.
+- Controllo di qualità: continuità della numerazione (salti, inizio diverso da 1), per ogni forma separatamente. Le segnalazioni verificate dal curatore stanno in `dati/segmentazioni_verificate.json`; un elenco vuoto in `dati/segmentazioni_manuali.json` forza la voce intera.

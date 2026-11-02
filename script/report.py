@@ -217,14 +217,23 @@ def main():
         w(f"- {num}: {n} segmenti")
     w("")
     w("### Segmentazioni dubbie\n")
-    w("Criteri: segmento quasi vuoto (solo l'etichetta), preambolo lungo prima del primo "
-      "riferimento (>600 caratteri), famiglie di riferimenti diverse nella stessa voce.\n")
+    w("Criteri: numerazione non continua (salti, inizio diverso da 1), segmento quasi vuoto "
+      "(solo l'etichetta), preambolo lungo prima del primo riferimento (>600 caratteri). "
+      "Gli elenchi alfabetici e le voci già verificate non sono segnalati.\n")
+    if not ds["dubbie"]:
+        w("Nessuna segmentazione dubbia.\n")
     for num, dubbi in ds["dubbie"].items():
         w(f"- **{num}**: " + "; ".join(dubbi))
     w("")
+    ver = json.loads((RADICE / "dati" / "segmentazioni_verificate.json").read_text(encoding="utf-8"))
+    w("### Segnalazioni verificate (dati/segmentazioni_verificate.json)\n")
+    for k, v in ver.items():
+        if not k.startswith("_"):
+            w(f"- **{k}**: {v}")
+    w("")
     man = json.loads((RADICE / "dati" / "segmentazioni_manuali.json").read_text(encoding="utf-8"))
     w("### Segmentazioni manuali (dati/segmentazioni_manuali.json)\n")
-    w(", ".join(k for k in man if not k.startswith("_")) + "\n")
+    w(", ".join(f"{k}" + (" (voce intera)" if not v else "") for k, v in man.items() if not k.startswith("_")) + "\n")
     w("### Riferimenti candidati scartati\n")
     motivi = collections.Counter(m for lista in ds["scartati"].values() for _, m in lista)
     w("Riepilogo: " + ", ".join(f"{m} {n}" for m, n in motivi.most_common()) + "\n")

@@ -1,177 +1,5 @@
 {
- "dubbie": {
-  "60": [
-   "famiglie di riferimenti miste: coda, fogli"
-  ],
-  "111": [
-   "famiglie di riferimenti miste: coda, fogli"
-  ],
-  "112": [
-   "famiglie di riferimenti miste: coda, fogli"
-  ],
-  "356": [
-   "preambolo lungo (823 caratteri)"
-  ],
-  "467": [
-   "preambolo lungo (2901 caratteri)"
-  ],
-  "476": [
-   "preambolo lungo (816 caratteri)"
-  ],
-  "484": [
-   "preambolo lungo (649 caratteri)"
-  ],
-  "489": [
-   "famiglie di riferimenti miste: coda, fascicolo"
-  ],
-  "524": [
-   "preambolo lungo (854 caratteri)"
-  ],
-  "555": [
-   "preambolo lungo (648 caratteri)"
-  ],
-  "563": [
-   "preambolo lungo (872 caratteri)"
-  ],
-  "565": [
-   "preambolo lungo (904 caratteri)"
-  ],
-  "566": [
-   "segmento quasi vuoto «carte 1-154»",
-   "preambolo lungo (1080 caratteri)"
-  ],
-  "593": [
-   "preambolo lungo (2608 caratteri)"
-  ],
-  "601": [
-   "famiglie di riferimenti miste: coda, fogli"
-  ],
-  "606": [
-   "segmento quasi vuoto «54)»",
-   "segmento quasi vuoto «108)»",
-   "segmento quasi vuoto «110)»",
-   "segmento quasi vuoto «138)»"
-  ],
-  "608": [
-   "preambolo lungo (1120 caratteri)"
-  ],
-  "615": [
-   "famiglie di riferimenti miste: coda, fogli"
-  ],
-  "824": [
-   "famiglie di riferimenti miste: numerato, romano"
-  ],
-  "1010": [
-   "preambolo lungo (801 caratteri)"
-  ],
-  "1237": [
-   "segmento quasi vuoto «2°»"
-  ],
-  "2134": [
-   "segmento quasi vuoto «Antivari Pietro Antonio»",
-   "segmento quasi vuoto «Ardigò Roberto»",
-   "segmento quasi vuoto «Ascoli G. I.»",
-   "segmento quasi vuoto «Bailo Luigi»",
-   "segmento quasi vuoto «Barbieri Gio. Mario»",
-   "segmento quasi vuoto «Barbieri Nini Marianna»",
-   "segmento quasi vuoto «Bassi G.B.»",
-   "segmento quasi vuoto «Beretta cav. Antonio»",
-   "segmento quasi vuoto «Bignami Giulio»",
-   "segmento quasi vuoto «Billia G.B.»",
-   "segmento quasi vuoto «Bini Giuseppe»",
-   "segmento quasi vuoto «Bodio Luigi»",
-   "segmento quasi vuoto «Bonghi Ruggero»",
-   "segmento quasi vuoto «Borbone (di) Ferdinando Carlo»",
-   "segmento quasi vuoto «Borbone (di) Farnese Carlo»",
-   "segmento quasi vuoto «Botta Nicolò»",
-   "segmento quasi vuoto «Bottacin Nicolò»",
-   "segmento quasi vuoto «Bozzoli ? Giuseppe»",
-   "segmento quasi vuoto «Brambilla Camillo»",
-   "segmento quasi vuoto «Bricito Zaccaria»",
-   "segmento quasi vuoto «Brofferio Angelo»",
-   "segmento quasi vuoto «Bulgarini G.B.»",
-   "segmento quasi vuoto «Cadorna Luigi (1 bigl. visita)»",
-   "segmento quasi vuoto «Candotti G.B.»",
-   "segmento quasi vuoto «Cairoli Benedetto»",
-   "segmento quasi vuoto «Candotti prof. Luigi»",
-   "segmento quasi vuoto «Capponi Gino»",
-   "segmento quasi vuoto «Cassetti don Giacomo (+ 1 epigramma)»",
-   "segmento quasi vuoto «Ciconi Teobaldo»",
-   "segmento quasi vuoto «Cosimo III di Toscana»",
-   "segmento quasi vuoto «Francesco Saverio Augusto di Sassonia»",
-   "segmento quasi vuoto «Fusinato Arnaldo»",
-   "segmento quasi vuoto «Ghinozzi Carlo»",
-   "segmento quasi vuoto «Giacomelli Giuseppe»",
-   "segmento quasi vuoto «Gioberti Vincenzo»",
-   "segmento quasi vuoto «Gnecchi Ercole»",
-   "segmento quasi vuoto «Grando A.»",
-   "segmento quasi vuoto «Guadagnoli Antonio»",
-   "segmento quasi vuoto «Guasti Cesare»",
-   "segmento quasi vuoto «Guerrazzi Francesco Dom.°»",
-   "segmento quasi vuoto «Lambros Paolo»",
-   "segmento quasi vuoto «Lambruschini Raffaello»",
-   "segmento quasi vuoto «Lazzaretti G.»",
-   "segmento quasi vuoto «Leicht Michele»",
-   "segmento quasi vuoto «Lodi Emanuele»",
-   "segmento quasi vuoto «Lovera di Maria Ottavio»",
-   "segmento quasi vuoto «Luschin Arnaldo»",
-   "segmento quasi vuoto «Magni Basilio»",
-   "segmento quasi vuoto «Mancini Lorenzo»",
-   "segmento quasi vuoto «Marchiori Giuseppe»",
-   "segmento quasi vuoto «Marignoli Filippo»",
-   "segmento quasi vuoto «Marinelli Giovanni»",
-   "segmento quasi vuoto «Marini Virginia»",
-   "segmento quasi vuoto «Mariotti Filippo»",
-   "segmento quasi vuoto «Martini Archimede»",
-   "segmento quasi vuoto «Martini Ferdinando»",
-   "segmento quasi vuoto «Mayer Enrico»",
-   "segmento quasi vuoto «Mazzarosa Antonio»",
-   "segmento quasi vuoto «Mazzetti Antonio»",
-   "segmento quasi vuoto «Miari Fulvio Luigi»",
-   "segmento quasi vuoto «Milanesi Carlo»",
-   "segmento quasi vuoto «Milli Cassone Giannina»",
-   "segmento quasi vuoto «Monico Giacomo»",
-   "segmento quasi vuoto «Morghen (vedi Vopato)»",
-   "segmento quasi vuoto «Muschietti Giovanni»",
-   "segmento quasi vuoto «Nerucci Gherardo»",
-   "segmento quasi vuoto «Nogara Giuseppe (2)»",
-   "segmento quasi vuoto «Nyrop Cristoforo»",
-   "segmento quasi vuoto «Osterman Valentino»",
-   "segmento quasi vuoto «Percoto Caterina»",
-   "segmento quasi vuoto «Palamidessi Cosimo»",
-   "segmento quasi vuoto «Prampero (di) Antonino»",
-   "segmento quasi vuoto «Puccini Nicolò»",
-   "segmento quasi vuoto «Radetzki Gio. Gius.»",
-   "segmento quasi vuoto «Ribotti Ignazio»",
-   "segmento quasi vuoto «Riccio Gennaro»",
-   "segmento quasi vuoto «Ristori Adelaide»",
-   "segmento quasi vuoto «Saletta Tancredi»",
-   "segmento quasi vuoto «Salvagnoli Vincenzo»",
-   "segmento quasi vuoto «Santoni Mitriade»",
-   "segmento quasi vuoto «Savini Teodoro»",
-   "segmento quasi vuoto «Savorgnan (di) Antonio»",
-   "segmento quasi vuoto «Siauve E. M.»",
-   "segmento quasi vuoto «Sivori Camillo»",
-   "segmento quasi vuoto «Tecchio Sebastiano»",
-   "segmento quasi vuoto «Trevisanato Giuseppe Luigi»",
-   "segmento quasi vuoto «Turchetti Odoardo»",
-   "segmento quasi vuoto «Vittorelli Giacomo»",
-   "segmento quasi vuoto «Volpato Morghen Domenica»"
-  ],
-  "2557": [
-   "preambolo lungo (793 caratteri)"
-  ],
-  "3939": [
-   "segmento quasi vuoto «2)»",
-   "segmento quasi vuoto «7)»"
-  ],
-  "4061": [
-   "famiglie di riferimenti miste: coda, fogli"
-  ],
-  "4251": [
-   "famiglie di riferimenti miste: coda, fogli"
-  ]
- },
+ "dubbie": {},
  "scartati": {
   "17": [
    [
@@ -347,12 +175,6 @@
     "riferimento isolato"
    ]
   ],
-  "603": [
-   [
-    "carte 16 a carte 29",
-    "riferimento isolato"
-   ]
-  ],
   "605": [
    [
     "carte I-VI",
@@ -374,12 +196,6 @@
   "617": [
    [
     "518)",
-    "numerazione fuori sequenza"
-   ]
-  ],
-  "618": [
-   [
-    "12°",
     "numerazione fuori sequenza"
    ]
   ],
@@ -447,16 +263,16 @@
     "riferimento isolato"
    ]
   ],
-  "944": [
-   [
-    "9°",
-    "numerazione fuori sequenza"
-   ]
-  ],
   "984": [
    [
     "2°",
     "riferimento isolato"
+   ]
+  ],
+  "985": [
+   [
+    "2°",
+    "numerazione fuori sequenza"
    ]
   ],
   "994": [
@@ -471,9 +287,9 @@
     "riferimento isolato"
    ]
   ],
-  "1197": [
+  "1084": [
    [
-    "8°",
+    "2°",
     "numerazione fuori sequenza"
    ]
   ],
@@ -495,6 +311,12 @@
     "riferimento isolato"
    ]
   ],
+  "1301": [
+   [
+    "2° e 3°",
+    "numerazione fuori sequenza"
+   ]
+  ],
   "1304": [
    [
     "1°",
@@ -513,21 +335,21 @@
     "riferimento isolato"
    ]
   ],
+  "1688": [
+   [
+    "Vol. 1",
+    "riferimento isolato"
+   ]
+  ],
+  "1725": [
+   [
+    "Vol. 1",
+    "riferimento isolato"
+   ]
+  ],
   "1941": [
    [
     "pag. 140",
-    "riferimento isolato"
-   ]
-  ],
-  "2191": [
-   [
-    "p. 95",
-    "riferimento isolato"
-   ]
-  ],
-  "2194": [
-   [
-    "p. 644",
     "riferimento isolato"
    ]
   ],
@@ -537,27 +359,9 @@
     "riferimento isolato"
    ]
   ],
-  "2591": [
+  "2635/1": [
    [
-    "p. 180",
-    "riferimento isolato"
-   ]
-  ],
-  "2593": [
-   [
-    "p. 49",
-    "riferimento isolato"
-   ]
-  ],
-  "2596": [
-   [
-    "p. 120",
-    "riferimento isolato"
-   ]
-  ],
-  "2634/10": [
-   [
-    "p. 59",
+    "libro I",
     "riferimento isolato"
    ]
   ],
@@ -601,15 +405,9 @@
     "lettera iniziale diversa da a"
    ]
   ],
-  "3505": [
+  "3410": [
    [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "3506": [
-   [
-    "p. 16",
+    "Libro 1",
     "riferimento isolato"
    ]
   ],
@@ -683,69 +481,9 @@
     "riferimento isolato"
    ]
   ],
-  "4303": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4305": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4309": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4326": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4333": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4353": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4355": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4356": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4370": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
   "4372": [
    [
     "F. 1",
-    "riferimento isolato"
-   ]
-  ],
-  "4392": [
-   [
-    "1°",
     "riferimento isolato"
    ]
   ],
@@ -755,69 +493,15 @@
     "riferimento isolato"
    ]
   ],
-  "4446": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4453": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4458": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4462": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
   "4467": [
    [
     "F. 1",
     "riferimento isolato"
    ]
   ],
-  "4469": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
   "4485": [
    [
     "F. 1",
-    "riferimento isolato"
-   ]
-  ],
-  "4490": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4497": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4500": [
-   [
-    "1°",
-    "riferimento isolato"
-   ]
-  ],
-  "4510": [
-   [
-    "1°",
     "riferimento isolato"
    ]
   ],
