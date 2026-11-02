@@ -80,6 +80,9 @@ RX_NUDO = re.compile(r"(\d+)(?:\s?(?:-|–)\s?\d+)?(?:\.ª\))?(?=\s+[^\d\s°)])"
 RX_NUMERATO_COPPIA = re.compile(r"(\d+)\s(?:e|ed)\s(\d+)(°|\.\)|\))")
 # volumi: «Il vol. I contiene», «Volume II»
 RX_VOLUME = re.compile(r"[Vv]ol(?:ume|\.)\s?(\d+°?|[IVXLC]+\b)")
+# numero con la parentesi aperta invece che chiusa («(9 Vita di…» per «9) Vita di…»):
+# vale solo se prosegue esattamente l'elenco
+RX_NUMERATO_PARENTESI = re.compile(r"\((\d+)(?=\s[^\W\d])")
 # opere: «Op. I», «Op. IV.»
 RX_OPERA = re.compile(r"Op\.\s?([IVXLC]+)\b")
 # elenchi numerati, anche a catena: «1°, 2°, 3°, 4° e 5°»
@@ -151,6 +154,9 @@ def riferimento_a(testo, pos):
     if m:
         n = m.group(1).rstrip("°")
         return "volume", m.group(0), int(n) if n.isdigit() else valore_romano(n)
+    m = RX_NUMERATO_PARENTESI.match(testo, pos)
+    if m:
+        return "numerato", m.group(0), (int(m.group(1)), int(m.group(1)))
     m = RX_NUMERATO_COPPIA.match(testo, pos)
     if m:
         return "numerato", m.group(0), (int(m.group(1)), int(m.group(2)))
@@ -294,6 +300,11 @@ def segmenta_riferimenti(testo, scarti):
             seguito = ultimo[famiglia] is not None and primo == ultimo[famiglia] + 1
             if debole and (not seguito or not re.match(r"[^\W\d_]|[«\"(]", dopo)):
                 continue
+            if etichetta.startswith("(") and not seguito:
+                continue
+            # «annot. 7).»: un numero chiuso da parentesi e punto non apre un elemento
+            if etichetta.endswith(")") and dopo[:1] == ".":
+                continue
             if famiglia == "volume" and RX_CONSISTENZA.match(dopo):
                 continue
             if etichetta.endswith("°") or etichetta.endswith("°."):
@@ -313,7 +324,7 @@ def segmenta_riferimenti(testo, scarti):
             # ogni forma («1°», «1)», «1°)», «1.») ha la sua sequenza: un
             # sottoelenco «1°) 2°)» dentro «23)» non interrompe l'elenco principale
             stile = famiglia if famiglia in ("romano", "libro", "opera", "volume") else (
-                "°)" if etichetta.endswith("°)") else etichetta[-1])
+                "°)" if etichetta.endswith("°)") else ")" if etichetta.startswith("(") else etichetta[-1])
             prec = per_stile.get(stile)
             if prec is None and famiglia == "romano" and ultimo["numerato"] == primo - 1:
                 ok = True                     # «1) … II) … III)»: serie mista
