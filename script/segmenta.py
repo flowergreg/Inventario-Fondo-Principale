@@ -376,9 +376,176 @@ def segmenta_riferimenti(testo, scarti):
             if livello == "romano" and accettati["numerato"][:1] and (
                     accettati["numerato"][0][0] < scelti[0][0]):
                 scelti = accettati["numerato"][:1] + scelti   # «1)» che apre una serie romana
-            return scelti, []
+            return annida(scelti, accettati, livello, testo), []
     isolati = [c for l in LIVELLI for c in accettati[l]]
     return [], isolati
+
+
+# ---------------------------------------------------------------------------
+# Elenchi annidati
+# ---------------------------------------------------------------------------
+
+SEP = " › "   # separatore delle etichette composte: «2° › 3°»
+# unità non numerate che introducono un elenco: «il I», «Il II cartolare», «del II volume»
+RX_UNITA = re.compile(
+    r"\b(?:[Ii]l|[Dd]el)\s+((?:I|II|III|IV|V|VI|VII|VIII|IX|X)\b(?:\s+(cartolare|volume|vol\.|fascicolo|tomo|libro))?)")
+
+
+def forma(etichetta, famiglia):
+    """Forma grafica di un'etichetta di elenco: «°», «)», «°)», «.)», «.»."""
+    if famiglia != "numerato":
+        return famiglia
+    if etichetta.startswith("(") or re.search(r"incl?\b", etichetta):
+        return ")"
+    m = re.search(r"(°\)|\.\)|°|\)|\.)\s*$", etichetta)
+    return m.group(1) if m else ")"
+
+
+def primo_ultimo(etichetta, famiglia):
+    if famiglia == "numerato":
+        return int(re.findall(r"\d+", etichetta)[0]), ultimo_numero(etichetta)
+    v = valore_etichetta(etichetta, famiglia)
+    return v, v
+
+
+def annida(scelti, accettati, livello, testo):
+    """Ricostruisce gli elenchi annidati e compone le etichette («2° › 3°»).
+
+    1. Dentro il livello scelto: un elenco della stessa forma che riparte da 1
+       dentro un elemento è un sottoelenco solo se poi l'elenco superiore
+       prosegue (1368: 1°, 2°, [1°…5°], 3°); altrimenti gli elenchi si
+       succedono (1530). Un elenco di forma diversa che parte da 1 dentro un
+       elemento è sempre un sottoelenco («23) … 1°) 2°) … 24)»).
+    2. Elenchi dei livelli inferiori (romani, numerati, lettere) contenuti in
+       un elemento, di almeno due voci a partire da 1 / a, ne diventano
+       sottoelenchi («33) a) … b)»)."""
+    if livello not in ("opera", "volume", "fascicolo", "libro", "romano", "numerato", "lettera"):
+        return scelti
+    voci = [{"inizio": i, "et": e, "fam": f, "forma": forma(e, f),
+             "pu": primo_ultimo(e, f), "padre": None} for i, e, f in scelti]
+
+    # 1) annidamento nel livello scelto
+    pila = []                                 # indici degli elementi aperti, dal più esterno
+    for k, v in enumerate(voci):
+        primo = v["pu"][0]
+        if primo is None:
+            pila = [k]
+            continue
+        # risale finché trova un livello che questo elemento prosegue
+        livello_trovato = None
+        for j in range(len(pila) - 1, -1, -1):
+            w = voci[pila[j]]
+            if w["forma"] == v["forma"] and w["pu"][1] is not None and primo in (w["pu"][1] + 1, w["pu"][1] + 2, w["pu"][1]):
+                livello_trovato = j
+                break
+        if livello_trovato is not None:
+            v["padre"] = voci[pila[livello_trovato]]["padre"]
+            pila = pila[:livello_trovato] + [k]
+        elif pila and primo in (0, 1):
+            v["padre"] = pila[-1]             # nuovo sottoelenco dell'elemento aperto
+            pila = pila + [k]
+        else:
+            v["padre"] = voci[pila[-1]]["padre"] if pila else None
+            pila = (pila[:-1] if pila else []) + [k]
+    # conferma dei sottoelenchi della stessa forma: il padre deve proseguire
+    for k, v in enumerate(voci):
+        p = v["padre"]
+        if p is None or voci[p]["forma"] != v["forma"]:
+            continue
+        figli = [x for x in voci if x["padre"] == p]
+        ultimo_figlio = max(voci.index(x) for x in figli)
+        prosegue = any(x["padre"] == voci[p]["padre"] and x["forma"] == voci[p]["forma"]
+                       and x["pu"][0] == voci[p]["pu"][1] + 1
+                       for x in voci[ultimo_figlio + 1:])
+        # oppure l'elemento padre annuncia il sottoelenco («Il 7° cartolare contenente: 1° …»)
+        # (l'annuncio deve stare nella prima proposizione dell'elemento: in
+        # «8° … . Il II cartolare contiene: 1° …» il padre non è l'8°, e in
+        # «il 2° di 32 carte; contengono …: il 1° dal …» la seconda serie
+        # descrive di nuovo gli stessi volumi)
+        testo_padre = testo[voci[p]["inizio"]:figli[0]["inizio"]]
+        primo_tratto = re.split(r";\s|\.\s+(?=[A-Z])", testo_padre.strip())
+        annuncia = len(testo_padre) < 300 and len(primo_tratto) == 1 and (
+            testo_padre.rstrip().endswith(":") or re.search(r"\b(?:conten|compren|consta)", testo_padre))
+        # una seconda serie con gli stessi numeri della prima la descrive di
+        # nuovo, non la suddivide («il 1° di 53 carte; il 2° …: il 1° riguarda
+        # gli anni 1306-1314, il 2° il 1325-26»)
+        fratelli = [x["pu"][0] for x in voci if x["padre"] == voci[p]["padre"] and x["forma"] == v["forma"]]
+        if [x["pu"][0] for x in figli] == fratelli:
+            annuncia = prosegue = False
+        if not prosegue and not annuncia:
+            for x in figli:
+                x["padre"] = voci[p]["padre"]   # elenchi in successione, non annidati
+
+    # da qui il padre è un riferimento all'oggetto, non un indice
+    for v in voci:
+        v["padre"] = voci[v["padre"]] if v["padre"] is not None else None
+
+    # 1b) padri non numerati ma nominati nel testo: «il I 5 fascicoli: 1° …;
+    # Il II cartolare contiene: 1° …» (853, 1530, 1537). Vale solo se l'elenco
+    # riparte da 1 almeno una volta, cioè se ci sono più elenchi in successione.
+    unita = []
+    if livello == "numerato":
+        alto = [v for v in voci if v["padre"] is None]
+        gruppi = [k for k, v in enumerate(alto)
+                  if k == 0 or (v["pu"][0] in (0, 1) and v["forma"] == alto[k - 1]["forma"])]
+        if len(gruppi) >= 2:
+            inizio_primo = alto[0]["inizio"]
+            candidati_u = []
+            for k in gruppi:                  # l'unità che introduce ogni elenco
+                g = alto[k]
+                da = alto[k - 1]["inizio"] + 1 if k else 0
+                ms = list(RX_UNITA.finditer(testo, max(da, g["inizio"] - 250), g["inizio"]))
+                if ms:
+                    candidati_u.append((ms[-1], k))
+            # unità senza elenco proprio («Il III cartolare comprende 8 fascicoli…»)
+            for m in RX_UNITA.finditer(testo, inizio_primo):
+                if m.group(2) and re.search(r"(?:^|[.;]\s+)$", testo[:m.start()]):
+                    if all(m.start() != c[0].start() for c in candidati_u):
+                        candidati_u.append((m, None))
+            if sum(1 for _, k in candidati_u if k is not None) >= 2:
+                for m, k in sorted(candidati_u, key=lambda x: x[0].start()):
+                    # il segmento comincia con la proposizione («I fascicoli del I comprendono:»)
+                    inizio_u = m.start()
+                    prima_u = testo[max(0, m.start() - 60):m.start()]
+                    d = max(prima_u.rfind(". "), prima_u.rfind("; "), prima_u.rfind("\n"))
+                    if d >= 0:
+                        inizio_u = m.start() - len(prima_u) + d + (1 if prima_u[d] == "\n" else 2)
+                    unita.append({"inizio": inizio_u, "et": m.group(1), "fam": "unita",
+                                  "forma": "unita", "pu": (None, None), "padre": None})
+                # ogni elemento di primo livello va sotto l'ultima unità che lo precede
+                for v in alto:
+                    prima = [u for u in unita if u["inizio"] < v["inizio"]]
+                    if prima:
+                        v["padre"] = prima[-1]
+    voci_base = sorted(voci + unita, key=lambda x: x["inizio"])
+
+    # 2) sottoelenchi dai livelli inferiori
+    inferiori = [f for f in ("romano", "numerato", "lettera") if LIVELLI.index(f) > LIVELLI.index(livello)]
+    occupati = {v["inizio"] for v in voci_base}
+    nuovi = []
+    for k, v in enumerate(voci_base):
+        fine = voci_base[k + 1]["inizio"] if k + 1 < len(voci_base) else len(testo)
+        for f in inferiori:
+            dentro = [x for x in accettati[f] if v["inizio"] < x[0] < fine and x[0] not in occupati]
+            if len(dentro) < 2:
+                continue
+            pu = [primo_ultimo(e, f) for _, e, _ in dentro]
+            if pu[0][0] not in (0, 1):
+                continue
+            for (i, e, ff), x in zip(dentro, pu):
+                nuovi.append({"inizio": i, "et": e, "fam": ff, "forma": forma(e, ff), "pu": x, "padre": v})
+            break
+    voci_tutte = voci_base + nuovi
+    voci_tutte.sort(key=lambda x: x["inizio"])
+
+    def etichetta(v):
+        parti, x = [v["et"]], v
+        while x["padre"] is not None:
+            x = x["padre"]
+            parti.append(x["et"])
+        return SEP.join(reversed(parti))
+
+    return [(v["inizio"], etichetta(v), v["fam"]) for v in voci_tutte]
 
 
 # ---------------------------------------------------------------------------
@@ -575,17 +742,19 @@ def dubbi_per_voce(numero, testo, segmenti):
     if numero in ELENCHI_ALFABETICI or numero in VERIFICATE:
         return dubbi                          # elenco di nomi o voce già verificata
     rif = [s for s in segmenti if s[0] == "riferimento"]
-    for tipo, etichetta, a, b, famiglia in rif:
-        if len(testo[a:b].strip()) - len(etichetta) < 8:
+    for k, (tipo, etichetta, a, b, famiglia) in enumerate(rif):
+        figlio_segue = k + 1 < len(rif) and rif[k + 1][1].startswith(etichetta + SEP)
+        if not figlio_segue and len(testo[a:b].strip()) - len(etichetta.rpartition(SEP)[2]) < 8:
             dubbi.append(f"segmento quasi vuoto «{etichetta}»")
     pre = [s for s in segmenti if s[0] == "preambolo"]
     if rif and pre and (pre[0][3] - pre[0][2]) > 600:
         dubbi.append(f"preambolo lungo ({pre[0][3] - pre[0][2]} caratteri)")
     prec = None
     per_stile = {}
-    tutti = {valore_etichetta(e, f) for _, e, _, _, f in rif}
+    tutti = {valore_etichetta(e.rpartition(SEP)[2], f) for _, e, _, _, f in rif}
     for _, e, _, _, f in rif:
         if f == "numerato":
+            e = e.rpartition(SEP)[2]
             n = re.findall(r"\d+", e)
             tutti.update(range(int(n[0]), ultimo_numero(e) + 1))
     if any(s[4] == "coda" for s in rif):
@@ -593,15 +762,16 @@ def dubbi_per_voce(numero, testo, segmenti):
     for tipo, etichetta, a, b, famiglia in rif:
         if famiglia not in ("numerato", "romano", "libro", "fascicolo", "lettera", "opera", "volume"):
             continue
+        percorso, _, etichetta = etichetta.rpartition(SEP)
         v = valore_etichetta(etichetta, famiglia)
         if v is None:
             continue
         # ogni forma di numerazione ha la sua sequenza («6° … 1. 2. 3. … 7°»)
         m = re.search(r"(°\)|\.\)|°|\)|\.)\s*$", etichetta)
-        stile = famiglia if famiglia != "numerato" else (
-            ")" if re.search(r"incl?\b", etichetta) or not m else m.group(1))
+        stile = (percorso, famiglia if famiglia != "numerato" else (
+            ")" if re.search(r"incl?\b", etichetta) or not m else m.group(1)))
         prec = per_stile.get(stile)
-        if prec is None and not per_stile and v > 1:
+        if prec is None and not any(k[0] == percorso for k in per_stile) and v > 1:
             dubbi.append(f"la numerazione comincia da «{etichetta}»")
         elif (prec is not None and v > prec[0] + 1 and v != 1
               and not (famiglia == "lettera" and prec[0] == 9 and v == 11)   # i) k): niente j

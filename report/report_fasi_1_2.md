@@ -14,7 +14,7 @@ Generato da `script/report.py` su `dati/inventario.sqlite`. Sorgente: `sorgenti/
 | Voci con coda / senza coda | 1914 / 2755 |
 | Voci con residuo | 1 |
 | **Voci segmentate** (con almeno un riferimento) | **402** |
-| **Segmenti** (comprese le voci intere) | **8563** |
+| **Segmenti** (comprese le voci intere) | **8617** |
 
 ### Paragrafi preliminari saltati
 
@@ -144,7 +144,7 @@ La coda riguarda il testo che la precede; il testo che la segue resta testo dell
 | Tipo di segmento | Numero |
 |---|---|
 | voce_intera | 4267 |
-| riferimento | 3904 |
+| riferimento | 3958 |
 | preambolo | 389 |
 | chiusura | 3 |
 
