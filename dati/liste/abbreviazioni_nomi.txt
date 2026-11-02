@@ -1,0 +1,52 @@
+# abbreviazioni di nomi di battesimo (forma → nome)
+Gio.	Giovanni
+G.	(iniziale)
+Gius.	Giuseppe
+Giuse.	Giuseppe
+Ant.	Antonio
+Ant.°	Antonio
+Ant.o	Antonio
+Fr.	Francesco
+Fr.co	Francesco
+Franc.	Francesco
+Fran.co	Francesco
+Fr.°	Francesco
+Dom.	Domenico
+Dom.co	Domenico
+Dom.°	Domenico
+Bart.	Bartolomeo
+Bar.eo	Bartolomeo
+Bart.meo	Bartolomeo
+Gir.	Girolamo
+Girol.	Girolamo
+Ger.	Gerolamo
+Jac.	Jacopo
+Iac.	Iacopo
+Io.	Ioannes
+Bapt.	Baptista
+Batta	Battista
+G.B.	Giovanni Battista
+G. B.	Giovanni Battista
+Gio.Batta	Giovanni Battista
+Gianbatta	Giovanni Battista
+Giambatta	Giovanni Battista
+Giand.°	Giandomenico
+Mich.	Michele
+Nic.	Nicolò
+Lod.	Lodovico
+Vinc.zo	Vincenzo
+Vinc.	Vincenzo
+Seb.	Sebastiano
+Ales.	Alessandro
+Aless.	Alessandro
+Alv.	Alvise
+Fed.	Federico
+Fil.	Filippo
+Carl.	Carlo
+Ottav.	Ottavio
+Leon.	Leonardo
+Ott.	Ottavio
+M. A.	Marco Antonio
+A. M.	Angelo Maria
+Marc'Antonio	Marco Antonio
+Marcantonio	Marco Antonio

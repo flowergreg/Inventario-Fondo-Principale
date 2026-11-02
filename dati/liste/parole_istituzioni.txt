@@ -1,0 +1,7 @@
+# parole che aprono il nome di un'istituzione, di un ente o di un'opera: non sono persone
+Accademia Biblioteca Archivio Arch. Archiv. Bibl. Museo Collegio Coll. Seminario Liceo Istituto Università Scuola Scuole
+Chiesa Duomo Basilica Cattedrale Pieve Parrocchia Convento Monastero Abbazia Badia Capitolo Cap.lo Ospedale Ospitale Ospizio
+Fraterna Confraternita Congregazione Compagnia Ordine Società Soc. Associazione Assoc. Comitato Comune Comunità Municipio
+Consiglio Parlamento Senato Signoria Repubblica Rep. Governo Luogotenenza Provveditore Deputazione Deputati Collegio Tribunale Corte Camera
+Regno Impero Stato Provincia Dipartimento Distretto Prefettura Delegazione Curia Diocesi Patriarcato Vescovado Arcivescovado Vicariato
+Fondo Raccolta Collezione Racc. Collez. Catalogo Cat. Legato Busta Cartolare Cartella Musica

@@ -7,7 +7,7 @@ Obiettivo: nome (in qualsiasi grafia) → tutte le sue varianti → tutti i punt
 | 0 | Struttura del repository, `CLAUDE.md`, `docs/piano.md`, sorgente in `sorgenti/` | da fare |
 | 1 | Parsing delle voci (testo, coda, annotazioni, numeri anomali) | fatto, da verificare sul report |
 | 2 | Segmentazione interna con i soli riferimenti originali | fatto, da verificare sul report |
-| 3 | Estrazione delle menzioni di persone e luoghi, con posizione | da fare |
+| 3 | Estrazione delle menzioni di persone e luoghi, con posizione | in corso: campione da rivedere |
 | 4 | Raggruppamento delle varianti in entità (proposte) | da fare |
 | 5 | Arricchimento da fonti esterne: forma d'intestazione e varianti note | da fare |
 | 6 | Revisione del curatore, partendo dai nomi più frequenti | da fare |
@@ -58,3 +58,11 @@ Decisioni confermate dal curatore:
 - Il rinvio in coda al primo pezzo («…; da carte 1 a 35. Da carte 36…») apre il primo segmento.
 - Controllo di qualità: continuità della numerazione (salti, inizio diverso da 1), per ogni forma separatamente. Le segnalazioni verificate dal curatore stanno in `dati/segmentazioni_verificate.json`; un elenco vuoto in `dati/segmentazioni_manuali.json` forza la voce intera.
 - Elenchi annidati: etichetta composta con « › » («2° › 3°», «33) › a)», «II cartolare › 1°»). Un sottoelenco della stessa forma vale solo se l'elenco superiore prosegue dopo di esso o se l'elemento padre lo annuncia nella sua prima proposizione («5° Cartolare contenente tre fascicoli: 1° …»); un elenco di forma diversa dentro un elemento è sempre subordinato. Una seconda serie con gli stessi numeri della prima la ridescrive e resta in successione (1344, 1475). Padri non numerati ma nominati («il I», «Il II cartolare») diventano segmenti con quell'etichetta.
+
+## Fase 3 — decisioni del curatore
+- Si estraggono anche coda e annotazioni (sede registrata); i nomi nelle citazioni («…») si includono senza segnarli.
+- Predicati nobiliari («Ermes di Colloredo»): una sola menzione di persona, nessun legame con il luogo. «di/da» + città (provenienza) si separa: «Pagani di Udine» → Pagani + Udine.
+- Santi: tipo `santo`, da dirimere (persona, chiesa o luogo) in base alla quantità.
+- Istituzioni: non si estraggono; si estrae il luogo che contengono.
+- Liste: luoghi da ISTAT e GeoNames (peso forte/medio/debole), nomi di battesimo da Wikidata (it, la, fur), liste manuali in `dati/liste/`.
+- Esecuzione: `python3 script/liste_esterne.py` (una volta), `python3 script/estrai.py [--campione]`, `python3 script/report_fase3.py`.

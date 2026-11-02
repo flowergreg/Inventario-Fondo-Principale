@@ -1,0 +1,17 @@
+# titoli e qualifiche che precedono un nome di persona (non fanno parte del nome)
+co. conte contessa c.te cte co.ssa
+ab. abate abb. abbate
+mons. monsignor monsignore msgr. msg. mgr.
+d.r dr. dott. dottor dottore dott.ssa
+don d. dom. fra frà fr. padre p. pre prete sac. sacerdote suor suora madre
+nob. nobile n.h. n.n.h.h. sig. sig.r sig.ra signor signora signore sig.a
+cav. cavaliere comm. commendatore
+prof. professore prof.ssa maestro m.° mro.
+card. cardinale patr. patriarca vesc. vescovo arciv. arcivescovo
+can. canonico cano. pievano piovano arcip. arciprete parroco
+march. marchese bar. barone duca principe re imperatore imperatrice papa doge
+luogot. luogotenente l.te l. t. ser messer mag.co ecc.mo ill.mo
+gen. generale capitano cap. colonnello ten.
+avv. avvocato ing. ingegnere notaio not.
+gesuita gesuiti cappuccino francescano domenicano minore conventuale
+libraio stampatore tipografo pittore scultore architetto medico chirurgo speziale orefice

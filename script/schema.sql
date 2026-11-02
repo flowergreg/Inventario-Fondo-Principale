@@ -58,3 +58,13 @@ CREATE TABLE IF NOT EXISTS segmenti (
     fine        INTEGER NOT NULL              -- offset finale (escluso) in voci.testo
 );
 CREATE INDEX IF NOT EXISTS ix_segmenti_voce ON segmenti(voce);
+
+-- Fase 3 (create da script/estrai.py, qui per documentazione) -----------------
+-- menzioni: un nome di persona, luogo o santo nel testo, nella coda o in un'annotazione.
+--   voce, sede (testo | coda | annotazione), annotazione, segmento (solo sede testo),
+--   testo_esatto (come nel testo, senza titoli né correzione tra quadre),
+--   inizio/fine (offset nel testo della sede), tipo (persona | luogo | santo = da dirimere),
+--   correzione (forma tra quadre del curatore: in fase 4 diventa variante «correzione_curatore»),
+--   metodo (regola applicata), affidabilita (alta | media | bassa), entita (fase 4).
+-- non_classificati: parole con iniziale maiuscola che le regole non sanno classificare
+--   (voce, sede, annotazione, testo_esatto, inizio, fine): nulla va perso.
