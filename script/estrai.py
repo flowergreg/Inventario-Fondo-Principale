@@ -112,6 +112,9 @@ def carica_liste(corpus_parole):
     luoghi["__citta__"] = citta
     luoghi["__manuali__"] = {chiave_luogo(r["forma"]) for r in
                              csv.DictReader(open(LISTE / "luoghi_manuali.tsv", encoding="utf-8"), delimiter="\t")}
+    luoghi["__riferimento__"] = {chiave_luogo(r["forma"]): r["riferimento"] for r in
+                                 csv.DictReader(open(LISTE / "luoghi_manuali.tsv", encoding="utf-8"), delimiter="\t")
+                                 if r.get("riferimento")}
     luoghi["__capoluoghi__"] = {chiave_luogo(x) for x in
                                 (LISTE / "capoluoghi.txt").read_text(encoding="utf-8").splitlines() if x} | {
         chiave_luogo(x) for x in ("Vienna", "Parigi", "Londra", "Madrid", "Lisbona", "Praga", "Berlino",
@@ -212,7 +215,7 @@ RX_TOKEN = re.compile(r"""
 PARTICELLE = {"di", "de", "de'", "de’", "del", "della", "delle", "dei", "degli", "da", "dal", "dalla",
               "d'", "d’", "dell'", "dell’", "von", "van", "der", "den", "la", "le", "lo", "du", "des", "y"}
 ELISIONI = re.compile(r"^(?:d|de|dell|degl|dall|all|nell|sull|l)['’]$", re.I)   # (D', Dell' maiuscoli restano nel cognome)
-TITOLI_ECCLESIASTICI = {"cardinale", "card.", "vescovo", "vesc.", "arcivescovo", "arciv.", "patriarca", "patr.",
+TITOLI_ECCLESIASTICI = {"abbate", "abbate.", "cardinale", "card.", "vescovo", "vesc.", "arcivescovo", "arciv.", "patriarca", "patr.",
                         "abate", "pievano", "piovano", "arciprete", "priore", "parroco", "vicario"}
 CUE_OPERA = {"tragedia", "tragedie", "commedia", "dramma", "melodramma", "poema", "romanzo", "libretto",
              "farsa", "novella", "cantata", "oratorio", "intitolata", "intitolato", "intitolate"}
@@ -228,9 +231,9 @@ PARTICELLE_MAIUSCOLE = {"De", "Di", "Da", "Del", "Della", "Delle", "Dei", "Degli
 SANTI = re.compile(r"^(?:S\.|SS\.|Ss\.|S\.ta|S\.to|San|Santo|Santa|Sant['’]|Santi|Sancti|Sancte|Sanctus|Sancta)$")
 FAMIGLIA_DEBOLE = {"i", "dei", "ai", "dai", "coi", "nozze", "archivio", "documenti", "scritt.", "copia", "mano",
                    "manoscritti", "manoscritto", "mss.", "ms.", "carte"}
-CUE_LUOGO = {"assedio", "battaglia", "presa", "pace", "terremoto", "guerra", "città", "terra", "villa", "castello",
+CUE_LUOGO = {"liberazione", "assedio", "battaglia", "presa", "pace", "terremoto", "guerra", "città", "terra", "villa", "castello",
              "contado", "territorio", "diocesi", "provincia", "porto", "isola", "chiesa", "parrocchia", "pieve"}
-FAMIGLIA = {"famiglia", "fam.", "casa", "casato", "eredi", "nobili", "conti", "fratelli", "f.lli"}
+FAMIGLIA = {"domus", "famiglia", "fam.", "casa", "casato", "eredi", "nobili", "conti", "fratelli", "f.lli"}
 FONDI = {"Raccolta", "Racc.", "Collezione", "Collez.", "Coll.", "Legato", "Fondo", "Dono", "Provenienza",
          "Acquisto", "Lascito", "Deposito", "Proven."}
 
@@ -292,7 +295,10 @@ class Estrattore:
         return k in self.nomi_esatti or k in self.radici_nomi    # «Ciceronis», «Boetij», «Tebaldi»
 
     def non_nome(self, tok):
-        return bool(tok.get("parola")) and tok["parola"].lower() in self.non_nomi
+        p = tok.get("parola")
+        if p and re.search(r"(?:orum|arum)$", p) and not self.e_nome_battesimo(tok):
+            return True                       # «Rettoricorum», «Odarum»
+        return bool(p) and p.lower() in self.non_nomi
 
     def e_titolo(self, tok):
         if not tok.get("parola"):
@@ -303,6 +309,8 @@ class Estrattore:
 
     def comune(self, tok):
         p = tok.get("parola")
+        if p and re.search(r"(?:orum|arum)$", p) and not self.e_nome_battesimo(tok):
+            return True                       # «Rettoricorum», «Odarum», «Hymnorum»
         if p and p.lower() in SOLO_INIZIO_FRASE and not self.e_nome_battesimo(tok) \
                 and not self.peso_luogo(p) and p.lower() not in self.nomi_esatti:
             return True                       # «Scrittura», «Cartaceo»: maiuscole solo a inizio frase
@@ -323,7 +331,9 @@ class Estrattore:
         if not tok.get("abbr") or not tok["t"].endswith("."):
             return False
         breve = len(tok["parola"]) <= 4 and not self.peso_luogo(tok["parola"]) and not self.e_nome_battesimo(tok)
-        return not (self.e_abbreviazione_nome(tok) or self.e_titolo(tok) or breve)   # «Roma.» chiude, «Bapt.» no
+        # i titoli abbreviati («co.», «Rev.mo») non chiudono; un cognome che coincide con un titolo sì («De Dottori.»)
+        titolo_abbreviato = self.e_titolo(tok) and (len(tok["parola"]) <= 5 or tok["parola"][:1].islower())
+        return not (self.e_abbreviazione_nome(tok) or titolo_abbreviato or breve)   # «Roma.» chiude, «Bapt.» no
 
     def romano(self, tok):
         return bool(tok.get("parola")) and re.fullmatch(r"[IVXLCDM]+", tok["parola"]) is not None
@@ -361,6 +371,9 @@ class Estrattore:
                 if not avvio and maiuscola(tok) and prec.get("parola") and self.e_titolo(prec) \
                         and not self.e_titolo(tok) and not self.non_nome(tok) and tok["t"] not in self.istituzioni:
                     avvio = True              # «dell'Ab. Casi»: dopo un titolo vale anche una parola comune
+            vicini = " ".join(t2["t"].lower() for t2 in toks[max(0, k - 4):k])
+            if not avvio and maiuscola(tok) and re.search(r"pseudonimo|soprannom|detto", vicini):
+                avvio = True                  # «sotto il pseudonimo di «Infarinato Academico sventato»»
             if not avvio and k == 0 and maiuscola(tok) and not self.non_nome(tok) and \
                     succ.get("t") in (",", "(") and tok["t"] not in self.istituzioni:
                 avvio = True                  # autore in testa alla voce: «Dotti, satire»
@@ -386,6 +399,11 @@ class Estrattore:
                         not self.romano(t) or len(idx) >= 1):
                     if t["t"] in PARTICELLE_MAIUSCOLE and not self.particella_maiuscola(toks, j):
                         break
+                    if t["t"] in PARTICELLE_MAIUSCOLE:
+                        idx += [j, j + 1]     # «Carlo De Dottori»: dopo la particella il cognome, anche se è un titolo
+                        ultimo = toks[j + 1]
+                        j += 2
+                        continue
                     idx.append(j)
                     ultimo = t
                     j += 1
@@ -402,7 +420,7 @@ class Estrattore:
                 # particella seguita da maiuscola: «di Prampero», «de' Rubeis»
                 if (t.get("parola") and (t["t"].lower() in PARTICELLE or low in PARTICELLE)
                         and j + 1 < n and maiuscola(toks[j + 1]) and not self.romano(toks[j + 1])
-                        and not self.e_titolo(toks[j + 1])           # «Temistocle del Padre Follard»
+                        and (not self.e_titolo(toks[j + 1]) or t["t"][:1].isupper())   # «del Padre Follard» no, «De Dottori» sì
                         and toks[j + 1]["t"] not in self.istituzioni):
                     idx += [j, j + 1]
                     ultimo = toks[j + 1]
@@ -451,6 +469,8 @@ class Estrattore:
         if (p1 in CUE_OPERA or (p2 in CUE_OPERA and p1 in {"il", "la", "lo", "i", "le", "del", "della"})) \
                 and self.peso_luogo(span_testo) != "forte":
             return None                       # (un luogo noto nel titolo resta luogo: «Vienna trionfante»)
+        if "pseudonimo" in prec_parole or p1 in ("detto", "detta", "soprannominato"):
+            return "persona", "pseudonimo", "media"
         # «assedio di Corfù», «terremoto di …», «castello di …»: luogo
         if p1 in ("di", "de") and p2 in CUE_LUOGO and not nome_singolo and len(maiusc) <= 3:
             return "luogo", "contesto_luogo", "media"
@@ -582,6 +602,10 @@ class Estrattore:
             fine_span = toks[idx[-1]]["f"]
             if solo_iniziali and re.match(r"[a-z]", testo[fine_span:fine_span + 1]):
                 continue                      # «M.S.S.i» = manoscritti
+            if solo_iniziali and len(parole_span) >= 2 and \
+                    re.match(r"\s?[A-ZÀ-Ý]\w+", testo[fine_span:fine_span + 20]) and \
+                    self.non_nome({"parola": re.match(r"\s?(\w+)", testo[fine_span:]).group(1)}):
+                continue                      # «I. R. Censura»
             if solo_iniziali and re.match(r"\s?\([A-ZÀ-Ý][\w'’]+\)", testo[fine_span:]):
                 # «A.M.C. (Cortenovis)»: sigla e nome tra parentesi, una sola persona
                 fine_par = fine_span + testo[fine_span:].index(")") + 1
@@ -624,6 +648,15 @@ class Estrattore:
                 scarti.append((testo[i0:i1], i0, i1))
                 continue
             tipo, metodo, aff = esito
+            prima_parola = toks[idx[0] - 1]["t"].lower() if idx[0] else ""
+            parti_nozze = [toks[i] for i in idx if toks[i].get("parola")]
+            if prima_parola == "nozze" and len(parti_nozze) >= 2 and all(maiuscola(t) for t in parti_nozze) and \
+                    not any(self.e_nome_battesimo(t) for t in parti_nozze):
+                for t in parti_nozze:             # «nozze Mauroner Antivari»: due famiglie
+                    menzioni.append({"testo_esatto": t["parola"], "inizio": t["i"], "fine": t["i"] + len(t["parola"]),
+                                     "tipo": "persona", "correzione": None, "metodo": "nozze",
+                                     "affidabilita": "media"})
+                continue
             if tipo == "luogo+persona":
                 spazio = testo.index(" ", i0)
                 menzioni.append({"testo_esatto": testo[i0:spazio], "inizio": i0, "fine": spazio, "tipo": "luogo",
@@ -678,6 +711,47 @@ class Estrattore:
                     scarti.remove(seguito[0])
                     m.update(testo_esatto=testo[m["inizio"] - 1:seguito[0][2]], inizio=m["inizio"] - 1,
                              fine=seguito[0][2], metodo="nome_tra_parentesi")
+        # locuzioni devozionali: «Cuor di Gesù», «Sacro Cuore»: non sono nomi
+        for m_l in re.finditer(r"(?:Cuor|Cuore|Sacro Cuore|Nome)\s+di\s+(?:Gesù|Maria)", testo):
+            menzioni = [m for m in menzioni if not (m_l.start() <= m["inizio"] < m_l.end())]
+            scarti = [x for x in scarti if not (m_l.start() <= x[1] < m_l.end())]
+        for m in menzioni:
+            if m["tipo"] == "luogo" and not m.get("forma_riferimento"):
+                rif = self.luoghi["__riferimento__"].get(chiave_luogo(m["testo_esatto"]))
+                if rif and rif != m["testo_esatto"]:
+                    m["forma_riferimento"] = rif      # «Gerosolima» → Gerusalemme
+        # elenchi separati da virgole con prevalenza di persone: anche gli elementi incerti sono persone
+        # («poesie del Navagero, Muzio, Castiglione, Sanchio, Molza…»)
+        elementi = sorted([("m", m["inizio"], m["fine"], m) for m in menzioni] +
+                          [("s", a0, a1, (s_t, a0, a1)) for s_t, a0, a1 in scarti], key=lambda x: x[1])
+        serie, corrente = [], []
+        for el in elementi:
+            if corrente and re.fullmatch(r",\s|\s(?:e|ed)\s", testo[corrente[-1][2]:el[1]]):
+                corrente.append(el)
+            else:
+                if len(corrente) >= 3:
+                    serie.append(corrente)
+                corrente = [el]
+        if len(corrente) >= 3:
+            serie.append(corrente)
+        for sr in serie:
+            persone = sum(1 for el in sr if el[0] == "m" and el[3]["tipo"] == "persona")
+            luoghi_certi = sum(1 for el in sr if el[0] == "m" and el[3]["tipo"] == "luogo" and (
+                chiave_luogo(el[3]["testo_esatto"]) in self.luoghi["__citta__"]
+                or chiave_luogo(el[3]["testo_esatto"]) in self.luoghi["__manuali__"]))
+            if persone < 2 or persone <= luoghi_certi:
+                continue
+            for el in sr:
+                if el[0] == "s":
+                    s_t, a0, a1 = el[3]
+                    scarti.remove(el[3])
+                    menzioni.append({"testo_esatto": s_t, "inizio": a0, "fine": a1, "tipo": "persona",
+                                     "correzione": None, "metodo": "elenco_di_persone", "affidabilita": "media"})
+                elif el[3]["tipo"] == "luogo" and " " not in el[3]["testo_esatto"] and \
+                        chiave_luogo(el[3]["testo_esatto"]) not in self.luoghi["__citta__"] and \
+                        chiave_luogo(el[3]["testo_esatto"]) not in self.luoghi["__manuali__"]:
+                    el[3].update(tipo="persona", metodo="elenco_di_persone", affidabilita="media")
+        menzioni.sort(key=lambda m: m["inizio"])
         # «fra Melibeo e Coridone»: dopo una persona e «e/ed», anche il nome sconosciuto è persona;
         # un cognome già riconosciuto come persona nella stessa voce vale anche dove compare da solo
         cognomi = {m["testo_esatto"].split()[-1] for m in menzioni if m["tipo"] == "persona"}
@@ -704,8 +778,10 @@ class Estrattore:
                 solo_nome = m["tipo"] != "luogo" and all(normalizza(p) in self.nomi or p in self.abbreviazioni
                                                          for p in m["testo_esatto"].split())
                 cognome = normalizza(a["testo_esatto"]) not in self.nomi
+                dopo_m = testo[m["fine"]:m["fine"] + 2]
+                in_elenco = dopo_m.startswith(",") or testo[max(0, a["inizio"] - 2):a["inizio"]] == ", "
                 if tra == ", " and a["tipo"] in ("persona", "luogo") and solo_nome and cognome \
-                        and " " not in a["testo_esatto"]:
+                        and " " not in a["testo_esatto"] and not in_elenco:
                     a.update(testo_esatto=testo[a["inizio"]:m["fine"]], fine=m["fine"], metodo="ordine_inverso",
                              affidabilita="alta", tipo="persona")
                     continue

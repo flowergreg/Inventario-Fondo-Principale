@@ -1,90 +1,95 @@
-forma	nota
-Utinum	Udine (latino)
-Utini	Udine (latino, locativo)
-Utinensis	Udine (aggettivo latino)
-Utinensi	Udine (aggettivo latino)
-Utinense	Udine (aggettivo latino)
-Forojulii	Friuli / Cividale (latino)
-Forijulii	Friuli / Cividale (latino)
-Forum Julii	Friuli / Cividale (latino)
-Foroiulienses	Friuli (aggettivo latino)
-Forojuliense	Friuli (aggettivo latino)
-Forojulienses	Friuli (aggettivo latino)
-Forojuliensis	Friuli (aggettivo latino)
-Civitas Austriae	Cividale (latino)
-Civitatis Austriae	Cividale (latino)
-Civitate Austriae	Cividale (latino)
-Cividal	Cividale
-Aquileja	Aquileia
-Aquilejae	Aquileia (latino)
-Aquileiae	Aquileia (latino)
-Aquilejensis	Aquileia (aggettivo latino)
-Aquilejensium	Aquileia (aggettivo latino)
-Aquilejense	Aquileia (aggettivo latino)
-Aquileiese	Aquileia (aggettivo)
-Venetiarum	Venezia (latino)
-Venetiis	Venezia (latino)
-Friuli	regione
-Friul	regione (friulano)
-Patria del Friuli	regione storica
-Carnia	regione storica
-Cargna	Carnia
-Carniola	regione storica
-Carintia	regione storica
-Carinzia	regione storica
-Istria	regione storica
-Dalmazia	regione storica
-Stiria	regione storica
-Tirolo	regione storica
-Lombardia	regione
-Toscana	regione
-Germania	stato
-Francia	stato
-Spagna	stato
-Inghilterra	stato
-Austria	stato
-Ungheria	stato
-Boemia	regione storica
-Polonia	stato
-Russia	stato
-Turchia	stato
-Slesia	regione storica
-Prussia	stato storico
-Sardegna	regione / regno
-Bucovina	regione storica
-Isonzo	fiume
-Tagliamento	fiume
-Livenza	fiume
-Piave	fiume
-Torre	fiume (ambiguo con il casato «della Torre»)
-Natisone	fiume
-Gerosolima	Gerusalemme
-Costantinopoli	Istanbul
-Spalatro	Spalato
-Traù	Trogir
-Wratislavia	Breslavia
-Nissa	Nysa
-Lubiana	Lubiana
-Gorizia	città
-Trieste	città
-Gallia	Gallia (latino)
-Italia	Italia
-Hispania	Spagna (latino)
-Britannia	Britannia (latino)
-Graecia	Grecia (latino)
-Grecia	Grecia
-Illyricum	Illirico (latino)
-Pannonia	Pannonia (latino)
-Noricum	Norico (latino)
-Venetia	Venezia (latino)
-Mediolanum	Milano (latino)
-Roma	Roma
-Patavium	Padova (latino)
-Verona	Verona
-Tergeste	Trieste (latino)
-Iulium Carnicum	Zuglio (latino)
-Concordia	Concordia Sagittaria
-Ravenna	Ravenna
-Corfù	isola e città
-Grizàn	Grizzano? (forma friulana)
-Partenope	Napoli (nome poetico)
+forma	nota	riferimento
+Utinum	Udine (latino)	Udine
+Utini	Udine (latino, locativo)	Udine
+Utinensis	Udine (aggettivo latino)	Udine
+Utinensi	Udine (aggettivo latino)	Udine
+Utinense	Udine (aggettivo latino)	Udine
+Forojulii	Friuli / Cividale (latino)	Friuli
+Forijulii	Friuli / Cividale (latino)	Friuli
+Forum Julii	Friuli / Cividale (latino)	Friuli
+Foroiulienses	Friuli (aggettivo latino)	Friuli
+Forojuliense	Friuli (aggettivo latino)	Friuli
+Forojulienses	Friuli (aggettivo latino)	Friuli
+Forojuliensis	Friuli (aggettivo latino)	Friuli
+Civitas Austriae	Cividale (latino)	Cividale
+Civitatis Austriae	Cividale (latino)	Cividale
+Civitate Austriae	Cividale (latino)	Cividale
+Cividal	Cividale	Cividale
+Aquileja	Aquileia	Aquileia
+Aquilejae	Aquileia (latino)	Aquileia
+Aquileiae	Aquileia (latino)	Aquileia
+Aquilejensis	Aquileia (aggettivo latino)	Aquileia
+Aquilejensium	Aquileia (aggettivo latino)	Aquileia
+Aquilejense	Aquileia (aggettivo latino)	Aquileia
+Aquileiese	Aquileia (aggettivo)	Aquileia
+Venetiarum	Venezia (latino)	Venezia
+Venetiis	Venezia (latino)	Venezia
+Friuli	regione	
+Friul	regione (friulano)	Friuli
+Patria del Friuli	regione storica	
+Carnia	regione storica	
+Cargna	Carnia	Carnia
+Carniola	regione storica	
+Carintia	regione storica	
+Carinzia	regione storica	Carintia
+Istria	regione storica	
+Dalmazia	regione storica	
+Stiria	regione storica	
+Tirolo	regione storica	
+Lombardia	regione	
+Toscana	regione	
+Germania	stato	
+Francia	stato	
+Spagna	stato	
+Inghilterra	stato	
+Austria	stato	
+Ungheria	stato	
+Boemia	regione storica	
+Polonia	stato	
+Russia	stato	
+Turchia	stato	
+Slesia	regione storica	
+Prussia	stato storico	
+Sardegna	regione / regno	
+Bucovina	regione storica	
+Isonzo	fiume	
+Tagliamento	fiume	
+Livenza	fiume	
+Piave	fiume	
+Torre	fiume (ambiguo con il casato «della Torre»)	
+Natisone	fiume	
+Gerosolima	Gerusalemme	Gerusalemme
+Costantinopoli	Istanbul	
+Spalatro	Spalato	Spalato
+Traù	Trogir	Trogir
+Wratislavia	Breslavia	Breslavia
+Nissa	Nysa	Nysa
+Lubiana	Lubiana	
+Gorizia	città	
+Trieste	città	
+Gallia	Gallia (latino)	Gallia
+Italia	Italia	
+Hispania	Spagna (latino)	Spagna
+Britannia	Britannia (latino)	
+Graecia	Grecia (latino)	Grecia
+Grecia	Grecia	
+Illyricum	Illirico (latino)	
+Pannonia	Pannonia (latino)	
+Noricum	Norico (latino)	
+Venetia	Venezia (latino)	Venezia
+Mediolanum	Milano (latino)	Milano
+Roma	Roma	
+Patavium	Padova (latino)	Padova
+Verona	Verona	
+Tergeste	Trieste (latino)	Trieste
+Iulium Carnicum	Zuglio (latino)	Zuglio
+Concordia	Concordia Sagittaria	
+Ravenna	Ravenna	
+Corfù	isola e città	
+Grizàn	Grizzano? (forma friulana)	
+Partenope	Napoli (nome poetico)	Napoli
+Europa	continente	
+Asia	continente	
+Africa	continente	
+America	continente	
+Olmütz	Olomouc	Olomouc
