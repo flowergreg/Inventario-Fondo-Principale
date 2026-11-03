@@ -77,10 +77,11 @@ def main():
     OUT.write_text("\n".join(r) + "\n", encoding="utf-8")
 
     # voci annotate
-    v_out = ["# Fase 3 — voci con le menzioni segnate\n",
+    v_out = ["# Fase 3 — voci del campione con le menzioni segnate\n",
              "Legenda: **[Nome|P]** persona, **[Nome|L]** luogo, **[Nome|S]** santo, **[Titolo|O]** opera; «?» = affidabilità bassa; "
              "«→» = correzione del curatore. Sotto il testo: coda, annotazioni e parole non classificate.\n"]
-    for vid, numero, testo, coda in q("SELECT id, numero, testo, coda FROM voci WHERE id IN "
+    campione = ("(numero_base BETWEEN 1 AND 100) OR (numero_base BETWEEN 464 AND 497) OR numero = '2134'")
+    for vid, numero, testo, coda in q(f"SELECT id, numero, testo, coda FROM voci WHERE ({campione}) AND id IN "
                                       "(SELECT voce FROM menzioni UNION SELECT voce FROM non_classificati) ORDER BY id"):
         v_out.append(f"### {numero}\n")
         mz = q("SELECT inizio, fine, tipo, correzione, affidabilita FROM menzioni WHERE voce=? AND sede='testo' "

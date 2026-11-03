@@ -7,7 +7,7 @@ Obiettivo: nome (in qualsiasi grafia) → tutte le sue varianti → tutti i punt
 | 0 | Struttura del repository, `CLAUDE.md`, `docs/piano.md`, sorgente in `sorgenti/` | da fare |
 | 1 | Parsing delle voci (testo, coda, annotazioni, numeri anomali) | fatto, da verificare sul report |
 | 2 | Segmentazione interna con i soli riferimenti originali | fatto, da verificare sul report |
-| 3 | Estrazione delle menzioni di persone e luoghi, con posizione | in corso: campione da rivedere |
+| 3 | Estrazione delle menzioni di persone e luoghi, con posizione | campione rivisto; revisione per forme su tutto l'inventario |
 | 4 | Raggruppamento delle varianti in entità (proposte) | da fare |
 | 5 | Arricchimento da fonti esterne: forma d'intestazione e varianti note | da fare |
 | 6 | Revisione del curatore, partendo dai nomi più frequenti | da fare |
@@ -68,3 +68,4 @@ Decisioni confermate dal curatore:
 - Istituzioni: non si estraggono; si estrae il luogo che contengono.
 - Liste: luoghi da ISTAT e GeoNames (peso forte/medio/debole), nomi di battesimo da Wikidata (it, la, fur), liste manuali in `dati/liste/`.
 - Esecuzione: `python3 script/liste_esterne.py` (una volta), `python3 script/estrai.py [--campione]`, `python3 script/report_fase3.py`.
+- Revisione su tutto l'inventario per forme: `python3 script/revisione_forme.py` → `report/fase_3_revisione_forme.md`. Decisioni globali in `dati/liste/decisioni_forme.tsv` (forma, tipo: persona | luogo | santo | opera | nessuno), eccezioni per voce in `dati/liste/classificazioni_manuali.tsv`.

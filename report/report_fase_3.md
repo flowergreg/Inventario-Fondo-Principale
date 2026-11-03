@@ -1,124 +1,397 @@
 # Report fase 3 — Estrazione di persone, luoghi e santi
 
-Voci elaborate: **129** (con almeno una menzione: 129). Le voci annotate sono in `fase_3_voci_annotate.md`.
+Voci elaborate: **4486** (con almeno una menzione: 4435). Le voci annotate sono in `fase_3_voci_annotate.md`.
 
 ## 1. Menzioni
 
 | Tipo | alta | media | bassa | Totale |
 |---|---|---|---|---|
-| persona | 1108 | 272 | 106 | 1486 |
-| luogo | 508 | 100 | 13 | 621 |
-| santo | 41 | 0 | 0 | 41 |
-| opera | 10 | 0 | 0 | 10 |
+| persona | 9358 | 5283 | 979 | 15620 |
+| luogo | 4367 | 234 | 116 | 4717 |
+| santo | 610 | 0 | 0 | 610 |
+| opera | 43 | 0 | 0 | 43 |
 
-Per sede: annotazione 11, coda 31, testo 2116
+Per sede: annotazione 118, coda 618, testo 20254
 
 ### Metodi
 
 | Tipo | Metodo | Affidabilità | Numero |
 |---|---|---|---|
-| luogo | lista_luoghi_forte | alta | 480 |
-| luogo | sede_ecclesiastica | media | 44 |
-| luogo | provenienza_citta | alta | 26 |
-| luogo | luogo_della_lettera | media | 18 |
-| luogo | contesto_luogo | media | 14 |
-| luogo | lista_luoghi_medio | bassa | 12 |
-| luogo | lista_luoghi_contesto | media | 7 |
-| luogo | coordinazione | media | 6 |
-| luogo | luogo_prima_del_nome | media | 5 |
-| luogo | luogo_con_specificazione | media | 4 |
-| luogo | luogo_della_famiglia | media | 2 |
+| luogo | lista_luoghi_forte | alta | 3804 |
+| luogo | provenienza_citta | alta | 296 |
+| luogo | contesto_luogo | alta | 214 |
+| luogo | lista_luoghi_medio | bassa | 106 |
+| luogo | lista_luoghi_contesto | media | 63 |
+| luogo | luogo_con_specificazione | media | 40 |
+| luogo | contesto_luogo | media | 37 |
+| luogo | intestazione_paragrafo | alta | 31 |
+| luogo | luogo_della_lettera | media | 28 |
+| luogo | luogo_della_famiglia | media | 26 |
+| luogo | coordinazione | media | 23 |
+| luogo | luogo_ed_editore | alta | 20 |
+| luogo | luogo_prima_del_nome | media | 14 |
+| luogo | lista_luoghi_contesto | bassa | 10 |
+| luogo | intestazione_paragrafo | media | 2 |
 | luogo | curatore | alta | 1 |
-| luogo | lista_luoghi_contesto | bassa | 1 |
-| luogo | luogo_ed_editore | alta | 1 |
+| luogo | sede_ecclesiastica | alta | 1 |
+| luogo | sede_ecclesiastica | media | 1 |
+| opera | opera_nota | alta | 38 |
 | opera | curatore | alta | 5 |
-| opera | opera_nota | alta | 5 |
-| persona | nome_di_battesimo | alta | 995 |
-| persona | solo_nome_di_battesimo | media | 95 |
-| persona | titolo | alta | 94 |
-| persona | intestazione_voce | bassa | 58 |
-| persona | articolo | media | 45 |
-| persona | cognome_e_titolo | media | 23 |
-| persona | destinatario | media | 22 |
-| persona | particella | media | 17 |
-| persona | sequenza_maiuscole | bassa | 15 |
-| persona | elenco_di_persone | media | 14 |
-| persona | cognome_isolato | bassa | 13 |
-| persona | coordinazione | media | 12 |
-| persona | destinatario | bassa | 11 |
-| persona | famiglia | media | 11 |
-| persona | famiglia | alta | 9 |
+| persona | nome_di_battesimo | alta | 7467 |
+| persona | solo_nome_di_battesimo | media | 1317 |
+| persona | titolo | alta | 1030 |
+| persona | intestazione_voce | media | 1020 |
+| persona | articolo | media | 703 |
+| persona | ordine_inverso | alta | 489 |
+| persona | sequenza_maiuscole | bassa | 427 |
+| persona | fondo_o_provenienza | media | 418 |
+| persona | particella | media | 357 |
+| persona | famiglia | alta | 353 |
+| persona | stessa_voce | media | 353 |
+| persona | cognome_isolato | bassa | 283 |
+| persona | tra_parentesi | media | 274 |
+| persona | noto_altrove | media | 162 |
+| persona | famiglia | media | 154 |
+| persona | cognome_e_titolo | media | 134 |
+| persona | elenco_di_persone | media | 129 |
+| persona | destinatario | bassa | 111 |
+| persona | coordinazione | media | 86 |
+| persona | destinatario | media | 62 |
+| persona | famiglia | bassa | 59 |
+| persona | editore | bassa | 58 |
+| persona | nomi_coordinati | media | 36 |
+| persona | autore_in_elenco | bassa | 28 |
+| persona | luogo_ed_editore | media | 19 |
+| persona | pseudonimo | media | 17 |
+| persona | carica | media | 16 |
+| persona | rinvio | bassa | 13 |
+| persona | nomi_coordinati | alta | 11 |
+| persona | ordine_inverso | media | 10 |
+| persona | nozze | media | 8 |
 | persona | curatore | alta | 7 |
-| persona | tra_parentesi | media | 7 |
-| persona | fondo_o_provenienza | media | 5 |
-| persona | autore_in_elenco | bassa | 4 |
-| persona | sede_ecclesiastica | media | 4 |
-| persona | pseudonimo | media | 3 |
-| persona | stessa_voce | media | 3 |
-| persona | carica | media | 2 |
-| persona | editore | bassa | 2 |
-| persona | nomi_coordinati | alta | 2 |
-| persona | nomi_coordinati | media | 2 |
-| persona | nozze | media | 2 |
-| persona | rinvio | bassa | 2 |
-| persona | famiglia | bassa | 1 |
-| persona | luogo_ed_editore | media | 1 |
-| persona | nome_dopo_santo | media | 1 |
-| persona | nome_tra_parentesi | media | 1 |
-| persona | noto_altrove | media | 1 |
-| persona | ordine_inverso | media | 1 |
+| persona | nome_tra_parentesi | media | 4 |
+| persona | nome_dopo_santo | media | 3 |
+| persona | correzione_curatore | media | 1 |
 | persona | sigla_e_nome | alta | 1 |
-| santo | santo | alta | 41 |
+| santo | santo | alta | 573 |
+| santo | santo_dopo_nome | alta | 37 |
 
 ## 2. Correzioni del curatore (diventeranno varianti con origine `correzione_curatore`)
 
 - 9: P. Tisabesano Secchia → **P. Tisabesano Sechia**
 - 71: Nicolò Marlupino → **Nicolò Morlupino**
+- 389: Marlupino → **Morlupino**
 - 464: Forcari [Foscari] Francesco → **Foscari Francesco**
+- 1076: Palladio → **Lucrezio**
+- 2096: Storfans → **Stavoli Fornas?**
+- 2524: N. H. Z. → **N. H. Mario**
+- 3132: Parcar [Pancari?] Giuseppe → **Pancari? Giuseppe.**
+- 4518: Cesare → **Calabi**
+- 4518: Cesare → **Calabi**
 
 ## 3. Santi (da dirimere: persona, chiesa o luogo)
 
-- S. Daniele (12)
-- S. Vito (6)
-- S. Daniello (3)
+- S. Daniele (59)
+- S. Pietro (26)
+- S. Vito (24)
+- S. Marco (21)
+- S. Chiara (18)
+- S. Nicolò (17)
+- S. Francesco (16)
+- S. Lorenzo (14)
+- S. Maria (13)
+- S. Lucia (11)
+- San Daniele (9)
+- S. Giacomo (7)
+- S. Spirito (7)
+- S. Antonio (6)
+- S. Appolonia (6)
+- S. Paolino (6)
+- S. Chiara di Cividale (5)
+- S. Daniello (5)
+- S. Giorgio (5)
+- S. Agostino (4)
+- S. Antonio di Padova (4)
+- S. Chiara di Udine (4)
+- S. Gottardo (4)
+- S. Niccolò (4)
+- S. Croce (3)
+- S. Giovanni (3)
+- S. Luigi Gonzaga (3)
+- S. Maria Maddalena (3)
+- S. Paolo (3)
+- S. Pietro Martire (3)
+- S. Tommaso (3)
+- S. Vidotto (3)
+- SS. Sacramento (3)
+- SS. Sacramento di Palma (3)
+- S. Andrea (2)
+- S. Andrea di Venzone (2)
+- S. Anna (2)
+- S. Bernardino (2)
+- S. Bonifacio (2)
+- S. Braida (2)
+- S. Carlo Borromeo (2)
+- S. Caterina da Siena (2)
+- S. Chiara di Gemona (2)
+- S. Donato (2)
+- S. Eccell (2)
+- S. Eugenio (2)
+- S. Filippo Neri (2)
+- S. Foca (2)
+- S. Francesco di Portogruaro (2)
+- S. Francesco di Udine (2)
+- S. Giorgio di Baviera (2)
+- S. Giorgio di Grazzano (2)
+- S. Giovanni Battista (2)
+- S. Giovanni del Tempio (2)
+- S. Giovanni di Manzano (2)
+- S. Giovanni di Tuba (2)
+- S. Lazzaro (2)
+- S. Maria dei Battuti (2)
+- S. Maria di Tarcento (2)
+- S. Michele (2)
+- S. Natale (2)
+- S. Odorico (2)
+- S. Pietro di Osoppo (2)
+- S. Quirino (2)
+- S. Rocco (2)
+- S. Sebastiano (2)
+- S. Sepolcro (2)
+- S. Valentino (2)
+- SS. Gervasio (2)
+- SS. Innocenti (2)
+- San Pieri (2)
+- Santa Maria di Castello (2)
+- S. Agnese di Gemona (1)
 - S. Alessandro di Milano (1)
-- S. Antonio (1)
-- S. Carlo Borromeo (1)
+- S. Alò (1)
+- S. Amantio (1)
+- S. Amanzio (1)
+- S. Ambrogio (1)
+- S. Annam Rectore (1)
+- S. Anselmo di Canterbury (1)
+- S. Antonio Bellon (1)
+- S. Antonio da Padova (1)
+- S. Antonio di Buia. Volume (1)
+- S. Antonio di Tavagnacco (1)
+- S. Barbara (1)
+- S. Bartolomeo (1)
+- S. Bastiano (1)
+- S. Beacco (1)
+- S. Benco (1)
+- S. Benedetto (1)
+- S. Bernardo (1)
+- S. Bernardo di Chiaravalle (1)
+- S. Blasii Ep. (1)
+- S. Bosetti (1)
+- S. Canciano (1)
+- S. Canciano di Risano (1)
+- S. Canziano (1)
+- S. Carlo (1)
+- S. Caterina (1)
 - S. Cecilia (1)
-- S. Chiara (1)
-- S. Filippo (1)
+- S. Christophori (1)
+- S. Chromatium (1)
+- S. Clara di Cividale (1)
+- S. Cristoforo (1)
+- S. Croce di Casarsa (1)
+- S. Cromazio (1)
+- S. D'Apollonia (1)
+- S. Daniele del Friuli (1)
+- S. Dom.° (1)
+- S. Domenico (1)
+- S. Domenico di Udine (1)
+- S. Donà di Piave (1)
+- S. Ecc. Pietro Canal (1)
+- S. Eufemia (1)
+- S. Fantino (1)
+- S. Faustino (1)
+- S. Felice (1)
+- S. Felicita (1)
+- S. Filippo Neri. (1)
+- S. Fiora (1)
+- S. Francesco d'Assisi (1)
+- S. Gallo (1)
+- S. Georgii Bavaricum (1)
+- S. Gerolamo (1)
+- S. Gertrude (1)
+- S. Gervasio (1)
+- S. Gio. (1)
+- S. Giobbe (1)
 - S. Giorgio di Nogaro (1)
+- S. Giorgio di Pagnacco (1)
 - S. Giorgio di Villabruna (1)
+- S. Giov. Battista (1)
 - S. Giov. di Manzano (1)
-- S. Giovanni (1)
+- S. Giovanni Battista di Gemona (1)
+- S. Giovanni Bocca (1)
+- S. Giovanni Chrisostomo (1)
+- S. Giovanni di Camposampiero (1)
+- S. Giovanni di Variano (1)
+- S. Giuseppe (1)
+- S. Giustino Martire (1)
+- S. Gregorio di Sacile (1)
+- S. Hieronimi (1)
+- S. Immacolata Concezione (1)
 - S. Job (1)
-- S. Lorenzo (1)
-- S. Marcello (1)
-- S. Maria (1)
+- S. Juan. Racconto (1)
+- S. Leonardo di Cavallico (1)
+- S. Lino di Udine (1)
+- S. Lionardo di Plasenzis (1)
+- S. Lorenzo Giustiniano (1)
+- S. Lorenzo Martire (1)
+- S. Lorenzo dei Barnabiti (1)
+- S. Luigi (1)
+- S. M. Ces. (1)
+- S. Marc (1)
+- S. Marci (1)
+- S. Marci de Portunaone (1)
+- S. Marco del Friuli (1)
+- S. Marco di Venezia (1)
+- S. Marezza (1)
+- S. Maria Egiziana (1)
+- S. Maria Maggiore di Udine (1)
+- S. Maria Sanvitense (1)
+- S. Maria d'Aquileia (1)
+- S. Maria de' Battudi di Torreano (1)
+- S. Maria dei Battuti di Moimacco (1)
+- S. Maria dei Battuti di Tarcento (1)
+- S. Maria del Gonfalone (1)
+- S. Maria della Misericordia (1)
+- S. Maria delle Grazie (1)
+- S. Maria delle Grazie di Udine (1)
+- S. Maria di Barbana (1)
+- S. Maria di Poloneto (1)
+- S. Maria di Venzone (1)
+- S. Mariae Angelorum de Utino (1)
+- S. Mariae Humilitatis (1)
+- S. Mariae Portunaonis (1)
+- S. Martini Duniensis (1)
+- S. Martino di Codroipo (1)
+- S. Martino di Manzano (1)
+- S. Mauro (1)
+- S. Mazzo (1)
+- S. Mercadante (1)
+- S. Michele Arc. (1)
+- S. Michele Arcangelo (1)
+- S. Monte (1)
+- S. Natal (1)
+- S. Nicolai de Rechinvelto (1)
+- S. Nicolò di Candolè (1)
+- S. Nicolò di G. M. Tiraboschi (1)
+- S. Nicolò di Udine (1)
+- S. Odorici de Pilosis de S. (1)
+- S. Officii Aquileiae (1)
+- S. Pancrazio (1)
+- S. Pantaleone (1)
+- S. Paolino di Aquileja (1)
 - S. Paolo di Macerata (1)
+- S. Pauli (1)
+- S. Petri Martyris de Utino (1)
+- S. Pieri (1)
+- S. Pietro - S. Canciano (1)
+- S. Pietro M. (1)
+- S. Pietro Martire  di Udine (1)
+- S. Pietro Martire di Udine (1)
+- S. Pietro del Lisonzo (1)
+- S. Pietro dell'Isonzo (1)
+- S. Pietro di Carnia (1)
+- S. Pietro di Ragogna (1)
+- S. Pietro di Rosazzo (1)
+- S. Pietro di Tavella di Grazzano (1)
 - S. Pio V Sommo Pontefice (1)
+- S. Politi (1)
+- S. Quirini Martyris Sciscensis (1)
+- S. Quirino Ep. (1)
+- S. Santità (1)
 - S. Saverio (1)
+- S. Sede (1)
+- S. Sede. (1)
+- S. Severo (1)
+- S. Simeone (1)
+- S. Simon Milliana de Udene (1)
 - S. Sindone (1)
-- S. Tommaso (1)
+- S. Stefano d'Aquileja (1)
+- S. Stefano di Buia (1)
+- S. Steffano (1)
+- S. Susanna (1)
+- S. Theol (1)
+- S. Tomaso (1)
+- S. Tommaso di Aquino di Giov. Pindemonte (1)
+- S. Tommaso di S. Daniele dei Templari (1)
+- S. Trissino (1)
+- S. Uffizio (1)
+- S. Ulderico (1)
+- S. Veniero (1)
+- S. Vido Nod. Pub.o (1)
+- S. Vito de Caschanan (1)
 - S. Vito di Crauglio (1)
+- S. Zorz (1)
+- S.ta Brigida (1)
+- S.ta Maria de' Battudi (1)
+- SS. Concezione (1)
+- SS. Coo. Ricardo (1)
+- SS. Corpo (1)
+- SS. Crucifixi de Utino (1)
+- SS. Domenico (1)
+- SS. Rosario di Palma (1)
+- SS. Trinità (1)
+- SS. Trinità di Cividale (1)
+- SS. Valentinis (1)
+- San Bernardo (1)
+- San Christofolo (1)
+- San Denel (1)
+- San Dionigi Cartusiano (1)
+- San Eliodoro (1)
+- San Floreano (1)
+- San Francesco (1)
+- San Genesio (1)
+- San Ginesio (1)
+- San Giovanni di Manzano (1)
+- San Giuliano (1)
+- San Giusto (1)
+- San Lorenzo (1)
+- San Marc de Glesie (1)
+- San Martino di Fanna (1)
+- San Paulino (1)
+- San Pietro d'Isonzo (1)
+- San Servolo (1)
+- San Vido (1)
+- San Vito (1)
+- San Vito di Fagagna (1)
+- Santa Croce di Vipacco (1)
+- Santa Felicita di Casteluto (1)
+- Santa Maria di Castello di Udine (1)
+- Santa Teresa (1)
+- Santa di Venezia (1)
+- Santi Apostoli (1)
+- Santi di Udine (1)
+- Santi don Dom. (1)
+- Santo Bertoldi (1)
+- Santo Folegato (1)
+- Santo Padre Pio VI (1)
+- Santo Seppolchro (1)
 
 ## 4. Persone: forme più frequenti
 
-Giorgio di Sommariva (19), Jacopo Pirona (15), Burchiello (13), Marzio Andreucci (9), Delfino (7), Giorgio Sommariva (6), Abelardo (5), Daniele Delfino (5), De Dominis (5), Eloisa (5), Monti (5), Pietro Braida (5), Pietro Zorutti (5), Amalteo (4), Cortenovis (4), G. A. Pirona (4), Girolamo Asquini (4), Metastasio (4), A. Scala (3), Ant. Antonini (3), Antonio Nogarolo (3), Beretta (3), Bonini (3), Carlo De Dottori (3), Ciceronis (3), Ciro di Pers (3), Concina (3), Daniele Florio (3), Doge (3), Domenico Fontanini (3), Fontanini (3), Francesco (3), Francesco Beretta (3), Francesco Florio (3), Francesco Vanocio (3), Frugoni (3), Ottelio (3), Parini (3), Séras (3), V. Joppi (3), Zorzi (3), A. Antonini (2), Alfonso Belgrado (2), Alvise Mocenigo (2), Andreuzzi (2), Ant.o di Brazzà (2), Antonelli (2), Antonio Valentini (2), Asquini (2), Asquini Girolamo (2), Bartolomeo di Olivedo (2), Belgrado (2), Bini Giuseppe (2), Boetij (2), Bondi (2), Carlo (2), Carlo Belgrado (2), Caterina Percoto (2), Cesarotti (2), Charpentier (2), Cicerone (2), Ciconi Teobaldo (2), Clemente XIV (2), Cornelio Elti (2), Cristo (2), D. Coluta (2), Daniel Florio (2), Dotti (2), Eliseo Padovano (2), Elti (2), Eusebio Caimo (2), Fabio Asquino (2), Fabio Sforza (2), Fedro (2), Filelfo (2), Filippo Florio (2), Fillide (2), Florio Francesco (2), Francesco Trento (2), Francesconi (2)
+Tessitori (249), Fin (113), Percoto, Caterina (111), Minelli (101), Liruti (92), Ippolito Nievo (89), Marzona (73), Zorzi Antonio (72), Pecile Domenico (57), Manzano (di) Francesco (52), Giovanni (51), Pavona Pietro (51), V. Joppi (49), Candotti G. B. (45), Processo (43), Francesco (41), Elti (40), Luigi Ciceri (39), G. Loschi (37), Toppo (35), Fontanini (33), Jacopo Pirona (33), Savorgnan (33), Jacopo (31), Loschi, Giuseppe (31), G. B. (30), Nievo, Ippolito (30), di Udine (29), Leitenburg (de) Francesco (28), Pirona (28), J. Pirona (27), Orca Tommaso (27), Antonio Nievo (26), Frattina Demetrio (26), Joppi (26), Valvasone di Maniago (26), Śrī (26), Antonio (25), Braida (25), Buddharās (25), G. D. Ciconi (25), Corgnali (24), Del Torso (24), Florio Daniele (24), Nicoletti (24), Manzano (di) (23), Autrice (22), Giuseppe (22), Iti (22), L. Pilosio (22), Livia Michelini (22), Michelini, Pietro (22), S. F. F. (22), d'Aquileia (20), Belloni (19), Bertrando (19), G. Bianchi (19), Giorgio di Sommariva (19), Jaconissi (19), Pertoldeo (19), A. Wolf (18), Francesco de Leitenburg (18), Gloria (18), Mantica (18), Turchi (18), Cordans Bartolomio (17), D.° Rubi (17), Romano Jaconissi (17), Valentinis (17), Accad (16), Carlo (16), Marco Antonio (16), Alfonso Belgrado (15), Barnaba (15), Castello (15), Daniele Delfino (15), Florio (15), Grassi Luigi (15), Pavona (15), Tartini Giuseppe (15)
 
 ### Persone ad affidabilità bassa (da controllare)
 
-Cortenovis [destinatario] (4), Ciceronis [intestazione_voce] (2), Dotti [intestazione_voce] (2), Fillide [destinatario] (2), Malacrida Marzio [intestazione_voce] (2), Maniago Co. Pietro [intestazione_voce] (2), Sporeno Giuseppe [intestazione_voce] (2), Actio Syncero [sequenza_maiuscole] (1), Alberto Precettore [intestazione_voce] (1), Aloigi Pozzi [sequenza_maiuscole] (1), Aloj N. [intestazione_voce] (1), Altafiore [destinatario] (1), Amasei [cognome_isolato] (1), Angeriano [cognome_isolato] (1), Asquini [destinatario] (1), Atthemis [cognome_isolato] (1), Augusti Vatis [intestazione_voce] (1), Autografi [intestazione_voce] (1), Bajamonte Tiepolo [intestazione_voce] (1), Bartolucci Bartoluccio [sequenza_maiuscole] (1), Belgrado (di) Alfonso Giuseppe [intestazione_voce] (1), Bianchi ab. Giuseppe [intestazione_voce] (1), Boccaccio [intestazione_voce] (1), Boetius A. S. [intestazione_voce] (1), Bortolomio Marenchi [sequenza_maiuscole] (1), Buonaparte [destinatario] (1), Caesar [intestazione_voce] (1), Carboni Lorenzo [intestazione_voce] (1), Catterina Sellenati [sequenza_maiuscole] (1), Catuffio Panchianio Bubulco Arcade [sequenza_maiuscole] (1), Cesarotti [destinatario] (1), Ciconi Teobaldo [intestazione_voce] (1), Cimbriaco [autore_in_elenco] (1), Ciro di Pers [intestazione_voce] (1), Coquinato Francesco [intestazione_voce] (1), Dal Colle [intestazione_voce] (1), Dall'Ongaro Francesco [intestazione_voce] (1), Dalla Forza Virginio [intestazione_voce] (1), Davalus [autore_in_elenco] (1), Epitteto [cognome_isolato] (1), Facen Jacopo [intestazione_voce] (1), Fontainebleau [cognome_isolato] (1), Fontanini [famiglia] (1), Forza Vingenzo [sequenza_maiuscole] (1), Frugoni [cognome_isolato] (1), Gaetini [destinatario] (1), Gasparetto [autore_in_elenco] (1), Gianni [intestazione_voce] (1), Gozzi Gasparo [intestazione_voce] (1), Greatti G. [intestazione_voce] (1), Hieronimiano Augusto [intestazione_voce] (1), Leicht Michele [sequenza_maiuscole] (1), Leopardi Giacomo [intestazione_voce] (1), Liberale Motense [sequenza_maiuscole] (1), Liliano Giulio [intestazione_voce] (1), Liliano Tranquillo [intestazione_voce] (1), Lorenzi Bartolameo [intestazione_voce] (1), Luzzatto Joachino [sequenza_maiuscole] (1), Manus [intestazione_voce] (1), Mazzoliceti [rinvio] (1), Metastasio [intestazione_voce] (1), Montegnacco (di) Jacopo [intestazione_voce] (1), Montgolfier [cognome_isolato] (1), Multedo Giuseppe [intestazione_voce] (1), Obizzi [editore] (1), Ottolino [cognome_isolato] (1), Pacchierotti Cecchini Giuseppe [intestazione_voce] (1), Pace Fabio [intestazione_voce] (1), Palladio Enrico [intestazione_voce] (1), Parini [autore_in_elenco] (1), Pascutti [editore] (1), Passionei Domenico [intestazione_voce] (1), Penizzi Pietro [intestazione_voce] (1), Pezzin Victor [sequenza_maiuscole] (1), Pindemonte [cognome_isolato] (1), Pontello Leonardo [intestazione_voce] (1), Poppea [cognome_isolato] (1), Prov. ab. Greatti [sequenza_maiuscole] (1), Riccoboni [cognome_isolato] (1), Rubeis [cognome_isolato] (1), Rò (dei) Bernardino [intestazione_voce] (1), Sabellico Marcantonio [intestazione_voce] (1), Saffo [cognome_isolato] (1), Salomone Ebreo [sequenza_maiuscole] (1), Santoni Mitriade [sequenza_maiuscole] (1), Savorgnano Troilo [intestazione_voce] (1), Sborz Pietro [intestazione_voce] (1), Scevolini Gian Domenico Bertinorese [intestazione_voce] (1), Schiavo Biagio [intestazione_voce] (1), Schiller Federico [intestazione_voce] (1), Seccante Vittorio [intestazione_voce] (1), Sententiæ [intestazione_voce] (1), Sporeno Marino [intestazione_voce] (1), Stella Francesco da Spilimbergo [intestazione_voce] (1), Trotti Francesco [intestazione_voce] (1), Vopato [rinvio] (1), Zomparo Lunardo [sequenza_maiuscole] (1)
+Turchi [famiglia] (17), Śrī Gaṇeśā [sequenza_maiuscole] (10), Liruti [destinatario] (8), Rubeis [cognome_isolato] (7), Har Dās. [sequenza_maiuscole] (6), Michele Nikolaievic [sequenza_maiuscole] (6), Pilosio [editore] (6), Sventati [cognome_isolato] (6), Asquini [destinatario] (5), Savorgnani [famiglia] (5), Cortenovis [destinatario] (4), Michele Vincieri [sequenza_maiuscole] (4), Pascottino Palese [sequenza_maiuscole] (4), Pavona [cognome_isolato] (4), Zucco [cognome_isolato] (4), Śrī Gaṇeś [sequenza_maiuscole] (4), Accad [destinatario] (3), Bonoris [destinatario] (3), R. [cognome_isolato] (3), Romani [famiglia] (3), Russi [famiglia] (3), Sumati Ratan [sequenza_maiuscole] (3), Udene [cognome_isolato] (3), Xbre [editore] (3), Śrī Ganeś [sequenza_maiuscole] (3), Alturis [cognome_isolato] (2), Amasei [cognome_isolato] (2), Aquil [cognome_isolato] (2), Arcano [cognome_isolato] (2), Autrice [editore] (2), Aṃpugha Sūri [sequenza_maiuscole] (2), Barbana [cognome_isolato] (2), Borgnan [cognome_isolato] (2), C. [cognome_isolato] (2), Catolic Udines [sequenza_maiuscole] (2), Cesarotti [destinatario] (2), Eucharistia [cognome_isolato] (2), Fillide [destinatario] (2), Fontanini [famiglia] (2), Forlani [famiglia] (2), G. [cognome_isolato] (2), Gennajo [editore] (2), Giov. [destinatario] (2), Har Dās [sequenza_maiuscole] (2), Hivarāṇī Padmāvatī [sequenza_maiuscole] (2), Incaroio [cognome_isolato] (2), Instrumenti [cognome_isolato] (2), Jefte [cognome_isolato] (2), Joppi [cognome_isolato] (2), Klopstok [cognome_isolato] (2), Logicam [destinatario] (2), Michele Nicoletti [sequenza_maiuscole] (2), Morossi [autore_in_elenco] (2), Pistori [famiglia] (2), Prampero [cognome_isolato] (2), Procuratori [famiglia] (2), Provveditori [famiglia] (2), Rettori [famiglia] (2), Riformatori [famiglia] (2), Saffo [cognome_isolato] (2), Sbroiavacca [cognome_isolato] (2), Septembris [editore] (2), Simancas [cognome_isolato] (2), Sumaga [cognome_isolato] (2), Torriani [famiglia] (2), Trasporti Censuarj [sequenza_maiuscole] (2), Vallombrosa [cognome_isolato] (2), Śrī Jināyanamaḥ [sequenza_maiuscole] (2), Śrī Mahāvīrā [sequenza_maiuscole] (2), Śrī Māhādevjī [sequenza_maiuscole] (2), Śrī Vīt'rāgāyanamaḥ [sequenza_maiuscole] (2), Śrī Śrī [sequenza_maiuscole] (2), A-F [cognome_isolato] (1), A. [cognome_isolato] (1), Abbadona [cognome_isolato] (1), Abhaya Sommuni [sequenza_maiuscole] (1), Abhidhāna Ciṅtamaṇen [sequenza_maiuscole] (1), Abstemio [cognome_isolato] (1), Abstemio [destinatario] (1), Accoglienze [cognome_isolato] (1), Acq.to [editore] (1), Actio Syncero [sequenza_maiuscole] (1), Adelgiso Fior. Milano [sequenza_maiuscole] (1), Adeo. Segue [sequenza_maiuscole] (1), Adorgnano [cognome_isolato] (1), Affictus [cognome_isolato] (1), Aggravi Privati [sequenza_maiuscole] (1), Aggravii [cognome_isolato] (1), Aggregazioni [cognome_isolato] (1), Aijlini Maniacensis [sequenza_maiuscole] (1), Ailino notaio Maniacensis [sequenza_maiuscole] (1), Ajlini [cognome_isolato] (1), Al Ser.mo Principe [sequenza_maiuscole] (1), Al sig. Tavoschi [sequenza_maiuscole] (1), Alberelli [cognome_isolato] (1), Alembert [cognome_isolato] (1), Aloigi Pozzi [sequenza_maiuscole] (1), Alpini [autore_in_elenco] (1), Altafiore [destinatario] (1), Altfranzösische Gedichte [sequenza_maiuscole] (1), Amaltei [cognome_isolato] (1), Amarli [editore] (1), Amaseo [cognome_isolato] (1), Amori Garibaldini [sequenza_maiuscole] (1), Amrah Śrī [sequenza_maiuscole] (1), Anaglipho Aquilejensem [sequenza_maiuscole] (1), Andr. Andriuzzi [sequenza_maiuscole] (1), Aneddoti del Liruti [rinvio] (1), Ang. Cisilini [sequenza_maiuscole] (1), Ang. Feruglio [sequenza_maiuscole] (1), Angeriano [cognome_isolato] (1), Antich [cognome_isolato] (1), Anzolo Sacheti [sequenza_maiuscole] (1), Aprādh Śudar [sequenza_maiuscole] (1), Aquil [destinatario] (1), Aquil [editore] (1), Aquilejensi Capitulo [sequenza_maiuscole] (1), Arces Forojulienses [sequenza_maiuscole] (1), Arcidioecesi Utinensi [sequenza_maiuscole] (1), Arithmetica [cognome_isolato] (1), Armonico Pratica [sequenza_maiuscole] (1), Arsenale [destinatario] (1), Arsenale [editore] (1), Artico [cognome_isolato] (1), Asciti [cognome_isolato] (1), Asquin Valvason [sequenza_maiuscole] (1), Asquino [cognome_isolato] (1), Attalarico [destinatario] (1), Ausano Faraone [sequenza_maiuscole] (1), Austro-Prussiana [editore] (1), Aut. Dissertazione [sequenza_maiuscole] (1), Autore C.te Romanello Manino [sequenza_maiuscole] (1), Avviso [cognome_isolato] (1), Avviso [destinatario] (1), Aṃpugha Sūri.
+Complessivamente [sequenza_maiuscole] (1), Badie [cognome_isolato] (1), Banchieri [destinatario] (1), Bande Nere. Frammento [sequenza_maiuscole] (1), Barbana [destinatario] (1), Bartolucci Bartoluccio [sequenza_maiuscole] (1), Battaglione [autore_in_elenco] (1), Battaglione Pisacane [sequenza_maiuscole] (1), Battīsaṃ Uttarajñāyae [sequenza_maiuscole] (1), Beauvais [cognome_isolato] (1), Becchiarineide [cognome_isolato] (1), Bedmar [cognome_isolato] (1), Bekar Jomīvīnvuṃ [sequenza_maiuscole] (1), Belli Forojuliensis [sequenza_maiuscole] (1), Bellonus [destinatario] (1), Benedet [cognome_isolato] (1), Benetto Miloco [sequenza_maiuscole] (1), Bepo Malatie [sequenza_maiuscole] (1), Berchet [destinatario] (1), Bernardi [autore_in_elenco] (1), Bertolini [autore_in_elenco] (1), Bertoni [cognome_isolato] (1), Berzevichij [cognome_isolato] (1), Bhogal Purāṇ [sequenza_maiuscole] (1), Bhāvaṇḍai Jāuṃ [sequenza_maiuscole] (1), Biasutti [editore] (1), Bibliotheca Seminarii Utinensis [sequenza_maiuscole] (1), Bibliothecario Civitatis [sequenza_maiuscole] (1), Bibliothecæ Augustanæ Atriis [sequenza_maiuscole] (1), Bitino Bevilacqua [sequenza_maiuscole] (1), Blasonario [cognome_isolato] (1), Boccherini [cognome_isolato] (1), Bombelli [destinatario] (1), Bormann [editore] (1), Bortolomio Marenchi [sequenza_maiuscole] (1), Brigata Garibaldi-Natisone [sequenza_maiuscole] (1), Brunallesco Brunalleschi [sequenza_maiuscole] (1), Brunetti-Cardini [famiglia] (1), Bucchetti ab. Osualdo [sequenza_maiuscole] (1), Bugugni [cognome_isolato] (1), Buje. Ms. [sequenza_maiuscole] (1), Buonaparte [destinatario] (1), Buratti [cognome_isolato] (1), Burla [cognome_isolato] (1), Caes. Baronii [sequenza_maiuscole] (1), Caiselli-Del Torso [sequenza_maiuscole] (1), Calcoli [cognome_isolato] (1), Caldaro [cognome_isolato] (1), Calendaristi [destinatario] (1), Cambrai [cognome_isolato] (1), Camerarii Communis [sequenza_maiuscole] (1), Campion Carl'Antonio [sequenza_maiuscole] (1), Cancavit [editore] (1), Cancellariae Reveren [sequenza_maiuscole] (1), Canon [destinatario] (1), Canovaccio [cognome_isolato] (1), Cantore Capellano [sequenza_maiuscole] (1), Capituli Aquil [sequenza_maiuscole] (1), Capitulo Civitatis Forojulii [sequenza_maiuscole] (1), Capitulo Generali [sequenza_maiuscole] (1), Capuani [famiglia] (1), Carmelitana [cognome_isolato] (1), Carmer [rinvio] (1), Casabassa [editore] (1), Cassazione [cognome_isolato] (1), Cataino [cognome_isolato] (1), Catal [rinvio] (1), Catalogus Dignitatum [sequenza_maiuscole] (1), Caterina [editore] (1), Catterina Miele [sequenza_maiuscole] (1), Catterina Sellenati [sequenza_maiuscole] (1), Cattuffio Panchianio Bubulco [sequenza_maiuscole] (1), Catuffio Panchianio Bubulco Arcade [sequenza_maiuscole] (1), Catūrmās [destinatario] (1), Caṅd Sūri [sequenza_maiuscole] (1), Cecchino Nievo Mantovano [sequenza_maiuscole] (1), Cergneu [cognome_isolato] (1), Cesarotti [cognome_isolato] (1), Chimica [cognome_isolato] (1), Ciconi [cognome_isolato] (1), Cignotis [cognome_isolato] (1), Cimbriaco [autore_in_elenco] (1), Cirio [cognome_isolato] (1), Citoyen Payan [sequenza_maiuscole] (1), Civitate Fori [sequenza_maiuscole] (1), Cl. Sibiliato [sequenza_maiuscole] (1), Clemento XII. XIII [sequenza_maiuscole] (1), Cod. CXXXIII [sequenza_maiuscole] (1), Collegij Utinensis [sequenza_maiuscole] (1), Colnago [editore] (1), Comites Goritiae [sequenza_maiuscole] (1), Commun [cognome_isolato] (1), Compare [cognome_isolato] (1), Comunis Utini [sequenza_maiuscole] (1), Comussio [destinatario] (1), Concurrite Antiquarii Foroiulienses [sequenza_maiuscole] (1), Conoglano [cognome_isolato] (1), Consiglieri [cognome_isolato] (1), Consilii Civitatis Utini [sequenza_maiuscole] (1), Consilium Civitatis Utini [sequenza_maiuscole] (1), Contractibus [cognome_isolato] (1), Contrino [destinatario] (1), Conventus Civitatis Austriae [sequenza_maiuscole] (1), Convittori [famiglia] (1), Corilla [cognome_isolato] (1), Corvatt [cognome_isolato] (1), Cossio Codroipo [sequenza_maiuscole] (1), Criminalium [editore] (1), Cronichetta [cognome_isolato] (1), Cronologi [destinatario] (1), D'Aronco [cognome_isolato] (1), Dalpati Rāya [sequenza_maiuscole] (1), Datiis Terræ Utini [sequenza_maiuscole] (1), Davalus [autore_in_elenco] (1), Decano [destinatario] (1), Decapitazione [cognome_isolato] (1), Deciani [destinatario] (1), Deganis [autore_in_elenco] (1), Deliberationes Consilii [sequenza_maiuscole] (1), Deum [destinatario] (1), Devozione [cognome_isolato] (1), Devī Mahātma [sequenza_maiuscole] (1), Deśī Dholārī [sequenza_maiuscole] (1), Dichiarationi [cognome_isolato] (1), Diis Aquilejensibus [sequenza_maiuscole] (1), Dissert [cognome_isolato] (1), Distaccamento [autore_in_elenco] (1), Dominium [destinatario] (1), Dottori-Folli Tacini [sequenza_maiuscole] (1), Draia [editore] (1), Ducatus Forojulii [sequenza_maiuscole] (1), Ducem Dominii [sequenza_maiuscole] (1), Duchi [cognome_isolato] (1), Duchi Longobardi [sequenza_maiuscole] (1), Ducis Hetruriae [sequenza_maiuscole] (1), Eccl. Metropol [sequenza_maiuscole] (1), Egerion Tanze [sequenza_maiuscole] (1), Ekavau Jāṇī [sequenza_maiuscole] (1), Elcenio Geronteo [sequenza_maiuscole] (1), Elementi [cognome_isolato] (1), Ellena Veronese [sequenza_maiuscole] (1), Em. Cicogna [sequenza_maiuscole] (1), Emiliot Courant [sequenza_maiuscole] (1), Epitome Chronographica [sequenza_maiuscole] (1), Epitteto [cognome_isolato] (1), Ermeneutica [cognome_isolato] (1), Erto-Casso [cognome_isolato] (1), Eruli [cognome_isolato] (1), Espagne [cognome_isolato] (1), Euntes [cognome_isolato] (1), Europea [editore] (1), Eusopo [cognome_isolato] (1), Extremam Unctionem [sequenza_maiuscole] (1), F. [cognome_isolato] (1), F. [destinatario] (1), Facsimile [editore] (1), Faone [destinatario] (1), Fattura [editore] (1), Fatture [editore] (1), Febr. [editore] (1), Febr. Udine [sequenza_maiuscole] (1), Felao Maranitasi [sequenza_maiuscole] (1), Feliziano Otkisz [sequenza_maiuscole] (1), Feria VI [sequenza_maiuscole] (1), Ferrari [autore_in_elenco] (1), Ferretti Torricelli [sequenza_maiuscole] (1), Filomazi [cognome_isolato] (1), Filza [editore] (1), Fisco [destinatario] (1), Fistulario [destinatario] (1), Floiana [cognome_isolato] (1), Floreanum Candonium [sequenza_maiuscole] (1), Florio-Canciani [famiglia] (1), Follini [destinatario] (1), Fongarini [cognome_isolato] (1), Fontainebleau [cognome_isolato] (1), Foramiti [famiglia] (1), Forogiulio [cognome_isolato] (1), Forojuliensem [destinatario] (1), Forojuliensi Alençoniano [sequenza_maiuscole] (1), Forza Vingenzo [sequenza_maiuscole] (1), Fotocopie [cognome_isolato] (1), Franco-Italian Chevalerie Ogier [sequenza_maiuscole] (1), Fraternitatum Pagnaci [sequenza_maiuscole] (1), Frescus [cognome_isolato] (1), Friedrich Kenner [sequenza_maiuscole] (1), Frobenius Abas [sequenza_maiuscole] (1), Frugoni [cognome_isolato] (1), Fröbel [destinatario] (1), Fusari [editore] (1), G [cognome_isolato] (1), GB. Missio [sequenza_maiuscole] (1), GROSSETTIS [cognome_isolato] (1), Gabaoniti [famiglia] (1), Gaetini [destinatario] (1), Galateo [destinatario] (1), Garzetti [cognome_isolato] (1), Gasparetto [autore_in_elenco] (1), Geb. Ig. Ausb. Btl. [sequenza_maiuscole] (1), Gellert [rinvio] (1), Gemin [cognome_isolato] (1), Gentili [cognome_isolato] (1), Geografia [cognome_isolato] (1), Germanie [cognome_isolato] (1), Germinal [autore_in_elenco] (1), Gerold's Sohn [sequenza_maiuscole] (1), Gervasoni Michiele [sequenza_maiuscole] (1), Ghan Rājjī [sequenza_maiuscole] (1), Giacometto Linussio [sequenza_maiuscole] (1), Giambat [cognome_isolato] (1), Giavarino [cognome_isolato] (1), Giorgiantonio Elti [sequenza_maiuscole] (1), Giorn [cognome_isolato] (1), Giubileo [editore] (1), Glasschroeder [cognome_isolato] (1), Gorizizza [destinatario] (1), Gosālo Kupātar [sequenza_maiuscole] (1), Governatore [destinatario] (1), Gradenigo [destinatario] (1), Gradisque [editore] (1), Gramogliano [cognome_isolato] (1), Granoble [destinatario] (1), Greche Antiche [sequenza_maiuscole] (1), Guardie Nobili [sequenza_maiuscole] (1), Gubernatis [cognome_isolato] (1), Hamel [cognome_isolato] (1), Hanumaṃt Rāṃam [sequenza_maiuscole] (1), Har Dās.
+Complessivamente [sequenza_maiuscole] (1), Harṣ Rājā [sequenza_maiuscole] (1), Helī Jesalag [sequenza_maiuscole] (1), Henri Rosellen [sequenza_maiuscole] (1), Hermann Wahle [sequenza_maiuscole] (1), Herrn Professor Ficker [sequenza_maiuscole] (1), Histor [cognome_isolato] (1), Hojī Māhārījāhī [sequenza_maiuscole] (1), Hārā Caṅdjī [sequenza_maiuscole] (1), I. [cognome_isolato] (1), Ibenetto [cognome_isolato] (1), Ijī Phul [sequenza_maiuscole] (1), Imo. Lettere [sequenza_maiuscole] (1), Imortalien Walzer [sequenza_maiuscole] (1), Incarnationis Mysterio [sequenza_maiuscole] (1), Incollati [cognome_isolato] (1), Individuae Trinitatis [sequenza_maiuscole] (1), Infimae Aetatis [sequenza_maiuscole] (1), Insegnanti [cognome_isolato] (1), Institutiones Justinianeae [sequenza_maiuscole] (1), Inventarii [rinvio] (1), Ipofilo [cognome_isolato] (1), Irredentismo [cognome_isolato] (1), Ispett [destinatario] (1), Italie [cognome_isolato] (1), Italos [destinatario] (1), Ite Śrī Śiv [sequenza_maiuscole] (1), Ityācārya Śrī Dhaneśvar Sūri [sequenza_maiuscole] (1), Ityācārya Śrī Hemecaṅdr [sequenza_maiuscole] (1), Ityācārīya Śrī Hemecaṅdr [sequenza_maiuscole] (1), Itī Śrī Catūrmās [sequenza_maiuscole] (1), Jagemann [cognome_isolato] (1), Jaiv Rājā [sequenza_maiuscole] (1), Jan [autore_in_elenco] (1), Januarii [autore_in_elenco] (1), Januarii [editore] (1), Jelinek [cognome_isolato] (1), Jeth [cognome_isolato] (1), Jeṭh. [cognome_isolato] (1), Jiṃ Caṅd [sequenza_maiuscole] (1), Jiṃ Siṃh Sūri [sequenza_maiuscole] (1), Jiṃaya Sūri [sequenza_maiuscole] (1), Jiṇ Cand Sūri [sequenza_maiuscole] (1), Jiṇ Dhaṅram [sequenza_maiuscole] (1), Johann Strauss [sequenza_maiuscole] (1), Joppi [editore] (1), Joppi V.° [sequenza_maiuscole] (1), Joppi Vinc.° [sequenza_maiuscole] (1), Juspatronato [cognome_isolato] (1), Justinianum [editore] (1), Jñāṃan Lāl [sequenza_maiuscole] (1), Kandler [rinvio] (1), Kechler [autore_in_elenco] (1), Kirchengeschichte Friauls [sequenza_maiuscole] (1), Kirtivilās Gaṇī [sequenza_maiuscole] (1), Klassen [cognome_isolato] (1), Kollovirch [cognome_isolato] (1), Koseden Walzer [sequenza_maiuscole] (1), Kotzebue [cognome_isolato] (1), Kusma Petrovic [sequenza_maiuscole] (1), Kuśāl Sūrī [sequenza_maiuscole] (1), L. Cargnelutti [rinvio] (1), Lacinia [autore_in_elenco] (1), Lamartine [cognome_isolato] (1), Lanzi [rinvio] (1), Lar Militaris [sequenza_maiuscole] (1), Laudate Dominum [sequenza_maiuscole] (1), Lauzzana [cognome_isolato] (1), Lectorem [destinatario] (1), Leicht Michele [sequenza_maiuscole] (1), Lentulo [cognome_isolato] (1), Letterature Straniere [sequenza_maiuscole] (1), Liberale Motense [sequenza_maiuscole] (1), Linceo [destinatario] (1), Liruti [cognome_isolato] (1), Liruti [editore] (1), Lodov [cognome_isolato] (1), Lonca [destinatario] (1), Lonch [cognome_isolato] (1), Lonck [cognome_isolato] (1), Luccia Wunderling [sequenza_maiuscole] (1), Lussin [cognome_isolato] (1), Luzzatto Joachino [sequenza_maiuscole] (1), Lāgujī Gotam [sequenza_maiuscole] (1), Macchiavello [destinatario] (1), Madabhaya Dav Sūri [sequenza_maiuscole] (1), Maddalena Strozzi [sequenza_maiuscole] (1), Magalhaes Lima [sequenza_maiuscole] (1), Magistrato [destinatario] (1), Mahādevstavanaṃ [destinatario] (1), Mahāvīraṃ Jaṃbuddīpayabaṃ [sequenza_maiuscole] (1), Malatie [cognome_isolato] (1), Mamma [cognome_isolato] (1), Mangilli Lioni [sequenza_maiuscole] (1), Maniaco [cognome_isolato] (1), Manini Romanello [sequenza_maiuscole] (1), Mansi [cognome_isolato] (1), Marcotti [cognome_isolato] (1), Marcotti [destinatario] (1), Margherita Bagli [sequenza_maiuscole] (1), Margherita Braida [sequenza_maiuscole] (1), Marietta Colossis [sequenza_maiuscole] (1), Martyre Sisciensi [sequenza_maiuscole] (1), Mathiam Mijlinum [sequenza_maiuscole] (1), Matrone Aquilejesi [sequenza_maiuscole] (1), Maupertuis [cognome_isolato] (1), Mayan [cognome_isolato] (1), Mazzoliceti [rinvio] (1), Maṅgal Rāg Āṇaṇd [sequenza_maiuscole] (1), Mediocrità [cognome_isolato] (1), Mediocrità [editore] (1), Mediuzza [cognome_isolato] (1), Megilla [destinatario] (1), Meni [destinatario] (1), Meni Zampar [sequenza_maiuscole] (1), Merangoni [cognome_isolato] (1), Meriani [famiglia] (1), Mesco [cognome_isolato] (1), Michael Nicoletti [sequenza_maiuscole] (1), Michele Alberegno [sequenza_maiuscole] (1), Michele Cecconi [sequenza_maiuscole] (1), Michele Grandi [sequenza_maiuscole] (1), Michele Leicht [sequenza_maiuscole] (1), Michele Rabatta [sequenza_maiuscole] (1), Min. [cognome_isolato] (1), Minosse [cognome_isolato] (1), Minotto [destinatario] (1), Misser [destinatario] (1), Missionari [cognome_isolato] (1), Mistruzzi [cognome_isolato] (1), Mnemotegnia [cognome_isolato] (1), Modello [cognome_isolato] (1), Modunutt [cognome_isolato] (1), Molza [cognome_isolato] (1), Monasterio Mosacensi [sequenza_maiuscole] (1), Monita Politico [sequenza_maiuscole] (1), Monlà [cognome_isolato] (1), Monsieur Tricklir [sequenza_maiuscole] (1), Monsigr [cognome_isolato] (1), Montbel [destinatario] (1), Montechiaro [cognome_isolato] (1), Montefosco [cognome_isolato] (1), Montemfalconem [destinatario] (1), Montereale-Mantica [destinatario] (1), Monticoli [cognome_isolato] (1), Montligné [cognome_isolato] (1), Morari [cognome_isolato] (1), Morosini-Ruzzini [famiglia] (1), Moyè [autore_in_elenco] (1), Muran [cognome_isolato] (1), Muratori [cognome_isolato] (1), Murero [cognome_isolato] (1), Mutuo Soccorso [sequenza_maiuscole] (1), Mīn Maṃjarī [sequenza_maiuscole] (1), Namiūṇ Mahāvīr [sequenza_maiuscole] (1), Narcisa [autore_in_elenco] (1), Nasce [cognome_isolato] (1), Natageo Eunomio [sequenza_maiuscole] (1), National Ländler [sequenza_maiuscole] (1), Nativitas [cognome_isolato] (1), Nautas Tiliaventeos [sequenza_maiuscole] (1), Navigazione [autore_in_elenco] (1), Nemicaritr [destinatario] (1), Neue Welt [sequenza_maiuscole] (1), Nievo [cognome_isolato] (1), Nievo [destinatario] (1), Nobil Parentele [sequenza_maiuscole] (1), Nobiltà [cognome_isolato] (1), Nonas Aprilis MDCCXXI [sequenza_maiuscole] (1), Novembar [editore] (1), Novo. MDCLXXXVIII [sequenza_maiuscole] (1), Nāṇī Kyavallabh [sequenza_maiuscole] (1), O [cognome_isolato] (1), Obizzi [editore] (1), Officium [cognome_isolato] (1), Officium Complectentia [sequenza_maiuscole] (1), Ognazio Mangilli [sequenza_maiuscole] (1), Ornatissima [destinatario] (1), Orscia Sgognigo [sequenza_maiuscole] (1), Orscia Sgonigo [sequenza_maiuscole] (1), Orsolino Ottolini [sequenza_maiuscole] (1), Osov. [cognome_isolato] (1), Ospidaletto [destinatario] (1), Ottolino [cognome_isolato] (1), Ottubar [editore] (1), Pabai Sūrji [sequenza_maiuscole] (1), Pahalo Maṅgal [sequenza_maiuscole] (1), Pallastrelli [autore_in_elenco] (1), Pamini [editore] (1), Pamperdù [destinatario] (1), Pamḍit Śrī Kirtivijaya Gaṇi [sequenza_maiuscole] (1), Panālāljī Svamī [sequenza_maiuscole] (1), Parini [autore_in_elenco] (1), Parlamentum [destinatario] (1), Pascolino Palese [sequenza_maiuscole] (1), Pascutti [editore] (1), Pascuttini [autore_in_elenco] (1), Pasian Schiovanesco [sequenza_maiuscole] (1), Pasin Belgrado [sequenza_maiuscole] (1), Patav [editore] (1), Patavino Archigimnasio Publici Primarii Professoris Methodus [sequenza_maiuscole] (1), Patriarchatu Aquilejensi [sequenza_maiuscole] (1), Patritii Tulmetini [sequenza_maiuscole] (1), Paṃdit Śrī Sugaṇ Kittrajīttat [sequenza_maiuscole] (1), Paṃḍit Ciratr [sequenza_maiuscole] (1), Paṃḍit Janā Darn [sequenza_maiuscole] (1), Pecile [cognome_isolato] (1), Pellegrinaggio [cognome_isolato] (1), Penso [cognome_isolato] (1), Perizia [cognome_isolato] (1), Perutti [destinatario] (1), Pezzin Victor [sequenza_maiuscole] (1), Philosophia [editore] (1), Philosophiae Magistro [sequenza_maiuscole] (1), Phisicam Proemium [sequenza_maiuscole] (1), Phisicam Universalem [sequenza_maiuscole] (1), Physicae Communis [sequenza_maiuscole] (1), Pias Causas [sequenza_maiuscole] (1), Picuz [cognome_isolato] (1), Pietro Giannone [rinvio] (1), Pievani [famiglia] (1), Pilosio [destinatario] (1), Pindemonte [cognome_isolato] (1), Pirona [destinatario] (1), Pitarauvaṃde Pārvatī Parameśvarau [sequenza_maiuscole] (1), Plangite Pierides [sequenza_maiuscole] (1), Plebe Invilini [sequenza_maiuscole] (1), Ploie [cognome_isolato] (1), Pluerno [cognome_isolato] (1), Plutone [destinatario] (1), Poenitentia [cognome_isolato] (1), Pontificato [editore] (1), Pope [cognome_isolato] (1), Poppea [cognome_isolato] (1), Populique Tumultui [sequenza_maiuscole] (1), Porta Utinensis [sequenza_maiuscole] (1), Premeryas [cognome_isolato] (1), Prencipi [editore] (1), Prepositi [famiglia] (1), Previlleggi [cognome_isolato] (1), Principi Eggenberg [sequenza_maiuscole] (1), Processum Authoritate Ordinaria [sequenza_maiuscole] (1), Processus Authoritate Ordinaria [sequenza_maiuscole] (1), Proclama [cognome_isolato] (1), Proclama [destinatario] (1), Proclama [editore] (1), Prodolon [cognome_isolato] (1), Profili [cognome_isolato] (1), Prosperini [editore] (1), Prov. ab. Greatti [sequenza_maiuscole] (1), Pyārau Pārsanāth [sequenza_maiuscole] (1), Quadruplice Alleanza [sequenza_maiuscole] (1), R. [destinatario] (1), Ragazzoni-Tosolini [famiglia] (1), Raghuvaṃś [destinatario] (1), Ravosa [cognome_isolato] (1), Razzi [cognome_isolato] (1), Reana [destinatario] (1), Recensione [destinatario] (1), Recit [cognome_isolato] (1), Redenzione [editore] (1), Relaz [cognome_isolato] (1), Renaldis [destinatario] (1), Repertorium Communitatis [sequenza_maiuscole] (1), Repubblicano Francese [sequenza_maiuscole] (1), Republica [cognome_isolato] (1), Rer. Italic [sequenza_maiuscole] (1), Resiani [famiglia] (1), Respice Jesu [sequenza_maiuscole] (1), Responsorio [destinatario] (1), Revue [rinvio] (1), Riccati [destinatario] (1), Riccoboni [cognome_isolato] (1), Ricovero [cognome_isolato] (1), Righinum Righinum [sequenza_maiuscole] (1), Rimesso [cognome_isolato] (1), Rinoldi [cognome_isolato] (1), Riv. Friulana [sequenza_maiuscole] (1), Riverio Reformato [sequenza_maiuscole] (1), Rivista Euganea [sequenza_maiuscole] (1), Rivista Internazionale [sequenza_maiuscole] (1), Riṣabha Jiṇe [sequenza_maiuscole] (1), Rompitesta [destinatario] (1), Rure Enemontensis [sequenza_maiuscole] (1), Ruscelli [cognome_isolato] (1), Ruth [destinatario] (1), Rāj Dhānyāṃ [sequenza_maiuscole] (1), Rāj Som [sequenza_maiuscole] (1), Rājā Bhoj [sequenza_maiuscole] (1), Rām Śrī Rāmaṃ Caṅdr [sequenza_maiuscole] (1), Rāyajug Jugjī [sequenza_maiuscole] (1), Rūp Sen Rājā [sequenza_maiuscole] (1), Rūp Sundarī [sequenza_maiuscole] (1), Sabbato Sancto [sequenza_maiuscole] (1), Sadhariyā Siddhaseṇ [sequenza_maiuscole] (1), Sakalā Sakalā Sakalā [sequenza_maiuscole] (1), Salomone [cognome_isolato] (1), Salomone Ebreo [sequenza_maiuscole] (1), Salutaris Ostia [sequenza_maiuscole] (1), Samaya Suṅdar [sequenza_maiuscole] (1), Santoni Mitriade [sequenza_maiuscole] (1), Saquidich [cognome_isolato] (1), Sarasati Bhagatin [sequenza_maiuscole] (1), Sargh Jammohanā [sequenza_maiuscole] (1), Saurano [cognome_isolato] (1), Savonarola [cognome_isolato] (1), Savorgnan Uccellis [sequenza_maiuscole] (1), Sbrojavacca [cognome_isolato] (1), Scritti [cognome_isolato] (1), Sebbastian Mocenigo [sequenza_maiuscole] (1), Sedente Exc.mo [sequenza_maiuscole] (1), Senoseck [cognome_isolato] (1), Sereniss.° Dominio Veneto [sequenza_maiuscole] (1), Serini [famiglia] (1), Serravallo [destinatario] (1), Sezione Accademica [sequenza_maiuscole] (1), Siaio [cognome_isolato] (1), Sibiliato [cognome_isolato] (1), Sign. Susanna Bonisolli [sequenza_maiuscole] (1), Sindici Inquisitori [sequenza_maiuscole] (1), Siuridotto [cognome_isolato] (1), Societate Jesu [sequenza_maiuscole] (1), Societate Jesu. Goritiae [sequenza_maiuscole] (1), Spazî [cognome_isolato] (1), Spegnimbergense [editore] (1), Spiritu Sancto [sequenza_maiuscole] (1), Squartini [destinatario] (1), Stecchini [cognome_isolato] (1), Steffano Sabbatini [sequenza_maiuscole] (1), Steffano Tartagna [sequenza_maiuscole] (1), Stele [cognome_isolato] (1), Stenografia [cognome_isolato] (1), Stradioto [cognome_isolato] (1), Stralcio [cognome_isolato] (1), Stravaganze [cognome_isolato] (1), Studiosi Academici [sequenza_maiuscole] (1), Studiosis [destinatario] (1), Suddiaconato [destinatario] (1), Suṅdar Saṃveg Gaṇī [sequenza_maiuscole] (1), Symonis Januensis [sequenza_maiuscole] (1), Sādhu Somgaṇī [sequenza_maiuscole] (1), Sūṃ Dās [sequenza_maiuscole] (1), Tanaṃ Śrī [sequenza_maiuscole] (1), Taxationes [cognome_isolato] (1), Tchûng-Kiù [editore] (1), Temi [autore_in_elenco] (1), Temple Polonais [sequenza_maiuscole] (1), Temple-Leader [cognome_isolato] (1), Terraferma [cognome_isolato] (1), Tesina [cognome_isolato] (1), Tib. Deciani [sequenza_maiuscole] (1), Timavo [destinatario] (1), Tiveriaco [cognome_isolato] (1), Tiz. Tessitori [sequenza_maiuscole] (1), Tolstoi [cognome_isolato] (1), Tomm. Christ [sequenza_maiuscole] (1), Treo [cognome_isolato] (1), Treo [destinatario] (1), Treo. Processo [sequenza_maiuscole] (1), Treppo [cognome_isolato] (1), Trussardo [cognome_isolato] (1), Tulmiez [cognome_isolato] (1), Turchi [cognome_isolato] (1), Un [destinatario] (1), Ungrispach [cognome_isolato] (1), Univ. Ctatol [sequenza_maiuscole] (1), Universitatis Terrae Valvasoni [sequenza_maiuscole] (1), Uscocchi [cognome_isolato] (1), Utinensibus Scholis [sequenza_maiuscole] (1), Uṃ Ṣa [sequenza_maiuscole] (1), Uṃaiṃ Śrī [sequenza_maiuscole] (1), Uṃnamaḥ Śrī Sūryā [sequenza_maiuscole] (1), Uṃnamaḥ Śrī Vītrāgā [sequenza_maiuscole] (1), V. N° [rinvio] (1), Valdaria [cognome_isolato] (1), Valmeno [autore_in_elenco] (1), Valvason Maniago [sequenza_maiuscole] (1), Valvason-Belgrado [cognome_isolato] (1), Valvason-Maniago Corbelli [sequenza_maiuscole] (1), Valz [cognome_isolato] (1), Valī Dharm [sequenza_maiuscole] (1), Varmilio [destinatario] (1), Vegenzio Cimbriaco [sequenza_maiuscole] (1), Venezianischen Handschriften [sequenza_maiuscole] (1), Veni Creator [sequenza_maiuscole] (1), Vestaverde [cognome_isolato] (1), Viani [famiglia] (1), Vigevani cav. Maspino [sequenza_maiuscole] (1), Viharaṃtā Śrī Mahāvīr [sequenza_maiuscole] (1), Viharmāṇ Jiṇ [sequenza_maiuscole] (1), Vijaya Gaṇī [sequenza_maiuscole] (1), Vijaya Seṇ Sūri [sequenza_maiuscole] (1), Visitatis Dioecesis Aquilegensis [sequenza_maiuscole] (1), Vocabolario Friulano [sequenza_maiuscole] (1), Vopato [rinvio] (1), Vīr Jiṇaṃdataṇā [sequenza_maiuscole] (1), Worms [cognome_isolato] (1), Zahn [autore_in_elenco] (1), Zecchini [cognome_isolato] (1), Zelmira [autore_in_elenco] (1), Zibaldone [destinatario] (1), Zomparo Lunardo [sequenza_maiuscole] (1), Zorutti [cognome_isolato] (1), Zozzoli-Politi [famiglia] (1), Zuan Domenigo [sequenza_maiuscole] (1), Zugno [autore_in_elenco] (1), di Padova [editore] (1), di Verona [editore] (1), un'Accademia [cognome_isolato] (1), un'Iscrizione Aquileiese [sequenza_maiuscole] (1), Étude Galop Morçeau [sequenza_maiuscole] (1), Śrī Anubhūti [sequenza_maiuscole] (1), Śrī Añjār [sequenza_maiuscole] (1), Śrī Baijanāth [sequenza_maiuscole] (1), Śrī Bhavānai [sequenza_maiuscole] (1), Śrī Caṅḍikā [sequenza_maiuscole] (1), Śrī Ganeśā [sequenza_maiuscole] (1), Śrī Gauḍī [sequenza_maiuscole] (1), Śrī Gaṃgājī [sequenza_maiuscole] (1), Śrī Gaṇesā [sequenza_maiuscole] (1), Śrī Gaṇesāyanamaḥ [sequenza_maiuscole] (1), Śrī Gaṇpatenamaṃ [sequenza_maiuscole] (1), Śrī Gopība [sequenza_maiuscole] (1), Śrī Gotam [sequenza_maiuscole] (1), Śrī Gurū [sequenza_maiuscole] (1), Śrī Jināya [sequenza_maiuscole] (1), Śrī Jānaya [sequenza_maiuscole] (1), Śrī Jīṇvar [sequenza_maiuscole] (1), Śrī Kṛ [sequenza_maiuscole] (1), Śrī Kṛṣabhadev [sequenza_maiuscole] (1), Śrī Laghujātak [sequenza_maiuscole] (1), Śrī Mahopaṃdhyāya [sequenza_maiuscole] (1), Śrī Mahāvīr [sequenza_maiuscole] (1), Śrī Mahāvīraṃ [sequenza_maiuscole] (1), Śrī Mahāvīrnè [sequenza_maiuscole] (1), Śrī Nand Dās [sequenza_maiuscole] (1), Śrī Navkār [sequenza_maiuscole] (1), Śrī Nemīsa [sequenza_maiuscole] (1), Śrī Nāthcaritr [sequenza_maiuscole] (1), Śrī Padmāvatyau [sequenza_maiuscole] (1), Śrī Padmāvatī [sequenza_maiuscole] (1), Śrī Parameśvarjī [sequenza_maiuscole] (1), Śrī Pañc [sequenza_maiuscole] (1), Śrī Pārśvanāth [sequenza_maiuscole] (1), Śrī Ratnacaṅdr [sequenza_maiuscole] (1), Śrī Rādhākṛ [sequenza_maiuscole] (1), Śrī Rādhāṣṭamī [sequenza_maiuscole] (1), Śrī Rāṃam Caṅdrā [sequenza_maiuscole] (1), Śrī Rīṣabh [sequenza_maiuscole] (1), Śrī Sagurū [sequenza_maiuscole] (1), Śrī Sarasvatyaṃ [sequenza_maiuscole] (1), Śrī Saṃbapra [sequenza_maiuscole] (1), Śrī Som Suṅdar Sūri [sequenza_maiuscole] (1), Śrī Sumati Sādhu Sūrīṇ [sequenza_maiuscole] (1), Śrī Sītal [sequenza_maiuscole] (1), Śrī Sūryaspasahaśr [sequenza_maiuscole] (1), Śrī Sūryā [sequenza_maiuscole] (1), Śrī Vardhamān [sequenza_maiuscole] (1), Śrī Vasaṅt [sequenza_maiuscole] (1), Śrī Vasudhārā [sequenza_maiuscole] (1), Śrī Vijaya Dharm Sūri [sequenza_maiuscole] (1), Śrī Vitrāgā [sequenza_maiuscole] (1), Śrī Vītrāgā [sequenza_maiuscole] (1), Śrī Vītrāgāyanamaḥ Śrī [sequenza_maiuscole] (1), Śrī Vṛṅdāban Caṅdjaya [sequenza_maiuscole] (1), Śrī Śatruñjayamāhātmo [sequenza_maiuscole] (1), Śrī Śrī Śrī [sequenza_maiuscole] (1), Śrī Śānti [sequenza_maiuscole] (1), Εἰς Τοὺς Αἴνους [sequenza_maiuscole] (1)
 
 ## 4. Luoghi: forme più frequenti
 
-Udine (89), Venezia (84), Roma (42), Padova (29), Verona (17), Vienna (14), Aquileia (13), Milano (13), Cividale (11), Spalatro (10), Traù (10), Bologna (9), Friuli (8), Trieste (7), Gorizia (6), Portogruaro (6), Villafredda (6), Bassano (5), Ferrara (5), Gemona (5), Italia (5), Tolmezzo (5), Genova (4), Parma (4), Vicenza (4), Aquileja (3), Belluno (3), Ceneda (3), Codroipo (3), Flambro (3), Maniago (3), Mantova (3), Mereto (3), Modena (3), Nissa (3), Osopo (3), Passariano (3), Siena (3), Spilimbergo (3), Strasoldo (3), Torino (3), Aviano (2), Brescia (2), Buda (2), Candia (2), Cantio (2), Cittanova (2), Cremona (2), Firenze (2), Gerosolima (2), Gradisca (2), Graz (2), Lipsia (2), Livorno (2), Monfalcone (2), Monreale (2), Motta (2), Napoli (2), Porcia (2), Prodolone (2), Roselo (2), Salerno (2), Toppo (2), Treviso (2), Villalta (2), Ascoli (1), Asolo (1), Assise (1), Austria (1), Bannia (1), Benevento (1), Bergamo (1), Berlino (1), Bertiolo (1), Bertoli (1), Brusuglio (1), Buie (1), Buje (1), Cagliari (1), Campoformido (1)
+Udine (873), Friuli (424), Venezia (220), Cividale (160), Roma (110), Padova (101), Aquileia (98), Milano (86), Venzone (67), Trieste (66), Aquileja (57), Gemona (55), Carnia (54), Gorizia (41), Pordenone (41), Firenze (38), Italia (38), Vienna (36), Verona (35), Utini (31), Tolmezzo (29), Sacile (27), Tricesimo (27), Osoppo (26), Portogruaro (26), Sesto (25), Genova (24), Monfalcone (24), Moggio (23), Torre (23), Codroipo (21), Fagagna (21), Spilimbergo (21), Marano (20), Bologna (19), Palma (19), Malta (18), Maniago (18), Napoli (18), Parigi (18), Treviso (18), Istria (17), Gradisca (16), Manzano (16), Belgrado (14), Francia (14), Mantova (14), Buia (13), Passariano (12), Rosazzo (12), Tagliamento (12), Bergamo (11), Concordia (11), Forijulii (11), Pavia (11), Strassoldo (11), Vicenza (11), Bassano (10), Parma (10), Tarcento (10), Austria (9), Brescia (9), Colloredo (9), Ferrara (9), Latisana (9), Porcia (9), Scena (9), Aviano (8), Belluno (8), Cargna (8), Flambro (8), Palermo (8), Polcenigo (8), Sala (8), Scala (8), Trento (8), Buja (7), Candia (7), Carniola (7), Osopo (7)
 
 ### Luoghi ad affidabilità bassa (da controllare)
 
-Ceneda [lista_luoghi_medio] (2), Bertoli [lista_luoghi_medio] (1), Giassicco [lista_luoghi_medio] (1), Gratz [lista_luoghi_medio] (1), Malpaga [lista_luoghi_medio] (1), Osopo [lista_luoghi_medio] (1), Quaresima [lista_luoghi_medio] (1), Serenissima [lista_luoghi_medio] (1), Spalato [lista_luoghi_medio] (1), Strasoldo [lista_luoghi_medio] (1), Trastevere [lista_luoghi_contesto] (1), Valenti [lista_luoghi_medio] (1)
+Aless.° [lista_luoghi_medio] (3), Bertoli [lista_luoghi_medio] (3), Brazzà [lista_luoghi_medio] (3), Ceneda [lista_luoghi_medio] (3), Fiume [lista_luoghi_medio] (3), Lir. [lista_luoghi_medio] (3), Morosina [lista_luoghi_medio] (3), Palma [lista_luoghi_medio] (3), Asse [lista_luoghi_medio] (2), Bozze [lista_luoghi_medio] (2), Carità [lista_luoghi_medio] (2), Carreri [lista_luoghi_medio] (2), Fontana [lista_luoghi_medio] (2), Kalyāṇ [lista_luoghi_medio] (2), Mūḍhā [lista_luoghi_medio] (2), Pasquali [lista_luoghi_medio] (2), Puṇ [lista_luoghi_medio] (2), Saṃ [lista_luoghi_medio] (2), Serenissima [lista_luoghi_medio] (2), Serravalle [lista_luoghi_medio] (2), Sūri [lista_luoghi_medio] (2), Torcello [lista_luoghi_medio] (2), Treves [lista_luoghi_medio] (2), Alpe [lista_luoghi_medio] (1), Aso [lista_luoghi_medio] (1), Barazzeto [lista_luoghi_medio] (1), Bassanese [lista_luoghi_medio] (1), Bocca [lista_luoghi_medio] (1), Bon [lista_luoghi_medio] (1), Braila [lista_luoghi_medio] (1), Canusio [lista_luoghi_medio] (1), Carnea [lista_luoghi_contesto] (1), Cattaro [lista_luoghi_contesto] (1), Cavallico [lista_luoghi_medio] (1), Chiussi [lista_luoghi_medio] (1), Cucagna [lista_luoghi_medio] (1), Fabrica [lista_luoghi_medio] (1), Fabris [lista_luoghi_medio] (1), Forlani [lista_luoghi_medio] (1), Frauenfeld [lista_luoghi_contesto] (1), Giassicco [lista_luoghi_medio] (1), Gratz [lista_luoghi_medio] (1), Graz [lista_luoghi_medio] (1), Idee [lista_luoghi_medio] (1), Invilino [lista_luoghi_medio] (1), Itan [lista_luoghi_medio] (1), Jaṃu [lista_luoghi_medio] (1), Lar [lista_luoghi_contesto] (1), Lauzzacco [lista_luoghi_medio] (1), Loschi [lista_luoghi_medio] (1), Madonne [lista_luoghi_medio] (1), Malpaga [lista_luoghi_medio] (1), Maraṇ [lista_luoghi_medio] (1), Marchetti [lista_luoghi_medio] (1), Menin [lista_luoghi_medio] (1), Morā [lista_luoghi_medio] (1), Muratori [lista_luoghi_contesto] (1), Murero [lista_luoghi_contesto] (1), Nizza [lista_luoghi_medio] (1), Osopo [lista_luoghi_medio] (1), Osteria [lista_luoghi_medio] (1), Pariṣi [lista_luoghi_medio] (1), Picciol [lista_luoghi_medio] (1), Quaresima [lista_luoghi_medio] (1), Rata [lista_luoghi_medio] (1), Ronconi [lista_luoghi_medio] (1), Salone [lista_luoghi_contesto] (1), Sarī [lista_luoghi_medio] (1), Schiavonia [lista_luoghi_contesto] (1), Selvatico [lista_luoghi_medio] (1), Spalato [lista_luoghi_medio] (1), Strasoldo [lista_luoghi_medio] (1), Susans [lista_luoghi_medio] (1), Tiser [lista_luoghi_medio] (1), Tommaseo [lista_luoghi_medio] (1), Trastevere [lista_luoghi_contesto] (1), Traverso [lista_luoghi_medio] (1), Valenti [lista_luoghi_medio] (1), Vicentini [lista_luoghi_medio] (1), Villacco [lista_luoghi_contesto] (1), Viṇ [lista_luoghi_medio] (1), Vāle [lista_luoghi_medio] (1), Zamboni [lista_luoghi_medio] (1), Zucca [lista_luoghi_medio] (1), Ālī [lista_luoghi_medio] (1)
 
 ## 5. Non classificati (parole maiuscole né persona né luogo), per frequenza
 
-A (1), Carnicum (1), Cogitanti (1), Colonie (1), Concineo (1), Epitalamio (1), Gallico (1), Garampi (1), Immedio (1), Maladeto (1), Meditazione (1), N.B. (1), Pervenne (1), Pronomen (1), Scalzi (1), Seguono (1), Semel (1), Sostituito (1), Starai (1), Talot (1), Xerapellinus (1), Yhesus (1)
+Śrī (66), Akām (63), Ḍhāl (14), Akāṃ (11), Hymn. Pange Lingua (11), Dūhā (8), Hemacandr (8), Monnier (7), Uṃnamaḥ (7), Alaṃkār (6), Bartoliniana (6), Credo (6), Farsa (6), Giunta (6), Mag. (6), Rottolo (6), S. (6), Samāptaṃ (6), Śubhaṃ (6), Atti (5), Clavecin (5), Dixit (5), G (5), G. (5), Michele (5), Missus (5), Namiuṃ (5), Pesi (5), Spoglio (5), Trascriz (5), Śrīḥ (5), Accademie (4), Acq. (4), Adagio (4), Adoramus (4), Aiṃ (4), Aiṃnamaḥ (4), Carneae (4), Caṅd (4), Concineo (4), Dizionario (4), Duhā (4), Favilla (4), Ill. (4), Jaṃbūdhīp (4), Polka (4), Rāg (4), Sanctus (4), Sarasati (4), Series (4), Terzetto (4), V. (4), Valtzer (4), Valzer (4), Verbali (4), Zibaldone (4), Śāka (4), Adversaria (3), Articoli (3), Bolognese (3), Capituli (3), Cartello (3), Commissioni (3), Confitebor (3), Congreg (3), Contralto (3), Curriculum (3), Degano (3), Emanuelli (3), Eravamo (3), Formulario (3), Fortezze (3), I. (3), Institutiones (3), Introiti (3), Istoria (3), Istrumenti (3), Jachia (3), Jiṇe (3), Johann (3), Laetatus (3), Laudate (3), Lectore (3), Mamma (3), Memorialia (3), Narak (3), Nem (3), Nicoletti (3), Notitie (3), Nozioni (3), Orsola (3), Passio (3), Piano-Forte (3), Praṇ (3), Proviene (3), Quintetto (3), R. (3), Ragionamento (3), Ratangurūsijjhāya (3), Repub (3), Ricamatrice (3), Rondò (3), Rūp (3), Salmo (3), Scelta (3), Serve (3), Sumatīsijjhāya (3), Supās (3), Tolstoi (3), Uccellis (3), Uṃnamo (3), A. (2), Adresse (2), Aggregazioni (2), Agnus (2), Allegationes (2), Allegazione (2), Alte (2), Andreotti (2), Aneddoti (2), Antifona (2), Apog. (2), Apparatus (2), Appendix (2), Aquilej (2), Aquilejens (2), Arcano (2), Arihaṃṭ (2), Autobiografici (2), Avvertimento (2), Añjaṇā (2), Aṅgār (2), Aṇ (2), Balibhadr (2), Benedicat (2), Bhaktāmar (2), Bhaktāmarstotraṃ (2), Bhuvaṇ (2), Biava (2), Blasich (2), Boiani (2), Bonisoli (2), Bossina (2), Bozzetto (2), Brandis (2), Brenari (2), Cameraria (2), Cantabile (2), Capitolazione (2), Capriccio (2), Carsia (2), Caṅdan (2), Cenerentola (2), Cisis (2), Cittad (2), Coletti (2), Colloquia (2), Colonie (2), Commediola (2), Compendium (2), Concilium (2), Confirmatio (2), Congr (2), Congregationis (2), Convertite (2), Corbelli (2), Corrispondenze (2), Crucis (2), Dall'Arch (2), Daṃmak (2), De (2), Deh (2), Denunzia (2), Devī (2), Dharmm (2), Dissertatio (2), Dissertationes (2), Documenti (2), Dohā (2), Domino (2), Dritto (2), Driusso (2), Drūpadī (2), Due (2), Durli (2), Ejs. (2), Elementi (2), Elti. (2), Es (2), Europeide (2), Expositio (2), Fascicoli (2), Feldpost (2), Forojulio (2), Forte-Piano (2), Freschi (2), Fuso (2), Gausāi (2), Genitori (2), Geologia (2), Georgiana (2), Giacobina (2), Gigeide (2), Gismani (2), Giulie (2), Goritiae (2), Gotam (2), Grossissimo (2), Gugegāsasisusasādaku (2), Guṇ (2), Iachia (2), Idus (2), Imperii (2), Informatione (2), Instructio (2), Jiṇ (2), Jiṇaṃ (2), Jñānapañcamī (2), Jīv (2), Kātī (2), L. (2), Lamenti (2), Laudate Dominum (2), Lectio (2), Lectiones (2), Legat (2), M. (2), Maddalena (2), Mahesan (2), Mahāṃ (2), Mancava (2), Manenti (2), Manifestazione (2), Manin (2), Manuale (2), Maschere (2), Matimaṅdir (2), Mazurka (2), Motetto (2), Munipaticaritr (2), Muratori (2), Murero (2), Musica (2), Mṛgāvatī (2), N.B. (2), Nami (2), Namiūṇ (2), Nasīhat (2), Nene (2), Nicoletti Michele (2), Nitida (2), Nodaro (2), Nomenclatura (2), Nominum (2), Notabilia (2), Notae (2), Notifica (2), Nātā (2), Nīṃ (2), Oratione (2), Orca. (2), Organi (2), Palma (2), Panar (2), Pange (2), Parafrasi (2), Parasceve (2), Paron (2), Partecipazioni (2), Passerino (2), Patente (2), Patriarch (2), Paṇ (2), Pentecoste (2), Perizia (2), Philosophia (2), Philosophiae (2), Pirovano (2), Piruç (2), Piuca (2), Planimetria (2), Praefanda (2), Praefatio (2), Praṇamī (2), Prefetto (2), Presidente (2), Priyamelak (2), Profezie (2), Prolegomena (2), Prolusioni (2), Pronostici (2), Pudia (2), Purità (2), Raison (2), Randice (2), Recto (2), Regali (2), Repubb (2), Resistenza (2), Riconoscimento (2), Rinnovazione (2), Rinoldi (2), Rubrica (2), Rāṃam (2), SS. (2), Sadārangjī (2), Santità (2), Sanvito (2), Satak (2), Savorgnani (2), Saṃbhavanāth (2), Saṃgrahaṇī (2), Sbuelz (2), Scriptoribus (2), Serenata (2), Serie (2), Servi (2), Setruṃjā (2), Sidhidaṃḍī (2), Sijjhāya (2), Simonetti (2), Sindaco (2), Six (2), Siṃhūr (2), Sodevalo (2), Strenna (2), Stringari (2), Sundarī (2), Svasti (2), Sventati (2), Sā (2), Sārad (2), Sāsaṇ (2), Sāṃbhal (2), Sīl (2), Sīvirāl (2), Sūrya (2), Teṃ (2), Theologia (2), Trii (2), Turchi (2), Udene (2), Uffizio (2), Ughelli (2), Umnamaḥ (2), Upāsak (2), Uṃ (2), Uṃna (2), Uṃnamah (2), Uṃnamò (2), Vallardi (2), Varkāṃaṇā (2), Vasupra(le) (2), Veni (2), Venivano (2), Ventiono (2), Veramente (2), Vesperi (2), Vilotis (2), Virginis (2), Vyāptāśo (2), Vīr (2), Vīraṃ (2), Vīrstuti (2), Worzischek (2), Zittelle (2), Zobia (2), Ādī (2), Āṃ (2), Śuk (2), Ḍhaṃḍhaṇ (2), A (1), A Msgr. Fontanini (1), A-G (1), A-K (1), A-L (1), A-M (1), A-N (1), Abbonda (1), Abhidhān (1), Abhidhānaciṅtāmani (1), Abhigrahaman (1), Abhinik (1), Accanto (1), Accordi (1), Acef. (1), Adaune (1), Adaū (1), Additamenta (1), Additio (1), Adelgiso (1), Ademollo (1), Adijin (1), Administration (1), Adriatico Orientale (1), Aesthetik (1), Affitto (1), Afrodite di Adriano Valerini (1), Aganvasiṃghanahasman (1), Aggionta (1), Aggiungasi (1), Aggiungiamo (1), Aggiustamento (1), Aglietti (1), Ahaṃ (1), Ahoti (1), Aijlini (1), Ailiana (1), Aime (1), Aj (1), Al (1), Al Sig. Consigl (1), Alchimista Friul (1), Alcuino (1), Alfabetiche (1), Allegacioni (1), Allocutio (1), Alphabetum (1), Altari (1), Altertum (1), Altitudini (1), Alvesar (1), Amaseo (1), Ambasciaria (1), Ambasciatori (1), Amegla (1), Amigoni (1), Ammonizioni (1), Amori (1), Amperro (1), Amurat (1), Anacreontiche (1), Anaṃmavi (1), Anaṃtarādhyayān (1), Anaṅt (1), Anchises (1), Andante (1), Andantino (1), Anecdota (1), Anekadhvanimañjari (1), Aniyaṭīkaraṇaṃ (1), Annunzi (1), Antifone (1), Antiquitates (1), Antistij (1), Antivari-Fadini (1), Anād (1), Aphorismi (1), Apocalipsis (1), Apologetica (1), Apologo (1), Approvato (1), Aprādh (1), Aquilejesi (1), Aratea (1), Arbores (1), Arcano-Tricano (1), Archiepis (1), Archivo (1), Arcv.to (1), Arduino (1), Argumenta (1), Arguṇ (1), Aricij (1), Arihaṃt (1), Arit (1), Armamento (1), Armonio (1), Armonium (1), Aropayati (1), Arresto (1), Arrivabene (1), Arvalium (1), Asaṇ (1), Assemblea (1), Assiso (1), Astanti (1), Astu (1), Ateniese (1), Athaṃ (1), Atikramiṣpati (1), Attemps (1), Attentato (1), Attestati (1), Attestato (1), Attestazione (1), Attinenze (1), Attraverso (1), Atīcār (1), Auctoritates (1), Aufmerksame (1), Augustolo (1), Aureggi (1), Austro-Germanica (1), Autobiografia (1), Autograf (1), Avantī (1), Avevo (1), Avieno (1), Avvertesi (1), Avvertimenti (1), Avviso (1), Ayya (1), Aïyār (1), Añcalgaccha (1), Añjanā (1), Aṃ (1), Aṃrahat (1), Aṃrahān (1), Aṃsaṃkhayaṃjī (1), Aṅtarjāmī (1), Aṇgā (1), Aṣṭāji (1), Baccanale (1), Bacologia (1), Bagnalasta (1), Balbi-Valier (1), Balbiani (1), Ballata (1), Ballet (1), Balli (1), Bamal (1), Banco (1), Baptismo (1), Baraccha (1), Baravalle (1), Barcarola (1), Baronio (1), Basaini (1), Baschera (1), Bastare (1), Batrīsahapraya (1), Battaja (1), Battezzati (1), Bearbeitung (1), Bemolle (1), Beneficiaria (1), Benemerenze (1), Berletti (1), Bertosso (1), Bhadrā (1), Bhagvaṃt (1), Bhagvān (1), Bhaktāmarstotraḥ (1), Bhaktār (1), Bhalāguṇ (1), Bhavatītya (1), Bhaviṣya (1), Bhaviṣyottar (1), Bhogal (1), Bhādvāvudi (1), Bhāgi (1), Bhāv'dharī (1), Bhāvati (1), Bhāṣā (1), Bhūmadhye (1), Biada (1), Biancofiore (1), Biasima (1), Bibbia (1), Biblico (1), Bibliothecae (1), Bidinuccio (1), Bigia (1), Bilinton (1), Biografico (1), Blanc (1), Blessaia (1), Blumenbach (1), Boerio (1), Boldetti (1), Bolland (1), Bollandiano (1), Bondì (1), Bontà (1), Boreato (1), Bortolussi (1), Boselli (1), Bossi (1), Bozze (1), Bozzetti (1), Br (1), Brahmāṃ (1), Brandelli (1), Brani (1), Bratteolo (1), Brazzà (di) (1), Bretagna (1), Brianza (1), Brindis (1), Brockhaus (1), Bullario (1), Bullet (1), Burale (1), Buṃdal (1), Böhmer (1), Bār (1), Bāramās (1), Bāspūjayaḥ (1), Bījo (1), Bīrjīṇaṃ (1), CIƆIƆCCLXXVIII (1), Cabalistico (1), Cairoli (1), Caiselli-Coloniani (1), Cait (1), Calabi (1), Calcolaio (1), Calcoli (1), Calliroe (1), Calmet (1), Caludri (1), Calvario (1), Camaldolese (1), Camelie (1), Camilla (1), Campiglio (1), Canalnovo (1), Canciani (1), Cancianum (1), Candolini (1), Candr (1), Canne (1), Cannoneide (1), Cantonali (1), Cantore (1), Canzoncine (1), Capefigue (1), Capelletta (1), Capitale (1), Capitanio (1), Capitula (1), Capituli Utinensis (1), Capodagli (1), Cappellari (1), Cappelle (1), Capuletti (1), Caraṇ (1), Caritea (1), Carloneide (1), Carneola (1), Carnico-Illiriche (1), Carnicum (1), Caronni (1), Carraresi (1), Carroussel (1), Cartaceo (1), Carteggi (1), Casar (1), Casarolo (1), Cascanan (1), Cassetto C (1), Cassinese (1), Cassiterides Insulae (1), Castagnavizza (1), Casus (1), Catal (1), Catalogus (1), Catapane (1), Catastro (1), Catine (1), Catinuta (1), Cattapano (1), Caturbisatijin (1), Catūrmāsvyākhyān (1), Caubīsatīrthaṃkar (1), Causaraṇ (1), Cauvīsaṃti (1), Cavalcanti (1), Cavalletto (1), Cavatine (1), Cavaṇ (1), Caṃ (1), Caṃpānāmaṃ (1), Caṅdcaritr (1), Ceconi (1), Cedola (1), Celenza (1), Cemento (1), Cena (1), Cenae (1), Censuario (1), Census (1), Cente (1), Centifoglia (1), Centurie (1), Cerebotani (1), Cerimoniale (1), Cerretti (1), Cerskii (1), Cessione (1), Chal (1), Char (1), Charmant (1), Chatr (1), Chiaccaris (1), Chiandalis (1), Chiavris (1), Chirurghi (1), Chirurgiche (1), Cholerae (1), Chāyādhikāraṃ (1), Ciart (1), Cibavit (1), Cibrario (1), Cigoi (1), Cintolini (1), Circe (1), Citr (1), Cittazione (1), Civiltà (1), Civiltà Cattolica (1), Civit (1), Civitatensis (1), Ciṅtakulakaṃ (1), Cl. (1), Clapiceo (1), Claricini (1), Clarinette (1), Classe (1), Cocola (1), Codicillo (1), Codroîpoli (1), Coelum (1), Cogitanti (1), Cogitavit (1), Collaz (1), Collectanea (1), Colletti (1), Collinette (1), Colloredo (di) (1), Colmajī (1), Columnae (1), Comacini (1), Comandini (1), Comencini (1), Cominciato (1), Comite (1), Comitibus (1), Commentario (1), Commerzio (1), Commissario (1), Communionem (1), Communità (1), Compartimento (1), Complimento (1), Composiz (1), Compromissione (1), Comprovinciale (1), Comunione (1), Comunis (1), Concertata (1), Concertoni (1), Concertoni N° VI (1), Concezione (1), Concilii (1), Concina-Megaluzza (1), Concina-Porzia (1), Concinina (1), Conclusione (1), Concubinato (1), Conferenza (1), Conferisce (1), Confessore (1), Congratulazioni (1), Consecratione (1), Considerazioni (1), Consigliare (1), Consilii (1), Consilium (1), Consolationis (1), Consolazione (1), Console (1), Constitutione (1), Consuetudini (1), Consulta (1), Contenti (1), Contiene (1), Contin (1), Continuaz (1), Conto (1), Contribuzione (1), Conventus (1), Copialettere (1), Coppia (1), Cornua (1), Coronelli (1), Corpus (1), Correctionibus (1), Correda (1), Corrit (1), Corruptione (1), Corti (1), Cortolezis (1), Corīparadī (1), Coseanetto (1), Cosmologia (1), Cosmopoli (1), Costituzionale (1), Costoca (1), Covassi (1), Coṃpāvati (1), Cp. (1), Cracogna (1), Credesi (1), Credidi (1), Cremazione (1), Cresceva (1), Crescini (1), Cresime (1), Creso (1), Crestia (1), Cronicha (1), Crosato (1), Crotars (1), Crupignar (1), Crux (1), Cucecolā (1), Cucecolālīl (1), Cucina (1), Curati (1), Curs (1), Cāritr (1), Cārpasūi (1), Cāṃdalīyo (1), Cītāre (1), Da (1), Dadāti (1), Dal (1), Dall'Eneide (1), Dall'Isonzo (1), Dalla (1), Dalmatia (1), Damanins (1), Damen Launen (1), Danielis (1), Dansīl (1), Dantesca (1), Danzo (1), Darwinistische Briefe (1), Daspò (1), Dataria (1), Dattilosc (1), Davidico (1), Davāviṃt (1), Daśavaikālika (1), De' (1), Deciano (1), Decisione (1), Deiparae (1), Dell'Ongaro (1), Delphini (1), Demolizione (1), Depositata (1), Deprofundis (1), Deputads (1), Desena (1), Determinazione (1), Dettaglio (1), Deum (1), Devā (1), Devānāṃ (1), Dhabatīya (1), Dhal (1), Dhammo (1), Dhanyakṛtīnar (1), Dhyān (1), Dhā (1), Dhāl (1), Dhāmmā (1), Dhūm (1), Dialoghi (1), Dicata (1), Dicesi (1), Diciotto (1), Dicite (1), Dicono (1), Dictatus (1), Diction (1), Dictum (1), Die (1), Dieciotto (1), Dieta (1), Difensario (1), Differisce (1), Diffidamento (1), Digiuni (1), Diliberazioni (1), Dimens (1), Dimensioni (1), Dimesse (1), Dimostrazione (1), Dimostrazioni (1), Dioecesis (1), Dipende (1), Diplomata (1), Diplomatica (1), Discorsi (1), Dispaccio (1), Distici (1), Dit (1), Divertimento (1), Divino (1), Diœcesim (1), Dohorā (1), Dolenti (1), Dominum (1), Dongie (1), Dormienti (1), Doṃ (1), Drappo (1), Driniza (1), Dssertazione (1), Ducal (1), Duces (1), Dudaiṃ (1), Duettino (1), Duhāṃ (1), Dulà (1), Dunque (1), Dvatiṃśi (1), Dvātriṃśīkā (1), Dān (1), Dānsie (1), Dānsīl (1), Dās (1), Dāṇkunt (1), Dīus (1), Dīvaitonai (1), Dūharā (1), E. (1), Eandi (1), Ebreo (1), Ecce (1), Eccelsa (1), Eccelso (1), Eccitamenti (1), Eccl. (1), Eccmo (1), Eccomi (1), Edelmone (1), Editio II (1), Editto (1), Educande (1), Efflusso (1), Egaṃ (1), Egoismo (1), Ehanī (1), Ehavuṃ (1), Ekodaraḥ (1), Elegeia (1), Elemente (1), Elevazioni (1), Elezions (1), Ellementi (1), Elogium (1), Empfängniss (1), Enfances (1), Entrammo (1), Entrando (1), Epilogo (1), Epitalamio (1), Epitome (1), Equinozii (1), Eretica (1), Erit (1), Ermeneutica (1), Erudimenti (1), Erudit (1), Esint (1), Esordio (1), España (1), Esterhazy (1), Estraneo (1), Estrazione (1), Esāṃjāgavī (1), Et (1), Etat (1), Etica (1), Etimologia (1), Etopaṃca (1), Ettoreo (1), Etudes (1), Euphāgu (1), Europee (1), Evviva (1), Excell.mo (1), Extraordinaria (1), Exultate (1), Eḍhāl (1), FVG (1), Facsimile (1), Faganeae (1), Faganee (1), Fagotti (1), Falsità (1), Fambri (1), Fantasie (1), Fantoni (1), Farfalle (1), Farfallina (1), Farmacisti (1), Fascismo (1), Fatica (1), Faucille (1), Feier (1), Felici (1), Felicita (1), Feltron (1), Fenice (1), Fenicia (1), Fenomenalismo (1), Feria (1), Feria V (1), Ferramosca (1), Ferrovie (1), Feudataria (1), Fiere (1), Figaro (1), Figlioccio (1), Filande (1), Filarmonico (1), Filermo (1), Filitini (1), Filza (1), Fior (1), Fischer (1), Fischi (1), Fiume (1), Florilegio (1), Flute (1), Flûtes (1), Focaccia (1), Follini (1), Fontanini (1), Foramitti (1), Fornara (1), Forogiuliese (1), Foroiuliensem (1), Forojuliensi (1), Forstästhetik (1), Forumjulii (1), Foscari (1), Fradeletto (1), Fragmentum (1), Frangepani (1), Frangipane (1), Fraternite (1), Frazione (1), Fronde (1), Frucs (1), Frutto (1), Fuga (1), Fugi (1), Fundationes (1), Fur (1), Furiere (1), Furlanetto (1), Furono (1), Fusca (1), Gabba (1), Gallico (1), Gallie (1), Ganganelli (1), Garampi (1), Gaurave (1), Gautamkulaṃ (1), Gauḍt (1), Gaṃvisamaicaubhavebījaṃ (1), Gaṅgāṣaṭakam (1), Gaṇayati (1), Gegiutta (1), Gemme (1), Gendarmeriekordon (1), Geneal (1), Gentildonna (1), Geograph (1), Geremiade (1), Germanos (1), Gestione (1), Gey (1), Ghaṅṭākaraṇstotraḥ (1), Ghaṇaum (1), Giacobini (1), Giambatt (1), Giangirolamo (1), Giatis (1), Ginnastica (1), Gio. (1), Giovedì (1), Gioverà (1), Giugurta (1), Giunte (1), Giurisdicente (1), Giustificazioni (1), Giustinopoli (1), Glemonae (1), Glesie (1), Glossario (1), Gomīcā (1), Gomīcārāya (1), Gosālo (1), Grammatica (1), Gramogliano (1), Gramthā (1), Grantley Manor (1), Grazie (1), Grineo (1), Grosjean-Maupin (1), Guarda (1), Gurgaṃpān (1), Gurizziera (1), Gurū (1), Gājai (1), Gāthāḥ (1), Gīt (1), Gūḍhārath (1), Hamaśībhagaṇi (1), Har (1), Haristotr (1), Heilbronn (1), Heinrich (1), Henninger (1), Historie (1), Hitopades (1), Hodie (1), Homodei (1), Honores (1), Hospes Occitanus (1), Huitième (1), Hukalaṃ (1), Humill (1), Hungari (1), Huvāl (1), Händel (1), Hā (1), Hāṃre (1), IIª (1), IV. Patr. Aquile (1), Ibernazione (1), Icon (1), Iddio (1), Idillii (1), Idillio (1), Idoli (1), Idria (1), Ikhuki (1), Illicio (1), Illiria (1), Imaj (1), Immedio (1), Immissione (1), Immoto (1), Improviso (1), In (1), Incanto (1), Incartamento (1), Incomincia (1), Incomp (1), Inculurit (1), Incunaboli (1), Indice (1), Indicione (1), Indictione (1), Indis (1), Infatti (1), Infinita (1), Influenza (1), Informacione (1), Informationes (1), Ingres (1), Insanie (1), Inscriptiones (1), Inscriptionum (1), Inscriz (1), Institutiones Philosophicae (1), Instromenti (1), Instrum (1), Instrumenti (1), Insurrezione (1), Interessante (1), Interessato (1), Intimazione (1), Intorno (1), Introitus (1), Inventarii (1), Inventarium (1), Inventarj (1), Investiturae (1), Inviolata (1), Inviti (1), Invoca (1), Invocazione (1), Ipercalissi (1), Ipoteche (1), Is (1), Isagoge (1), Isonzofriaulischen (1), Isoppi (1), Ispettorato (1), Ispettore (1), Istituta (1), Istituti (1), Istriane (1), Istrumento (1), Italien (1), Italo-Turca (1), Ite (1), Itinerari (1), Itiḥ (1), Ityuttarādhyayanaṭikāyāṃ (1), Iṃ (1), Iṇ (1), Jack (1), Jagadohalau (1), Jahiṃsiṇhāyā (1), Jahre (1), Jammaṇaṃ (1), Japur (1), Jarācū (1), Jaulī (1), Jayajiṇ (1), Jayati (1), Jayatihuyaṇ (1), Jayatihuyaṇavṛttiḥ (1), Jayaṃti (1), Jaṃbudīp (1), Jaṃbūcaritraṃ (1), Jaṃbūddīvass (1), Jaṃbūdīp (1), Jaṃjāṇikraṇ (1), Jaṇayāsā (1), Jaṇvar (1), Jehūbalā (1), Jenaragāvai (1), Jepur (1), Jerico (1), Jesu (1), Jesuitae (1), Jetivār (1), Jetsvābhavaddhi (1), Jeu (1), Jeṃho (1), Jinaṃ (1), Jinnai (1), Jinvacaneva (1), Jinādhīsaṃnam (1), Jiṇand (1), Jo (1), Johann Wirth (1), Johodvanā (1), Joprabhujoti (1), Jorājā (1), Judhīrṣaḥ (1), Julię (1), Justitia (1), Jutais (1), Jā (1), Jādsaṃ (1), Jāgaṃvītāpaḍhamaṃ (1), Jālaṅdhar (1), Jārjī (1), Jāspāhe (1), Jāuṃvārah (1), Jīvavicārasya (1), Jīvājīvabibhattī (1), Jīvājīvavibhatti (1), Jīvārāse (1), Jīyāṇbheyābattīsaṃ (1), Kab (1), Kahijaṇṇi (1), Kailās (1), Kakaṃ (1), Kalaśāvidhānaṃ (1), Kalaṃkī (1), Kalikā (1), Kalyāṇ (1), Kamma (1), Kanaltale (1), Kandler (1), Kapellmeister (1), Karaiṃ (1), Karak (1), Karakan (1), Karleto (1), Karmm (1), Kathāmahodadhi (1), Katty (1), Kdss. Isp. Johann Toht. (1), Kesī (1), Keśarāj (1), Keṣukeṣu (1), Khaṃ (1), Kiyera (1), Klagenfurt (1), Klinck (1), Kosaṃvī (1), Kozeluch (1), Koṭi (1), Kraṣidan (1), Krutoppāgmasaṃbhavāt (1), Kumatisijjhāya (1), Kuṃ (1), Kā (1), Kām (1), Kāpur (1), Kārakaṃ (1), Kāraṃ (1), Kāvakaṃ (1), Kāyāvāḍī (1), L-R (1), L-Z. (1), Laconicamente (1), Lacrime (1), Laghutāthī (1), Lagnanze (1), Lalitāṃg (1), Lanchas (1), Las (1), Lasciapassare (1), Laterano (1), Laudamus (1), Laudato (1), Laugier (1), Laṃbovar (1), Laṅkā (1), Lectio I (1), Lectio Tertia (1), Lector (1), Legazioni (1), Leges (1), Lenarduzzi (1), Leopoldina (1), Levatrici (1), Lexikon (1), Leṣpā (1), Libellus (1), Lied (1), Lieder (1), Limnaea Borealis (1), Linguadoca (1), Litta (1), Litterario (1), Livellazione (1), Liṣaṃtaṃ (1), Logicae (1), Loknālabālobodhak (1), Lombardo-Veneto (1), Londero (1), Lorenzutti (1), Lucciole (1), Luddhā (1), Ludwig (1), Lugano (1), Luisini (1), Lunario (1), Luogoten (1), Lussiute (1), Lutero (1), Lutti (1), Līlū (1), M. Brazzà (1), Macchina (1), Madan (1), Madanjudh (1), Madonne (1), Madridio (1), Maestoso (1), Maestà (1), Magia (1), Magliani (1), Magnifica (1), Magnificat Credidi (1), Mahabīr (1), Mahari (1), Mahā (1), Mahābīraṃ (1), Mahādevjī (1), Mahāsatī (1), Mahāsatījī (1), Mahāvīr (1), Mahāvīrave (1), Maidalchini (1), Maioor (1), Maladeto (1), Malagrida (1), Malmaison (1), Malīcitr (1), Manavaṃ (1), Mandelli (1), Mandolino (1), Manfrine (1), Maniaci (1), Manifesto (1), Manin-Basadonna (1), Manini (1), Manum (1), Maphei (1), Marano-Lignano (1), Marburg (1), Marescotti (1), Margherita (1), Mariannina (1), Marinelli (1), Marmontel (1), Marsch (1), Martiri (1), Martène (1), Marzagaia (1), Masini (1), Masserie (1), Massoneria (1), Materiali (1), Materies (1), Matilde (1), Matribus (1), Matricola (1), Mattioli (1), Mazurca (1), Mazurke (1), Mazzatinti (1), Mazzucchelli (1), Maṅgal (1), Maṅgalāṇ (1), Mediocrità (1), Meditazione (1), Melchiade (1), Melodia (1), Memorandum (1), Memoriae (1), Memoriali (1), Memorialibus (1), Menicucia (1), Menis (1), Menitaraṇ (1), Meno (1), Menosso (1), Mercatali (1), Mercati (1), Mercatovecchio (1), Mergariis (1), Meridionali (1), Meritò (1), Mestri (1), Metafore (1), Metaphysicam (1), Meteorologia (1), Meṣarāśī (1), Mhā (1), Michisotti (1), Microfilm (1), Milano-Vienna (1), Minuetto (1), Minzoni (1), Miscell (1), Miscellaneo (1), Misereor (1), Miseria Umana (1), Misericordiae (1), Misurazione (1), Mittelalter (1), Mode-Bilder (1), Modello (1), Moderato (1), Modern Philology (1), Modestia (1), Mohanī (1), Mokṣ (1), Mon. Eccl. Aquil (1), Monasteto (1), Mondieide (1), Monfalconesi (1), Monlà (1), Montecchi (1), Monteniaca (1), Montis (1), Monum (1), Morlupino (1), Mormorazione (1), Motteto (1), Mottetti (1), Mottettino (1), Mss. (1), Mudyot (1), Mundart (1), Murtoleide (1), Muṇi (1), Mysterio (1), Mãḍaṇī (1), Mādhavānalakāmkaṃdalā (1), Māgiḍī (1), Māhaṇ (1), Mālatī (1), Māllināth (1), Mān (1), Māraṇti (1), Māṃnī (1), Mīn (1), Mṛgā (1), Mṛgāputr (1), Mṛgāputrī (1), Mṛgāvatīre (1), N-O (1), N-Z (1), N. B. (1), Nabhatai (1), Nabucodonosor (1), Nacesīb (1), Nagpurīyatā (1), Nakalyaimaṃ (1), Nal (1), Nal Davadaṅtī (1), Namaskār (1), Namat (1), Namaī (1), Namināth (1), Namirājā (1), Namiya (1), Namosi (1), Namīuṇti (1), Narduzzi (1), Narrativa (1), Narāṃ (1), Nature (1), Naumī (1), Nazion (1), Necker (1), Necrologie (1), Nem Rājīmatī (1), Nemca (1), Nemesi (1), Nemināth (1), Nemsijjhāya (1), Ner (1), Nesarae (1), Nesarai (1), Nid (1), Niddha (1), Nigraṃthī (1), Nij (1), Ninine (1), Nirāraṃbh (1), Nobil (1), Nocturne (1), Nocturni (1), Nogareta (1), Nolite (1), Nomen (1), Nomenclature (1), Nominatio (1), Noreja (1), Nosce (1), Nost (1), Notaj (1), Notanda (1), Notariato (1), Notificazione (1), Notisi (1), Notturno (1), Nouveau (1), Novellina (1), Novilunii (1), Numerosi (1), Nābhi (1), Nāgadati (1), Nāgadatt (1), Nāsaket (1), Nīkī (1), Nīṣpate (1), O-Z (1), Oberitalien (1), Obituario (1), Observationes (1), Offici (1), Offizio (1), Oliverse (1), Olivo (1), Ollendorff (1), Omissione (1), Omniboni (1), Onnipotente (1), Oportet (1), Opuscoli (1), Oratiuncula (1), Oratoriam (1), Oratorii (1), Orca (1), Ordin (1), Ordinanza (1), Ordinem (1), Orditure (1), Orfana (1), Originale (1), Origo (1), Orlandino (1), Orvid (1), Orzon (1), Ospitali (1), Ospiti (1), Ossequiosiss.mo (1), Osservatore (1), Osservazione (1), Ostetricia (1), Ottavo (1), Ouverture (1), Pacta (1), Pacāṃḍalo (1), Padova-Prosperini (1), Pagani-Cesa (1), Pahalo (1), Pahilūṃ (1), Pahutā (1), Pajola-Bolzetta (1), Pakhiya (1), Pakkhiya (1), Palazzi (1), Palchi (1), Palicinigo (1), Palmada (1), Pamph (1), Panaratithi (1), Panarie (1), Pange Lingua (1), Panzacchi (1), Paramesur (1), Parenzo (1), Parlamenti (1), Parocchie (1), Parochial (1), Partenopeo (1), Parti (1), Passarini (1), Passate (1), Passavin (1), Passeggio (1), Paternoster (1), Path. Aquil (1), Patri (1), Patriarcha Aquilejensi (1), Patriarchae (1), Patriarchale (1), Patriarchales (1), Patriarchato (1), Patrimonj (1), Patronato (1), Patrum (1), Patuna (1), Paulucci (1), Paumāvai (1), Paumāvat - Caüpaï (1), Pavesi (1), Pañcamī (1), Pañcatantra (1), Pañcākhyān (1), Pañcākhyāne (1), Paḍi (1), Paṃc (1), Paṃcamī (1), Paṇmiya (1), Paṇmīyaba (1), Paṭṭāvalī (1), Pe (1), Pecile (1), Peguana (1), Pellegrinaggio (1), Penolazzi (1), Peperit (1), Pepina (1), Per (1), Perathoner (1), Perho (1), Pertanto (1), Perussini (1), Pervenne (1), Pezzen (1), Philologie (1), Philosophe (1), Phisyca (1), Phisycam (1), Phryx (1), Phulamatī (1), Physicae (1), Piazzetta (1), Piazzi (1), Piccolezze (1), Piemontesi (1), Pietr'Antonio (1), Pietre (1), Pioppettina (1), Pisitanus (1), Pisolino (1), Pizzamiglio (1), Pizzochere (1), Pizzocie (1), Placiti (1), Platti (1), Plenilunii (1), Poemata (1), Poesis (1), Poeticam (1), Polacca (1), Poliza (1), Polka Mazurka (1), Ponendosi (1), Pontello (1), Pontifex (1), Pontifici (1), Pontificum (1), Pordenonese (1), Portanuova (1), Porticus (1), Postquam (1), Prabhuj (1), Pracchiuso (1), Pradhan (1), Praecipui (1), Praefecti (1), Praenoscenda (1), Prampero (1), Pramādaṃ (1), Pramādsvā (1), Pran (1), Pratikramaṇ (1), Praśāṃtaṃ (1), Praṃ (1), Praṇampaśirasā (1), Praṇamāparamātyānaṃ (1), Praṇipatyāhartaḥ (1), Preavvertenza (1), Precedentemente (1), Precedono (1), Preclare (1), Prefettizio (1), Pregliasco (1), Prelati (1), Premessa (1), Premulacco (1), Prencipi (1), Prendi (1), Prepoco (1), Prevesa (1), Priapeja (1), Prigioniera (1), Primavera (1), Primevere (1), Principato (1), Principi (1), Principiato (1), Principii (1), Principj (1), Prineide (1), Privileggi (1), Privilegia (1), Privilegio (1), Pro (1), Prob. (1), Proclama (1), Proclami (1), Prodoloni (1), Professor (1), Profezia (1), Profezia Iª (1), Profskrifnungen (1), Prometheus (1), Promette (1), Pronomen (1), Pronostica (1), Prontuari (1), Prophetia (1), Prosopopea (1), Protestanticum (1), Protettor (1), Protocolla (1), Prove (1), Proverbio (1), Provinc (1), Provveditor (1), Provveditori (1), Provvisori (1), Prussiana (1), Prussiani (1), Pubblic (1), Pubblicata (1), Publiche (1), Pudie (1), Puntiglios (1), Puor Nariut (1), Pustron (1), Puṃgavāye (1), Puṇyasār (1), Pāledayā (1), Pāp (1), Pār (1), Pārbatye (1), Pārsamāthjī (1), Pārśvanath (1), Pās (1), Pūbisyasuṇ (1), Pūnimā (1), Pūrṇ (1), Pṛthi Caṅdr Rājṣir (1), Quadrante IV. Tavolette (1), Quadriga (1), Quadriglie (1), Qualiter (1), Quaranta (1), Quest'indice (1), Quest'ultima (1), Quoniam (1), R-Z (1), Raccoltina (1), Racālya (1), Radivo (1), Radussi (1), Raghuṭīkāyāṃ (1), Rahane (1), Rainerotti (1), Rajayugjī (1), Rak (1), Ranthāya (1), Rappresentanza (1), Rara. (1), Ratran (1), Ratyanek (1), Ratzan (1), Ravalukī (1), Ravistain (1), Reana (1), Recensione (1), Recepti (1), Redde (1), Redditus (1), Redemptoris (1), Redite (1), Regesta (1), Regesten (1), Regicides (1), Registrum (1), Regnava (1), Regni (1), Reip. Utin. Cancell (1), Relatione (1), Religion (1), Repaci (1), Repertor (1), Repertorium (1), Repubbl (1), Republica (1), Responsori (1), Restaurata (1), Restaurato (1), Restituito (1), Resurrezione (1), Retorica (1), Revue (1), Ribisini (1), Ricati (1), Ricciardo (1), Riccò (1), Ricerca (1), Ricordo (1), Ricorso (1), Rifembergo (1), Riflessi (1), Rigatura (1), Rigoletto (1), Rigore (1), Rilevamento (1), Rilievo (1), Rimari (1), Rimedii (1), Rimedio (1), Ringraziament (1), Rinvenuto (1), Rinvigorito (1), Riparazione (1), Riprodotto (1), Riproduzione (1), Rispetto (1), Ritzer (1), Rivamonte (1), Rivederla (1), Rivista (1), Riṣabha (1), Riṣabhadev (1), Robinetti (1), Robortello (1), Rodocanachi (1), Rogāstatr (1), Romagne (1), Romba (1), Roncali (1), Rotulo (1), Roux (1), Rovina (1), Rubato (1), Rupileidi (1), Rutzvanscad (1), Rā (1), Rādhāṣṭāmī (1), Rājatilakacha (1), Rājgaṛīhī (1), Rājā (1), Rām (1), Rāmayaśarasāyan (1), Rāmcaritr (1), Rāsau (1), Rātri (1), Rāṣin (1), S (1), Sabbionato (1), Sabhikhū (1), Sabhut (1), Sacchia (1), Sacerdos (1), Sacili (1), Sadāramgjī (1), Sadāraṃgjī (1), Saec. XV (1), Sagaṇ (1), Sagoskin (1), Sagredo-Valentinis (1), Sajiṇaṃ (1), Sakaljane (1), Salio (1), Salmi (1), Salomonis (1), Salutaris (1), Salutis (1), Salvaroli (1), Samakitsū (1), Samarsa (1), Samasū (1), Samatāiṃ (1), Samoṣan (1), Sampūrṇ (1), Samrūdebī (1), Samāpetaṃ (1), Sandaniele (1), Sangaṇi (1), Sant (1), Santorini (1), Sanzioni (1), Sanīścar (1), Sapelavaha (1), Sapienza (1), Sarasvati (1), Sarasvatī (1), Sarppa (1), Sassonia (1), Satasai (1), Savārth (1), Sayahasurāsur (1), Saīkārakhan (1), Saṃbapradyumm (1), Saṃbhavaṃ (1), Saṃgahaṇī (1), Saṃgrahaṇt (1), Saṃjogāvippasuṃkasma (1), Saṃkal (1), Saṃkṣipt (1), Saṃpa (1), Saṃpatr (1), Saṃprītik (1), Saṃpūrṇ (1), Saṃpūrṇaḥ (1), Saṃsāradāvāna (la) (1), Saṃtā (1), Saṃvat (1), Saṃyatt (1), Saṃṣpāli (1), Sbarra (1), Scaligeri (1), Scalzi (1), Schedula (1), Scherz (1), Scherzi (1), Schiaparelli (1), Schiavi (1), Scisma (1), Sconciatura (1), Scribæ Utinensis (1), Scriptores (1), Sebbene (1), Seggio (1), Segretario (1), Segu. (1), Seguitano Inviti (1), Seguono (1), Seitz (1), Seke (1), Sella-Giacomelli (1), Semel (1), Seminarij (1), Senti (1), Separazione (1), Septembris (1), Seria (1), Sermoni (1), Servite (1), Sessantacinque (1), Sestetto (1), Setruñjā (1), Setruṃjariṣ (1), Settanta (1), Seṃ (1), Sfragistica (1), Siccorti (1), Siddhaṃ (1), Siddhāṅt Upades (1), Sidhācal (1), Sidve (1), Sienkiewicz (1), Sigh (1), Sign. (1), Sigārhār (1), Sijhāya (1), Silny (1), Simaṃ (1), Simia (1), Singstimme (1), Sinico-Latino (1), Sinigaglia (1), Sintassi (1), Sintistu (1), Sismondi (1), Sivsarvadā (1), Siṃ (1), Siṃghajī (1), Siṃghāsan (1), Siṃhāsaneṃdvātriṃśīkā (1), Skrifprof (1), Slavia (1), Smāraṃ (1), Smṛtvāpārśva (1), Sobrietà (1), Socratiche (1), Sodalis (1), Soff. (1), Soffrire (1), Soldonieri (1), Solingo (1), Solit (1), Solstizii (1), Sonatina (1), Sonatines (1), Sonet (1), Sonets (1), Soprani (1), Soraviyā (1), Soraṭhā (1), Sospetti (1), Sospiri (1), Sostero (1), Sostituito (1), Sot (1), Souvenir (1), Sovra (1), Sparfundis (1), Specifici (1), Spediente (1), Spedizione (1), Spergher (1), Spiz (1), Sponsali (1), Sporeni Forumjulium (1), Spostati (1), Sprachen (1), Squarcio (1), Stabat (1), Stainero (1), Stampati (1), Stampe (1), Stanco (1), Stanze (1), Starai (1), Stasti (1), Statistiq (1), Statutem (1), Stefanon (1), Stemmata (1), Stevenà (1), Sthūlibhadrsajjhāya (1), Sti (1), Stiattesi (1), Stockholms (1), Storiis (1), Stotrsaṃgrah (1), Stradello (1), Strano (1), Stratico (1), Strazzosa (1), Strigliate (1), Strumento (1), Studi (1), Suba (1), Sublimi (1), Suffraganeo (1), Sugamī (1), Suganejī (1), Sugar (1), Suicidio (1), Sul (1), Sullo (1), Suma (1), Sumate (1), Sumati (1), Summaria (1), Summarium (1), Sumāṇ (1), Sunett (1), Suranrapūjiya (1), Surnārayāṇ (1), Suṃ (1), Suṣkari (1), Svāmī (1), Séance (1), Sāc (1), Sādhu (1), Sāhib (1), Sājaṇ (1), Sāmācārī (1), Sārasvatī (1), Sārasvatīprakṛyā (1), Sāraṃg (1), Sārsvataṃ (1), Sārsīṣāmaṇ (1), Sāsaṃ (1), Sāṇti (1), Sī (1), Sīharo (1), Sījhāya (1), Sīlarāso (1), Sīlassa (1), Sīlvaṃtane (1), Sīta (1), Sītalajīṇ (1), Sītā (1), Sūrīhiṃ (1), T. (1), Taddeini (1), Taddio (1), Taeṇaṃ (1), Tagliam.to (1), Talot (1), Talotti (1), Tanakātneṇ (1), Tanme (1), Tanz-Locomotive (1), Tapāgacchapaṭṭāvalī (1), Tarcenti (1), Tartares (1), Tarthesva (1), Tartinis (1), Tasa (1), Taspini (1), Taṃpasaṃsi (1), Teatralità (1), Tecufot (1), Tehanī (1), Telegrammi (1), Tellini (1), Tema (1), Temple (1), Teod. Moneta (1), Teoretica (1), Ternova (1), Terranegra (1), Terzetti (1), Teṇakā (1), Theol (1), Theologiae (1), Theologicis (1), Theoria (1), Thesauri (1), Thāgidī (1), Thāgrīya (1), Tibbits (1), Tidyānaṅd (1), Timmermans (1), Tirth (1), Titiro (1), Tiṇanai (1), To (1), Tofani (1), Toffolo-Strassoldo-Montegnacco (1), Tombe (1), Tommasini (1), Tonale (1), Topografie (1), Toponimi (1), Toponomastico (1), Torniano (1), Torre-Gravisi (1), Torriani (1), Tradizione (1), Tragica (1), Traité (1), Trajīveḥ (1), Transumptum (1), Trascr (1), Travertier (1), Traviata (1), Tredici (1), Trevesio (1), Trevigiana (1), Triade (1), Triestino (1), Trivigiana (1), Triṣaṣṭiśalākāpurūṣcarit (1), Triṣaṣṭiśalākāpurūṣcarite (1), Trois (1), Tromba (1), Trotta (1), Tulmentino (1), Tulmetiensis (1), Tulmetii (1), Tusāsui (1), Tänze (1), Tāṃ (1), Ubhaikar (1), Ubheṣi (1), Udine-Biasutti (1), Udine-Ischia (1), Udine-Tacelli (1), Ughellio (1), Uktisaṃgrahaḥ (1), Ultim (1), Una (1), Unamaḥ (1), Univers (1), Unzertrennlichen (1), Upadhamannaṃt (1), Upadhanavidhiḥ (1), Upadhānavidhiḥ (1), Upāsa (1), Usalo (1), Usavātn (1), Usbhāṃjeho (1), Uscivo (1), Uscochi (1), Usiologia (1), Utilissimo (1), Utinensem (1), Utinensibus (1), Utinensium (1), Uttarajjhayaṇasuttaṃ (1), Uttarādhyayan (1), Uttarādhyayanabattī (1), Uttarādhyāyanasūtr (1), Uttasaṃvāṃaṇ (1), Uvaesamālā (1), Uvyatāṃloḥ (1), Uvāsagdasau (1), Uṃcakul (1), Uṃnama (1), Uṃvaṃ (1), Vado (1), Vaga (1), Vaidarbhīvivāh (1), Valentinis-Gubertini (1), Valle-Noncello (1), Vallicelliana (1), Valsassine (1), Valsecchi (1), Valses (1), Valtz (1), Valvason-Corbelli (1), Valvason-Maniago (1), Vardhammā (1), Vardhyau (1), Variantes (1), Vartmāncovīs (1), Vaticini (1), Vaḍībhalebh - Vānī (1), Vaṃcauṃ (1), Vedarbhīvivāh (1), Vedovanza (1), Vemmel (1), Vendetta (1), Vendoglio (1), Vendrame (1), Venerande (1), Veneta-Imperiale (1), Venetiani (1), Venetias (1), Veni Creator (1), Ventapanem (1), Ventinove (1), Ventioni (1), Ventitré (1), Ventuna (1), Verbi (1), Verci (1), Vergeva (1), Vergini (1), Version (1), Versione (1), Vescovile (1), Vespri (1), Veterinari (1), Vexilla (1), Viars (1), Vicinanza (1), Vicārṣaṭtriṃśīkā (1), Vidagdhamukhamaṃḍane (1), Vidagdhamukhamaṇḍan (1), Videns (1), Vidi (1), Viennese (1), Vieusseux (1), Viibhavaṇo (1), Vikramāditya (1), Villoresi (1), Vincencio (1), Vinchelmann (1), Vinīt (1), Viol. (1), Vipāk (1), Visdende (1), Visitazione (1), Vissandone (1), Vivevano (1), Viṇayaṃ (1), Vocabolario (1), Vocabolario Furlano Toscano (1), Voglia (1), Volcherio (1), Volpe (1), Voltabarozzo (1), Vorführbuch (1), Vormarsch (1), Vue (1), Vyavahārasuddh (1), Vāgarthā (1), Vāksar (1), Vāt (1), Vīntī (1), Vūvo (1), Waldsee-Mels (1), Waltz (1), Walzer (1), Wassermann (1), Welt (1), Windigratz (1), XIX (1), XVII (1), Xerapellinus (1), Yannak (1), Yatrtvaṃti (1), Yhesus (1), Yājī (1), Yārā (1), Z (1), Zancani (1), Zannetto (1), Zarina (1), Zascebrina (1), Zecchino (1), Zeint (1), Zeitschrift (1), Zia (1), Zibaldoni (1), Zingara (1), Zontaroli (1), Zoraide (1), Zornal (1), Zorutt (1), Zrin (1), Zua (1), Zuccagni-Orlandini (1), Zucchunici (1), Zuino (1), Zustinian (1), agl'Ebrei (1), agl'Ill (1), dall'Āvaśyaka (1), un'Admonitio (1), un'Apologia (1), un'Expositio (1), un'Italia (1), un'Oratio (1), Ābhanaṃdan (1), Ābī (1), Ādari (1), Ādau (1), Ādināth Śāntināth (1), Āgārine (1), Ānītaṃ (1), Āpai (1), Ārjat (1), Ārnāth (1), Āropai (1), Ārāhīman (1), Ātnaprabodh (1), Āvadh (1), Āvkarmṣapāyan (1), Āvo (1), Āyaṇ (1), Āṇpau (1), Īchehiṃ (1), Īha (1), Śail (1), Śanti (1), Śatruñjayamāhātmyaṃ (1), Śaṅkarācārya (1), Śreyostu (1), Śreyāṃ (1), Śrī. (1), Śukrāvintāyāṃ (1), Śuṃbha (1), Śānti (1), Śāsan (1), Śāstre (1), Śāṣaṃṭābhodhiyart (1), Śṛṃgār (1), Ḍhaṅdhaṇ (1), Ṛne (1), Ṣaraṇāṃam (1), Ṣaṭurdhyā (1), Ἡ (1)
 

@@ -204,10 +204,10 @@ def chiave_luogo(forma):
 # ---------------------------------------------------------------------------
 
 RX_TOKEN = re.compile(r"""
-    (?P<parola>(?:[A-Za-zÀ-ÿ]+\[[a-zà-ÿ]+\][a-zà-ÿ]*)          # «G[aspero]»
+    (?P<parola>(?:[^\W\d_]+\[[^\W\d_]+\][^\W\d_]*)          # «G[aspero]»
              |[dD]e['’](?=\s)                                          # «De' Rubeis»
              |(?:d|de|dell|degl|dall|all|nell|sull|l|L|All|Nell|Sull)['’](?=[A-ZÀ-Ý])  # «d'Abelardo», «L'Estate»: articolo staccato
-             |(?:D(?:e(?:ll|gl)?|all)?['’](?=[A-ZÀ-Ý]))?[A-Za-zÀ-ÿ][A-Za-zÀ-ÿ'’]*(?:-[A-ZÀ-Ý][A-Za-zÀ-ÿ'’]*|-(?:hill|on|upon|sur|am|an|de|del|di)\b)*)  # «Franchi-Muratori», «Penn-hill»
+             |(?:D(?:e(?:ll|gl)?|all)?['’](?=[A-ZÀ-Ý]))?[^\W\d_][^\W\d_'’]*(?:['’][^\W\d_]+)*(?:-[A-ZÀ-Ý][^\W\d_'’]*|-(?:hill|on|upon|sur|am|an|de|del|di)\b)*)  # «Franchi-Muratori», «Har Dās»
     (?P<punto>\.(?:[°ºªo](?![A-Za-z]))?|°|ª)?                   # «Gio.», «Ant.°», «Fr.co» gestito sotto
   | (?P<quadra>\[[^\]\n]{1,60}\])
   | (?P<altro>\S)
@@ -228,7 +228,7 @@ SUFFISSI_AGGETTIVO = re.compile(r"(?:ico|ica|ici|iche|ale|ali|oso|osa|osi|ose|iv
 SUFFISSI_AGGETTIVO_FORTI = re.compile(r"(?:ico|ica|ici|iche|ale|ali|oso|osa|osi|ose|ivo|iva|ario|aria|ense|ensi)$")
 CUE_RINVIO = {"cfr.", "v.", "vedi", "vedasi"}
 PARTICELLE_TRA_PARENTESI = re.compile(r"\((?:di|de|da|della|del|dalla|de')\)")
-ARTICOLI_PERSONA = {"un", "una", "il", "lo", "del", "dello", "dal", "al", "col", "sul", "nel"}   # «il Fontanini», «del Burchiello»
+ARTICOLI_PERSONA = {"allo", "dallo", "collo", "sullo", "nello", "un", "una", "il", "lo", "del", "dello", "dal", "al", "col", "sul", "nel"}   # «il Fontanini», «del Burchiello»
 PREPOSIZIONI_LUOGO_FORTI = {"in", "a", "ad", "presso", "nel", "nella", "per", "verso", "fino", "sino", "da", "dalla"}
 PREPOSIZIONI_LUOGO = PREPOSIZIONI_LUOGO_FORTI | {"di", "de", "da"}
 PARTICELLE_MAIUSCOLE = {"De", "Di", "Da", "Del", "Della", "Delle", "Dei", "Degli", "Dal", "Dalla", "De'", "De’",
@@ -364,6 +364,12 @@ class Estrattore:
                 avvio = True                  # «De' Rubeis», «Della Torre», «Di Colloredo»
             elif self.e_iniziale(tok) and maiuscola(succ):
                 avvio = True                  # «L. Mazzei», «G. B. Ciconi»
+            elif self.e_iniziale(tok) and (succ.get("parola") or "").lower() in PARTICELLE and \
+                    k + 2 < n and maiuscola(toks[k + 2]):
+                avvio = True                  # «A. di Brazzà»
+            elif (tok.get("parola") or "") in PARTICELLE and k and self.e_titolo(toks[k - 1]) and \
+                    k + 1 < n and maiuscola(succ) and not self.comune(succ):
+                avvio = True                  # «al P. de Rubeis»: la particella apre il cognome
             else:
                 avvio = (maiuscola(tok) and not self.e_titolo(tok) and not self.romano(tok)
                          and tok["t"] not in FONDI and tok.get("parola") not in FONDI
@@ -524,6 +530,15 @@ class Estrattore:
             return None                       # «milite del regg.° Starai»: nome del reggimento
         if "pseudonimo" in prec_parole or p1 in ("detto", "detta", "soprannominato"):
             return "persona", "pseudonimo", "media"
+        # cognome seguito da «fam.», «famª», «famiglia»: «Braida fam.», «Elti (famª)»
+        dopo_span = testo[toks[idx[-1]]["f"]:toks[idx[-1]]["f"] + 12]
+        if re.match(r"\s\(?(?:fam\.|famª|fam\b|famiglia|famiglie)", dopo_span):
+            return "persona", "famiglia", "alta"
+        # nome in testa a un paragrafo seguito dal punto, in una voce-elenco di luoghi: «Varmo. Documenti…»
+        inizio_par = toks[idx[0]]["i"] == 0 or testo[toks[idx[0]]["i"] - 1] == "\n"
+        if inizio_par and toks[idx[0]]["i"] > 0 and self.peso_luogo(span_testo) and \
+                re.match(r"\.\s", testo[toks[idx[-1]]["f"] - 1:toks[idx[-1]]["f"] + 1]) and not nome_singolo:
+            return "luogo", "intestazione_paragrafo", "media"
         if primi["t"] in CARICHE and len(maiusc) == 1:
             return "persona", "carica", "media"       # «Doge», «Papa»: univoci
         # cognome seguito da un titolo: «Zacagni ab.», «Lambertini papa», «Spinola card.», «Vacani bar.»
@@ -560,9 +575,7 @@ class Estrattore:
         # «cfr. Mazzoliceti»
         if p1 in CUE_RINVIO and self.peso_luogo(span_testo) != "forte":
             return "persona", "rinvio", "bassa"
-        # in testa alla voce di solito c'è l'autore: «Bajamonte Tiepolo.», «Dotti (Sig. K.r)»
-        if prec_tok is None and not citta_o_regione and self.peso_luogo(span_testo) != "forte":
-            return "persona", "intestazione_voce", "bassa"
+
         if SANTI.match(primi["t"]) and len(maiusc) >= 2 and len(idx) > 1 and \
                 len(toks[idx[1]].get("parola") or "") > 1:
             return "santo", "santo", "alta"
@@ -582,6 +595,9 @@ class Estrattore:
             return "persona", "nome_di_battesimo", "alta"
         if titolo_prima:
             return "persona", "titolo", "alta"
+        # in testa alla voce di solito c'è l'autore: «Bajamonte Tiepolo.», «Dotti (Sig. K.r)», «Marzona.»
+        if prec_tok is None and not citta_o_regione and self.peso_luogo(span_testo) != "forte":
+            return "persona", "intestazione_voce", "media"
         if prec_tok is not None and prec_tok["t"] in FONDI or (prec_parole and prec_parole[-1] in
                                                                {x.lower() for x in FONDI}):
             return "persona", "fondo_o_provenienza", "media"     # «Dono Pagani», «Legato Toppo»
@@ -592,8 +608,7 @@ class Estrattore:
             gruppo = len(maiusc) == 1 and re.search(r"(?:ori|iti|ani|ini|esi|ensi|chi|ssi)$", maiusc[0]["parola"])
             return "persona", "famiglia", "bassa" if gruppo else "media"   # «dei Savorgnan», «scritt. Joppi»
         citta = chiave_luogo(span_testo.rstrip(".")) in self.luoghi["__citta__"]
-        if len(maiusc) == 1 and nome and (luogo != "forte" or not citta_o_regione) and (
-                p1 not in PREPOSIZIONI_LUOGO_FORTI or not citta_o_regione):
+        if len(maiusc) == 1 and nome and not citta_o_regione:
             return "persona", "solo_nome_di_battesimo", "media"   # «Morgana quel che…», «Ciceronis»
         if luogo and (luogo == "forte" or not inizio_frase):
             if luogo == "forte":
@@ -727,6 +742,8 @@ class Estrattore:
                 scarti.append((testo[i0:i1], i0, i1))
                 continue
             tipo, metodo, aff = esito
+            if tipo == "luogo" and self.peso_luogo(testo[i0:i1]) == "forte":
+                aff = "alta"                  # «Udine» trovato per contesto resta un luogo certo
             prima_parola = toks[idx[0] - 1]["t"].lower() if idx[0] else ""
             parti_nozze = [toks[i] for i in idx if toks[i].get("parola")]
             if prima_parola == "nozze" and len(parti_nozze) >= 2 and all(maiuscola(t) for t in parti_nozze) and \
@@ -746,7 +763,7 @@ class Estrattore:
             # persona che termina con un luogo seguito da una data: «C. Aless. Carnier Portogruaro 1842»
             parole_m = [toks[i] for i in idx if toks[i].get("parola")]
             if tipo == "persona" and len(parole_m) >= 3 and self.peso_luogo(parole_m[-1]["parola"]) == "forte" and \
-                    re.match(r"\s(?:\d|\()", testo[i1:i1 + 2]) and not self.e_nome_battesimo(parole_m[-1]):
+                    re.match(r"\s\d", testo[i1:i1 + 2]) and not self.e_nome_battesimo(parole_m[-1]):
                 ul = parole_m[-1]
                 fine_p = parole_m[-2]["i"] + len(parole_m[-2]["t"])
                 menzioni.append({"testo_esatto": testo[i0:fine_p], "inizio": i0, "fine": fine_p, "tipo": "persona",
@@ -778,7 +795,8 @@ class Estrattore:
             # santo seguito da «di» + persona: «panegirici di S. Tommaso di Alberto Unaccio»
             if tipo == "santo":
                 m_p = re.search(r"\s(?:di|de)\s([A-ZÀ-Ý][\w'’]+)(?:\s[A-ZÀ-Ý].*)?$", testo[i0:i1])
-                if m_p and chiave_luogo(m_p.group(1)) in self.nomi_esatti:
+                if m_p and chiave_luogo(m_p.group(1)) in self.nomi_esatti and \
+                        chiave_luogo(m_p.group(1)) not in self.luoghi["__citta__"]:
                     a2 = i0 + m_p.start(1)
                     menzioni.append({"testo_esatto": testo[i0:i0 + m_p.start()], "inizio": i0,
                                      "fine": i0 + m_p.start(), "tipo": "santo", "correzione": None,
@@ -1017,6 +1035,27 @@ def main():
                 con.execute("INSERT INTO non_classificati (voce, sede, annotazione, testo_esatto, inizio, fine)"
                             " VALUES (?,?,?,?,?,?)", (vid, sede, aid, s, a, b))
                 n_s += 1
+    # decisioni del curatore su una forma, valide in tutte le voci (dati/liste/decisioni_forme.tsv);
+    # tipo «nessuno» = non è un nome. Le classificazioni per singola voce, applicate dopo, prevalgono.
+    for r in csv.DictReader(open(LISTE / "decisioni_forme.tsv", encoding="utf-8"), delimiter="\t"):
+        rif = r["forma_riferimento"] or None
+        if r["tipo"] == "nessuno":
+            con.execute("DELETE FROM menzioni WHERE testo_esatto=?", (r["forma"],))
+            con.execute("DELETE FROM non_classificati WHERE testo_esatto=?", (r["forma"],))
+            continue
+        con.execute("UPDATE menzioni SET tipo=?, forma_riferimento=coalesce(?, forma_riferimento), "
+                    "metodo='curatore', affidabilita='alta' WHERE testo_esatto=?", (r["tipo"], rif, r["forma"]))
+        for nid, vid, sede, aid, a0, a1 in con.execute(
+                "SELECT id, voce, sede, annotazione, inizio, fine FROM non_classificati WHERE testo_esatto=?",
+                (r["forma"],)).fetchall():
+            seg = None
+            if sede == "testo":
+                x = con.execute("SELECT id FROM segmenti WHERE voce=? AND inizio<=? AND ?<fine", (vid, a0, a0)).fetchone()
+                seg = x[0] if x else None
+            con.execute("INSERT INTO menzioni (voce, sede, annotazione, segmento, testo_esatto, inizio, fine, tipo,"
+                        " forma_riferimento, metodo, affidabilita) VALUES (?,?,?,?,?,?,?,?,?,'curatore','alta')",
+                        (vid, sede, aid, seg, r["forma"], a0, a1, r["tipo"], rif))
+            con.execute("DELETE FROM non_classificati WHERE id=?", (nid,))
     # classificazioni del curatore per singola voce (dati/liste/classificazioni_manuali.tsv)
     for r in csv.DictReader(open(LISTE / "classificazioni_manuali.tsv", encoding="utf-8"), delimiter="\t"):
         ids = [x[0] for x in con.execute("SELECT id FROM voci WHERE numero=?", (r["voce"],))]
