@@ -69,3 +69,11 @@ Decisioni confermate dal curatore:
 - Liste: luoghi da ISTAT e GeoNames (peso forte/medio/debole), nomi di battesimo da Wikidata (it, la, fur), liste manuali in `dati/liste/`.
 - Esecuzione: `python3 script/liste_esterne.py` (una volta), `python3 script/estrai.py [--campione]`, `python3 script/report_fase3.py`.
 - Revisione su tutto l'inventario per forme: `python3 script/revisione_forme.py` → `report/fase_3_revisione_forme.md`. Decisioni globali in `dati/liste/decisioni_forme.tsv` (forma, tipo: persona | luogo | santo | opera | nessuno), eccezioni per voce in `dati/liste/classificazioni_manuali.tsv`.
+
+## Lessico e scrematura (decisione del curatore)
+La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclopedica o geografica); per la ricerca conta che ogni **parola** dei nomi sia ricondotta alla sua forma normalizzata (Zuane → Giovanni, Udene → Udine), comunque sia classificata la menzione. `python3 script/lessico.py` crea la tabella `lessico` (forma, parte, stato, forma normalizzata, origine, riferimento, gruppo grafico, occorrenze, voci) e `report/fase_3_lessico.md`, che elenca solo ciò che non è già normale:
+- luoghi: normale se nome ufficiale ISTAT/GeoNames (o sua forma breve), altrimenti da normalizzare con proposta;
+- nomi di battesimo: normale se forma italiana corrente (Wikidata), da normalizzare se abbreviati, latini, friulani, veneti (`dati/liste/nomi_varianti.tsv`);
+- cognomi: da verificare nelle fonti (fase 5); varianti grafiche e simili come candidati;
+- doppia lettura: nomi ufficiali di luoghi friulani e veneti che sono anche cognomi o famiglie (Savorgnano luogo ≠ Savorgnan famiglia): non si uniscono d'ufficio.
+- Normalizzazione: le parole fatte solo di cifre romane non si semplificano (XVII ≠ XVI).
