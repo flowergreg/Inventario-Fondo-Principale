@@ -19,3 +19,7 @@ Censura Crocchio Professori Caffè Risorgimento Odae Ode Hymni Hymnus Carmi Poes
 Coronazione Forno Camerone Turco
 Illustre Illustrissimo Illustriss
 Laudi Hora Terrarum Cantiche Pastorella Viriatus Reliqua Vota
+Nello Passaporto Sinodo Assertiones Archiepiscopi Sommari Patria Rota Apparteneva Commissione Pregadi Numis Archeologia
+# ordini religiosi (non sono nomi di persona)
+Serviti Domenicani Francescani Cappuccini Cappuccine Gesuiti Barnabiti Filippini Carmelitani Agostiniani Benedettini
+Somaschi Minori Conventuali Teatini Camaldolesi Cistercensi Clarisse Orsoline Cassinensi Vallombrosani Templari Gioanniti

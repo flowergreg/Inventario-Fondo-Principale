@@ -57,3 +57,6 @@ Giac.	Giacomo
 Giov.	Giovanni
 Piet.	Pietro
 Man.	Manfredo/Manlio
+Eman.	Emanuele
+Elis.	Elisabetta
+Gianlionardo	Gianleonardo
