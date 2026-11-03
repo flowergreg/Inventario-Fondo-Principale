@@ -56,3 +56,4 @@ Joh.	Johannes
 Giac.	Giacomo
 Giov.	Giovanni
 Piet.	Pietro
+Man.	Manfredo/Manlio

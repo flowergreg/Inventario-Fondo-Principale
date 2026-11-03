@@ -1,5 +1,5 @@
 # titoli e qualifiche che precedono un nome di persona (non fanno parte del nome)
-co. conte contessa procuratore provveditore podestà rev.mo rev. rev.do reverendo reverendissimo ill.mo ill.re molto padri abati madama messer monna signori canonici dottori k.r clariss. clarissimo c.te cte co.ssa
+co. conte contessa monsig monsig. procuratore provveditore podestà rev.mo rev. rev.do reverendo reverendissimo ill.mo ill.re molto padri abati madama messer monna signori canonici dottori k.r clariss. clarissimo c.te cte co.ssa
 ab. abate abb. abbate
 mons. monsignor monsignore msgr. msg. mgr.
 d.r dr. dott. dottor dottore dott.ssa
