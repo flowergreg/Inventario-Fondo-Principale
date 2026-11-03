@@ -23,3 +23,4 @@ Nello Passaporto Sinodo Assertiones Archiepiscopi Sommari Patria Rota Appartenev
 # ordini religiosi (non sono nomi di persona)
 Serviti Domenicani Francescani Cappuccini Cappuccine Gesuiti Barnabiti Filippini Carmelitani Agostiniani Benedettini
 Somaschi Minori Conventuali Teatini Camaldolesi Cistercensi Clarisse Orsoline Cassinensi Vallombrosani Templari Gioanniti
+Civico Civica Tot

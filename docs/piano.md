@@ -23,6 +23,8 @@ Divisione delle voci lunghe secondo i riferimenti presenti nel testo: ordinali (
 Persone e luoghi, ciascuno con voce, segmento e posizione nel testo. Le correzioni tra quadre del curatore diventano varianti con origine `correzione_curatore`. Prima su campione (voci 1–100, 464–497, 2134), poi su tutto.
 
 ## Fase 4 — Raggruppamento
+Nota del curatore: forme come «Sandaniello» possono indicare un luogo (San Daniele) ma anche una persona; prima di associarle a una forma normalizzata di luogo va controllato che non esista una persona storica con lo stesso nome normalizzato.
+
 Proposta di entità che riuniscono le grafie dello stesso nome (Cortenovis/Cortinovis, Sbroiavacca/Sbrojavacca, Valvason/Valvasone, Jacopo/Giacomo, Utinum/Udine, Civitas Austriae/Cividale). Gli omonimi non si uniscono senza conferma.
 
 ## Fase 5 — Fonti esterne

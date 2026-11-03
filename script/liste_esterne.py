@@ -154,6 +154,10 @@ def nomi():
             continue
         codice = qid.rsplit("/", 1)[-1]
         voci.setdefault((forma, lingua), (codice, qid))
+        # forma femminile derivata dai nomi maschili italiani in -o (Paolo → Paola): il servizio
+        # SPARQL va spesso in timeout sui nomi femminili e la lista scaricata resta incompleta
+        if tipo == "Q12308941" and lingua == "it" and forma.endswith("o") and len(forma) > 3:
+            voci.setdefault((forma[:-1] + "a", "it-derivato"), (codice, qid))
     return voci
 
 
