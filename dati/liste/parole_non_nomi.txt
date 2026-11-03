@@ -8,3 +8,10 @@ Historia Historiae Vita Vitae Commentarius Commentaria Opera Opuscula Annales Ch
 Excerpta Index Regulae Regula Ars Artis Tractatus Summa Oratio Orationes Elegia Elegiae Maiorem Macte Magistri
 Ad Patrizii Veneti
 Olim Quidam Fiat
+# parole segnalate dal curatore e parole comuni frequenti tra i non classificati
+Opuscolo Miscellanea Endecasillabi Villanella Novissima Novissimo Dio Dragone Lamento Relazione Epitaffi Epitaffio
+Rhetoricae Scrittura Depositato Depositati Acquistato Acquistati Tesi Messa Diploma Sinfonia Sinfonie Annotazioni Duetto
+Kyrie Cavatina Cantata Suonate Suonata Sonata Sonate Osservazioni Dramma Novelle Novella Composizione Brano Tenor
+Miserere Cronica Cronaca Catastico Abbozzi Abbozzo Ristretto Diario Trio Traduz Facoltà Relatore Domine Tantum Ventisei
+Impetra
+Il La Lo Le Gli Amor

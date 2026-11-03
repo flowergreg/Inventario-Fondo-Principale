@@ -226,7 +226,10 @@ PREPOSIZIONI_LUOGO = PREPOSIZIONI_LUOGO_FORTI | {"di", "de", "da"}
 PARTICELLE_MAIUSCOLE = {"De", "Di", "Da", "Del", "Della", "Delle", "Dei", "Degli", "Dal", "Dalla", "De'", "De’",
                         "Van", "Von", "Du", "Des"}
 SANTI = re.compile(r"^(?:S\.|SS\.|Ss\.|S\.ta|S\.to|San|Santo|Santa|Sant['’]|Santi|Sancti|Sancte|Sanctus|Sancta)$")
-FAMIGLIA_DEBOLE = {"i", "dei", "ai", "dai", "coi", "nozze", "archivio", "documenti", "scritt.", "copia", "mano"}
+FAMIGLIA_DEBOLE = {"i", "dei", "ai", "dai", "coi", "nozze", "archivio", "documenti", "scritt.", "copia", "mano",
+                   "manoscritti", "manoscritto", "mss.", "ms.", "carte"}
+CUE_LUOGO = {"assedio", "battaglia", "presa", "pace", "terremoto", "guerra", "città", "terra", "villa", "castello",
+             "contado", "territorio", "diocesi", "provincia", "porto", "isola", "chiesa", "parrocchia", "pieve"}
 FAMIGLIA = {"famiglia", "fam.", "casa", "casato", "eredi", "nobili", "conti", "fratelli", "f.lli"}
 FONDI = {"Raccolta", "Racc.", "Collezione", "Collez.", "Coll.", "Legato", "Fondo", "Dono", "Provenienza",
          "Acquisto", "Lascito", "Deposito", "Proven."}
@@ -261,7 +264,7 @@ def maiuscola(tok):
     p = tok.get("parola")
     if not p:
         return False
-    p = re.sub(r"^[dD](?:e(?:ll|gl)?|all)?['’]", "", p)
+    p = re.sub(r"^[A-Za-z]{1,4}['’]", "", p)      # «D'Arcano» sì, «L'eguaglianza» no
     return p[:1].isupper()
 
 
@@ -444,6 +447,14 @@ class Estrattore:
         # titolo di un'opera: «la tragedia Sardi Liberata»
         if p1 in CUE_OPERA or (p2 in CUE_OPERA and p1 in {"il", "la", "lo", "i", "le", "del", "della"}):
             return None
+        # «assedio di Corfù», «terremoto di …», «castello di …»: luogo
+        if p1 in ("di", "de") and p2 in CUE_LUOGO and not nome_singolo and len(maiusc) <= 3:
+            return "luogo", "contesto_luogo", "media"
+        # autore in un elenco numerato di pagine: «136 Parini, Il pericolo», «410-412 Gasparetto, ragguaglio»
+        if len(maiusc) == 1 and succ_tok is not None and succ_tok["t"] == "," and \
+                re.search(r"\d[\d\-–]*\s$", testo[max(0, toks[idx[0]]["i"] - 10):toks[idx[0]]["i"]]) and \
+                self.peso_luogo(span_testo) != "forte":
+            return "persona", "autore_in_elenco", "bassa"
         # «cardinale di Pietramala», «vescovo di Traù»: luogo
         if p1 in ("di", "de") and p2 in TITOLI_ECCLESIASTICI and not nome_singolo:
             return "luogo", "sede_ecclesiastica", "media"
@@ -547,8 +558,23 @@ class Estrattore:
                     SUFFISSI_AGGETTIVO.search(toks[idx[0]].get("parola") or "") and \
                     not self.e_nome_battesimo(toks[idx[0]]) and not self.peso_luogo(toks[idx[0]]["parola"]):
                 idx = idx[2:]
+            if self.e_nome_battesimo(toks[idx[0]]) and len(idx) > 2:
+                coda_ini = len(idx)
+                while coda_ini > 1 and self.e_iniziale(toks[idx[coda_ini - 1]]):
+                    coda_ini -= 1
+                if 1 < coda_ini < len(idx) and not self.e_iniziale(toks[idx[coda_ini - 1]]) and \
+                        len(idx) - coda_ini >= 2:
+                    idx = idx[:coda_ini]          # sigla dell'ordine religioso: «C. R. S.»
             parole_span = [toks[i] for i in idx if toks[i].get("parola")]
             solo_iniziali = all(self.e_iniziale(t) for t in parole_span)
+            # opera nota seguita da «di/del» + autore: «La Faonide di Saffo» → opera + persona
+            if len(idx) > 2 and chiave_luogo(toks[idx[0]]["t"]) in self.opere and \
+                    (toks[idx[1]].get("parola") or "").lower() in ("di", "del", "dello", "della"):
+                o0, o1 = toks[idx[0]]["i"], toks[idx[0]]["f"]
+                menzioni.append({"testo_esatto": testo[o0:o1], "inizio": o0, "fine": o1, "tipo": "opera",
+                                 "correzione": None, "metodo": "opera_nota", "affidabilita": "alta",
+                                 "forma_riferimento": self.opere[chiave_luogo(toks[idx[0]]["t"])]})
+                idx = idx[2:]
             fine_span = toks[idx[-1]]["f"]
             if solo_iniziali and re.match(r"[a-z]", testo[fine_span:fine_span + 1]):
                 continue                      # «M.S.S.i» = manoscritti
@@ -753,6 +779,23 @@ def main():
                 con.execute("INSERT INTO non_classificati (voce, sede, annotazione, testo_esatto, inizio, fine)"
                             " VALUES (?,?,?,?,?,?)", (vid, sede, aid, s, a, b))
                 n_s += 1
+    # classificazioni del curatore per singola voce (dati/liste/classificazioni_manuali.tsv)
+    for r in csv.DictReader(open(LISTE / "classificazioni_manuali.tsv", encoding="utf-8"), delimiter="\t"):
+        ids = [x[0] for x in con.execute("SELECT id FROM voci WHERE numero=?", (r["voce"],))]
+        for vid in ids:
+            rif = r["forma_riferimento"] or None
+            if r["tipo"] == "nessuno":
+                con.execute("DELETE FROM menzioni WHERE voce=? AND testo_esatto=?", (vid, r["forma"]))
+                continue
+            con.execute("UPDATE menzioni SET tipo=?, forma_riferimento=?, metodo='curatore', affidabilita='alta' "
+                        "WHERE voce=? AND testo_esatto=?", (r["tipo"], rif, vid, r["forma"]))
+            for nid, sede, aid, a0, a1 in con.execute(
+                    "SELECT id, sede, annotazione, inizio, fine FROM non_classificati WHERE voce=? AND testo_esatto=?",
+                    (vid, r["forma"])).fetchall():
+                con.execute("INSERT INTO menzioni (voce, sede, annotazione, testo_esatto, inizio, fine, tipo,"
+                            " forma_riferimento, metodo, affidabilita) VALUES (?,?,?,?,?,?,?,?,'curatore','alta')",
+                            (vid, sede, aid, r["forma"], a0, a1, r["tipo"], rif))
+                con.execute("DELETE FROM non_classificati WHERE id=?", (nid,))
     # cognomi riconosciuti con sicurezza come persona (almeno tre volte, mai come luogo): valgono
     # anche dove compaiono da soli e le regole non li hanno classificati («Nel frontespizio «Pirona»»)
     sicuri = Counter()

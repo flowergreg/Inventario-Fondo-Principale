@@ -33,8 +33,6 @@ Il testo ha note marginali ed iniziali miniate. Scrittura del sec. XIII, mm. 200
 
 *Coda*: Membranaceo · 1 vol. · stato: m. · Acquisto dal libraio **[Taddeini|P]**, 9 giugno 1885, proveniente dalla libreria **[Pagani|P]** di **[Udine|L]**.
 
-*Non classificati*: Nell'ultimo
-
 ### 5
 
 Regole grammaticali latine. Comincia: «Per actum et tunc debet propositio intervenire» (frammento che finisce nel verso del folio primo). Al folio due comincia «regule magistri **[Tebaldi|P]** / in presenti opusculo rudium utilitati». Finisce a folio 11 verso: «Expliciunt regule magistri **[Tebaldi|P]**. Deo gratias Amen». Seguono nello stesso folio 10 versi ad esposti che cominciano «ne ducas viduam quam studet acumulare» e finiscono «vicium pellere nemo potest». Al folio 12 comincia «notule / nota quod hæc sunt illa nomina» e finisce «hac sensum huius sensus».  
@@ -67,8 +65,6 @@ Frammento di poema cavalleresco. Comincia: «**[Morgana|P]** quel che non ottenn
 
 *Coda*: Cartaceo · 1 vol. · stato: b. · Acquistato il 9 agosto 1886.
 
-*Non classificati*: Acquistato
-
 ### 9
 
 Capitolo fratesco composto dal **[P. Tisabesano Secchia|P → P. Tisabesano Sechia]** [Sechia]. Comincia: «Al discreto lettore, non ad altro fine che di mera ricreazione» e termina «fine della chiave / che non oltrepassa il canto nono». Poema scherzoso del Padre **[Sebastiano Chiesa|P]** di canti 16 ed ottave 1488; precede una breve nota intorno ai capitoli (pag. 3-4). Scrittura del sec. XVIII, di pag. 560. Le ultime pagine contengono la chiave dei primi nove canti. Rilegato in pergamena.  
@@ -100,11 +96,9 @@ Raccolta di poesie dei secoli XIII-XIV-XV. Comincia: «Però rifrena omai». Fra
 
 ### 13
 
-Tragedie. Raccolta contenente l'**[Edipo|P]** ed il **[Temistocle|P]** del Padre **[Follard|P]** tradotte dal Padre **[Barbieri|P]** Gesuita. **[Il Senacheribbo|P]** del Padre Gesuita **[Giansaverio Valcavi|P]** ed il **[Creso|P]** del Padre Gesuita **[Angelo Berlendis|P]**. Scrittura del sec. XVIII, di fol. 186 scritti; legato in cartone. Nel primo fol. sta la tavola; ogni tragedia è preceduta da un proemio che spiega l'argomento; è aggiunta al volume una carta staccata in cui si nota che la tragedia Sardi Liberata (**[Creso|P]**) del **[Berlendis|P]**, fu data a **[S. Saverio|S]** collegio di **[Bologna|L]** e che l'autore fu nominato dal re di **[Sardegna|L]** professore di eloquenza a **[Cagliari|L]**. In-4°, mm 266x190.
+Tragedie. Raccolta contenente l'**[Edipo|P]** ed il **[Temistocle|P]** del Padre **[Follard|P]** tradotte dal Padre **[Barbieri|P]** Gesuita. Il **[Senacheribbo|P]** del Padre Gesuita **[Giansaverio Valcavi|P]** ed il **[Creso|O]** del Padre Gesuita **[Angelo Berlendis|P]**. Scrittura del sec. XVIII, di fol. 186 scritti; legato in cartone. Nel primo fol. sta la tavola; ogni tragedia è preceduta da un proemio che spiega l'argomento; è aggiunta al volume una carta staccata in cui si nota che la tragedia **[Sardi Liberata|O]** (**[Creso|O]**) del **[Berlendis|P]**, fu data a **[S. Saverio|S]** collegio di **[Bologna|L]** e che l'autore fu nominato dal re di **[Sardegna|L]** professore di eloquenza a **[Cagliari|L]**. In-4°, mm 266x190.
 
 *Coda*: Cartaceo · 1 vol. · stato: b. · Dono **[Pagani|P]** 17-IV-1882
-
-*Non classificati*: Sardi Liberata
 
 ### 14
 
@@ -124,8 +118,6 @@ Tragedie. Raccolta contenente l'**[Edipo|P]** ed il **[Temistocle|P]** del Padre
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
-*Non classificati*: Nell'ultimo
-
 ### 17
 
 **[Dotti|P?]** (Sig. K.r) satire. Scrittura del sec. XVIII, di fogli 258, rilegato in cartone. Nei fogli 252-255 indice dei sonetti, canzoni e madrigali contenuti nell'opera.
@@ -134,11 +126,11 @@ Tragedie. Raccolta contenente l'**[Edipo|P]** ed il **[Temistocle|P]** del Padre
 
 ### 18
 
-Raccolta di poesie contenente a pag. 1-13 lettere di **[Eloisa|P]** ad **[Abelardo|P]**, terzine adesp., 14-28 risposta d'**[Abelardo|P]** ad **[Eloisa|P]**, sciolti adesp., 29-31 **[Eloisa|P]** in braccia d'**[Abelardo|P]**, terzine adesp., 32 **[Abelardo|P]** alla tomba di **[Eloisa|P]**, sonetto adesp., 33 elegia adesp., 33-38 terzine alla cetra del **[Bondi|P]**, 39 (**[Monti|P]**) Il congresso di **[Udine|L]**, canzone, 43 Il congresso di **[Vienna|L]**, 50 sullo stesso soggetto, ode adesp., 54 Sul ritorno dei cavalli di **[Venezia|L]**, ode adesp., 56 Nell'anniversario della morte di **[Luigi XVI|P]** (**[Monti|P]**), inno, 59 Inno alla gioventù italiana, 62 Alla libertà, inno, 66 Lettera di **[Madama Sibbau|P?]** poetessa americana al suo amante il gen. **[Washington|P]** comandante supremo delle Colonie unite americane, 70 La presa di **[Mantova|L]** a **[Buonaparte|P?]** in lingua greca, Agatomero ad., 74 Alla repubblica di **[Venezia|L]**, ode adesp., 76 Inno alla pace, adesp., 79 Inno alla verginità adesp., 83 Inno all'arciduca **[Carlo|P]**, adesp., 88 Il trionfo della religione del trono, canzone adesp., 92 L'eguaglianza civile, ode adesp., 98 La povertà felice d'**[Epitteto|P?]**, ode adesp., 100 Alla contessa di **[Castelbarco|P?]**, ode del **[Parini|P]**, 105 La madre ebrea nell'assedio di **[Gerosolima|L]**, estemporanei del **[Giani|P]**, 110 **[L'Europa|P]** nel 1792, ode adesp., 112 Ad **[Amarilli Etrusca|P]**, ode adesp., 115 Invito di un solitario a un cittadino, ode adesp., 118 sciolti adesp., Werter a **[Carolina|P]**, 124 Alla città di **[Venezia|L]**, sonetto adesp., id. per l'imperatore **[Giuseppe II|P]**, epigramma adesp., 125 Ode a **[Silvia|P]**, adesp., 129 Sul ritorno dei cavalli di **[Venezia|L]**, epitaffio dell'avvocato **[Flamia|P]**, 130 (**[Monti|P]**) Il Globo aerostatico al signor di **[Montgolfier|P?]**, 136 **[Parini|P]**, Il pericolo, ode, 140 Amor vergognoso, anacreontica adesp., 145 Il bacio, anacreontica adesp., 147 Amor peregrino alla principessa donna **[Costanza Braschi|P]**, rime adesp., 153 La fecondità alla stessa, rime adesp., 157 Il congedo alla gioventù, anacreontica adesp., 164 La nutrice, canzone adesp., 172 L'aura armonica, ode per **[S. Cecilia|S]**, adesp., 177 Ritratto di **[Clori|P]**, lettera a **[Fillide|P?]**, adesp., 187 Il laberinto, canzone adesp., 195 Ritratto dell'abate **[Lavagnoli|P]** all'abate **[Frugoni|P]**, 198 **[L'Estate|P?]**, cantata per musica, 199 La pace di **[Campoformido|L]**, canzone adesp., 204 L'eternità, adesp., 212 Sopra il bisogno (**[Parini|P]**) Ode al signor **[Wirtz|P]**, 215 Elegia dall'inglese, Sopra un cimitero di campagna, adesp., 223 Ode adesp., 224 Ode adesp., 225 Ode adesp., 226 Ode adesp., 228 Ode adesp., 231 All'anno 1813, ottava adesp., 232 Canzone a **[Dori|P]**, traduzione dal tedesco, adesp., 236 La notte, in occasione di nozze, adesp., 241 Il talamo per nozze, adesp., 244 Al governo provvisorio di **[Padova|L]** nel 1797, sonetto adesp., 245 A **[Fillide|P?]** del Cav. **[Pindemonti|P]** nella sua relegazione in **[Palmanova|L]**, 251 In occasione del parto della Vice-regina d'**[Italia|L]**, Ode di **[Vincenzo Monti|P]**, 257 Il reingresso de' francesi in **[Italia|L]**, inno (**[Monti|P]**), 260 Il **[Barnabotto|P]**, ottava adesp., 261 Sciolti del capitano **[Ceroni|P]**, 267 In morte di **[Lorenzo Mascheroni|P]**, Cantica di **[Vincenzo Monti|P]**, 276 Canto secondo della stessa, 286 Canto terzo idem, 351 La vita dell'uomo, sonetto, 351 La provvidenza, sonetto adesp., 352 Per la città di **[Venezia|L]**, sonetto. Sul medesimo soggetto, sonetto, 353 Per la morte del Cav. **[Emo|P]**, sonetto. Sul medesimo soggetto, sonetto adesp., 354 Supplica al Senato del Cav. **[Pisani|P]** relegato in **[Verona|L]**, sonetto adesp. Risposta, sonetto adesp., 355 Sonetto adesp. Il ventaglio, sonetto adesp., 356 Il cavalier servente, sonetto adesp. Sonetto adesp., 357 Il matrimonio, sonetti XII adesp., 363 Sulla soppressione de' Gesuiti, sonetto adesp. In morte di **[Clemente XIV|P]** che soppresse i Gesuiti, sonetto adesp., 364 Sonetto. Dell'abate **[Bondi|P]** ex Gesuita. **[Altro|P]** sonetto adesp., 365 La distruzione del mondo, sonetto adesp. I **[Franchi-Muratori|P?]**, sonetto adesp., 366 Il matrimonio in natura, sonetto adesp. Per nozze, sonetto adesp., 367 Una giovine in due gravi errori incorsa parla all'aborto, sonetto adesp. A **[Nice|L]**, sonetto adesp., 368 Due sonetti adesp., 369 Il gira sole, sonetto per nozze, ivi. Per nozze, sonetto, 370 Per nozze sacre, sonetto, ivi. Sulla concezione di **[Maria|P]**, sonetto adesp., 371 Fiat mihi secundum verbum tuum, sonetto adesp., ivi. Il santo **[Natale|P]**, sonetto adesp., 372 La morte di **[Cristo|P]**, sonetto adesp., ivi. La discesa di **[Cristo|P]** all'inferno, sonetto adesp., 373 Dio parla all'**[Italia|L]**, sonetto adesp. e così da pag. 351 a pag. 469 segue raccolta di sonetti d'argomento vario quasi tutti adespoti. Scrittura del sec. XIX, di pag. 469. Negli ultimi 10 fogli non numerati sta la tavola dei capoversi delle poesie. Rilegato in cartone. Sono tutte trascrizioni di poesie di varî autori, dei quali i più sono ignoti e non identificabili.
+Raccolta di poesie contenente a pag. 1-13 lettere di **[Eloisa|P]** ad **[Abelardo|P]**, terzine adesp., 14-28 risposta d'**[Abelardo|P]** ad **[Eloisa|P]**, sciolti adesp., 29-31 **[Eloisa|P]** in braccia d'**[Abelardo|P]**, terzine adesp., 32 **[Abelardo|P]** alla tomba di **[Eloisa|P]**, sonetto adesp., 33 elegia adesp., 33-38 terzine alla cetra del **[Bondi|P]**, 39 (**[Monti|P]**) Il congresso di **[Udine|L]**, canzone, 43 Il congresso di **[Vienna|L]**, 50 sullo stesso soggetto, ode adesp., 54 Sul ritorno dei cavalli di **[Venezia|L]**, ode adesp., 56 Nell'anniversario della morte di **[Luigi XVI|P]** (**[Monti|P]**), inno, 59 Inno alla gioventù italiana, 62 Alla libertà, inno, 66 Lettera di Madama **[Sibbau|P]** poetessa americana al suo amante il gen. **[Washington|P]** comandante supremo delle Colonie unite americane, 70 La presa di **[Mantova|L]** a **[Buonaparte|P?]** in lingua greca, Agatomero ad., 74 Alla repubblica di **[Venezia|L]**, ode adesp., 76 Inno alla pace, adesp., 79 Inno alla verginità adesp., 83 Inno all'arciduca **[Carlo|P]**, adesp., 88 Il trionfo della religione del trono, canzone adesp., 92 L'eguaglianza civile, ode adesp., 98 La povertà felice d'**[Epitteto|P?]**, ode adesp., 100 Alla contessa di **[Castelbarco|P?]**, ode del **[Parini|P]**, 105 La madre ebrea nell'assedio di **[Gerosolima|L]**, estemporanei del **[Giani|P]**, 110 L'**[Europa|P]** nel 1792, ode adesp., 112 Ad **[Amarilli Etrusca|P]**, ode adesp., 115 Invito di un solitario a un cittadino, ode adesp., 118 sciolti adesp., Werter a **[Carolina|P]**, 124 Alla città di **[Venezia|L]**, sonetto adesp., id. per l'imperatore **[Giuseppe II|P]**, epigramma adesp., 125 Ode a **[Silvia|P]**, adesp., 129 Sul ritorno dei cavalli di **[Venezia|L]**, epitaffio dell'avvocato **[Flamia|P]**, 130 (**[Monti|P]**) Il Globo aerostatico al signor di **[Montgolfier|P?]**, 136 **[Parini|P?]**, Il pericolo, ode, 140 Amor vergognoso, anacreontica adesp., 145 Il bacio, anacreontica adesp., 147 Amor peregrino alla principessa donna **[Costanza Braschi|P]**, rime adesp., 153 La fecondità alla stessa, rime adesp., 157 Il congedo alla gioventù, anacreontica adesp., 164 La nutrice, canzone adesp., 172 L'aura armonica, ode per **[S. Cecilia|S]**, adesp., 177 Ritratto di **[Clori|P]**, lettera a **[Fillide|P?]**, adesp., 187 Il laberinto, canzone adesp., 195 Ritratto dell'abate **[Lavagnoli|P]** all'abate **[Frugoni|P]**, 198 L'**[Estate|P]**, cantata per musica, 199 La pace di **[Campoformido|L]**, canzone adesp., 204 L'eternità, adesp., 212 Sopra il bisogno (**[Parini|P]**) Ode al signor **[Wirtz|P]**, 215 Elegia dall'inglese, Sopra un cimitero di campagna, adesp., 223 Ode adesp., 224 Ode adesp., 225 Ode adesp., 226 Ode adesp., 228 Ode adesp., 231 All'anno 1813, ottava adesp., 232 Canzone a **[Dori|P]**, traduzione dal tedesco, adesp., 236 La notte, in occasione di nozze, adesp., 241 Il talamo per nozze, adesp., 244 Al governo provvisorio di **[Padova|L]** nel 1797, sonetto adesp., 245 A **[Fillide|P?]** del Cav. **[Pindemonti|P]** nella sua relegazione in **[Palmanova|L]**, 251 In occasione del parto della Vice-regina d'**[Italia|L]**, Ode di **[Vincenzo Monti|P]**, 257 Il reingresso de' francesi in **[Italia|L]**, inno (**[Monti|P]**), 260 Il **[Barnabotto|P]**, ottava adesp., 261 Sciolti del capitano **[Ceroni|P]**, 267 In morte di **[Lorenzo Mascheroni|P]**, Cantica di **[Vincenzo Monti|P]**, 276 Canto secondo della stessa, 286 Canto terzo idem, 351 La vita dell'uomo, sonetto, 351 La provvidenza, sonetto adesp., 352 Per la città di **[Venezia|L]**, sonetto. Sul medesimo soggetto, sonetto, 353 Per la morte del Cav. **[Emo|P]**, sonetto. Sul medesimo soggetto, sonetto adesp., 354 Supplica al Senato del Cav. **[Pisani|P]** relegato in **[Verona|L]**, sonetto adesp. Risposta, sonetto adesp., 355 Sonetto adesp. Il ventaglio, sonetto adesp., 356 Il cavalier servente, sonetto adesp. Sonetto adesp., 357 Il matrimonio, sonetti XII adesp., 363 Sulla soppressione de' Gesuiti, sonetto adesp. In morte di **[Clemente XIV|P]** che soppresse i Gesuiti, sonetto adesp., 364 Sonetto. Dell'abate **[Bondi|P]** ex Gesuita. **[Altro|P]** sonetto adesp., 365 La distruzione del mondo, sonetto adesp. I **[Franchi-Muratori|O]**, sonetto adesp., 366 Il matrimonio in natura, sonetto adesp. Per nozze, sonetto adesp., 367 Una giovine in due gravi errori incorsa parla all'aborto, sonetto adesp. A **[Nice|L]**, sonetto adesp., 368 Due sonetti adesp., 369 Il gira sole, sonetto per nozze, ivi. Per nozze, sonetto, 370 Per nozze sacre, sonetto, ivi. Sulla concezione di **[Maria|P]**, sonetto adesp., 371 Fiat mihi secundum verbum tuum, sonetto adesp., ivi. Il santo **[Natale|P]**, sonetto adesp., 372 La morte di **[Cristo|P]**, sonetto adesp., ivi. La discesa di **[Cristo|P]** all'inferno, sonetto adesp., 373 Dio parla all'**[Italia|L]**, sonetto adesp. e così da pag. 351 a pag. 469 segue raccolta di sonetti d'argomento vario quasi tutti adespoti. Scrittura del sec. XIX, di pag. 469. Negli ultimi 10 fogli non numerati sta la tavola dei capoversi delle poesie. Rilegato in cartone. Sono tutte trascrizioni di poesie di varî autori, dei quali i più sono ignoti e non identificabili.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
-*Non classificati*: Nell'anniversario, Colonie, Agatomero, L'eguaglianza, Werter, Amor, L'aura, L'eternità, All'anno, La, Il, Dio
+*Non classificati*: Colonie, Agatomero, Werter
 
 ### 19
 
@@ -165,8 +157,6 @@ Scrittura del sec. XIX, di fol. 97, legato in cartone.
 
 *Coda*: Cartaceo · 1 vol. · stato: m.
 
-*Non classificati*: L'opuscolo
-
 ### 22
 
 **[Carboni Lorenzo|P?]**. Rime tratte da un manoscritto della libreria di **[S. Paolo di Macerata|S]**. Scrittura del sec. XIX, di fol. 76, rilegato in cartone.
@@ -175,12 +165,12 @@ Scrittura del sec. XIX, di fol. 97, legato in cartone.
 
 ### 23
 
-**[Miscellanea|P?]** poetica. Contiene: fol. 1-71 sonetti 139 del marchese di **[S. Filippo|S]** intorno alla lite fra gli Scalzi e i Gesuiti di **[Genova|L]** nell'anno 1722, narrata nei fol. 1 e 2. Fol. 72-86 altri sonetti su fatti politici dell'epoca, dal fol. 83 al 94 sonetti ed altri versi relativi al conclave del 1724, fol. 94 due sonetti adesp., fol. 95-98 sonetti varii di **[Antonio Tommasi|P]**, di **[Vincenzo Filicaia|P]**, di **[G. B. Pastorini|P]**, **[Alessandro Adorno|P]**, **[Pietro Zanotti|P]** (Sulla liberazione di **[Genova|L]** dagli austriaci), **[Gian Mario e Antonio Tommasi|P]**, 98-108 sonetti adesp. quasi tutti religiosi, 108-109 canzone di **[Metastasio|P]** per la liberazione di **[Olmütz|P?]**, 109 ode adesp. per la guerra intimata da **[Venezia|L]** al **[Turco|P?]**, 111 Risposta del **[Morosini|P]** ad un suo amico che lo avvisa di certi versi fatti contro de lui, 115 La formica, ode adesp., 119-120 due sonetti adesp., 121 sonetto di **[Silvestro Grimaldi|P]**, 121 id. di **[G. B. Donado|P]**, 122 sonetto adesp., 123 sonetto di **[Matteo Noris|P]** sulla statua di **[Luigi XIV|P]** e sonetto adesp., 123-126 Lamento di una monaca, 127-135 Relazione sull'assedio di **[Corfù|P?]** del 1745, fol. 136-152 Don **[Nicola|P]** 1745, sonetti varii, 153-185 sonetti, satire e pasquinate intorno ai fatti politici degli anni 1746-1755, fol. 185-194 Relazioni ed atti relativi al conclave del 1758, fol. 194-196 sonetti varii adesp. e canzoni adesp. intorno all'elezione di Papa **[Rezzonico|P]**, 196 sonetto del conte **[Daniel Florio|P]**, 196-199 varii sonetti adesp., 199-201 Epigrammi relativi al **[Friuli|L]**, 201-202 poesie religiose latine di **[Vincenzo Ferro|P]**, 203-204 poesie politiche adesp., 205 satira per la partenza del luogotenente **[Bertuccio Contarini|P]** e relazione di questi, 206 racconto dell'assassinio del Conte **[Gerolamo Cipolla|P]**, 207-212 sonetti varii adesp. ed ode per nozze e monacazioni, 213 satire per la partenza del luogotenente **[Leonardo Donà|P]**, 213-214 congratulazioni della repubblica Veneta a **[Giorgio III|P]**, 215 autoritratto del **[Lavagnolo|P]**, 216-226 sonetti e poesie di varii, 227 Epitaffi burleschi, 228-230 Satire per la partenza del luogotenente **[Zuane Cornaro|P]**, 231-234 poesie burlesche adesp., 235-249 Poesie varie per monacazioni e nozze, di **[Daniele Florio|P]**, **[Maffeo Albini|P]**, **[Prospero|P]** ed **[Antonio Antonini|P]**, 250-268 **[Giorgio Polcenigo|P]**, poemetti: «Il viaggio Concineo», «Fra **[Simone|P]**», «Il conte **[Orazio|P]** di **[Cusano|L]**», 268-278 Epitalamio del Conte **[Collalto|P]** per le nozze **[Savorgnan|P]** ed altre poesie per la prigionia di **[Giuseppe Pertoldeo|P]** e contro i canonici di **[Cividale|L]**, friulane e venete adesp., 278-284 sonetti e satire intorno al re di **[Prussia|L]** ed altri, 284-286 Ode adesp. al cardinale **[Aldobrandi|P]**, 287-293 **[Metastasio|P]**; I voti pubblici del 1776, 293-294 Il famôs negozi in Grizàn, satira friulana, 295-300 Poesie adesp. per monacazioni ed altri simili, 301-315 Poesie giocose degli abati Agenti e Veccei, 315-321 Partenope a' piè del Re cattolico 1764, stanze adesp., 322-325 Sonetti adesp., 325 sonetto del Conte **[Daniele Florio|P]**, 326-332 Meditazione del cardinale **[Passionei|P]** sul conclave 1758, fol. 333-337 sonetti adesp. sull'espulsione dei Gesuiti ed altri, 338 Pace fra **[Venezia|P]** e **[Tripoli|L]**, 339 due sonetti contro i gesuiti, adesp., 340 satire sui lettori di **[Padova|L]**, 341-342 sonetti adesp., 342 sonetto del conte **[Daniel Florio|P]**, 343-345 satire adesp. sul conte **[Carlo Pace|P]** e su **[M. A. Dolfin|P]**, 345 due poesie adesp., 346-347 satire contro i gesuiti e sino a fol. 352 contro diversi adesp., 352-355 sonetti varii di **[Olivo del Negro|P]** ed altri, 356-369 sonetti e pasquinate sulla morte di **[Clemente XIII|P]** e conclave susseguente, 370-372 Ode di **[Frugoni|P?]**. Il generale **[De Paoli|P]**, 373-382 poesie sull'elezione di **[Clemente XIV|P]**, sulla visita di **[Giuseppe II|P]** e sull'espulsione dei gesuiti, 383-384 sonetti varii, 385-390 Poesie sull'abito del Marchese **[Obizzi|P]** 1770 di varii, 390-391 sonetti adesp. sulla regolazione delle fraterie, 392 sonetto per l'ingresso del **[Procuratore Venier|P]**, 393-395 sonetti sulla regolazione delle fraterie, 396-399 satire contro i gesuiti, 400 Sore lis maris dal timp presint, 401-409 sonetti per monacazioni ed altri, 410-412 Gasparetto, ragguaglio del terremoto di **[Fiume|L]**, 413 Sonetto di **[Alvise Mocenigo|P]** per le nozze del conte **[Guglielmo de Fulcis|P]**. Alcune poesie sono in latino.  
+Miscellanea poetica. Contiene: fol. 1-71 sonetti 139 del marchese di **[S. Filippo|S]** intorno alla lite fra gli Scalzi e i Gesuiti di **[Genova|L]** nell'anno 1722, narrata nei fol. 1 e 2. Fol. 72-86 altri sonetti su fatti politici dell'epoca, dal fol. 83 al 94 sonetti ed altri versi relativi al conclave del 1724, fol. 94 due sonetti adesp., fol. 95-98 sonetti varii di **[Antonio Tommasi|P]**, di **[Vincenzo Filicaia|P]**, di **[G. B. Pastorini|P]**, **[Alessandro Adorno|P]**, **[Pietro Zanotti|P]** (Sulla liberazione di **[Genova|L]** dagli austriaci), **[Gian Mario e Antonio Tommasi|P]**, 98-108 sonetti adesp. quasi tutti religiosi, 108-109 canzone di **[Metastasio|P]** per la liberazione di **[Olmütz|P?]**, 109 ode adesp. per la guerra intimata da **[Venezia|L]** al **[Turco|P?]**, 111 Risposta del **[Morosini|P]** ad un suo amico che lo avvisa di certi versi fatti contro de lui, 115 La formica, ode adesp., 119-120 due sonetti adesp., 121 sonetto di **[Silvestro Grimaldi|P]**, 121 id. di **[G. B. Donado|P]**, 122 sonetto adesp., 123 sonetto di **[Matteo Noris|P]** sulla statua di **[Luigi XIV|P]** e sonetto adesp., 123-126 Lamento di una monaca, 127-135 Relazione sull'assedio di **[Corfù|L]** del 1745, fol. 136-152 Don **[Nicola|P]** 1745, sonetti varii, 153-185 sonetti, satire e pasquinate intorno ai fatti politici degli anni 1746-1755, fol. 185-194 Relazioni ed atti relativi al conclave del 1758, fol. 194-196 sonetti varii adesp. e canzoni adesp. intorno all'elezione di Papa **[Rezzonico|P]**, 196 sonetto del conte **[Daniel Florio|P]**, 196-199 varii sonetti adesp., 199-201 Epigrammi relativi al **[Friuli|L]**, 201-202 poesie religiose latine di **[Vincenzo Ferro|P]**, 203-204 poesie politiche adesp., 205 satira per la partenza del luogotenente **[Bertuccio Contarini|P]** e relazione di questi, 206 racconto dell'assassinio del Conte **[Gerolamo Cipolla|P]**, 207-212 sonetti varii adesp. ed ode per nozze e monacazioni, 213 satire per la partenza del luogotenente **[Leonardo Donà|P]**, 213-214 congratulazioni della repubblica Veneta a **[Giorgio III|P]**, 215 autoritratto del **[Lavagnolo|P]**, 216-226 sonetti e poesie di varii, 227 Epitaffi burleschi, 228-230 Satire per la partenza del luogotenente **[Zuane Cornaro|P]**, 231-234 poesie burlesche adesp., 235-249 Poesie varie per monacazioni e nozze, di **[Daniele Florio|P]**, **[Maffeo Albini|P]**, **[Prospero|P]** ed **[Antonio Antonini|P]**, 250-268 **[Giorgio Polcenigo|P]**, poemetti: «Il viaggio Concineo», «Fra **[Simone|P]**», «Il conte **[Orazio|P]** di **[Cusano|L]**», 268-278 Epitalamio del Conte **[Collalto|P]** per le nozze **[Savorgnan|P]** ed altre poesie per la prigionia di **[Giuseppe Pertoldeo|P]** e contro i canonici di **[Cividale|L]**, friulane e venete adesp., 278-284 sonetti e satire intorno al re di **[Prussia|L]** ed altri, 284-286 Ode adesp. al cardinale **[Aldobrandi|P]**, 287-293 **[Metastasio|P]**; I voti pubblici del 1776, 293-294 Il famôs negozi in **[Grizàn|L]**, satira friulana, 295-300 Poesie adesp. per monacazioni ed altri simili, 301-315 Poesie giocose degli abati **[Agenti|P]** e **[Veccei|P]**, 315-321 **[Partenope|L]** a' piè del Re cattolico 1764, stanze adesp., 322-325 Sonetti adesp., 325 sonetto del Conte **[Daniele Florio|P]**, 326-332 Meditazione del cardinale **[Passionei|P]** sul conclave 1758, fol. 333-337 sonetti adesp. sull'espulsione dei Gesuiti ed altri, 338 Pace fra **[Venezia|P]** e **[Tripoli|L]**, 339 due sonetti contro i gesuiti, adesp., 340 satire sui lettori di **[Padova|L]**, 341-342 sonetti adesp., 342 sonetto del conte **[Daniel Florio|P]**, 343-345 satire adesp. sul conte **[Carlo Pace|P]** e su **[M. A. Dolfin|P]**, 345 due poesie adesp., 346-347 satire contro i gesuiti e sino a fol. 352 contro diversi adesp., 352-355 sonetti varii di **[Olivo del Negro|P]** ed altri, 356-369 sonetti e pasquinate sulla morte di **[Clemente XIII|P]** e conclave susseguente, 370-372 Ode di **[Frugoni|P?]**. Il generale **[De Paoli|P]**, 373-382 poesie sull'elezione di **[Clemente XIV|P]**, sulla visita di **[Giuseppe II|P]** e sull'espulsione dei gesuiti, 383-384 sonetti varii, 385-390 Poesie sull'abito del Marchese **[Obizzi|P]** 1770 di varii, 390-391 sonetti adesp. sulla regolazione delle fraterie, 392 sonetto per l'ingresso del **[Procuratore Venier|P]**, 393-395 sonetti sulla regolazione delle fraterie, 396-399 satire contro i gesuiti, 400 Sore lis maris dal timp presint, 401-409 sonetti per monacazioni ed altri, 410-412 **[Gasparetto|P?]**, ragguaglio del terremoto di **[Fiume|L]**, 413 Sonetto di **[Alvise Mocenigo|P]** per le nozze del conte **[Guglielmo de Fulcis|P]**. Alcune poesie sono in latino.  
 Scrittura del sec. XVIII, di fol. 413, rilegato in pergamena.
 
 *Coda*: Cartaceo · 1 vol. · stato: b. · Acquisto 9 agosto 1886
 
-*Non classificati*: Scalzi, Lamento, Relazione, Epitaffi, Concineo, Epitalamio, Grizàn, Agenti, Veccei, Partenope, Meditazione, Gasparetto
+*Non classificati*: Scalzi, Concineo, Epitalamio, Meditazione
 
 ### 24
 
@@ -188,27 +178,19 @@ Raccolta di alcune Poesie popolari in lingua italiana e veneziana che si cantava
 
 *Coda*: Cartaceo · 1 vol. · stato: m. · Dono del D.r **[V. Joppi|P]** 24 ottobre 1880
 
-*Non classificati*: Endecasillabi, S'impetra, Villanella, Novissima, Vienna, Dio, Dragone
+*Non classificati*: Vienna
 
 ### 25
 
-Raccolta di poesie contenente: A pag. 1-50 La **[Faonide di Saffo|P]** voltata in italiano, pag. 53-93 le ultime lettere di **[Abelardo|P]** ad **[Eloisa|P]** voltate in italiano, pag. 94-111 Varie poesie amorose adesp., pag. 112-130 Il terremoto di **[Messina|L]**, pag. 131-226 altre poesie amorose adesp., meno l'egloga del **[Monti|P]** «Or son pur solo…» e alcune canzonette del **[Metastasio|P]**. Scrittura del sec. XIX di pag. 230, legato in cartone. Le poesie sono in generale buone e ben fatte.
+Raccolta di poesie contenente: A pag. 1-50 La **[Faonide|O]** di **[Saffo|P?]** voltata in italiano, pag. 53-93 le ultime lettere di **[Abelardo|P]** ad **[Eloisa|P]** voltate in italiano, pag. 94-111 Varie poesie amorose adesp., pag. 112-130 Il terremoto di **[Messina|L]**, pag. 131-226 altre poesie amorose adesp., meno l'egloga del **[Monti|P]** «Or son pur solo…» e alcune canzonette del **[Metastasio|P]**. Scrittura del sec. XIX di pag. 230, legato in cartone. Le poesie sono in generale buone e ben fatte.
 
 *Coda*: Cartaceo · 1 vol. · stato: m.
 
 ### 27
 
-**[Manus|P?]** oratoria sive Artis Rhetoricae libri quinque, trattato dei **[Padri Marino de Gratiis C. R. S.|P]** e **[Giovanni Batta Averoldo C. R. S.|P]** di mano del Co. **[Camillo Ottelio|P]**, dell'anno 1673. Di fol. 79 legato in pergamena con impressioni dorate.
+**[Manus|P?]** oratoria sive Artis Rhetoricae libri quinque, trattato dei Padri **[Marino de Gratiis|P]** C. R. S. e **[Giovanni Batta Averoldo|P]** C. R. S. di mano del Co. **[Camillo Ottelio|P]**, dell'anno 1673. Di fol. 79 legato in pergamena con impressioni dorate.
 
-*Coda*: Cartaceo · 1 vol. · stato: b. · Dai manoscritti Otelio.
-
-*Non classificati*: Otelio, Rhetoricae
-
-### 28
-
-Poesie adespote, fasc. 3. Il primo di fol. 6; il secondo di 8 e il terzo di 6. I due primi dell'istessa mano. Contenenti suppliche in versi ad un principe. **[Scrittura|P]** del sec. XVIII; il terzo di scrittura diversa pure dello stesso secolo. Fasc. sciolti.
-
-*Coda*: Cartaceo · 3 vol. · stato: b.
+*Coda*: Cartaceo · 1 vol. · stato: b. · Dai manoscritti **[Otelio|P]**.
 
 ### 29
 
@@ -218,12 +200,10 @@ Poesie adespote, fasc. 3. Il primo di fol. 6; il secondo di 8 e il terzo di 6. I
 
 ### 30
 
-**[Boccaccio|P?]** frammenti. Contenente: «Nel primo quaderno la novella «Alibec diviene romita a cui rustico romito insegna, etc.» (fol. 1-4) e la novella «Questa è una novelletta non compiuta come **[Philippo Balducci|P]** andò romito, etc.». Nel secondo quaderno (fol. 1-4) la novella «Madama Dianora domanda a Messer **[Ansaldo|P]**» (fol. 5-7) e epistola de una egregia nobile et famosa dona, etc.»  
+**[Boccaccio|P?]** frammenti. Contenente: «Nel primo quaderno la novella «**[Alibec|P]** diviene romita a cui rustico romito insegna, etc.» (fol. 1-4) e la novella «Questa è una novelletta non compiuta come **[Philippo Balducci|P]** andò romito, etc.». Nel secondo quaderno (fol. 1-4) la novella «Madama **[Dianora|P]** domanda a Messer **[Ansaldo|P]**» (fol. 5-7) e epistola de una egregia nobile et famosa dona, etc.»  
 Scrittura del sec. XV di due mani di mm. 218x147. Di fogli 16. I titoli sono scritti in rosso e così nel secondo quaderno tutte le iniziali con note di carattere moderno. Nel frontespizio si nota che la novella e la epistola del secondo quaderno furono pubblicate dal **[Viviani|P]** per nozze **[Mattioli|P]**. Non rilegato.
 
 *Coda*: Cartaceo · 1 vol. · stato: b. · Dono di **[Luigi Castelli|P]**.
-
-*Non classificati*: Alibec, Madama Dianora
 
 ### 31
 
@@ -233,7 +213,7 @@ Scrittura del sec. XV di due mani di mm. 218x147. Di fogli 16. I titoli sono scr
 
 ### 32
 
-**[Gianni|P?]**. **[L'assedio di Gerosolima|P]** versi dedicati alla marchesa **[Sampieri|P]**. Scrittura del sec. XVIII di pag. 12. Nelle ultime pag. tre sonetti dello stesso. Non leg.
+**[Gianni|P?]**. L'assedio di **[Gerosolima|L]** versi dedicati alla marchesa **[Sampieri|P]**. Scrittura del sec. XVIII di pag. 12. Nelle ultime pag. tre sonetti dello stesso. Non leg.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
@@ -248,8 +228,6 @@ Scrittura del sec. XV di due mani di mm. 218x147. Di fogli 16. I titoli sono scr
 Raccolta di poesie. Contenente: Poesie patriottiche del **[Guerrazzi|P]** ed altre adesp. ed il «Medico condotto» del **[Fusinato|P]**. Di carte 14, scrittura del sec. XIX. Nell'ultima carta vi ha la nota il 5 dicembre 1848. Non rilegato.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
-
-*Non classificati*: Nell'ultima
 
 ### 35
 
@@ -296,8 +274,6 @@ Scrittura del sec. XIX di carte 7, non legato.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
-*Non classificati*: L'uomo
-
 ### 42
 
 **[Seccante Vittorio|P?]**. Poesie varie. Raccolta di autografi dello stesso fatta dal D.r **[Antonio Moro di Gonars|P]** in **[Morsano di Strada|L]**. Di carte 271. Nel frontespizio la nota che l'autore nacque addì 4 nov. 1648. A carte 236-237 vi è un sonetto a stampa dell'anno 1697. Legato in mezza tela.
@@ -330,7 +306,7 @@ Raccolta di poesie latine di poeti italiani «ex veteribus editionibus excerpta�
 
 ### 46
 
-**[Ciro di Pers|P?]** e **[Carlo De Dottori|P]**. Poesie. Volumetto contenente: fol. 1-28 poesie di **[Ciro di Pers|P]**, fol. 52-74 poesie del conte **[Carlo De Dottori|P]**. Nel primo fol. vi ha un'epigrafe a **[Nicea|L]** in morte della quale scrive Fra **[Ciro|P]** i dodici primi sonetti e la nota di proprio pugno del Cav. **[F. Ciro di Pers|P]**. Così al fol. 52 vi ha il titolo «Ode del Co. **[Carlo De Dottori|P]**», di sua mano. Scrittura del sec. XVII di fol. 74, in-16°. I fogli 29-51 sono bianchi; rilegato in pergamena, ben conservato.
+**[Ciro di Pers|P?]** e **[Carlo De|P]** Dottori. **[Poesie|P]**. Volumetto contenente: fol. 1-28 poesie di **[Ciro di Pers|P]**, fol. 52-74 poesie del conte **[Carlo De|P]** Dottori. **[Nel|P]** primo fol. vi ha un'epigrafe a **[Nicea|L]** in morte della quale scrive Fra **[Ciro|P]** i dodici primi sonetti e la nota di proprio pugno del Cav. **[F. Ciro di Pers|P]**. Così al fol. 52 vi ha il titolo «Ode del Co. **[Carlo De|P]** Dottori», di sua mano. Scrittura del sec. XVII di fol. 74, in-16°. I fogli 29-51 sono bianchi; rilegato in pergamena, ben conservato.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
@@ -354,7 +330,7 @@ Poesie latine. Elegie, epistole in versi ed in prosa indirizzate a diversi friul
 
 ### 51
 
-**[Coquinato Francesco|P?]**. Poesie due: la prima dedicata a **[Servilio Treo. Scrittura|P]** del sec. XVI, fogli due sciolti.
+**[Coquinato Francesco|P?]**. Poesie due: la prima dedicata a **[Servilio Treo.|P]** Scrittura del sec. XVI, fogli due sciolti.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
@@ -389,8 +365,6 @@ Poesie adespote. Terzine fol. 1-6 intorno al **[Forno|P]**, fol. 7-10 intorno al
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
-*Non classificati*: L'autore
-
 ### 57
 
 **[Liliano Giulio|P?]**. Il **[Forno|P]**. Il **[Camerone|P]** e poesia per la guerra minacciata dal **[Turco|P]** a **[Venezia|L]** nel 1639. **[Carmi|P]** scritti sotto il pseudonimo di «Infarinato Academico sventato». In fine altri due sonetti dello stesso. Scrittura del sec. XVIII di carte 8 scritte, non legato.
@@ -413,7 +387,7 @@ Raccolta di poesie di **[Girolamo Sini|P]** e di altri; alcune in latino ed altr
 
 ### 60
 
-Raccolta di poesie latine di **[Marcantonio Amalteo|P]**, **[Gerolamo Sini|P]**, **[Filippo della Torre|P]** (fol. 1-2), di **[Giovanni Battista Frumentario|P]**, di **[Federico Frangipani|P]** (fol. 3-4). Da fol. 4 a 8 vi ha l'**[Encomiasticos|P]** del poeta **[Quinto Emiliano Cimbriaco|P]** a **[Nicolò Donato|P]** Patriarca. **[Scrittura|P]** del sec. XVIII di carte 10, sciolto.
+Raccolta di poesie latine di **[Marcantonio Amalteo|P]**, **[Gerolamo Sini|P]**, **[Filippo della Torre|P]** (fol. 1-2), di **[Giovanni Battista Frumentario|P]**, di **[Federico Frangipani|P]** (fol. 3-4). Da fol. 4 a 8 vi ha l'**[Encomiasticos|P]** del poeta **[Quinto Emiliano Cimbriaco|P]** a **[Nicolò Donato|P]** Patriarca. Scrittura del sec. XVIII di carte 10, sciolto.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
@@ -431,8 +405,6 @@ Raccolta di poesie. Carte 1-21 versi di **[Alessandro Emiliani|P]**, 22-23 di **
 Scrittura del sec. XVII di carte 31, legato in pergamena. Le prime carte del codice furono tagliate. Nel frontespizio sta la scritta «del **[Scevolini|P]**, del **[Emiliano|P]**». Nel tergo stanno scritte lodi della raccolta in carattere dell'epoca. Dev'essere una copia, essendo tutte scritte da un'unica mano.
 
 *Coda*: Cartaceo · 1 vol. · stato: c.
-
-*Non classificati*: Dev'essere
 
 ### 64
 
@@ -482,7 +454,7 @@ Raccolta di poesie contenente: 1° una poesia latina di **[Gian Battista Contari
 
 ### 72
 
-Raccolta di poesie dei sec. XV e XVI, contenente: 1° «**[Laudi|P]** sacre latine e poesia italiana "Sulla cometa"», adesp. del sec. XIV, con trascrizione di **[V. Joppi|P]**. 2° I primi versi dell'**[Eneide|O]**, sec. XV. 3° **[Laudi della S. Sindone|P]**. 4° Frammenti dell'**[Eneide di Virgilio|P]**, scrittura del sec. XV; dal verso 451 del libro terzo fino al 578 dello stesso libro. 5° Frammento di carme latino adesp. scr. sec. XV. 6° Altro frammento di carme latino adesp. dello stesso sec. 7° Canzone in versi italiani sdruccioli che narra fatti amorosi, con la scritta «Qual sempre fu, tal **[Hora|P]** anco amicissimo / in **[Padova|L]** scrisse il suo fedel **[Palladio|P]** / nel primo mese sotto il dì 14 M.**[D.I.C.|P]**». 8° Carme italiano adesp. 9° **[G. B. Beltran|P]** poesia ai Cap. **[Carrera|P]**, sulla servitù d'**[Italia|L]**, con correzioni d'altra mano, del sec. XVII. 10° Carme latino adesp. 11° Carme latino di soggetto amoroso, dato da **[Moimacco|L]**, da un Amphrysius a Fr. **[Man|P]**. Heliconio; scrittura del sec. XVII. 12° Davalus. Ode di **[Giulio Camillo|P]** di mano del co. **[Romano|P]** con nota di questi intorno alla pubblicazione dell'Ode avvenuta nella Nuova racc. d'op. **[Venezia|L]** 1755, pag. 273. Così il fascicolo si compone di 18 fogli, sciolti e parecchio guasti e alcuni mutili.
+Raccolta di poesie dei sec. XV e XVI, contenente: 1° «**[Laudi|P]** sacre latine e poesia italiana "Sulla cometa"», adesp. del sec. XIV, con trascrizione di **[V. Joppi|P]**. 2° I primi versi dell'**[Eneide|O]**, sec. XV. 3° **[Laudi della S. Sindone|P]**. 4° Frammenti dell'**[Eneide|O]** di **[Virgilio|P]**, scrittura del sec. XV; dal verso 451 del libro terzo fino al 578 dello stesso libro. 5° Frammento di carme latino adesp. scr. sec. XV. 6° Altro frammento di carme latino adesp. dello stesso sec. 7° Canzone in versi italiani sdruccioli che narra fatti amorosi, con la scritta «Qual sempre fu, tal **[Hora|P]** anco amicissimo / in **[Padova|L]** scrisse il suo fedel **[Palladio|P]** / nel primo mese sotto il dì 14 M.**[D.I.C.|P]**». 8° Carme italiano adesp. 9° **[G. B. Beltran|P]** poesia ai Cap. **[Carrera|P]**, sulla servitù d'**[Italia|L]**, con correzioni d'altra mano, del sec. XVII. 10° Carme latino adesp. 11° Carme latino di soggetto amoroso, dato da **[Moimacco|L]**, da un Amphrysius a Fr. **[Man|P]**. Heliconio; scrittura del sec. XVII. 12° Davalus. Ode di **[Giulio Camillo|P]** di mano del co. **[Romano|P]** con nota di questi intorno alla pubblicazione dell'Ode avvenuta nella Nuova racc. d'op. **[Venezia|L]** 1755, pag. 273. Così il fascicolo si compone di 18 fogli, sciolti e parecchio guasti e alcuni mutili.
 
 *Coda*: Cartaceo · 1 vol. · stato: c.
 
@@ -638,8 +610,6 @@ Ode ed inno latini adesp. Il primo dell'anno 1791 [1799] «Vota pro pace», seco
 
 *Coda*: Cartaceo · 1 vol. · stato: m.
 
-*Non classificati*: Nell'ultimo
-
 ### 96
 
 **[Palladio Enrico|P?]**. **[Carmi|P]** italiani e latini forse autografi. Da carte 1-102; le seguenti, copia posteriore sino a carte 133; le ultime certamente autografe. Vi è aggiunto un quadernetto staccato col titolo «Copia dall'originale di **[Enrico Palladio|P]**» di carte 8, di mano assai posteriore ed un fol. staccato con un sonetto autografo. Il manoscritto principale è di carte 138, scrittura del sec. XVII, legato in cartone.
@@ -681,12 +651,12 @@ Scrittura del sec. XVIII di carte complessive 123 riunite a fascicoli sotto cope
 
 ### 465
 
-Lettere dirette al Cav. Frà **[Ciro Di Pers|P]**; contiene: 1 da carte 1 a 128 lettere sessantaquattro autogr. scritte dal 1658 al 1666 e servono ad illustrare la Storia letteraria di quel tempo, del card. **[Giovanni Delfino|P]** Patr. d'**[Aquileia|L]**; carte 129, 130, 134, **[Carlo De' Dottori|P]**; carte 133, 137, **[Sertorio Orsato|P]**; carte 138, **[Claudio De Pazi|P]**; carte 141, **[Eusebio Caimo|P]** vesc. di **[Cittanova|L]**; carte 142, **[Giacomo Caimo|P]**; carte 145, 146 **[Ermes Colloredo|P]**; carte 149, 150, 153, 154, 157, **[Colloredo Nicolò|P]**; carte 158, 161, 162, **[Arnoldo di Zucco|P]**; carte 165, 166, **[Fulcherio di Spilimbergo|P]**; carte 169, **[Fabio|P]**?; carte 170, Giov. co. di **[Strasoldo|L]** et Soffimbergo; carte 173, **[Rodolfo Di Sbroiavacca|P]**; carte 174, **[Gio. Francesco di Prampero|P]**; carte 177, 178, 181, **[Liberale Motense|P?]**; carte 182, **[Aloigi Pozzi|P?]**; carte 185, **[Forza Vingenzo|P?]**; carte 186, **[Bollani Francesco|P]**; carte 189, **[Daniele Contini|P]**; carte 190, **[Bartolucci Bartoluccio|P?]**; carte 193, **[Locatello Gio. Ant.|P]**; carte 194, **[Ascanio Varotari|P]** giud.e all'Aquila; carte 197, **[Federici Domenico|P]**; carte 198, 199, lettera adesp. incompleta; carte 201, 202, 205, 206, **[Mariani Andrea|P]**; carte 209, **[Cesare Roberti|P]**?; carte 210, 211, **[Basso Gio. Batta|P]**; con un sonetto dello stesso in lode di Frà **[Ciro di Pers|P]**.  
+Lettere dirette al Cav. Frà **[Ciro Di Pers|P]**; contiene: 1 da carte 1 a 128 lettere sessantaquattro autogr. scritte dal 1658 al 1666 e servono ad illustrare la Storia letteraria di quel tempo, del card. **[Giovanni Delfino|P]** Patr. d'**[Aquileia|L]**; carte 129, 130, 134, **[Carlo|P]** De' Dottori; carte 133, 137, **[Sertorio Orsato|P]**; carte 138, **[Claudio De Pazi|P]**; carte 141, **[Eusebio Caimo|P]** vesc. di **[Cittanova|L]**; carte 142, **[Giacomo Caimo|P]**; carte 145, 146 **[Ermes Colloredo|P]**; carte 149, 150, 153, 154, 157, **[Colloredo Nicolò|P]**; carte 158, 161, 162, **[Arnoldo di Zucco|P]**; carte 165, 166, **[Fulcherio di Spilimbergo|P]**; carte 169, **[Fabio|P]**?; carte 170, Giov. co. di **[Strasoldo|L]** et Soffimbergo; carte 173, **[Rodolfo Di Sbroiavacca|P]**; carte 174, **[Gio. Francesco di Prampero|P]**; carte 177, 178, 181, **[Liberale Motense|P?]**; carte 182, **[Aloigi Pozzi|P?]**; carte 185, **[Forza Vingenzo|P?]**; carte 186, **[Bollani Francesco|P]**; carte 189, **[Daniele Contini|P]**; carte 190, **[Bartolucci Bartoluccio|P?]**; carte 193, **[Locatello Gio. Ant.|P]**; carte 194, **[Ascanio Varotari|P]** giud.e all'Aquila; carte 197, **[Federici Domenico|P]**; carte 198, 199, lettera adesp. incompleta; carte 201, 202, 205, 206, **[Mariani Andrea|P]**; carte 209, **[Cesare Roberti|P]**?; carte 210, 211, **[Basso Gio. Batta|P]**; con un sonetto dello stesso in lode di Frà **[Ciro di Pers|P]**.  
 Scrittura del sec. XVII, di carte complessive 213 riunite in volume e legate in cartone.
 
 *Coda*: Cartaceo · 1 vol. · stato: b.
 
-*Non classificati*: Giov., Soffimbergo
+*Non classificati*: De', Giov., Soffimbergo
 
 ### 466
 
@@ -709,7 +679,7 @@ A carte 47-58 tre copie; due di mano del sec. XVIII, l'altra del sec. XIX conten
 
 ### 468
 
-Lettere storiche e letterarie de' sec. XVI e XVII, apografe. A carte 1-2, **[Di Paschati Filippo|P]**, epist. latina; carte 3, **[Giovanni Di Spilimbergo|P]**, epist. latina al Gran Maestro di **[Rodi|L]**; c. 5, **[Jacopo di Porcia|P]**, epist. agli udinesi (Mss. **[Fontanini|P]** Bibl. di **[S. Daniele|S]**); c. 7, **[Paolo Manuzio|P]**, epist. latina a **[Giulio Belgrado|P]**; c. 7 verso, **[Giuseppe Belgrado|P]** e **[Giulio|P]**, versi latini in morte di **[Irene di Spilimbergo|P]** (1561); 8, **[Giulio Belgrado|P]**, epicedio; c. 9-13, Epistole di uomini illustri in latino, stampate 1568 (apogr. del cano. **[De Renaldis|P]**); c. 15, **[Pietro Delfino|P]** ab. (1517) apogr. del **[Coluta|P]**; c. 17, **[Jacopo di Porcia|P]**, due epist. a **[Franc. Amalteo|P]**; c. 19, **[Francesco Amalteo|P]** a **[Gerolamo Aleandro|P]** (1537) apogr. **[D. Coluta|P]**; c. 22, **[Giovanni Torquato|P]** (1529); c. 23, Zacagni ab., indicazioni di lettere degli **[Amasei|P?]** ed **[Amalteo|P]** dall'indice Biblioteca Ambrosiana; c. 24, **[Irene di Spilimbergo|P]**, nota adesp. informativa; c. 26, **[Giovanni Villani|P]**, lettera di alcuni fiorentini dimoranti in **[Udine|L]** al comune di **[Fiorenza|P]** (1347); c. 28-36, **[Girolamo Savorgnano|P]**, lettera al Doge di **[Venezia|L]** 15 marzo 1510 (tratta da copia autentica della Bibl. Bartoliniana). Scritture di mani diverse dei sec. XVI e XVII, di carte complessive 36 riunite in copertina.
+Lettere storiche e letterarie de' sec. XVI e XVII, apografe. A carte 1-2, **[Di Paschati Filippo|P]**, epist. latina; carte 3, **[Giovanni Di Spilimbergo|P]**, epist. latina al Gran Maestro di **[Rodi|L]**; c. 5, **[Jacopo di Porcia|P]**, epist. agli udinesi (Mss. **[Fontanini|P?]** Bibl. di **[S. Daniele|S]**); c. 7, **[Paolo Manuzio|P]**, epist. latina a **[Giulio Belgrado|P]**; c. 7 verso, **[Giuseppe Belgrado|P]** e **[Giulio|P]**, versi latini in morte di **[Irene di Spilimbergo|P]** (1561); 8, **[Giulio Belgrado|P]**, epicedio; c. 9-13, Epistole di uomini illustri in latino, stampate 1568 (apogr. del cano. **[De Renaldis|P]**); c. 15, **[Pietro Delfino|P]** ab. (1517) apogr. del **[Coluta|P]**; c. 17, **[Jacopo di Porcia|P]**, due epist. a **[Franc. Amalteo|P]**; c. 19, **[Francesco Amalteo|P]** a **[Gerolamo Aleandro|P]** (1537) apogr. **[D. Coluta|P]**; c. 22, **[Giovanni Torquato|P]** (1529); c. 23, Zacagni ab., indicazioni di lettere degli **[Amasei|P?]** ed **[Amalteo|P]** dall'indice Biblioteca Ambrosiana; c. 24, **[Irene di Spilimbergo|P]**, nota adesp. informativa; c. 26, **[Giovanni Villani|P]**, lettera di alcuni fiorentini dimoranti in **[Udine|L]** al comune di **[Fiorenza|P]** (1347); c. 28-36, **[Girolamo Savorgnano|P]**, lettera al Doge di **[Venezia|L]** 15 marzo 1510 (tratta da copia autentica della Bibl. Bartoliniana). Scritture di mani diverse dei sec. XVI e XVII, di carte complessive 36 riunite in copertina.
 
 *Coda*: Cartaceo · stato: b.
 
@@ -741,7 +711,7 @@ Fascicolo di carte complessive 140 riunite in copertina e numerate.
 
 *Coda*: Cartaceo · stato: b.
 
-*Non classificati*: Rota, Apparteneva, L'anonimo, Sandaniello
+*Non classificati*: Rota, Apparteneva, Sandaniello
 
 ### 471
 
@@ -987,7 +957,7 @@ Fasc. 4 di complessive carte 78 riunite in copertina e numerate.
 
 ### 497
 
-Lettere di varii dirette al prof. **[Pietro Bonini|P]**, autografi del sec. XIX. Contenente: a carte 1-29, lett. otto di **[Caterina Percoto|P]** (autogr.) dal 1876 al 1887, cui sono uniti due biglietti-visita ed una cartolina postale; carte 30-32, lettera di **[Bernardino Zendrini|P]** (autogr.), **[Padova|L]** 3 luglio 1871; carte 33-35, lettera di **[Francesco D.o Guerrazzi|P]** (autogr.), **[Livorno|L]** 20 agosto 1873, cui sono uniti due numeri (133/4) del giornale "**[L'eco del Tirreno|P]**" di **[Livorno|L]**, contenenti il sunto di tre conferenze del prof. **[Bonini|P]** con prefazione di **[F. D. Guerrazzi|P]**; carte 36-39, due lettere di **[Giuseppe Garibaldi|P]** (autogr.), Caprera 7 sett. 1868 e 10 maggio 1870; carte 40-42, lettera di **[Benedetto Cairoli|P]** (autogr.), Gropallo 11 agosto 18…; carte 43-44, lettera di **[Carlo Tenca|P]** (autogr.) diretta a **[Caterina Percoto|P]** a **[S. Lorenzo|S]**, donata da questa al **[Bonini|P]**, **[Milano|L]** 6 dicembre 1857; carte 45-46, poesia friulana satirica di **[Pietro Zorutti|P]** (autogr.); carte 47-56, tre biglietti visita dei seguenti: **[Alessandro Manzoni|P]**, **[Milano|L]**, 14 giugno 1871 (indirizzo autogr.): **[Quintino Sella|P]**, **[Bologna|L]**, ottobre 1878: co. **[Costantino Nigra|P]** ambasciatore d'**[Italia|L]** a **[Vienna|L]**, 1887: quattro cartoline autografe di: **[Edmondo de Amicis|P]**, **[Torino|L]**, 20 dic. 1892; **[Giosuè Carducci|P]**, **[Bologna|L]**, 21 dic. 1891; **[Luigi Morandi|P]**, **[Roma|L]**, 3 maggio 1887; **[Fausto Bonò|P]**, **[Portogruaro|L]**, 11 maggio 1887; carte 57-59, lettera del prof. **[Graziadio Ascoli|P]**, **[Milano|L]**, 8 novembre 1881, con la trascrizione scientifica della poesia friulana "Un lott" di **[Pietro Zorutti|P]**. A carte 60 vi ha un autogr. di **[Carlo Leoni|P]**, **[Padova|L]** 20 agosto 1873, che raccomanda al **[Bonini|P]** un cenno critico: a carte 61, consegna degli autografi al Comm. prof. **[G. A. Pirona|P]**, conservatore del **[Civico|P]** Museo e Biblioteca di **[Udine|L]** (Vedi N.° 81-82 degli Atti).  
+Lettere di varii dirette al prof. **[Pietro Bonini|P]**, autografi del sec. XIX. Contenente: a carte 1-29, lett. otto di **[Caterina Percoto|P]** (autogr.) dal 1876 al 1887, cui sono uniti due biglietti-visita ed una cartolina postale; carte 30-32, lettera di **[Bernardino Zendrini|P]** (autogr.), **[Padova|L]** 3 luglio 1871; carte 33-35, lettera di **[Francesco D.o Guerrazzi|P]** (autogr.), **[Livorno|L]** 20 agosto 1873, cui sono uniti due numeri (133/4) del giornale "L'eco del **[Tirreno|P]**" di **[Livorno|L]**, contenenti il sunto di tre conferenze del prof. **[Bonini|P]** con prefazione di **[F. D. Guerrazzi|P]**; carte 36-39, due lettere di **[Giuseppe Garibaldi|P]** (autogr.), Caprera 7 sett. 1868 e 10 maggio 1870; carte 40-42, lettera di **[Benedetto Cairoli|P]** (autogr.), Gropallo 11 agosto 18…; carte 43-44, lettera di **[Carlo Tenca|P]** (autogr.) diretta a **[Caterina Percoto|P]** a **[S. Lorenzo|S]**, donata da questa al **[Bonini|P]**, **[Milano|L]** 6 dicembre 1857; carte 45-46, poesia friulana satirica di **[Pietro Zorutti|P]** (autogr.); carte 47-56, tre biglietti visita dei seguenti: **[Alessandro Manzoni|P]**, **[Milano|L]**, 14 giugno 1871 (indirizzo autogr.): **[Quintino Sella|P]**, **[Bologna|L]**, ottobre 1878: co. **[Costantino Nigra|P]** ambasciatore d'**[Italia|L]** a **[Vienna|L]**, 1887: quattro cartoline autografe di: **[Edmondo de Amicis|P]**, **[Torino|L]**, 20 dic. 1892; **[Giosuè Carducci|P]**, **[Bologna|L]**, 21 dic. 1891; **[Luigi Morandi|P]**, **[Roma|L]**, 3 maggio 1887; **[Fausto Bonò|P]**, **[Portogruaro|L]**, 11 maggio 1887; carte 57-59, lettera del prof. **[Graziadio Ascoli|P]**, **[Milano|L]**, 8 novembre 1881, con la trascrizione scientifica della poesia friulana "Un lott" di **[Pietro Zorutti|P]**. A carte 60 vi ha un autogr. di **[Carlo Leoni|P]**, **[Padova|L]** 20 agosto 1873, che raccomanda al **[Bonini|P]** un cenno critico: a carte 61, consegna degli autografi al Comm. prof. **[G. A. Pirona|P]**, conservatore del **[Civico|P]** Museo e Biblioteca di **[Udine|L]** (Vedi N.° 81-82 degli Atti).  
 Fascicoli 9 di complessive carte 61 riunite in copertina e numerate.
 
 *Coda*: Cartaceo · 1 vol. · stato: b. · Dono del prof. **[Piero Bonini|P]**, 16-XII-1894.
@@ -1018,5 +988,5 @@ Fascicoli 9 di complessive carte 61 riunite in copertina e numerate.
 
 *Annotazione*: «Amarli»
 
-*Non classificati*: C'erano, Amarli, Bozzoli, Morghen, Vopato, Tot.
+*Non classificati*: Amarli, Bozzoli, Morghen, Vopato, Tot.
 
