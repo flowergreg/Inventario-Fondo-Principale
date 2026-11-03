@@ -1,5 +1,5 @@
 # titoli e qualifiche che precedono un nome di persona (non fanno parte del nome)
-co. conte contessa c.te cte co.ssa
+co. conte contessa k.r clariss. clarissimo c.te cte co.ssa
 ab. abate abb. abbate
 mons. monsignor monsignore msgr. msg. mgr.
 d.r dr. dott. dottor dottore dott.ssa
@@ -13,5 +13,5 @@ march. marchese bar. barone duca principe re imperatore imperatrice papa doge
 luogot. luogotenente l.te l. t. ser messer mag.co ecc.mo ill.mo
 gen. generale capitano cap. colonnello ten.
 avv. avvocato ing. ingegnere notaio not.
-gesuita gesuiti cappuccino francescano domenicano minore conventuale
+gesuita Gesuita gesuiti cappuccino francescano domenicano minore conventuale
 libraio stampatore tipografo pittore scultore architetto medico chirurgo speziale orefice

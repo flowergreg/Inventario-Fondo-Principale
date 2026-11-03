@@ -18,7 +18,7 @@ RADICE = Path(__file__).resolve().parent.parent
 DB = RADICE / "dati" / "inventario.sqlite"
 OUT = RADICE / "report" / "report_fase_3.md"
 OUT_VOCI = RADICE / "report" / "fase_3_voci_annotate.md"
-SIGLA = {"persona": "P", "luogo": "L", "santo": "S"}
+SIGLA = {"persona": "P", "luogo": "L", "santo": "S", "opera": "O"}
 
 
 def annota(testo, menzioni):
@@ -43,7 +43,7 @@ def main():
       f"(con almeno una menzione: {n_voci}). Le voci annotate sono in `fase_3_voci_annotate.md`.\n")
     w("## 1. Menzioni\n")
     w("| Tipo | alta | media | bassa | Totale |\n|---|---|---|---|---|")
-    for tipo in ("persona", "luogo", "santo"):
+    for tipo in ("persona", "luogo", "santo", "opera"):
         conti = {a: n for a, n in q("SELECT affidabilita, count(*) FROM menzioni WHERE tipo=? GROUP BY 1", tipo)}
         w(f"| {tipo} | {conti.get('alta', 0)} | {conti.get('media', 0)} | {conti.get('bassa', 0)} | {sum(conti.values())} |")
     w("")
@@ -78,7 +78,7 @@ def main():
 
     # voci annotate
     v_out = ["# Fase 3 — voci con le menzioni segnate\n",
-             "Legenda: **[Nome|P]** persona, **[Nome|L]** luogo, **[Nome|S]** santo; «?» = affidabilità bassa; "
+             "Legenda: **[Nome|P]** persona, **[Nome|L]** luogo, **[Nome|S]** santo, **[Titolo|O]** opera; «?» = affidabilità bassa; "
              "«→» = correzione del curatore. Sotto il testo: coda, annotazioni e parole non classificate.\n"]
     for vid, numero, testo, coda in q("SELECT id, numero, testo, coda FROM voci WHERE id IN "
                                       "(SELECT voce FROM menzioni UNION SELECT voce FROM non_classificati) ORDER BY id"):
