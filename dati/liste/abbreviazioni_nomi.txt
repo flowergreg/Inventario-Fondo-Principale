@@ -50,3 +50,9 @@ M. A.	Marco Antonio
 A. M.	Angelo Maria
 Marc'Antonio	Marco Antonio
 Marcantonio	Marco Antonio
+Ja.	Jacopo
+Jo.	Johannes
+Joh.	Johannes
+Giac.	Giacomo
+Giov.	Giovanni
+Piet.	Pietro

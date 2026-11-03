@@ -226,6 +226,7 @@ PREPOSIZIONI_LUOGO = PREPOSIZIONI_LUOGO_FORTI | {"di", "de", "da"}
 PARTICELLE_MAIUSCOLE = {"De", "Di", "Da", "Del", "Della", "Delle", "Dei", "Degli", "Dal", "Dalla", "De'", "De’",
                         "Van", "Von", "Du", "Des"}
 SANTI = re.compile(r"^(?:S\.|SS\.|Ss\.|S\.ta|S\.to|San|Santo|Santa|Sant['’]|Santi|Sancti|Sancte|Sanctus|Sancta)$")
+FAMIGLIA_DEBOLE = {"i", "dei", "ai", "dai", "coi", "nozze", "archivio", "documenti", "scritt.", "copia", "mano"}
 FAMIGLIA = {"famiglia", "fam.", "casa", "casato", "eredi", "nobili", "conti", "fratelli", "f.lli"}
 FONDI = {"Raccolta", "Racc.", "Collezione", "Collez.", "Coll.", "Legato", "Fondo", "Dono", "Provenienza",
          "Acquisto", "Lascito", "Deposito", "Proven."}
@@ -488,6 +489,10 @@ class Estrattore:
             return "persona", "fondo_o_provenienza", "media"     # «Dono Pagani», «Legato Toppo»
         if p1 in FAMIGLIA:
             return "persona", "famiglia", "alta"                 # «stemma della famiglia Belgrado»
+        if p1 in FAMIGLIA_DEBOLE and not citta_o_regione:
+            # plurali di gruppo («i Turchi», «dei Barnabiti», «i Provveditori»): affidabilità bassa, da rivedere
+            gruppo = len(maiusc) == 1 and re.search(r"(?:ori|iti|ani|ini|esi|ensi|chi|ssi)$", maiusc[0]["parola"])
+            return "persona", "famiglia", "bassa" if gruppo else "media"   # «dei Savorgnan», «scritt. Joppi»
         citta = chiave_luogo(span_testo.rstrip(".")) in self.luoghi["__citta__"]
         if len(maiusc) == 1 and nome and (luogo != "forte" or not citta_o_regione) and (
                 p1 not in PREPOSIZIONI_LUOGO_FORTI or not citta_o_regione):
@@ -748,6 +753,31 @@ def main():
                 con.execute("INSERT INTO non_classificati (voce, sede, annotazione, testo_esatto, inizio, fine)"
                             " VALUES (?,?,?,?,?,?)", (vid, sede, aid, s, a, b))
                 n_s += 1
+    # cognomi riconosciuti con sicurezza come persona (almeno tre volte, mai come luogo): valgono
+    # anche dove compaiono da soli e le regole non li hanno classificati («Nel frontespizio «Pirona»»)
+    sicuri = Counter()
+    luoghi_visti = set()
+    for t, tipo, aff in con.execute("SELECT testo_esatto, tipo, affidabilita FROM menzioni"):
+        ultima = t.split()[-1] if t.split() else t
+        if tipo == "persona" and aff == "alta":
+            sicuri[ultima] += 1
+        elif tipo == "luogo":
+            luoghi_visti.add(ultima)
+    noti = {c for c, n in sicuri.items() if n >= 3 and c not in luoghi_visti and len(c) > 3}
+    righe = con.execute("SELECT id, voce, sede, annotazione, testo_esatto, inizio, fine FROM non_classificati").fetchall()
+    for nid, vid, sede, aid, t, a0, a1 in righe:
+        if t in noti:
+            seg = None
+            if sede == "testo":
+                r = con.execute("SELECT id FROM segmenti WHERE voce=? AND inizio<=? AND ?<fine", (vid, a0, a0)).fetchone()
+                seg = r[0] if r else None
+            con.execute(
+                "INSERT INTO menzioni (voce, sede, annotazione, segmento, testo_esatto, inizio, fine, tipo,"
+                " correzione, metodo, affidabilita) VALUES (?,?,?,?,?,?,?,'persona',NULL,'noto_altrove','media')",
+                (vid, sede, aid, seg, t, a0, a1))
+            con.execute("DELETE FROM non_classificati WHERE id=?", (nid,))
+            n_m += 1
+            n_s -= 1
     con.commit()
     con.close()
     print(f"Menzioni: {n_m} — non classificati: {n_s}" + (" (campione)" if campione else ""))
