@@ -94,9 +94,12 @@ def luoghi():
     i_reg = intest.index("Denominazione Regione")
     i_cod = intest.index("Codice Comune formato alfanumerico")
     i_cap = next(k for k, h in enumerate(intest) if h.startswith("Flag Comune capoluogo"))
+    capoluoghi = []
     for r in righe[1:]:
         if len(r) <= i_reg:
             continue
+        if r[i_cap] == "1":
+            capoluoghi.append(r[i_den])
         forte = r[i_reg] in ("Friuli-Venezia Giulia", "Veneto") or r[i_cap] == "1"
         url = "https://www.istat.it/classificazione/codici-dei-comuni-delle-province-e-delle-regioni/"
         for f in [r[i_den]] + [x for x in r[i_alt].split("/") if x]:
@@ -134,6 +137,8 @@ def luoghi():
                 aggiungi(f, peso, "GeoNames", r[0], url, pop >= 500000)
     for v in voci:
         voci[v] = voci[v] + ("1" if v in citta else "0",)
+    LISTE.mkdir(parents=True, exist_ok=True)
+    (LISTE / "capoluoghi.txt").write_text("\n".join(sorted(capoluoghi)) + "\n", encoding="utf-8")
     return voci
 
 

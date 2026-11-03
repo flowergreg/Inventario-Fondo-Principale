@@ -1,0 +1,8 @@
+# parole con iniziale maiuscola che non sono nomi di persona o di luogo (lista del curatore)
+Vale Amen Deo Dominus Domini Iste Ista Cuncta Incipit Explicit Expliciunt Finis Laus Ego Nota Notule Nos Hic Haec
+Explicit Expl Inc Incip Explic Item Ibid Idem Id Ivi Vide Cfr Sec Secolo Anno Anni Opere Opera Tomo Libro
+Già Or Ora Però Poi Così Questo Questa Quello Quella Ecco Oh Ah Viva Tutti Tutte
+# parole dei titoli latini
+Epistolae Epistola Epistolarum Sinonima Synonyma Sententiae Sententia Epitaphium Epitaphia Carmina Carmen Liber Libri
+Historia Historiae Vita Vitae Commentarius Commentaria Opera Opuscula Annales Chronicon Statuta Constitutiones Acta
+Excerpta Index Regulae Regula Ars Artis Tractatus Summa Oratio Orationes Elegia Elegiae Maiorem Macte Magistri
