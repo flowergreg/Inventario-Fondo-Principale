@@ -6,26 +6,26 @@ Voci elaborate: **135** (con almeno una menzione: 129). Le voci annotate sono in
 
 | Tipo | alta | media | bassa | Totale |
 |---|---|---|---|---|
-| persona | 1141 | 227 | 37 | 1405 |
-| luogo | 553 | 18 | 16 | 587 |
+| persona | 1147 | 224 | 37 | 1408 |
+| luogo | 553 | 17 | 16 | 586 |
 | santo | 39 | 0 | 0 | 39 |
 
-Per sede: annotazione 9, coda 29, testo 1993
+Per sede: annotazione 9, coda 29, testo 1995
 
 ### Metodi
 
 | Tipo | Metodo | Affidabilità | Numero |
 |---|---|---|---|
-| luogo | lista_luoghi_forte | alta | 519 |
-| luogo | provenienza_citta | alta | 30 |
-| luogo | lista_luoghi_contesto | media | 16 |
+| luogo | lista_luoghi_forte | alta | 518 |
+| luogo | provenienza_citta | alta | 31 |
+| luogo | lista_luoghi_contesto | media | 15 |
 | luogo | lista_luoghi_medio | bassa | 14 |
 | luogo | luogo_ed_editore | alta | 4 |
 | luogo | lista_luoghi_contesto | bassa | 2 |
 | luogo | luogo_con_specificazione | media | 2 |
-| persona | nome_di_battesimo | alta | 1038 |
-| persona | solo_nome_di_battesimo | media | 142 |
-| persona | titolo | alta | 91 |
+| persona | nome_di_battesimo | alta | 1041 |
+| persona | solo_nome_di_battesimo | media | 139 |
+| persona | titolo | alta | 94 |
 | persona | articolo | media | 51 |
 | persona | particella | media | 23 |
 | persona | sequenza_maiuscole | bassa | 20 |
@@ -86,5 +86,5 @@ Ceneda [lista_luoghi_medio] (2), Valenti [lista_luoghi_medio] (2), Bertoli [list
 
 ## 5. Non classificati (parole maiuscole né persona né luogo), per frequenza
 
-Cartaceo (130), Scrittura (88), Nell'ultimo (3), d'Italia (3), dell'I (3), Amalteo (2), Cantiche (2), Concina (2), Dio (2), Dotti (2), Fillide (2), Parini (2), Precede (2), d'Abelardo (2), dell'Amalteo (2), A (1), Acquistato (1), Agatomero (1), Agenti (1), Agr (1), Alibec (1), All'anno (1), Altafiore (1), Amarli (1), Amor (1), Amphrysius (1), Anguigeri Ducis (1), Antongiuseppe (1), Apparteneva (1), Archiepiscopi (1), Assertiones (1), Austriacorum (1), Autografi (1), Bajamonte Tiepolo (1), Barcelloni (1), Basadonna (1), Bembo (1), Benvenisti (1), Bettio (1), Bicego (1), Bozzoli (1), Brusuglio (1), Buje (1), Buonaparte (1), C'erano (1), Capodistria (1), Caprera (1), Carnicum (1), Celti (1), Cimbriaco (1), Clebain (1), Cogitanti (1), Colonie (1), Commissione (1), Concineo (1), Corfù (1), Coridone (1), Davalus (1), Dev'essere (1), Dorindo (1), Dragone (1), Duplan (1), Ellena (1), Endecasillabi (1), Epitaffi (1), Epitalamio (1), Fabrizzi (1), Famagosta (1), Fiat (1), Fillinesta (1), Fontainebleau (1), Fontanini (1), Fracastoro (1), Gajanine (1), Galeppi (1), Gallico (1), Gasparetto (1), Giov. (1), Girardi (1), Greatti (1), Grizàn (1), Gropallo (1), Heliconio (1), Hymnorum (1), Il (1), Illirico (1), Immedio (1), Infarinato Academico (1), Jeregaky (1), Joppi (1), L'Estate (1), L'Europa (1), L'anonimo (1), L'aura (1), L'autore (1), L'eguaglianza (1), L'eternità (1), L'opuscolo (1), L'uomo (1), La (1), Lambertini (1), Lamento (1), Leonarducci (1), M. (1), Maladeto (1), Manus (1), Mattioli (1), Mazzoliceti (1), Mearum (1), Meditazione (1), Miscellanea (1), Molza (1), Morghen (1), Muratori (1), Murtola (1), N.B. Non (1), Napoleonidi (1), Nebek (1), Nell'anniversario (1), Nell'ultima (1), Nisibis (1), Novissima (1), Numis (1), Odae. (1), Odarum (1), Olmütz (1), Orcenico (1), Otelio (1), Ottelio (1), Paradisi (1), Parenzo (1), Partenope (1), Pascutti (1), Passaporto (1), Pastorella (1), Patria (1), Paulucci (1), Penn (1), Pervenne (1), Pietramala (1), Pillarino (1), Pirona (1), Pontano (1), Pregadi (1), Priuli (1), Pronomen (1), R. (1), Ranziano (1), Rasponi (1), Relazione (1), Reliqua (1), Rev.mo (1), Rhetoricae (1), Rota (1), S'impetra (1), Sanchio (1), Sandaniello (1), Savorgnan (1), Scalzi (1), Seguono (1), Semel (1), Sententiæ (1), Serras (1), Soffimbergo (1), Somersetshire England (1), Sommari (1), Soresi (1), Sostituito (1), Spinola (1), Starai (1), Séras (1), Taigeto (1), Talot (1), Terrarum (1), Tot. (1), Tritonio (1), Turre (1), Ugonio (1), Vacani (1), Veccei (1), Villanella (1), Viriatus (1), Vopato (1), Vota (1), Werter (1), Xerapellinus (1), Yeovil (1), Yhesus (1), Zacagni (1), Zambon (1), Zannier (1), d'Atthemis (1), d'Epitteto (1), dell'Argagna (1), dell'Atto (1), dell'Eneide (1), dell'Eneidi (1), dell'Ode (1)
+Cartaceo (130), Scrittura (88), Nell'ultimo (3), d'Italia (3), dell'I (3), Amalteo (2), Cantiche (2), Concina (2), Dio (2), Dotti (2), Fillide (2), Parini (2), Precede (2), d'Abelardo (2), dell'Amalteo (2), A (1), Acquistato (1), Agatomero (1), Agenti (1), Agr (1), Alibec (1), All'anno (1), Altafiore (1), Amarli (1), Amor (1), Amphrysius (1), Anguigeri Ducis (1), Apparteneva (1), Archiepiscopi (1), Assertiones (1), Austriacorum (1), Autografi (1), Bajamonte Tiepolo (1), Barcelloni (1), Basadonna (1), Bembo (1), Bettio (1), Bicego (1), Bozzoli (1), Brusuglio (1), Buje (1), Buonaparte (1), C'erano (1), Capodistria (1), Caprera (1), Carnicum (1), Celti (1), Cimbriaco (1), Cogitanti (1), Colonie (1), Commissione (1), Concineo (1), Corfù (1), Coridone (1), Davalus (1), Dev'essere (1), Dorindo (1), Dragone (1), Duplan (1), Ellena (1), Endecasillabi (1), Epitaffi (1), Epitalamio (1), Fabrizzi (1), Famagosta (1), Fiat (1), Fillinesta (1), Fontainebleau (1), Fontanini (1), Fracastoro (1), Gajanine (1), Galeppi (1), Gallico (1), Gasparetto (1), Giov. (1), Girardi (1), Greatti (1), Grizàn (1), Gropallo (1), Heliconio (1), Hymnorum (1), Il (1), Illirico (1), Immedio (1), Infarinato Academico (1), Jeregaky (1), L'Estate (1), L'Europa (1), L'anonimo (1), L'aura (1), L'autore (1), L'eguaglianza (1), L'eternità (1), L'opuscolo (1), L'uomo (1), La (1), Lambertini (1), Lamento (1), Leonarducci (1), Maladeto (1), Manus (1), Mattioli (1), Mazzoliceti (1), Mearum (1), Meditazione (1), Miscellanea (1), Molza (1), Morghen (1), Muratori (1), Murtola (1), N.B. Non (1), Napoleonidi (1), Nebek (1), Nell'anniversario (1), Nell'ultima (1), Nisibis (1), Novissima (1), Numis (1), Odae. (1), Odarum (1), Olmütz (1), Orcenico (1), Otelio (1), Ottelio (1), Paradisi (1), Parenzo (1), Partenope (1), Pascutti (1), Passaporto (1), Pastorella (1), Patria (1), Paulucci (1), Penn (1), Pervenne (1), Pietramala (1), Pillarino (1), Pirona (1), Pontano (1), Pregadi (1), Priuli (1), Pronomen (1), R. (1), Ranziano (1), Rasponi (1), Relazione (1), Reliqua (1), Rhetoricae (1), Rota (1), S'impetra (1), Sanchio (1), Sandaniello (1), Savorgnan (1), Scalzi (1), Seguono (1), Semel (1), Sententiæ (1), Serras (1), Soffimbergo (1), Somersetshire England (1), Sommari (1), Soresi (1), Sostituito (1), Spinola (1), Starai (1), Séras (1), Taigeto (1), Talot (1), Terrarum (1), Tot. (1), Tritonio (1), Turre (1), Ugonio (1), Vacani (1), Veccei (1), Villanella (1), Viriatus (1), Vopato (1), Vota (1), Werter (1), Xerapellinus (1), Yeovil (1), Yhesus (1), Zacagni (1), Zambon (1), Zannier (1), d'Epitteto (1), dell'Argagna (1), dell'Atto (1), dell'Eneide (1), dell'Eneidi (1), dell'Ode (1)
 

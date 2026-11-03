@@ -219,7 +219,11 @@ FONDI = {"Raccolta", "Racc.", "Collezione", "Collez.", "Coll.", "Legato", "Fondo
 
 def tokenizza(testo):
     toks = []
+    fine_prec = 0
     for m in RX_TOKEN.finditer(testo):
+        if m.start() < fine_prec:
+            continue                          # già compreso nell'abbreviazione precedente («S.ta», «Dom.co»)
+        fine_prec = m.end()
         if m.group("parola"):
             parola = m.group("parola")
             fine = m.end()
@@ -227,6 +231,7 @@ def tokenizza(testo):
             m2 = re.match(r"\.(co|meo|eo|zo|mo|ro|na|ne|ni|lo|to|so|r|ra|te|ssa|ta)\b", testo[m.end("parola"):])
             if m2:
                 fine = m.end("parola") + m2.end()
+            fine_prec = fine
             toks.append({"t": testo[m.start():fine], "parola": parola, "i": m.start(), "f": fine,
                          "abbr": testo[m.start():fine] != parola})
         elif m.group("quadra"):
