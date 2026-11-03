@@ -441,12 +441,16 @@ class Estrattore:
             prec_tok.get("abbr") and self.fine_frase(prec_tok)) or prec_tok["t"] in (".", "!", "?")
         if re.match(r"N\.\s?B\.", span_testo):
             return None                       # «N.B.»
+        if SANTI.match(primi["t"]) and len(maiusc) >= 2 and len(idx) > 1 and \
+                len(toks[idx[1]].get("parola") or "") > 1:
+            return "santo", "santo", "alta"   # prima di ogni altro contesto («chiesa di S. Giorgio»)
         k_span = chiave_luogo(span_testo.rstrip("."))
         citta_o_regione = k_span in self.luoghi["__citta__"] or k_span in self.luoghi["__manuali__"]
         nome_singolo = len(maiusc) == 1 and any(self.e_nome_battesimo(t) for t in maiusc)
         # titolo di un'opera: «la tragedia Sardi Liberata»
-        if p1 in CUE_OPERA or (p2 in CUE_OPERA and p1 in {"il", "la", "lo", "i", "le", "del", "della"}):
-            return None
+        if (p1 in CUE_OPERA or (p2 in CUE_OPERA and p1 in {"il", "la", "lo", "i", "le", "del", "della"})) \
+                and self.peso_luogo(span_testo) != "forte":
+            return None                       # (un luogo noto nel titolo resta luogo: «Vienna trionfante»)
         # «assedio di Corfù», «terremoto di …», «castello di …»: luogo
         if p1 in ("di", "de") and p2 in CUE_LUOGO and not nome_singolo and len(maiusc) <= 3:
             return "luogo", "contesto_luogo", "media"

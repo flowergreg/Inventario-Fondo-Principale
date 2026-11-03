@@ -7,18 +7,18 @@ Voci elaborate: **130** (con almeno una menzione: 129). Le voci annotate sono in
 | Tipo | alta | media | bassa | Totale |
 |---|---|---|---|---|
 | persona | 1103 | 247 | 116 | 1466 |
-| luogo | 528 | 59 | 15 | 602 |
-| santo | 38 | 0 | 0 | 38 |
+| luogo | 529 | 58 | 15 | 602 |
+| santo | 39 | 0 | 0 | 39 |
 | opera | 8 | 0 | 0 | 8 |
 
-Per sede: annotazione 10, coda 31, testo 2073
+Per sede: annotazione 10, coda 31, testo 2074
 
 ### Metodi
 
 | Tipo | Metodo | Affidabilità | Numero |
 |---|---|---|---|
-| luogo | lista_luoghi_forte | alta | 493 |
-| luogo | sede_ecclesiastica | media | 37 |
+| luogo | lista_luoghi_forte | alta | 494 |
+| luogo | sede_ecclesiastica | media | 36 |
 | luogo | provenienza_citta | alta | 32 |
 | luogo | lista_luoghi_medio | bassa | 14 |
 | luogo | lista_luoghi_contesto | media | 10 |
@@ -55,7 +55,7 @@ Per sede: annotazione 10, coda 31, testo 2073
 | persona | ordine_inverso | alta | 1 |
 | persona | rinvio | bassa | 1 |
 | persona | sigla_e_nome | alta | 1 |
-| santo | santo | alta | 38 |
+| santo | santo | alta | 39 |
 
 ## 2. Correzioni del curatore (diventeranno varianti con origine `correzione_curatore`)
 
@@ -79,6 +79,7 @@ Per sede: annotazione 10, coda 31, testo 2073
 - S. Giovanni (1)
 - S. Job (1)
 - S. Lorenzo (1)
+- S. Marcello (1)
 - S. Maria (1)
 - S. Paolo di Macerata (1)
 - S. Pio V Sommo Pontefice (1)
@@ -96,7 +97,7 @@ Cortenovis [destinatario] (4), Ciceronis [intestazione_voce] (2), Dotti [intesta
 
 ## 4. Luoghi: forme più frequenti
 
-Udine (89), Venezia (84), Roma (42), Padova (29), Verona (16), Vienna (13), Aquileia (12), Milano (12), Cividale (11), Spalatro (10), Traù (10), Bologna (9), Friuli (7), Trieste (7), Gorizia (6), Villafredda (6), Bassano (5), Ferrara (5), Gemona (5), Italia (5), Portogruaro (5), Tolmezzo (5), Genova (4), Parma (4), Vicenza (4), Belluno (3), Ceneda (3), Codroipo (3), Flambro (3), Maniago (3), Mantova (3), Mereto (3), Modena (3), Nissa (3), Osopo (3), Passariano (3), Siena (3), Strasoldo (3), Torino (3), Aquileja (2), Brescia (2), Buda (2), Cantio (2), Cittanova (2), Cremona (2), Firenze (2), Gerosolima (2), Gradisca (2), Graz (2), Lipsia (2), Livorno (2), Monfalcone (2), Monreale (2), Motta (2), Napoli (2), Porcia (2), Roselo (2), Salerno (2), Spilimbergo (2), Strozza (2), Toppo (2), Traù Marzio Andreucci (2), Treviso (2), Valenti (2), Villalta (2), Aquileia Daniele Delfino (1), Aquileja Giovanni Grimani (1), Ascoli (1), Asolo (1), Assise (1), Auditore (1), Austria (1), Aviano (1), Bannia (1), Benevento (1), Bergamo (1), Berlino (1), Bertiolo (1), Bertoli (1), Cagliari (1)
+Udine (89), Venezia (84), Roma (42), Padova (29), Verona (16), Vienna (14), Aquileia (12), Milano (12), Cividale (11), Spalatro (10), Traù (10), Bologna (9), Friuli (7), Trieste (7), Gorizia (6), Villafredda (6), Bassano (5), Ferrara (5), Gemona (5), Italia (5), Portogruaro (5), Tolmezzo (5), Genova (4), Parma (4), Vicenza (4), Belluno (3), Ceneda (3), Codroipo (3), Flambro (3), Maniago (3), Mantova (3), Mereto (3), Modena (3), Nissa (3), Osopo (3), Passariano (3), Siena (3), Strasoldo (3), Torino (3), Aquileja (2), Brescia (2), Buda (2), Cantio (2), Cittanova (2), Cremona (2), Firenze (2), Gerosolima (2), Gradisca (2), Graz (2), Lipsia (2), Livorno (2), Monfalcone (2), Monreale (2), Motta (2), Napoli (2), Porcia (2), Roselo (2), Salerno (2), Spilimbergo (2), Strozza (2), Toppo (2), Traù Marzio Andreucci (2), Treviso (2), Valenti (2), Villalta (2), Aquileia Daniele Delfino (1), Aquileja Giovanni Grimani (1), Ascoli (1), Asolo (1), Assise (1), Auditore (1), Austria (1), Aviano (1), Bannia (1), Benevento (1), Bergamo (1), Berlino (1), Bertiolo (1), Bertoli (1), Cagliari (1)
 
 ### Luoghi ad affidabilità bassa (da controllare)
 
@@ -104,5 +105,5 @@ Ceneda [lista_luoghi_medio] (2), Valenti [lista_luoghi_medio] (2), Bertoli [list
 
 ## 5. Non classificati (parole maiuscole né persona né luogo), per frequenza
 
-Cantiche (2), A (1), Agatomero (1), Agr (1), Amarli (1), Amphrysius (1), Apparteneva (1), Archiepiscopi (1), Assertiones (1), Austriacorum (1), Barcelloni (1), Basadonna (1), Bembo (1), Bettio (1), Bicego (1), Bozzoli (1), Brusuglio (1), Buje (1), Capodistria (1), Caprera (1), Carnicum (1), Cimbriaco (1), Cogitanti (1), Colonie (1), Commissione (1), Concineo (1), D. (1), Davalus (1), De' (1), Dorindo (1), Duplan (1), Ellena (1), Epitalamio (1), Fabrizzi (1), Fillinesta (1), Fracastoro (1), Gajanine (1), Gallico (1), Giov. (1), Girardi (1), Greatti (1), Gropallo (1), Heliconio (1), Hymnorum (1), Illirico (1), Immedio (1), Infarinato Academico (1), Jeregaky (1), Lambertini (1), M. (1), Maladeto (1), Mearum (1), Meditazione (1), Molza (1), Morghen (1), Murtola (1), N.B. Non (1), Nebek (1), Numis (1), Odae. (1), Odarum (1), Orcenico (1), Paradisi (1), Pascutti (1), Passaporto (1), Pastorella (1), Patria (1), Pervenne (1), Pillarino (1), Pontano (1), Pregadi (1), Pronomen (1), Ranziano (1), Rasponi (1), Reliqua (1), Rezzonico (1), Rota (1), Sanchio (1), Sandaniello (1), Scalzi (1), Seguono (1), Semel (1), Serras (1), Soffimbergo (1), Somersetshire England (1), Sommari (1), Soresi (1), Sostituito (1), Spinola (1), Starai (1), Taigeto (1), Talot (1), Terrarum (1), Tot. (1), Tritonio (1), Ugonio (1), Vacani (1), Vienna (1), Viriatus (1), Vopato (1), Vota (1), Werter (1), XIII-XIV-XV (1), XVII-XVIII-XIX (1), Xerapellinus (1), Yeovil (1), Yhesus (1), Zacagni (1), Zambon (1), Zannier (1)
+Cantiche (2), A (1), Agatomero (1), Agr (1), Amarli (1), Amphrysius (1), Apparteneva (1), Archiepiscopi (1), Assertiones (1), Austriacorum (1), Barcelloni (1), Basadonna (1), Bembo (1), Bettio (1), Bicego (1), Bozzoli (1), Brusuglio (1), Buje (1), Capodistria (1), Caprera (1), Carnicum (1), Cimbriaco (1), Cogitanti (1), Colonie (1), Commissione (1), Concineo (1), D. (1), Davalus (1), De' (1), Dorindo (1), Duplan (1), Ellena (1), Epitalamio (1), Fabrizzi (1), Fillinesta (1), Fracastoro (1), Gajanine (1), Gallico (1), Giov. (1), Girardi (1), Greatti (1), Gropallo (1), Heliconio (1), Hymnorum (1), Illirico (1), Immedio (1), Infarinato Academico (1), Jeregaky (1), Lambertini (1), M. (1), Maladeto (1), Mearum (1), Meditazione (1), Molza (1), Morghen (1), Murtola (1), N.B. Non (1), Nebek (1), Numis (1), Odae. (1), Odarum (1), Orcenico (1), Paradisi (1), Pascutti (1), Passaporto (1), Pastorella (1), Patria (1), Pervenne (1), Pillarino (1), Pontano (1), Pregadi (1), Pronomen (1), Ranziano (1), Rasponi (1), Reliqua (1), Rezzonico (1), Rota (1), Sanchio (1), Sandaniello (1), Scalzi (1), Seguono (1), Semel (1), Serras (1), Soffimbergo (1), Somersetshire England (1), Sommari (1), Soresi (1), Sostituito (1), Spinola (1), Starai (1), Taigeto (1), Talot (1), Terrarum (1), Tot. (1), Tritonio (1), Ugonio (1), Vacani (1), Viriatus (1), Vopato (1), Vota (1), Werter (1), XIII-XIV-XV (1), XVII-XVIII-XIX (1), Xerapellinus (1), Yeovil (1), Yhesus (1), Zacagni (1), Zambon (1), Zannier (1)
 
