@@ -354,6 +354,8 @@ def main():
         parte = d["parte"]
         if parte == "persona":
             parte = "cognome"
+        if r[1] == "luogo" and parte in ("cognome", "nome_di_battesimo"):
+            continue                          # «Trento» cognome non cancella Trento città
         r[1] = parte
         r[3] = d["forma_normalizzata"] or None
         r[4] = d["origine"] + (": " + d["nota"] if d["nota"] else "")

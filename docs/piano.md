@@ -100,3 +100,10 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 - Ordine Cognome Nome anche nelle intestazioni e negli elenchi interni alla voce (menzione preceduta da a capo, «. », «, », «; » e seguita da punteggiatura: «Delfino Daniele.», «…, Zorzi Carlo Maria, …»). Prima della posizione vale il cognome già presente nella stessa voce (Paulino Fabio accanto ad Alessandro e Gio. Batta Paulino). Le coppie di soli nomi (Marco Antonio, Anna Maria) non si spezzano.
 - Un punto seguito subito da minuscole, senza spazio, non chiude la parola: «C.sse», «S.ri» (vale in estrai.py e nel lessico).
 - In `persone_curatore.tsv`, «santo:Nome» assegna la menzione a un santo (St. Claude, San Daniele); persone vuote = la menzione non è una persona.
+- Ordine dei nomi, in quest'ordine di prova: articolo o particella; cognome già presente nella stessa voce (anche dall'intestazione: «Abel Federico» → «Federico Abel» più avanti); cognome di un'intestazione di altra voce; inizio della voce (Cognome Nome); ordine prevalente nella voce (contato sulle menzioni con cognome riconosciuto); intestazioni interne (dopo a capo, «; » o un punto di fine frase, non dopo «prof.», «cav.»); altrimenti Nome Cognome.
+- Stesse parole con cognome dedotto in ordini diversi tra le voci (Gaetano Donizetti / Donizetti Gaetano; Liliano Giulio 56–58): una sola entità, prevale l'intestazione di voce.
+- Cognome abbreviato all'iniziale («Z. Girolamo» nella voce «Zorzi, Mario»): si scioglie con l'unico cognome della voce che comincia con quella lettera.
+- Cognome scritto subito prima della menzione: «Pecile, Gabriele Luigi» (in apertura di frase), «De Rubeis (Gio. Fran.)».
+- «Giacomo de Sit.»: dopo una particella, il punto finale chiude la frase.
+- Nomi doppi fusi uniti nella chiave: Giandomenico = Gian Domenico = Gio. Domenico.
+- Una decisione «cognome» del curatore non tocca la riga di luogo della stessa forma (Trento).
