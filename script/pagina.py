@@ -38,18 +38,8 @@ MODELLO = r"""<!doctype html>
   --font-testo: "Roboto Condensed", "Arial Narrow", sans-serif; --font-titoli: "Lora", Georgia, serif;
   --font-etichette: "Roboto", "Helvetica Neue", Arial, sans-serif; --larghezza: 1200px;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --sfondo: #1f1e1c; --carta: #282725; --fascia: #2d2b29; --testo: #d9d6d0; --scuro: #f1eeea;
-    --tenue: #a6a39c; --linea: #44413d; --accento: #d6cd52; --evidenza: #5c5718;
-  }
-}
-:root[data-theme="dark"] {
-  --sfondo: #1f1e1c; --carta: #282725; --fascia: #2d2b29; --testo: #d9d6d0; --scuro: #f1eeea;
-  --tenue: #a6a39c; --linea: #44413d; --accento: #d6cd52; --evidenza: #5c5718;
-}
 * { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; }
+html { -webkit-text-size-adjust: 100%; color-scheme: light; }   /* come Teche: sempre chiaro */
 body { margin: 0; background: var(--sfondo); color: var(--testo); font: 18px/1.5 var(--font-testo); }
 a { color: var(--accento); text-decoration: none; } a:hover { text-decoration: underline; }
 .container { max-width: var(--larghezza); margin: 0 auto; padding: 0 16px; }
