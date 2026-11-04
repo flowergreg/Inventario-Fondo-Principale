@@ -133,7 +133,8 @@ def nomi_di_battesimo():
 
 IRREGOLARI = {"petr": "Pietro", "thom": "Tommaso", "ioann": "Giovanni", "iohann": "Giovanni", "johann": "Giovanni",
               "georg": "Giorgio", "hieronym": "Girolamo", "aloys": "Luigi", "ludovic": "Lodovico", "francisc": "Francesco",
-              "iacob": "Giacomo o Jacopo", "jacob": "Giacomo o Jacopo", "baptist": "Battista", "christian": "Cristiano"}
+              "iacob": "Giacomo o Jacopo", "jacob": "Giacomo o Jacopo", "baptist": "Battista", "christian": "Cristiano",
+              "laurent": "Lorenzo", "vincent": "Vincenzo", "ludovic": "Lodovico"}
 
 
 def latino_italiano(forma, nomi_it):
