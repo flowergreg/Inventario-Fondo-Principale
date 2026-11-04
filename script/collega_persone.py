@@ -67,6 +67,23 @@ def luoghi_regionali():
     return {r[i_den] for r in righe[1:] if len(r) > i_reg and r[i_reg] in ("Friuli-Venezia Giulia", "Veneto")}
 
 
+def geonames_regionali():
+    """Località friulane di GeoNames, escluse quelle che portano il nome di un comune di altre regioni
+    (una frazione «Genova» o «Ferrara» non deve rendere friulano chi è nato a Genova o a Ferrara)."""
+    import zipfile
+    testo = (ESTERNI / "comuni_istat.csv").read_bytes().decode("latin-1")
+    righe = list(csv.reader(io.StringIO(testo), delimiter=";"))
+    h = righe[0]
+    i_den, i_reg = h.index("Denominazione in italiano"), h.index("Denominazione Regione")
+    altrove = {r[i_den] for r in righe[1:] if len(r) > i_reg and r[i_reg] not in ("Friuli-Venezia Giulia", "Veneto")}
+    nomi = set()
+    with zipfile.ZipFile(ESTERNI / "IT.zip") as z, z.open("IT.txt") as fh:
+        for r in csv.reader(io.TextIOWrapper(fh, encoding="utf-8"), delimiter="\t", quoting=csv.QUOTE_NONE):
+            if r[10] == "06" and r[6] == "P" and r[1] not in altrove:
+                nomi.add(r[1])
+    return nomi
+
+
 def forme_di_ricerca(intestazione):
     """«Florio, Daniele» → ["Daniele Florio", "Daniele di Florio", …]."""
     if ", " not in intestazione:
@@ -129,6 +146,32 @@ def cerca(forme, cache):
         time.sleep(1)
 
 
+def dettagli_forzati(qids, cache):
+    """Dati dei candidati scelti a mano (stessa forma dei risultati di ricerca)."""
+    cache.setdefault("qid", {})
+    mancanti = [q for q in qids if q not in cache["qid"]]
+    for i in range(0, len(mancanti), 50):
+        blocco = mancanti[i:i + 50]
+        q = f"""SELECT ?p ?sl ?nasc ?morte ?desc ?viaf ?sbn ?dbi ?lab WHERE {{
+  VALUES ?p {{ {" ".join("wd:" + x for x in blocco)} }}
+  ?p wikibase:sitelinks ?sl .
+  OPTIONAL {{ ?p rdfs:label ?lab FILTER(lang(?lab) = "it") }}
+  OPTIONAL {{ ?p wdt:P569 ?n }} BIND(YEAR(?n) AS ?nasc)
+  OPTIONAL {{ ?p wdt:P570 ?m }} BIND(YEAR(?m) AS ?morte)
+  OPTIONAL {{ ?p schema:description ?desc FILTER(lang(?desc) = "it") }}
+  OPTIONAL {{ ?p wdt:P214 ?viaf }}
+  OPTIONAL {{ ?p wdt:P396 ?sbn }}
+  OPTIONAL {{ ?p wdt:P1986 ?dbi }}
+}}"""
+        for b in sparql(q):
+            qid = valore(b, "p").rsplit("/", 1)[1]
+            cache["qid"].setdefault(qid, {"qid": qid, "sl": int(valore(b, "sl") or 0), "etichetta": valore(b, "lab"),
+                                          "nasc": valore(b, "nasc"), "morte": valore(b, "morte"),
+                                          "desc": valore(b, "desc"), "viaf": valore(b, "viaf"),
+                                          "sbn": valore(b, "sbn"), "dbi": valore(b, "dbi"), "luoghi": []})
+        salva(cache)
+
+
 def anno(x):
     try:
         return int(float(x))
@@ -142,11 +185,17 @@ def punteggio(c, anni, regionali):
         p += 2
         motivi.append("nato o morto in Friuli/Veneto")
     n, m = anno(c["nasc"]), anno(c["morte"])
-    if anni and n:
-        if n > max(anni) + 5:
-            p -= 3
-            motivi.append(f"nato dopo le date delle voci ({max(anni)})")
-        elif any(n + 10 <= a <= (m or n + 90) + 5 for a in anni):
+    if n and n >= 1880 and anni and n > max(anni) - 15:
+        # nato nel Novecento, dopo le date scritte accanto alle sue menzioni: omonimo moderno
+        # (calciatori, attori). Per i nati prima del 1900 le date vicine possono essere quelle
+        # dell'argomento (Giorgio Merula e il 1411), non della persona
+        p -= 3
+        motivi.append(f"nato nel {n}, dopo le date delle voci ({max(anni)})")
+    elif n and n > 1920 and not anni:
+        p -= 0.5                                 # in coda ai candidati più antichi, ma non scartato
+        motivi.append(f"nato nel {n}: verificare")
+    elif anni and n:
+        if any(n + 10 <= a <= (m or n + 90) + 5 for a in anni):
             p += 1
             motivi.append("date compatibili")
     return p, motivi
@@ -158,22 +207,43 @@ def main():
         if c_ not in {r[1] for r in con.execute("PRAGMA table_info(identificatori)")}:
             con.execute(f"ALTER TABLE identificatori ADD COLUMN {c_} {t}")
     con.execute("DELETE FROM identificatori WHERE entita IN (SELECT id FROM entita WHERE tipo='persona')")
-    regionali = luoghi_regionali() | {n for (n,) in con.execute(
-        "SELECT e.forma_intestazione FROM entita e JOIN identificatori i ON i.entita=e.id "
-        "WHERE e.tipo='luogo' AND i.forma_autorizzata IS NOT NULL")}
+    # luoghi del Friuli e del Veneto: comuni ISTAT e località GeoNames delle due regioni (non Roma o il Somerset)
+    regionali = luoghi_regionali() | geonames_regionali()
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {"forme": {}}
     entita = con.execute("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona'").fetchall()
     # anni citati nelle voci in cui compare ogni entità
+    # anni scritti vicino alle menzioni (200 caratteri prima e dopo), non in tutta la voce:
+    # nelle voci lunghe gli anni della voce intera coprono secoli
     anni = defaultdict(set)
-    for eid, testo in con.execute("SELECT DISTINCT m.entita, v.testo FROM menzioni m JOIN voci v ON v.id=m.voce "
-                                  "WHERE m.entita IN (SELECT id FROM entita WHERE tipo='persona')"):
-        anni[eid] |= {int(a) for a in RX_ANNO.findall(testo or "") if 1000 <= int(a) <= 1999}
+    for eid, testo, ini, fin in con.execute(
+            "SELECT m.entita, v.testo, m.inizio, m.fine FROM menzioni m JOIN voci v ON v.id=m.voce "
+            "WHERE m.sede='testo' AND m.entita IN (SELECT id FROM entita WHERE tipo='persona')"):
+        vicino = (testo or "")[max(0, ini - 200):fin + 200]
+        anni[eid] |= {int(a) for a in RX_ANNO.findall(vicino) if 1000 <= int(a) <= 1999}
     forme = {eid: forme_di_ricerca(intest) for eid, intest, _ in entita}
     print(f"Ricerca su Wikidata di {sum(len(f) for f in forme.values())} forme…", file=sys.stderr)
     cerca([f for ff in forme.values() for f in ff], cache)
 
     risultati = {}
+    manuali = {r["intestazione"]: r for r in csv.DictReader(
+        open(RADICE / "dati" / "liste" / "persone_collegamenti.tsv", encoding="utf-8"), delimiter="\t")}
+    # «Q…» = elemento scelto; «accetta» = il primo candidato; «anni:A-B» = il candidato con queste date;
+    # «come:Intestazione» = la scelta fatta per un'altra entità; vuoto = nessun collegamento
+    forzati = [m["qid"] for m in manuali.values() if re.fullmatch(r"Q\d+", m["qid"] or "")]
+    dettagli_forzati(forzati, cache)
+    rimandi = []
     for eid, intest, nota_e in entita:
+        m = manuali.get(intest)
+        if m and re.fullmatch(r"Q\d+", m["qid"] or ""):
+            c = cache["qid"][m["qid"]]
+            risultati[eid] = (intest, (0, [m["nota"]], c), "alta", [(0, [], c)], [m["nota"]])
+            continue
+        if m and not m["qid"]:
+            risultati[eid] = (intest, None, None, [], [])
+            continue
+        if m and m["qid"].startswith("come:"):
+            rimandi.append((eid, intest, m))
+            continue
         cand = {}
         for f in forme[eid]:
             for c in cache["forme"].get(f, []):
@@ -183,7 +253,7 @@ def main():
             continue
         valutati = sorted(((*punteggio(c, anni[eid], regionali), c) for c in cand.values()),
                           key=lambda x: (x[0], x[2]["sl"]), reverse=True)
-        plausibili = [v for v in valutati if v[0] >= 0]
+        plausibili = [v for v in valutati if v[0] > -1]
         if not plausibili:
             risultati[eid] = (intest, None, "bassa", valutati, [])
             continue
@@ -194,8 +264,26 @@ def main():
             aff = "media"
         if nota_e and "omonimi" in nota_e and aff == "alta":
             aff = "media"
+        if any("verificare" in x for x in top[1]) and aff == "alta":
+            aff = "media"
+        if m and m["qid"] == "accetta":
+            aff = "alta"
+        elif m and m["qid"].startswith("anni:"):
+            n_, m_ = m["qid"][5:].split("-")
+            scelto = next((v for v in valutati if str(anno(v[2]["nasc"])) == n_ and str(anno(v[2]["morte"])) == m_), None)
+            if scelto:
+                top, aff = scelto, "alta"
+        if m:
+            top = (top[0], [m["nota"]], top[2])
         risultati[eid] = (intest, top, aff, valutati, top[1])
 
+    per_nome = {r[0]: r for r in risultati.values()}
+    for eid, intest, m in rimandi:
+        altro = per_nome.get(m["qid"][5:])
+        if altro and altro[1]:
+            risultati[eid] = (intest, (0, [m["nota"]], altro[1][2]), "alta", [], [m["nota"]])
+        else:
+            risultati[eid] = (intest, None, None, [], [])
     for eid, (intest, top, aff, valutati, motivi) in risultati.items():
         if not top:
             continue
