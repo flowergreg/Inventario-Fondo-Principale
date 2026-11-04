@@ -2,10 +2,10 @@ forma	parte	forma_normalizzata	origine	nota
 Aquilejese	luogo	Aquileia	curatore	
 Com	parola		curatore	sta per «Comincia»
 Lir.	nome_abbreviato	Liruti	curatore	sta per «Liruti»
-Torre Valsassina	cognome		curatore	parte del cognome (Della Torre Valsassina)
-Aless.°	nome_di_battesimo	Alessandro	curatore	
+Torre Valsassina	cognome		contesto	famiglia Torriani (3955 ss.)
+Aless.°	nome_di_battesimo	Alessandro	curatore	«Wolf, Aless.°»
 Brazzà	luogo	Brazzacco	curatore	
-Alnico	luogo	Alnicco	curatore	
+Alnico	luogo	Alnicco	curatore	Alnicco (1302)
 Austriae	luogo	Austria	curatore	
 Bozze	parola		curatore	sostantivo
 Ignano	luogo	Dignano	curatore	
@@ -36,7 +36,7 @@ S. Appolonia	santo	S. Apollonia	curatore
 S. Daniello	santo	S. Daniele	curatore	
 S. Niccolò	santo	S. Nicola	curatore	
 Carreri	cognome		contesto	«raccolte da F. C. Carreri 1887» (758): cognome, non il comune Careri
-Ceresetto	luogo	Ceresetto	contesto	«nella Villa di Ceresetto» (2041): frazione friulana, non Cereseto
+Ceresetto	luogo	Ceresetto	curatore	località di Martignacco, non Cereseto
 Roselo	persona		contesto	«sonetto di Roselo al Burchiello» (10): persona
 Madonne	parola		contesto	«La fuiazze de Madonne» (4062): titolo, non luogo
 Album	parola		contesto	«Sottoscrizione per l'Album» (1976)
@@ -59,7 +59,7 @@ Battistella A.°	persona	Antonio Battistella	curatore	1973
 Belgradi	cognome	Belgrado	curatore	plurale del cognome Belgrado (619)
 Bon	cognome		curatore	cognome (107)
 Braida Sebast.°	persona	Sebastiano Braida	curatore	2022
-Brazzà Cergneu	cognome		curatore	cognome (1560)
+Brazzà Cergneu	cognome		curatore	famiglia (1560)
 Buiae	luogo	Buja	curatore	1490
 Buie	luogo	Buja	curatore	469
 Buja. Feudi	luogo	Buja	curatore	525
@@ -128,3 +128,121 @@ Martire	parola		curatore	«B. Simone Martire»
 Rossi	cognome		curatore	cognome, non nome di battesimo
 Complessivamente	parola		curatore	
 In	parola		contesto	preposizione (In Roma, In Christi, In Semin.)
+Gropallo	luogo	Gropello Cairoli	curatore	Benedetto Cairoli scrive da Gropello (497)
+Amanins	luogo	Domanins	curatore	Villa di Domanins (2036)
+Bontempo	cognome		curatore	editore a Pola (1721)
+Brazzano Nebula	luogo	Brazzano | Neblo	curatore	due luoghi (1839)
+Brizza	luogo	Brizza	curatore	l'odierna Brizza (1367)
+Cancellier Grande	parola		contesto	carica (606)
+Candiano Bollano	persona	Candiano Bollani	contesto	viceluogotenente (825)
+Cantianilla	santo	S. Canzianilla	contesto	«SS. Cantio, Cantiano et Cantianilla» (596)
+Cergneu	cognome		contesto	famiglia (1010)
+Chmel	cognome		contesto	lo storico Joseph Chmel (524)
+Cittadella Vigodarzene	cognome	Cittadella Vigodarzere	contesto	Andrea Cittadella Vigodarzere (2557)
+Dubsky	cognome		contesto	commissario (524)
+Elogium	parola		contesto	
+Forte Olivo	cognome		contesto	predicato del barone Vacani (487)
+Frangipane	cognome		contesto	famiglia (2137)
+Fuga. Partitura	parola		contesto	
+Gazza Ladra	opera		contesto	opera di Rossini (3443)
+Idee	parola		contesto	
+Istriae Marchiones	parola		contesto	i marchesi d'Istria (603)
+Legajo	parola		contesto	«legajo» d'archivio (1986)
+Liṃ Bālā Rām	cognome		contesto	nome indiano (4496)
+Madri	parola		contesto	
+Manzano Trovamala	cognome		contesto	famiglia (1807)
+Medicinae Doctoris	parola		contesto	
+Miagostovich	cognome		contesto	Vincenzo Miagostovich (1552)
+Monti Vin	cognome		contesto	Monti Vincenzo (291)
+Mosel N° VI. Violino	cognome		contesto	il compositore Mosel (3338)
+Poma Ferrari	cognome		contesto	Orsola Poma Ferrari (2558)
+Pūjya Ṣivar Siṃhajī	cognome		contesto	nome indiano (4505)
+Strassoldo Proton	cognome		contesto	Panfilo di Strassoldo protonotario (619)
+Tema.	parola		contesto	
+Templo Conventu.m	parola		contesto	
+Thioly	cognome		contesto	tipografo di Lione (669)
+Toppo N	cognome		contesto	
+Arche	parola		contesto	«Arche sepolcrali» (596)
+Bertoli	cognome		contesto	
+Bocca	cognome		contesto	editore (2642)
+Carità	parola		contesto	Pia casa, monastero della Carità
+Cesaree	parola		contesto	«Cesaree Reggie Truppe» (1937)
+Dis	parola		contesto	tonalità (3240)
+Fabris	cognome		contesto	
+Fontanini	cognome		contesto	
+Forlani	parola		contesto	«antichi Forlani»: i friulani
+Giardini	parola		contesto	giardini d'infanzia (1587)
+Görki	cognome		contesto	Maksim Gor'kij (2637/2)
+Jaṃu	parola		contesto	testo in antico gujarati
+Morā	parola		contesto	testo in antico gujarati
+Pariṣi	parola		contesto	testo in antico gujarati
+Puṇ	parola		contesto	Puṇ(ya)sār
+Sarī	parola		contesto	testo in antico gujarati
+Viṇ	parola		contesto	testo in antico gujarati
+Loschi	cognome		contesto	Giuseppe Loschi
+Marchetti	cognome		contesto	tipografo (577)
+Menin	cognome		contesto	
+Munic	parola		contesto	«rag. Munic.»: ragioniere municipale (524)
+Muratori	cognome		contesto	Lodovico Antonio Muratori (518)
+Nicoletti	cognome		contesto	famiglia (2435)
+Picco	cognome		contesto	
+Rizzi	cognome		contesto	
+Ronconi	cognome		contesto	famiglia (1006)
+Sasso	cognome		contesto	
+Serenissima	parola		contesto	la Serenissima Signoria
+Tommaseo	cognome		contesto	Niccolò Tommaseo (1552)
+Treves	cognome		contesto	editore Treves (2642)
+Vicentini	cognome		contesto	
+Zamboni	cognome		contesto	
+Alpe	parola		contesto	«oltre Alpe»
+Bagni	parola		contesto	«la stagion dei Bagni»
+Bassanese	parola		contesto	aggettivo: di Bassano
+Braida	cognome		contesto	famiglia
+Carnot	cognome		contesto	Lazare Carnot (3584)
+Cella	parola		contesto	monastero della Cella, Cividale (1512)
+Cortina	parola		contesto	«cortina, canipa, castelli» (2608)
+Frattina	cognome		contesto	famiglia (1010, 1948)
+Giorgione	cognome		contesto	il pittore Giorgione (4283)
+Lodi	cognome		contesto	«Lodi in versi»; vescovo Emanuele Lodi
+Madrisio	cognome		contesto	Gian Francesco Madrisio (407 ss.)
+Micoli	cognome		contesto	Giuseppe Micoli (3640)
+Montegnacco	cognome		contesto	famiglia (681, 1015)
+Osteria	parola		contesto	licenza di aprire osteria (2157)
+Paradiso	parola		contesto	cantica della Divina Commedia (836)
+Picciol	parola		contesto	«Picciol Regno è la casa» (1638)
+Polizza	parola		contesto	«polizza» = elenco (2045, 2048)
+Prè	parola		contesto	«prè» = prete
+Quaresima	parola		contesto	Carnevale e Quaresima (81)
+Rata	parola		contesto	«rata dell'ottavo sussidio» (923)
+Selvatico	cognome		contesto	P. Selvatico (3719)
+Sion	parola		contesto	«filiae Sion» (3541)
+Toppo	cognome		contesto	archivio Toppo (2269)
+Traverso	parola		contesto	flauto traverso (3390)
+Zucca	parola		contesto	Accademia della Zucca (1603)
+Carintia	luogo	Carinzia	contesto	
+Comeglons	luogo	Comeglians	contesto	
+Cortiel	luogo	Cortello	contesto	«Cortello. … Villa di Cortiel» (525)
+Lipsiis	luogo	Lipsia	contesto	latino
+Macerata Picena	luogo	Macerata	contesto	
+Patti fra Cividale	luogo	Cividale del Friuli	contesto	«Patti fra Cividale e Venezia»
+Penn-hill Yeovil	luogo	Yeovil	contesto	
+Somersetshire England	luogo	Somerset	contesto	
+Pietroburgo	luogo	San Pietroburgo	contesto	
+Pradamano Lovaria	luogo	Pradamano | Lovaria	contesto	due luoghi (1684)
+Raiffemberg	luogo	Rifembergo	contesto	castello di Reifenberg (Branik)
+Rimugnano	luogo	Remugnano	contesto	«Rizzolo et Rimugnano» (2037)
+Rosazzis	luogo	Rosazzo	contesto	latino
+Sukzava	luogo	Suceava	contesto	Bucovina
+Traù. Pastorale	luogo	Traù	contesto	
+Traù. Risposta	luogo	Traù	contesto	
+Udine Don Tosolino	luogo	Udine	contesto	«Duomo d'Udine Don Tosolino»
+Udine Millenaria	luogo	Udine	contesto	titolo di canzone
+Wladislaw	luogo	Włocławek	contesto	diocesi di Vladislavia, Polonia
+Castelfranco	luogo	Castelfranco Veneto	contesto	«Magrini di Castelfranco», pittori (4122)
+Motta	luogo	Motta di Livenza	contesto	«arcipr., Motta 1754» (483)
+Rosa	luogo	Pieve di Rosa	contesto	«Pieve di Rosa», Camino al Tagliamento
+Savorgnano	cognome		contesto	«maritata in Savorgnano»: famiglia Savorgnan (95)
+Chiussi	cognome		contesto	«Dono An. Chiussi» (3918)
+Castro	cognome		contesto	«G. De Castro» (2535)
+Mocenigo	cognome		contesto	
+Pasiano	luogo	Pasiano di Pordenone	contesto	«Comune di Pasiano (di Pordenone)» (2585)

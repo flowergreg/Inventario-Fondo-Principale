@@ -6,11 +6,11 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 4210 | 536 | 7403 |
-| luogo | 716 | 47 | 4670 |
-| santo | 282 | 8 | 630 |
+| persona | 4207 | 534 | 7400 |
+| luogo | 631 | 55 | 4581 |
+| santo | 283 | 8 | 631 |
 
-Menzioni collegate a un'entità: 12703 su 20985. Senza entità: nome o cognome singolo 8183, opera 43, esclusa dal curatore 32, parola o abbreviazione, non luogo 24.
+Menzioni collegate a un'entità: 12612 su 20985. Senza entità: nome o cognome singolo 8226, parola o abbreviazione, non luogo 72, opera 43, esclusa dal curatore 32.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -618,6 +618,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Tinti, Valentino**: Tinti V. (339); Valentino Tinti (339)
 - **Tommasini, Antonio**: Antonio (2557); P. A. Tommasini (3911)
 - **Toppo, Francesco**: Francesco di Toppo (340, 541, 3740); Toppo co. Franc.° (560 a)
+- **Toppo, Nicolò**: Toppo N (2182); Toppo Nicolò (541)
 - **Valentinelli, Giuseppe**: G. Valentinelli (853); Giuseppe Valentinelli (487)
 - **Valvasone, Jacopo**: J. di Valvasone (1571); Jacopo Valvasone (672)
 - **Verdi, Giuseppe**: Giuseppe Verdi (3350, 3358, 3434); Verdi G. (4279); Verdi Giuseppe (3249, 3261, 3287, 3350, 3358, 3362, 3434, 3460)
@@ -674,7 +675,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Borghi, Luigi**: Borghi Luigi (3288, 3396, 3473); Luigi Borghi (3396, 3473)
 - **Bragato, Giuseppe**: Bragato, Giuseppe (3631, 3632, 3648); Giuseppe Bragato (3956)
 - **Braida, Pietro**: Braida Pietro (1382, 1383); Pietro Braida (469, 471, 476, 482, 1020, 1034, 1381, 1382, 1547, 2022)
-- **Braida, Sebastiano**: Braida Sebastiano (1377, 1380, 2023, 2024, 2025, 2026); Sebastiano Braida (879, 1363, 1378, 1379, 1547, 2022, 2023)
+- **Braida, Sebastiano**: Braida Sebast.° (2022); Braida Sebastiano (1377, 1380, 2023, 2024, 2025, 2026); Sebastiano Braida (879, 1363, 1378, 1379, 1547, 2022, 2023)
 - **Braida, Tomaso**: Braida Tomaso (2024); Tomaso Braida (2022)
 - **Brazzà, Antonio**: Ant.o di Brazzà (471); Antonio di Brazzà (117, 590); Brazzà (di) Antonio (116)
 - **Bressani, Carlo**: Bressani Carlo (1598); Bressani, Carlo (2589)
@@ -703,7 +704,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Castiglione, Giuseppe**: Castiglione March. Giuseppe (120); Castiglione march. Gius. (122)
 - **Cavallo, Monte**: Da Monte Cavallo (606); Monte Cavallo (804)
 - **Ceclina, Francesco**: Ceclina Francesco (119, 126, 127, 157); Ceclina co. Francesco (149)
-- **Cella, Adele**: Adele Cella (2696); Cella, Adele (2696)
 - **Cernazai, Francesco**: Franc. Cernazai (495); Francesco Cernazai (495)
 - **Cervellini, Giuseppe**: Cervellini D. Giuseppe (3431, 3432, 3433); D. Giuseppe Cervellini (3431)
 - **Ciani, Giuseppe**: Ciani ab. Giuseppe (339); Giuseppe Ciani (492)
@@ -724,7 +724,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Corner, Carlo**: Carlo Corner (568); L. T. Carlo Corner (568)
 - **Cossio, Daniele**: Cossio co. Daniele (1896); Daniele Cossio (1953)
 - **Czoernig, Carlo**: Carlo (736); Czoernig Carlo (518)
-- **Deciani Antonini, Rosa**: Deciani Antonini Rosa (1640); Rosa Deciani Antonini (2499)
 - **Degani, Ernesto**: Degani can. Ernesto (1591); Ernesto Degani (3913)
 - **Deganis, Giuseppe**: D. Giuseppe Deganis (1215); Gius. Deganis (338); Giuseppe Deganis (340)
 - **Del Negro, Giambattista**: Del Negro Giov. Battista (448); Giambattista Del Negro (352)
@@ -895,7 +894,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Storia Medioevale, Ist.**: Ist. di Storia Medioevale (4235); Ist. di Storia dell'Arte Medioevale (4230)
 - **Strazzolini, Nicolò**: Niccolò (709); Nicolò Strazzolini (706)
 - **Sturolo, Gaetano**: Gaetano Sturolo (923); P. Gaetano Sturolo (718)
-- **Taddei, Rosa**: Rosa (4121); Rosa Taddei (4121)
 - **Tech, Ludovico**: Lodovico di Tech (914); Ludovico di Tech (652)
 - **Teck, Ludovico**: Lodovico di Teck. (3766); Ludovico di Teck (606)
 - **Tiepolo, G. B.**: G. B. Tiepolo (870); Tiepolo G. B. (1954)
@@ -942,24 +940,29 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Austria**: Austria (146, 478, 524, 906, 1120, 1133, 1879, 2498, 2639/7); Austriae (102, 617)
 - **Barazzetto**: Barazzetto [manuale]; Barazzeto (2434)
 - **Berlino**: Berlin (3842); Berlino (492)
-- **Bonn**: Bonn [fonte_esterna]; Bon (107)
 - **Brazzacco**: Brazzacco (797, 1010, 3641); Brazzà (1235, 3931)
+- **Brazzano**: Brazzano (1819, 1822); Brazzano Nebula (1839)
 - **Brăila**: Brăila [fonte_esterna]; Braila (1534)
 - **Buja**: Buia (877, 888, 1486, 1489, 1490, 1491, 2078, 2623/3, 4170, 4217); Buiae (1490); Buie (469); Buja (525, 672, 891, 1070); Buja. Feudi (525); Bujae (1608); Buje (476)
 - **Buttrio**: Butrio (541, 568); Buttrio (163, 541, 1070)
 - **Campoformido**: Campoformido (18, 3672); Campoformio (525)
 - **Canalutto**: Canalutto [manuale]; Canaluto (1839)
 - **Canussio**: Canussio [manuale]; Canusio (741)
+- **Carinzia**: Carintia (518, 1367, 2685); Carinzia (1224, 1955, 2632/14)
 - **Carnia**: Cargna (525, 655, 661, 663, 749, 3925); Carnia (317, 330, 377, 389, 518, 519, 525, 618, 647, 663, 782, 853, 860, 862, 868, 917, 918, 919, 920, 954, 965, 1045, 1199, 1258, 1270, 1281, 1291, 1314, 1556, 1558, 1563, 1565, 1570, 1571, 1578, 2177, 3593, 3640, 3684, 3715, 3796, 3827, 3915)
+- **Castelfranco Veneto**: Castelfranco Veneto [manuale]; Castelfranco (4122)
 - **Cavalicco**: Cavalicco (1571); Cavallico (1567)
 - **Chiasiellis**: Chiasielis (1261); Chiasiellis (1582)
 - **Cinto Caomaggiore**: Cinto Caomaggiore [fonte_esterna]; Cinto (1444)
-- **Cividale del Friuli**: Cividale (164, 170, 355, 371, 372, 394, 469, 471, 476, 486, 488, 491, 525, 573, 596, 606, 610, 614, 617, 618, 619, 621, 669, 706, 707, 708, 716, 741, 742, 744, 752, 824, 862, 874, 876, 877, 905, 906, 914, 915, 923, 924, 974, 979, 1010, 1046, 1130, 1135, 1197, 1223, 1227, 1228, 1230, 1236, 1265, 1266, 1267, 1304, 1307, 1310, 1311, 1366, 1367, 1368, 1369, 1370, 1390, 1437, 1438, 1439, 1440, 1441, 1457, 1537, 1547, 1550, 1552, 1562, 1567, 1576, 1577, 1593, 1710, 1738, 1798, 1799, 1803, 1877, 2435, 2506, 2658, 3047, 3049, 3655, 3673, 3674, 3727, 3762, 3782, 3786, 4226); Cividale del Friuli (752, 1537, 4259); Cividale di Friuli (610); Civitas Austriae (744)
+- **Cividale del Friuli**: Cividale (164, 170, 355, 371, 372, 394, 469, 471, 476, 486, 488, 491, 525, 573, 596, 606, 610, 614, 617, 618, 619, 621, 669, 706, 707, 708, 716, 741, 742, 744, 752, 824, 862, 874, 876, 877, 905, 906, 914, 915, 923, 924, 974, 979, 1010, 1046, 1130, 1135, 1197, 1223, 1227, 1228, 1230, 1236, 1265, 1266, 1267, 1304, 1307, 1310, 1311, 1366, 1367, 1368, 1369, 1370, 1390, 1437, 1438, 1439, 1440, 1441, 1457, 1537, 1547, 1550, 1552, 1562, 1567, 1576, 1577, 1593, 1710, 1738, 1798, 1799, 1803, 1877, 2435, 2506, 2658, 3047, 3049, 3655, 3673, 3674, 3727, 3762, 3782, 3786, 4226); Cividale del Friuli (752, 1537, 4259); Cividale di Friuli (610); Civitas Austriae (744); Patti fra Cividale (1562)
 - **Clauiano**: Clauiano (1685); Claujano (2078)
+- **Comeglians**: Comeglians [manuale]; Comeglons (2076)
 - **Conegliano**: Coneglano (888); Conegliano (487, 513, 616, 1024, 1576)
 - **Cormons**: Cormons (473, 1310, 1715); Cormóns (1782)
+- **Cortello**: Cortello (525); Cortiel (525)
 - **Cucagna**: Cucagna (1015); Cuccagna (1946, 1949)
 - **Dignano**: Dignano (490, 745, 746, 4168); Ignano (712)
+- **Domanins**: Domanins [manuale]; Amanins (2036)
 - **Duomo di Udine**: Duomo di Udine [manuale]; Basilicae Utinensis (555)
 - **Erbè**: Erbè [fonte_esterna]; Erbe (2118)
 - **Francoforte sul Meno**: Francoforte sul Meno [fonte_esterna]; Francoforte (617)
@@ -969,46 +972,61 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Giassico**: Giassicco (496); Giassico (491, 1822)
 - **Graz**: Gratz (476); Graz (470, 493, 632, 867)
 - **Grizàn**: Grizan (520); Grizàn (23)
+- **Gropello Cairoli**: Gropello Cairoli [manuale]; Gropallo (497)
 - **Ialmicco**: Ialmicco (4260); Jalmicco (4084)
 - **Iași**: Iași [fonte_esterna]; Jassy (1987)
 - **India**: India (1519, 4117); Iṅdiya (4397)
 - **Invillino**: Invilino (533); Invillino (1291, 1537)
 - **Lauzacco**: Lauzacco (1935, 2079); Lauzzacco (998)
 - **Liguria**: Liguri (1925); Liguria (1854, 1928)
+- **Lipsia**: Lipsia (471, 487, 720, 1543, 1954); Lipsiis (619)
+- **Lovaria**: Lovaria (1517); Pradamano Lovaria (1684)
 - **Lucinico**: Lucinico [manuale]; Lucinicco (1875)
 - **Lumignacco**: Lumignacco [manuale]; Lumignaco (256, 350)
+- **Macerata**: Macerata (500, 576, 593); Macerata Picena (20)
 - **Meduno**: Medun (1875); Meduna (925); Meduno (525, 1352)
 - **Mereto di Tomba**: Mereto (471, 476, 485, 4197); Mereto di Tomba (525, 3863, 4197)
 - **Milano**: Mediolani (3); Milano (24, 102, 274, 337, 471, 478, 487, 495, 497, 511, 519, 520, 571, 577, 593, 596, 597, 606, 619, 998, 1222, 1619, 1621, 2115, 2509, 2532, 2557, 2558, 2559, 2591, 2622, 2702, 3514, 3679, 3932, 3964, 3965, 3966, 3977, 4012, 4013, 4014, 4015, 4019, 4023, 4024, 4025, 4026, 4027, 4028, 4029, 4030, 4031, 4032, 4033, 4035, 4040, 4041, 4069, 4074, 4079, 4081, 4103, 4518)
+- **Motta di Livenza**: Motta di Livenza [manuale]; Motta (483)
 - **Muscletto**: Muscletto [manuale]; Muscleto (3569)
 - **Muzzana del Turgnano**: Muzzana del Turgnano [fonte_esterna]; Muzzana (616, 1684)
 - **Napoli**: Napoli (484, 490, 539, 567, 606, 613, 807, 1111, 1884, 2138, 2142, 3968, 3982/bis); Partenope (23)
+- **Neblo**: Neblo [manuale]; Brazzano Nebula (1839)
 - **Nysa**: Nysa [manuale]; Nissa (467)
 - **Olomouc**: Olomouc [manuale]; Olmütz (23)
 - **Osoppo**: Osopo (466, 525, 2660, 2662); Osoppo (519, 836, 1562, 1998, 2000, 2176, 2664, 2665, 2668, 2672, 2673/a, 2673/b, 2674, 3648)
 - **Padova**: Padoa (244); Padova (15, 18, 23, 36, 72, 185, 190, 193, 309, 331, 368, 443, 467, 470, 476, 482, 484, 485, 487, 489, 492, 493, 497, 511, 518, 519, 568, 593, 596, 598, 601, 606, 618, 619, 636, 818, 1020, 1027, 1056, 1139, 1222, 1541, 1562, 1680, 1746, 1849, 1952, 2103, 2470, 2557, 2558, 2559, 2589, 2679, 2697, 2731, 3652 bis, 3775, 3865, 3901, 3905, 3915, 3916, 3992, 4161, 4168, 4202, 4214, 4215, 4217, 4230, 4235, 4263, 4284, 4286); Patavii (1952)
 - **Parigi**: Parigi (307, 469, 606, 616, 721, 804, 1095, 1171, 1552, 2150, 2355, 2532, 3241, 3931); Paris (518, 519)
+- **Pasiano di Pordenone**: Pasiano di Pordenone [manuale]; Pasiano (2585)
 - **Pavia di Udine**: Pavia di Udine [fonte_esterna]; Pavia d'Udine (3828)
 - **Percoto**: Percoto (1003); Percotto (476)
+- **Pieve di Rosa**: Pieve di Rosa [manuale]; Rosa (2629, 3944)
 - **Poffabro**: Poffabro [manuale]; Pofabro (3768, 3803)
 - **Porpetto**: Porpetto [fonte_esterna]; Porpeto (885, 1588)
-- **Pradamano**: Pradamano (4007); Predamano (585)
+- **Pradamano**: Pradamano (4007); Pradamano Lovaria (1684); Predamano (585)
 - **Recoaro Terme**: Recoaro Terme [fonte_esterna]; Recoaro (492, 1151)
+- **Remugnano**: Remugnano [manuale]; Rimugnano (2037)
+- **Rifembergo**: Rifembergo [manuale]; Raiffemberg (606)
 - **Riga**: Riga [fonte_esterna]; Riia (593)
 - **Rivignano**: Rivignano [fonte_esterna]; Rivignan (3685)
 - **Roma**: Roma (10, 24, 88, 99, 467, 470, 471, 474, 475, 476, 480, 483, 484, 485, 491, 495, 497, 537, 563, 564, 569, 593, 596, 601, 606, 616, 619, 751, 804, 805, 824, 1095, 1101, 1109, 1137, 1222, 1374, 1498, 1851, 2024, 2025, 2369, 2437, 2509, 2614, 2635/10, 2642, 2689, 3050, 3580, 3591, 3774, 3827, 3931, 4514); Rome (366)
+- **Rosazzo**: Rosazzis (596); Rosazzo (471, 523, 525, 596, 1010, 1015, 1549, 1552, 3594, 4014)
 - **Rotterdam**: Rotterdam [fonte_esterna]; Roterdam (590)
 - **San Daniele**: San Daniele [manuale]; Sandaniele (525); Sandaniello (470)
+- **San Pietroburgo**: San Pietroburgo [manuale]; Pietroburgo (1679)
 - **Schiavonea**: Schiavonea [fonte_esterna]; Schiavonia (523)
 - **Sicilia**: Sicilia (606); Sicilie (211, 2142)
+- **Somerset**: Somerset [manuale]; Somersetshire England (493)
 - **Spalato**: Spalato (492); Spalatro (467)
 - **Strassoldo**: Strasoldo (473); Strassoldo (554, 619, 824, 1006, 1010, 1517, 2047, 4260)
+- **Suceava**: Suceava [manuale]; Sukzava (805)
 - **Suri**: Suri [fonte_esterna]; Sūri (4322, 4367)
 - **Susàns**: Susàns [manuale]; Susans (471, 524, 1052)
 - **Taiedo**: Taiedo [manuale]; Tajedo (519, 525)
 - **Tarcento**: Tarcento (836, 925, 1000, 1352, 1532, 1550, 1562, 2557, 3729); Tarcint (2641)
+- **Traù**: Traù (467); Traù. Pastorale (467); Traù. Risposta (467)
 - **Trieste**: Tergeste (492); Trieste (476, 487, 491, 492, 502, 596, 619, 718, 764, 824, 856, 1041, 1220, 1562, 1578, 2557, 2559, 2639/14-22, 2759, 3412, 3853, 4020, 4021, 4022, 4034, 4037, 4038, 4042, 4043, 4044, 4047, 4084, 4085, 4086, 4087, 4112, 4113, 4114, 4115, 4116, 4117, 4118, 4158, 4159, 4160, 4163, 4169, 4192, 4193, 4199, 4200, 4212, 4216, 4231, 4233, 4234, 4236, 4259, 4265, 4284)
-- **Udine**: Udene (2598); Udin (4244, 4253); Udine (4, 10, 15, 18, 19, 38, 40, 53, 78, 81, 102, 110, 143, 153, 175, 176, 186, 187, 190, 191, 207, 211, 213, 215, 216, 218, 220, 250, 252, 258, 259, 271, 274, 279, 284, 289, 293, 328, 338, 341, 343, 350, 352, 355, 373, 385, 394, 423, 443, 445, 457, 461, 466, 468, 469, 470, 471, 472, 473, 475, 476, 478, 479, 480, 482, 484, 485, 487, 489, 490, 491, 492, 493, 494, 495, 496, 497, 504, 505, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 521, 522, 523, 524, 525, 529, 531, 533, 540, 541, 551, 554, 555, 557, 559, 561, 563, 566, 568, 572, 574, 580, 584, 585, 587, 590, 591, 592, 593, 598, 599, 601, 603, 604, 606, 608, 609, 612, 616, 617, 618, 619, 621, 622, 623, 629, 632, 639, 640, 642, 650, 651, 652, 655, 666, 668, 675, 676, 678, 681, 682, 683, 684, 686, 687, 688, 690, 691, 699, 703, 704, 710, 719, 721, 723, 724, 725, 727, 730, 731, 733, 737, 757, 771, 777, 797, 801, 804, 805, 822, 824, 825, 826, 827, 837, 846, 849, 852, 853, 854, 855, 856, 857, 858, 860, 861, 862, 867, 868, 869, 870, 874, 876, 877, 878, 882, 888, 889, 891, 893, 895, 897, 898, 905, 906, 909, 926, 928, 933, 934, 936, 938, 942, 952, 961, 962, 966, 980, 983, 986, 990, 994, 995, 997, 999, 1002, 1003, 1008, 1011, 1015, 1024, 1034, 1040, 1067, 1070, 1079, 1088, 1091, 1118, 1150, 1166, 1188, 1193, 1195, 1197, 1199, 1200, 1203, 1219, 1224, 1244, 1256, 1261, 1280, 1286, 1290, 1292, 1293, 1309, 1310, 1317, 1318, 1322, 1323, 1324, 1328, 1329, 1330, 1332, 1333, 1334, 1336, 1337, 1338, 1339, 1342, 1343, 1344, 1345, 1346, 1347, 1353, 1356, 1357, 1358, 1359, 1361, 1362, 1363, 1364, 1370, 1371, 1375, 1376, 1389, 1406, 1414, 1430, 1433, 1457, 1458, 1460, 1462, 1465, 1467, 1468, 1476, 1477, 1491, 1510, 1513, 1514, 1517, 1537, 1543, 1547, 1552, 1553, 1559, 1571, 1576, 1578, 1582, 1599, 1614, 1625, 1634, 1652, 1655, 1657, 1658, 1683, 1770, 1896, 1919, 1934, 1937, 1973, 1980, 1981, 1991, 2023, 2024, 2078, 2090, 2091, 2110, 2116, 2135, 2136, 2141, 2159, 2161, 2200, 2278, 2318, 2319, 2367, 2387, 2406, 2409, 2436, 2501, 2557, 2558, 2559, 2561, 2563, 2571, 2572, 2574, 2575, 2576, 2577, 2581, 2586, 2587, 2588, 2597, 2617, 2632/15, 2637/11, 2637/8, 2641, 2642, 2643, 2656, 2657, 2690, 2691, 2692, 2694, 2699, 2700, 2703, 2705, 2734, 2955, 3126, 3498, 3501, 3575, 3579, 3583, 3585, 3590, 3591, 3596, 3597, 3599, 3620, 3652, 3661, 3672, 3673, 3698, 3700, 3719, 3731, 3736, 3737, 3755, 3757, 3759, 3775, 3802, 3805, 3806, 3812, 3817, 3821, 3832, 3850, 3852, 3863, 3934, 3937, 3956, 3976, 3980, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4016, 4054, 4072, 4083, 4089, 4090, 4094, 4119, 4124, 4127, 4128, 4130, 4132/2, 4133, 4134, 4135, 4137, 4138, 4146, 4150, 4151, 4152, 4155, 4156, 4164, 4169, 4171, 4173, 4192, 4201, 4202, 4211, 4217, 4226, 4230, 4231, 4237, 4250, 4254, 4265, 4283, 4287, 4516, 4519); Utinensi (102, 622, 1628, 3867); Utinensis (463, 523, 566, 768); Utini (523, 549, 561, 600, 606, 616, 621, 683, 803, 824, 839, 840, 841, 846, 848, 861, 868, 884, 886, 887, 888, 891, 996, 2277, 3512, 3886, 3949); Utini XII Kal. Octob (565); Utinum (549)
+- **Udine**: Udene (2598); Udin (4244, 4253); Udine (4, 10, 15, 18, 19, 38, 40, 53, 78, 81, 102, 110, 143, 153, 175, 176, 186, 187, 190, 191, 207, 211, 213, 215, 216, 218, 220, 250, 252, 258, 259, 271, 274, 279, 284, 289, 293, 328, 338, 341, 343, 350, 352, 355, 373, 385, 394, 423, 443, 445, 457, 461, 466, 468, 469, 470, 471, 472, 473, 475, 476, 478, 479, 480, 482, 484, 485, 487, 489, 490, 491, 492, 493, 494, 495, 496, 497, 504, 505, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 521, 522, 523, 524, 525, 529, 531, 533, 540, 541, 551, 554, 555, 557, 559, 561, 563, 566, 568, 572, 574, 580, 584, 585, 587, 590, 591, 592, 593, 598, 599, 601, 603, 604, 606, 608, 609, 612, 616, 617, 618, 619, 621, 622, 623, 629, 632, 639, 640, 642, 650, 651, 652, 655, 666, 668, 675, 676, 678, 681, 682, 683, 684, 686, 687, 688, 690, 691, 699, 703, 704, 710, 719, 721, 723, 724, 725, 727, 730, 731, 733, 737, 757, 771, 777, 797, 801, 804, 805, 822, 824, 825, 826, 827, 837, 846, 849, 852, 853, 854, 855, 856, 857, 858, 860, 861, 862, 867, 868, 869, 870, 874, 876, 877, 878, 882, 888, 889, 891, 893, 895, 897, 898, 905, 906, 909, 926, 928, 933, 934, 936, 938, 942, 952, 961, 962, 966, 980, 983, 986, 990, 994, 995, 997, 999, 1002, 1003, 1008, 1011, 1015, 1024, 1034, 1040, 1067, 1070, 1079, 1088, 1091, 1118, 1150, 1166, 1188, 1193, 1195, 1197, 1199, 1200, 1203, 1219, 1224, 1244, 1256, 1261, 1280, 1286, 1290, 1292, 1293, 1309, 1310, 1317, 1318, 1322, 1323, 1324, 1328, 1329, 1330, 1332, 1333, 1334, 1336, 1337, 1338, 1339, 1342, 1343, 1344, 1345, 1346, 1347, 1353, 1356, 1357, 1358, 1359, 1361, 1362, 1363, 1364, 1370, 1371, 1375, 1376, 1389, 1406, 1414, 1430, 1433, 1457, 1458, 1460, 1462, 1465, 1467, 1468, 1476, 1477, 1491, 1510, 1513, 1514, 1517, 1537, 1543, 1547, 1552, 1553, 1559, 1571, 1576, 1578, 1582, 1599, 1614, 1625, 1634, 1652, 1655, 1657, 1658, 1683, 1770, 1896, 1919, 1934, 1937, 1973, 1980, 1981, 1991, 2023, 2024, 2078, 2090, 2091, 2110, 2116, 2135, 2136, 2141, 2159, 2161, 2200, 2278, 2318, 2319, 2367, 2387, 2406, 2409, 2436, 2501, 2557, 2558, 2559, 2561, 2563, 2571, 2572, 2574, 2575, 2576, 2577, 2581, 2586, 2587, 2588, 2597, 2617, 2632/15, 2637/11, 2637/8, 2641, 2642, 2643, 2656, 2657, 2690, 2691, 2692, 2694, 2699, 2700, 2703, 2705, 2734, 2955, 3126, 3498, 3501, 3575, 3579, 3583, 3585, 3590, 3591, 3596, 3597, 3599, 3620, 3652, 3661, 3672, 3673, 3698, 3700, 3719, 3731, 3736, 3737, 3755, 3757, 3759, 3775, 3802, 3805, 3806, 3812, 3817, 3821, 3832, 3850, 3852, 3863, 3934, 3937, 3956, 3976, 3980, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4016, 4054, 4072, 4083, 4089, 4090, 4094, 4119, 4124, 4127, 4128, 4130, 4132/2, 4133, 4134, 4135, 4137, 4138, 4146, 4150, 4151, 4152, 4155, 4156, 4164, 4169, 4171, 4173, 4192, 4201, 4202, 4211, 4217, 4226, 4230, 4231, 4237, 4250, 4254, 4265, 4283, 4287, 4516, 4519); Udine Don Tosolino (824); Udine Millenaria (4516); Utinensi (102, 622, 1628, 3867); Utinensis (463, 523, 566, 768); Utini (523, 549, 561, 600, 606, 616, 621, 683, 803, 824, 839, 840, 841, 846, 848, 861, 868, 884, 886, 887, 888, 891, 996, 2277, 3512, 3886, 3949); Utini XII Kal. Octob (565); Utinum (549)
 - **Valle**: Valle [manuale]; Vāle (4503)
 - **Venezia**: Venetia (610, 713, 717, 813, 4206); Venetiis (617); Venetiis MDCXIV (606); Venetijs (3883); Venezia (1, 10, 18, 23, 41, 57, 72, 102, 229, 300, 314, 337, 467, 468, 469, 471, 473, 476, 479, 480, 482, 483, 484, 485, 486, 487, 488, 489, 492, 495, 502, 513, 518, 519, 524, 530, 539, 558, 560 a, 563, 568, 593, 594, 601, 606, 614, 616, 617, 618, 619, 621, 641, 648, 651, 757, 825, 850, 858, 861, 868, 869, 872, 874, 879, 905, 926, 980, 1004, 1008, 1059, 1095, 1096, 1099, 1100, 1102, 1103, 1108, 1109, 1110, 1197, 1199, 1222, 1224, 1368, 1432, 1433, 1485, 1489, 1513, 1550, 1562, 1578, 1603, 1755, 1960, 1994, 1999, 2102, 2103, 2137, 2159, 2384, 2439, 2468, 2528, 2557, 3184, 3196, 3223, 3228, 3363, 3642, 3658, 3719, 3740, 3781, 3790, 3831, 3846, 3901, 3934, 4013, 4053, 4167)
 - **Vienna**: Viena (467); Vienna (18, 24, 202, 475, 476, 485, 487, 488, 492, 493, 495, 497, 502, 511, 518, 593, 606, 617, 619, 622, 810, 879, 947, 2101, 2161, 2388, 2422, 2559, 3749, 3839)
@@ -1016,10 +1034,13 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Vittoria**: Vittoria [fonte_esterna]; Victoria (2534)
 - **Vittorio Veneto**: Vittorio Veneto [fonte_esterna]; Vittorio (3219, 3751, 4285)
 - **Worms**: Worms [manuale]; Vormanzia (1876)
+- **Włocławek**: Włocławek [manuale]; Wladislaw (1095)
+- **Yeovil**: Yeovil [manuale]; Penn-hill Yeovil (493)
 
 ## 7. Santi con più forme
 
 - **S. Apollonia**: S. Apollonia [manuale]; S. Appolonia (1204, 1205, 1206, 1207, 1208, 1209)
+- **S. Canzianilla**: S. Canzianilla [manuale]; Cantianilla (596)
 - **S. Daniele**: S. Daniele (395, 467, 468, 470, 471, 475, 483, 484, 487, 488, 525, 601, 606, 616, 617, 619, 639, 860, 862, 874, 877, 926, 931, 955, 1000, 1035, 1060, 1310, 1633, 2378, 2582, 2690, 2708, 2710, 2736, 2742, 3673, 3701, 3705, 4170); S. Daniello (476, 484, 519, 785)
 - **S. Filippo Neri**: S. Filippo Neri (1332, 1376); S. Filippo Neri. (3740)
 - **S. Maria Maddalena**: S. M. Maddalena (1332, 1337); S. Maria Maddalena (1337, 2643)
@@ -1032,7 +1053,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3674 entità: elenco completo nella tabella `entita`.
+3673 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

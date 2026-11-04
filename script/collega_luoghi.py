@@ -110,7 +110,7 @@ def indice_geonames(nomi):
             principale = normalizza(r[1]) == k
             p = PESO_TIPO.get(tipo, 0) + (2 if principale else 0)
             if italia:
-                p += 6 if adm1 in REGIONI else 2
+                p += 7 if adm1 == "06" else 6 if adm1 in REGIONI else 2   # il Friuli prima del Veneto
             else:
                 p += min(4, len(str(pop)) - 3) if pop else 0
             if p > cand[k].get(r[0], (-1,))[0]:
@@ -312,7 +312,10 @@ def main():
         loc = locali.get(normalizza(nome), [])
         wd = cache["etichette"].get(nome, [])
         scelte[eid] = (nome, loc, wd, nota_e)
-    gids = {c[1] for _, loc, _, _ in scelte.values() for c in loc[:3]}
+    manuali = {r["forma"]: r for r in csv.DictReader(
+        open(RADICE / "dati" / "liste" / "luoghi_collegamenti.tsv", encoding="utf-8"), delimiter="\t")}
+    gids = {c[1] for _, loc, _, _ in scelte.values() for c in loc[:3]} | \
+        {m["geonameid"] for m in manuali.values() if m["geonameid"]}
     print("Wikidata per GeoNames…", file=sys.stderr)
     wikidata_per_geonames(sorted(gids), cache)
 
@@ -321,8 +324,6 @@ def main():
     print("Wikidata per codice ISTAT…", file=sys.stderr)
     wikidata_per_istat(sorted({istat[n][0] for n in nomi if n in istat} |
                               {cod for n, (cod, reg) in istat.items() if reg == "Friuli-Venezia Giulia"}), cache)
-    manuali = {r["forma"]: r for r in csv.DictReader(
-        open(RADICE / "dati" / "liste" / "luoghi_collegamenti.tsv", encoding="utf-8"), delimiter="\t")}
     cognomi = {f for (f,) in con.execute("SELECT forma FROM lessico WHERE parte='cognome'")}
     doppie = {f for (f,) in con.execute("SELECT forma FROM lessico WHERE stato='doppia_lettura'")}
 
@@ -377,7 +378,7 @@ def main():
             aff, nota = "bassa", "probabilmente cognome, non luogo"
         if nome in manuali:                        # decisioni del curatore o dal contesto
             m = manuali[nome]
-            gid, qid, nota = m["geonameid"] or None, m["qid"] or None, m["nota"]
+            gid, qid, nota = m["geonameid"] or None, m["qid"] or cache["gid"].get(m["geonameid"]), m["nota"]
             aff = "alta" if (gid or qid) else None   # vuoto: non è un luogo
         if nota_e and aff == "alta":
             aff = "media"                          # forma già segnalata come incerta nel lessico

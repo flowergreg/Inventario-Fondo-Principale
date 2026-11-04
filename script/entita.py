@@ -377,6 +377,27 @@ def compatibile(entita_nomi, iniziali, nomi):
 
 # ---------------------------------------------------------------------------
 
+def registra_luogo(ent, norm, testo, corr, nota, r, num, mid):
+    # forma breve e nome ufficiale insieme: Cividale = Cividale del Friuli
+    e = ent("luogo", normalizza(RX_SUFFISSO.sub("", norm)), norm)
+    if len(norm) > len(e["intestazione"]) and RX_SUFFISSO.search(norm):
+        e["intestazione"] = norm
+    if nota:
+        e["note"].add(nota)
+    e["varianti"][(testo, "testo")].add(num)
+    if corr:
+        e["varianti"][(corr.strip("[] "), "correzione_curatore")].add(num)
+    if norm != testo and r:
+        o = r[3] or ""
+        if origine_esterna(o):
+            e["varianti"][(norm, "fonte_esterna")].add(f"{o} {r[4] or ''}".strip())
+        else:
+            e["varianti"][(norm, "manuale")].add(o)
+    e["menzioni"].append(mid)
+    e["voci"].add(num)
+    return e
+
+
 def main():
     con = sqlite3.connect(DB)
     con.executescript(SCHEMA)
@@ -466,23 +487,9 @@ def main():
                     norm, nota = testo, "corrispondenza con le fonti incerta: non unita"
                 else:
                     norm, nota = (r[2] if r and r[2] else testo), None
-                # forma breve e nome ufficiale insieme: Cividale = Cividale del Friuli
-                e = ent("luogo", normalizza(RX_SUFFISSO.sub("", norm)), norm)
-                if len(norm) > len(e["intestazione"]) and RX_SUFFISSO.search(norm):
-                    e["intestazione"] = norm
-                if nota:
-                    e["note"].add(nota)
-                e["varianti"][(testo, "testo")].add(num)
-                if corr:
-                    e["varianti"][(corr.strip("[] "), "correzione_curatore")].add(num)
-                if norm != testo and r:
-                    o = r[3] or ""
-                    if origine_esterna(o):
-                        e["varianti"][(norm, "fonte_esterna")].add(f"{o} {r[4] or ''}".strip())
-                    else:
-                        e["varianti"][(norm, "manuale")].add(o)
-                e["menzioni"].append(mid)
-                e["voci"].add(num)
+                # «Brazzano Nebula» = Brazzano | Neblo: una menzione, più luoghi
+                for norm in [x.strip() for x in norm.split("|")]:
+                    e = registra_luogo(ent, norm, testo, corr, nota, r, num, mid)
                 continue
             if tipo_eff == "santo":
                 r = (lex.get(testo) or [None])[0]
