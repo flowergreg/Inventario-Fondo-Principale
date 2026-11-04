@@ -1,0 +1,477 @@
+#!/usr/bin/env python3
+"""Fase 4 — raggruppamento delle menzioni in entità (stato «proposto»).
+
+Parte dalla tabella `lessico` (fase 3) e dalle menzioni:
+
+- luoghi: un'entità per forma di riferimento (nome ufficiale ISTAT/GeoNames,
+  forma italiana, decisione del curatore); le corrispondenze incerte
+  (stato «da_verificare») non si uniscono ad altre forme;
+- santi: un'entità per forma (S. Niccolò → S. Nicola);
+- persone: chiave = nomi di battesimo in forma italiana + cognomi in forma
+  normalizzata (CLAUDE.md), indipendente dall'ordine (Florio Daniele = Daniele
+  Florio), senza titoli né particelle semplici (di, de, da):
+  · i cognomi si normalizzano solo graficamente: «Savorgnan» non diventa
+    «Savorgnano», «Brazzà» non diventa «Brazzacco»; valgono solo le correzioni
+    del curatore sui cognomi (Brunalleschi → Brunelleschi);
+  · le menzioni con sole iniziali («G. B. Pirona») si uniscono a un'entità
+    completa solo se ce n'è una e una sola compatibile; altrimenti restano a sé;
+  · le menzioni di un solo nome o cognome non fanno entità (sono famiglie o
+    persone non identificabili): restano senza entità e si contano nel report;
+  · gli omonimi noti (Daniele Florio, Antonio Savorgnan, Della Torre) e i gruppi
+    presenti in molte voci sono segnalati: un'entità può contenere più persone.
+
+Tutte le entità hanno stato «proposto». Ogni variante registra l'origine
+(testo, correzione_curatore, fonte_esterna, manuale) e il riferimento.
+
+Scrive le tabelle `entita`, `varianti`, `identificatori` (vuota: fase 5),
+aggiorna `menzioni.entita` e il report report/fase_4_entita.md.
+
+Uso: python3 script/entita.py
+"""
+
+import re
+import sqlite3
+import sys
+from collections import Counter, defaultdict
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from normalizza import normalizza  # noqa: E402
+import estrai  # noqa: E402
+from lessico import RX_PAROLA  # noqa: E402
+
+RADICE = Path(__file__).resolve().parent.parent
+DB = RADICE / "dati" / "inventario.sqlite"
+LISTE = RADICE / "dati" / "liste"
+OUT = RADICE / "report" / "fase_4_entita.md"
+
+SCHEMA = """
+DROP TABLE IF EXISTS identificatori;
+DROP TABLE IF EXISTS varianti;
+DROP TABLE IF EXISTS entita;
+CREATE TABLE entita (
+    id                 INTEGER PRIMARY KEY,
+    tipo               TEXT NOT NULL,      -- persona | luogo | santo
+    forma_intestazione TEXT NOT NULL,
+    stato              TEXT NOT NULL DEFAULT 'proposto',   -- proposto | validato
+    chiave             TEXT NOT NULL,      -- chiave di raggruppamento (per rigenerare e controllare)
+    nota               TEXT                -- segnalazioni per la revisione (omonimi, iniziali, grafie diverse)
+);
+CREATE TABLE varianti (
+    id                 INTEGER PRIMARY KEY,
+    entita             INTEGER NOT NULL REFERENCES entita(id),
+    forma              TEXT NOT NULL,
+    forma_normalizzata TEXT NOT NULL,
+    origine            TEXT NOT NULL,      -- testo | correzione_curatore | fonte_esterna | manuale
+    riferimento        TEXT                -- voci (testo), fonte e codice (fonte_esterna), nota (manuale)
+);
+CREATE TABLE identificatori (
+    entita             INTEGER NOT NULL REFERENCES entita(id),
+    fonte              TEXT NOT NULL,
+    codice             TEXT NOT NULL,
+    url                TEXT,
+    forma_autorizzata  TEXT,
+    data_verifica      TEXT
+);
+CREATE INDEX ix_varianti_entita ON varianti(entita);
+CREATE INDEX ix_varianti_norm ON varianti(forma_normalizzata);
+"""
+
+# particelle che non distinguono (Colloredo (di) Ermes = Ermes di Colloredo); gli articoli restano
+# nel cognome (Della Torre ≠ Torre)
+PARTICELLE_SEMPLICI = {"di", "de", "da", "d'", "d’", "de'", "de’", "e"}
+OMONIMI_NOTI = {("daniele",): "florio", ("antonio",): "savorgnan"}
+COGNOMI_OMONIMI = {"dela tore", "tore", "savorgnan", "florio"}
+RX_SUFFISSO = re.compile(r" (?:del Friuli|al Tagliamento|di Friuli)$")
+SOGLIA_VOCI = 12          # oltre questo numero di voci un'entità di persona è segnalata
+
+
+def lessico(con):
+    """forma → lista di righe (parte, stato, forma_normalizzata, origine, riferimento)."""
+    d = defaultdict(list)
+    for f, p, s, n, o, r in con.execute(
+            "SELECT forma, parte, stato, forma_normalizzata, origine, riferimento FROM lessico"):
+        d[f].append((p, s, n, o, r))
+    return d
+
+
+def riga_persona(righe):
+    """La riga del lessico che vale per una parola dentro un nome di persona."""
+    for r in righe:
+        if r[0] not in ("luogo", "santo", "opera"):
+            return r
+    return righe[0] if righe else None
+
+
+def riga_luogo(righe):
+    for r in righe:
+        if r[0] == "luogo":
+            return r
+    return righe[0] if righe else None
+
+
+def origine_esterna(origine):
+    o = origine or ""
+    return any(x in o for x in ("ISTAT", "GeoNames", "Wikidata"))
+
+
+# ---------------------------------------------------------------------------
+# Persone
+# ---------------------------------------------------------------------------
+
+def scomponi(testo, lex, titoli):
+    """Parole di un nome di persona → (nomi, iniziali, cognomi, vista).
+
+    nomi: tuple di alternative italiane normalizzate per ogni nome di battesimo
+    («Giacomo o Jacopo» → ("giacomo", "iacopo")); iniziali: lettere dei nomi
+    abbreviati non risolti; cognomi: forme normalizzate (con eventuali articoli);
+    vista: (nomi in forma italiana e iniziali, cognome come nel testo) per
+    l'intestazione."""
+    nomi, iniziali, cognomi, vis_n, vis_c = [], [], [], [], []
+    articolo = None
+    for m in RX_PAROLA.finditer(testo.replace("(", " ").replace(")", " ")):
+        w = m.group(0)
+        wl = w.lower()
+        if wl in PARTICELLE_SEMPLICI:
+            continue
+        if wl in estrai.PARTICELLE:              # della, del, dalla, degli…: restano col cognome
+            articolo = w
+            continue
+        if wl in titoli or wl.rstrip(".") + "." in titoli:
+            continue
+        if w[:1].islower():                      # «a» (Philippi a Turre), «e», abbreviazioni minuscole
+            continue
+        r = riga_persona(lex.get(w, []))
+        parte = r[0] if r else ("iniziale" if re.fullmatch(r"[A-Z]\.?", w) else "cognome")
+        if parte in ("titolo", "parola", "opera"):
+            continue
+        if parte == "particella":
+            articolo = w
+            continue
+        if parte == "numerale":
+            nomi.append((w.lower(),))
+            vis_n.append(w)
+        elif parte in ("iniziale", "abbreviazione"):
+            iniziali.append(normalizza(w)[:1])
+            vis_n.append(normalizza(w)[:1].upper() + ".")
+        elif parte == "nome_di_battesimo":
+            n = r[2] or w
+            if n.startswith("("):
+                iniziali.append(normalizza(w)[:1])
+                vis_n.append(normalizza(w)[:1].upper() + ".")
+            elif " o " in n:                     # «Giacomo o Jacopo»: un nome, due alternative
+                nomi.append(tuple(normalizza(x) for x in n.split(" o ")))
+                vis_n.append(n)
+            else:                                # «Giovanni Battista» → due nomi
+                for nome in n.split():
+                    nomi.append((normalizza(nome),))
+                    vis_n.append(nome)
+        else:                                   # cognome, nome_abbreviato, luogo dentro un nome, doppia lettura
+            forma = w
+            if r and r[3] and r[2] and (r[3].startswith("curatore") or r[3] == "correzione_curatore") \
+                    and parte in ("cognome", "nome_abbreviato") and " " not in r[2]:
+                forma = r[2]                    # Brunalleschi → Brunelleschi, Lir. → Liruti
+            c = normalizza(forma)
+            if articolo:
+                c = normalizza(articolo) + " " + c
+                forma = articolo + " " + forma
+                articolo = None
+            cognomi.append(c)
+            vis_c.append(forma)
+    return nomi, iniziali, cognomi, (vis_n, " ".join(vis_c))
+
+
+def chiave_persona(nomi, cognomi):
+    return " ".join(sorted("|".join(n) for n in nomi)) + " / " + " ".join(sorted(cognomi))
+
+
+def compatibile(entita_nomi, iniziali, nomi):
+    """Un'entità completa è compatibile con una menzione a iniziali se ne contiene i nomi
+    espliciti e se le iniziali corrispondono ai nomi restanti."""
+    resto = list(entita_nomi)
+    for n in nomi:
+        trovato = next((e for e in resto if set(e) & set(n)), None)
+        if trovato is None:
+            return False
+        resto.remove(trovato)
+    if len(iniziali) != len(resto):
+        return False
+    lettere = list(iniziali)
+    for e in resto:                       # ogni nome restante deve avere un'iniziale corrispondente
+        x = next((l for l in lettere if any(a[:1] == l for a in e)), None)
+        if x is None:
+            return False
+        lettere.remove(x)
+    return True
+
+
+# ---------------------------------------------------------------------------
+
+def main():
+    con = sqlite3.connect(DB)
+    con.executescript(SCHEMA)
+    lex = lessico(con)
+    titoli = {t.lower() for t in estrai.leggi_parole("titoli.txt")}
+    numeri = dict(con.execute("SELECT id, numero FROM voci"))
+    menzioni = con.execute("SELECT id, voce, testo_esatto, tipo, correzione, forma_riferimento FROM menzioni "
+                           "ORDER BY voce, inizio").fetchall()
+
+    entita = {}                # (tipo, chiave) → dict(intestazione, nota, varianti: {(forma, origine): set(rif)}, menzioni)
+    senza = Counter()          # menzioni lasciate senza entità, per motivo
+    soli = Counter()           # nomi singoli senza entità
+
+    def ent(tipo, chiave, intestazione):
+        k = (tipo, chiave)
+        if k not in entita:
+            entita[k] = {"intestazione": intestazione, "note": set(), "varianti": defaultdict(set),
+                         "menzioni": [], "voci": set()}
+        return entita[k]
+
+    persone_iniziali = []      # menzioni con iniziali, da risolvere dopo le entità complete
+
+    for mid, voce, testo, tipo, corr, rif_forma in menzioni:
+        num = numeri[voce]
+        tipo_eff = tipo
+        if tipo in ("luogo", "santo"):
+            r = riga_luogo(lex.get(testo, [])) if tipo == "luogo" else (lex.get(testo) or [None])[0]
+            if r and tipo == "luogo" and r[0] != "luogo":
+                # il curatore ha riclassificato la forma: «Battistella A.°» è una persona, «Alla» una parola
+                if r[0] in ("parola", "abbreviazione", "opera"):
+                    senza["parola o abbreviazione, non luogo"] += 1
+                    continue
+                if r[0] == "santo":
+                    tipo_eff = "santo"
+                else:
+                    tipo_eff = "persona"
+                    if r[2] and " " in r[2]:
+                        testo_p = r[2]           # «Antonio Battistella»
+                    else:
+                        testo_p = r[2] or testo
+            if tipo_eff == "luogo":
+                if r and r[1] == "da_verificare":
+                    norm, nota = testo, "corrispondenza con le fonti incerta: non unita"
+                else:
+                    norm, nota = (r[2] if r and r[2] else testo), None
+                # forma breve e nome ufficiale insieme: Cividale = Cividale del Friuli
+                e = ent("luogo", normalizza(RX_SUFFISSO.sub("", norm)), norm)
+                if len(norm) > len(e["intestazione"]) and RX_SUFFISSO.search(norm):
+                    e["intestazione"] = norm
+                if nota:
+                    e["note"].add(nota)
+                e["varianti"][(testo, "testo")].add(num)
+                if corr:
+                    e["varianti"][(corr.strip("[] "), "correzione_curatore")].add(num)
+                if norm != testo and r:
+                    o = r[3] or ""
+                    if origine_esterna(o):
+                        e["varianti"][(norm, "fonte_esterna")].add(f"{o} {r[4] or ''}".strip())
+                    else:
+                        e["varianti"][(norm, "manuale")].add(o)
+                e["menzioni"].append(mid)
+                e["voci"].add(num)
+                continue
+            if tipo_eff == "santo":
+                r = (lex.get(testo) or [None])[0]
+                norm = r[2] if r and r[2] else testo
+                e = ent("santo", normalizza(norm), norm)
+                e["varianti"][(testo, "testo")].add(num)
+                if norm != testo:
+                    e["varianti"][(norm, "manuale")].add(r[3] or "")
+                e["menzioni"].append(mid)
+                e["voci"].add(num)
+                continue
+            testo_chiave = testo_p
+        elif tipo == "opera":
+            senza["opera"] += 1
+            continue
+        else:
+            testo_chiave = corr.strip("[] ") if corr else testo
+
+        # «Gasparo e Carlo Gozzi»: più persone in una menzione, il cognome finale vale per tutte
+        parti = [x for x in re.split(r"\s(?:e|ed)\s", testo_chiave) if x.strip()]
+        if len(parti) > 1 and not all(re.match(r"[A-Z]", x.strip()) for x in parti):
+            parti = [testo_chiave]
+        persone = [scomponi(x, lex, titoli) for x in parti]
+        if len(persone) > 1 and persone[-1][2]:
+            persone = [(n, i, c or persone[-1][2], (v[0], v[1] or persone[-1][3][1])) for n, i, c, v in persone]
+        valide = [p for p in persone if p[2] and (p[0] or p[1])]
+        if not valide:
+            senza["nome o cognome singolo"] += 1
+            soli[testo] += 1
+            continue
+        for nomi, iniziali, cognomi, vista in valide:
+            dato = (mid, num, testo, corr, nomi, iniziali, cognomi, vista, len(valide) > 1)
+            if iniziali:
+                persone_iniziali.append(dato)
+            else:
+                aggiungi_persona(ent, *dato)
+
+    # menzioni con iniziali: unite solo a un'entità completa compatibile e unica
+    complete = defaultdict(list)          # cognomi → entità complete
+    for (tipo, chiave), e in entita.items():
+        if tipo == "persona":
+            complete[e["cognomi"]].append(e)
+    for dato in persone_iniziali:
+        mid, num, testo, corr, nomi, iniziali, cognomi, vista, multipla = dato
+        cand = [e for e in complete.get(tuple(sorted(cognomi)), []) if compatibile(e["nomi"], iniziali, nomi)]
+        if len(cand) == 1:
+            e = cand[0]
+            e["note"].add("comprende forme con iniziali")
+            registra(e, *dato)
+        else:
+            e = aggiungi_persona(ent, *dato)
+            if len(cand) > 1:
+                e["note"].add("iniziali compatibili con più persone: " +
+                              "; ".join(sorted(x["intestazione"] for x in cand)))
+
+    # segnalazioni
+    for (tipo, chiave), e in entita.items():
+        if tipo != "persona":
+            continue
+        if any(c in COGNOMI_OMONIMI for c in e["cognomi"]):
+            e["note"].add("famiglia con omonimi noti: controllare")
+        if len(e["voci"]) >= SOGLIA_VOCI:
+            e["note"].add(f"presente in {len(e['voci'])} voci: può riunire più omonimi")
+        grafie = {g for g in e["grafie"]}
+        if len({normalizza(g) for g in grafie}) == 1 and len({g.lower() for g in grafie}) > 1:
+            e["note"].add("cognome in grafie diverse: " + ", ".join(sorted(grafie)))
+
+    scrivi(con, entita)
+    report(con, entita, senza, soli)
+    con.close()
+
+
+def intestazione_persona(vista):
+    nomi, cognome = vista
+    return f"{cognome}, {' '.join(nomi)}" if nomi else cognome
+
+
+def registra(e, mid, num, testo, corr, nomi, iniziali, cognomi, vista, multipla):
+    e["varianti"][(testo, "testo")].add(num)
+    if corr:
+        e["varianti"][(corr.strip("[] "), "correzione_curatore")].add(num)
+    e["menzioni"].append(mid)
+    e["voci"].add(num)
+    e["grafie"].add(vista[1])
+    if multipla:
+        e["note"].add("menzione con più persone («… e …»)")
+
+
+def aggiungi_persona(ent, mid, num, testo, corr, nomi, iniziali, cognomi, vista, multipla):
+    nomi_k = list(nomi) + [(i + ".",) for i in iniziali]
+    e = ent("persona", chiave_persona(nomi_k, cognomi), None)
+    if e["intestazione"] is None:
+        e["intestazione"] = intestazione_persona(vista)
+        e["nomi"] = list(nomi)
+        e["cognomi"] = tuple(sorted(cognomi))
+        e["grafie"] = set()
+    registra(e, mid, num, testo, corr, nomi, iniziali, cognomi, vista, multipla)
+    return e
+
+
+def chiave_voce(n):
+    m = re.match(r"(\d+)", str(n))
+    return (int(m.group(1)) if m else 0, str(n))
+
+
+def scrivi(con, entita):
+    for (tipo, chiave), e in sorted(entita.items(), key=lambda x: (x[0][0], x[1]["intestazione"])):
+        cur = con.execute("INSERT INTO entita (tipo, forma_intestazione, stato, chiave, nota) VALUES (?,?,?,?,?)",
+                          (tipo, e["intestazione"], "proposto", chiave, "; ".join(sorted(e["note"])) or None))
+        eid = cur.lastrowid
+        e["id"] = eid
+        in_testo = {f for (f, o) in e["varianti"] if o == "testo"}
+        esterne = {f for (f, o) in e["varianti"] if o == "fonte_esterna"}
+        for (forma, origine), rif in sorted(e["varianti"].items()):
+            # la forma di riferimento si registra a parte solo se non compare già nel testo
+            # (e una volta sola: la fonte esterna prevale sulla lista manuale)
+            if origine in ("fonte_esterna", "manuale") and (forma in in_testo or
+                                                             (origine == "manuale" and forma in esterne)):
+                continue
+            if origine in ("testo", "correzione_curatore"):
+                r = ", ".join(str(v) for v in sorted(rif, key=chiave_voce))
+            else:
+                r = "; ".join(sorted(x for x in rif if x)) or None
+            con.execute("INSERT INTO varianti (entita, forma, forma_normalizzata, origine, riferimento) "
+                        "VALUES (?,?,?,?,?)", (eid, forma, normalizza(forma), origine, r))
+        con.executemany("UPDATE menzioni SET entita=? WHERE id=?", [(eid, m) for m in e["menzioni"]])
+    con.commit()
+
+
+# ---------------------------------------------------------------------------
+# Report
+# ---------------------------------------------------------------------------
+
+def report(con, entita, senza, soli):
+    q = lambda s, *a: con.execute(s, a).fetchall()  # noqa: E731
+    r = []
+    w = r.append
+    w("# Fase 4 — Entità proposte\n")
+    w("Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la conferma del curatore. "
+      "Tabelle: `entita` (tipo, forma di intestazione, chiave, nota), `varianti` (forma, forma normalizzata, "
+      "origine, riferimento), `menzioni.entita`.\n")
+    w("## Riepilogo\n")
+    w("| Tipo | Entità | con più forme | Menzioni collegate |\n|---|---|---|---|")
+    for tipo in ("persona", "luogo", "santo"):
+        n = q("SELECT count(*) FROM entita WHERE tipo=?", tipo)[0][0]
+        piu = q("SELECT count(*) FROM entita e WHERE tipo=? AND (SELECT count(*) FROM varianti v "
+                "WHERE v.entita=e.id AND v.origine='testo') > 1", tipo)[0][0]
+        m = q("SELECT count(*) FROM menzioni m JOIN entita e ON e.id=m.entita WHERE e.tipo=?", tipo)[0][0]
+        w(f"| {tipo} | {n} | {piu} | {m} |")
+    tot = q("SELECT count(*) FROM menzioni")[0][0]
+    coll = q("SELECT count(*) FROM menzioni WHERE entita IS NOT NULL")[0][0]
+    w(f"\nMenzioni collegate a un'entità: {coll} su {tot}. Senza entità: "
+      + ", ".join(f"{k} {v}" for k, v in senza.most_common()) + ".\n")
+    w("Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico "
+      "(fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare "
+      "una famiglia o più persone.\n")
+
+    def elenca(titolo, spiega, righe):
+        w(f"## {titolo}\n")
+        if spiega:
+            w(spiega + "\n")
+        if not righe:
+            w("_Nessuna._\n")
+        for eid, intest, nota in righe:
+            forme = q("SELECT forma, origine, riferimento FROM varianti WHERE entita=? ORDER BY origine, forma", eid)
+            testo = "; ".join(f"{f} ({rif})" if o == "testo" else f"{f} [{o}]" for f, o, rif in forme)
+            w(f"- **{intest}**" + (f" — _{nota}_" if nota else "") + f": {testo}")
+        w("")
+
+    elenca("1. Persone: iniziali compatibili con più entità",
+           "Le menzioni con iniziali non sono state unite: indica a quale persona appartengono.",
+           q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND nota LIKE '%più persone%' "
+             "ORDER BY forma_intestazione"))
+    elenca("2. Persone: possibili omonimi",
+           "Famiglie con omonimi noti o nomi presenti in molte voci: l'entità può riunire più persone.",
+           q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND "
+             "(nota LIKE '%omonimi%') ORDER BY forma_intestazione"))
+    elenca("3. Persone: cognome in grafie diverse",
+           "Forme unite dalla normalizzazione grafica (doppie, j/i, accenti): controllare che sia la stessa persona.",
+           q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND nota LIKE '%grafie diverse%' "
+             "ORDER BY forma_intestazione"))
+    elenca("4. Persone: forme con iniziali unite a un nome completo", None,
+           q("SELECT id, forma_intestazione, NULL FROM entita WHERE tipo='persona' AND nota LIKE '%forme con iniziali%' "
+             "ORDER BY forma_intestazione"))
+    elenca("5. Persone: altre entità con più forme (forme inverse, abbreviazioni, latino)", None,
+           q("SELECT e.id, e.forma_intestazione, NULL FROM entita e WHERE tipo='persona' AND (nota IS NULL) AND "
+             "(SELECT count(*) FROM varianti v WHERE v.entita=e.id AND v.origine='testo') > 1 "
+             "ORDER BY forma_intestazione"))
+    elenca("6. Luoghi con più forme", None,
+           q("SELECT e.id, e.forma_intestazione, e.nota FROM entita e WHERE tipo='luogo' AND "
+             "(SELECT count(*) FROM varianti v WHERE v.entita=e.id) > 1 ORDER BY forma_intestazione"))
+    elenca("7. Santi con più forme", None,
+           q("SELECT e.id, e.forma_intestazione, e.nota FROM entita e WHERE tipo='santo' AND "
+             "(SELECT count(*) FROM varianti v WHERE v.entita=e.id) > 1 ORDER BY forma_intestazione"))
+    w("## 8. Persone con una sola forma\n")
+    n1 = q("SELECT count(*) FROM entita e WHERE tipo='persona' AND "
+           "(SELECT count(*) FROM varianti v WHERE v.entita=e.id) = 1")[0][0]
+    w(f"{n1} entità: elenco completo nella tabella `entita`.\n")
+    w("## 9. Nomi singoli senza entità (più frequenti)\n")
+    w(", ".join(f"{t} ({n})" for t, n in soli.most_common(150)) + "\n")
+    OUT.write_text("\n".join(r) + "\n", encoding="utf-8")
+    print(f"Report scritto in {OUT} ({OUT.stat().st_size // 1024} KB)")
+
+
+if __name__ == "__main__":
+    main()

@@ -83,3 +83,13 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 - Corrispondenze GeoNames lontane dalla forma (Homo → Qom, Sion → Gerusalemme) restano «da verificare».
 - Varianti grafiche dei cognomi (Bosio/Bossio): si segnala il gruppo, nessuna forma imposta; la forma di riferimento verrà dalle fonti.
 - Decisioni del curatore e decisioni dal contesto della voce: `dati/liste/normalizzazioni_curatore.tsv` (forma, parte, forma normalizzata, origine `curatore`|`contesto`, nota), applicate per ultime. Parte «parola» = non è un nome (Bozze, Madonne, Januarii → gennaio).
+
+## Fase 4 — esecuzione
+
+`python3 script/entita.py` crea le tabelle `entita` (con `chiave` e `nota` per la revisione), `varianti`, `identificatori` (vuota fino alla fase 5), collega `menzioni.entita` e scrive `report/fase_4_entita.md`. Tutte le entità sono «proposto».
+- Luoghi: un'entità per forma di riferimento; forma breve e nome ufficiale insieme (Cividale = Cividale del Friuli); le corrispondenze incerte restano a sé.
+- Persone: chiave = nomi di battesimo in forma italiana + cognomi normalizzati, indipendente dall'ordine, senza titoli e senza «di/de/da» (gli articoli restano: Della Torre ≠ Torre). I cognomi si normalizzano solo graficamente (Savorgnan resta Savorgnan), salvo le correzioni del curatore.
+- Le iniziali (G. B. Pirona) si uniscono a un nome completo solo se compatibile e unico; altrimenti restano a sé e sono segnalate.
+- «Gasparo e Carlo Gozzi»: due entità, il cognome finale vale per entrambi.
+- Nomi o cognomi isolati non fanno entità (possono indicare una famiglia o più persone): restano trovabili con la normalizzazione e il lessico.
+- Segnalati per la revisione: famiglie con omonimi noti, entità presenti in molte voci, cognomi in grafie diverse.
