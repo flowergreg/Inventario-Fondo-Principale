@@ -107,3 +107,4 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 - «Giacomo de Sit.»: dopo una particella, il punto finale chiude la frase.
 - Nomi doppi fusi uniti nella chiave: Giandomenico = Gian Domenico = Gio. Domenico.
 - Una decisione «cognome» del curatore non tocca la riga di luogo della stessa forma (Trento).
+- Il cognome abbreviato all'iniziale si scioglie solo con il cognome dell'intestazione della voce (non con un cognome qualsiasi della voce: «G. Gius. Bellina»).

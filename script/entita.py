@@ -143,7 +143,8 @@ def origine_esterna(origine):
 # Persone
 # ---------------------------------------------------------------------------
 
-def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=frozenset()):
+def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=frozenset(),
+             intestazione=frozenset()):
     """Parole di un nome di persona → (nomi, iniziali, cognomi, vista).
 
     nomi: tuple di alternative italiane normalizzate per ogni nome di battesimo
@@ -226,9 +227,10 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
                 articolo = None
             cognomi.append(c)
             vis_c.append(forma)
-    if dedurre and not cognomi and len(iniziali) == 1 and nomi and cognomi_voce:
-        # «Z. Girolamo» nella voce «Zorzi, Mario»: il compilatore abbrevia il cognome ovvio
-        simili = [c for c in cognomi_voce if c[:1] == iniziali[0] and " " not in c]
+    if dedurre and not cognomi and len(iniziali) == 1 and nomi and intestazione:
+        # «Z. Girolamo» nella voce «Zorzi, Mario»: il compilatore abbrevia il cognome ovvio, cioè
+        # quello dell'intestazione (non un cognome qualsiasi della voce: «G. Gius. Bellina»)
+        simili = [c for c in intestazione if c[:1] == iniziali[0]]
         if len(simili) == 1:
             i_v = next(k for k, v in enumerate(vis_n) if v.endswith("."))
             del vis_n[i_v]
@@ -375,7 +377,8 @@ def main():
     # cognomi di ogni voce: riconosciuti, o dedotti quando l'unica parola intera è il cognome
     # («Alessandro e Gio. Batta Paulino»)
     cognomi_voce = defaultdict(set)
-    ordine_voce = defaultdict(Counter)       # voce → quante menzioni Cognome Nome / Nome Cognome
+    ordine_voce = defaultdict(Counter)
+    intestazione_voce = defaultdict(set)     # cognomi dell'intestazione di ogni voce       # voce → quante menzioni Cognome Nome / Nome Cognome
     for voce, t, sede_m, ini in con.execute("SELECT voce, testo_esatto, sede, inizio FROM menzioni "
                                             "WHERE tipo='persona'"):
         apre = sede_m == "testo" and ini <= 2
@@ -395,6 +398,8 @@ def main():
                 # l'intestazione della voce (Cognome Nome) o un'unica parola intera possibile
                 cogn = scomponi(x, lex, titoli, inizio_voce=apre)[2] if apre or ULTIMI_CANDIDATI[0] == 1 else []
             cognomi_voce[voce].update(c for c in cogn if c)
+            if apre:
+                intestazione_voce[voce].update(c for c in cogn if c and " " not in c)
     for mid, voce, testo, tipo, corr, rif_forma, sede, inizio, fine in menzioni:
         # ordine Cognome Nome: all'inizio della voce, e nelle intestazioni ed elenchi interni
         # («20. Delfino Daniele. Concessione…», «…, Zorzi Carlo Maria, De Lepre…»)
@@ -488,7 +493,8 @@ def main():
             parti = [x for x in re.split(r"\s(?:e|ed)\s", testo_chiave) if x.strip()]
             if len(parti) > 1 and not all(re.match(r"[A-Z]", x.strip()) for x in parti):
                 parti = [testo_chiave]
-            persone = [scomponi(x, lex, titoli, inizio_voce and k == 0, cognomi_voce=cognomi_voce.get(voce, frozenset()))
+            persone = [scomponi(x, lex, titoli, inizio_voce and k == 0, cognomi_voce=cognomi_voce.get(voce, frozenset()),
+                                 intestazione=intestazione_voce.get(voce, frozenset()))
                        for k, x in enumerate(parti)]
             if len(persone) > 1 and persone[-1][2]:
                 persone = [(n, i, c or persone[-1][2], (v[0], v[1] or persone[-1][3][1])) for n, i, c, v in persone]
