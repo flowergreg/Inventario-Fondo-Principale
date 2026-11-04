@@ -7,7 +7,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
 | abbreviazione | 0 | 2 | 0 | 281 | 283 | 606 |
-| cognome | 113 | 292 | 323 | 4880 | 5608 | 14372 |
+| cognome | 113 | 293 | 323 | 4879 | 5608 | 14372 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1833 |
 | luogo | 398 | 176 | 84 | 6 | 664 | 4517 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
@@ -686,12 +686,12 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Girol. | 2 | Girolamo | abbreviazione (lista manuale) | 606 |
 | Io. | 2 | Giovanni | curatore | 12, 414 |
 | Jacobum | 2 | Giacomo o Jacopo | contesto: ambiguo: da decidere con le fonti | 606, 622 |
-| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardus» | 620, 2521 |
+| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardo» | 620, 2521 |
 | Lunardo | 2 | Leonardo | variante (lista manuale) | 10, 473 |
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
@@ -734,7 +734,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -773,11 +773,11 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Valentinum | 1 | Valentino | forma latina declinata di «Valentino» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
-| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilius» | 11 |
+| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |
 
 ## 4. Cognomi: varianti grafiche e correzioni del curatore
 
-Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quadre: la forma proposta è la più frequente del gruppo. Forme: 292.
+Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quadre: la forma proposta è la più frequente del gruppo. Forme: 293.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -1070,6 +1070,7 @@ Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quad
 | Candiano Bollano | 1 | Candiano Bollani | contesto: viceluogotenente (825) | 825 |
 | Cittadella Vigodarzene | 1 | Cittadella Vigodarzere | contesto: Andrea Cittadella Vigodarzere (2557) | 2557 |
 | Cortinovis | 5 | Cortenovis | curatore: stessa famiglia: Angelo Maria e Mario, barnabiti (592, 4287) | 592, 1430, 1431, 3629, 4287 |
+| Maroldum | 1 | Maroldo | curatore: accusativo latino: Giacomo Maroldo (622) | 622 |
 | Marlupino | 2 | Morlupino | correzione_curatore | 71, 389 |
 | Braida Sebast.° | 1 | Sebastiano Braida | curatore: 2022 | 2022 |
 | Secchia | 1 | Sechia | correzione_curatore | 9 |
@@ -1082,7 +1083,7 @@ Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ 
 
 ## 6. Cognomi da verificare nelle fonti
 
-4880 forme (10856 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4879 forme (10855 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 
@@ -1113,7 +1114,7 @@ Forme intere. Forme: 284.
 | S. Antonio di Padova | 4 | — | santo da dirimere | 825, 944, 1351, 3043 |
 | S. Chiara di Udine | 4 | — | santo da dirimere | 135, 568, 891, 4224 |
 | S. Gottardo | 4 | — | santo da dirimere | 870, 1312, 1313, 1343 |
-| S. Niccolò | 4 | S. Nicola | curatore | 870, 1265, 1286, 1290 |
+| S. Niccolò | 4 | S. Nicolò | curatore | 870, 1265, 1286, 1290 |
 | S. Croce | 3 | — | santo da dirimere | 1286, 3660, 4266 |
 | S. Giovanni | 3 | — | santo da dirimere | 21, 606, 3804 |
 | S. Luigi Gonzaga | 3 | — | santo da dirimere | 355, 910, 1375 |

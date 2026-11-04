@@ -8,7 +8,7 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 |---|---|---|---|
 | persona | 4210 | 538 | 7423 |
 | luogo | 562 | 63 | 4563 |
-| santo | 198 | 29 | 472 |
+| santo | 197 | 29 | 472 |
 
 Menzioni collegate a un'entità: 12458 su 20985. Senza entità: nome o cognome singolo 8303, parola o abbreviazione, non luogo 131, opera 43, esclusa dal curatore 32, titolo o parola con S. 18.
 
@@ -1118,8 +1118,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **San Mauro**: San Mauro [manuale]; S. Mauro (616)
 - **San Michele**: San Michele [manuale]; S. Michele (606, 4162)
 - **San Michele Arcangelo**: San Michele Arcangelo [manuale]; S. Michele Arc. (606); S. Michele Arcangelo (596)
-- **San Nicola**: San Nicola [manuale]; S. Niccolò (870, 1265, 1286, 1290)
-- **San Nicolò**: San Nicolò [manuale]; S. Nicolò (618, 1286, 1351, 1355, 1356, 1362, 2011); S. Nicolò di G. M. Tiraboschi (102)
+- **San Nicolò**: San Nicolò [manuale]; S. Niccolò (870, 1265, 1286, 1290); S. Nicolò (618, 1286, 1351, 1355, 1356, 1362, 2011); S. Nicolò di G. M. Tiraboschi (102)
 - **San Nicolò di Candolè**: San Nicolò di Candolè [manuale]; S. Nicolò di Candolè (2386)
 - **San Nicolò di Richinvelda**: San Nicolò di Richinvelda [manuale]; S. Nicolai de Rechinvelto (891)
 - **San Nicolò di Udine**: San Nicolò di Udine [manuale]; S. Nicolò di Udine (1355)
