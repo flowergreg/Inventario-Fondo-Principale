@@ -7,7 +7,7 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
 | persona | 4197 | 534 | 7403 |
-| luogo | 553 | 60 | 4444 |
+| luogo | 552 | 60 | 4444 |
 | santo | 283 | 9 | 632 |
 
 Menzioni collegate a un'entità: 12479 su 20985. Senza entità: nome o cognome singolo 8300, parola o abbreviazione, non luogo 131, opera 43, esclusa dal curatore 32.
@@ -961,7 +961,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Gerusalemme**: Gerosolima (18, 32); Gerusalemme (323, 576, 1552)
 - **Giassico**: Giassicco (496); Giassico (491, 1822)
 - **Graz**: Gratz (476); Graz (470, 493, 632, 867)
-- **Grizàn**: Grizan (520); Grizàn (23)
+- **Grazzano**: Grazzano (520, 852, 3741); Grizan (520); Grizàn (23)
 - **Gropello Cairoli**: Gropello Cairoli [manuale]; Gropallo (497)
 - **Ialmicco**: Ialmicco (4260); Jalmicco (4084)
 - **Iași**: Iași [fonte_esterna]; Jassy (1987)

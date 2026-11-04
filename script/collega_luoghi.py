@@ -331,6 +331,8 @@ def main():
     print("Wikidata per codice ISTAT…", file=sys.stderr)
     wikidata_per_istat(sorted({istat[n][0] for n in nomi if n in istat} |
                               {cod for n, (cod, reg) in istat.items() if reg == "Friuli-Venezia Giulia"}), cache)
+    confermati = {x.strip() for x in (RADICE / "dati" / "liste" / "luoghi_confermati.txt").read_text(
+        encoding="utf-8").splitlines() if x.strip() and not x.startswith("#")}
     cognomi = {f for (f,) in con.execute("SELECT forma FROM lessico WHERE parte='cognome'")}
     doppie = {f for (f,) in con.execute("SELECT forma FROM lessico WHERE stato='doppia_lettura'")}
 
@@ -391,6 +393,8 @@ def main():
             m = manuali[nome]
             gid, qid, nota = m["geonameid"] or None, m["qid"] or cache["gid"].get(m["geonameid"]), m["nota"]
             aff = "alta" if (gid or qid) else None   # vuoto: non è un luogo
+        if nome in confermati and aff == "media":
+            aff, nota = "alta", "grafia confermata dal curatore" + (f"; {nota}" if nota else "")
         if nota_e and aff == "alta":
             aff = "media"                          # forma già segnalata come incerta nel lessico
         risultati[eid] = (nome, gid, qid, aff, nota, alt, loc)
