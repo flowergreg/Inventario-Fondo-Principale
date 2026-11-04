@@ -108,3 +108,8 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 - Nomi doppi fusi uniti nella chiave: Giandomenico = Gian Domenico = Gio. Domenico.
 - Una decisione «cognome» del curatore non tocca la riga di luogo della stessa forma (Trento).
 - Il cognome abbreviato all'iniziale si scioglie solo con il cognome dell'intestazione della voce (non con un cognome qualsiasi della voce: «G. Gius. Bellina»).
+- Un nome non prosegue oltre un a capo (estrai.py): «Har Dās.» / «Complessivamente 120 cc.».
+- Patronimici esclusi dalla chiave: «Alessandro di Nicolò di Manzano», «q. Taddio».
+- Parti di «X e Y Cognome» prima dell'ultima: nessuna deduzione, il cognome finale vale per tutte (Gian Mario e Antonio Tommasi).
+- Cognomi in -i preferiti ai nomi (i nomi italiani non finiscono in -i, salvo Giovanni, Luigi…): «Rossi Lazzaro».
+- Numerali romani col punto di fine frase («Onorio III.»), ultima parola col punto di fine frase («Treo.»), articolo tra parentesi dopo il cognome («Pace (della) Carlo Maria» = della Pace), «N. H.» (Nobil Homo), «Madonna …» = santo; un articolo seguito da un titolo è del titolo («del Sr. F. Barnaba»).

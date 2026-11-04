@@ -99,7 +99,7 @@ def lessico(con):
 
 # secondi elementi dei nomi doppi (Anna Maria, Giovanni Battista): mai cognomi dedotti
 SECONDI_NOMI = {"Maria", "Battista", "Batta", "Antonio", "Domenico", "Francesco",
-                "Gian", "Giovan", "Pier", "Zuan"}      # primi elementi dei nomi doppi: mai cognomi
+                "Gian", "Giovan", "Pier", "Zuan", "Zan"}      # primi elementi dei nomi doppi: mai cognomi
 SECONDI_NOMI_N = {normalizza(x) for x in SECONDI_NOMI}
 COPPIE_N = {"maria", "batista", "bata"}            # Anna Maria, Maria Teresa: mai spezzare
 # primi elementi frequenti dei nomi doppi: «Marco Antonio», «Giorgio Antonio», «Giacomo Francesco»
@@ -115,6 +115,7 @@ FUSI = {"gian": ["giovani"], "giovan": ["giovani"], "zuan": ["giovani"], "zan": 
         "giangiacomo": ["giovani", "giacomo"], "giangiuseppe": ["giovani", "giusepe"],
         "gianmaria": ["giovani", "maria"], "giannicolo": ["giovani", "nicolo"]}
 COGNOMI_INTESTAZIONI = set()   # cognomi letti nelle intestazioni di voce (Cognome Nome)
+NOMI_IN_I = {"Giovanni", "Luigi", "Dionigi", "Gianni", "Vanni", "Ercoli", "Remigi", "Ludovici", "Bernardi"}
 DEDOTTI = set()            # cognomi dedotti tra parole che sono anche nomi
 OCC_NOME = {}              # occorrenze delle parole classificate come nome di battesimo
 
@@ -162,6 +163,13 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
     particella = None
     # «Colloredo (di) Ermes»: la particella tra parentesi appartiene alla parola precedente
     t = re.sub(r"\(\s*(?:di|de|da|d'|d’)\s*\)", " ", testo)
+    # «Pace (della) Carlo Maria», «Rò (dei) Bernardino»: l'articolo tra parentesi va col cognome
+    t = re.sub(r"([A-ZÀ-Ý][\w'’]+)\s*\(\s*(della|del|dei|degli|delle|dalla|dal|dall'|de')\s*\)", r"\2 \1", t)
+    # «N. H.» = Nobil Homo
+    t = re.sub(r"\bN\.\s*H\.\s*", " ", t)
+    # patronimico: «Alessandro di Nicolò di Manzano», «Francesco q. Taddio»: il nome del padre
+    # non entra nella chiave (resta nel testo della variante)
+    t = re.sub(r"\b(?:di|q\.|qm\.|quondam|fu)\s+([A-Z][\w'’]+)(?=\s+(?:di|de|da)\s+[A-Z])", " ", t)
     for m in RX_PAROLA.finditer(t.replace("(", " ").replace(")", " ")):
         w = m.group(0)
         wl = w.lower()
@@ -173,11 +181,20 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
             articolo = w
             continue
         if wl in titoli or wl.rstrip(".") + "." in titoli:
+            articolo = particella = None          # «del Sr. F. Barnaba»: l'articolo è del titolo
             continue
         if w[:1].islower():                      # «a» (Philippi a Turre), «e», abbreviazioni minuscole
             continue
         r = riga_persona(lex.get(w, []))
         parte = r[0] if r else ("iniziale" if re.fullmatch(r"[A-Z]\.?", w) else "cognome")
+        if re.fullmatch(r"[IVXLC]{2,}\.", w):
+            parte = "numerale"                  # «Onorio III.»: il punto chiude la frase
+            w = w.rstrip(".")
+        elif parte == "abbreviazione" and m.end() == len(t.rstrip()) and len(w.rstrip(".")) >= 4 \
+                and w.rstrip(".").isalpha():
+            # ultima parola con il punto di fine frase, non abbreviazione: «P. Simon Paolo Treo.»
+            parte, r = "cognome", None
+            w = w.rstrip(".")
         if parte in ("titolo", "parola", "opera"):
             continue
         if parte == "particella":
@@ -187,7 +204,7 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
             numerale = True                     # Alessandro VIII: papa, non cognome
             nomi.append((w.lower(),))
             vis_n.append(w)
-        elif parte == "abbreviazione" and (particella or articolo) and len(w.rstrip(".")) >= 3:
+        elif parte == "abbreviazione" and (particella or articolo) and (len(w.rstrip(".")) >= 3 or not w.endswith(".")):
             # «Giacomo de Sit.»: il punto chiude la frase, «Sit» è il cognome
             c = normalizza(w)
             if articolo:
@@ -197,7 +214,7 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
             articolo = particella = None
         elif parte in ("iniziale", "abbreviazione"):
             iniziali.append(normalizza(w)[:1])
-            vis_n.append(normalizza(w)[:1].upper() + ".")
+            vis_n.append(w[:1].upper() + ".")
         elif parte == "nome_di_battesimo":
             n = r[2] or w
             if n.startswith("("):
@@ -261,6 +278,9 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
         elif len(altrove) == 1:
             # cognome nell'intestazione di un'altra voce («Mariani Andrea»)
             i_n, i_v, w, art, part = altrove[0]
+        elif len(in_i := [c for c in candidati if c[2].endswith("i") and c[2] not in NOMI_IN_I]) == 1:
+            # i nomi italiani non finiscono in -i (salvo Giovanni, Luigi…): «Rossi Lazzaro»
+            i_n, i_v, w, art, part = in_i[0]
         else:
             i_n, i_v, w, art, part = candidati[0] if inizio_voce else candidati[-1]
         del nomi[i_n]
@@ -294,7 +314,7 @@ def cognome_precedente(testo, inizio, lex, titoli):
     non dà per luogo, titolo, parola o nome di battesimo."""
     # con la virgola solo in apertura di frase («…1858). Pecile, Gabriele Luigi»), non negli elenchi
     # («cte de Beauregard, Giulio Ventura»); con la parentesi ovunque
-    m = re.search(r"(?:^|[.;\n]\s*)((?:[Dd]e|[Dd]i|[Dd]el|[Dd]ella|[Dd]a)\s+)?([A-ZÀ-Ý][\w'’]+),\s*$", testo[:inizio]) or \
+    m = re.search(r"(?:^|[.;)\n]\s*)((?:[Dd]e|[Dd]i|[Dd]el|[Dd]ella|[Dd]a)\s+)?([A-ZÀ-Ý][\w'’]+),\s*$", testo[:inizio]) or \
         re.search(r"(?:^|[\s.;])((?:[Dd]e|[Dd]i|[Dd]el|[Dd]ella|[Dd]a)\s+)?([A-ZÀ-Ý][\w'’]+)\s*\(\s*$", testo[:inizio])
     if not m or m.group(2).lower() in titoli:
         return None
@@ -471,6 +491,8 @@ def main():
             testo_chiave = corr.strip("[] ") if corr else testo
 
         manuale = curatore.get((num, testo)) or curatore.get(("", testo))
+        if not manuale and tipo == "persona" and re.match(r"Madonna\b", testo):
+            manuale = ["santo:" + testo]          # «Madonna del Carmine», «Madonna di Rosa»
         if manuale and manuale[0].startswith("santo:"):
             nome = manuale[0][6:].strip()           # «St. Claude», «San Daniele»: santi, non persone
             e = ent("santo", normalizza(nome), nome)
@@ -493,9 +515,14 @@ def main():
             parti = [x for x in re.split(r"\s(?:e|ed)\s", testo_chiave) if x.strip()]
             if len(parti) > 1 and not all(re.match(r"[A-Z]", x.strip()) for x in parti):
                 parti = [testo_chiave]
+            # nelle parti prima dell'ultima non si deduce il cognome: «Gian Mario e Antonio Tommasi»
             persone = [scomponi(x, lex, titoli, inizio_voce and k == 0, cognomi_voce=cognomi_voce.get(voce, frozenset()),
-                                 intestazione=intestazione_voce.get(voce, frozenset()))
+                                 intestazione=intestazione_voce.get(voce, frozenset()),
+                                 dedurre=(k == len(parti) - 1 or len(parti) == 1))
                        for k, x in enumerate(parti)]
+            if len(persone) > 1 and not persone[-1][2]:
+                persone = [scomponi(x, lex, titoli, inizio_voce and k == 0, cognomi_voce=cognomi_voce.get(voce, frozenset()),
+                                     intestazione=intestazione_voce.get(voce, frozenset())) for k, x in enumerate(parti)]
             if len(persone) > 1 and persone[-1][2]:
                 persone = [(n, i, c or persone[-1][2], (v[0], v[1] or persone[-1][3][1])) for n, i, c, v in persone]
         valide = [p for p in persone if p[2] and (p[0] or p[1])]
@@ -541,7 +568,7 @@ def main():
     gruppi = defaultdict(list)
     for k, e in entita.items():
         if k[0] == "persona" and e.get("cognomi") and any(c in DEDOTTI for c in e["cognomi"]):
-            parole = frozenset([n[0] for n in e["nomi"]] + [w for c in e["cognomi"] for w in c.split()])
+            parole = frozenset(w for w in k[1].replace("|", " ").split() if w != "/")   # iniziali comprese
             gruppi[parole].append(k)
     for parole, kk in gruppi.items():
         if len(kk) < 2:

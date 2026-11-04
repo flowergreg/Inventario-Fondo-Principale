@@ -261,11 +261,14 @@ def tokenizza(testo):
                 fine = m.end("parola") + m2.end()
             fine_prec = fine
             toks.append({"t": testo[m.start():fine], "parola": parola, "i": m.start(), "f": fine,
-                         "abbr": testo[m.start():fine] != parola})
+                         "abbr": testo[m.start():fine] != parola,
+                         # a capo prima della parola: un nome non prosegue sulla riga dopo
+                         "a_capo": "\n" in testo[(toks[-1]["f"] if toks else 0):m.start()]})
         elif m.group("quadra"):
             toks.append({"t": m.group(0), "quadra": True, "i": m.start(), "f": m.end()})
         else:
-            toks.append({"t": m.group(0), "altro": True, "i": m.start(), "f": m.end()})
+            toks.append({"t": m.group(0), "altro": True, "i": m.start(), "f": m.end(),
+                         "a_capo": "\n" in testo[(toks[-1]["f"] if toks else 0):m.start()]})
     # i token «parola» che finiscono con «.» sono stati presi con il punto
     return toks
 
@@ -417,6 +420,8 @@ class Estrattore:
             ultimo = tok
             while j < n and not self.fine_frase(ultimo):
                 t = toks[j]
+                if t.get("a_capo"):
+                    break                     # «Har Dās.» / «Complessivamente 120 cc.» su righe diverse
                 if t.get("quadra") and j + 1 < n and maiuscola(toks[j + 1]) and t["t"][1:2].isupper():
                     idx.append(j)             # correzione a metà nome: «Forcari [Foscari] Francesco»
                     j += 1

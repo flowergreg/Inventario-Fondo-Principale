@@ -6,23 +6,23 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
-| abbreviazione | 0 | 2 | 0 | 284 | 286 | 617 |
-| cognome | 7 | 290 | 361 | 4907 | 5565 | 14334 |
+| abbreviazione | 0 | 2 | 0 | 281 | 283 | 606 |
+| cognome | 8 | 290 | 361 | 4906 | 5565 | 14353 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1833 |
-| luogo | 460 | 199 | 125 | 15 | 799 | 4710 |
+| luogo | 459 | 199 | 125 | 14 | 797 | 4700 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
-| nome_di_battesimo | 1261 | 144 | 0 | 0 | 1405 | 9329 |
-| numerale | 30 | 0 | 0 | 0 | 30 | 126 |
+| nome_di_battesimo | 1259 | 144 | 0 | 0 | 1403 | 9311 |
+| numerale | 29 | 0 | 0 | 0 | 29 | 126 |
 | opera | 15 | 0 | 0 | 0 | 15 | 43 |
-| parola | 0 | 0 | 0 | 0 | 33 | 296 |
+| parola | 0 | 0 | 0 | 0 | 35 | 302 |
 | parte | 0 | 1 | 0 | 0 | 1 | 1 |
-| particella | 32 | 0 | 0 | 0 | 32 | 2153 |
+| particella | 32 | 0 | 0 | 0 | 32 | 2160 |
 | santo | 0 | 4 | 0 | 278 | 282 | 612 |
-| titolo | 68 | 0 | 0 | 0 | 68 | 826 |
+| titolo | 69 | 0 | 0 | 0 | 69 | 826 |
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 214.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 213.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -231,7 +231,6 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Berenice | 1 | Bengasi | GeoNames (corrispondenza incerta) | 3587 |
 | Cesaree | 1 | Cesarea in Cappadocia | GeoNames (corrispondenza incerta) | 1937 |
 | Dis | 1 | Deesa | GeoNames (corrispondenza incerta) | 3240 |
-| Itan | 1 | Itami | GeoNames (corrispondenza incerta) | 809 |
 | Munic | 1 | Monaco di Baviera | GeoNames (corrispondenza incerta) | 524 |
 | Nebek | 1 | An Nabk | GeoNames (corrispondenza incerta) | 476 |
 | Nice | 1 | Nizza | GeoNames (corrispondenza incerta) | 18 |
@@ -269,7 +268,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Fagagna | 21 | — | ISTAT | 525, 529, 575, 606, 874, 919, 924, 926 |
 | Gorgo | 21 | — | anche nome ufficiale di luogo (GeoNames) | 83, 476, 505, 507, 651, 875, 1007, 1008 |
 | Zanon | 21 | — | anche nome ufficiale di luogo (GeoNames) | 471, 508, 519, 558, 721, 722, 3913 |
-| Marano | 20 | — | GeoNames | 525, 825, 888, 980, 1221, 1576, 2621, 3714 |
+| Marano | 19 | — | GeoNames | 525, 825, 888, 980, 1221, 1576, 2621, 3714 |
 | Madrisio | 18 | — | anche nome ufficiale di luogo (GeoNames) | 15, 47, 145, 410, 411, 470, 476, 875 |
 | Maniago | 18 | — | ISTAT | 76, 471, 485, 694, 695, 696, 877, 953 |
 | Bertoli | 17 | — | anche nome ufficiale di luogo (GeoNames) | 476, 507, 572, 594, 606, 770, 850, 851 |
@@ -281,12 +280,12 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Battistella | 15 | — | anche nome ufficiale di luogo (GeoNames) | 721, 1956, 1958, 1959, 1960, 1961, 1962, 1963 |
 | Giusti | 15 | — | anche nome ufficiale di luogo (GeoNames) | 53, 651, 878, 894, 1034, 1198, 1769, 1770 |
 | Monti | 15 | — | anche nome ufficiale di luogo (ISTAT) | 18, 25, 323, 336, 337, 356, 891, 1899 |
+| Strassoldo | 15 | — | anche nome ufficiale di luogo (GeoNames) | 373, 475, 521, 523, 554, 619, 721, 875 |
 | Verdi | 15 | — | anche nome ufficiale di luogo (GeoNames) | 2554, 2557, 3249, 3261, 3287, 3350, 3358, 3362 |
 | Belgrado | 14 | — | GeoNames | 339, 568, 723, 867, 1006, 1015, 1017, 1493 |
 | Marchi | 14 | — | anche nome ufficiale di luogo (GeoNames) | 40, 113, 288, 339, 541, 577, 601, 2262 |
 | Buia | 13 | — | GeoNames | 877, 888, 1486, 1489, 1490, 1491, 2078, 2623/3 |
 | Montegnacco | 13 | — | anche nome ufficiale di luogo (GeoNames) | 84, 104, 619, 643, 681, 705, 878, 933 |
-| Strassoldo | 13 | — | anche nome ufficiale di luogo (GeoNames) | 373, 475, 554, 619, 721, 875, 3825, 3826 |
 | Fabris | 12 | — | anche nome ufficiale di luogo (GeoNames) | 487, 618, 2167, 2262, 2587, 3154, 3591, 3687 |
 | Moro | 12 | — | anche nome ufficiale di luogo (GeoNames) | 42, 339, 557, 606, 868, 875, 1124, 3671 |
 | Passariano | 12 | — | GeoNames | 80, 178, 478, 525, 863, 959, 960, 1310 |
@@ -295,7 +294,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Rosazzo | 12 | — | GeoNames | 471, 523, 525, 596, 1010, 1015, 1549, 1552 |
 | Sinigaglia | 11 | — | anche nome ufficiale di luogo (GeoNames) | 450, 451, 452, 453, 454, 455, 456, 457 |
 | Someda | 11 | — | anche nome ufficiale di luogo (GeoNames) | 390, 508, 722, 2271, 2303, 2342, 2375, 3848 |
-| Strassoldo | 11 | — | GeoNames | 521, 523, 554, 619, 824, 1006, 1010, 1517 |
 | Mocenigo | 10 | — | anche nome ufficiale di luogo (GeoNames) | 23, 89, 133, 229, 338, 560 a, 839, 1064 |
 | Roberti | 10 | — | anche nome ufficiale di luogo (GeoNames) | 465, 482, 492, 598, 777, 4519 |
 | Tarcento | 10 | — | ISTAT | 836, 925, 1000, 1352, 1532, 1550, 1562, 2557 |
@@ -303,6 +301,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Pieri | 9 | — | anche nome ufficiale di luogo (GeoNames) | 3683, 4189, 4237, 4238, 4239, 4249, 4252, 4255 |
 | Porcia | 9 | — | ISTAT | 487, 925, 1015, 1049, 1052, 1511, 1552, 2578 |
 | Pozzo | 9 | — | anche nome ufficiale di luogo (GeoNames) | 464, 689, 734, 867, 1308, 2409, 2623/5 |
+| Strassoldo | 9 | — | GeoNames | 554, 619, 824, 1006, 1010, 1517, 2047, 4260 |
 | Aviano | 8 | — | ISTAT | 71, 349, 470, 525, 957, 958, 1327, 3663 |
 | Bevilacqua | 8 | — | anche nome ufficiale di luogo (ISTAT) | 846, 1751, 1851, 2262, 2309 |
 | Cella | 8 | — | anche nome ufficiale di luogo (GeoNames) | 1266, 1267, 1369, 1455, 2696, 3991, 4283 |
@@ -459,6 +458,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Longo | 2 | — | anche nome ufficiale di luogo (GeoNames) | 3592, 4231 |
 | Luincis | 2 | — | anche nome ufficiale di luogo (GeoNames) | 1550, 1552 |
 | Manzinello | 2 | — | GeoNames | 2066, 4000 |
+| Marano | 2 | — | anche nome ufficiale di luogo (GeoNames) | 875, 3790 |
 | Mares | 2 | — | anche nome ufficiale di luogo (GeoNames) | 3337 |
 | Marinoni | 2 | — | anche nome ufficiale di luogo (GeoNames) | 485, 622 |
 | Meduno | 2 | — | ISTAT | 525, 1352 |
@@ -634,7 +634,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Mantovani | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3719 |
 | Manzana | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1811 |
 | Manzinello | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1015 |
-| Marano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 875 |
 | Marchetti | 1 | — | GeoNames | 577 |
 | Marchiori | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
 | Marignana | 1 | — | anche nome ufficiale di luogo (GeoNames) | 618 |
@@ -822,18 +821,18 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Bernardum | 1 | Bernardo | forma latina declinata di «Bernardo» | 606 |
 | Bortolamio | 1 | Bartolomeo | variante (lista manuale) | 606 |
 | Bortolomio | 1 | Bartolomeo | variante (lista manuale) | 473 |
-| Carolum | 1 | Carolo | forma latina declinata di «Carolus» | 617 |
+| Carolum | 1 | Carolo | forma latina declinata di «Carolo» | 617 |
 | Cesarea | 1 | — | Wikidata (la), forma italiana per regola | 606 |
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
 | Coronae | 1 | Corona | forma latina declinata di «Corona» | 3058 |
-| Darii | 1 | Dario | forma latina declinata di «Darius» | 194 |
+| Darii | 1 | Dario | forma latina declinata di «Dario» | 194 |
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
 | Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
-| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
-| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
+| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
+| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
 | Fr.co | 1 | Francesco | abbreviazione (lista manuale) | 1737 |
 | Fr.° | 1 | Francesco | abbreviazione (lista manuale) | 601 |
@@ -844,7 +843,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -1190,7 +1189,7 @@ Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ 
 
 ## 6. Cognomi da verificare nelle fonti
 
-4907 forme (11066 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4906 forme (11066 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 
