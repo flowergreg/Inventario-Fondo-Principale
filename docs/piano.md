@@ -132,3 +132,10 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 ## Fase 5 — santi
 
 Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_decisioni.tsv` (forma, classe, forma normalizzata, nota): luoghi (S. Daniele e S. Vito sono quasi sempre i paesi; S. Giovanni di Manzano = San Giovanni al Natisone), titoli e parole (S. Eccell., S. Sede, S. Uffizio), persone con l'iniziale S. o con nome Santo, forme latine e friulane (S. Petri Martyris → San Pietro Martire; S. Zorz → San Giorgio). Le altre abbreviazioni si sciolgono per regola (entita.py, `espandi_santo`): S. → San / Santa / Sant' / Santo, SS. → Santi / Santissimo / Santissima, S.ta → Santa; la forma sciolta è una variante, così «San Pietro» trova «S. Pietro». Nessun collegamento automatico a Wikidata: le etichette dei santi non portano «San» e la ricerca per etichetta dà omonimi o pagine di disambiguazione.
+
+## Fase 7 — ricerca
+
+- `script/ricerca.py`: indice (voci, segmenti, espansioni dal lessico in entrambi i sensi ma senza chiusura transitiva, entità con varianti e menzioni) e ricerca su tre livelli: entità, testo (tutte le parole espanse vicine, senza attraversare virgole, punti e virgola, due punti, a capo e parentesi), approssimata (una lettera di differenza, solo se il resto non trova nulla). Particelle e titoli della domanda non contano.
+- `script/cerca.py "domanda"` da riga di comando; `--prove` esegue la batteria di prove.
+- `script/pagina.py` scrive `web/index.html`: un solo file con indice e logica in JavaScript (stessi risultati della versione Python), funziona offline. Lo stile sta nelle variabili CSS in cima al file.
+- Ordine completo: estrai.py → lessico.py → entita.py → collega_luoghi.py → collega_persone.py → arricchisci.py → pagina.py.

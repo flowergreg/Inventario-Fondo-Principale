@@ -4,8 +4,8 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 696 |
-| media | 100 |
+| alta | 695 |
+| media | 101 |
 | bassa | 29 |
 | nessuna | 3385 |
 
@@ -86,6 +86,8 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Galvani, Antonio** (voci 134; anni ?–?) → [Q61476142](https://www.wikidata.org/wiki/Q61476142) Antonio Galvani (1791–1854): _scrittore (1791-1854)_
 - **Gatteri, Giuseppe** (voci 1669, 3934; anni 1851–1954) → [Q5565444](https://www.wikidata.org/wiki/Q5565444) Giuseppe Lorenzo Gatteri (1829–1884): _pittore e incisore italiano (1829-1884)_ — Trieste — nato o morto in Friuli/Veneto; date compatibili
   - altri: [Q26693901](https://www.wikidata.org/wiki/Q26693901) Giuseppe Gatteri (1799–1878): _1799-1879; Pittore, decoratore. Nato a Rivolto, Codroipo (UD) e morto a Trieste._ — Rivolto [3]
+- **Giovanni** (voci 1459; anni 1349–1413) → [Q328804](https://www.wikidata.org/wiki/Q328804) Giovanni (10–98): _apostolo di Gesù_ — Giudea romana, Efeso — nato o morto in Friuli/Veneto
+  - altri: [Q309847](https://www.wikidata.org/wiki/Q309847) Giovanni Primicerio (400–425): _imperatore romano d'Occidente (r. 423-425)_ — Aquileia [2]; [Q964858](https://www.wikidata.org/wiki/Q964858) Giovanni d'Aviz (1400–1442) — Santarém, Alcácer do Sal [1]; [Q1269247](https://www.wikidata.org/wiki/Q1269247) Giovanni (450–1588): _generale e un politico dell'Imperatore romano d'Oriente_ — Silivri [1]; [Q314017](https://www.wikidata.org/wiki/Q314017) Antipapa Giovanni VIII (790–874): _antipapa nell'844_ [0]
 - **Gorizia, Caterina** (voci 2387; anni 1454–1454) → [Q2049198](https://www.wikidata.org/wiki/Q2049198) Caterina di Gorizia (1301–1391)
 - **Grassi, Luigi** (voci 1616, 2988, 2989, 2990; anni 1815–1815) → [Q48697431](https://www.wikidata.org/wiki/Q48697431) Luigi Grassi (1858–1937): _pittore collezionista etc. (1858-1937)_
   - altri: [Q56494958](https://www.wikidata.org/wiki/Q56494958) Luigi Grassi (?–?) [0]; [Q57551414](https://www.wikidata.org/wiki/Q57551414) Luigi Grassi (?–?) [0]; [Q87809779](https://www.wikidata.org/wiki/Q87809779) Luigi Grassi (?–?) [0]; [Q6700048](https://www.wikidata.org/wiki/Q6700048) Luigi Grassi (1983–?): _calciatore italiano_ — Camporgiano [-3]
@@ -866,7 +868,6 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Trevisanato, Giuseppe Luigi** (voci 2134; anni ?–?) → [Q765274](https://www.wikidata.org/wiki/Q765274) Giuseppe Luigi Trevisanato (1801–1877): _cardinale e patriarca cattolico italiano_ — Venezia — nato o morto in Friuli/Veneto
 - **Tritonio, Leonardo** (voci 467; anni 1610–1610) → [Q64752710](https://www.wikidata.org/wiki/Q64752710) Leonardo Tritonio (1575–1631): _vescovo cattolico_ — date compatibili
 - **Turchetti, Odoardo** (voci 2134; anni ?–?) → [Q105979039](https://www.wikidata.org/wiki/Q105979039) Odoardo Turchetti (1811–1888): _medico italiano (1811-1888)_ — confermato dal contesto
-- **Udine, Giovanni** (voci 1459; anni 1349–1413) → [Q983350](https://www.wikidata.org/wiki/Q983350) Giovanni da Udine (1487–1564): _pittore, decoratore e architetto italiano_ — Udine, Roma — confermato dal contesto
 - **Urbano V** (voci 606; anni 1367–1367) → [Q133046](https://www.wikidata.org/wiki/Q133046) papa Urbano V (1310–1370): _200° vescovo di Roma e Papa della Chiesa cattolica dal 1362 al 1370_ — castello di Grizac, Avignone — date compatibili
 - **Valaresso, Alvise** (voci 537, 538; anni 1767–1768) → [Q101107469](https://www.wikidata.org/wiki/Q101107469) Alvise Valaresso (1588–1650): _politico e diplomatico_ — Venezia — nato o morto in Friuli/Veneto
 - **Vale, Giuseppe** (voci 4211; anni ?–?) → [Q97067125](https://www.wikidata.org/wiki/Q97067125) Giuseppe Vale (1877–1950): _sacerdote, insegnante di latino e storia nel Seminario di Udine e studioso di storia friulana, direttore della Biblioteca arcivescovile (1877-1950)_ — Gemona del Friuli, Udine — nato o morto in Friuli/Veneto
