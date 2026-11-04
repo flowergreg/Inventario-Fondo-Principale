@@ -102,8 +102,6 @@ SECONDI_NOMI = {"Maria", "Battista", "Batta", "Antonio", "Domenico", "Francesco"
 SECONDI_NOMI_N = {normalizza(x) for x in SECONDI_NOMI}
 DEDOTTI = set()            # cognomi dedotti tra parole che sono anche nomi
 OCC_NOME = {}              # occorrenze delle parole classificate come nome di battesimo
-NOME_CERTO = {}            # volte in cui la parola è nome accanto a un cognome riconosciuto (Ottavio sì, Florio no)
-DEDUZIONE = {"preparazione": False}
 
 
 def riga_persona(righe):
@@ -130,22 +128,30 @@ def origine_esterna(origine):
 # Persone
 # ---------------------------------------------------------------------------
 
-def scomponi(testo, lex, titoli):
+def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True):
     """Parole di un nome di persona → (nomi, iniziali, cognomi, vista).
 
     nomi: tuple di alternative italiane normalizzate per ogni nome di battesimo
     («Giacomo o Jacopo» → ("giacomo", "iacopo")); iniziali: lettere dei nomi
     abbreviati non risolti; cognomi: forme normalizzate (con eventuali articoli);
     vista: (nomi in forma italiana e iniziali, cognome come nel testo) per
-    l'intestazione."""
+    l'intestazione.
+
+    inizio_voce: la menzione apre la voce, dove i compilatori scrivono di regola
+    Cognome Nome (all'interno delle voci: Nome Cognome)."""
     nomi, iniziali, cognomi, vis_n, vis_c = [], [], [], [], []
     candidati = []
     numerale = False
     articolo = None
-    for m in RX_PAROLA.finditer(testo.replace("(", " ").replace(")", " ")):
+    particella = None
+    # «Colloredo (di) Ermes»: la particella tra parentesi appartiene alla parola precedente
+    t = re.sub(r"\(\s*(?:di|de|da|d'|d’)\s*\)", " ", testo)
+    for m in RX_PAROLA.finditer(t.replace("(", " ").replace(")", " ")):
         w = m.group(0)
         wl = w.lower()
         if wl in PARTICELLE_SEMPLICI:
+            if wl != "e":
+                particella = w                   # «de Zorzi», «De Luca», «da Camino»
             continue
         if wl in estrai.PARTICELLE:              # della, del, dalla, degli…: restano col cognome
             articolo = w
@@ -179,7 +185,7 @@ def scomponi(testo, lex, titoli):
             else:                                # «Giovanni Battista» → due nomi
                 if r[1] == "normale" and w not in SECONDI_NOMI and nomi[-1:] != [("gian",)]:
                     # parola intera: potrebbe essere un cognome uguale a un nome (Wolf, Venerio, Del Bianco)
-                    candidati.append((len(nomi), len(vis_n), w, articolo))
+                    candidati.append((len(nomi), len(vis_n), w, articolo, particella))
                     articolo = None
                 for nome in n.split():
                     nomi.append((normalizza(nome),))
@@ -196,23 +202,22 @@ def scomponi(testo, lex, titoli):
                 articolo = None
             cognomi.append(c)
             vis_c.append(forma)
-    if cognomi and DEDUZIONE["preparazione"]:
-        for c in candidati:                     # parola usata con certezza come nome (c'è un altro cognome)
-            NOME_CERTO[c[2]] = NOME_CERTO.get(c[2], 0) + 1
-    if not cognomi and candidati and (len(nomi) >= 2 or iniziali) and not numerale \
-            and not DEDUZIONE["preparazione"] and not re.search(r"\bS\.\s", testo) \
+    if dedurre and not cognomi and candidati and (len(nomi) >= 2 or iniziali) and not numerale \
+            and not re.search(r"\bS\.\s", testo) \
             and not (len(nomi) == 2 and not iniziali and any(x[0] in SECONDI_NOMI_N for x in nomi)):
         # escluse anche le coppie di soli nomi con Maria, Battista… (Anna Maria, Maria Teresa, Ave Maria)
-        # nessun cognome riconosciuto: è cognome la parola preceduta da un articolo, altrimenti
-        # la meno usata come nome di battesimo nell'inventario (Alessandro Wolf, Wolf Alessandro)
-        con_art = [c for c in candidati if c[3]]
-        i_n, i_v, w, art = con_art[0] if con_art else min(
-            reversed(candidati), key=lambda c: NOME_CERTO.get(c[2], 0))
+        # nessun cognome riconosciuto: è cognome la parola preceduta da un articolo o da una
+        # particella (Del Bianco, de Zorzi); altrimenti la prima parola se la menzione apre la
+        # voce (Cognome Nome: «Zeno Apostolo»), l'ultima se è all'interno (Nome Cognome: «Aldo Stella»)
+        con_art = [c for c in candidati if c[3] or c[4]]
+        i_n, i_v, w, art, part = con_art[0] if con_art else (candidati[0] if inizio_voce else candidati[-1])
         del nomi[i_n]
         del vis_n[i_v]
-        cognomi.append(normalizza((art + " " if art else "") + w))
-        vis_c.append((art + " " if art else "") + w)
+        cognomi.append(normalizza((art + " " if art else "") + w))     # «di/de/da» fuori dalla chiave
+        vis_c.append(" ".join(x for x in (part, art, w) if x))
         DEDOTTI.add(cognomi[-1])
+    if not cognomi and numerale and nomi:
+        cognomi.append("")                      # papi e sovrani: «Benedetto XIII»
     return nomi, iniziali, cognomi, (vis_n, " ".join(vis_c))
 
 
@@ -221,8 +226,12 @@ def scomponi_manuale(testo, lex, titoli):
     if "/" not in testo:
         return scomponi(testo, lex, titoli)
     sx, dx = (x.strip() for x in testo.split("/", 1))
-    nomi, iniziali, _, (vis_n, _) = scomponi(sx, lex, titoli)
-    return nomi, iniziali, [normalizza(dx)], (vis_n, dx)
+    nomi, iniziali, cogn, (vis_n, _) = scomponi(sx, lex, titoli, dedurre=False)
+    if cogn and not nomi:                       # il curatore indica come nomi parole non riconosciute
+        nomi, vis_n = [(normalizza(x),) for x in sx.split()], sx.split()
+    # «Berlingero /»: persona nota solo per nome; la particella non entra nella chiave
+    chiave = normalizza(re.sub(r"^(?:di|de|da|d['’])\s*", "", dx)) if dx else ""
+    return nomi, iniziali, [chiave], (vis_n, dx)
 
 
 def chiave_persona(nomi, cognomi):
@@ -254,18 +263,14 @@ def compatibile(entita_nomi, iniziali, nomi):
 def main():
     con = sqlite3.connect(DB)
     con.executescript(SCHEMA)
+    con.execute("UPDATE menzioni SET entita = NULL")     # i collegamenti si rifanno da capo
     lex = lessico(con)
     curatore = {}
     for r in csv.DictReader(open(LISTE / "persone_curatore.tsv", encoding="utf-8"), delimiter="\t"):
         curatore[(r["voce"], r["testo"])] = [x.strip() for x in r["persone"].split("|")]
     titoli = {t.lower() for t in estrai.leggi_parole("titoli.txt")}
     numeri = dict(con.execute("SELECT id, numero FROM voci"))
-    # primo passaggio: quante volte ogni parola è sicuramente un nome di battesimo
-    DEDUZIONE["preparazione"] = True
-    for (t,) in con.execute("SELECT testo_esatto FROM menzioni WHERE tipo='persona'"):
-        scomponi(t, lex, titoli)
-    DEDUZIONE["preparazione"] = False
-    menzioni = con.execute("SELECT id, voce, testo_esatto, tipo, correzione, forma_riferimento FROM menzioni "
+    menzioni = con.execute("SELECT id, voce, testo_esatto, tipo, correzione, forma_riferimento, sede, inizio FROM menzioni "
                            "ORDER BY voce, inizio").fetchall()
 
     entita = {}                # (tipo, chiave) → dict(intestazione, nota, varianti: {(forma, origine): set(rif)}, menzioni)
@@ -281,7 +286,8 @@ def main():
 
     persone_iniziali = []      # menzioni con iniziali, da risolvere dopo le entità complete
 
-    for mid, voce, testo, tipo, corr, rif_forma in menzioni:
+    for mid, voce, testo, tipo, corr, rif_forma, sede, inizio in menzioni:
+        inizio_voce = sede == "testo" and inizio <= 2
         num = numeri[voce]
         tipo_eff = tipo
         if tipo in ("luogo", "santo"):
@@ -342,13 +348,16 @@ def main():
         manuale = curatore.get((num, testo)) or curatore.get(("", testo))
         if manuale:
             # persone indicate dal curatore (dati/liste/persone_curatore.tsv)
-            persone = [scomponi_manuale(x, lex, titoli) for x in manuale]
+            persone = [scomponi_manuale(x, lex, titoli) for x in manuale if x]
+            if not persone:                     # non è una persona (Belle Arti, Annalia Civ.)
+                senza["esclusa dal curatore"] += 1
+                continue
         else:
             # «Gasparo e Carlo Gozzi»: più persone in una menzione, il cognome finale vale per tutte
             parti = [x for x in re.split(r"\s(?:e|ed)\s", testo_chiave) if x.strip()]
             if len(parti) > 1 and not all(re.match(r"[A-Z]", x.strip()) for x in parti):
                 parti = [testo_chiave]
-            persone = [scomponi(x, lex, titoli) for x in parti]
+            persone = [scomponi(x, lex, titoli, inizio_voce and k == 0) for k, x in enumerate(parti)]
             if len(persone) > 1 and persone[-1][2]:
                 persone = [(n, i, c or persone[-1][2], (v[0], v[1] or persone[-1][3][1])) for n, i, c, v in persone]
         valide = [p for p in persone if p[2] and (p[0] or p[1])]
@@ -406,6 +415,8 @@ def main():
 
 def intestazione_persona(vista):
     nomi, cognome = vista
+    if not cognome:
+        return " ".join(nomi)
     return f"{cognome}, {' '.join(nomi)}" if nomi else cognome
 
 
