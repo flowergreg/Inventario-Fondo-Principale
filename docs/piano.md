@@ -124,3 +124,7 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 ## Fase 5 — persone
 
 `python3 script/collega_persone.py`: per ogni persona con un nome per intero, ricerca su Wikidata delle forme «Nome Cognome», «Nome di/da Cognome», «papa X» tra etichette e alias italiani (esseri umani). Punteggio: +2 nato o morto in Friuli/Veneto (comuni ISTAT e località friulane, non le frazioni omonime di città d'altre regioni); +1 date compatibili con gli anni scritti vicino alle menzioni (200 caratteri); −3 nato dal 1880 in poi dopo quegli anni (omonimi moderni); senza anni, i nati dopo il 1920 passano in coda e non sono mai «alta». Si salvano Wikidata e, da lì, VIAF, SBN, DBI. Decisioni dal contesto in `dati/liste/persone_collegamenti.tsv` (QID scelto, «accetta», «anni:A-B», «come:Intestazione», vuoto = nessun collegamento). Date e descrizioni compaiono solo nel report.
+
+## Fase 5 — ricadute sul lessico
+
+`python3 script/arricchisci.py` (dopo lessico.py, entita.py, collega_luoghi.py, collega_persone.py): per i collegamenti ad affidabilità alta, etichetta e alias di Wikidata (it, la, fur) diventano varianti `fonte_esterna` dell'entità (escluse sigle e forme sotto le tre lettere); i cognomi «da verificare» delle persone collegate diventano «normali» (origine Wikidata); le grafie diverse di Wikidata (Delfino/Dolfin) sono solo proposte per il curatore, perché il lessico vale per tutte le menzioni della parola. Ordine completo di esecuzione: estrai.py → lessico.py → entita.py → collega_luoghi.py → collega_persone.py → arricchisci.py.
