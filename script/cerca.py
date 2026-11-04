@@ -31,6 +31,8 @@ PROVE = {
     "Paulus Venetus": ["628"],
     "Ermes di Colloredo": ["341", "350"],
     "Mistruzi": ["824"],
+    "Ludovico Ariosto": ["434"],                   # Ludovico → Lodovico
+    "Gerolamo Cortenovis": ["593"],
 }
 
 

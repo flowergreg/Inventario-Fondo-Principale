@@ -5,7 +5,8 @@ Indice (`costruisci_indice`), esportato in JSON:
 - voci: numero, testo, coda, annotazioni, segmenti (etichetta, inizio, fine);
 - espansioni: parola normalizzata → altre parole normalizzate equivalenti, dal lessico
   (forma ↔ forma normalizzata: Zuan ↔ Giovanni, Udene ↔ Udine, Jac. → Giacomo, Jacopo),
-  in senso diretto e inverso ma senza chiusura transitiva (Giacomo trova Jac., non ogni Jacopo);
+  in senso diretto e inverso ma senza chiusura transitiva (Giacomo trova Jac., non ogni Jacopo),
+  più le varianti equivalenti dei nomi di battesimo di entita.py (Ludovico ↔ Lodovico);
 - entità: tipo, intestazione, stato, identificativo Wikidata, varianti normalizzate
   (testo, correzioni, lessico, fonti esterne) e menzioni (voce, sede, inizio, fine).
 
@@ -101,6 +102,19 @@ def costruisci_indice(db=DB):
             if len(a) == 1 and a[0] != f[0]:
                 esp[f[0]].add(a[0])       # Jac. → Giacomo, Jacopo
                 esp[a[0]].add(f[0])       # Giacomo → Jac. (non Jacopo)
+
+    # varianti dello stesso nome di battesimo (le stesse che entita.py usa per le chiavi):
+    # equivalenti a tutti gli effetti, quindi in ogni direzione (Ludovico ↔ Lodovico, Gian ↔ Giovanni)
+    from entita import EQUIVALENTI, FUSI
+    gruppi = defaultdict(set)
+    for a, b in EQUIVALENTI.items():
+        gruppi[b] |= {a, b}
+    for a, b in FUSI.items():
+        if len(b) == 1:
+            gruppi[b[0]] |= {a, b[0]}
+    for g in gruppi.values():
+        for x in g:
+            esp[x] |= g - {x}
 
     # entità con varianti e menzioni
     entita = []

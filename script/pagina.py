@@ -25,68 +25,102 @@ MODELLO = r"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fondo Principale — ricerca</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Roboto:wght@700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
+/* Stile ripreso da Teche Udine (www.techeudine.it/fondo-principale), senza loghi:
+   colori --color1…--color4, Roboto Condensed per il testo, Lora per i titoli, Roboto maiuscolo per le etichette. */
 :root {
-  --sfondo: #fbfaf7; --carta: #ffffff; --testo: #22201c; --tenue: #6b655c; --linea: #e3ded5;
-  --accento: #7a2e1f; --accento-chiaro: #f3e7e2; --evidenza: #fde9a8; --font-testo: Georgia, "Times New Roman", serif;
-  --font-ui: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; --raggio: 4px; --larghezza: 920px;
+  --color1: #bcb439; --colorHref: #7d7a00; --color2: #2d2b30; --color3: #3d3938; --color4: #575756;
+  --sfondo: #ffffff; --carta: #ffffff; --fascia: #f1eeea; --testo: var(--color4); --scuro: var(--color2);
+  --tenue: #7b7a78; --linea: #d9d5cf; --accento: var(--colorHref); --evidenza: #ebe6a6;
+  --font-testo: "Roboto Condensed", "Arial Narrow", sans-serif; --font-titoli: "Lora", Georgia, serif;
+  --font-etichette: "Roboto", "Helvetica Neue", Arial, sans-serif; --larghezza: 1200px;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
-    --sfondo: #1b1a18; --carta: #24221f; --testo: #ece7df; --tenue: #a39b8f; --linea: #3a3631;
-    --accento: #e09a85; --accento-chiaro: #3a2a25; --evidenza: #6b5a1e;
+    --sfondo: #1f1e1c; --carta: #282725; --fascia: #2d2b29; --testo: #d9d6d0; --scuro: #f1eeea;
+    --tenue: #a6a39c; --linea: #44413d; --accento: #d6cd52; --evidenza: #5c5718;
   }
 }
+:root[data-theme="dark"] {
+  --sfondo: #1f1e1c; --carta: #282725; --fascia: #2d2b29; --testo: #d9d6d0; --scuro: #f1eeea;
+  --tenue: #a6a39c; --linea: #44413d; --accento: #d6cd52; --evidenza: #5c5718;
+}
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--sfondo); color: var(--testo); font-family: var(--font-testo); line-height: 1.55; }
-header, main, footer { max-width: var(--larghezza); margin: 0 auto; padding: 0 16px; }
-header { padding-top: 32px; padding-bottom: 8px; }
-h1 { font-family: var(--font-ui); font-size: 1.5rem; font-weight: 600; margin: 0 0 4px; color: var(--accento); }
-.sottotitolo { color: var(--tenue); font-family: var(--font-ui); font-size: .9rem; margin: 0; }
-form { display: flex; gap: 8px; margin: 20px 0 8px; }
-input[type=search] { flex: 1; min-width: 0; font: inherit; font-size: 1.05rem; padding: 10px 12px; border: 1px solid var(--linea);
-  border-radius: var(--raggio); background: var(--carta); color: var(--testo); }
-input[type=search]:focus { outline: 2px solid var(--accento); outline-offset: 1px; }
-button { font-family: var(--font-ui); font-size: .95rem; padding: 10px 16px; border: 0; border-radius: var(--raggio);
-  background: var(--accento); color: #fff; cursor: pointer; }
-.opzioni { font-family: var(--font-ui); font-size: .85rem; color: var(--tenue); display: flex; gap: 16px; flex-wrap: wrap; }
-.esempi a { color: var(--accento); cursor: pointer; text-decoration: underline dotted; margin-right: 8px; }
-.stato { font-family: var(--font-ui); font-size: .9rem; color: var(--tenue); margin: 16px 0 8px; }
-.forme { font-family: var(--font-ui); font-size: .8rem; color: var(--tenue); margin: 0 0 16px; }
-.forme code { background: var(--accento-chiaro); padding: 1px 4px; border-radius: 3px; }
-.voce { background: var(--carta); border: 1px solid var(--linea); border-radius: var(--raggio); padding: 12px 16px; margin: 0 0 10px; }
-.voce h2 { font-family: var(--font-ui); font-size: 1rem; margin: 0 0 6px; display: flex; gap: 8px; flex-wrap: wrap; align-items: baseline; }
-.etichetta { font-family: var(--font-ui); font-size: .75rem; padding: 1px 6px; border-radius: 10px; background: var(--accento-chiaro); color: var(--accento); }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--sfondo); color: var(--testo); font: 18px/1.5 var(--font-testo); }
+a { color: var(--accento); text-decoration: none; } a:hover { text-decoration: underline; }
+.container { max-width: var(--larghezza); margin: 0 auto; padding: 0 16px; }
+.lyt { padding-top: 40px; min-height: 70vh; }
+.row-1 { display: flex; }
+.column-1 { width: 275px; flex: none; }
+.column-2 { width: calc(100% - 275px); padding-left: 25px; min-width: 0; }
+.section { color: #fff; background: var(--color1); letter-spacing: 1.5px; font: italic 500 28px/34px var(--font-titoli);
+  margin: 0; padding: 0 0 0 5px; }
+h1.page-title { font: 600 34px/1.2 var(--font-titoli); color: var(--scuro); margin: 0 0 6px; }
+.sottotitolo { font: italic 500 19px/1.4 var(--font-titoli); color: var(--testo); margin: 0 0 4px; }
+.ricerca { padding: 20px 0; border-bottom: 1px solid var(--testo); margin-bottom: 8px; }
+form { display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center; }
+input[type=search] { flex: 1 1 260px; min-width: 0; font: 18px var(--font-testo); padding: 11px; border: 1px solid var(--color4);
+  border-radius: 0; background: var(--carta); color: var(--scuro); }
+input[type=search]::placeholder { color: #46494c; opacity: .5; }
+input[type=search]:focus { outline: 2px solid var(--color1); outline-offset: 0; }
+button { background: var(--color1); color: #fff; border: 0; font: bold 20px/20px var(--font-testo); width: 150px;
+  padding: 15px 0; text-transform: uppercase; cursor: pointer; }
+button:hover { filter: brightness(.93); }
+.opzioni { font-size: 16px; color: var(--tenue); margin-top: 12px; }
+.esempi a { cursor: pointer; margin-right: 12px; font-weight: bold; }
+.stato { font: bold 19px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 22px 0 4px; }
+.stato::first-letter { color: var(--color1); }
+.forme { font-size: 15px; color: var(--tenue); margin: 0 0 18px; }
+.forme code { font-family: var(--font-testo); background: var(--fascia); padding: 1px 5px; }
+.voce { border-top: 1px solid var(--linea); padding: 14px 0 12px; }
+.voce h2 { font: bold 21px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 0 0 6px;
+  display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; }
+.voce h2::first-letter { color: var(--color1); }
+.etichetta { font: italic 500 15px var(--font-titoli); text-transform: none; color: var(--accento); }
 .punto { margin: 4px 0; overflow-wrap: anywhere; }
-.punto .seg { font-family: var(--font-ui); font-size: .8rem; color: var(--tenue); margin-right: 6px; }
+.punto .seg { font-weight: bold; color: var(--scuro); margin-right: 6px; }
 mark { background: var(--evidenza); color: inherit; padding: 0 1px; }
-.entita { font-family: var(--font-ui); font-size: .8rem; color: var(--tenue); }
-.entita a { color: var(--accento); }
-details { margin-top: 6px; } summary { font-family: var(--font-ui); font-size: .85rem; color: var(--accento); cursor: pointer; }
-.testo-voce { white-space: pre-wrap; font-size: .95rem; margin-top: 6px; }
-footer { font-family: var(--font-ui); font-size: .8rem; color: var(--tenue); padding-top: 24px; padding-bottom: 32px; }
+.entita { font-size: 16px; color: var(--tenue); }
+.entita b { color: var(--scuro); }
+details { margin-top: 6px; } summary { font: italic 500 16px var(--font-titoli); color: var(--accento); cursor: pointer; }
+.testo-voce { white-space: pre-wrap; background: var(--fascia); padding: 10px 14px; margin-top: 6px; font-size: 17px; }
+footer { background: var(--color1); color: #fff; margin-top: 30px; padding: 16px 0; font-size: 16px; }
+footer b { font-family: var(--font-titoli); font-weight: 600; }
+@media (max-width: 991px) {
+  .row-1 { display: block; } .column-1, .column-2 { width: 100%; padding-left: 0; }
+  .section { margin-bottom: 16px; display: inline-block; padding-right: 10px; }
+}
+@media (max-width: 575px) { h1.page-title { font-size: 28px; } button { width: 100%; } .lyt { padding-top: 24px; } }
 </style>
 </head>
 <body>
-<header>
-  <h1>Inventario dei manoscritti del Fondo Principale</h1>
-  <p class="sottotitolo">Ricerca di persone e luoghi in qualunque grafia · voci 1–4519 · trascrizione a cura di Gregorio Grasselli</p>
-</header>
-<main>
-  <form id="f"><input type="search" id="q" placeholder="Es. Zuan de Udene, Utinum, Florio Daniele, S. Pietro" autocomplete="off" autofocus>
+<div class="lyt"><div class="container"><div class="row-1">
+  <div class="column-1"><div class="section">Ricerca</div></div>
+  <div class="column-2">
+  <h1 class="page-title">Fondo Principale</h1>
+  <p class="sottotitolo">Inventario dei manoscritti, voci 1–4519 · trascrizione a cura di Gregorio Grasselli</p>
+  <p class="opzioni" style="margin-top:4px">Persone e luoghi in qualunque grafia.</p>
+  <div class="ricerca">
+  <form id="f"><input type="search" id="q" placeholder="Es. Zuan de Udene, Utinum, Florio Daniele, S. Pietro" autocomplete="off" autofocus aria-label="Nome di persona o di luogo">
   <button>Cerca</button></form>
   <div class="opzioni"><span class="esempi">Prova: <a>Giovanni da Udine</a><a>Utinum</a><a>Jac. Pirona</a><a>Paulus Venetus</a><a>Ermes di Colloredo</a></span></div>
+  </div>
   <div class="stato" id="stato">Scrivi un nome di persona o di luogo.</div>
   <div class="forme" id="forme"></div>
   <div id="risultati"></div>
-</main>
-<footer>
+  </div>
+</div></div></div>
+<footer><div class="container">
   La ricerca normalizza la grafia (maiuscole, accenti, j/i, y/i, doppie) e la estende con le varianti registrate:
-  forme latine, venete e friulane, abbreviazioni, correzioni del curatore, forme di Wikidata. Livelli: <b>entità</b>
+  forme latine, venete e friulane, abbreviazioni, varianti dei nomi, correzioni del curatore, forme di Wikidata. Livelli: <b>entità</b>
   (stessa persona o stesso luogo, anche in grafie lontane), <b>testo</b> (tutte le parole vicine nella voce),
   <b>approssimata</b> (una lettera di differenza, solo se il resto non trova nulla). I raggruppamenti in entità sono
   proposti e non ancora validati. Indice del __DATA__.
-</footer>
+</div></footer>
 <script>
 const IDX = __INDICE__;
 const VUOTE = new Set(IDX.vuote);
