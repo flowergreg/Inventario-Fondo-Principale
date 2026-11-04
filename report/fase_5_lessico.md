@@ -4,7 +4,7 @@ Solo i collegamenti ad affidabilità **alta** (luoghi confermati dal curatore, p
 
 ## 1. Varianti di ricerca dalle fonti
 
-Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 369 per i luoghi, 873 per le persone. Esempi:
+Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 376 per i luoghi, 873 per le persone. Esempi:
 
 - **Bruxelles**: Brussel-stad; Brusselle; Bruxelles-Ville; Città di Brusselle; Ville de Bruxelles; Brucellae; Urbs Brucellae; Urbs Bruxellae
 - **Roma**: Caput Mundi; Urbs Aeterna; Urbs Marmorea; Città dei sette colli; Città di Roma; Città eterna; Urbe
@@ -15,7 +15,6 @@ Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_estern
 - **Russia**: Federazione Russa; Foederatio Rossica; Foederatio Russica; Foederatio Ruthenica; Rossia; Ruthenia
 - **Firenze**: Fiorenza; Comune di Firenze; Firenze, Italia; Firenze, Toscana; Florentia; Florencia
 - **Tortona**: Colonia Julia Augusta Dertona; Dertona; Terdona; Tertona; Therdona
-- **San Daniele**: San Daniele del Friuli; San Denêl; Sveti Danijel; Sveti Danijel Furlanije; Fanum Sancti Danielis
 - **Olomouc**: Eburum; Olomuc; Iuliomontium; Olomucii; Olomutium
 - **Duino**: Duino-Aurisina; Devin-Nabrežina; Thübein-Nabreschin; Tybein; Duin-Nabresine
 - **Svizzera**: Confoederatio Helvetica; Elvezia; Confederazione Elvetica; Confederazione Svizzera
@@ -31,6 +30,7 @@ Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_estern
 - **Villaco**: Villach; Santiacum; Villacum
 - **Venezia**: Venetiarum Civitas; Serenissima; Vinegia
 - **Tolmezzo**: Tolmein; Tolmeč; Tumieç
+- **Suceava**: Sotschen; Szucsáva; שאָץ
 
 - **D'Annunzio, Gabriele**: Floro; Ariel; Puk; Mario de' Fiori; Mab; Bottom; Bull-Calf; Conte (Il) di Sostene; Duca Minimo; Filippo La Selvi; Gabriele D'Annunzio, I principe di Montenevoso; Happemouche; Lila Biscuit; Mambrino; Marchese (Il) di Caulonia; Miching Mallecho; Morilot; Musidoro; Myr; Pittore di Allegorie; Shiun-Sin-
 - **Gogol, Nikolai**: Nikolaj Vasil'evič Gogol'; Nicolaus Basilii filius Gogol; Gogol; Nikolaj Gogol'; Hohol; Gogolian; Mykola Gogol; Mykola Hohol; Nicolai Gogol; Nicolai Vasilievich Gogol; Nicolas Vassiliévitch Gogol; Nikhil Gogol; Nikolai Vasilevich Gogol; Nikolai Vasilievich Gogol; Nikolaj Vasilyevič Gogol'; Nikolaj W

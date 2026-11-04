@@ -4,10 +4,10 @@ Verifica del 2026-11-04. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 522 |
+| alta | 531 |
 | media | 4 |
 | bassa | 1 |
-| nessuna | 25 |
+| nessuna | 26 |
 
 ## 1. Affidabilità media: più candidati, da scegliere
 
@@ -24,7 +24,7 @@ Verifica del 2026-11-04. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 Forme che non sono luoghi (cognomi, parole) o luoghi minori assenti da GeoNames e Wikidata.
 
-Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Gajanine (492), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
+Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Gajanine (492), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
 
 ## 4. Affidabilità alta
 
@@ -439,8 +439,17 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Salandri** (1 menz.; voci 303) → Salandri — GeoNames [8963133](https://www.geonames.org/8963133) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452493](https://www.wikidata.org/wiki/Q18452493): _centro abitato situato presso Attimis, provincia di Udine_
 - **Salerno** (2 menz.; voci 10) → Salerno — GeoNames [3168673](https://www.geonames.org/3168673) PPLA2, reg. 04 (SA) — Wikidata [Q1083](https://www.wikidata.org/wiki/Q1083): _comune italiano, capoluogo dell'omonima provincia in Campania_
 - **Saluzzo** (1 menz.; voci 518) → Saluzzo — GeoNames [3168609](https://www.geonames.org/3168609) PPLA3, reg. 12 (CN) — Wikidata [Q20454](https://www.wikidata.org/wiki/Q20454): _comune italiano_
-- **San Daniele** (2 menz.; voci 470, 525) → San Daniele del Friuli — Wikidata [Q53354](https://www.wikidata.org/wiki/Q53354): _comune italiano_ — forma breve di San Daniele del Friuli
+- **San Daniele del Friuli** (77 menz.; voci 395, 467, 468, 470) → San Daniele del Friuli — GeoNames [3168438](https://www.geonames.org/3168438) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53354](https://www.wikidata.org/wiki/Q53354): _comune italiano_
+- **San Donà di Piave** (1 menz.; voci 1446) → San Donà di Piave — GeoNames [3168429](https://www.geonames.org/3168429) PPLA3, Veneto (VE) — Wikidata [Q47557](https://www.wikidata.org/wiki/Q47557): _comune italiano_
+- **San Foca** (2 menz.; voci 1000, 1015) → San Foca — GeoNames [3220330](https://www.geonames.org/3220330) PPL, Friuli-Venezia Giulia (PN) — Wikidata [Q18449085](https://www.wikidata.org/wiki/Q18449085): _centro abitato situato presso San Quirino, provincia di Pordenone_
+- **San Giorgio di Nogaro** (1 menz.; voci 491) → San Giorgio di Nogaro — GeoNames [3168302](https://www.geonames.org/3168302) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53355](https://www.wikidata.org/wiki/Q53355): _comune italiano_
+- **San Giovanni al Natisone** (4 menz.; voci 476, 1265, 1683, 4519) → San Giovanni al Natisone — GeoNames [3168259](https://www.geonames.org/3168259) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53356](https://www.wikidata.org/wiki/Q53356): _comune italiano_
+- **San Pier d'Isonzo** (3 menz.; voci 596, 1220, 2146) → San Pier d'Isonzo — GeoNames [3167871](https://www.geonames.org/3167871) PPLA3, Friuli-Venezia Giulia (GO) — Wikidata [Q53143](https://www.wikidata.org/wiki/Q53143): _comune italiano_
 - **San Pietroburgo** (1 menz.; voci 1679) → San Pietroburgo — GeoNames [536203](https://www.geonames.org/536203) — Wikidata [Q656](https://www.wikidata.org/wiki/Q656): _città federale russa_ — grafia confermata dal curatore; più elementi Wikidata omonimi
+- **San Vidotto** (3 menz.; voci 2087, 2088, 2093) → San Vidotto — GeoNames [3167210](https://www.geonames.org/3167210) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452510](https://www.wikidata.org/wiki/Q18452510): _frazione del comune italiano di Camino al Tagliamento, provincia di Udine_
+- **San Vito al Tagliamento** (26 menz.; voci 33, 39, 473, 484) → San Vito al Tagliamento — GeoNames [3167186](https://www.geonames.org/3167186) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53194](https://www.wikidata.org/wiki/Q53194): _comune italiano_
+- **San Vito al Torre** (1 menz.; voci 470) → San Vito al Torre — GeoNames [3217440](https://www.geonames.org/3217440) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53359](https://www.wikidata.org/wiki/Q53359): _comune italiano_
+- **San Vito di Fagagna** (1 menz.; voci 1684) → San Vito di Fagagna — GeoNames [3167181](https://www.geonames.org/3167181) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53360](https://www.wikidata.org/wiki/Q53360): _comune italiano_
 - **Sant'Odorico** (1 menz.; voci 2024) → Sant'Odorico — GeoNames [3167285](https://www.geonames.org/3167285) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452521](https://www.wikidata.org/wiki/Q18452521): _centro abitato situato presso Flaibano, provincia di Udine_
 - **Sappada** (2 menz.; voci 1564, 2639/14-22) → Sappada — GeoNames [3167153](https://www.geonames.org/3167153) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q40216](https://www.wikidata.org/wiki/Q40216): _comune italiano_
 - **Sardegna** (1 menz.; voci 1180) → Sardegna — GeoNames [2523228](https://www.geonames.org/2523228) ADM1, reg. 14 — Wikidata [Q1462](https://www.wikidata.org/wiki/Q1462): _regione autonoma d'Italia a statuto speciale_

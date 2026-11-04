@@ -5,9 +5,9 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | Affidabilità | Persone |
 |---|---|
 | alta | 696 |
-| media | 99 |
+| media | 100 |
 | bassa | 29 |
-| nessuna | 3373 |
+| nessuna | 3385 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -139,6 +139,8 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q114406367](https://www.wikidata.org/wiki/Q114406367) Antonio Priuli (1418–1480): _politico veneziano_ — Venezia [2]
 - **Rabatta, Giuseppe** (voci 875; anni ?–?) → [Q110412329](https://www.wikidata.org/wiki/Q110412329) Giuseppe Rabatta (?–1601)
 - **Raspi, Attilio** (voci 3213; anni ?–?) → [Q102284704](https://www.wikidata.org/wiki/Q102284704) Attilio Raspi (?–?): _compositore_
+- **Riccardo** (voci 2208; anni 1710–1935) → [Q3934611](https://www.wikidata.org/wiki/Q3934611) Riccardo Sanseverino (1220–1267): _conte di Caserta e nobile italiano_
+  - altri: [Q3934359](https://www.wikidata.org/wiki/Q3934359) Riccardo (?–1123): _vescovo cattolico italiano_ — Novara [0]; [Q105757410](https://www.wikidata.org/wiki/Q105757410) Riccardo (?–?): _frate domenicano, autore del "De facto Ungarie Magne"_ [0]
 - **Romanello, Giovanni Antonio** (voci 10; anni 1461–1461) → [Q87642949](https://www.wikidata.org/wiki/Q87642949) Giovanni Antonio Romanello (?–?)
 - **Rucellai, Pandolfo** (voci 1101; anni 1588–1849) → [Q16586697](https://www.wikidata.org/wiki/Q16586697) Pandolfo Rucellai (1436–1497): _mercante italiano_ — Firenze
 - **Simonetti, Antonio** (voci 509; anni 1788–1789) → [Q54086833](https://www.wikidata.org/wiki/Q54086833) Antonio Simonetti (?–?)
@@ -354,7 +356,7 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Cairoli, Benedetto** (voci 497, 2134; anni 1857–1870) → [Q284294](https://www.wikidata.org/wiki/Q284294) Benedetto Cairoli (1825–1889): _politico italiano (1825-1889)_ — Pavia, Napoli — date compatibili
 - **Calegari, Antonio** (voci 3130; anni ?–?) → [Q949894](https://www.wikidata.org/wiki/Q949894) Antonio Calegari (1758–1828): _compositore italiano_ — Padova — nato o morto in Friuli/Veneto
 - **Campi, Numa** (voci 2642; anni ?–?) → [Q63958755](https://www.wikidata.org/wiki/Q63958755) Numa Campi (1858–1923): _politico italiano_ — Modigliana, Livorno — confermato dal contesto
-- **Canal, Pietro** (voci 251, 254; anni ?–?) → [Q18758602](https://www.wikidata.org/wiki/Q18758602) Pietro Canal (1807–1883): _letterato, politico e presbitero italiano_ — Venezia, Crespano del Grappa — nato o morto in Friuli/Veneto
+- **Canal, Pietro** (voci 251, 254, 1906; anni 1794–1959) → [Q18758602](https://www.wikidata.org/wiki/Q18758602) Pietro Canal (1807–1883): _letterato, politico e presbitero italiano_ — Venezia, Crespano del Grappa — nato o morto in Friuli/Veneto
 - **Canciani, Paolo** (voci 485; anni 1732–1768) → [Q4212762](https://www.wikidata.org/wiki/Q4212762) Paolo Canciani (1725–1810): _teologo e giurista italiano_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Candotti, Luigi** (voci 339, 496, 2134, 3504; anni 1864–1873) → [Q106437234](https://www.wikidata.org/wiki/Q106437234) Luigi Candotti (1809–1887): _poeta, scrittore_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Canonici, Matteo Luigi** (voci 598; anni 1774–1781) → [Q55226394](https://www.wikidata.org/wiki/Q55226394) Matteo Luigi Canonici (1727–1805): _gesuita, bibliofilo e collezionista italiano (1727-1805)_ — Venezia, Treviso — nato o morto in Friuli/Veneto; date compatibili
@@ -746,7 +748,7 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Pindemonte, Giovanni** (voci 323, 338; anni ?–?) → [Q3767945](https://www.wikidata.org/wiki/Q3767945) Giovanni Pindemonte (1751–1812): _poeta e drammaturgo italiano_ — Verona — nato o morto in Friuli/Veneto
 - **Pindemonte, Ippolito** (voci 323; anni ?–?) → [Q1236766](https://www.wikidata.org/wiki/Q1236766) Ippolito Pindemonte (1753–1828): _poeta e letterato italiano_ — Verona — nato o morto in Friuli/Veneto
 - **Pio IX** (voci 804, 1385, 3534; anni 1793–1891) → [Q43720](https://www.wikidata.org/wiki/Q43720) papa Pio IX (1792–1878): _255° vescovo di Roma e papa della Chiesa cattolica dal 1846 al 1878_ — Senigallia, Palazzo Apostolico — date compatibili
-- **Pio VI** (voci 31, 296, 476, 3201; anni 1755–1796) → [Q128019](https://www.wikidata.org/wiki/Q128019) papa Pio VI (1717–1799): _250° vescovo di Roma e papa della Chiesa cattolica dal 1775 al 1799_ — Cesena, Valence — date compatibili
+- **Pio VI** (voci 31, 296, 476, 719; anni 1755–1796) → [Q128019](https://www.wikidata.org/wiki/Q128019) papa Pio VI (1717–1799): _250° vescovo di Roma e papa della Chiesa cattolica dal 1775 al 1799_ — Cesena, Valence — date compatibili
 - **Pio VII** (voci 822; anni 1816–1895) → [Q124754](https://www.wikidata.org/wiki/Q124754) papa Pio VII (1742–1823): _251° vescovo di Roma e papa della Chiesa cattolica dal 1800 al 1823_ — Cesena, Roma — date compatibili
 - **Pirona, Jacopo** (voci 279, 289, 338, 340; anni 1211–1884) → [Q10970739](https://www.wikidata.org/wiki/Q10970739) Jacopo Pirona (1789–1870): _abate, scrittore e linguista italiano_ — Dignano, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Pisani, Alvise** (voci 484; anni 1729–1733) → [Q449469](https://www.wikidata.org/wiki/Q449469) Alvise Pisani (1664–1741): _doge della Repubblica di Venezia (1664-1741)_ — Venezia — confermato dal contesto
@@ -921,7 +923,7 @@ Verifica del 2026-11-04. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3373 persone
+## 4. Nessun candidato su Wikidata: 3385 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

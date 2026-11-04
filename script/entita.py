@@ -377,6 +377,38 @@ def compatibile(entita_nomi, iniziali, nomi):
 
 # ---------------------------------------------------------------------------
 
+FEMMINILI_SANTE = {"Maria", "Chiara", "Lucia", "Apollonia", "Anna", "Agnese", "Barbara", "Caterina", "Cecilia",
+                   "Eufemia", "Felicita", "Fiora", "Gertrude", "Brigida", "Susanna", "Teresa", "Croce", "Trinità",
+                   "Giustina", "Margherita", "Elisabetta", "Orsola", "Agata", "Marta", "Elena", "Monica", "Scolastica",
+                   "Sofia", "Rosa", "Concezione", "Immacolata"}
+
+
+def espandi_santo(testo):
+    """«S. Pietro» → «San Pietro», «S. Chiara» → «Santa Chiara», «S. Antonio» → «Sant'Antonio»,
+    «S. Stefano» → «Santo Stefano», «SS. Trinità» → «Santissima Trinità», «SS. Gervasio» → «Santi Gervasio»:
+    chi cerca «San Pietro» deve trovare «S. Pietro»."""
+    m = re.match(r"(SS\.|S\.ta|S\.|San|Santa|Santo|Sant['’])\s*(.*)", testo.strip().rstrip("."))
+    if not m:
+        return testo
+    sigla, resto = m.group(1), m.group(2).strip()
+    primo = resto.split()[0] if resto else ""
+    if sigla == "SS.":
+        if primo in ("Sacramento", "Corpo", "Crocifisso", "Redentore", "Rosario", "Nome"):
+            return "Santissimo " + resto
+        if primo in ("Trinità", "Concezione", "Annunziata", "Vergine"):
+            return "Santissima " + resto
+        return "Santi " + resto
+    if sigla not in ("S.", "S.ta"):
+        return testo.strip().rstrip(".")
+    if primo in FEMMINILI_SANTE or sigla == "S.ta":
+        return ("Sant'" if primo[:1] in "AEIOU" else "Santa ") + resto
+    if primo[:1] in "AEIOU":
+        return "Sant'" + resto
+    if re.match(r"(St|Sp|Sc|Z|Gn|Ps)", primo):
+        return "Santo " + resto
+    return "San " + resto
+
+
 def registra_luogo(ent, norm, testo, corr, nota, r, num, mid):
     # forma breve e nome ufficiale insieme: Cividale = Cividale del Friuli
     e = ent("luogo", normalizza(RX_SUFFISSO.sub("", norm)), norm)
@@ -403,6 +435,8 @@ def main():
     con.executescript(SCHEMA)
     con.execute("UPDATE menzioni SET entita = NULL")     # i collegamenti si rifanno da capo
     lex = lessico(con)
+    santi = {r["forma"]: r for r in csv.DictReader(open(LISTE / "santi_decisioni.tsv", encoding="utf-8"),
+                                                    delimiter="\t")}
     curatore = {}
     for r in csv.DictReader(open(LISTE / "persone_curatore.tsv", encoding="utf-8"), delimiter="\t"):
         curatore[(r["voce"], r["testo"])] = [x.strip() for x in r["persone"].split("|")]
@@ -492,16 +526,29 @@ def main():
                     e = registra_luogo(ent, norm, testo, corr, nota, r, num, mid)
                 continue
             if tipo_eff == "santo":
-                r = (lex.get(testo) or [None])[0]
-                norm = r[2] if r and r[2] else testo
-                e = ent("santo", normalizza(norm), norm)
-                e["varianti"][(testo, "testo")].add(num)
-                if norm != testo:
-                    e["varianti"][(norm, "manuale")].add(r[3] or "")
-                e["menzioni"].append(mid)
-                e["voci"].add(num)
-                continue
-            testo_chiave = testo_p
+                d = santi.get(testo.strip())
+                if d and d["classe"] == "luogo":
+                    # «S. Daniele», «S. Vito»: quasi sempre i paesi
+                    registra_luogo(ent, d["forma_normalizzata"], testo, corr, None,
+                                   (None, None, d["forma_normalizzata"], "contesto: " + d["nota"], None), num, mid)
+                    continue
+                if d and d["classe"] in ("parola", "opera"):
+                    senza["titolo o parola con S."] += 1
+                    continue
+                if not (d and d["classe"] == "persona"):
+                    r = (lex.get(testo) or [None])[0]
+                    norm = espandi_santo((d["forma_normalizzata"] if d else None) or (r[2] if r and r[2] else None)
+                                         or testo)
+                    e = ent("santo", normalizza(norm), norm)
+                    e["varianti"][(testo, "testo")].add(num)
+                    if norm != testo:
+                        e["varianti"][(norm, "manuale")].add("santo: abbreviazione sciolta" if not d else
+                                                             "contesto: " + (d["nota"] or "forma italiana"))
+                    e["menzioni"].append(mid)
+                    e["voci"].add(num)
+                    continue
+                manuale_santo = d["forma_normalizzata"]
+            testo_chiave = testo_p if tipo_eff == "persona" and tipo != "santo" else testo
         elif tipo == "opera":
             senza["opera"] += 1
             continue
@@ -509,6 +556,8 @@ def main():
             testo_chiave = corr.strip("[] ") if corr else testo
 
         manuale = curatore.get((num, testo)) or curatore.get(("", testo))
+        if tipo == "santo":
+            manuale = [manuale_santo]             # persona indicata in santi_decisioni.tsv
         if not manuale and tipo == "persona" and re.match(r"Madonna\b", testo):
             manuale = ["santo:" + testo]          # «Madonna del Carmine», «Madonna di Rosa»
         if manuale and manuale[0].startswith("santo:"):
