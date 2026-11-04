@@ -210,6 +210,7 @@ def wikidata_dettagli(qids, cache):
         q = f"""SELECT ?item ?lab ?desc ?alias WHERE {{
   VALUES ?item {{ {valori} }}
   OPTIONAL {{ ?item rdfs:label ?lab FILTER(lang(?lab) = "it") }}
+  OPTIONAL {{ ?item wdt:P1566 ?g }}
   OPTIONAL {{ ?item schema:description ?desc FILTER(lang(?desc) = "it") }}
   OPTIONAL {{ ?item skos:altLabel ?alias FILTER(lang(?alias) IN ("it", "la", "fur")) }}
 }}"""
@@ -219,6 +220,7 @@ def wikidata_dettagli(qids, cache):
             d = cache["dettagli"][valore(b, "item").rsplit("/", 1)[1]]
             d["etichetta"] = d["etichetta"] or valore(b, "lab")
             d["descrizione"] = d["descrizione"] or valore(b, "desc")
+            d["gid"] = d.get("gid") or valore(b, "g")
             if "alias" in b:
                 lingua = b["alias"].get("xml:lang")
                 d["alias"].setdefault(lingua, [])
@@ -268,13 +270,16 @@ def scegli(nome, locali, wd, qid_di):
         scelto = regionali[0]
         altri = [c for c in (regionali_p or regionali)[1:] if c[2] == scelto[2] and c[3].startswith("PPL")
                  and c[1] != scelto[1]]
+        if scelto[3].startswith(("PPLA", "ADM")):
+            altri = []                            # capoluogo di comune o ente: prevale sulle frazioni omonime
         aff = "alta" if not altri else "media"
         nota = "più località omonime in regione" if altri else None
         return scelto[1], wd_gid.get(scelto[1], [None])[0] or qid_di.get(scelto[1]), aff, nota, altri[:4]
     if wd:
         wd_s = sorted(wd, key=lambda w: (w[4] == "Q38", w[3]), reverse=True)
         top = wd_s[0]
-        unico = len(wd_s) == 1 or (wd_s[0][3] >= 3 * max(1, wd_s[1][3]))
+        unico = len(wd_s) == 1 or (wd_s[0][3] >= 3 * max(1, wd_s[1][3])) or \
+            (wd_s[0][3] >= 30 and wd_s[0][3] >= 2 * wd_s[1][3])
         return top[1], top[0], "alta" if unico else "media", None if unico else "più elementi Wikidata omonimi", \
             [(None, w[1], w[0], w[2]) for w in wd_s[1:4]]
     if locali:
@@ -314,9 +319,11 @@ def main():
     # comuni italiani: l'elemento Wikidata del comune (P635), non quello del «capoluogo dell'omonimo comune»
     istat = comuni_istat()
     print("Wikidata per codice ISTAT…", file=sys.stderr)
-    wikidata_per_istat(sorted({istat[n][0] for n in nomi if n in istat}), cache)
+    wikidata_per_istat(sorted({istat[n][0] for n in nomi if n in istat} |
+                              {cod for n, (cod, reg) in istat.items() if reg == "Friuli-Venezia Giulia"}), cache)
     manuali = {r["forma"]: r for r in csv.DictReader(
         open(RADICE / "dati" / "liste" / "luoghi_collegamenti.tsv", encoding="utf-8"), delimiter="\t")}
+    cognomi = {f for (f,) in con.execute("SELECT forma FROM lessico WHERE parte='cognome'")}
     doppie = {f for (f,) in con.execute("SELECT forma FROM lessico WHERE stato='doppia_lettura'")}
 
     risultati = {}
@@ -340,21 +347,38 @@ def main():
             # un elemento Wikidata molto più noto della località scelta: regione storica, fiume, stato,
             # città (Roma) invece dell'ente comunale o di una frazione omonima («Carnia», «Tagliamento»)
             tutti = wd + [x for x in cache["noti"].get(nome, []) if not any(y[0] == x[0] for y in wd)]
-            if c and c[6] == "IT":
-                tutti = [x for x in tutti if x[4] == "Q38"]
+            regionale = c and c[6] == "IT" and c[4] in REGIONI
+            forte = regionale and (c[3].startswith(("PPLA", "ADM")) or c[4] == "06")
             if tutti:
                 noto = max(tutti, key=lambda x: x[3])
                 sl_scelto = next((x[3] for x in tutti if x[0] == qid), 0)
-                if noto[0] != qid and noto[3] >= 10 and noto[3] > 1.5 * max(1, sl_scelto):
+                soglia = (50, 10) if forte else (10, 1.5)    # Parigi, Romania, Riga, Colonia: non le frazioni
+                if noto[0] != qid and noto[3] >= soglia[0] and noto[3] > soglia[1] * max(1, sl_scelto) \
+                        and not (comune and regionale):
                     gid, qid, aff, nota = noto[1] or (gid if comune else None), noto[0], "alta", None
                     c = next((c for c in loc if c[1] == gid), None)
-        if not comune and c and c[6] == "IT" and c[4] == "20" and c[3] in ("PPL", "PPLL", "PPLX") and aff == "alta":
+        sl = next((x[3] for x in wd if x[0] == qid), 0)
+        if not comune and c and c[6] == "IT" and c[4] == "20" and c[3] in ("PPL", "PPLL", "PPLX") and aff == "alta" \
+                and sl < 20:                          # Mestre è nota, Sasso e Zucca no
             aff, nota = "media", "frazione veneta omonima: verificare"   # Sasso, Zucca, Alpe
-        if c and c[6] == "IT" and not comune and nome in doppie and aff == "alta":
+        if c and c[6] == "IT" and not comune and nome in doppie and aff == "alta" and not c[3].startswith("ADM"):
             aff, nota = "media", "anche cognome nel testo"
+        # forma breve di un comune friulano: «Colloredo» = Colloredo di Monte Albano, «Gradisca» = Gradisca
+        # d'Isonzo, «San Daniele» = San Daniele del Friuli (se non è già un comune o un capoluogo)
+        lunghi = [n for n, (cod, reg) in istat.items() if reg == "Friuli-Venezia Giulia"
+                  and (n.startswith(nome + " ") or n.startswith(nome + "-"))]
+        if len(lunghi) == 1 and not comune and not (c and c[6] == "IT" and c[4] == "06" and c[3].startswith("PPLA")) \
+                and cache["istat"].get(istat[lunghi[0]][0]):
+            qid, gid, aff, nota = cache["istat"][istat[lunghi[0]][0]], None, "alta", f"forma breve di {lunghi[0]}"
+            c = None
+        # parola che nel testo è un cognome e che corrisponde solo a una frazione fuori Friuli
+        if c and c[6] == "IT" and c[4] != "06" and c[3] in ("PPL", "PPLL", "PPLX") and nome in cognomi \
+                and not comune:
+            aff, nota = "bassa", "probabilmente cognome, non luogo"
         if nome in manuali:                        # decisioni del curatore o dal contesto
             m = manuali[nome]
-            gid, qid, aff, nota = m["geonameid"] or None, m["qid"] or None, "alta", m["nota"]
+            gid, qid, nota = m["geonameid"] or None, m["qid"] or None, m["nota"]
+            aff = "alta" if (gid or qid) else None   # vuoto: non è un luogo
         if nota_e and aff == "alta":
             aff = "media"                          # forma già segnalata come incerta nel lessico
         risultati[eid] = (nome, gid, qid, aff, nota, alt, loc)
@@ -367,6 +391,7 @@ def main():
         if not gid and not qid:
             continue
         d = cache["dettagli"].get(qid, {}) if qid else {}
+        gid = gid or d.get("gid")                  # identificativo GeoNames dell'elemento Wikidata scelto
         forma = d.get("etichetta") or nome_gn.get(gid) or nome
         if gid:
             con.execute("INSERT INTO identificatori (entita, fonte, codice, url, forma_autorizzata, data_verifica, "
@@ -411,6 +436,7 @@ def report(con, risultati, cache):
     def riga(x, alternative=True):
         eid, nome, gid, qid, aff, nota, alt, loc = x
         d = cache["dettagli"].get(qid, {}) if qid else {}
+        gid = gid or d.get("gid")
         forma = d.get("etichetta") or (loc[0][2] if loc else "")
         luogo = ""
         c = next((c for c in loc if c[1] == gid), None)
