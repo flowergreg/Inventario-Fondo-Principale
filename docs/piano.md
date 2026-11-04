@@ -139,3 +139,11 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - `script/cerca.py "domanda"` da riga di comando; `--prove` esegue la batteria di prove.
 - `script/pagina.py` scrive `web/index.html`: un solo file con indice e logica in JavaScript (stessi risultati della versione Python), funziona offline. Lo stile sta nelle variabili CSS in cima al file.
 - Ordine completo: estrai.py → lessico.py → entita.py → collega_luoghi.py → collega_persone.py → arricchisci.py → pagina.py.
+
+## Fase 6 — da preparare (promemoria)
+- Tabella di coppie di persone con lo stesso nome (anche equivalente: Ludovico/Lodovico) e cognomi che
+  differiscono di una lettera (≈90 coppie, più quelle con nomi equivalenti), con le voci, da segnare sì/no.
+  Le coppie confermate vanno in `normalizzazioni_curatore.tsv` (unione delle entità ed espansione della ricerca).
+  Casi già noti: Teck/Tech (voci 606, 3766, 1552 / 652, 914, 525); voce 667 «di Teck Pagine» scomposta male.
+- Proposte grafiche di arricchisci.py in attesa (Bellone/Belloni, Delfino/Dolfin, Gallizioli/Gallicioli,
+  Giustiniani/Giustinian, Pascaleo/Pasquale, Sommaripa/Summaripa, Sommariva/Summaripa).
