@@ -4,10 +4,10 @@ Verifica del 2026-11-04. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 456 |
-| media | 66 |
-| bassa | 7 |
-| nessuna | 25 |
+| alta | 458 |
+| media | 67 |
+| bassa | 2 |
+| nessuna | 26 |
 
 ## 1. Affidabilità media: più candidati, da scegliere
 
@@ -67,6 +67,7 @@ Verifica del 2026-11-04. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 - **Passariano** (12 menz.; voci 80, 178, 478, 525) → Passariano — GeoNames [3171424](https://www.geonames.org/3171424) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452384](https://www.wikidata.org/wiki/Q18452384): _frazione del comune italiano di Codroipo_ — anche cognome nel testo
 - **Percoto** (2 menz.; voci 476, 1003) → Percoto — GeoNames [3171223](https://www.geonames.org/3171223) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452390](https://www.wikidata.org/wiki/Q18452390): _frazione del comune italiano di Pavia di Udine, provincia di Udine_ — anche cognome nel testo
 - **Pers** (3 menz.; voci 1006, 1010, 1014) → Pers — GeoNames [3220074](https://www.geonames.org/3220074) PPL, Friuli-Venezia Giulia (UD) — anche cognome nel testo
+- **Persiceto** (1 menz.; voci 3804) → San Giovanni in Persiceto — GeoNames [3168239](https://www.geonames.org/3168239) PPLA3, reg. 05 (BO) — Wikidata [Q30029953](https://www.wikidata.org/wiki/Q30029953): _capoluogo dell'omonimo comune_ — San Giovanni in Persiceto
 - **Piave** (2 menz.; voci 2185, 2596) → Piave — GeoNames [8978635](https://www.geonames.org/8978635) PPL, Friuli-Venezia Giulia (PN) — Wikidata [Q18448996](https://www.wikidata.org/wiki/Q18448996): _centro abitato situato presso Chions, provincia di Pordenone_ — più località omonime in regione
   - altri: [8978997](https://www.geonames.org/8978997) Piave PPL Veneto PD; [8963408](https://www.geonames.org/8963408) Piave PPL Veneto PD
 - **Pistoia** (1 menz.; voci 1128) → Pistoia — GeoNames [3170621](https://www.geonames.org/3170621) PPLA2, reg. 16 (PT) — Wikidata [Q13376](https://www.wikidata.org/wiki/Q13376): _comune italiano, capoluogo dell'omonima provincia in Toscana_ — più elementi Wikidata omonimi
@@ -108,22 +109,14 @@ Verifica del 2026-11-04. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 ## 2. Affidabilità bassa: solo GeoNames fuori regione
 
-- **Ceresetto** (2 menz.; voci 2041, 2074) → Cereseto — GeoNames [3179095](https://www.geonames.org/3179095) PPLA3, reg. 12 (AL) — Wikidata [Q30024559](https://www.wikidata.org/wiki/Q30024559): _capoluogo dell'omonimo comune_ — solo GeoNames, fuori regione
-  - altri: [8963176](https://www.geonames.org/8963176) Cereseto PPL 16 MS; [8956953](https://www.geonames.org/8956953) Cereseto PPL 05 PR; [6536058](https://www.geonames.org/6536058) Cereseto ADM3 12 AL
-- **Cusano** (4 menz.; voci 23, 165, 168, 1947) → Cusano — GeoNames [8979977](https://www.geonames.org/8979977) PPL, reg. 04 (AV) — Wikidata [Q18435253](https://www.wikidata.org/wiki/Q18435253): _centro abitato situato presso Montecalvo Irpino, provincia di Avellino_ — probabilmente cognome, non luogo
-- **Jasnaia Poljana** (1 menz.; voci 2639/13) → Yasnaya Polyana — GeoNames [805755](https://www.geonames.org/805755) PPL, RU — Wikidata [Q4539344](https://www.wikidata.org/wiki/Q4539344) — solo GeoNames, fuori regione
-  - altri: [579496](https://www.geonames.org/579496) Balakirevo PPL RU
 - **Nebek** (1 menz.; voci 476) → An Nabk — GeoNames [173193](https://www.geonames.org/173193) PPLA2, SY — Wikidata [Q2317068](https://www.wikidata.org/wiki/Q2317068) — solo GeoNames, fuori regione
-- **Pasquali** (2 menz.; voci 539, 1689) → Pasquali — GeoNames [8978962](https://www.geonames.org/8978962) PPL, Veneto (VI) — Wikidata [Q18506652](https://www.wikidata.org/wiki/Q18506652): _centro abitato situato presso Crespadoro, provincia di Vicenza_ — probabilmente cognome, non luogo
-  - altri: [8969105](https://www.geonames.org/8969105) Pasquali PPL Veneto VR
-- **Persiceto** (1 menz.; voci 3804) → San Giovanni in Persiceto — GeoNames [3168239](https://www.geonames.org/3168239) PPLA3, reg. 05 (BO) — Wikidata [Q30029953](https://www.wikidata.org/wiki/Q30029953): _capoluogo dell'omonimo comune_ — solo GeoNames, fuori regione
 - **Salone** (1 menz.; voci 3849) → Stazione di Salone — GeoNames [8974078](https://www.geonames.org/8974078) PPL, reg. 07 (RM) — Wikidata [Q18455294](https://www.wikidata.org/wiki/Q18455294): _centro abitato situato presso Roma Capitale, città metropolitana di Roma Capitale_ — solo GeoNames, fuori regione
 
 ## 3. Nessuna corrispondenza
 
 Forme che non sono luoghi (cognomi, parole) o luoghi minori assenti da GeoNames e Wikidata.
 
-Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Cimpello (921), Cittanova d'Istria (598, 891), Cucagna (1015, 1946, 1949), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Gajanine (492), Grazzano (520, 852, 3741), Grizàn (23, 520), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
+Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Gajanine (492), Grazzano (520, 852, 3741), Grizàn (23, 520), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
 
 ## 4. Affidabilità alta
 
@@ -225,6 +218,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Cimpello (921)
 - **Cingoli** (1 menz.; voci 3774) → Cingoli — GeoNames [3178673](https://www.geonames.org/3178673) PPLA3, reg. 10 (MC) — Wikidata [Q73649](https://www.wikidata.org/wiki/Q73649): _comune italiano_
 - **Cinto Caomaggiore** (1 menz.; voci 1444) → Cinto Caomaggiore — GeoNames [3178664](https://www.geonames.org/3178664) PPLA3, Veneto (VE) — Wikidata [Q47376](https://www.wikidata.org/wiki/Q47376): _comune italiano_
 - **Ciseriis** (1 menz.; voci 3563) → Ciseriis — GeoNames [3220050](https://www.geonames.org/3220050) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18450994](https://www.wikidata.org/wiki/Q18450994): _centro abitato situato presso Tarcento, provincia di Udine_
+- **Cittanova d'Istria** (2 menz.; voci 598, 891) → Cittanova — GeoNames [3194379](https://www.geonames.org/3194379) — Wikidata [Q5395](https://www.wikidata.org/wiki/Q5395): _città croata_ — Cittanova d'Istria (Novigrad)
 - **Cividale del Friuli** (166 menz.; voci 164, 170, 355, 371) → Cividale del Friuli — GeoNames [3178605](https://www.geonames.org/3178605) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53245](https://www.wikidata.org/wiki/Q53245): _comune italiano_
 - **Civitavecchia** (1 menz.; voci 470) → Civitavecchia — GeoNames [3178587](https://www.geonames.org/3178587) PPLA3, reg. 07 (RM) — Wikidata [Q242533](https://www.wikidata.org/wiki/Q242533): _comune italiano_
 - **Claut** (1 menz.; voci 618) → Claut — GeoNames [3221658](https://www.geonames.org/3221658) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53163](https://www.wikidata.org/wiki/Q53163): _comune italiano_
@@ -316,6 +310,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Cimpello (921)
 - **Isonzo** (5 menz.; voci 478, 1039, 2579, 2596) → Isonzo — GeoNames [3175409](https://www.geonames.org/3175409) STM, Friuli-Venezia Giulia — Wikidata [Q202760](https://www.wikidata.org/wiki/Q202760): _fiume italo-sloveno_
 - **Istrago** (1 menz.; voci 888) → Istrago — GeoNames [3220285](https://www.geonames.org/3220285) PPL, Friuli-Venezia Giulia (PN) — Wikidata [Q18448844](https://www.wikidata.org/wiki/Q18448844): _frazione del comune italiano di Spilimbergo, provincia di Pordenone_
 - **Italia** (38 menz.; voci 18, 72, 114, 137) → Italia — GeoNames [3175395](https://www.geonames.org/3175395) PCLI, reg. 00 — Wikidata [Q38](https://www.wikidata.org/wiki/Q38): _stato dell'Europa meridionale, membro dell'Unione europea_
+- **Jasnaia Poljana** (1 menz.; voci 2639/13) → Yasnaya Polyana — GeoNames [805755](https://www.geonames.org/805755) PPL, RU — Wikidata [Q4539344](https://www.wikidata.org/wiki/Q4539344) — Jasnaja Poljana, tenuta di Tolstoj
 - **Latisana** (9 menz.; voci 487, 525, 715, 867) → Latisana — GeoNames [3175055](https://www.geonames.org/3175055) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53269](https://www.wikidata.org/wiki/Q53269): _comune italiano del Friuli-Venezia Giulia_
 - **Lauco** (2 menz.; voci 1291, 1314) → Lauco — GeoNames [3175041](https://www.geonames.org/3175041) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53270](https://www.wikidata.org/wiki/Q53270): _comune italiano_
 - **Lauzacco** (3 menz.; voci 998, 1935, 2079) → Lauzacco — GeoNames [3175025](https://www.geonames.org/3175025) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q18451867](https://www.wikidata.org/wiki/Q18451867): _centro abitato situato presso Pavia di Udine, provincia di Udine_
