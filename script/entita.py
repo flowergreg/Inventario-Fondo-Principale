@@ -29,6 +29,7 @@ aggiorna `menzioni.entita` e il report report/fase_4_entita.md.
 Uso: python3 script/entita.py
 """
 
+import csv
 import re
 import sqlite3
 import sys
@@ -83,16 +84,26 @@ PARTICELLE_SEMPLICI = {"di", "de", "da", "d'", "d’", "de'", "de’", "e"}
 OMONIMI_NOTI = {("daniele",): "florio", ("antonio",): "savorgnan"}
 COGNOMI_OMONIMI = {"dela tore", "tore", "savorgnan", "florio"}
 RX_SUFFISSO = re.compile(r" (?:del Friuli|al Tagliamento|di Friuli)$")
-SOGLIA_VOCI = 12          # oltre questo numero di voci un'entità di persona è segnalata
 
 
 def lessico(con):
     """forma → lista di righe (parte, stato, forma_normalizzata, origine, riferimento)."""
     d = defaultdict(list)
-    for f, p, s, n, o, r in con.execute(
-            "SELECT forma, parte, stato, forma_normalizzata, origine, riferimento FROM lessico"):
+    for f, p, s, n, o, r, k in con.execute(
+            "SELECT forma, parte, stato, forma_normalizzata, origine, riferimento, occorrenze FROM lessico"):
         d[f].append((p, s, n, o, r))
+        if p == "nome_di_battesimo":
+            OCC_NOME[f] = OCC_NOME.get(f, 0) + k
     return d
+
+
+# secondi elementi dei nomi doppi (Anna Maria, Giovanni Battista): mai cognomi dedotti
+SECONDI_NOMI = {"Maria", "Battista", "Batta", "Antonio", "Domenico", "Francesco"}
+SECONDI_NOMI_N = {normalizza(x) for x in SECONDI_NOMI}
+DEDOTTI = set()            # cognomi dedotti tra parole che sono anche nomi
+OCC_NOME = {}              # occorrenze delle parole classificate come nome di battesimo
+NOME_CERTO = {}            # volte in cui la parola è nome accanto a un cognome riconosciuto (Ottavio sì, Florio no)
+DEDUZIONE = {"preparazione": False}
 
 
 def riga_persona(righe):
@@ -128,6 +139,8 @@ def scomponi(testo, lex, titoli):
     vista: (nomi in forma italiana e iniziali, cognome come nel testo) per
     l'intestazione."""
     nomi, iniziali, cognomi, vis_n, vis_c = [], [], [], [], []
+    candidati = []
+    numerale = False
     articolo = None
     for m in RX_PAROLA.finditer(testo.replace("(", " ").replace(")", " ")):
         w = m.group(0)
@@ -149,6 +162,7 @@ def scomponi(testo, lex, titoli):
             articolo = w
             continue
         if parte == "numerale":
+            numerale = True                     # Alessandro VIII: papa, non cognome
             nomi.append((w.lower(),))
             vis_n.append(w)
         elif parte in ("iniziale", "abbreviazione"):
@@ -163,6 +177,10 @@ def scomponi(testo, lex, titoli):
                 nomi.append(tuple(normalizza(x) for x in n.split(" o ")))
                 vis_n.append(n)
             else:                                # «Giovanni Battista» → due nomi
+                if r[1] == "normale" and w not in SECONDI_NOMI and nomi[-1:] != [("gian",)]:
+                    # parola intera: potrebbe essere un cognome uguale a un nome (Wolf, Venerio, Del Bianco)
+                    candidati.append((len(nomi), len(vis_n), w, articolo))
+                    articolo = None
                 for nome in n.split():
                     nomi.append((normalizza(nome),))
                     vis_n.append(nome)
@@ -178,7 +196,33 @@ def scomponi(testo, lex, titoli):
                 articolo = None
             cognomi.append(c)
             vis_c.append(forma)
+    if cognomi and DEDUZIONE["preparazione"]:
+        for c in candidati:                     # parola usata con certezza come nome (c'è un altro cognome)
+            NOME_CERTO[c[2]] = NOME_CERTO.get(c[2], 0) + 1
+    if not cognomi and candidati and (len(nomi) >= 2 or iniziali) and not numerale \
+            and not DEDUZIONE["preparazione"] and not re.search(r"\bS\.\s", testo) \
+            and not (len(nomi) == 2 and not iniziali and any(x[0] in SECONDI_NOMI_N for x in nomi)):
+        # escluse anche le coppie di soli nomi con Maria, Battista… (Anna Maria, Maria Teresa, Ave Maria)
+        # nessun cognome riconosciuto: è cognome la parola preceduta da un articolo, altrimenti
+        # la meno usata come nome di battesimo nell'inventario (Alessandro Wolf, Wolf Alessandro)
+        con_art = [c for c in candidati if c[3]]
+        i_n, i_v, w, art = con_art[0] if con_art else min(
+            reversed(candidati), key=lambda c: NOME_CERTO.get(c[2], 0))
+        del nomi[i_n]
+        del vis_n[i_v]
+        cognomi.append(normalizza((art + " " if art else "") + w))
+        vis_c.append((art + " " if art else "") + w)
+        DEDOTTI.add(cognomi[-1])
     return nomi, iniziali, cognomi, (vis_n, " ".join(vis_c))
+
+
+def scomponi_manuale(testo, lex, titoli):
+    """Persona indicata dal curatore: «Rodolfo / Barnaba» = nomi / cognome esplicito."""
+    if "/" not in testo:
+        return scomponi(testo, lex, titoli)
+    sx, dx = (x.strip() for x in testo.split("/", 1))
+    nomi, iniziali, _, (vis_n, _) = scomponi(sx, lex, titoli)
+    return nomi, iniziali, [normalizza(dx)], (vis_n, dx)
 
 
 def chiave_persona(nomi, cognomi):
@@ -211,8 +255,16 @@ def main():
     con = sqlite3.connect(DB)
     con.executescript(SCHEMA)
     lex = lessico(con)
+    curatore = {}
+    for r in csv.DictReader(open(LISTE / "persone_curatore.tsv", encoding="utf-8"), delimiter="\t"):
+        curatore[(r["voce"], r["testo"])] = [x.strip() for x in r["persone"].split("|")]
     titoli = {t.lower() for t in estrai.leggi_parole("titoli.txt")}
     numeri = dict(con.execute("SELECT id, numero FROM voci"))
+    # primo passaggio: quante volte ogni parola è sicuramente un nome di battesimo
+    DEDUZIONE["preparazione"] = True
+    for (t,) in con.execute("SELECT testo_esatto FROM menzioni WHERE tipo='persona'"):
+        scomponi(t, lex, titoli)
+    DEDUZIONE["preparazione"] = False
     menzioni = con.execute("SELECT id, voce, testo_esatto, tipo, correzione, forma_riferimento FROM menzioni "
                            "ORDER BY voce, inizio").fetchall()
 
@@ -287,13 +339,18 @@ def main():
         else:
             testo_chiave = corr.strip("[] ") if corr else testo
 
-        # «Gasparo e Carlo Gozzi»: più persone in una menzione, il cognome finale vale per tutte
-        parti = [x for x in re.split(r"\s(?:e|ed)\s", testo_chiave) if x.strip()]
-        if len(parti) > 1 and not all(re.match(r"[A-Z]", x.strip()) for x in parti):
-            parti = [testo_chiave]
-        persone = [scomponi(x, lex, titoli) for x in parti]
-        if len(persone) > 1 and persone[-1][2]:
-            persone = [(n, i, c or persone[-1][2], (v[0], v[1] or persone[-1][3][1])) for n, i, c, v in persone]
+        manuale = curatore.get((num, testo)) or curatore.get(("", testo))
+        if manuale:
+            # persone indicate dal curatore (dati/liste/persone_curatore.tsv)
+            persone = [scomponi_manuale(x, lex, titoli) for x in manuale]
+        else:
+            # «Gasparo e Carlo Gozzi»: più persone in una menzione, il cognome finale vale per tutte
+            parti = [x for x in re.split(r"\s(?:e|ed)\s", testo_chiave) if x.strip()]
+            if len(parti) > 1 and not all(re.match(r"[A-Z]", x.strip()) for x in parti):
+                parti = [testo_chiave]
+            persone = [scomponi(x, lex, titoli) for x in parti]
+            if len(persone) > 1 and persone[-1][2]:
+                persone = [(n, i, c or persone[-1][2], (v[0], v[1] or persone[-1][3][1])) for n, i, c, v in persone]
         valide = [p for p in persone if p[2] and (p[0] or p[1])]
         if not valide:
             senza["nome o cognome singolo"] += 1
@@ -314,7 +371,13 @@ def main():
     for dato in persone_iniziali:
         mid, num, testo, corr, nomi, iniziali, cognomi, vista, multipla = dato
         cand = [e for e in complete.get(tuple(sorted(cognomi)), []) if compatibile(e["nomi"], iniziali, nomi)]
-        if len(cand) == 1:
+        # prima si cerca il nome per intero nella stessa voce; poi in tutto l'inventario
+        stessa_voce = [e for e in cand if num in e["voci"]]
+        if len(stessa_voce) == 1:
+            e = stessa_voce[0]
+            e["note"].add("iniziali sciolte nella stessa voce")
+            registra(e, *dato)
+        elif len(cand) == 1:
             e = cand[0]
             e["note"].add("comprende forme con iniziali")
             registra(e, *dato)
@@ -328,10 +391,10 @@ def main():
     for (tipo, chiave), e in entita.items():
         if tipo != "persona":
             continue
+        if any(c in DEDOTTI for c in e["cognomi"]):
+            e["note"].add("cognome che è anche nome di battesimo: ordine dedotto")
         if any(c in COGNOMI_OMONIMI for c in e["cognomi"]):
             e["note"].add("famiglia con omonimi noti: controllare")
-        if len(e["voci"]) >= SOGLIA_VOCI:
-            e["note"].add(f"presente in {len(e['voci'])} voci: può riunire più omonimi")
         grafie = {g for g in e["grafie"]}
         if len({normalizza(g) for g in grafie}) == 1 and len({g.lower() for g in grafie}) > 1:
             e["note"].add("cognome in grafie diverse: " + ", ".join(sorted(grafie)))
@@ -443,15 +506,20 @@ def report(con, entita, senza, soli):
            q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND nota LIKE '%più persone%' "
              "ORDER BY forma_intestazione"))
     elenca("2. Persone: possibili omonimi",
-           "Famiglie con omonimi noti o nomi presenti in molte voci: l'entità può riunire più persone.",
+           "Famiglie con omonimi noti: l'entità può riunire più persone.",
            q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND "
              "(nota LIKE '%omonimi%') ORDER BY forma_intestazione"))
     elenca("3. Persone: cognome in grafie diverse",
            "Forme unite dalla normalizzazione grafica (doppie, j/i, accenti): controllare che sia la stessa persona.",
            q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND nota LIKE '%grafie diverse%' "
              "ORDER BY forma_intestazione"))
-    elenca("4. Persone: forme con iniziali unite a un nome completo", None,
-           q("SELECT id, forma_intestazione, NULL FROM entita WHERE tipo='persona' AND nota LIKE '%forme con iniziali%' "
+    elenca("3 bis. Persone: cognome che è anche nome di battesimo",
+           "Nessuna parola è stata riconosciuta come cognome: è stata presa la parola preceduta da un articolo "
+           "(Del Bianco) o quella usata più di rado come nome accanto a un altro cognome (Wolf, Venerio, Florio). Controllare l'ordine.",
+           q("SELECT id, forma_intestazione, NULL FROM entita WHERE tipo='persona' AND nota LIKE '%ordine dedotto%' "
+             "ORDER BY forma_intestazione"))
+    elenca("4. Persone: forme con iniziali unite a un nome completo (nella stessa voce o unico nell'inventario)", None,
+           q("SELECT id, forma_intestazione, NULL FROM entita WHERE tipo='persona' AND (nota LIKE '%forme con iniziali%' OR nota LIKE '%stessa voce%') "
              "ORDER BY forma_intestazione"))
     elenca("5. Persone: altre entità con più forme (forme inverse, abbreviazioni, latino)", None,
            q("SELECT e.id, e.forma_intestazione, NULL FROM entita e WHERE tipo='persona' AND (nota IS NULL) AND "

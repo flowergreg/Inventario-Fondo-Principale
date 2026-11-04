@@ -19,7 +19,7 @@ Bar.eo	Bartolomeo
 Bart.meo	Bartolomeo
 Gir.	Girolamo
 Girol.	Girolamo
-Ger.	Gerolamo
+Ger.	Girolamo
 Jac.	Giacomo o Jacopo
 Iac.	Giacomo o Jacopo
 Io.	Giovanni
@@ -60,3 +60,4 @@ Man.	Manfredo/Manlio
 Eman.	Emanuele
 Elis.	Elisabetta
 Gianlionardo	Gianleonardo
+Umb.	Umberto

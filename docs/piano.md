@@ -93,3 +93,7 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 - «Gasparo e Carlo Gozzi»: due entità, il cognome finale vale per entrambi.
 - Nomi o cognomi isolati non fanno entità (possono indicare una famiglia o più persone): restano trovabili con la normalizzazione e il lessico.
 - Segnalati per la revisione: famiglie con omonimi noti, entità presenti in molte voci, cognomi in grafie diverse.
+- Correzioni puntuali del curatore sulle persone: `dati/liste/persone_curatore.tsv` (voce, testo, persone separate da «|»; «Rodolfo / Barnaba» = nomi / cognome; voce vuota = ovunque).
+- Iniziali: si sciolgono prima con il nome intero nella stessa voce, poi con un'unica persona compatibile; altrimenti restano iniziali.
+- Cognomi uguali a nomi di battesimo (Wolf, Venerio, Florio, Del Bianco): se nessuna parola è riconosciuta come cognome, lo è quella preceduta da un articolo, oppure quella che compare più di rado come nome accanto a un altro cognome. Esclusi i papi e sovrani (numerale), i santi (S.) e le coppie di soli nomi con Maria, Battista… Segnalati nel report (sezione 3 bis).
+- Equivalenze: Gerolamo = Girolamo; Cortinovis = Cortenovis (stessa famiglia di barnabiti); «Barnabita» è un titolo.
