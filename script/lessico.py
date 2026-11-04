@@ -347,8 +347,6 @@ def main():
     # decisioni del curatore e dal contesto (dati/liste/normalizzazioni_curatore.tsv): prevalgono
     decisioni = {r["forma"]: r for r in csv.DictReader(
         open(LISTE / "normalizzazioni_curatore.tsv", encoding="utf-8"), delimiter="\t")}
-    # forme che compaiono anche dentro nomi di persona: lì vale la decisione «cognome», non sul luogo
-    con_persona = {r[0] for r in righe if r[1] not in ("luogo", "santo", "opera")}
     for r in righe:
         d = decisioni.get(r[0])
         if not d:
@@ -356,8 +354,8 @@ def main():
         parte = d["parte"]
         if parte == "persona":
             parte = "cognome"
-        if r[1] == "luogo" and parte in ("cognome", "nome_di_battesimo") and r[0] in con_persona:
-            continue                          # «Trento» cognome non cancella Trento città
+        if r[1] == "luogo" and parte in ("cognome", "nome_di_battesimo") and "nome di persona" in (d["nota"] or ""):
+            continue                          # «Trento» cognome (nei nomi di persona) non cancella Trento città
         r[1] = parte
         r[3] = d["forma_normalizzata"] or None
         r[4] = d["origine"] + (": " + d["nota"] if d["nota"] else "")

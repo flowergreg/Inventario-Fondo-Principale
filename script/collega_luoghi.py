@@ -249,8 +249,15 @@ def wikidata_per_istat(codici, cache):
         valori = " ".join(json.dumps(c) for c in blocco)
         for c in blocco:
             cache["istat"][c] = None
-        for b in sparql(f"SELECT ?c ?item WHERE {{ VALUES ?c {{ {valori} }} ?item wdt:P635 ?c . }}"):
-            cache["istat"][valore(b, "c")] = valore(b, "item").rsplit("/", 1)[1]
+        migliore = {}
+        # più elementi possono portare lo stesso codice ISTAT (il comune e la frazione capoluogo, Raspano
+        # per Cassacco): vince quello con più voci di Wikipedia, cioè il comune
+        for b in sparql(f"SELECT ?c ?item ?sl WHERE {{ VALUES ?c {{ {valori} }} ?item wdt:P635 ?c ; "
+                        f"wikibase:sitelinks ?sl . }}"):
+            cod, sl = valore(b, "c"), int(valore(b, "sl") or 0)
+            if sl > migliore.get(cod, -1):
+                migliore[cod] = sl
+                cache["istat"][cod] = valore(b, "item").rsplit("/", 1)[1]
         salva(cache)
         time.sleep(1)
 
@@ -334,6 +341,10 @@ def main():
         comune = nome in istat
         if comune:
             cod, regione = istat[nome]
+            stesso = [x for x in loc if x[6] == "IT" and x[2] == nome and x[3].startswith(("PPLA", "PPL", "ADM3"))]
+            if c and c[2] != nome and stesso:     # «Cassacco», non la frazione Raspano trovata tra gli alias
+                c = stesso[0]
+                gid = c[1]
             if regione not in REGIONI.values():
                 # comune fuori regione: il centro principale, non una frazione friulana o veneta omonima
                 italiani = [x for x in loc if x[6] == "IT" and x[4] not in REGIONI]

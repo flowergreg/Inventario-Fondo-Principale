@@ -7,37 +7,42 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
 | abbreviazione | 0 | 2 | 0 | 281 | 283 | 606 |
-| cognome | 61 | 294 | 333 | 4893 | 5581 | 14364 |
+| cognome | 113 | 292 | 324 | 4880 | 5609 | 14373 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1833 |
-| luogo | 444 | 161 | 115 | 7 | 727 | 4623 |
+| luogo | 399 | 175 | 85 | 6 | 665 | 4519 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
-| nome_di_battesimo | 1260 | 145 | 0 | 0 | 1405 | 9308 |
+| nome_di_battesimo | 1254 | 145 | 0 | 0 | 1399 | 9273 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
-| opera | 16 | 0 | 0 | 0 | 16 | 44 |
-| parola | 0 | 0 | 0 | 0 | 85 | 369 |
+| opera | 17 | 0 | 0 | 0 | 17 | 47 |
+| parola | 0 | 0 | 0 | 0 | 123 | 495 |
 | parte | 0 | 1 | 0 | 0 | 1 | 1 |
 | particella | 32 | 0 | 0 | 0 | 32 | 2160 |
-| santo | 0 | 5 | 0 | 278 | 283 | 613 |
+| santo | 0 | 6 | 0 | 278 | 284 | 614 |
 | titolo | 69 | 0 | 0 | 0 | 69 | 826 |
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 168.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 181.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
 | Aquileja | 56 | Aquileia | lista manuale | 476, 484, 518, 525, 570, 594, 596, 597 |
 | Utini | 30 | Udine | lista manuale | 523, 549, 561, 600, 606, 616, 621, 683 |
+| Sesto | 25 | Sesto al Reghena | contesto: badia di Sesto | 518, 606, 618, 666, 888, 1010, 1245, 1248 |
+| Moggio | 23 | Moggio Udinese | contesto: badia di Moggio | 518, 523, 525, 712, 1010, 1042, 1047, 1303 |
 | Brazzà | 19 | Brazzacco | curatore | 116, 117, 118, 339, 471, 590, 702, 1503 |
 | Forijulii | 11 | Friuli | lista manuale | 800, 885, 888, 970, 971, 972, 973, 974 |
 | Cargna | 8 | Carnia | lista manuale | 525, 655, 661, 663, 749, 3925 |
 | Rosa | 8 | Pieve di Rosa | contesto: «Pieve di Rosa», Camino al Tagliamento | 260, 1640, 2499, 2632/3, 4025, 4121, 4265 |
 | Osopo | 7 | Osoppo | stessa forma normalizzata del nome ufficiale | 466, 525, 2660, 2662 |
+| Sesto | 7 | Sesto al Reghena | contesto: badia di Sesto | 618, 1444, 1446, 2504, 2642 |
 | Utinensis | 5 | Udine | lista manuale | 463, 523, 566, 768 |
 | Venetia | 5 | Venezia | lista manuale | 610, 713, 717, 813, 4206 |
 | Aquilegia | 4 | Aquileia | GeoNames | 667, 1743, 1744 |
 | Aquilejae | 4 | Aquileia | lista manuale | 525, 617, 757, 789 |
 | Aquilejese | 4 | Aquileia | curatore | 508, 589, 596, 826 |
+| Montereale | 4 | Montereale Valcellina | contesto | 339, 487, 619, 2267 |
+| Montereale | 4 | Montereale Valcellina | contesto | 487, 774, 1010, 1274 |
 | Spalatro | 4 | Spalato | lista manuale | 467 |
 | Tajedo | 4 | Taiedo | stessa forma normalizzata del nome ufficiale | 519, 525 |
 | Utinensi | 4 | Udine | lista manuale | 102, 622, 1628, 3867 |
@@ -45,20 +50,25 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Brazzà | 3 | Brazzacco | curatore | 1235, 3931 |
 | Butrio | 3 | Buttrio | GeoNames | 541, 568 |
 | Carintia | 3 | Carinzia | contesto | 518, 1367, 2685 |
+| Castelnuovo | 3 | Castelnovo del Friuli | contesto: feudi Savorgnan: Osoppo, Castelnuovo, Belgrado (2000) | 2000 |
+| Feletto | 3 | Feletto Umberto | contesto | 1932, 2078, 3672 |
+| Moggio | 3 | Moggio Udinese | contesto: badia di Moggio | 525, 1047 |
 | Nissa | 3 | Nysa | lista manuale | 467 |
 | Susans | 3 | Susàns | stessa forma normalizzata del nome ufficiale | 471, 524, 1052 |
 | Udene | 3 | Udine | curatore: 2598 | 533, 4110, 4111 |
 | Ajello | 2 | Aiello del Friuli | stessa forma normalizzata del nome ufficiale | 874, 1310 |
 | Alnico | 2 | Alnicco | curatore: Alnicco (1302) | 1302 |
 | Austriae | 2 | Austria | curatore | 102, 617 |
-| Carreri | 2 | — | nessuna corrispondenza nelle liste | 1241 |
+| Bagnaria | 2 | Bagnaria Arsa | contesto | 149, 157 |
+| Castel | 2 | Porpetto | contesto: «Castel Porpetto» (810) | 593, 1532 |
 | Castelfranco | 2 | Castelfranco Veneto | contesto: «Magrini di Castelfranco», pittori (4122) | 4122 |
 | Cavallico | 2 | Cavalicco | stessa forma normalizzata del nome ufficiale | 1567 |
+| Chiusa | 2 | Chiusaforte | contesto: la Chiusa, fortezza (533, 568) | 533, 568 |
+| Cittanova | 2 | Cittanova d'Istria | contesto: vescovado di Cittanova (891) | 465, 469 |
 | Gerosolima | 2 | Gerusalemme | lista manuale | 18, 32 |
 | Ignano | 2 | Dignano | curatore | 712 |
 | Lumignaco | 2 | Lumignacco | stessa forma normalizzata del nome ufficiale | 256, 350 |
 | Motta | 2 | Motta di Livenza | contesto: «arcipr., Motta 1754» (483) | 102, 471 |
-| Mūḍhā | 2 | — | nessuna corrispondenza nelle liste | 4396, 4495 |
 | Paris | 2 | Parigi | GeoNames | 518, 519 |
 | Pofabro | 2 | Poffabro | stessa forma normalizzata del nome ufficiale | 3768, 3803 |
 | Porpeto | 2 | Porpetto | GeoNames | 885, 1588 |
@@ -72,6 +82,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Aquileiensium Patrum | 1 | Aquileia | curatore: 1382 | 1382 |
 | Aquilejese | 1 | Aquileia | curatore | 525 |
 | Assise | 1 | Assisi | GeoNames | 489 |
+| Bagnaria | 1 | Bagnaria Arsa | contesto | 119 |
 | Barazzeto | 1 | Barazzetto | stessa forma normalizzata del nome ufficiale | 2434 |
 | Basilicae Utinensis | 1 | Duomo di Udine | curatore: il duomo di Udine (555) | 555 |
 | Berlin | 1 | Berlino | GeoNames | 3842 |
@@ -90,12 +101,15 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Canusio | 1 | Canussio | stessa forma normalizzata del nome ufficiale | 741 |
 | Caprera | 1 | Caprera | GeoNames | 497 |
 | Caprino | 1 | Caprino | GeoNames | 473 |
+| Carnea | 1 | Carnia | contesto: «in Carnea moror» (3949) | 3949 |
+| Castel | 1 | Porpetto | contesto: «Castel Porpetto» (810) | 810 |
 | Castelfranco | 1 | Castelfranco Veneto | contesto: «Magrini di Castelfranco», pittori (4122) | 4122 |
 | Castellutto | 1 | — | nessuna corrispondenza nelle liste | 3922 |
-| Cergneu | 1 | — | nessuna corrispondenza nelle liste | 1010 |
 | Chiasielis | 1 | Chiasiellis | curatore: 1261 | 1261 |
 | Chiasiellis | 1 | Chiasiellis | GeoNames | 1582 |
 | Cimpello | 1 | — | nessuna corrispondenza nelle liste | 921 |
+| Cittanova | 1 | Cittanova d'Istria | contesto: vescovado di Cittanova (891) | 891 |
+| Città Nuova | 1 | Cittanova d'Istria | contesto: vescovo di Città Nuova (598) | 598 |
 | Cividale di Friuli | 1 | Cividale | curatore: 610 | 610 |
 | Civitas Austriae | 1 | Cividale | lista manuale | 744 |
 | Claujano | 1 | Clauiano | stessa forma normalizzata del nome ufficiale | 2078 |
@@ -103,14 +117,14 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Coneglano | 1 | Conegliano | curatore: 888 | 888 |
 | Cormóns | 1 | Cormons | stessa forma normalizzata del nome ufficiale | 1782 |
 | Cortiel | 1 | Cortello | contesto: «Cortello. … Villa di Cortiel» (525) | 525 |
-| Cucagna | 1 | — | nessuna corrispondenza nelle liste | 1015 |
 | Erbe | 1 | Erbè | GeoNames | 2118 |
+| Feletto | 1 | Feletto Umberto | contesto | 618 |
 | Forogiulio del Kandler | 1 | Friuli | curatore: «Forogiulio» = Friuli; Kandler è cognome (923) | 923 |
 | Forojulii | 1 | Friuli | lista manuale | 996 |
 | Francoforte | 1 | Francoforte sul Meno | GeoNames | 617 |
-| Frangipane | 1 | — | nessuna corrispondenza nelle liste | 2137 |
 | Frattuzza | 1 | — | nessuna corrispondenza nelle liste | 2069 |
 | Gajanine | 1 | — | nessuna corrispondenza nelle liste | 492 |
+| Galliano | 1 | Gagliano | contesto: «villa di Galliano (Gagliano)», Cividale (1046) | 1046 |
 | Giassicco | 1 | Giassico | stessa forma normalizzata del nome ufficiale | 496 |
 | Gratz | 1 | Graz | GeoNames | 476 |
 | Grizan | 1 | — | nessuna corrispondenza nelle liste | 520 |
@@ -125,14 +139,13 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Lipsiis | 1 | Lipsia | contesto: latino | 619 |
 | Lucinicco | 1 | Lucinico | stessa forma normalizzata del nome ufficiale | 1875 |
 | Macerata Picena | 1 | Macerata | contesto | 20 |
-| Maraṇ | 1 | — | nessuna corrispondenza nelle liste | 4494 |
+| Magnano | 1 | Magnano in Riviera | contesto | 2044 |
 | Mediolani | 1 | Milano | curatore: 3 | 3 |
 | Medun | 1 | Meduno | curatore: 1875 | 1875 |
 | Meduna | 1 | Meduno | curatore: 925 | 925 |
 | Motta | 1 | Motta di Livenza | contesto: «arcipr., Motta 1754» (483) | 483 |
-| Murero | 1 | — | nessuna corrispondenza nelle liste | 259 |
 | Muscleto | 1 | Muscletto | stessa forma normalizzata del nome ufficiale | 3569 |
-| Nicoletti | 1 | — | nessuna corrispondenza nelle liste | 2435 |
+| Nogaredo | 1 | Nogaredo di Corno | contesto: con Barazzetto e Flaibano (2434) | 2434 |
 | Olmütz | 1 | Olomouc | lista manuale | 23 |
 | Orcenico | 1 | — | nessuna corrispondenza nelle liste | 487 |
 | Oslavie | 1 | — | nessuna corrispondenza nelle liste | 4241 |
@@ -146,9 +159,10 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Penn-hill Yeovil | 1 | Yeovil | contesto | 493 |
 | Percotto | 1 | Percoto | GeoNames | 476 |
 | Pietroburgo | 1 | San Pietroburgo | contesto | 1679 |
-| Portis | 1 | — | nessuna corrispondenza nelle liste | 2623/2 |
 | Pradamano Lovaria | 1 | Pradamano | Lovaria | contesto: due luoghi (1684) | 1684 |
 | Prampero | 1 | — | nessuna corrispondenza nelle liste | 533 |
+| Prato | 1 | Prato Carnico | contesto: «Prato carnico» (1564) | 1564 |
+| Prato | 1 | Prato Carnico | contesto: «Prato carnico» (1564) | 4108 |
 | Predamano | 1 | Pradamano | curatore: 585 | 585 |
 | Raiffemberg | 1 | Rifembergo | contesto: castello di Reifenberg (Branik) | 606 |
 | Ranziano | 1 | — | nessuna corrispondenza nelle liste | 495 |
@@ -183,12 +197,11 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Victoria | 1 | Vittoria | GeoNames | 2534 |
 | Viena | 1 | Vienna | GeoNames | 467 |
 | Villacco | 1 | Villaco | curatore: 568 | 568 |
+| Villafranca | 1 | Villafranca di Verona | contesto: «Mantova e Villafranca» (2558) | 2558 |
 | Vormanzia | 1 | Worms | curatore: 1876 | 1876 |
 | Vāle | 1 | Valle | stessa forma normalizzata del nome ufficiale | 4503 |
 | Wladislaw | 1 | Włocławek | contesto: diocesi di Vladislavia, Polonia | 1095 |
-| Ālī | 1 | — | nessuna corrispondenza nelle liste | 4502 |
 | Wien | 3 | Vienna | GeoNames (corrispondenza incerta) | 2330, 2642, 3843 |
-| Treves | 2 | Treviri | GeoNames (corrispondenza incerta) | 2642 |
 | Nebek | 1 | An Nabk | GeoNames (corrispondenza incerta) | 476 |
 | Persiceto | 1 | San Giovanni in Persiceto | GeoNames (corrispondenza incerta) | 3804 |
 | Salone | 1 | Stazione di Salone | GeoNames (corrispondenza incerta) | 3849 |
@@ -197,7 +210,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 
 ## 2. Doppia lettura: nomi ufficiali di luogo che sono anche cognomi o famiglie
 
-Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo ≠ Savorgnan famiglia). Forme: 448.
+Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo ≠ Savorgnan famiglia). Forme: 409.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -206,7 +219,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Manzano | 121 | — | anche nome ufficiale di luogo (ISTAT) | 469, 491, 496, 519, 568, 624, 875, 1686 |
 | Maniago | 64 | — | anche nome ufficiale di luogo (ISTAT) | 76, 77, 83, 91, 183, 282, 284, 291 |
 | Colloredo | 58 | — | anche nome ufficiale di luogo (GeoNames) | 40, 158, 239, 339, 340, 341, 342, 343 |
-| Bianchi | 45 | — | anche nome ufficiale di luogo (ISTAT) | 79, 110, 340, 371, 491, 511, 518, 688 |
 | Valvasone | 45 | — | anche nome ufficiale di luogo (GeoNames) | 91, 482, 519, 525, 652, 653, 654, 655 |
 | Belgrado | 44 | — | anche nome ufficiale di luogo (GeoNames) | 3, 82, 102, 117, 155, 289, 309, 352 |
 | Castello | 33 | — | anche nome ufficiale di luogo (GeoNames) | 493, 513, 518, 521, 523, 525, 541, 633 |
@@ -227,7 +239,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Manzano | 16 | — | ISTAT | 1787, 1804, 1805, 1808, 1809, 1812, 1813, 1818 |
 | Battistella | 15 | — | anche nome ufficiale di luogo (GeoNames) | 721, 1956, 1958, 1959, 1960, 1961, 1962, 1963 |
 | Giusti | 15 | — | anche nome ufficiale di luogo (GeoNames) | 53, 651, 878, 894, 1034, 1198, 1769, 1770 |
-| Monti | 15 | — | anche nome ufficiale di luogo (ISTAT) | 18, 25, 323, 336, 337, 356, 891, 1899 |
 | Strassoldo | 15 | — | anche nome ufficiale di luogo (GeoNames) | 373, 475, 521, 523, 554, 619, 721, 875 |
 | Verdi | 15 | — | anche nome ufficiale di luogo (GeoNames) | 2554, 2557, 3249, 3261, 3287, 3350, 3358, 3362 |
 | Belgrado | 14 | — | GeoNames | 339, 568, 723, 867, 1006, 1015, 1017, 1493 |
@@ -252,12 +263,9 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Flambro | 8 | — | GeoNames | 470, 485, 701, 2016, 2087, 2092, 2449 |
 | Marini | 8 | — | anche nome ufficiale di luogo (GeoNames) | 323, 469, 579, 593, 597, 1006, 2134, 4112 |
 | Oratorio | 8 | — | anche nome ufficiale di luogo (GeoNames) | 1326, 1330, 1332, 4265 |
-| Pagani | 8 | — | anche nome ufficiale di luogo (ISTAT) | 4, 13, 283, 471, 519, 1150, 1433, 4211 |
 | Polcenigo | 8 | — | ISTAT | 618, 619, 888, 1000, 1006, 1237, 1443, 1511 |
-| Sala | 8 | — | GeoNames | 2292, 2293, 2382, 2587, 2641, 2642, 2643, 2644 |
 | Villalta | 8 | — | anche nome ufficiale di luogo (GeoNames) | 467, 525, 566, 667, 2606 |
 | Baroni | 7 | — | anche nome ufficiale di luogo (GeoNames) | 525, 1816, 2604, 3517, 3582, 3679, 3995 |
-| Borghi | 7 | — | anche nome ufficiale di luogo (ISTAT) | 3128, 3129, 3288, 3396, 3473 |
 | Buja | 7 | — | ISTAT | 525, 672, 891, 1070 |
 | Gradisca | 7 | — | anche nome ufficiale di luogo (GeoNames) | 525, 564, 568, 1261, 1883, 2574, 2575 |
 | Martini | 7 | — | anche nome ufficiale di luogo (GeoNames) | 340, 476, 1451, 2134, 3122 |
@@ -283,7 +291,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Caneva | 5 | — | ISTAT | 922, 1288, 1291 |
 | Castello | 5 | — | GeoNames | 541, 568, 888, 1006, 2632/1 |
 | Comuni | 5 | — | anche nome ufficiale di luogo (GeoNames) | 514, 599, 1683, 1684, 1685 |
-| Madrisio | 5 | — | GeoNames | 407, 408, 409, 924, 1000 |
 | Montelongo | 5 | — | anche nome ufficiale di luogo (ISTAT) | 626, 668, 1741, 1742, 1743 |
 | Nimis | 5 | — | ISTAT | 847, 966, 1070, 2557, 4253 |
 | Osoppo | 5 | — | anche nome ufficiale di luogo (ISTAT) | 1537, 1998, 2666, 4006 |
@@ -313,7 +320,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Alfieri | 3 | — | anche nome ufficiale di luogo (GeoNames) | 307, 323 |
 | Artegna | 3 | — | ISTAT | 525, 533, 3936 |
 | Benedetti | 3 | — | anche nome ufficiale di luogo (GeoNames) | 480, 483, 484 |
-| Bertoli | 3 | — | GeoNames | 485, 619, 711 |
 | Brazzacco | 3 | — | anche nome ufficiale di luogo (GeoNames) | 645, 1015 |
 | Brazzacco | 3 | — | GeoNames | 797, 1010, 3641 |
 | Buttrio | 3 | — | ISTAT | 163, 541, 1070 |
@@ -324,14 +330,11 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Coronini | 3 | — | anche nome ufficiale di luogo (GeoNames) | 619, 2637/1, 4285 |
 | Duino | 3 | — | GeoNames | 596, 1006, 1552 |
 | Fanna | 3 | — | ISTAT | 282, 284, 1000 |
-| Feletto | 3 | — | ISTAT | 1932, 2078, 3672 |
 | Ferrari | 3 | — | anche nome ufficiale di luogo (GeoNames) | 114, 483, 1432 |
 | Forno | 3 | — | anche nome ufficiale di luogo (GeoNames) | 3790, 3991 |
-| Frattina | 3 | — | GeoNames | 1010, 1948, 3732 |
 | Graziani | 3 | — | anche nome ufficiale di luogo (GeoNames) | 340, 619, 1091 |
 | Marchesi | 3 | — | anche nome ufficiale di luogo (GeoNames) | 95, 2642, 4235 |
 | Marignana | 3 | — | GeoNames | 618 |
-| Monti | 3 | — | ISTAT | 557, 1899, 2557 |
 | Moretti | 3 | — | anche nome ufficiale di luogo (GeoNames) | 492, 2557, 3882 |
 | Nimis | 3 | — | anche nome ufficiale di luogo (ISTAT) | 881, 3895 |
 | Panigai | 3 | — | anche nome ufficiale di luogo (GeoNames) | 464, 1000, 1010 |
@@ -353,14 +356,12 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Zanotti | 3 | — | anche nome ufficiale di luogo (GeoNames) | 23, 299 |
 | Zoppola | 3 | — | ISTAT | 1000, 2578, 4287 |
 | Albrizzi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 753, 850 |
-| Asse | 2 | — | GeoNames | 2206, 2214 |
 | Aviano | 2 | — | anche nome ufficiale di luogo (ISTAT) | 471, 487 |
 | Bannia | 2 | — | anche nome ufficiale di luogo (GeoNames) | 3570, 3571 |
 | Bezzo | 2 | — | anche nome ufficiale di luogo (GeoNames) | 2475 |
 | Bonati | 2 | — | anche nome ufficiale di luogo (GeoNames) | 4110, 4111 |
 | Bonetti | 2 | — | anche nome ufficiale di luogo (GeoNames) | 476, 1384 |
 | Bonomi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 619, 2559 |
-| Braida | 2 | — | GeoNames | 2022, 2085 |
 | Brazzano | 2 | — | GeoNames | 1819, 1822 |
 | Brenta | 2 | — | anche nome ufficiale di luogo (ISTAT) | 1094 |
 | Bressani | 2 | — | anche nome ufficiale di luogo (GeoNames) | 1598, 2589 |
@@ -375,13 +376,11 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Cesa | 2 | — | anche nome ufficiale di luogo (ISTAT) | 471, 1150 |
 | Chiesa | 2 | — | anche nome ufficiale di luogo (GeoNames) | 9, 607 |
 | Cittadella | 2 | — | anche nome ufficiale di luogo (ISTAT) | 190, 482 |
-| Cittanova | 2 | — | anche nome ufficiale di luogo (ISTAT) | 465, 469 |
 | Colle | 2 | — | anche nome ufficiale di luogo (GeoNames) | 21 |
 | Corniani | 2 | — | anche nome ufficiale di luogo (GeoNames) | 340, 2363 |
 | D'Annunzio | 2 | — | anche nome ufficiale di luogo (GeoNames) | 3708, 3913 |
 | Dignano | 2 | — | anche nome ufficiale di luogo (ISTAT) | 712 |
 | Filippi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 492, 2557 |
-| Fontana | 2 | — | GeoNames | 215, 218 |
 | Furlani | 2 | — | anche nome ufficiale di luogo (GeoNames) | 627, 1745 |
 | Giordani | 2 | — | anche nome ufficiale di luogo (GeoNames) | 471, 4109 |
 | Grado | 2 | — | ISTAT | 492, 853 |
@@ -401,11 +400,9 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Moimacco | 2 | — | ISTAT | 72, 1352 |
 | Monfalcone | 2 | — | anche nome ufficiale di luogo (ISTAT) | 835 |
 | Montagna | 2 | — | anche nome ufficiale di luogo (GeoNames) | 10 |
-| Montegnacco | 2 | — | GeoNames | 681, 1015 |
 | Mori | 2 | — | anche nome ufficiale di luogo (ISTAT) | 3455 |
 | Ovaro | 2 | — | anche nome ufficiale di luogo (ISTAT) | 1455, 1456 |
 | Paderno | 2 | — | anche nome ufficiale di luogo (GeoNames) | 804, 2386 |
-| Pagani | 2 | — | ISTAT | 340, 524 |
 | Pasquali | 2 | — | GeoNames | 539, 1689 |
 | Perini | 2 | — | anche nome ufficiale di luogo (GeoNames) | 3909, 3913 |
 | Petrucco | 2 | — | anche nome ufficiale di luogo (GeoNames) | 1594, 1596 |
@@ -418,11 +415,9 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Prodolone | 2 | — | GeoNames | 487, 2060 |
 | Ragogna | 2 | — | anche nome ufficiale di luogo (ISTAT) | 606, 2193 |
 | Righi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 4206 |
-| Rizzi | 2 | — | GeoNames | 524, 3697 |
 | Rossetti | 2 | — | anche nome ufficiale di luogo (GeoNames) | 337, 2159 |
 | Sagrado | 2 | — | ISTAT | 863, 2146 |
 | Salvarolo | 2 | — | anche nome ufficiale di luogo (GeoNames) | 102, 619 |
-| Sasso | 2 | — | GeoNames | 2275, 4110 |
 | Scaramuzza | 2 | — | anche nome ufficiale di luogo (GeoNames) | 492, 1640 |
 | Sedegliano | 2 | — | ISTAT | 666, 3504 |
 | Sella | 2 | — | anche nome ufficiale di luogo (GeoNames) | 497, 2604 |
@@ -430,7 +425,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Spinelli | 2 | — | anche nome ufficiale di luogo (GeoNames) | 3911 |
 | Stazione | 2 | — | anche nome ufficiale di luogo (GeoNames) | 852, 1604 |
 | Tommasi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 23 |
-| Valenti | 2 | — | anche nome ufficiale di luogo (GeoNames) | 480 |
 | Valentini | 2 | — | anche nome ufficiale di luogo (GeoNames) | 484 |
 | Vanzetti | 2 | — | anche nome ufficiale di luogo (GeoNames) | 519, 524 |
 | Varmo | 2 | — | ISTAT | 525 |
@@ -446,7 +440,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Artegna | 1 | — | anche nome ufficiale di luogo (ISTAT) | 616 |
 | Asolo | 1 | — | ISTAT | 484 |
 | Asolo | 1 | — | anche nome ufficiale di luogo (ISTAT) | 551 |
-| Asse | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2084 |
 | Augusta | 1 | — | ISTAT | 1109 |
 | Bagnarola | 1 | — | anche nome ufficiale di luogo (GeoNames) | 618 |
 | Bagnarola | 1 | — | GeoNames | 618 |
@@ -464,9 +457,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Bertiolo | 1 | — | ISTAT | 473 |
 | Bertiolo | 1 | — | anche nome ufficiale di luogo (ISTAT) | 1198 |
 | Biadene | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3846 |
-| Bianchi | 1 | — | ISTAT | 776 |
 | Bonisiolo | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1006 |
-| Borghi | 1 | — | ISTAT | 2070 |
 | Borgo | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2376 |
 | Botta | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
 | Bottacin | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
@@ -508,7 +499,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Chiopris | 1 | — | GeoNames | 3735 |
 | Ciano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3591 |
 | Cisterna | 1 | — | anche nome ufficiale di luogo (GeoNames) | 606 |
-| Cittanova | 1 | — | ISTAT | 891 |
 | Clauiano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1683 |
 | Clauiano | 1 | — | GeoNames | 1685 |
 | Collalto | 1 | — | anche nome ufficiale di luogo (GeoNames) | 23 |
@@ -524,13 +514,10 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Cussignacco | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2190 |
 | Dardago | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2050 |
 | Duino | 1 | — | anche nome ufficiale di luogo (GeoNames) | 511 |
-| Fabris | 1 | — | GeoNames | 524 |
 | Facchini | 1 | — | anche nome ufficiale di luogo (GeoNames) | 494 |
 | Fantini | 1 | — | anche nome ufficiale di luogo (GeoNames) | 419 |
 | Fausti | 1 | — | anche nome ufficiale di luogo (GeoNames) | 616 |
-| Feletto | 1 | — | anche nome ufficiale di luogo (ISTAT) | 618 |
 | Firmano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 606 |
-| Fontana | 1 | — | anche nome ufficiale di luogo (GeoNames) | 593 |
 | Fontanabona | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1477 |
 | Forame | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1917 |
 | Fornari | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2343 |
@@ -555,25 +542,20 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Lazzaretti | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
 | Liariis | 1 | — | anche nome ufficiale di luogo (GeoNames) | 377 |
 | Lione | 1 | — | anche nome ufficiale di luogo (GeoNames) | 669 |
-| Loschi | 1 | — | GeoNames | 2637/16 |
 | Lovaria | 1 | — | GeoNames | 1517 |
 | Majano | 1 | — | anche nome ufficiale di luogo (ISTAT) | 2666 |
 | Mantovani | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3719 |
 | Manzana | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1811 |
 | Manzinello | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1015 |
-| Marchetti | 1 | — | GeoNames | 577 |
 | Marchiori | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
 | Marignana | 1 | — | anche nome ufficiale di luogo (GeoNames) | 618 |
 | Martin | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1882 |
 | Mazzucato | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2901 |
 | Menegali | 1 | — | anche nome ufficiale di luogo (GeoNames) | 4189 |
 | Menegazzo | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2084 |
-| Menin | 1 | — | GeoNames | 518 |
 | Mestre | 1 | — | GeoNames | 2181 |
-| Micoli | 1 | — | GeoNames | 3640 |
 | Miotto | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3833 |
 | Mis | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3682 |
-| Mocenigo | 1 | — | GeoNames | 1535 |
 | Moimacco | 1 | — | anche nome ufficiale di luogo (ISTAT) | 3954 |
 | Molin | 1 | — | anche nome ufficiale di luogo (GeoNames) | 480 |
 | Molino | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1117 |
@@ -610,14 +592,12 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Rivignano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1589 |
 | Romagnano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1473 |
 | Ronchiettis | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2052 |
-| Ronconi | 1 | — | GeoNames | 1006 |
 | Rosazzo | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1014 |
 | Rovere | 1 | — | anche nome ufficiale di luogo (GeoNames) | 339 |
 | Sagrado | 1 | — | anche nome ufficiale di luogo (ISTAT) | 863 |
 | Salon | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1673 |
 | Sampieri | 1 | — | anche nome ufficiale di luogo (GeoNames) | 32 |
 | Sarmede | 1 | — | anche nome ufficiale di luogo (ISTAT) | 593 |
-| Savorgnano | 1 | — | GeoNames | 95 |
 | Schio | 1 | — | ISTAT | 487 |
 | Schio | 1 | — | anche nome ufficiale di luogo (ISTAT) | 601 |
 | Scola | 1 | — | anche nome ufficiale di luogo (GeoNames) | 10 |
@@ -625,25 +605,19 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Sella | 1 | — | GeoNames | 525 |
 | Sette | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1362 |
 | Siacco | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1362 |
-| Stella | 1 | — | ISTAT | 4284 |
 | Taboga | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2730 |
 | Tasca | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3639 |
 | Tessari | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2262 |
-| Tommaseo | 1 | — | GeoNames | 1552 |
 | Tonini | 1 | — | anche nome ufficiale di luogo (GeoNames) | 4106 |
-| Toppo | 1 | — | GeoNames | 2269 |
 | Trinità | 1 | — | anche nome ufficiale di luogo (ISTAT) | 1234 |
 | Trissino | 1 | — | anche nome ufficiale di luogo (ISTAT) | 639 |
 | Turchetti | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
-| Valenti | 1 | — | GeoNames | 480 |
 | Valmarana | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3907 |
 | Vetta | 1 | — | anche nome ufficiale di luogo (GeoNames) | 139 |
 | Via | 1 | — | anche nome ufficiale di luogo (GeoNames) | 852 |
-| Vicentini | 1 | — | GeoNames | 3719 |
 | Villaorba | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1574 |
 | Volpato | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
 | Zabarella | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1552 |
-| Zamboni | 1 | — | GeoNames | 2520 |
 | Zomeais | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2055 |
 | Zompitta | 1 | — | GeoNames | 1683 |
 | Zompitta | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3895 |
@@ -713,7 +687,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Girol. | 2 | Girolamo | abbreviazione (lista manuale) | 606 |
 | Io. | 2 | Giovanni | curatore | 12, 414 |
 | Jacobum | 2 | Giacomo o Jacopo | contesto: ambiguo: da decidere con le fonti | 606, 622 |
-| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardus» | 620, 2521 |
+| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardo» | 620, 2521 |
 | Lunardo | 2 | Leonardo | variante (lista manuale) | 10, 473 |
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
@@ -722,7 +696,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
-| Albertum | 1 | Alberto | forma latina declinata di «Alberto» | 616 |
+| Albertum | 1 | Alberto | forma latina declinata di «Albertus» | 616 |
 | Andreae | 1 | Andrea | forma latina declinata di «Andrea» | 620 |
 | Antoninorum | 1 | Antonino | forma latina declinata di «Antoninus» | 819 |
 | Apostolorum | 1 | Apostolo | forma latina declinata di «Apostolus» | 2124 |
@@ -739,7 +713,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Bernardum | 1 | Bernardo | forma latina declinata di «Bernardo» | 606 |
 | Bortolamio | 1 | Bartolomeo | variante (lista manuale) | 606 |
 | Bortolomio | 1 | Bartolomeo | variante (lista manuale) | 473 |
-| Carolum | 1 | Carolo | forma latina declinata di «Carolus» | 617 |
+| Carolum | 1 | Carolo | forma latina declinata di «Carolo» | 617 |
 | Cesarea | 1 | — | Wikidata (la), forma italiana per regola | 606 |
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
@@ -749,8 +723,8 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
 | Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
-| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
-| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
+| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
+| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
 | Fr.co | 1 | Francesco | abbreviazione (lista manuale) | 1737 |
 | Fr.° | 1 | Francesco | abbreviazione (lista manuale) | 601 |
@@ -761,7 +735,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -804,7 +778,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 
 ## 4. Cognomi: varianti grafiche e correzioni del curatore
 
-Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quadre: la forma proposta è la più frequente del gruppo. Forme: 294.
+Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quadre: la forma proposta è la più frequente del gruppo. Forme: 292.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -893,7 +867,6 @@ Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quad
 | Comunis | 1 | — | variante grafica di Communis | 847 |
 | Corvat | 1 | — | variante grafica di Corvatt | 4249 |
 | Corvatt | 6 | — | variante grafica di Corvat | 4237, 4238, 4239, 4245, 4249 |
-| Cucagna | 10 | — | variante grafica di Cuccagna | 617, 618, 1010, 1013, 1041, 1070, 1560, 3431 |
 | Cuccagna | 2 | — | variante grafica di Cucagna | 346, 541 |
 | Cyllenio | 1 | — | variante grafica di Cillenio | 429 |
 | Davadanti | 1 | — | variante grafica di Davadaṅtī | 4505 |
@@ -912,7 +885,6 @@ Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quad
 | Fabrici | 1 | — | variante grafica di Fabbricj | 3571 |
 | Fabrizi | 11 | — | variante grafica di Fabbrizj, Fabrizzi | 338, 599, 600, 601, 602, 798, 799, 2378 |
 | Fabrizzi | 1 | — | variante grafica di Fabbrizj, Fabrizi | 471 |
-| Fabro | 5 | — | variante grafica di Fabbro | 159, 1952, 2390, 2395, 3199 |
 | Farlati | 1 | — | variante grafica di Farlatti | 875 |
 | Farlatti | 1 | — | variante grafica di Farlati | 484 |
 | Feretti | 2 | — | variante grafica di Ferretti | 606 |
@@ -1105,17 +1077,17 @@ Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quad
 
 ## 5. Cognomi simili (una lettera di differenza): candidati per la fase 4
 
-Non si uniscono senza conferma (omonimi, cognomi diversi). Coppie: 935.
+Non si uniscono senza conferma (omonimi, cognomi diversi). Coppie: 932.
 
-Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ Accademici, Accademica ~ Academico, Accademici ~ Academico, Accademie ~ Akademie, Agenzia ~ Agenzie, Ajlini ~ Ailino, Ajlini ~ Mijlini, Alberi ~ Alberti, Albrici ~ Albrizzi, Aleardi ~ Aleardis, Alfieri ~ Altieri, Alpina ~ Alpini, Altani ~ Altanis, Altani ~ Altano, Altieri ~ Altiero, Amadei ~ Amasei, Amaltei ~ Amalteo, Amanti ~ Amantio, Amasei ~ Amaseo, Amigoni ~ Arrigoni, Anagrafe ~ Anagrafi, Anagrafi ~ Anagrafia, Andech ~ Randech, Andreasi ~ Andreussi, Andreucci ~ Andreuccio, Andreucci ~ Andreussi, Andreucci ~ Andreuzzi, Andreussi ~ Andreuzzi, Andreuzzi ~ Andriuzzi, Anecdoti ~ Aneddoti, Annoniani ~ Aroniani, Antich ~ Antiche, Antiquarii ~ Antiquaria, Anzello ~ Anzolo, Aquilegensis ~ Aquilegiensis, Aquilegensis ~ Aquilejensis, Aquilegiensis ~ Aquilejensis, Aquileja ~ Aquilejae, Aquilejensi ~ Aquilejensis, Aquilejensi ~ Aquilejesi, Aquileiese ~ Aquilejesi, Arabia ~ Arabis, Arcano ~ Archano, Archigimnasio ~ Archiginnasio, Arcolaniani ~ Arcoloniani, Arcoloniana ~ Arcoloniani, Aretino ~ Trettino, Arrigone ~ Arrigoni, Arithmetica ~ Aritmetica, Armellin ~ Armellini, Ascoli ~ Pascoli, Asquin ~ Asquini, Asquin ~ Asquino, Asquini ~ Asquino, Augustini ~ Augustino, Ausano ~ Cusano, Azzanutto ~ Zanutto, Bacchetti ~ Bucchetti, Bacchetti ~ Racchetti, Bacchetti ~ Sacheti, Baccini ~ Facini, Baccini ~ Pacini, Baccini ~ Tacini, Baldas ~ Baldassi, Baldas ~ Baldasso, Baldassi ~ Baldasso, Barbiere ~ Barbieri, Baroni ~ Caronni, Baroni ~ Garoni, Bartolini ~ Bertolini, Bartolini ~ Bortolini, Bartolucci ~ Bartoluccio, Belegno ~ Beleno, Belenghi ~ Besenghi, Beleno ~ Belluno, Belgradi ~ Belgrado, Bellini ~ Belloni, Bellini ~ Bettini, Bellini ~ Tellini, Bellone ~ Belloni, Bellonum ~ Bellonus, Benedet ~ Benedetti, Benetto ~ Ibenetto, Benetto ~ Veneto, Berettini ~ Bertini, Berlendis ~ Ferlendis, Bernini ~ Bertini, Bertani ~ Bertini, Bertani ~ Bertoni, Bertini ~ Bertoni, Bertini ~ Bettini, Bertiolo ~ Bertiulo, Bertiolo ~ Bertollo, Bertol ~ Bertolla, Bertol ~ Bertoli, Bertol ~ Bertollo, Bertolla ~ Bertoli, Bertolla ~ Bertollo, Bertoldi ~ Bertoli, Bertoldi ~ Pertoldi, Bertoli ~ Bertollo, Bertoli ~ Bertoni, Bertoli ~ Bertossi, Bertolini ~ Bortolini, Bertoni ~ Bertossi, Bhavānai ~ Bhāvaṇḍai, Biachini ~ Bianchini, Bianchini ~ Bianchino, Biancone ~ Bianconi, Bījasanī ~ Biasatti, Biasatti ~ Biasutti, Bibliotecario ~ Bibliothecario, Bibliotheca ~ Bibliothecae, Bidernucci ~ Bidernuccio, Bidernucci ~ Bidernuzzi, Bissone ~ Bussone, Bītarāgī ~ Vītarāgī, Blasich ~ Blasigh, Bodini ~ Bonini, Bodini ~ Borini, Boiani ~ Bollani, Bolena ~ Bolina, Bolena ~ Folena, Bombardini ~ Lombardini, Bonati ~ Bonetti, Bonati ~ Donati, Bonetti ~ Monetti, Bonetti ~ Sonetti, Bonghi ~ Borghi, Bonini ~ Borini, Bonini ~ Donnini, Bonini ~ Tonini, Bonisiolo ~ Bonisolo, Bonisolli ~ Bonisolo, Borelli ~ Morelli, Borghi ~ Gorghi, Bortolussi ~ Bortoluzzi, Bozzoli ~ Pozzoli, Braida ~ Braido, Brambilla ~ Brembilla, Brandis ~ Grandis, Brazzacco ~ Brazzano, Bressani ~ Presani, Brunaleschi ~ Brunelleschi, Brunallesco ~ Brunellesco, Brunet ~ Brunetti, Budrio ~ Buttrio, Buffali ~ Buffelli, Buiatti ~ Buratti, Buiatti ~ Pujati, Bulfoni ~ Mulfoni, Buratti ~ Sūrati, Busolini ~ Busulini, Busolini ~ Mussolini, Bussone ~ Busono, Caesari ~ Caesaris, Caesari ~ Cesari, Caetani ~ Gaetani, Cagnolini ~ Cagnolino, Cairoli ~ Caroli, Calegari ~ Caligari, Caligari ~ Calligaris, Calogerà ~ Calogierà, Camavitto ~ Cannavito, Cambon ~ Zambon, Camerari ~ Camerario, Campfranc ~ Lampfranc, Canale ~ Casale, Cancellaria ~ Cancellariae, Candidi ~ Candidis, Caṅḍikā ~ Caṅdrikā, Canino ~ Casino, Canino ~ Manino, Canino ~ Zanino, Cantone ~ Cantore, Cantone ~ Canzone, Cantone ~ Castone, Canussii ~ Canussio, Cappella ~ Capelan, Cappella ~ Capelli, Cappella ~ Cappello, Capelan ~ Capellano, Capelli ~ Cappello, Capelli ~ Carelli, Capelli ~ Cavelli, Capelli ~ Cipelli, Capitula ~ Capituli, Capitula ~ Capitulo, Capituli ~ Capitulo, Capizzi ~ Capuzzi, Capodagli ~ Capodaglio, Capponi ~ Caronni, Caprille ~ Caprileo, Carrara ~ Carrari, Carrara ~ Carrera, Carrari ~ Caratti, Carrari ~ Carreri, Caratti ~ Cariati, Caratti ~ Casati, Carboni ~ Caronni, Carducci ~ Carlucci, Carducci ~ Narducci, Carelli ~ Carreri, Carelli ~ Carnelli, Carelli ~ Caroli, Carelli ~ Cartelli, Carelli ~ Cavelli, Carrera ~ Carreri, Carrera ~ Carnera, Cargnelutti ~ Carnelutti, Cargnia ~ Carnia, Carlét ~ Carletti, Carletti ~ Carlutti, Carlucci ~ Carlutti, Carnelli ~ Cartelli, Carneval ~ Carnevale, Carnia ~ Carnica, Carnica ~ Carnico, Caroli ~ Caronni, Caroli ~ Cattoli, Caronni ~ Ceroni, Caronni ~ Garoni, Cartelli ~ Castelli, Cartelli ~ Martelli, Cassacco ~ Cassano, Cassano ~ Casino, Cassano ~ Cusano, Casarola ~ Casasola, Casati ~ Cassetti, Casati ~ Cosati, Cassetta ~ Cassetti, Cassetti ~ Cossetti, Cassone ~ Castone, Castel ~ Castelli, Castel ~ Castello, Castellani ~ Castellano, Castelli ~ Castello, Castion ~ Castions, Castra ~ Castro, Cattoli ~ Catolic, Catolic ~ Cattolica, Cavalli ~ Cavallo, Cavalli ~ Cavelli, Cavalier ~ Cavalieri, Cavalier ~ Kavalier, Cavallo ~ Cavazzo, Cavazza ~ Cavazzo, Cechini ~ Cechino, Cechini ~ Checchini, Cechini ~ Cucchini, Cechini ~ Zecchini, Cechino ~ Cichino, Cecina ~ Ceclina, Cecconi ~ Ceroni, Cecconi ~ Ciconi, Cecconi ~ Cocconi, Censuarj ~ Censuaria, Centini ~ Contini, Cerchiai ~ Cerchiari, Ceriani ~ Ciriani, Ceriani ~ Meriani, Cernazai ~ Zernazai, Cerruti ~ Perutti, Cesari ~ Tessari, Chiari ~ Chiaro, Chiarottini ~ Chiaruttini, Chiesa ~ Chiese, Christiani ~ Cristiani, Cicogna ~ Cigogna, Ciconi ~ Cocconi, Cicuta ~ Cicuto, Cypriani ~ Ciriani, Cittadini ~ Cittadino, Cividal ~ Cividale, Civitat ~ Civitate, Cocolo ~ Cosolo, Cocconi ~ Covoni, Codice ~ Codici, Collegij ~ Colleggio, Collegij ~ Colletti, Colletti ~ Copetti, Colletti ~ Cossetti, Colletti ~ Poletti, Colonna ~ Colonia, Collored ~ Colloredo, Colloredo ~ Colloreto, Comelli ~ Comello, Comini ~ Comuni, Comini ~ Domini, Commissione ~ Commissioni, Commissione ~ Omissione, Comites ~ Comitis, Commune ~ Comuni, Comuni ~ Communis, Comuni ~ Comuzzi, Comuni ~ Sommuni, Condolo ~ Gondolo, Contini ~ Montini, Contini ~ Pontini, Convocatione ~ Convocazione, Copetti ~ Cossetti, Corbelli ~ Corbellis, Corbelli ~ Corbello, Cornaro ~ Corsaro, Coronella ~ Coronelli, Corsini ~ Orsini, Cortenovis ~ Cortinovis, Cosati ~ Cossetti, Cossetti ~ Fossetti, Cossetti ~ Rossetti, Cossetti ~ Tosetti, Craglevich ~ Craglievich, Cristani ~ Cristiani, Cronberg ~ Kronberg, Cumano ~ Cusano, Czoernig ~ Czörnig, Dalapati ~ Dalpati, Danieli ~ Danielis, Decani ~ Decano, Decani ~ Deciani, Decani ~ Degani, Decano ~ Degano, Decreta ~ Decreti, Degani ~ Deganis, Degani ~ Degano, Delphini ~ Delphino, Dēvandr ~ Devendr, Dhānyāṃ ~ Dhaṅram, Diaconi ~ Diacono, Dignano ~ Rignano, Diocese ~ Dioceses, Discrizione ~ Iscrizione, Documenta ~ Documenti, Domini ~ Dominio, Domini ~ Dominis, Domini ~ Domino, Domini ~ Donnini, Dominio ~ Dominis, Dominio ~ Domino, Dominium ~ Dominum, Donnini ~ Tonini, Doretti ~ Moretti, Doschi ~ Loschi, Draghi ~ Droghi, Egregj ~ Egregis, Engelberto ~ Engilberto, Episcopio ~ Episcopis, Episcopio ~ Episcopo, Euganea ~ Euganei, Fabani ~ Fabiani, Fabiane ~ Fabiani, Fabbricj ~ Fabriczy, Fabbricj ~ Fabrizi, Fabriczy ~ Fabrizi, Facchini ~ Facini, Facchini ~ Tacchini, Facini ~ Pacini, Facini ~ Tacini, Facoltà ~ Racolta, Faelis ~ Fiellis, Famiglia ~ Familia, Fantini ~ Santini, Faramiti ~ Foramiti, Farinelli ~ Marinelli, Fascicoli ~ Fascicolo, Fattura ~ Fatture, Fattura ~ Natura, Fauste ~ Fausti, Federici ~ Federicis, Ferrari ~ Ferrazzi, Fiascaria ~ Fiascaris, Fiducii ~ Fiducio, Filati ~ Tilatti, Filelfa ~ Filelfo, Filippini ~ Filitini, Florit ~ Floriо, Follini ~ Nolini, Follini ~ Pollini, Fontanini ~ Fontanino, Forcari ~ Fornari, Forcari ~ Foscari, Forijulii ~ Forojulii, Forijulii ~ Friuli, Formularia ~ Formulario, Forojuliensem ~ Forojulienses, Forojulienses ~ Forojuliensis, Forojuliensi ~ Forojuliensis, Fortis ~ Portis, Fortis ~ Tortis, Fossetti ~ Rossetti, Fossetti ~ Tosetti, Frammento ~ Frumento, Franceschini ~ Franceschinis, Franceschini ~ Franceschino, Franceschinis ~ Francischinis, Francescone ~ Francesconi, Francesconi ~ Francescotti, Francisce ~ Francisci, Frangipane ~ Frangipani, Frazioni ~ Orazioni, Frioli ~ Friuli, Friulana ~ Friulano, Friuli ~ Priuli, Furlan ~ Furlani, Gaetani ~ Gaetini, Galateo ~ Galeteo, Galeppi ~ Galuppi, Gallica ~ Gallici, Gallica ~ Gallico, Gallici ~ Gallico, Galvani ~ Galvanis, Gaṃgājī ~ Gangājī, Gandini ~ Gardini, Gardini ~ Gordini, Gardini ~ Nardini, Garoni ~ Garzoni, Gaspari ~ Gasperi, Gaudenti ~ Gaudenzi, Gazaniga ~ Gazzeniga, Gelinek ~ Jelinek, Gemona ~ Giemona, Gemona ~ Glemona, Gennari ~ Generi, Generi ~ Genesi, Genesi ~ Genest, Germani ~ Germania, Germani ~ Germanie, Germani ~ Germini, Germania ~ Germanie, Giacomelli ~ Giacometti, Giacometti ~ Giacometto, Giavedon ~ Giavedoni, Giberti ~ Gioberti, Giemona ~ Glemona, Giraldi ~ Girardi, Girardi ~ Girardis, Giuliani ~ Juliani, Giuliolla ~ Guliola, Giurisdicente ~ Giurisdicenti, Giustinian ~ Giustiniani, Giustiniani ~ Justiniani, Glemona ~ Glemonae, Gloriosissimi ~ Gloriosissimo, Gordini ~ Ordini, Gorisizza ~ Gorizizza, Gorizia ~ Gorizizza, Gortan ~ Gortani, Governator ~ Governatore, Governator ~ Governatori, Governatore ~ Governatori, Gradenico ~ Gradenigo, Grandi ~ Grandis, Grandi ~ Grando, Gregoletti ~ Grigoletti, Griffini ~ Grissini, Grossetti ~ GROSSETTIS, Grossetti ~ Rossetti, Gubertini ~ Gubertino, Guillelmi ~ Guilielmi, Haenel ~ Haensel, Hamacaṅdr ~ Hemacandr, Hemacandr ~ Hemecaṅdr, Henrici ~ Henrico, Hermacorae ~ Hermagorae, Hieronymi ~ Hieronymo, Historia ~ Historica, Historia ~ Istoria, Historica ~ Istorica, Honestis ~ Onestis, Iacobi ~ Jacotti, Iacomo ~ Jacotto, Jaconissi ~ Jaconizzi, Jacotti ~ Jacotto, Inscrizione ~ Iscrizione, Instrumenta ~ Instrumenti, Instrumenti ~ Istrumenti, Joannis ~ Iohannis, Johanni ~ Iohannis, Ippoliti ~ Politi, Istituti ~ Istituto, Istoria ~ Istorica, Istoria ~ Istorie, Istoria ~ Istria, Istoria ~ Storia, Italiam ~ Italian, Italic ~ Italie, Juliani ~ Julianis, Juliani ~ Zuliani, Kandler ~ Ländler, Kṛṣabhadev ~ Ṛṣabhadev, Lancieri ~ Lantieri, Laurea ~ Laureo, Lavagnoli ~ Lavagnolo, Lazzarini ~ Lazzaroni, Lazzarolli ~ Lazzaroni, Lazzarolli ~ Mazzaroli, Leonardi ~ Leopardi, Leonarducci ~ Leonarduzzi, Leskovic ~ Leskovich, Lettera ~ Lettere, Lettere ~ Lettore, Lettore ~ Settore, Lezione ~ Sezione, Locadelli ~ Locadello, Locadelli ~ Locatelli, Locadello ~ Locatello, Locatelli ~ Locatello, Locatelli ~ Lucatelli, Lozzini ~ Sozzini, Luschin ~ Lushin, Luzzatto ~ Muzzato, Macagnini ~ Magagnini, Macoris ~ Maioris, Maggior ~ Maggiore, Magnifica ~ Magnificat, Magrini ~ Marini, Magris ~ Matris, Mahādev ~ Māhādevjī, Mahāvīr ~ Mahāvīrā, Mahāvīrā ~ Mahāvīraṃ, Majano ~ Marano, Mainardi ~ Meynardi, Mancini ~ Manini, Mancini ~ Manzini, Mancini ~ Pancini, Mandelli ~ Manelli, Mandelli ~ Mantelli, Manelli ~ Mantelli, Manelli ~ Minelli, Maniaco ~ Maniago, Manina ~ Manini, Manina ~ Manino, Manini ~ Manino, Manini ~ Manoni, Manini ~ Manzini, Manini ~ Marini, Manini ~ Mazzini, Manini ~ Menini, Manino ~ Zanino, Manoni ~ Manzoni, Mantegazza ~ Mantegazia, Mantelli ~ Martelli, Mantica ~ Manticae, Mantovani ~ Mantovano, Manzana ~ Manzanae, Manzana ~ Manzano, Manzini ~ Manzoni, Manzini ~ Mazzini, Manzini ~ Menzini, Manzoni ~ Minzoni, Marangoni ~ Merangoni, Marchesa ~ Marchesi, Marchesi ~ Marchetti, Marchetti ~ Marochetti, Marchi ~ Varchi, Marcotti ~ Mariotti, Marinelli ~ Martinelli, Marini ~ Marioni, Marini ~ Martini, Marini ~ Mazzini, Marini ~ Parini, Marinoni ~ Marioni, Marinoni ~ Martinoni, Marioni ~ Mariotti, Marlupino ~ Morlupino, Marsigli ~ Marsilli, Marsilli ~ Massilli, Martin ~ Martini, Martinelli ~ Martinetti, Martini ~ Martinis, Martini ~ Tartini, Marzuttini ~ Mazzuttini, Massari ~ Massaro, Masotti ~ Pasotti, Maspino ~ Mastino, Mathiae ~ Mathiam, Mathiae ~ Matthias, Mathiam ~ Matthias, Mattiussi ~ Mattiuzzi, Matrimoni ~ Matrimonis, Matris ~ Patris, Menegozzi ~ Meneguzzi, Menini ~ Menzini, Messaggio ~ Mesaglio, Messina ~ Tesina, Mestri ~ Mestris, Metropol ~ Metropoli, Metropolitana ~ Metropolitanae, Metropolitana ~ Metropolitanam, Metropolitana ~ Metropolitano, Metropolitanae ~ Metropolitanam, Micali ~ Micoli, Michael ~ Michel, Michel ~ Michele, Michel ~ Micheli, Michele ~ Micheli, Michele ~ Michiele, Micheli ~ Michieli, Michelini ~ Micheloni, Michiele ~ Michieli, Micoli ~ Piccoli, Milanese ~ Milanesi, Milani ~ Milano, Milani ~ Mijlini, Milani ~ Villani, Mijlini ~ Missini, Minelli ~ Pinelli, Mintino ~ Miotino, Mintino ~ Miuttino, Minucci ~ Minuccio, Miotino ~ Miuttino, Missana ~ Missona, Mochetti ~ Moschetti, Mochetti ~ Rocchetti, Molino ~ Mulino, Monaci ~ Monaco, Monaco ~ Monico, Monasterii ~ Monasterio, Mondini ~ Mondino, Mondini ~ Montini, Mondini ~ Rondini, Moneta ~ Monete, Moneta ~ Monetti, Moneta ~ Monita, Monete ~ Monetti, Monetti ~ Moretti, Monetti ~ Mottetti, Monetti ~ Sonetti, Montagnacco ~ Montegnacco, Montello ~ Pontello, Montereale ~ Monteregale, Montini ~ Pontini, Monumenta ~ Monumento, Morari ~ Morassi, Morari ~ Murari, Morassi ~ Morossi, Morcelli ~ Morelli, Morelli ~ Moretti, Moretti ~ Mottetti, Moroni ~ Morossi, Morosini ~ Morosino, Mosacensi ~ Mosacensis, Moschini ~ Moscini, Mussolini ~ Muzzolini, Naonis ~ Nasonis, Nardini ~ Nardoni, Natività ~ Nativitas, Nespolettensi ~ Nespolettensis, Nicoletti ~ Nicoletto, Nicolussij ~ Nicolussio, Nobili ~ Nobilis, Nolini ~ Pollini, Nordis ~ Norejs, Offizio ~ Uffizio, Onesti ~ Onestis, Ordine ~ Ordini, Ordini ~ Orsini, Ottelia ~ Ottelio, Ottobon ~ Ottoboni, Ottolini ~ Ottolino, Ottomana ~ Ottomano, Paciani ~ Pacini, Paciani ~ Pajani, Pacini ~ Pamini, Pacini ~ Pancini, Pacini ~ Parini, Pacini ~ Pasini, Pacini ~ Piccini, Pacini ~ Puccini, Pacini ~ Tacini, Paderni ~ Paderno, Paderno ~ Paternò, Padovani ~ Padovano, Pagani ~ Pajani, Pagani ~ Papani, Paghini ~ Pighini, Pagnaci ~ Pagnacco, Pajani ~ Papani, Paladini ~ Palatini, Pallavicini ~ Parravicini, Palese ~ Pavese, Palian ~ Pasian, Pamini ~ Parini, Pamini ~ Pasini, Pancari ~ Pascarij, Pancera ~ Panciera, Paolini ~ Paulini, Paolini ~ Pollini, Parini ~ Pasini, Parini ~ Perini, Pārsanāth ~ Pārsanāthjī, Pārsanāth ~ Pārśvanāth, Partenopaei ~ Parthenopaei, Partenopea ~ Partenopeo, Parthenopaei ~ Parthenopaeo, Passariano ~ Passarino, Passarino ~ Passerino, Pascaleo ~ Paschaleo, Pascolino ~ Pascottino, Pascotini ~ Pascottino, Pascotini ~ Pascuttini, Passerini ~ Passerino, Pasini ~ Tassini, Passione ~ Passionei, Patriarcæ ~ Patriarchae, Patriarcha ~ Patriarchae, Patriarcha ~ Patriarchi, Patritii ~ Patrizi, Paulini ~ Paulinis, Paulini ~ Pauloni, Paulucci ~ Pauluzzi, Pavese ~ Pavesi, Pedrocchi ~ Petrocchi, Pellegrini ~ Peregrini, Pellico ~ Pelizzo, Percoti ~ Percoto, Percoto ~ Percuto, Perini ~ Petrini, Perini ~ Serini, Perissini ~ Perissino, Perissini ~ Perusini, Perissino ~ Perusino, Perozzi ~ Peruzzi, Perozzi ~ Petrozzi, Pertoldei ~ Pertoldeo, Pertoldei ~ Pertoldi, Pertoldeo ~ Pertoldo, Pertoldi ~ Pertoldo, Perubini ~ Perusini, Perugino ~ Perusino, Perusin ~ Perusini, Perusin ~ Perusino, Perusini ~ Perusino, Perutti ~ Peruzzi, Pesenti ~ Pisenti, Petkovich ~ Petrovich, Petrei ~ Petrejo, Petrovic ~ Petrovich, Petrucci ~ Petrucco, Philosophia ~ Philosophiae, Phisica ~ Physicae, Phisica ~ Phisicam, Physicae ~ Phisicam, Pianton ~ Piantoni, Pichissini ~ Pichisino, Piccini ~ Puccini, Piccini ~ Vicini, Picioli ~ Piccoli, Pilosi ~ Pilosio, Pilosi ~ Pilosis, Pilosio ~ Pilosis, Pindemonte ~ Pindemonti, Pinelli ~ Spinelli, Pinzani ~ Pinzano, Pironei ~ Pironeo, Pistori ~ Pittori, Pistori ~ Ristori, Pitteri ~ Pittori, Placereani ~ Placereano, Poetis ~ Portis, Polcenigo ~ Pulcenigo, Poletti ~ Politi, Pollini ~ Politi, Polonais ~ Polonaise, Pontefice ~ Pontifice, Pontifice ~ Pontificem, Pontini ~ Pontoni, Pontoni ~ Pontotti, Pontot ~ Pontotti, Portis ~ Portius, Portis ~ Tortis, Pralād ~ Prasād, Predica ~ Predice, Predice ~ Prediche, Prencipi ~ Principi, Prepositi ~ Preposito, Prevati ~ Privati, Previlleggi ~ Privileggi, Prigioniere ~ Prigionieri, Principessa ~ Principesca, Principi ~ Principis, Processum ~ Processus, Procurator ~ Procuratori, Prodolon ~ Prodolone, Provveditor ~ Provveditori, Provveditor ~ Providitor, Publici ~ Publico, Quarin ~ Quarina, Quartier ~ Quartieri, Querini ~ Quirini, Rabatta ~ Sabbata, Racchetti ~ Rocchetti, Racchetti ~ Sacheti, Raynaldi ~ Rinaldi, Randech ~ Randeck, Randeck ~ Randek, Recamador ~ Recamadori, Recamadori ~ Recamatori, Recensione ~ Recensioni, Religione ~ Religiose, Reversi ~ Revessi, Riccardi ~ Rizzardi, Ricchieri ~ Richiero, Ridolfi ~ Rodolfi, Rinaldi ~ Rinoldi, Rīṣabh ~ Riṣabha, Riṣabha ~ Ṛṣabha, Rizzardi ~ Rizzardis, Roberti ~ Ruberti, Rodolf ~ Rodolfi, Romanelli ~ Romanello, Romani ~ Rosani, Rosani ~ Rossini, Rossetti ~ Tosetti, Rossini ~ Rosmini, Rubini ~ Ruzini, Sabbadini ~ Sabbadino, Sabbadini ~ Sabbatini, Sabbata ~ Sabati, Sabbata ~ Sabbato, Sabati ~ Sabbato, Sagrado ~ Sagredo, Sancto ~ Sanuto, Sanguinacci ~ Sanguinaccio, Santini ~ Santoni, Santuari ~ Santuario, Sanudo ~ Sanuto, Sanuto ~ Zanutto, Sarasati ~ Sarasvatī, Satyra ~ Satire, Savini ~ Savoini, Savorgnan ~ Savorgnani, Savorgnan ~ Savorgnano, Savorgnani ~ Savorgnano, Schiava ~ Schiavi, Schiava ~ Schiavo, Schiavi ~ Schiavo, Sedegliani ~ Sedegliano, Sermone ~ Sermoni, Servita ~ Servite, Sgognigo ~ Sgonigo, Siṃghāsaṇ ~ Simhāsan, Simonetti ~ Simonutti, Simoni ~ Symonis, Soardi ~ Suardi, Soffimbergo ~ Soffumbergo, Sommarione ~ Sommarioni, Sommaripa ~ Sommariva, Someda ~ Somede, Sonetti ~ Sonetto, Souvenir ~ Souvenirs, Spirit ~ Spiritu, Sporeni ~ Sporeno, Statudi ~ Statuti, Statuti ~ Statuto, Stellini ~ Stellino, Stellini ~ Tellini, Strada ~ Strata, Strasolda ~ Strassoldo, Strozza ~ Strozzi, Studiosi ~ Studiosis, Sultani ~ Sultano, Sumati ~ Sūrati, Suṅdar ~ Sundarī, Susana ~ Susannam, Susana ~ Susans, Susanis ~ Susans, Tacchini ~ Tacini, Tacini ~ Tassini, Tapazzini ~ Topazzini, Tariffa ~ Tariffe, Teologia ~ Theologia, Tesina ~ Tesino, Theologia ~ Theologiae, Thomam ~ Thomas, Tomadini ~ Tommasini, Tommasini ~ Tommasino, Tommasini ~ Tomasoni, Tomitani ~ Tomitano, Tonitto ~ Tonizzo, Torriani ~ Torriano, Torriani ~ Turriani, Torriano ~ Turriano, Tornielli ~ Torniello, Toscana ~ Toscano, Tosone ~ Tosoni, Tosone ~ Tosono, Tosoni ~ Tosono, Tradizione ~ Traduzione, Tradutione ~ Traduzione, Travisanato ~ Trevisanato, Trevisan ~ Trevisana, Triestini ~ Triestino, Turriana ~ Turriani, Turriana ~ Turriano, Turriani ~ Turrianis, Turriani ~ Turriano, Udines ~ Udinese, Universale ~ Universalem, Upades ~ Upadeśā, Utinensi ~ Utinensis, Valari ~ Villari, Valentini ~ Valentinis, Valier ~ Valzer, Valtzer ~ Valzer, Valvason ~ Valvasone, Valvason ~ Valvasoni, Valvasone ~ Valvasoni, Valzer ~ Walzer, Venete ~ Veneto, Venetiane ~ Venetianer, Venetiane ~ Venetiani, Venetiane ~ Veneziane, Veneto ~ Venuto, Venzone ~ Venzoni, Version ~ Versione, Vianelli ~ Vianello, Vicardo ~ Vicario, Vicentini ~ Visentini, Victor ~ Victore, Vidiman ~ Vidimani, Vidoni ~ Vidonis, Villani ~ Villari, Volfero ~ Wolfero, Volpato ~ Vopato, Walpol ~ Walpole, Zambon ~ Zamboni, Zampar ~ Zamparo, Zamparo ~ Zomparo, Zanetto ~ Zanutto, Zanolli ~ Zanotti, Zapola ~ Zoppola
+Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ Accademici, Accademica ~ Academico, Accademici ~ Academico, Accademie ~ Akademie, Agenzia ~ Agenzie, Ajlini ~ Ailino, Ajlini ~ Mijlini, Alberi ~ Alberti, Albrici ~ Albrizzi, Aleardi ~ Aleardis, Alfieri ~ Altieri, Alpina ~ Alpini, Altani ~ Altanis, Altani ~ Altano, Altieri ~ Altiero, Amadei ~ Amasei, Amaltei ~ Amalteo, Amanti ~ Amantio, Amasei ~ Amaseo, Amigoni ~ Arrigoni, Anagrafe ~ Anagrafi, Anagrafi ~ Anagrafia, Andech ~ Randech, Andreasi ~ Andreussi, Andreucci ~ Andreuccio, Andreucci ~ Andreussi, Andreucci ~ Andreuzzi, Andreussi ~ Andreuzzi, Andreuzzi ~ Andriuzzi, Anecdoti ~ Aneddoti, Annoniani ~ Aroniani, Antich ~ Antiche, Antiquarii ~ Antiquaria, Anzello ~ Anzolo, Aquilegensis ~ Aquilegiensis, Aquilegensis ~ Aquilejensis, Aquilegiensis ~ Aquilejensis, Aquileja ~ Aquilejae, Aquilejensi ~ Aquilejensis, Aquilejensi ~ Aquilejesi, Aquileiese ~ Aquilejesi, Arabia ~ Arabis, Arcano ~ Archano, Archigimnasio ~ Archiginnasio, Arcolaniani ~ Arcoloniani, Arcoloniana ~ Arcoloniani, Aretino ~ Trettino, Arrigone ~ Arrigoni, Arithmetica ~ Aritmetica, Armellin ~ Armellini, Ascoli ~ Pascoli, Asquin ~ Asquini, Asquin ~ Asquino, Asquini ~ Asquino, Augustini ~ Augustino, Ausano ~ Cusano, Azzanutto ~ Zanutto, Bacchetti ~ Bucchetti, Bacchetti ~ Racchetti, Bacchetti ~ Sacheti, Baccini ~ Facini, Baccini ~ Pacini, Baccini ~ Tacini, Baldas ~ Baldassi, Baldas ~ Baldasso, Baldassi ~ Baldasso, Barbiere ~ Barbieri, Baroni ~ Caronni, Baroni ~ Garoni, Bartolini ~ Bertolini, Bartolini ~ Bortolini, Bartolucci ~ Bartoluccio, Belegno ~ Beleno, Belenghi ~ Besenghi, Beleno ~ Belluno, Belgradi ~ Belgrado, Bellini ~ Belloni, Bellini ~ Bettini, Bellini ~ Tellini, Bellone ~ Belloni, Bellonum ~ Bellonus, Benedet ~ Benedetti, Benetto ~ Ibenetto, Benetto ~ Veneto, Berettini ~ Bertini, Berlendis ~ Ferlendis, Bernini ~ Bertini, Bertani ~ Bertini, Bertani ~ Bertoni, Bertini ~ Bertoni, Bertini ~ Bettini, Bertiolo ~ Bertiulo, Bertiolo ~ Bertollo, Bertol ~ Bertolla, Bertol ~ Bertoli, Bertol ~ Bertollo, Bertolla ~ Bertoli, Bertolla ~ Bertollo, Bertoldi ~ Bertoli, Bertoldi ~ Pertoldi, Bertoli ~ Bertollo, Bertoli ~ Bertoni, Bertoli ~ Bertossi, Bertolini ~ Bortolini, Bertoni ~ Bertossi, Bhavānai ~ Bhāvaṇḍai, Biachini ~ Bianchini, Bianchini ~ Bianchino, Biancone ~ Bianconi, Bījasanī ~ Biasatti, Biasatti ~ Biasutti, Bibliotecario ~ Bibliothecario, Bibliotheca ~ Bibliothecae, Bidernucci ~ Bidernuccio, Bidernucci ~ Bidernuzzi, Bissone ~ Bussone, Bītarāgī ~ Vītarāgī, Blasich ~ Blasigh, Bodini ~ Bonini, Bodini ~ Borini, Boiani ~ Bollani, Bolena ~ Bolina, Bolena ~ Folena, Bologna ~ Cologna, Bombardini ~ Lombardini, Bonati ~ Bonetti, Bonati ~ Donati, Bonetti ~ Monetti, Bonetti ~ Sonetti, Bonini ~ Borini, Bonini ~ Donnini, Bonini ~ Tonini, Bonisiolo ~ Bonisolo, Bonisolli ~ Bonisolo, Borelli ~ Morelli, Bortolussi ~ Bortoluzzi, Bozzoli ~ Pozzoli, Braida ~ Braido, Brambilla ~ Brembilla, Brandis ~ Grandis, Brazzacco ~ Brazzano, Bressani ~ Presani, Brunaleschi ~ Brunelleschi, Brunallesco ~ Brunellesco, Brunet ~ Brunetti, Budrio ~ Buttrio, Buffali ~ Buffelli, Buiatti ~ Buratti, Buiatti ~ Pujati, Bulfoni ~ Mulfoni, Buratti ~ Sūrati, Busolini ~ Busulini, Busolini ~ Mussolini, Bussone ~ Busono, Caesari ~ Caesaris, Caesari ~ Cesari, Caetani ~ Gaetani, Cagnolini ~ Cagnolino, Cairoli ~ Caroli, Calegari ~ Caligari, Caligari ~ Calligaris, Calogerà ~ Calogierà, Camavitto ~ Cannavito, Cambon ~ Zambon, Camerari ~ Camerario, Campfranc ~ Lampfranc, Canale ~ Casale, Cancellaria ~ Cancellariae, Candidi ~ Candidis, Caṅḍikā ~ Caṅdrikā, Caneva ~ Canova, Canino ~ Casino, Canino ~ Manino, Canino ~ Zanino, Canova ~ Capova, Cantone ~ Cantore, Cantone ~ Canzone, Cantone ~ Castone, Canussii ~ Canussio, Cappella ~ Capelan, Cappella ~ Capelli, Cappella ~ Cappello, Capelan ~ Capellano, Capelli ~ Cappello, Capelli ~ Carelli, Capelli ~ Cavelli, Capelli ~ Cipelli, Capitula ~ Capituli, Capitula ~ Capitulo, Capituli ~ Capitulo, Capizzi ~ Capuzzi, Capodagli ~ Capodaglio, Capponi ~ Caronni, Caprille ~ Caprileo, Carrara ~ Carrari, Carrara ~ Carrera, Carrari ~ Caratti, Carrari ~ Carreri, Caratti ~ Cariati, Caratti ~ Casati, Carboni ~ Caronni, Carducci ~ Carlucci, Carducci ~ Narducci, Carelli ~ Carreri, Carelli ~ Carnelli, Carelli ~ Caroli, Carelli ~ Cartelli, Carelli ~ Cavelli, Carrera ~ Carreri, Carrera ~ Carnera, Cargnelutti ~ Carnelutti, Cargnia ~ Carnia, Carlét ~ Carletti, Carletti ~ Carlutti, Carlucci ~ Carlutti, Carnelli ~ Cartelli, Carneval ~ Carnevale, Carnia ~ Carnica, Carnica ~ Carnico, Caroli ~ Caronni, Caroli ~ Cattoli, Caronni ~ Ceroni, Caronni ~ Garoni, Cartelli ~ Castelli, Cartelli ~ Martelli, Cassacco ~ Cassano, Cassano ~ Casino, Cassano ~ Cusano, Casarola ~ Casasola, Casati ~ Cassetti, Casati ~ Cosati, Cassetta ~ Cassetti, Cassetti ~ Cossetti, Cassone ~ Castone, Castellani ~ Castellano, Castelli ~ Castello, Castion ~ Castions, Castra ~ Castro, Cattoli ~ Catolic, Catolic ~ Cattolica, Cavalli ~ Cavallo, Cavalli ~ Cavelli, Cavalier ~ Cavalieri, Cavalier ~ Kavalier, Cavallo ~ Cavazzo, Cavazza ~ Cavazzo, Cechini ~ Cechino, Cechini ~ Checchini, Cechini ~ Cucchini, Cechini ~ Zecchini, Cechino ~ Cichino, Cecina ~ Ceclina, Cecconi ~ Ceroni, Cecconi ~ Ciconi, Cecconi ~ Cocconi, Censuarj ~ Censuaria, Centini ~ Contini, Cerchiai ~ Cerchiari, Ceriani ~ Ciriani, Ceriani ~ Meriani, Cernazai ~ Zernazai, Cerruti ~ Perutti, Cesari ~ Tessari, Chiari ~ Chiaro, Chiarottini ~ Chiaruttini, Chiesa ~ Chiese, Christiani ~ Cristiani, Cicogna ~ Cigogna, Ciconi ~ Cocconi, Cicuta ~ Cicuto, Cypriani ~ Ciriani, Cittadini ~ Cittadino, Cividal ~ Cividale, Civitat ~ Civitate, Cocolo ~ Cosolo, Cocconi ~ Covoni, Codice ~ Codici, Collegij ~ Colleggio, Collegij ~ Colletti, Colletti ~ Copetti, Colletti ~ Cossetti, Colletti ~ Poletti, Cologna ~ Colonna, Colonna ~ Colonia, Collored ~ Colloredo, Colloredo ~ Colloreto, Comelli ~ Comello, Comini ~ Comuni, Comini ~ Domini, Commissione ~ Commissioni, Commissione ~ Omissione, Comites ~ Comitis, Commune ~ Comuni, Comuni ~ Communis, Comuni ~ Comuzzi, Comuni ~ Sommuni, Condolo ~ Gondolo, Contini ~ Montini, Contini ~ Pontini, Convocatione ~ Convocazione, Copetti ~ Cossetti, Corbelli ~ Corbellis, Corbelli ~ Corbello, Cornaro ~ Corsaro, Coronella ~ Coronelli, Corsini ~ Orsini, Cortenovis ~ Cortinovis, Cosati ~ Cossetti, Cossetti ~ Fossetti, Cossetti ~ Rossetti, Cossetti ~ Tosetti, Craglevich ~ Craglievich, Cristani ~ Cristiani, Cronberg ~ Kronberg, Cumano ~ Cusano, Czoernig ~ Czörnig, Dalapati ~ Dalpati, Danieli ~ Danielis, Decani ~ Decano, Decani ~ Deciani, Decani ~ Degani, Decano ~ Degano, Decreta ~ Decreti, Degani ~ Deganis, Degani ~ Degano, Delphini ~ Delphino, Dēvandr ~ Devendr, Dhānyāṃ ~ Dhaṅram, Diaconi ~ Diacono, Dignano ~ Rignano, Diocese ~ Dioceses, Discrizione ~ Iscrizione, Documenta ~ Documenti, Domini ~ Dominio, Domini ~ Dominis, Domini ~ Domino, Domini ~ Donnini, Dominio ~ Dominis, Dominio ~ Domino, Dominium ~ Dominum, Donnini ~ Tonini, Doretti ~ Moretti, Doschi ~ Loschi, Draghi ~ Droghi, Egregj ~ Egregis, Engelberto ~ Engilberto, Episcopio ~ Episcopis, Episcopio ~ Episcopo, Euganea ~ Euganei, Fabani ~ Fabiani, Fabiane ~ Fabiani, Fabbricj ~ Fabriczy, Fabbricj ~ Fabrizi, Fabriczy ~ Fabrizi, Facchini ~ Facini, Facchini ~ Tacchini, Facini ~ Pacini, Facini ~ Tacini, Facoltà ~ Racolta, Faelis ~ Fiellis, Famiglia ~ Familia, Fantini ~ Santini, Faramiti ~ Foramiti, Farinelli ~ Marinelli, Fascicoli ~ Fascicolo, Fattura ~ Fatture, Fattura ~ Natura, Fauste ~ Fausti, Federici ~ Federicis, Ferrari ~ Ferrazzi, Fiascaria ~ Fiascaris, Fiducii ~ Fiducio, Filati ~ Tilatti, Filelfa ~ Filelfo, Filippini ~ Filitini, Florit ~ Floriо, Follini ~ Nolini, Follini ~ Pollini, Fontanini ~ Fontanino, Forcari ~ Fornari, Forcari ~ Foscari, Forijulii ~ Forojulii, Forijulii ~ Friuli, Formularia ~ Formulario, Forojuliensem ~ Forojulienses, Forojulienses ~ Forojuliensis, Forojuliensi ~ Forojuliensis, Fortis ~ Portis, Fortis ~ Tortis, Fossetti ~ Rossetti, Fossetti ~ Tosetti, Frammento ~ Frumento, Franceschini ~ Franceschinis, Franceschini ~ Franceschino, Franceschinis ~ Francischinis, Francescone ~ Francesconi, Francesconi ~ Francescotti, Francisce ~ Francisci, Frangipane ~ Frangipani, Frazioni ~ Orazioni, Frioli ~ Friuli, Friulana ~ Friulano, Friuli ~ Priuli, Furlan ~ Furlani, Gaetani ~ Gaetini, Galateo ~ Galeteo, Galeppi ~ Galuppi, Gallica ~ Gallici, Gallica ~ Gallico, Gallici ~ Gallico, Galvani ~ Galvanis, Gaṃgājī ~ Gangājī, Gandini ~ Gardini, Gardini ~ Gordini, Gardini ~ Nardini, Garoni ~ Garzoni, Gaspari ~ Gasperi, Gaudenti ~ Gaudenzi, Gazaniga ~ Gazzeniga, Gelinek ~ Jelinek, Gemona ~ Giemona, Gemona ~ Glemona, Gennari ~ Generi, Generi ~ Genesi, Genesi ~ Genest, Germani ~ Germania, Germani ~ Germanie, Germani ~ Germini, Germania ~ Germanie, Giacomelli ~ Giacometti, Giacometti ~ Giacometto, Giavedon ~ Giavedoni, Giberti ~ Gioberti, Giemona ~ Glemona, Giraldi ~ Girardi, Girardi ~ Girardis, Giuliani ~ Juliani, Giuliolla ~ Guliola, Giurisdicente ~ Giurisdicenti, Giustinian ~ Giustiniani, Giustiniani ~ Justiniani, Glemona ~ Glemonae, Gloriosissimi ~ Gloriosissimo, Gordini ~ Ordini, Gorisizza ~ Gorizizza, Gorizia ~ Gorizizza, Gortan ~ Gortani, Governator ~ Governatore, Governator ~ Governatori, Governatore ~ Governatori, Gradenico ~ Gradenigo, Grandi ~ Grandis, Grandi ~ Grando, Gregoletti ~ Grigoletti, Griffini ~ Grissini, Grossetti ~ GROSSETTIS, Grossetti ~ Rossetti, Gubertini ~ Gubertino, Guillelmi ~ Guilielmi, Haenel ~ Haensel, Hamacaṅdr ~ Hemacandr, Hemacandr ~ Hemecaṅdr, Henrici ~ Henrico, Hermacorae ~ Hermagorae, Hieronymi ~ Hieronymo, Historia ~ Historica, Historia ~ Istoria, Historica ~ Istorica, Honestis ~ Onestis, Iacobi ~ Jacotti, Iacomo ~ Jacotto, Jaconissi ~ Jaconizzi, Jacotti ~ Jacotto, Inscrizione ~ Iscrizione, Instrumenta ~ Instrumenti, Instrumenti ~ Istrumenti, Joannis ~ Iohannis, Johanni ~ Iohannis, Ippoliti ~ Politi, Istituti ~ Istituto, Istoria ~ Istorica, Istoria ~ Istorie, Istoria ~ Istria, Istoria ~ Storia, Italiam ~ Italian, Italic ~ Italie, Juliani ~ Julianis, Juliani ~ Zuliani, Kandler ~ Ländler, Kṛṣabhadev ~ Ṛṣabhadev, Lancieri ~ Lantieri, Laurea ~ Laureo, Lavagnoli ~ Lavagnolo, Lazzarini ~ Lazzaroni, Lazzarolli ~ Lazzaroni, Lazzarolli ~ Mazzaroli, Leonardi ~ Leopardi, Leonarducci ~ Leonarduzzi, Leskovic ~ Leskovich, Lettore ~ Settore, Lezione ~ Sezione, Locadelli ~ Locadello, Locadelli ~ Locatelli, Locadello ~ Locatello, Locatelli ~ Locatello, Locatelli ~ Lucatelli, Lozzini ~ Sozzini, Luschin ~ Lushin, Luzzatto ~ Muzzato, Macagnini ~ Magagnini, Macoris ~ Maioris, Maggior ~ Maggiore, Magnifica ~ Magnificat, Magrini ~ Marini, Magris ~ Matris, Mahādev ~ Māhādevjī, Mahāvīr ~ Mahāvīrā, Mahāvīrā ~ Mahāvīraṃ, Majano ~ Marano, Mainardi ~ Meynardi, Mancini ~ Manini, Mancini ~ Manzini, Mancini ~ Pancini, Mandelli ~ Manelli, Mandelli ~ Mantelli, Manelli ~ Mantelli, Manelli ~ Minelli, Maniaco ~ Maniago, Manina ~ Manini, Manina ~ Manino, Manini ~ Manino, Manini ~ Manoni, Manini ~ Manzini, Manini ~ Marini, Manini ~ Mazzini, Manini ~ Menini, Manino ~ Zanino, Manoni ~ Manzoni, Mantegazza ~ Mantegazia, Mantelli ~ Martelli, Mantica ~ Manticae, Mantovani ~ Mantovano, Manzana ~ Manzanae, Manzana ~ Manzano, Manzini ~ Manzoni, Manzini ~ Mazzini, Manzini ~ Menzini, Manzoni ~ Minzoni, Marangoni ~ Merangoni, Marchesa ~ Marchesi, Marchesi ~ Marchetti, Marchetti ~ Marochetti, Marchi ~ Varchi, Marcotti ~ Mariotti, Marinelli ~ Martinelli, Marini ~ Marioni, Marini ~ Martini, Marini ~ Mazzini, Marini ~ Parini, Marinoni ~ Marioni, Marinoni ~ Martinoni, Marioni ~ Mariotti, Marlupino ~ Morlupino, Marsigli ~ Marsilli, Marsilli ~ Massilli, Martin ~ Martini, Martinelli ~ Martinetti, Martini ~ Martinis, Martini ~ Tartini, Marzuttini ~ Mazzuttini, Massari ~ Massaro, Masotti ~ Pasotti, Maspino ~ Mastino, Mathiae ~ Mathiam, Mathiae ~ Matthias, Mathiam ~ Matthias, Mattiussi ~ Mattiuzzi, Matrimoni ~ Matrimonis, Matris ~ Patris, Menegozzi ~ Meneguzzi, Menini ~ Menzini, Messaggio ~ Mesaglio, Messina ~ Tesina, Mestri ~ Mestris, Metropol ~ Metropoli, Metropolitana ~ Metropolitanae, Metropolitana ~ Metropolitanam, Metropolitana ~ Metropolitano, Metropolitanae ~ Metropolitanam, Micali ~ Micoli, Michael ~ Michel, Michel ~ Michele, Michel ~ Micheli, Michele ~ Micheli, Michele ~ Michiele, Micheli ~ Michieli, Michelini ~ Micheloni, Michiele ~ Michieli, Micoli ~ Piccoli, Milanese ~ Milanesi, Milani ~ Milano, Milani ~ Mijlini, Milani ~ Villani, Mijlini ~ Missini, Minelli ~ Pinelli, Mintino ~ Miotino, Mintino ~ Miuttino, Minucci ~ Minuccio, Miotino ~ Miuttino, Missana ~ Missona, Mochetti ~ Moschetti, Mochetti ~ Rocchetti, Molino ~ Mulino, Monaci ~ Monaco, Monaco ~ Monico, Monasterii ~ Monasterio, Mondini ~ Mondino, Mondini ~ Montini, Mondini ~ Rondini, Moneta ~ Monete, Moneta ~ Monetti, Moneta ~ Monita, Monete ~ Monetti, Monetti ~ Moretti, Monetti ~ Mottetti, Monetti ~ Sonetti, Montagnacco ~ Montegnacco, Montello ~ Pontello, Montini ~ Pontini, Monumenta ~ Monumento, Morari ~ Morassi, Morari ~ Murari, Morassi ~ Morossi, Morcelli ~ Morelli, Morelli ~ Moretti, Moretti ~ Mottetti, Moroni ~ Morossi, Morosini ~ Morosino, Mosacensi ~ Mosacensis, Moschini ~ Moscini, Mussolini ~ Muzzolini, Naonis ~ Nasonis, Nardini ~ Nardoni, Natività ~ Nativitas, Nespolettensi ~ Nespolettensis, Nicoletti ~ Nicoletto, Nicolussij ~ Nicolussio, Nobili ~ Nobilis, Nolini ~ Pollini, Nordis ~ Norejs, Offizio ~ Uffizio, Onesti ~ Onestis, Ordine ~ Ordini, Ordini ~ Orsini, Ottelia ~ Ottelio, Ottobon ~ Ottoboni, Ottolini ~ Ottolino, Ottomana ~ Ottomano, Paciani ~ Pacini, Paciani ~ Pajani, Pacini ~ Pamini, Pacini ~ Pancini, Pacini ~ Parini, Pacini ~ Pasini, Pacini ~ Piccini, Pacini ~ Puccini, Pacini ~ Tacini, Paderni ~ Paderno, Paderno ~ Paternò, Padovani ~ Padovano, Pagani ~ Pajani, Pagani ~ Papani, Paghini ~ Pighini, Pagnaci ~ Pagnacco, Pajani ~ Papani, Paladini ~ Palatini, Pallavicini ~ Parravicini, Palese ~ Pavese, Palian ~ Pasian, Pamini ~ Parini, Pamini ~ Pasini, Pancari ~ Pascarij, Pancera ~ Panciera, Paolini ~ Paulini, Paolini ~ Pollini, Parini ~ Pasini, Parini ~ Perini, Pārsanāth ~ Pārsanāthjī, Pārsanāth ~ Pārśvanāth, Partenopaei ~ Parthenopaei, Partenopea ~ Partenopeo, Parthenopaei ~ Parthenopaeo, Passariano ~ Passarino, Passarino ~ Passerino, Pascaleo ~ Paschaleo, Pascolino ~ Pascottino, Pascotini ~ Pascottino, Pascotini ~ Pascuttini, Passerini ~ Passerino, Pasini ~ Tassini, Passione ~ Passionei, Patriarcæ ~ Patriarchae, Patriarcha ~ Patriarchae, Patriarcha ~ Patriarchi, Patritii ~ Patrizi, Paulini ~ Paulinis, Paulini ~ Pauloni, Paulucci ~ Pauluzzi, Pavese ~ Pavesi, Pedrocchi ~ Petrocchi, Pellegrini ~ Peregrini, Pellico ~ Pelizzo, Percoti ~ Percoto, Percoto ~ Percuto, Perini ~ Petrini, Perini ~ Serini, Perissini ~ Perissino, Perissini ~ Perusini, Perissino ~ Perusino, Perozzi ~ Peruzzi, Perozzi ~ Petrozzi, Pertoldei ~ Pertoldeo, Pertoldei ~ Pertoldi, Pertoldeo ~ Pertoldo, Pertoldi ~ Pertoldo, Perubini ~ Perusini, Perugino ~ Perusino, Perusin ~ Perusini, Perusin ~ Perusino, Perusini ~ Perusino, Perutti ~ Peruzzi, Pesenti ~ Pisenti, Petkovich ~ Petrovich, Petrei ~ Petrejo, Petrovic ~ Petrovich, Petrucci ~ Petrucco, Philosophia ~ Philosophiae, Phisica ~ Physicae, Phisica ~ Phisicam, Physicae ~ Phisicam, Pianton ~ Piantoni, Pichissini ~ Pichisino, Piccini ~ Puccini, Piccini ~ Vicini, Picioli ~ Piccoli, Pilosi ~ Pilosio, Pilosi ~ Pilosis, Pilosio ~ Pilosis, Pindemonte ~ Pindemonti, Pinelli ~ Spinelli, Pinzani ~ Pinzano, Pironei ~ Pironeo, Pistori ~ Pittori, Pistori ~ Ristori, Pitteri ~ Pittori, Placereani ~ Placereano, Poetis ~ Portis, Polcenigo ~ Pulcenigo, Poletti ~ Politi, Pollini ~ Politi, Polonais ~ Polonaise, Pontefice ~ Pontifice, Pontifice ~ Pontificem, Pontini ~ Pontoni, Pontoni ~ Pontotti, Pontot ~ Pontotti, Portis ~ Portius, Portis ~ Tortis, Pralād ~ Prasād, Predica ~ Predice, Predice ~ Prediche, Prencipi ~ Principi, Prepositi ~ Preposito, Prevati ~ Privati, Previlleggi ~ Privileggi, Prigioniere ~ Prigionieri, Principessa ~ Principesca, Principi ~ Principis, Processum ~ Processus, Procurator ~ Procuratori, Prodolon ~ Prodolone, Provveditor ~ Provveditori, Provveditor ~ Providitor, Publici ~ Publico, Quarin ~ Quarina, Quartier ~ Quartieri, Querini ~ Quirini, Rabatta ~ Sabbata, Racchetti ~ Rocchetti, Racchetti ~ Sacheti, Raynaldi ~ Rinaldi, Randech ~ Randeck, Randeck ~ Randek, Recamador ~ Recamadori, Recamadori ~ Recamatori, Recensione ~ Recensioni, Religione ~ Religiose, Reversi ~ Revessi, Riccardi ~ Rizzardi, Ricchieri ~ Richiero, Ridolfi ~ Rodolfi, Rinaldi ~ Rinoldi, Rīṣabh ~ Riṣabha, Riṣabha ~ Ṛṣabha, Rizzardi ~ Rizzardis, Roberti ~ Ruberti, Rodolf ~ Rodolfi, Romanelli ~ Romanello, Romani ~ Rosani, Rosani ~ Rossini, Rossetti ~ Tosetti, Rossini ~ Rosmini, Rubini ~ Ruzini, Sabbadini ~ Sabbadino, Sabbadini ~ Sabbatini, Sabbata ~ Sabati, Sabbata ~ Sabbato, Sabati ~ Sabbato, Sagrado ~ Sagredo, Sancto ~ Sanuto, Sanguinacci ~ Sanguinaccio, Santini ~ Santoni, Santuari ~ Santuario, Sanudo ~ Sanuto, Sanuto ~ Zanutto, Sarasati ~ Sarasvatī, Satyra ~ Satire, Savini ~ Savoini, Savorgnan ~ Savorgnani, Savorgnan ~ Savorgnano, Savorgnani ~ Savorgnano, Schiava ~ Schiavi, Schiava ~ Schiavo, Schiavi ~ Schiavo, Sedegliani ~ Sedegliano, Sermone ~ Sermoni, Servita ~ Servite, Sgognigo ~ Sgonigo, Siṃghāsaṇ ~ Simhāsan, Simonetti ~ Simonutti, Simoni ~ Symonis, Soardi ~ Suardi, Soffimbergo ~ Soffumbergo, Sommarione ~ Sommarioni, Sommaripa ~ Sommariva, Someda ~ Somede, Sonetti ~ Sonetto, Souvenir ~ Souvenirs, Spirit ~ Spiritu, Sporeni ~ Sporeno, Statudi ~ Statuti, Statuti ~ Statuto, Stellini ~ Stellino, Stellini ~ Tellini, Strada ~ Strata, Strasolda ~ Strassoldo, Strozza ~ Strozzi, Studiosi ~ Studiosis, Sultani ~ Sultano, Sumati ~ Sūrati, Suṅdar ~ Sundarī, Susana ~ Susannam, Susana ~ Susans, Susanis ~ Susans, Tacchini ~ Tacini, Tacini ~ Tassini, Tapazzini ~ Topazzini, Tariffa ~ Tariffe, Teologia ~ Theologia, Tesina ~ Tesino, Theologia ~ Theologiae, Thomam ~ Thomas, Tomadini ~ Tommasini, Tommasini ~ Tommasino, Tommasini ~ Tomasoni, Tomitani ~ Tomitano, Tonitto ~ Tonizzo, Torriani ~ Torriano, Torriani ~ Turriani, Torriano ~ Turriano, Tornielli ~ Torniello, Toscana ~ Toscano, Tosone ~ Tosoni, Tosone ~ Tosono, Tosoni ~ Tosono, Tradizione ~ Traduzione, Tradutione ~ Traduzione, Travisanato ~ Trevisanato, Trevisan ~ Trevisana, Triestini ~ Triestino, Turriana ~ Turriani, Turriana ~ Turriano, Turriani ~ Turrianis, Turriani ~ Turriano, Udines ~ Udinese, Universale ~ Universalem, Upades ~ Upadeśā, Utinensi ~ Utinensis, Valari ~ Villari, Valentini ~ Valentinis, Valier ~ Valzer, Valtzer ~ Valzer, Valvason ~ Valvasone, Valvason ~ Valvasoni, Valvasone ~ Valvasoni, Valzer ~ Walzer, Venete ~ Veneto, Venetiane ~ Venetianer, Venetiane ~ Venetiani, Venetiane ~ Veneziane, Veneto ~ Venuto, Venzone ~ Venzoni, Version ~ Versione, Vianelli ~ Vianello, Vicardo ~ Vicario, Vicentini ~ Visentini, Victor ~ Victore, Vidiman ~ Vidimani, Vidoni ~ Vidonis, Villani ~ Villari, Volfero ~ Wolfero, Volpato ~ Vopato, Walpol ~ Walpole, Zambon ~ Zamboni, Zampar ~ Zamparo, Zamparo ~ Zomparo, Zanetto ~ Zanutto, Zanolli ~ Zanotti, Zapola ~ Zoppola
 
 ## 6. Cognomi da verificare nelle fonti
 
-4893 forme (10918 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4880 forme (10856 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 
-Forme intere. Forme: 283.
+Forme intere. Forme: 284.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -1179,5 +1151,5 @@ Forme intere. Forme: 283.
 | S. M. Maddalena | 2 | S. Maria Maddalena | curatore: santa (1332, 1337) | 1332, 1337 |
 | S. Maria dei Battuti | 2 | — | santo da dirimere | 1337 |
 | S. Maria di Tarcento | 2 | — | santo da dirimere | 1264, 1271 |
-| … | | | altre 223 forme nella tabella `lessico` | |
+| … | | | altre 224 forme nella tabella `lessico` | |
 
