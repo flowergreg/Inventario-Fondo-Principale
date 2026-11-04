@@ -20,10 +20,10 @@ Bart.meo	Bartolomeo
 Gir.	Girolamo
 Girol.	Girolamo
 Ger.	Gerolamo
-Jac.	Jacopo
-Iac.	Iacopo
-Io.	Ioannes
-Bapt.	Baptista
+Jac.	Giacomo o Jacopo
+Iac.	Giacomo o Jacopo
+Io.	Giovanni
+Bapt.	Battista
 Batta	Battista
 G.B.	Giovanni Battista
 G. B.	Giovanni Battista
@@ -51,8 +51,8 @@ A. M.	Angelo Maria
 Marc'Antonio	Marco Antonio
 Marcantonio	Marco Antonio
 Ja.	Jacopo
-Jo.	Johannes
-Joh.	Johannes
+Jo.	Giovanni
+Joh.	Giovanni
 Giac.	Giacomo
 Giov.	Giovanni
 Piet.	Pietro

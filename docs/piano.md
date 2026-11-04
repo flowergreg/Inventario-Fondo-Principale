@@ -77,3 +77,9 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 - cognomi: da verificare nelle fonti (fase 5); varianti grafiche e simili come candidati;
 - doppia lettura: nomi ufficiali di luoghi friulani e veneti che sono anche cognomi o famiglie (Savorgnano luogo ≠ Savorgnan famiglia): non si uniscono d'ufficio.
 - Normalizzazione: le parole fatte solo di cifre romane non si semplificano (XVII ≠ XVI).
+- **Forma normalizzata sempre italiana**, mai inglese (Sicilie → Sicilia, non Sicily) né latina (Julii → Giulio, non Julius). I luoghi esteri prendono il nome italiano dai nomi alternativi di GeoNames o da Wikidata (`dati/liste/geonames_it.tsv`); a parità di forma vince la città, non il quartiere. I nomi latini si convertono per regola (J/I+vocale → Gi, -ius → -io, -tius → -zio, -ae → -a, -onis → -one; irregolari: Petrus → Pietro, Thomas → Tommaso, Hieronymus → Girolamo) e il risultato deve esistere nella lista dei nomi italiani.
+- «Jac.», «Jacobum»: «Giacomo o Jacopo», da decidere con le fonti enciclopediche.
+- Corrispondenza per forma normalizzata (Tajedo → Taiedo) solo con luoghi friulani e veneti o capoluoghi: Ceresetto non diventa Cereseto, Carreri non diventa Careri.
+- Corrispondenze GeoNames lontane dalla forma (Homo → Qom, Sion → Gerusalemme) restano «da verificare».
+- Varianti grafiche dei cognomi (Bosio/Bossio): si segnala il gruppo, nessuna forma imposta; la forma di riferimento verrà dalle fonti.
+- Decisioni del curatore e decisioni dal contesto della voce: `dati/liste/normalizzazioni_curatore.tsv` (forma, parte, forma normalizzata, origine `curatore`|`contesto`, nota), applicate per ultime. Parte «parola» = non è un nome (Bozze, Madonne, Januarii → gennaio).

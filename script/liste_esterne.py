@@ -182,3 +182,28 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+
+def nomi_italiani_geonames(id_paese):
+    """Nome italiano dei luoghi esteri dai nomi alternativi di GeoNames (dati aperti,
+    export/dump/alternatenames/<paese>.zip). id_paese: {geonameid: codice paese}.
+    Restituisce {geonameid: nome}; preferisce il nome marcato «preferito», esclude
+    i nomi storici e le abbreviazioni. Gli archivi si scaricano in dati/esterni/."""
+    import urllib.request
+    trovati = {}
+    for paese in sorted(set(id_paese.values())):
+        dest = ESTERNI / f"alt_{paese}.zip"
+        if not dest.exists():
+            url = f"https://download.geonames.org/export/dump/alternatenames/{paese}.zip"
+            with urllib.request.urlopen(url, timeout=300) as r, open(dest, "wb") as f:
+                f.write(r.read())
+        cercati = {g for g, p in id_paese.items() if p == paese}
+        cand = {}
+        with zipfile.ZipFile(dest) as z, z.open(f"{paese}.txt") as fh:
+            for r in csv.reader(io.TextIOWrapper(fh, encoding="utf-8"), delimiter="\t", quoting=csv.QUOTE_NONE):
+                if r[1] in cercati and r[2] == "it" and not (len(r) > 7 and r[7] == "1") and not (len(r) > 6 and r[6] == "1"):
+                    preferito = len(r) > 4 and r[4] == "1"
+                    cand.setdefault(r[1], []).append((not preferito, len(r[3]), r[3]))
+        for g, c in cand.items():
+            trovati[g] = min(c)[2]
+    return trovati

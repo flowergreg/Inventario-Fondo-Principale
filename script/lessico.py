@@ -26,6 +26,7 @@ Uso: python3 script/lessico.py
 """
 
 import csv
+import difflib
 import io
 import re
 import sqlite3
@@ -88,24 +89,31 @@ def nomi_ufficiali_luoghi():
             for a in r[i_alt].split("/"):
                 if a:
                     alternativi.setdefault(a, (r[i_den], r[i_cod], "ISTAT"))
+    istat = set(ufficiali)
     with zipfile.ZipFile(ESTERNI / "IT.zip") as z, z.open("IT.txt") as fh:
         for r in csv.reader(io.TextIOWrapper(fh, encoding="utf-8"), delimiter="\t", quoting=csv.QUOTE_NONE):
             if r[6] not in ("P", "A", "L", "T"):
                 continue
             nome = re.sub(r"^Comune di ", "", r[1])
+            if nome not in istat:     # GeoNames dà il nome inglese delle città maggiori: «Padua», «Venice»
+                nome = next((a for a in r[3].split(",") if a in istat), nome)
             ufficiali.setdefault(nome, (r[0], "GeoNames"))
             if r[10] in ("06", "20") and r[6] in ("P", "A"):
                 REGIONALI.add(nome)
             for a in r[3].split(","):
                 if a and a != nome:
                     alternativi.setdefault(a, (nome, r[0], "GeoNames"))
-    esteri = {}
+    esteri, popolazione = {}, {}
     with zipfile.ZipFile(ESTERNI / "cities5000.zip") as z, z.open("cities5000.txt") as fh:
         for r in csv.reader(io.TextIOWrapper(fh, encoding="utf-8"), delimiter="\t", quoting=csv.QUOTE_NONE):
             if r[8] != "IT":
+                # a parità di forma vince la città più popolosa, mai un quartiere (PPLX):
+                # «Graz» è la città, non «Innere Stadt»; «Londra» è Londra, non la City
+                pop = -1 if r[7] == "PPLX" else int(r[14] or 0)
                 for a in [r[1]] + r[3].split(","):
-                    if a:
-                        esteri.setdefault(a, (r[1], r[0], "GeoNames"))
+                    if a and pop > popolazione.get(a, -2):
+                        popolazione[a] = pop
+                        esteri[a] = (r[1], r[0], "GeoNames")
     manuali = {}
     for r in csv.DictReader(open(LISTE / "luoghi_manuali.tsv", encoding="utf-8"), delimiter="\t"):
         manuali[r["forma"]] = r.get("riferimento") or ""
@@ -123,6 +131,42 @@ def nomi_di_battesimo():
     return forme, italiano
 
 
+IRREGOLARI = {"petr": "Pietro", "thom": "Tommaso", "ioann": "Giovanni", "iohann": "Giovanni", "johann": "Giovanni",
+              "georg": "Giorgio", "hieronym": "Girolamo", "aloys": "Luigi", "ludovic": "Lodovico", "francisc": "Francesco",
+              "iacob": "Giacomo o Jacopo", "jacob": "Giacomo o Jacopo", "baptist": "Battista", "christian": "Cristiano"}
+
+
+def latino_italiano(forma, nomi_it):
+    """Forma italiana di un nome latino, anche declinato: «Julii» → «Giulio», «Thomae» → «Tommaso»,
+    «Fabricii» → «Fabrizio», «Mariae» → «Maria», «Platonis» → «Platone». Restituisce None se la
+    forma ottenuta non è un nome italiano noto (salvo gli irregolari)."""
+    f = forma.rstrip(".").lower().replace("j", "i")
+    radice, fin = f, ""
+    for d, nuova in (("orum", "o"), ("onis", "one"), ("onem", "one"), ("ii", "io"), ("ij", "io"), ("ium", "io"),
+                     ("ius", "io"), ("ae", "a"), ("am", "a"), ("um", "o"), ("us", "o"), ("is", "e"), ("i", "o"),
+                     ("o", "o"), ("a", "a"), ("es", "e"), ("em", "e")):
+        if f.endswith(d) and len(f) - len(d) >= 2:
+            radice, fin = f[:-len(d)], nuova
+            break
+    for k, v in IRREGOLARI.items():
+        if radice.startswith(k) or f.startswith(k):
+            return v
+    r = radice
+    if r[:1] == "i" and r[1:2] in "aeou":
+        r = "gi" + r[1:]                          # Iulius → Giulio, Iustinianus → Giustiniano, Ieremias → Geremia
+    r = r.replace("ph", "f").replace("th", "t").replace("ae", "e").replace("oe", "e").replace("y", "i")
+    if r.startswith("h"):
+        r = r[1:]
+    # -tius → -zio (Horatius → Orazio); -cius → -zio solo dopo -ri-/-a- (Fabricius → Fabrizio,
+    # Bonifacius → Bonifazio), non in Lucius → Lucio
+    cand_z = [re.sub(r"(t|(?<=ri)c|(?<=a)c)$", "z", r) + fin] if fin == "io" else []
+    for cand in cand_z + [r + fin, (r + fin).replace("gie", "ge"), r + "o", r + "a", r + "e"]:
+        c2 = cand[:1].upper() + cand[1:]
+        if c2 in nomi_it:
+            return c2
+    return None
+
+
 def leggi_tsv(nome, chiave="forma", valore="nome"):
     return {r[chiave]: r[valore] for r in csv.DictReader(open(LISTE / nome, encoding="utf-8"), delimiter="\t")}
 
@@ -137,11 +181,17 @@ def main():
     forti = {r["forma"] for r in csv.DictReader(open(LISTE / "luoghi.tsv", encoding="utf-8"), delimiter="\t")
              if r["peso"] == "forte"}
     # nomi ufficiali per forma normalizzata: «Osopo» → «Osoppo», «Ajello» → «Aiello del Friuli»
+    nome_it = {r["geonameid"]: r["nome_italiano"] for r in csv.DictReader(
+        open(LISTE / "geonames_it.tsv", encoding="utf-8"), delimiter="\t")} if (LISTE / "geonames_it.tsv").exists() else {}
+    capoluoghi = set((LISTE / "capoluoghi.txt").read_text(encoding="utf-8").splitlines())
     per_normalizzata = {}
     for u in ufficiali:
+        if u not in REGIONALI and u not in capoluoghi:
+            continue                          # «Ceresetto» non deve diventare «Cereseto» (Piemonte)
         per_normalizzata.setdefault(normalizza(u), u)
         per_normalizzata.setdefault(normalizza(re.sub(r" (?:del Friuli|al Tagliamento|di Udine)$", "", u)), u)
     forme_nomi, qid_it = nomi_di_battesimo()
+    nomi_it = {f for f, ll in forme_nomi.items() if any(l == "it" for l, _ in ll)}
     varianti = leggi_tsv("nomi_varianti.tsv")
     abbreviazioni = {}
     for riga in (LISTE / "abbreviazioni_nomi.txt").read_text(encoding="utf-8").splitlines():
@@ -207,13 +257,20 @@ def main():
                 stato, origine = "normale", "forma breve del nome ufficiale"
             elif forma in alternativi:
                 norm, rif, origine = alternativi[forma]
+                norm = nome_it.get(rif, norm)     # nome italiano (Wikidata), non inglese
                 breve = norm.startswith(forma + " ")
                 stato = "normale" if breve else "da_normalizzare"
+                if not breve and difflib.SequenceMatcher(None, normalizza(forma), normalizza(norm)).ratio() < 0.7:
+                    stato, origine = "da_verificare", origine + " (corrispondenza incerta)"
                 if breve:
                     origine = f"forma breve di «{norm}» ({origine})"
             elif forma in esteri:
                 norm, rif, origine = esteri[forma]
-                stato = "normale"              # forma corrente di una città estera (anche italiana: Vienna, Parigi)
+                norm = nome_it.get(rif, norm)     # nome italiano: «Wien» → «Vienna»
+                stato = "normale" if norm == forma else "da_normalizzare"
+                if stato != "normale" and difflib.SequenceMatcher(None, normalizza(forma), normalizza(norm)).ratio() < 0.7:
+                    # «Homo» → «Qom», «Sion» → «Gerusalemme», «Itan» → «Itami»: omonimie casuali da controllare
+                    stato, origine = "da_verificare", "GeoNames (corrispondenza incerta)"
             elif chiave in {estrai.chiave_luogo(k) for k in ()}:
                 pass
             elif normalizza(forma) in per_normalizzata:
@@ -246,8 +303,8 @@ def main():
             elif forma in forme_nomi:
                 lingua, q = sorted(forme_nomi[forma])[0]
                 parte, stato, rif = "nome_di_battesimo", "da_normalizzare", q
-                norm = qid_it.get(q)
-                origine = f"Wikidata ({lingua})" + ("" if norm else ", forma italiana da trovare")
+                norm = qid_it.get(q) or latino_italiano(forma, nomi_it)
+                origine = f"Wikidata ({lingua})" + ("" if qid_it.get(q) else ", forma italiana per regola")
                 if lingua == "it-derivato":
                     stato, norm, origine = "normale", None, "forma femminile derivata"
             elif chiave in radici and re.search(r"(?:ii|ij|ae|um|us|onis|onem)$", chiave):   # non «-is»: Valentinis, Portis
@@ -258,6 +315,8 @@ def main():
                 norm = qid_it.get(q) if q else None
                 if not norm and base in {estrai.chiave_luogo(a) for a in autori}:
                     norm = next(v for k, v in autori.items() if estrai.chiave_luogo(k) == base)
+                if not norm or norm.lower() == base:
+                    norm = latino_italiano(forma, nomi_it)    # mai una forma latina: «Julii» → «Giulio»
                 origine = f"forma latina declinata di «{cand[0] if cand else base}»"
                 rif = q
             elif forma.endswith(".") or forma.endswith("°") or len(nf) < 3 or not nf[:1].isupper():
@@ -277,10 +336,29 @@ def main():
             gruppi[r[6]].append(r)
     for g, rr in gruppi.items():
         if len(rr) > 1:
-            principale = max(rr, key=lambda x: x[7])[0]
+            # le grafie si ritrovano già con la normalizzazione: nessuna forma «normalizzata» imposta
+            # (Bosio non diventa Bossio); la forma di riferimento verrà dalle fonti
+            altre = sorted({x[0] for x in rr})
             for r in rr:
-                if r[2] == "da_verificare" and r[0] != principale:
-                    r[2], r[3], r[4] = "da_normalizzare", principale, "variante grafica (normalizzazione)"
+                if r[2] == "da_verificare":
+                    r[2], r[4] = "da_normalizzare", "variante grafica di " + ", ".join(a for a in altre if a != r[0])
+
+    # decisioni del curatore e dal contesto (dati/liste/normalizzazioni_curatore.tsv): prevalgono
+    decisioni = {r["forma"]: r for r in csv.DictReader(
+        open(LISTE / "normalizzazioni_curatore.tsv", encoding="utf-8"), delimiter="\t")}
+    for r in righe:
+        d = decisioni.get(r[0])
+        if not d:
+            continue
+        parte = d["parte"]
+        if parte == "persona":
+            parte = "cognome"
+        r[1] = parte
+        r[3] = d["forma_normalizzata"] or None
+        r[4] = d["origine"] + (": " + d["nota"] if d["nota"] else "")
+        r[2] = "normale" if (parte == "parola" or not r[3] or r[3] == r[0]) else "da_normalizzare"
+        if parte == "parola":
+            r[2] = "parola"
 
     con.executemany("INSERT INTO lessico (forma, parte, stato, forma_normalizzata, origine, riferimento, "
                     "gruppo_grafico, occorrenze, voci) VALUES (?,?,?,?,?,?,?,?,?)", righe)
@@ -349,9 +427,9 @@ def report(con, gruppi):
 
     sezione("1. Luoghi da normalizzare",
             "Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: "
-            "latine, storiche, dialettali, o assenti dalle liste.",
+            "latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare.",
             "SELECT forma, occorrenze, forma_normalizzata, origine, voci FROM lessico "
-            "WHERE parte='luogo' AND stato='da_normalizzare' ORDER BY occorrenze DESC, forma")
+            "WHERE parte='luogo' AND stato IN ('da_normalizzare', 'da_verificare') ORDER BY stato, occorrenze DESC, forma")
     sezione("2. Doppia lettura: nomi ufficiali di luogo che sono anche cognomi o famiglie",
             "Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo ≠ Savorgnan famiglia).",
             "SELECT forma, occorrenze, forma_normalizzata, origine, voci FROM lessico "
