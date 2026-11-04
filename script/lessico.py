@@ -64,7 +64,7 @@ CREATE INDEX ix_lessico_gruppo ON lessico(gruppo_grafico);
 """
 
 REGIONALI = set()          # nomi ufficiali di luoghi del Friuli e del Veneto
-RX_PAROLA = re.compile(r"[^\W\d_][^\W\d_'’]*(?:['’][^\W\d_]+)*(?:-[^\W\d_]+)*(?:\.(?:co|meo|eo|zo|mo|ro|na|ne|ni|lo|to|so|r|ra|te|ssa|ta)\b|\.°|°|\.)?")
+RX_PAROLA = re.compile(r"[^\W\d_][^\W\d_'’]*(?:['’][^\W\d_]+)*(?:-[^\W\d_]+)*(?:\.[a-zàèéìòù]+\b|\.°|°|\.)?")
 
 
 # ---------------------------------------------------------------------------

@@ -98,8 +98,14 @@ def lessico(con):
 
 
 # secondi elementi dei nomi doppi (Anna Maria, Giovanni Battista): mai cognomi dedotti
-SECONDI_NOMI = {"Maria", "Battista", "Batta", "Antonio", "Domenico", "Francesco"}
+SECONDI_NOMI = {"Maria", "Battista", "Batta", "Antonio", "Domenico", "Francesco",
+                "Gian", "Giovan", "Pier", "Zuan"}      # primi elementi dei nomi doppi: mai cognomi
 SECONDI_NOMI_N = {normalizza(x) for x in SECONDI_NOMI}
+COPPIE_N = {"maria", "batista", "bata"}            # Anna Maria, Maria Teresa: mai spezzare
+# primi elementi frequenti dei nomi doppi: «Marco Antonio», «Giorgio Antonio», «Giacomo Francesco»
+PRIMI_DOPPI = {"Marco", "Giovanni", "Pietro", "Angelo", "Giorgio", "Ludovico", "Lodovico", "Filippo", "Carlo",
+               "Giacomo", "Giuseppe", "Paolo", "Anton", "Luigi", "Girolamo", "Nicolò", "Bartolomeo", "Giambattista"}
+ULTIMI_CANDIDATI = [0]     # parole intere che potrebbero essere il cognome, nell'ultima scomposizione
 DEDOTTI = set()            # cognomi dedotti tra parole che sono anche nomi
 OCC_NOME = {}              # occorrenze delle parole classificate come nome di battesimo
 
@@ -128,7 +134,7 @@ def origine_esterna(origine):
 # Persone
 # ---------------------------------------------------------------------------
 
-def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True):
+def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=frozenset()):
     """Parole di un nome di persona → (nomi, iniziali, cognomi, vista).
 
     nomi: tuple di alternative italiane normalizzate per ogni nome di battesimo
@@ -202,15 +208,27 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True):
                 articolo = None
             cognomi.append(c)
             vis_c.append(forma)
+    ULTIMI_CANDIDATI[0] = len(candidati)
     if dedurre and not cognomi and candidati and (len(nomi) >= 2 or iniziali) and not numerale \
             and not re.search(r"\bS\.\s", testo) \
-            and not (len(nomi) == 2 and not iniziali and any(x[0] in SECONDI_NOMI_N for x in nomi)):
+            and not (len(nomi) == 2 and not iniziali and not any(normalizza(c[2]) in cognomi_voce for c in candidati)
+                     and (any(x[0] in COPPIE_N for x in nomi) or all(c[2] in PRIMI_DOPPI for c in candidati))):
+        # le coppie di soli nomi (Marco Antonio, Anna Maria) si spezzano solo se nella voce
+        # una delle due parole è cognome di altri (Paulino Francesco)
         # escluse anche le coppie di soli nomi con Maria, Battista… (Anna Maria, Maria Teresa, Ave Maria)
         # nessun cognome riconosciuto: è cognome la parola preceduta da un articolo o da una
         # particella (Del Bianco, de Zorzi); altrimenti la prima parola se la menzione apre la
         # voce (Cognome Nome: «Zeno Apostolo»), l'ultima se è all'interno (Nome Cognome: «Aldo Stella»)
+        # prima ancora della posizione: la parola che nella stessa voce è cognome di altri
+        # (Paulino Fabio accanto ad Alessandro e Gio. Batta Paulino)
         con_art = [c for c in candidati if c[3] or c[4]]
-        i_n, i_v, w, art, part = con_art[0] if con_art else (candidati[0] if inizio_voce else candidati[-1])
+        in_voce = [c for c in candidati if normalizza(c[2]) in cognomi_voce]
+        if con_art:
+            i_n, i_v, w, art, part = con_art[0]
+        elif len(in_voce) == 1:
+            i_n, i_v, w, art, part = in_voce[0]
+        else:
+            i_n, i_v, w, art, part = candidati[0] if inizio_voce else candidati[-1]
         del nomi[i_n]
         del vis_n[i_v]
         cognomi.append(normalizza((art + " " if art else "") + w))     # «di/de/da» fuori dalla chiave
@@ -219,6 +237,14 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True):
     if not cognomi and numerale and nomi:
         cognomi.append("")                      # papi e sovrani: «Benedetto XIII»
     return nomi, iniziali, cognomi, (vis_n, " ".join(vis_c))
+
+
+def intestazione_interna(testo, inizio, fine):
+    """La menzione è un'intestazione o una voce d'elenco dentro la voce: preceduta da un
+    a capo, da «. », «, » o «; » e seguita da punteggiatura («Delfino Daniele.»)."""
+    prima = testo[:inizio].rstrip(" ")
+    dopo = testo[fine:fine + 1]
+    return (not prima or prima[-1] in ".,;\n") and (dopo == "" or dopo in ".,;:")
 
 
 def scomponi_manuale(testo, lex, titoli):
@@ -230,7 +256,7 @@ def scomponi_manuale(testo, lex, titoli):
     if cogn and not nomi:                       # il curatore indica come nomi parole non riconosciute
         nomi, vis_n = [(normalizza(x),) for x in sx.split()], sx.split()
     # «Berlingero /»: persona nota solo per nome; la particella non entra nella chiave
-    chiave = normalizza(re.sub(r"^(?:di|de|da|d['’])\s*", "", dx)) if dx else ""
+    chiave = " ".join(x for x in normalizza(dx).split() if x not in ("di", "de", "da", "d")) if dx else ""
     return nomi, iniziali, [chiave], (vis_n, dx)
 
 
@@ -270,7 +296,7 @@ def main():
         curatore[(r["voce"], r["testo"])] = [x.strip() for x in r["persone"].split("|")]
     titoli = {t.lower() for t in estrai.leggi_parole("titoli.txt")}
     numeri = dict(con.execute("SELECT id, numero FROM voci"))
-    menzioni = con.execute("SELECT id, voce, testo_esatto, tipo, correzione, forma_riferimento, sede, inizio FROM menzioni "
+    menzioni = con.execute("SELECT id, voce, testo_esatto, tipo, correzione, forma_riferimento, sede, inizio, fine FROM menzioni "
                            "ORDER BY voce, inizio").fetchall()
 
     entita = {}                # (tipo, chiave) → dict(intestazione, nota, varianti: {(forma, origine): set(rif)}, menzioni)
@@ -286,8 +312,20 @@ def main():
 
     persone_iniziali = []      # menzioni con iniziali, da risolvere dopo le entità complete
 
-    for mid, voce, testo, tipo, corr, rif_forma, sede, inizio in menzioni:
-        inizio_voce = sede == "testo" and inizio <= 2
+    testi = dict(con.execute("SELECT id, testo FROM voci"))
+    # cognomi di ogni voce: riconosciuti, o dedotti quando l'unica parola intera è il cognome
+    # («Alessandro e Gio. Batta Paulino»)
+    cognomi_voce = defaultdict(set)
+    for voce, t in con.execute("SELECT voce, testo_esatto FROM menzioni WHERE tipo='persona'"):
+        for x in re.split(r"\s(?:e|ed)\s", t):
+            nomi, iniz, cogn, _ = scomponi(x, lex, titoli, dedurre=False)
+            if not cogn:
+                cogn = scomponi(x, lex, titoli)[2] if ULTIMI_CANDIDATI[0] == 1 else []
+            cognomi_voce[voce].update(c for c in cogn if c)
+    for mid, voce, testo, tipo, corr, rif_forma, sede, inizio, fine in menzioni:
+        # ordine Cognome Nome: all'inizio della voce, e nelle intestazioni ed elenchi interni
+        # («20. Delfino Daniele. Concessione…», «…, Zorzi Carlo Maria, De Lepre…»)
+        inizio_voce = sede == "testo" and (inizio <= 2 or intestazione_interna(testi.get(voce, ""), inizio, fine))
         num = numeri[voce]
         tipo_eff = tipo
         if tipo in ("luogo", "santo"):
@@ -346,6 +384,13 @@ def main():
             testo_chiave = corr.strip("[] ") if corr else testo
 
         manuale = curatore.get((num, testo)) or curatore.get(("", testo))
+        if manuale and manuale[0].startswith("santo:"):
+            nome = manuale[0][6:].strip()           # «St. Claude», «San Daniele»: santi, non persone
+            e = ent("santo", normalizza(nome), nome)
+            e["varianti"][(testo, "testo")].add(num)
+            e["menzioni"].append(mid)
+            e["voci"].add(num)
+            continue
         if manuale:
             # persone indicate dal curatore (dati/liste/persone_curatore.tsv)
             persone = [scomponi_manuale(x, lex, titoli) for x in manuale if x]
@@ -357,7 +402,8 @@ def main():
             parti = [x for x in re.split(r"\s(?:e|ed)\s", testo_chiave) if x.strip()]
             if len(parti) > 1 and not all(re.match(r"[A-Z]", x.strip()) for x in parti):
                 parti = [testo_chiave]
-            persone = [scomponi(x, lex, titoli, inizio_voce and k == 0) for k, x in enumerate(parti)]
+            persone = [scomponi(x, lex, titoli, inizio_voce and k == 0, cognomi_voce=cognomi_voce.get(voce, frozenset()))
+                       for k, x in enumerate(parti)]
             if len(persone) > 1 and persone[-1][2]:
                 persone = [(n, i, c or persone[-1][2], (v[0], v[1] or persone[-1][3][1])) for n, i, c, v in persone]
         valide = [p for p in persone if p[2] and (p[0] or p[1])]

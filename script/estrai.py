@@ -254,8 +254,9 @@ def tokenizza(testo):
         if m.group("parola"):
             parola = m.group("parola")
             fine = m.end()
-            # «Fr.co», «Dom.co», «Bart.meo», «Vinc.zo»: abbreviazione con lettere in esponente
-            m2 = re.match(r"\.(co|meo|eo|zo|mo|ro|na|ne|ni|lo|to|so|r|ra|te|ssa|ta)\b", testo[m.end("parola"):])
+            # «Fr.co», «Dom.co», «Bart.meo», «C.sse», «S.ri»: abbreviazione con lettere in esponente.
+            # Un punto seguito subito da minuscole (senza spazio) non chiude la parola
+            m2 = re.match(r"\.[a-zàèéìòù]+\b", testo[m.end("parola"):])
             if m2:
                 fine = m.end("parola") + m2.end()
             fine_prec = fine
