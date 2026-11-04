@@ -113,3 +113,5 @@ La classificazione persona/luogo serve soprattutto a scegliere la fonte (enciclo
 - Parti di «X e Y Cognome» prima dell'ultima: nessuna deduzione, il cognome finale vale per tutte (Gian Mario e Antonio Tommasi).
 - Cognomi in -i preferiti ai nomi (i nomi italiani non finiscono in -i, salvo Giovanni, Luigi…): «Rossi Lazzaro».
 - Numerali romani col punto di fine frase («Onorio III.»), ultima parola col punto di fine frase («Treo.»), articolo tra parentesi dopo il cognome («Pace (della) Carlo Maria» = della Pace), «N. H.» (Nobil Homo), «Madonna …» = santo; un articolo seguito da un titolo è del titolo («del Sr. F. Barnaba»).
+- Varianti dello stesso nome unite nella chiave: Raffaele = Raffaello, Daniele = Daniel = Daniello, Gaspare = Gaspero = Gasparo, Flaminio = Flaminius, Lodovico = Ludovico, Giuseppe = Gioseffo, Girolamo = Gerolamo, Jacopo = Jacobo.
+- Abbreviazioni di nome non sciolte confrontate per radice («Gasp.» solo con Gaspare/Gaspero, «Fl.» con Flaminio); «D.» dopo un'iniziale o dopo Gian/Giovanni è Domenico, non «don».

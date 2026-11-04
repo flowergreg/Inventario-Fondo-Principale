@@ -116,6 +116,10 @@ FUSI = {"gian": ["giovani"], "giovan": ["giovani"], "zuan": ["giovani"], "zan": 
         "gianmaria": ["giovani", "maria"], "giannicolo": ["giovani", "nicolo"]}
 COGNOMI_INTESTAZIONI = set()   # cognomi letti nelle intestazioni di voce (Cognome Nome)
 NOMI_IN_I = {"Giovanni", "Luigi", "Dionigi", "Gianni", "Vanni", "Ercoli", "Remigi", "Ludovici", "Bernardi"}
+# varianti dello stesso nome di battesimo, per la chiave (forme normalizzate)
+EQUIVALENTI = {"rafaelo": "rafaele", "daniel": "daniele", "danielo": "daniele", "gaspero": "gaspare",
+               "gasparo": "gaspare", "flaminius": "flaminio", "ludovico": "lodovico", "giosefo": "giusepe",
+               "girolamo": "girolamo", "gerolamo": "girolamo", "iacobo": "iacopo"}
 DEDOTTI = set()            # cognomi dedotti tra parole che sono anche nomi
 OCC_NOME = {}              # occorrenze delle parole classificate come nome di battesimo
 
@@ -180,6 +184,11 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
         if wl in estrai.PARTICELLE:              # della, del, dalla, degli…: restano col cognome
             articolo = w
             continue
+        if wl == "d." and vis_n and ((vis_n[-1].endswith(".") and len(vis_n[-1]) == 2)
+                                     or vis_n[-1] in ("Gian", "Giovan", "Giovanni", "Pier")):
+            iniziali.append("d")                 # «G. D. Ciconi»: dopo un'iniziale «D.» è Domenico, non «don»
+            vis_n.append("D.")
+            continue
         if wl in titoli or wl.rstrip(".") + "." in titoli:
             articolo = particella = None          # «del Sr. F. Barnaba»: l'articolo è del titolo
             continue
@@ -213,8 +222,10 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
             vis_c.append(" ".join(x for x in (particella, articolo, w.rstrip(".")) if x))
             articolo = particella = None
         elif parte in ("iniziale", "abbreviazione"):
-            iniziali.append(normalizza(w)[:1])
-            vis_n.append(w[:1].upper() + ".")
+            # abbreviazione non sciolta: se ne tiene la radice («Gasp.» → gasp, «Fl.» → fl)
+            radice = normalizza(w).split()[0] if normalizza(w) else ""
+            iniziali.append(radice if parte == "abbreviazione" and radice.isalpha() else normalizza(w)[:1])
+            vis_n.append(w if parte == "abbreviazione" else w[:1].upper() + ".")
         elif parte == "nome_di_battesimo":
             n = r[2] or w
             if n.startswith("("):
@@ -229,7 +240,7 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
                     candidati.append((len(nomi), len(vis_n), w, articolo, particella))
                     articolo = None
                 for nome in n.split():
-                    for x in FUSI.get(normalizza(nome), [normalizza(nome)]):
+                    for x in FUSI.get(normalizza(nome), [EQUIVALENTI.get(normalizza(nome), normalizza(nome))]):
                         nomi.append((x,))
                     vis_n.append(nome)
         else:                                   # cognome, nome_abbreviato, luogo dentro un nome, doppia lettura
@@ -247,7 +258,7 @@ def scomponi(testo, lex, titoli, inizio_voce=False, dedurre=True, cognomi_voce=f
     if dedurre and not cognomi and len(iniziali) == 1 and nomi and intestazione:
         # «Z. Girolamo» nella voce «Zorzi, Mario»: il compilatore abbrevia il cognome ovvio, cioè
         # quello dell'intestazione (non un cognome qualsiasi della voce: «G. Gius. Bellina»)
-        simili = [c for c in intestazione if c[:1] == iniziali[0]]
+        simili = [c for c in intestazione if c.startswith(iniziali[0])]
         if len(simili) == 1:
             i_v = next(k for k, v in enumerate(vis_n) if v.endswith("."))
             del vis_n[i_v]
@@ -357,7 +368,7 @@ def compatibile(entita_nomi, iniziali, nomi):
         return False
     lettere = list(iniziali)
     for e in resto:                       # ogni nome restante deve avere un'iniziale corrispondente
-        x = next((l for l in lettere if any(a[:1] == l for a in e)), None)
+        x = next((l for l in lettere if any(a.startswith(l) for a in e)), None)   # «Fl.» = Flaminio
         if x is None:
             return False
         lettere.remove(x)
@@ -704,7 +715,7 @@ def report(con, entita, senza, soli):
 
     elenca("1. Persone: iniziali compatibili con più entità",
            "Le menzioni con iniziali non sono state unite: indica a quale persona appartengono.",
-           q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND nota LIKE '%più persone%' "
+           q("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona' AND nota LIKE '%iniziali compatibili%' "
              "ORDER BY forma_intestazione"))
     elenca("2. Persone: possibili omonimi",
            "Famiglie con omonimi noti: l'entità può riunire più persone.",
