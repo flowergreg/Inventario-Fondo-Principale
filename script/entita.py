@@ -119,7 +119,11 @@ NOMI_IN_I = {"Giovanni", "Luigi", "Dionigi", "Gianni", "Vanni", "Ercoli", "Remig
 # varianti dello stesso nome di battesimo, per la chiave (forme normalizzate)
 EQUIVALENTI = {"rafaelo": "rafaele", "daniel": "daniele", "danielo": "daniele", "gaspero": "gaspare",
                "gasparo": "gaspare", "flaminius": "flaminio", "ludovico": "lodovico", "giosefo": "giusepe",
-               "girolamo": "girolamo", "gerolamo": "girolamo", "iacobo": "iacopo"}
+               "girolamo": "girolamo", "gerolamo": "girolamo", "iacobo": "iacopo",
+               # famiglia di Girolamo (fase 6): forme antiche, venete e latine
+               "gierolamo": "girolamo", "gerolimo": "girolamo", "girolimo": "girolamo", "zerolamo": "girolamo",
+               "geronimo": "girolamo", "gieronimo": "girolamo", "ieronimo": "girolamo", "hieronimo": "girolamo",
+               "hieronimus": "girolamo", "hieronimum": "girolamo", "hieronimi": "girolamo", "ieronimus": "girolamo"}
 DEDOTTI = set()            # cognomi dedotti tra parole che sono anche nomi
 OCC_NOME = {}              # occorrenze delle parole classificate come nome di battesimo
 
@@ -653,6 +657,8 @@ def main():
             dest["note"] |= e["note"]
         dest["note"].add("ordine nome/cognome unificato tra le voci")
 
+    unisci_curatore(entita)
+
     # segnalazioni
     for (tipo, chiave), e in entita.items():
         if tipo != "persona":
@@ -668,6 +674,75 @@ def main():
     scrivi(con, entita)
     report(con, entita, senza, soli)
     con.close()
+
+
+def unisci_curatore(entita):
+    """Unioni decise dal curatore nella fase 6 (dati/liste/unioni_curatore.tsv): grafie diverse
+    raccolte sotto una sola forma di riferimento (Teck / Tech, Caetani / Gaetani) e forme con parole
+    estranee al nome («Candotti G. B. Requiem»). L'unione riguarda la grafia, non afferma che si
+    tratti della stessa persona. Le unioni sono transitive (Mintino = Miotino = Miuttino). La forma
+    che resta è quella con più menzioni, a parità la più breve."""
+    per_intest = {}
+    for k, e in entita.items():
+        per_intest.setdefault((k[0], e["intestazione"]), k)
+    padre = {}
+
+    def radice(x):
+        while padre.get(x, x) != x:
+            x = padre[x]
+        return x
+
+    mancanti, affini = [], []
+    for r in csv.DictReader(open(LISTE / "unioni_curatore.tsv", encoding="utf-8"), delimiter="\t"):
+        if r["decisione"] == "grafia" and r["tipo"] in ("persona", "luogo"):
+            affini.append(r)              # stessa grafia, persone diverse: si collegano dopo le unioni
+            continue
+        if r["decisione"] != "sì" or r["tipo"] not in ("persona", "luogo"):
+            continue
+        a, b = per_intest.get((r["tipo"], r["forma_a"])), per_intest.get((r["tipo"], r["forma_b"]))
+        if not a or not b:
+            mancanti.append(f"{r['forma_a']} = {r['forma_b']}")
+            continue
+        padre.setdefault(a, a)
+        padre.setdefault(b, b)
+        ra, rb = radice(a), radice(b)
+        if ra != rb:
+            padre[ra] = rb
+    gruppi = defaultdict(list)
+    for k in padre:
+        gruppi[radice(k)].append(k)
+    for kk in gruppi.values():
+        kk.sort(key=lambda k: (-len(entita[k]["menzioni"]), len(entita[k]["intestazione"]), entita[k]["intestazione"]))
+        dest = entita[kk[0]]
+        unite = [entita[k]["intestazione"] for k in kk[1:]]
+        for k in kk[1:]:
+            e = entita.pop(k)
+            for v, rif in e["varianti"].items():
+                dest["varianti"][v] |= rif
+            dest["menzioni"] += e["menzioni"]
+            dest["voci"] |= e["voci"]
+            if "grafie" in dest:
+                dest["grafie"] |= e.get("grafie", set())
+            dest["note"] |= {n for n in e["note"] if not n.startswith("cognome in grafie")}
+        dest["note"].add("forme unite dal curatore: " + " | ".join(sorted(unite)))
+    # grafie affini di persone diverse (Ricci / Rizzi): le entità restano distinte, ma ciascuna
+    # riceve le forme del testo dell'altra come varianti, così la ricerca trova entrambe
+    per_intest = {(k[0], e["intestazione"]): k for k, e in entita.items()}
+    for r in affini:
+        a, b = per_intest.get((r["tipo"], r["forma_a"])), per_intest.get((r["tipo"], r["forma_b"]))
+        if not a or not b:
+            mancanti.append(f"{r['forma_a']} ~ {r['forma_b']}")
+            continue
+        for x, y in ((a, b), (b, a)):
+            for forma in [v[0] for v in entita[y]["varianti"] if v[1] == "testo"]:
+                entita[x]["varianti"][(forma, "manuale")].add(f"grafia affine di «{entita[y]['intestazione']}» (curatore)")
+            entita[x]["note"].add(f"grafia affine: {entita[y]['intestazione']}")
+    print(f"Unioni del curatore: {sum(len(g) - 1 for g in gruppi.values())} entità unite in {len(gruppi)} gruppi, "
+          f"{len(affini)} coppie di grafie affini",
+          file=sys.stderr)
+    if mancanti:
+        print(f"  {len(mancanti)} unioni non applicate (intestazione non trovata): " + "; ".join(mancanti),
+              file=sys.stderr)
 
 
 def intestazione_persona(vista):

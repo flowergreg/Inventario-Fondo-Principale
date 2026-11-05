@@ -106,10 +106,10 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
 </div></div></div>
 <footer><div class="container">
   La ricerca normalizza la grafia (maiuscole, accenti, j/i, y/i, doppie) e la estende con le varianti registrate:
-  forme latine, venete e friulane, abbreviazioni, varianti dei nomi, correzioni del curatore, forme di Wikidata. Livelli: <b>entità</b>
-  (stessa persona o stesso luogo, anche in grafie lontane), <b>testo</b> (tutte le parole vicine nella voce),
-  <b>approssimata</b> (una lettera di differenza, solo se il resto non trova nulla). I raggruppamenti in entità sono
-  proposti e non ancora validati. Indice del __DATA__.
+  forme latine, venete e friulane, abbreviazioni, varianti dei nomi, correzioni del curatore, forme di Wikidata. Livelli: <b>forma di riferimento</b>
+  (tutte le grafie registrate dello stesso nome, anche lontane), <b>testo</b> (tutte le parole vicine nella voce),
+  <b>approssimata</b> (una lettera di differenza, solo se il resto non trova nulla). La forma di riferimento raccoglie
+  grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme. Indice del __DATA__.
 </div></footer>
 <script>
 const IDX = __INDICE__;
@@ -187,7 +187,7 @@ function cerca(domanda) {
   return {q, insiemi, ris: out, approssimata};
 }
 const esc = s => s.replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
-const LIV = {1: "entità", 2: "testo", 3: "approssimata"};
+const LIV = {1: "forma di riferimento", 2: "testo", 3: "approssimata"};
 function testoSede(v, sede) { return sede === "t" ? v.t : sede === "c" ? v.c : v.a[+sede.slice(1)]; }
 function segmento(v, sede, ini) {
   if (sede !== "t") return sede[0] === "c" ? "coda" : "annotazione";
@@ -217,8 +217,8 @@ function mostra(domanda) {
       punti.slice(0, 3).map(h => { const seg = segmento(v, h[1], h[2]);
         return `<div class="punto">${seg ? `<span class="seg">${esc(seg)}</span>` : ""}${frammento(testoSede(v, h[1]), h[2], h[3])}</div>`; }).join("") +
       (punti.length > 3 ? `<div class="entita">… e altri ${punti.length - 3} punti nella voce</div>` : "") +
-      ent.map(e => `<div class="entita">${e.t === "persona" ? "Persona" : e.t === "luogo" ? "Luogo" : "Santo"}: <b>${esc(e.f)}</b>` +
-        ` · raggruppamento ${esc(e.st)}` + (e.q ? ` · <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">Wikidata ${e.q}</a>` : "") + `</div>`).join("") +
+      ent.map(e => `<div class="entita">Forma di riferimento${e.t === "luogo" ? " (luogo)" : e.t === "santo" ? " (santo)" : ""}: <b>${esc(e.f)}</b>` +
+        (e.st === "validato" ? "" : " · da validare") + (e.q ? ` · <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">Wikidata ${e.q}</a>` : "") + `</div>`).join("") +
       `<details><summary>Testo della voce</summary><div class="testo-voce">${evidenzia(v.t, sedi.get("t") || [])}` +
       (v.c ? `\n\n<i>${evidenzia(v.c, sedi.get("c") || [])}</i>` : "") +
       v.a.map((a, k) => `\n\n[${evidenzia(a, sedi.get("a" + k) || [])}]`).join("") + `</div></details></article>`;

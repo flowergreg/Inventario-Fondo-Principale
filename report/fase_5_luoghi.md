@@ -1,13 +1,13 @@
 # Fase 5 — Luoghi: collegamento a GeoNames e Wikidata
 
-Verifica del 2026-11-04. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
+Verifica del 2026-11-05. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 531 |
+| alta | 530 |
 | media | 4 |
 | bassa | 1 |
-| nessuna | 26 |
+| nessuna | 25 |
 
 ## 1. Affidabilità media: più candidati, da scegliere
 
@@ -24,7 +24,7 @@ Verifica del 2026-11-04. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 Forme che non sono luoghi (cognomi, parole) o luoghi minori assenti da GeoNames e Wikidata.
 
-Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Gajanine (492), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
+Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
 
 ## 4. Affidabilità alta
 
@@ -38,8 +38,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **America** (3 menz.; voci 1578, 2634/17) → America — GeoNames [10861432](https://www.geonames.org/10861432) — Wikidata [Q828](https://www.wikidata.org/wiki/Q828): _continente della Terra_
 - **Ampezzo** (2 menz.; voci 1564, 4113) → Ampezzo — GeoNames [3183105](https://www.geonames.org/3183105) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53214](https://www.wikidata.org/wiki/Q53214): _comune italiano_
 - **Amsterdam** (1 menz.; voci 503) → Amsterdam — GeoNames [2759794](https://www.geonames.org/2759794) PPLC, NL — Wikidata [Q727](https://www.wikidata.org/wiki/Q727): _capitale dei Paesi Bassi_
-- **Aquilea** (1 menz.; voci 561) → Aquileia — GeoNames [6539930](https://www.geonames.org/6539930) ADM3, Friuli-Venezia Giulia (UD) — Wikidata [Q53216](https://www.wikidata.org/wiki/Q53216): _comune italiano_
-- **Aquileia** (168 menz.; voci 469, 476, 484, 485) → Aquileia — GeoNames [3182943](https://www.geonames.org/3182943) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53216](https://www.wikidata.org/wiki/Q53216): _comune italiano_
+- **Aquileia** (169 menz.; voci 469, 476, 484, 485) → Aquileia — GeoNames [3182943](https://www.geonames.org/3182943) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53216](https://www.wikidata.org/wiki/Q53216): _comune italiano_
 - **Armenia** (1 menz.; voci 3417) → Armenia — GeoNames [174982](https://www.geonames.org/174982) — Wikidata [Q399](https://www.wikidata.org/wiki/Q399): _stato dell'Eurasia_
 - **Artegna** (3 menz.; voci 525, 533, 3936) → Artegna — GeoNames [3182782](https://www.geonames.org/3182782) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53220](https://www.wikidata.org/wiki/Q53220): _comune italiano_
 - **Ascoli Piceno** (1 menz.; voci 10) → Ascoli Piceno — GeoNames [3182749](https://www.geonames.org/3182749) PPLA2, reg. 10 (AP) — Wikidata [Q6624](https://www.wikidata.org/wiki/Q6624): _comune italiano, capoluogo dell'omonima provincia nelle Marche_
@@ -212,7 +211,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Fusea** (1 menz.; voci 1534) → Fusea — GeoNames [3219099](https://www.geonames.org/3219099) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18451567](https://www.wikidata.org/wiki/Q18451567): _frazione del comune italiano di Tolmezzo, provincia di Udine_
 - **Gaeta** (1 menz.; voci 3975) → Gaeta — GeoNames [3176438](https://www.geonames.org/3176438) PPLA3, reg. 07 (LT) — Wikidata [Q128089](https://www.wikidata.org/wiki/Q128089): _comune italiano_
 - **Gagliano** (1 menz.; voci 1046) → Gagliano — GeoNames [3176429](https://www.geonames.org/3176429) PPL, Friuli-Venezia Giulia (UD) — frazione di Cividale
-- **Gaiarine** (1 menz.; voci 3863) → Gaiarine — GeoNames [3176420](https://www.geonames.org/3176420) PPLA3, Veneto (TV) — Wikidata [Q48023](https://www.wikidata.org/wiki/Q48023): _comune italiano_
+- **Gaiarine** (2 menz.; voci 492, 3863) → Gaiarine — GeoNames [3176420](https://www.geonames.org/3176420) PPLA3, Veneto (TV) — Wikidata [Q48023](https://www.wikidata.org/wiki/Q48023): _comune italiano_
 - **Galizia** (1 menz.; voci 1063) → Galizia — GeoNames [3336902](https://www.geonames.org/3336902) — Wikidata [Q3908](https://www.wikidata.org/wiki/Q3908): _comunità autonoma della Spagna_
 - **Galleriano** (1 menz.; voci 2093) → Galleriano — GeoNames [3176386](https://www.geonames.org/3176386) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q17437991](https://www.wikidata.org/wiki/Q17437991): _frazione del comune di Lestizza (UD)_ — grafia confermata dal curatore; anche cognome nel testo
 - **Gallia** (2 menz.; voci 3, 1101) → Gallia — Wikidata [Q38060](https://www.wikidata.org/wiki/Q38060): _antica regione dell'Europa centro-occidentale_

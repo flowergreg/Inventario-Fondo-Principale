@@ -41,7 +41,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalizza import normalizza  # noqa: E402
+from normalizza import forme_unite, normalizza, nota_senza_unioni  # noqa: E402
 
 RADICE = Path(__file__).resolve().parent.parent
 DB = RADICE / "dati" / "inventario.sqlite"
@@ -389,13 +389,15 @@ def main():
         if c and c[6] == "IT" and c[4] != "06" and c[3] in ("PPL", "PPLL", "PPLX") and nome in cognomi \
                 and not comune:
             aff, nota = "bassa", "probabilmente cognome, non luogo"
-        if nome in manuali:                        # decisioni del curatore o dal contesto
-            m = manuali[nome]
+        # decisioni del curatore o dal contesto, anche se prese per una forma poi unita (fase 6)
+        chiave_m = next((x for x in [nome] + forme_unite(nota_e) if x in manuali), None)
+        if chiave_m:
+            m = manuali[chiave_m]
             gid, qid, nota = m["geonameid"] or None, m["qid"] or cache["gid"].get(m["geonameid"]), m["nota"]
             aff = "alta" if (gid or qid) else None   # vuoto: non è un luogo
-        if nome in confermati and aff == "media":
+        if any(x in confermati for x in [nome] + forme_unite(nota_e)) and aff == "media":
             aff, nota = "alta", "grafia confermata dal curatore" + (f"; {nota}" if nota else "")
-        if nota_e and aff == "alta":
+        if nota_senza_unioni(nota_e) and aff == "alta":
             aff = "media"                          # forma già segnalata come incerta nel lessico
         risultati[eid] = (nome, gid, qid, aff, nota, alt, loc)
     qids = sorted({r[2] for r in risultati.values() if r[2]})

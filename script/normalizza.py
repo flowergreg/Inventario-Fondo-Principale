@@ -25,3 +25,19 @@ def normalizza(testo):
     t = "".join(c for c in t if not unicodedata.combining(c))
     t = re.sub(r"[^\w\s]|_", " ", t)              # punteggiatura ignorata
     return " ".join(_parola(p) for p in t.split())
+
+
+UNITE = "forme unite dal curatore: "
+
+
+def forme_unite(nota):
+    """Intestazioni unite dal curatore (fase 6), lette dalla nota dell'entità."""
+    for parte in (nota or "").split("; "):
+        if parte.startswith(UNITE):
+            return [x.strip() for x in parte[len(UNITE):].split(" | ") if x.strip()]
+    return []
+
+
+def nota_senza_unioni(nota):
+    """La nota dell'entità senza l'elenco delle forme unite: quell'elenco non è un segnale d'incertezza."""
+    return "; ".join(p for p in (nota or "").split("; ") if p and not p.startswith(UNITE)) or None

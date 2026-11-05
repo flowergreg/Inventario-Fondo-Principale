@@ -147,3 +147,20 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
   Casi già noti: Teck/Tech (voci 606, 3766, 1552 / 652, 914, 525); voce 667 «di Teck Pagine» scomposta male.
 - Proposte grafiche di arricchisci.py in attesa (Bellone/Belloni, Delfino/Dolfin, Gallizioli/Gallicioli,
   Giustiniani/Giustinian, Pascaleo/Pasquale, Sommaripa/Summaripa, Sommariva/Summaripa).
+
+## Fase 6 — blocco 1 (unioni), eseguito
+- Principio del curatore: la forma di riferimento raccoglie **grafie**, non identifica persone; gli omonimi
+  nei risultati sono naturali. La pagina parla di «forma di riferimento», non di «persona».
+- `dati/liste/unioni_curatore.tsv` (tipo, forma_a, forma_b, decisione, nota, riferimento), dal tabellone
+  `revisione/fase6_1_unioni_curatore.xlsx`:
+  - `sì`: le entità si uniscono (in entita.py, `unisci_curatore`, transitivo); resta la forma con più
+    menzioni, a parità la più breve; le forme unite stanno nella nota («forme unite dal curatore: A | B»);
+  - `grafia`: stessa grafia, persone diverse (Ricci / Rizzi): entità distinte che ricevono l'una le forme
+    dell'altra come varianti `manuale`, così la ricerca le trova entrambe e i collegamenti Wikidata restano separati;
+  - `no`: restano separate; tipo `cognome` `sì`: espansione di ricerca per tutta la famiglia (Delfino ↔ Dolfin).
+- collega_luoghi.py e collega_persone.py applicano le decisioni manuali anche alle forme unite e cercano
+  su Wikidata anche con quelle; la nota delle unioni non abbassa l'affidabilità.
+- Correzioni puntuali in `persone_curatore.tsv`: non persone (Forum Iulii, Ecclesia Aquileiensis, Thesaurus,
+  Natale, incipit sanscriti), Geremia profeta, B. Vergine (Madonna), Vidussio Carnico, Morandi / Serravallo,
+  Giovanni Girolamo Gradenigo.
+- Famiglia di Girolamo (Gerolamo, Geronimo, Hieronimo, Hieronymus, Zerolamo…) tra le varianti equivalenti.

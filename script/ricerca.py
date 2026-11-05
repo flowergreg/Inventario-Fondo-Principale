@@ -6,7 +6,8 @@ Indice (`costruisci_indice`), esportato in JSON:
 - espansioni: parola normalizzata → altre parole normalizzate equivalenti, dal lessico
   (forma ↔ forma normalizzata: Zuan ↔ Giovanni, Udene ↔ Udine, Jac. → Giacomo, Jacopo),
   in senso diretto e inverso ma senza chiusura transitiva (Giacomo trova Jac., non ogni Jacopo),
-  più le varianti equivalenti dei nomi di battesimo di entita.py (Ludovico ↔ Lodovico);
+  più le varianti equivalenti dei nomi di battesimo di entita.py (Ludovico ↔ Lodovico) e le grafie
+  di famiglia confermate dal curatore (Delfino ↔ Dolfin);
 - entità: tipo, intestazione, stato, identificativo Wikidata, varianti normalizzate
   (testo, correzioni, lessico, fonti esterne) e menzioni (voce, sede, inizio, fine).
 
@@ -116,6 +117,16 @@ def costruisci_indice(db=DB):
         for x in g:
             esp[x] |= g - {x}
 
+    # grafie di famiglia decise dal curatore (fase 6, unioni_curatore.tsv, tipo «cognome»):
+    # Delfino ↔ Dolfin, Sommariva ↔ Summaripa
+    import csv
+    for r in csv.DictReader(open(RADICE / "dati" / "liste" / "unioni_curatore.tsv", encoding="utf-8"), delimiter="\t"):
+        if r["tipo"] == "cognome" and r["decisione"] == "sì":
+            a, b = chiave(r["forma_a"]), chiave(r["forma_b"])
+            if len(a) == 1 and len(b) == 1 and a != b:
+                esp[a[0]].add(b[0])
+                esp[b[0]].add(a[0])
+
     # entità con varianti e menzioni
     entita = []
     stato_id = {}
@@ -123,6 +134,8 @@ def costruisci_indice(db=DB):
         stato_id[eid] = len(entita)
         entita.append({"i": eid, "t": tipo, "f": intest, "st": stato, "v": set(), "m": [], "q": None})
     for eid, forma in con.execute("SELECT entita, forma FROM varianti"):
+        if re.search(r"\s(?:e|ed)\s", forma) and entita[stato_id[eid]]["t"] == "persona":
+            continue           # «Girolamo e Lorenzo Carboni»: più persone, la variante confonderebbe i nomi
         k = " ".join(chiave(forma))
         if k:
             entita[stato_id[eid]]["v"].add(k)
