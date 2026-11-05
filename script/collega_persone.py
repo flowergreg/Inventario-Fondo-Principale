@@ -40,7 +40,7 @@ from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from normalizza import forme_unite, normalizza  # noqa: E402
+from normalizza import altre_intestazioni, normalizza  # noqa: E402
 from collega_luoghi import sparql, valore  # noqa: E402
 
 RADICE = Path(__file__).resolve().parent.parent
@@ -210,7 +210,9 @@ def main():
     # luoghi del Friuli e del Veneto: comuni ISTAT e località GeoNames delle due regioni (non Roma o il Somerset)
     regionali = luoghi_regionali() | geonames_regionali()
     cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {"forme": {}}
-    entita = con.execute("SELECT id, forma_intestazione, nota FROM entita WHERE tipo='persona'").fetchall()
+    entita = con.execute("SELECT id, forma_intestazione, nota, alias FROM entita WHERE tipo='persona'").fetchall()
+    altre = {eid: altre_intestazioni(alias, nota) for eid, _, nota, alias in entita}
+    entita = [(eid, intest, nota) for eid, intest, nota, _ in entita]
     # anni citati nelle voci in cui compare ogni entità
     # anni scritti vicino alle menzioni (200 caratteri prima e dopo), non in tutta la voce:
     # nelle voci lunghe gli anni della voce intera coprono secoli
@@ -221,7 +223,7 @@ def main():
         vicino = (testo or "")[max(0, ini - 200):fin + 200]
         anni[eid] |= {int(a) for a in RX_ANNO.findall(vicino) if 1000 <= int(a) <= 1999}
     # anche le forme unite dal curatore (fase 6): «Teck, Ludovico» dentro «Tech, Ludovico»
-    forme = {eid: list(dict.fromkeys(f for x in [intest] + forme_unite(nota_e) for f in forme_di_ricerca(x)))
+    forme = {eid: list(dict.fromkeys(f for x in [intest] + altre[eid] for f in forme_di_ricerca(x)))
              for eid, intest, nota_e in entita}
     print(f"Ricerca su Wikidata di {sum(len(f) for f in forme.values())} forme…", file=sys.stderr)
     cerca([f for ff in forme.values() for f in ff], cache)
@@ -235,7 +237,7 @@ def main():
     dettagli_forzati(forzati, cache)
     rimandi = []
     for eid, intest, nota_e in entita:
-        m = next((manuali[x] for x in [intest] + forme_unite(nota_e) if x in manuali), None)
+        m = next((manuali[x] for x in [intest] + altre[eid] if x in manuali), None)
         if m and re.fullmatch(r"Q\d+", m["qid"] or ""):
             c = cache["qid"][m["qid"]]
             risultati[eid] = (intest, (0, [m["nota"]], c), "alta", [(0, [], c)], [m["nota"]])

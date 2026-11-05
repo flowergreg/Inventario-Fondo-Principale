@@ -6,7 +6,7 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 4020 | 596 | 7391 |
+| persona | 4009 | 601 | 7391 |
 | luogo | 560 | 64 | 4563 |
 | santo | 199 | 32 | 479 |
 
@@ -25,6 +25,7 @@ Le menzioni con iniziali non sono state unite: indica a quale persona appartengo
 - **Colloredo, F.** — _iniziali compatibili con più persone: Colloredo, Fabio; Colloredo, Filippo_: F. di Colloredo (524)
 - **Frangipane, C.** — _iniziali compatibili con più persone: Frangipane, Cinzio; Frangipane, Cornelio; Frangipane, Cristoforo_: C. Frangipane (868, 896, 2458)
 - **Galvani, A.** — _iniziali compatibili con più persone: Galvani, Andrea; Galvani, Antonio_: Galvani A. (132)
+- **Manin, G.** — _iniziali compatibili con più persone: Manin, Giulio; Manin, Zuane_: G. Manin (931)
 - **Porcia, G.** — _iniziali compatibili con più persone: Porcia, Giovanni; Porcia, Girolamo_: G. di Porcia (3911)
 - **Rizzi, A.** — _iniziali compatibili con più persone: Rizzi, Amadio; Rizzi, Ambrogio_: A. Rizzi (875)
 - **Sacchi, G.** — _iniziali compatibili con più persone: Sacchi, Giovenale; Sacchi, Giuseppe_: G. Sacchi (4108)
@@ -40,7 +41,7 @@ Famiglie con omonimi noti: l'entità può riunire più persone.
 - **Della Torre, Lucio** — _famiglia con omonimi noti: controllare_: Della Torre Lucio (541); Lucio della Torre (554, 723, 825, 3859)
 - **Della Torre, Raimondo** — _famiglia con omonimi noti: controllare_: Aquileja di Raimondo Della Torre (636); Della Torre Raimondo (541); Raimondo della Torre (606, 636, 637, 652, 667, 1743)
 - **Della Torre, Sigismondo** — _famiglia con omonimi noti: controllare_: Della Torre Sigismondo (541); Sigismondo Della Torre (554); Sigismondo della Torre (1000, 4287)
-- **Florio, Daniel** — _cognome che è anche nome di battesimo: ordine dedotto; famiglia con omonimi noti: controllare_: Daniel Florio (23); Daniele (820, 3578); Daniele Florio (23, 91, 324, 403, 639, 3785); Daniello Florio (507); Florio Co. Daniele (195, 196); Florio Daniele (173, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 214, 215, 216, 217, 218, 219, 220)
+- **Florio, Daniele** — _cognome che è anche nome di battesimo: ordine dedotto; famiglia con omonimi noti: controllare_: Daniel Florio (23); Daniele (820, 3578); Daniele Florio (23, 91, 324, 403, 639, 3785); Daniello Florio (507); Florio Co. Daniele (195, 196); Florio Daniele (173, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 214, 215, 216, 217, 218, 219, 220)
 - **Florio, Filippo** — _cognome che è anche nome di battesimo: ordine dedotto; famiglia con omonimi noti: controllare_: Filippo Florio (90, 476, 593, 616)
 - **Florio, Francesco** — _cognome che è anche nome di battesimo: ordine dedotto; famiglia con omonimi noti: controllare_: Florio Francesco (470, 485); Florio Mons. Francesco (605); Francesco Florio (464, 477, 486, 601, 605, 649, 719)
 - **Florio, Franco** — _cognome che è anche nome di battesimo: ordine dedotto; famiglia con omonimi noti: controllare_: Franco Florio (131)
@@ -165,7 +166,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Capello, Lorenzo**: Lorenzo Capello (3790)
 - **Capello, Pietro**: L. T. Pietro Capello (568); Pietro Cappello e Leonardo Emo (999)
 - **Carlo, Ercole Colla**: Carlo Ercole Colla (487)
-- **Carlo, Fabricio**: Carlo Fabricio (883)
 - **Carlo, Leoni**: Carlo Leoni (497)
 - **Carlo, Magno**: Carlo Magno (563, 603, 610, 2632/14)
 - **Carlo, Marin**: Carlo Marin (3980, 3981, 3982, 3982/bis, 3983)
@@ -239,7 +239,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Evangelista, Pompeo**: Evangelista Pompeo (306)
 - **Fabricius, Carolus**: Carolus Fabricius (600)
 - **Fabrizio, C. G.**: C. G. Fabrizio (906)
-- **Fabrizio, Carlo**: Carlo Fabrizi (601); Carlo Fabrizio (443); Fabrizi Carlo (599, 600); Fabrizio Carlo (443, 444, 445)
+- **Fabrizio, Carlo**: Carlo Fabricio (883); Carlo Fabrizi (601); Carlo Fabrizio (443); Fabrizi Carlo (599, 600); Fabrizio Carlo (443, 444, 445)
 - **Fabrizio, Nicolò**: Nicolò Fabrizio (16)
 - **Fantina, Filippo Maria**: D. Filippo Maria Fantina (593)
 - **Fantino, Francesco**: Francesco Fantino (4286)
@@ -247,7 +247,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Felice, Gian**: Gian Felice (495)
 - **Ferrante, Feliciano**: Feliciano Ferrante (4108)
 - **Fiamma, Gabriel**: Gabriel Fiamma (639)
-- **Florio, Daniel**: Daniel Florio (23); Daniele (820, 3578); Daniele Florio (23, 91, 324, 403, 639, 3785); Daniello Florio (507); Florio Co. Daniele (195, 196); Florio Daniele (173, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 214, 215, 216, 217, 218, 219, 220)
+- **Florio, Daniele**: Daniel Florio (23); Daniele (820, 3578); Daniele Florio (23, 91, 324, 403, 639, 3785); Daniello Florio (507); Florio Co. Daniele (195, 196); Florio Daniele (173, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 214, 215, 216, 217, 218, 219, 220)
 - **Florio, Filippo**: Filippo Florio (90, 476, 593, 616)
 - **Florio, Francesco**: Florio Francesco (470, 485); Florio Mons. Francesco (605); Francesco Florio (464, 477, 486, 601, 605, 649, 719)
 - **Florio, Franco**: Franco Florio (131)
@@ -270,13 +270,13 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Giulia, Venezia**: Venezia Giulia (3848)
 - **Giustiniano, Girolamo Ascanio**: Gerolamo Ascanio Giustiniano (501)
 - **Giustiniano, Leonardo**: Leonardo Giustiniano (10)
+- **Gregor, I.**: I. Gregor (761)
 - **Guerra, Giovanni Domenico**: D. Guerra (632); G. Dom.co Guerra (476); Gian Domenico Guerra (914); Giandomenico Guerra (601); Gio. Domenico Guerra (525)
 - **Guglielmo, Baldassarre**: Baldassare Guglielmo (467)
 - **Guglielmo, Giovanni**: d'Aquileia Giovanni Guglielmo (1459)
 - **Guibert, Adrien**: Guibert Adrien (518)
 - **Haydn, Giuseppe**: Giuseppe Haydn (3319); Haydn Giuseppe (3242, 3246, 3247, 3264, 3319, 3442)
 - **Innocente, Valentino**: Valentino Innocente (3956)
-- **Iulianus, Gregor**: I. Gregor (761)
 - **Janis, Nicolò**: Nicolò Janis (1462)
 - **Lady, Paola**: Lady Paola (2631/5)
 - **Lando, Vitale**: Vitale Lando (3790)
@@ -359,6 +359,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Rossi, Augusto**: Augusto (4199)
 - **Rossi, Cristoforo**: Cristoforo Rossi (651)
 - **Rossi, Enrico**: Enrico (3967)
+- **Rossi, Gian Vittorio**: Jani Nicii Erythrei Pinacotheca (619)
 - **Rossi, Giuseppe**: Giuseppe Rossi (577)
 - **Rossi, Lazzaro**: Rossi Lazzaro (1899)
 - **Rossi, Valerio**: Valerio Rossi (695, 696); Valerio Rossi di Maniago (694)
@@ -457,7 +458,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Beltrame, Giuseppe**: G. Beltrame (338, 1426, 1427); Giuseppe Beltrame (340, 866)
 - **Beretta, Antonio**: A. Beretta (524, 3591); Ant.o Beretta (476); Ant.° cav. Beretta (487); Beretta cav. Antonio (2134)
 - **Beretta, Francesco**: Beretta co. Francesco (518, 1668); Fr.° Beretta (601); Franc.° Beretta (485); Francesco Beretta (15, 485, 619, 771, 1668)
-- **Berghinz, Raffaello**: Berghinz Raffaello (2175); Berghinz, Raffaele (3665, 3666, 3667); R. Berghinz (2415)
+- **Berghinz, Raffaele**: Berghinz Raffaello (2175); Berghinz, Raffaele (3665, 3666, 3667); R. Berghinz (2415)
 - **Bernardi, Jacopo**: Bernardi ab. Jacopo (492); J. Bernardi (4108)
 - **Bini, Giuseppe**: Bini Giuseppe (464, 525, 598, 2134); Bini Msgr. Giuseppe (616); G. Bini (879); Giuseppe Bini (470, 485, 601, 811, 877, 1047, 1379, 4232)
 - **Biondelli, Bernardino**: Biondelli B. (487); Biondelli Bernardino (518)
@@ -527,7 +528,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Lodi, Emanuele**: E. Lodi (1545); Em. Lodi (511); Eman. Lodi (471, 1224); Emanuele Lodi (2263, 2520, 3636); Emanuele Lodi Episcopo Utinensi Parochialem (186); Emmanuele Lodi (491); Lodi Emanuele (2134, 2392)
 - **Loschi, Giuseppe**: G. Loschi (2630/11, 2631/1, 2631/11, 2631/2, 2631/3, 2631/4, 2631/5, 2631/6, 2631/7, 2631/8, 2631/9, 2632/14, 2633/16, 2633/17, 2633/18, 2633/19, 2633/21, 2634/1, 2634/16, 2634/17, 2634/2, 2634/5, 2635/12, 2635/13, 2635/14, 2635/17, 2635/17 bis, 2635/18, 2635/8, 2637/9, 2639/14-22); Gius. (2637/15); Gius. Loschi (2630/6, 2630/8, 2631/10, 2634/11, 2634/15, 2634/9); Giuseppe (2634/17); Giuseppe Loschi (2630/1, 2630/10, 2630/12, 2630/2, 2630/3, 2630/4, 2630/5, 2630/7, 2630/9, 2635/10); Loschi, Gius. Sulla (2637/20); Loschi, Giuseppe (2632/15, 2633/22, 2633/23, 2633/24, 2634/10, 2634/13, 2634/14, 2634/6, 2634/7, 2634/8, 2635/1, 2635/11, 2635/12, 2635/15, 2635/16, 2635/16 bis, 2635/19, 2635/2, 2635/20, 2635/21, 2635/3, 2635/6, 2635/7, 2635/9, 2637/1, 2637/20, 2637/7, 2637/8, 2638/1, 2638/2, 2639/4)
 - **Manara, Giovanni Orti**: G. Orti Manara (487); Gio. Orti Manara (492)
-- **Manin, Giulio**: G. Manin (931); Giulio Manin (102)
 - **Manzini, Giuseppe**: G. Manzini (4130); Manzini, Giuseppe (3919)
 - **Manzoni, Alessandro**: A. Manzoni (337, 1963); Alessandro Manzoni (497); Manzoni A. (291); Manzoni Alessandro (471)
 - **Marcotti, Giuseppe**: G. Marcotti (4238, 4254); Gius. Marcotti (2642); Giuseppe Marcotti (2604, 2642, 3591, 4254)
@@ -567,7 +567,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Rizzardi, Giuseppe**: G. Rizzardi (1185); Rizzardi Giuseppe (464)
 - **Roberti, Giambattista**: Giambattista Roberti (482); Roberti G. B. (598)
 - **Rossini, Gioachino**: Gioacchino Rossini (3284); Gioachino Rossini (3309, 3342, 3359/A, 3413, 3454, 3475); Rossini G. (3443, 3458, 3483, 3485); Rossini Gioachino (2893, 3284, 3303, 3309, 3324, 3342, 3359/A, 3413, 3454, 3475); Rossini, Gioacchino (4272)
-- **Rubeis, Flaminius**: Fl. de Rubeis (1054); Flaminio de Rubeis (1057, 1114); Flaminius de Rubeis (606)
+- **Rubeis, Flaminio**: Fl. de Rubeis (1054); Flaminio de Rubeis (1057, 1114); Flaminius de Rubeis (606)
 - **Sagredo, Nicolò**: N. Sagredo (1224); Nicolò Sagredo (768); Sagredo Nicolò (464)
 - **Savorgnan, Girolamo**: Antonio e Girolamo Savorgnan (2000); Gerolamo Savorgnano (466); Gerolamo Savorgnán (2396); Girolamo Savorgnan (1495); Girolamo Savorgnano (468); Girolamo di Savorgnan (2000); Savorgnan della Bandiera Girolamo (541); Savorgnano di G. (949)
 - **Scrosoppi, Antonio**: A. Scrosoppi (2695); Antonio Scrosoppi (3803)
@@ -630,6 +630,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Bombig, Antonio**: Antonio Bombig (4204); Bombig, Antonio (4204)
 - **Bondi, Clemente**: Bondi Clemente (304); Clemente (824); Clemente Bondi (323)
 - **Bondurand, Alexis**: Alexis Bondurand (2483); Bondurand Alexis (2483)
+- **Bonini, Pietro**: Piero Bonini (497, 3591); Pietro Bonini (497)
 - **Bonoris, Cesare**: Bonoris, Cesare (3965); Cesare Bonoris (3976, 3977)
 - **Bragato, Giuseppe**: Bragato, Giuseppe (3631, 3632, 3648); Giuseppe Bragato (3956)
 - **Braida, Pietro**: Braida Pietro (1382, 1383); Pietro Braida (469, 471, 476, 482, 1020, 1034, 1381, 1382, 1547, 2022)
@@ -651,6 +652,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Capuzzi, Antonio**: Antonio Capuzzi (3363); Capuzzi Antonio (3363)
 - **Carli, Gian Rinaldo**: Gian Rinaldo (701); Gian Rinaldo Carli (485)
 - **Carlo X**: Carlo Decimo (3788); Carlo X (1194)
+- **Carnico, Giulio**: De Julio Carnico (759); Giulio Carnico (525)
 - **Carreri, F. C.**: Carreri F. C. (1531, 2314); F. C. Carreri (758, 1530)
 - **Casi, Agostino**: Agostino Casi (494); Casi can. Agostino (1718)
 - **Casioli, Luigi**: Casioli Luigi (3153); Luigi Casioli (3153)
@@ -659,6 +661,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Ceclina, Francesco**: Ceclina Francesco (119, 126, 127, 157); Ceclina co. Francesco (149)
 - **Cernazai, Francesco**: Franc. Cernazai (495); Francesco Cernazai (495)
 - **Cervellini, Giuseppe**: Cervellini D. Giuseppe (3431, 3432, 3433); D. Giuseppe Cervellini (3431)
+- **Cesarotti, Melchiorre**: Melchior Cesarotti (185, 482); Melchiorre Cesarotti (248, 2494)
 - **Ciani, Giuseppe**: Ciani ab. Giuseppe (339); Giuseppe Ciani (492)
 - **Ciconi, Teobaldo**: Ciconi Teobaldo (87, 2134); Ciconi, Teobaldo (2551); Teobaldo Ciconi (338)
 - **Cicuta, Lorenzo**: Cicuta Don Lorenzo (438, 439); Cicuta Lorenzo (437, 527); Lorenzo Cicuta (440)
@@ -674,6 +677,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Concina, Nicolò**: Concina Nicolò (464); Niccolò Concina (547); Nicolò Concina (475)
 - **Corgnali, G. B.**: G. B. (3821, 3822); G. B. Corgnali (2609, 2658, 3714, 3934)
 - **Corgnali, G. Battista**: Corgnali, G. Batta (2608); Corgnali, G. Battista (3920)
+- **Cornaro, Giovanni**: Giovanni Cornaro (480, 3790); Zuane Cornaro (23)
 - **Corner, Carlo**: Carlo Corner (568); L. T. Carlo Corner (568)
 - **Cossio, Daniele**: Cossio co. Daniele (1896); Daniele Cossio (1953)
 - **Degani, Ernesto**: Degani can. Ernesto (1591); Ernesto Degani (3913)
@@ -700,6 +704,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Frangipane, Cornelio**: Cornelio Frangipane (102, 405, 511, 1544); Frangipane Cornelio (339, 423, 424, 568)
 - **Frangipane, Luigi**: Frangipane Luigi (2443); Frangipane march. Luigi (1592, 1593); Luigi Frangipane (42, 720, 810, 1503, 2481, 2482, 3745)
 - **Fusinato, Arnaldo**: Arnaldo Fusinato (2537, 3913); Fusinato Arnaldo (2134)
+- **Garzoni, Pietro**: Garzoni Piero (483); Pietro Garzoni (1865)
 - **Gatteri, Giuseppe**: Gatteri, Giuseppe (3934); Giuseppe Gatteri (1669)
 - **Girardi, Giuseppe**: Girardi Giuseppe (518); Giuseppe Girardi (279, 339, 3788)
 - **Giuliano**: Chr. Jul (761); Julianus (760, 761, 762)
@@ -782,6 +787,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Pavona, Pietro**: D. Pietro Pavona (2799); Pavona Don Pietro (3452); Pavona Pietro (2714, 2798, 2799, 2800, 2801, 2802, 2803, 2804, 2805, 2806, 2807, 2808, 2809, 2810, 2811, 2812, 2813, 2814, 2815, 2816, 2817, 2818, 2819, 2820, 2821, 2822, 2823, 2824, 2825, 2826, 2827, 2828, 2829, 2830, 2831, 2832, 2833, 2834, 2835, 2836, 2837, 2838, 2839, 2840, 2841, 2842, 2843, 2844, 2845, 2846, 2847); Pietro Pavona (2714, 2800, 3452)
 - **Pellegrini, Giovanni Andrea**: Gio. Andrea Pellegrini (486); Pellegrini Gio. Andrea (464)
 - **Pellis, Ugo**: Pellis, Ugo (3646, 4281, 4282); Ugo Pellis (2404, 3591, 3624)
+- **Percuto, Pietro**: Piero Percuto (102); Pietro Percuto (102)
 - **Perosa, Albino**: Albino Perosa (4516); Perosa, Albino (4516)
 - **Perucchini, G. B.**: G. B. Perucchini (3451); Perucchini G. B. (3451)
 - **Perusini, Gaetano**: Gaetano (3626); Gaetano Perusini (4212); Perusini d.r Gaetano (2444)
@@ -823,7 +829,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Spilimbergo, Eusebio**: Eusebio Stella di Spilimbergo (347); Stella Eusebio di Spilimbergo (347)
 - **Sporeno, Giuseppe**: Giuseppe Sporeno (11, 102); Sporeno Giuseppe (97, 100)
 - **Sporeno, Plutarco**: Plutarco Sporeno (390); Sporeno Plutarco (346)
-- **Starzer, Alberto**: Starzer Alberto (2635/10); Starzer, Alberto (2635/10)
+- **Starzer, Alberto**: Starzer Alberto (2635/10); Starzer, Albert (2635/17); Starzer, Alberto (2635/10)
 - **Storia Medioevale, Ist.**: Ist. di Storia Medioevale (4235); Ist. di Storia dell'Arte Medioevale (4230)
 - **Strazzolini, Nicolò**: Niccolò (709); Nicolò Strazzolini (706)
 - **Sturolo, Gaetano**: Gaetano Sturolo (923); P. Gaetano Sturolo (718)
@@ -840,7 +846,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Valussi, Antonio**: Valussi Antonio (4173); Valussi, Antonio (4173)
 - **Valussi, Pacifico**: Pacifico (2559); Pacifico Valussi (491, 2604); Valussi, Pacifico (3800)
 - **Vandano, Luigi**: Luigi Vandano (3474); Vandano Luigi (3474)
-- **Vattolo, Gasparo**: Gaspare Vattolo (601); Gasparo Vattolo (470); Vattolo Gaspare (1410, 1411)
+- **Vattolo, Gaspare**: Gaspare Vattolo (601); Gasparo Vattolo (470); Vattolo Gaspare (1410, 1411)
 - **Vecchi, Germano**: De' Vecchi Germano (519); Germano (682)
 - **Venier, Maffio**: N. H. Maffio Venier (2688); Venier, Maffio (2688)
 - **Verzegnassi, Francesco**: Francesco (2559); Francesco Verzegnassi (2559)
@@ -1171,7 +1177,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3411 entità: elenco completo nella tabella `entita`.
+3395 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

@@ -56,7 +56,8 @@ CREATE TABLE entita (
     forma_intestazione TEXT NOT NULL,
     stato              TEXT NOT NULL DEFAULT 'proposto',   -- proposto | validato
     chiave             TEXT NOT NULL,      -- chiave di raggruppamento (per rigenerare e controllare)
-    nota               TEXT                -- segnalazioni per la revisione (omonimi, iniziali, grafie diverse)
+    nota               TEXT,               -- segnalazioni per la revisione (omonimi, iniziali, grafie diverse)
+    alias              TEXT                -- altre intestazioni (lette nelle menzioni o unite dal curatore), « | »
 );
 CREATE TABLE varianti (
     id                 INTEGER PRIMARY KEY,
@@ -124,6 +125,14 @@ EQUIVALENTI = {"rafaelo": "rafaele", "daniel": "daniele", "danielo": "daniele", 
                "gierolamo": "girolamo", "gerolimo": "girolamo", "girolimo": "girolamo", "zerolamo": "girolamo",
                "geronimo": "girolamo", "gieronimo": "girolamo", "ieronimo": "girolamo", "hieronimo": "girolamo",
                "hieronimus": "girolamo", "hieronimum": "girolamo", "hieronimi": "girolamo", "ieronimus": "girolamo"}
+# varianti dei nomi confermate dal curatore (fase 6, dati/liste/nomi_equivalenti.tsv): Petrus = Pietro,
+# Zuane = Giovanni, Beltrame = Bertrando. I nomi doppi «Giacomo o Jacopo» restano al lessico.
+for _r in csv.DictReader(open(LISTE / "nomi_equivalenti.tsv", encoding="utf-8"), delimiter="\t"):
+    if " o " not in _r["nome"]:
+        _a, _b = normalizza(_r["forma"]), normalizza(_r["nome"])
+        _b = EQUIVALENTI.get(_b, _b)
+        if _a != _b:
+            EQUIVALENTI[_a] = _b
 DEDOTTI = set()            # cognomi dedotti tra parole che sono anche nomi
 OCC_NOME = {}              # occorrenze delle parole classificate come nome di battesimo
 
@@ -657,6 +666,7 @@ def main():
             dest["note"] |= e["note"]
         dest["note"].add("ordine nome/cognome unificato tra le voci")
 
+    intestazioni_di_riferimento(entita)
     unisci_curatore(entita)
 
     # segnalazioni
@@ -676,6 +686,29 @@ def main():
     con.close()
 
 
+def intestazioni_di_riferimento(entita):
+    """L'intestazione nasce dalla prima menzione letta: «Cornaro, Zuane», «Garzoni, Piero». Se tra le
+    forme del testo c'è la stessa persona con il nome nella forma di riferimento (Giovanni, Pietro),
+    l'intestazione prende quella."""
+    def nomi(intest):
+        return (intest.split(", ", 1)[1] if ", " in intest else intest).split()
+
+    def varianti_nome(intest):
+        return sum(1 for w in nomi(intest) if EQUIVALENTI.get(normalizza(w), normalizza(w)) != normalizza(w))
+
+    def iniziali(intest):
+        return sum(1 for w in nomi(intest) if w.endswith(".") or len(w) == 1)
+    for (tipo, _), e in entita.items():
+        if tipo != "persona" or not e.get("viste") or not varianti_nome(e["intestazione"]):
+            continue
+        # mai una forma con iniziali al posto del nome intero («Mussafia, A.» non vale «Mussafia, Adolf»)
+        cand = [v for v in e["viste"] if iniziali(v) <= iniziali(e["intestazione"])
+                and len(nomi(v)) == len(nomi(e["intestazione"]))]
+        migliore = min(cand, key=lambda v: (varianti_nome(v), -e["viste"][v]), default=None)
+        if migliore and varianti_nome(migliore) < varianti_nome(e["intestazione"]):
+            e["intestazione"] = migliore
+
+
 def unisci_curatore(entita):
     """Unioni decise dal curatore nella fase 6 (dati/liste/unioni_curatore.tsv): grafie diverse
     raccolte sotto una sola forma di riferimento (Teck / Tech, Caetani / Gaetani) e forme con parole
@@ -685,6 +718,9 @@ def unisci_curatore(entita):
     per_intest = {}
     for k, e in entita.items():
         per_intest.setdefault((k[0], e["intestazione"]), k)
+    for k, e in entita.items():          # anche le altre forme lette (l'intestazione può essere cambiata)
+        for v in e.get("viste", ()):
+            per_intest.setdefault((k[0], v), k)
     padre = {}
 
     def radice(x):
@@ -715,6 +751,9 @@ def unisci_curatore(entita):
         kk.sort(key=lambda k: (-len(entita[k]["menzioni"]), len(entita[k]["intestazione"]), entita[k]["intestazione"]))
         dest = entita[kk[0]]
         unite = [entita[k]["intestazione"] for k in kk[1:]]
+        dest.setdefault("unite", set()).update(unite)
+        for k in kk[1:]:
+            dest["unite"].update(entita[k].get("viste", ()), entita[k].get("unite", ()))
         for k in kk[1:]:
             e = entita.pop(k)
             for v, rif in e["varianti"].items():
@@ -727,7 +766,10 @@ def unisci_curatore(entita):
         dest["note"].add("forme unite dal curatore: " + " | ".join(sorted(unite)))
     # grafie affini di persone diverse (Ricci / Rizzi): le entità restano distinte, ma ciascuna
     # riceve le forme del testo dell'altra come varianti, così la ricerca trova entrambe
-    per_intest = {(k[0], e["intestazione"]): k for k, e in entita.items()}
+    per_intest = {}
+    for k, e in entita.items():
+        for v in [e["intestazione"], *e.get("viste", ()), *e.get("unite", ())]:
+            per_intest.setdefault((k[0], v), k)
     for r in affini:
         a, b = per_intest.get((r["tipo"], r["forma_a"])), per_intest.get((r["tipo"], r["forma_b"]))
         if not a or not b:
@@ -753,6 +795,7 @@ def intestazione_persona(vista):
 
 
 def registra(e, mid, num, testo, corr, nomi, iniziali, cognomi, vista, multipla):
+    e.setdefault("viste", Counter())[intestazione_persona(vista)] += 1
     e["varianti"][(testo, "testo")].add(num)
     if corr:
         e["varianti"][(corr.strip("[] "), "correzione_curatore")].add(num)
@@ -782,8 +825,11 @@ def chiave_voce(n):
 
 def scrivi(con, entita):
     for (tipo, chiave), e in sorted(entita.items(), key=lambda x: (x[0][0], x[1]["intestazione"])):
-        cur = con.execute("INSERT INTO entita (tipo, forma_intestazione, stato, chiave, nota) VALUES (?,?,?,?,?)",
-                          (tipo, e["intestazione"], "proposto", chiave, "; ".join(sorted(e["note"])) or None))
+        alias = (set(e.get("viste", ())) | set(e.get("unite", ()))) - {e["intestazione"]}
+        cur = con.execute("INSERT INTO entita (tipo, forma_intestazione, stato, chiave, nota, alias) "
+                          "VALUES (?,?,?,?,?,?)", (tipo, e["intestazione"], "proposto", chiave,
+                                                   "; ".join(sorted(e["note"])) or None,
+                                                   " | ".join(sorted(alias)) or None))
         eid = cur.lastrowid
         e["id"] = eid
         in_testo = {f for (f, o) in e["varianti"] if o == "testo"}

@@ -41,3 +41,9 @@ def forme_unite(nota):
 def nota_senza_unioni(nota):
     """La nota dell'entità senza l'elenco delle forme unite: quell'elenco non è un segnale d'incertezza."""
     return "; ".join(p for p in (nota or "").split("; ") if p and not p.startswith(UNITE)) or None
+
+
+def altre_intestazioni(alias, nota=None):
+    """Altre intestazioni dell'entità (colonna «alias» e forme unite nella nota): le decisioni manuali
+    prese per una di esse valgono anche quando l'intestazione cambia."""
+    return [x.strip() for x in (alias or "").split(" | ") if x.strip()] + forme_unite(nota)

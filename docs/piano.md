@@ -164,3 +164,14 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
   Natale, incipit sanscriti), Geremia profeta, B. Vergine (Madonna), Vidussio Carnico, Morandi / Serravallo,
   Giovanni Girolamo Gradenigo.
 - Famiglia di Girolamo (Gerolamo, Geronimo, Hieronimo, Hieronymus, Zerolamo…) tra le varianti equivalenti.
+
+## Fase 6 — nomi di battesimo, eseguito
+- `dati/liste/nomi_equivalenti.tsv` (forma, nome, nota, riferimento), dal tabellone
+  `revisione/fase6_nomi_curatore.xlsx`: 93 equivalenze (Petrus = Pietro, Zuane = Giovanni, Nicola = Nicolò,
+  Beltrame = Bertrando, Roland = Orlando…). entita.py le aggiunge alle varianti equivalenti (chiavi delle
+  entità e ricerca, in ogni direzione); i nomi «Giacomo o Jacopo» valgono solo per la ricerca, senza chiusura.
+  Escluse dal curatore: Alvise = Luigi, Zorzi = Giorgio, Erich = Erico.
+- Intestazioni: se l'intestazione contiene una variante (Zuane, Piero) e tra le forme lette c'è la forma di
+  riferimento con lo stesso numero di nomi e senza più iniziali, vince quest'ultima.
+- Colonna `entita.alias`: le altre intestazioni dell'entità (forme lette e forme unite). Unioni del curatore e
+  decisioni manuali di collegamento valgono per qualunque di esse, anche se l'intestazione cambia.

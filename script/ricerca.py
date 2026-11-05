@@ -25,6 +25,7 @@ Normalizzazione (CLAUDE.md): minuscole, niente accenti, j→i, y→i, doppie sem
 punteggiatura ignorata; le parole fatte solo di cifre romane maiuscole non si semplificano.
 """
 
+import csv
 import re
 import sqlite3
 import unicodedata
@@ -117,9 +118,18 @@ def costruisci_indice(db=DB):
         for x in g:
             esp[x] |= g - {x}
 
+    # nomi con due forme di riferimento («Jacobus» → «Giacomo o Jacopo»): come nel lessico, senza chiusura
+    for r in csv.DictReader(open(RADICE / "dati" / "liste" / "nomi_equivalenti.tsv", encoding="utf-8"), delimiter="\t"):
+        if " o " in r["nome"]:
+            f = chiave(r["forma"])
+            for alt in re.split(r"\s+o\s+", r["nome"]):
+                a = chiave(alt)
+                if len(f) == 1 and len(a) == 1:
+                    esp[f[0]].add(a[0])
+                    esp[a[0]].add(f[0])
+
     # grafie di famiglia decise dal curatore (fase 6, unioni_curatore.tsv, tipo «cognome»):
     # Delfino ↔ Dolfin, Sommariva ↔ Summaripa
-    import csv
     for r in csv.DictReader(open(RADICE / "dati" / "liste" / "unioni_curatore.tsv", encoding="utf-8"), delimiter="\t"):
         if r["tipo"] == "cognome" and r["decisione"] == "sì":
             a, b = chiave(r["forma_a"]), chiave(r["forma_b"])
