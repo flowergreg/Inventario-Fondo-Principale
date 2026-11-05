@@ -668,6 +668,7 @@ def main():
 
     intestazioni_di_riferimento(entita)
     unisci_curatore(entita)
+    varianti_curatore(entita)
 
     # segnalazioni
     for (tipo, chiave), e in entita.items():
@@ -707,6 +708,30 @@ def intestazioni_di_riferimento(entita):
         migliore = min(cand, key=lambda v: (varianti_nome(v), -e["viste"][v]), default=None)
         if migliore and varianti_nome(migliore) < varianti_nome(e["intestazione"]):
             e["intestazione"] = migliore
+
+
+def varianti_curatore(entita):
+    """Forme indicate dal curatore che non compaiono nel testo ma portano alla stessa forma di
+    riferimento (dati/liste/varianti_curatore.tsv): Geronimiano, Germiniano e Graziani Publio Augusto
+    per Agostino de Gerolami; Bonaparte per Napoleone I. L'entità si cerca per intestazione o per una
+    delle sue altre forme, senza badare a particelle, maiuscole e punteggiatura."""
+    def chiave_i(x):
+        return frozenset(w for w in normalizza(x.replace(",", " ")).split()
+                         if w not in {"di", "de", "da", "d", "del", "della", "dei", "von", "van"})
+    indice = {}
+    for k, e in entita.items():
+        for v in [e["intestazione"], *e.get("viste", ()), *e.get("unite", ())]:
+            indice.setdefault((k[0], chiave_i(v)), k)
+    mancanti = []
+    for r in csv.DictReader(open(LISTE / "varianti_curatore.tsv", encoding="utf-8"), delimiter="\t"):
+        k = indice.get((r["tipo"], chiave_i(r["intestazione"])))
+        if not k:
+            mancanti.append(r["intestazione"])
+            continue
+        entita[k]["varianti"][(r["forma"], "manuale")].add("curatore" + (f": {r['nota']}" if r["nota"] else ""))
+    if mancanti:
+        print(f"  varianti del curatore non applicate (intestazione non trovata): {'; '.join(mancanti)}",
+              file=sys.stderr)
 
 
 def unisci_curatore(entita):

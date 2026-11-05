@@ -175,3 +175,14 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
   riferimento con lo stesso numero di nomi e senza più iniziali, vince quest'ultima.
 - Colonna `entita.alias`: le altre intestazioni dell'entità (forme lette e forme unite). Unioni del curatore e
   decisioni manuali di collegamento valgono per qualunque di esse, anche se l'intestazione cambia.
+
+## Fase 6 — blocco 2 (correzioni), eseguito
+- `revisione/fase6_2_correzioni.csv` (decisioni del curatore, con colonna «verifica e fonti»): 85 righe
+  applicate in `persone_curatore.tsv` (scomposizioni sbagliate, non persone, nomi invertiti), una unione
+  (Corgnali) in `unioni_curatore.tsv`, Brazzà distinto da Brazzacco (`normalizzazioni_curatore.tsv`) e
+  classificazioni per voce (`classificazioni_manuali.tsv`: Brazzà 1235 famiglia, 3931 predicato; «Este» 2003-2005).
+- Nuova lista `dati/liste/varianti_curatore.tsv` (tipo, intestazione, forma, nota): forme indicate dal curatore
+  che non compaiono nel testo (Geronimiano, Germiniano, Graziani Publio Augusto per Agostino de Gerolami;
+  Bonaparte; Midolini/Mijlinus…). entita.py le aggiunge come varianti `manuale` dell'entità.
+- Verifiche in rete prima delle proposte: Dizionario Biografico dei Friulani (ricerca limitata al sito) e fonti
+  generali; Wikidata solo via SPARQL, mai identificativi indovinati (Eleonora d'Este 1643-1722 = Q3721832).

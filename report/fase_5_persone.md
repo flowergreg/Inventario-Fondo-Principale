@@ -4,10 +4,10 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 701 |
-| media | 105 |
-| bassa | 29 |
-| nessuna | 3174 |
+| alta | 709 |
+| media | 108 |
+| bassa | 30 |
+| nessuna | 3128 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -71,6 +71,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Emiliani, Alessandro** (voci 63; anni ?–?) → [Q16558306](https://www.wikidata.org/wiki/Q16558306) Alessandro Emiliani (?–?): _religioso domenicano italiano_
 - **Emo, Leonardo** (voci 999; anni 1506–1507) → [Q109997055](https://www.wikidata.org/wiki/Q109997055) Leonardo Emo (?–?)
 - **Fabri, Domenico** (voci 301; anni ?–?) → [Q105634930](https://www.wikidata.org/wiki/Q105634930) Domenico Fabri (1711–1761): _filosofo italiano_
+- **Fabricius, Albert** (voci 603; anni 1754–1754) → [Q107620033](https://www.wikidata.org/wiki/Q107620033) Albert Fabricius (1676–1736)
 - **Fistulario, Paolo** (voci 346, 353, 389, 464; anni 1656–1834) → [Q129677081](https://www.wikidata.org/wiki/Q129677081) Paolo Fistulario (1703–1779): _politico e storico locale italiano (1703-1779)_ — Udine — nato o morto in Friuli/Veneto; date compatibili
   - altri: [Q109202135](https://www.wikidata.org/wiki/Q109202135) Paolo Fistulario (1570–1631): _magistrato e poeta friulano (1578-1631)_ — Udine [2]
 - **Florio, Daniele** (voci 23, 91, 173, 195; anni 1700–1928) → [Q55227681](https://www.wikidata.org/wiki/Q55227681) Daniele Florio (1710–1789): _erudito e poeta italiano_ — Udine — nato o morto in Friuli/Veneto; date compatibili
@@ -168,6 +169,10 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Volpato Morghen, Domenica** (voci 2134; anni ?–?) → [Q131242678](https://www.wikidata.org/wiki/Q131242678) Domenica Volpato Morghen (?–?)
 - **Zambelli, Giovanni Battista** (voci 338, 339; anni ?–?) → [Q94983500](https://www.wikidata.org/wiki/Q94983500) Giovanni Battista Zambelli (1826–?)
 - **Zane, Cristoforo** (voci 484; anni 1733–1745) → [Q118733383](https://www.wikidata.org/wiki/Q118733383) Cristoforo Zane (?–?): _editore, tipografo_
+- **Zorzi, Andrea** (voci 606; anni 1567–1593) → [Q108445457](https://www.wikidata.org/wiki/Q108445457) Andrea Zorzi (?–?): _vescovo cattolico_
+  - altri: [Q2755036](https://www.wikidata.org/wiki/Q2755036) Andrea Zorzi (1965–?): _pallavolista italiano_ — Noale [-1]; [Q123693964](https://www.wikidata.org/wiki/Q123693964) Andrea Zorzi (1959–?): _medievista italiano (1959-)_ — Ivrea [-3]
+- **Zorzi, Pietro Antonio** (voci 1903; anni 1793–1959) → [Q1081403](https://www.wikidata.org/wiki/Q1081403) Pietro Antonio Zorzi (1745–1803): _cardinale italiano_ — Novegradi, Udine — nato o morto in Friuli/Veneto; date compatibili
+  - altri: [Q94507033](https://www.wikidata.org/wiki/Q94507033) Pietro Antonio Zorzi il giovane (1766–1849) — Venezia [3]
 - **della Forza, Fabio** (voci 606, 608, 1033, 3575; anni 1567–1593) → [Q55884041](https://www.wikidata.org/wiki/Q55884041) Fabio Della Forza (1606–1691)
 
 ## 2. Candidati scartati (date incompatibili)
@@ -230,6 +235,8 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q1853260](https://www.wikidata.org/wiki/Q1853260) Marco Zen (1963–?): _ciclista su strada italiano_ — Bassano del Grappa [-1]
 - **Zorzi, Giuseppe** (voci 3112, 3113, 3114, 3115; anni 1824–1833)
   - altri: [Q88549088](https://www.wikidata.org/wiki/Q88549088) Giuseppe Zorzi (1938–2019): _ciclista italiano_ — Bologna, Cona [-1]; [Q93220656](https://www.wikidata.org/wiki/Q93220656) Giuseppe Zorzi (1956–?) [-3]
+- **de Comelli, Antonio** (voci 2707; anni 1804–1804)
+  - altri: [Q16527449](https://www.wikidata.org/wiki/Q16527449) Antonio Comelli (1920–1989): _politico italiano (1920-1998)_ — Nimis [-1]
 
 ## 3. Affidabilità alta
 
@@ -383,6 +390,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Carpani, Melchiorre** (voci 593; anni 1778–1783) → [Q55226584](https://www.wikidata.org/wiki/Q55226584) Melchiorre Carpani (1726–1797): _missionario_ — Lodi — date compatibili
 - **Carrara, Francesco** (voci 488, 492; anni 1836–1872) → [Q3749739](https://www.wikidata.org/wiki/Q3749739) Francesco Carrara (1812–1854): _archeologo italiano_ — Spalato, Venezia — confermato dal contesto
 - **Carrer, Luigi** (voci 492; anni 1836–1872) → [Q584388](https://www.wikidata.org/wiki/Q584388) Luigi Carrer (1801–1850): _giornalista, scrittore e poeta italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Casasola, Andrea** (voci 2330; anni 1856–1856) → [Q3615578](https://www.wikidata.org/wiki/Q3615578) Andrea Casasola (1806–1884): _arcivescovo cattolico italiano (1806-1884)_ — Buja, Manzano — nato o morto in Friuli/Veneto; date compatibili
 - **Cassetti, Giacomo** (voci 2134; anni ?–?) → [Q27999327](https://www.wikidata.org/wiki/Q27999327) Giacomo Cassetti (1682–1757): _scultore italiano_ — Dolo, Vicenza — nato o morto in Friuli/Veneto
 - **Cassiano, Giovanni** (voci 606; anni 1539–1539) → [Q313795](https://www.wikidata.org/wiki/Q313795) Giovanni Cassiano (360–435): _monaco e teologo_ — Scizia Minore, Marsiglia
 - **Cassola, Filippo** (voci 4114, 4117; anni 1965–1966) → [Q17279998](https://www.wikidata.org/wiki/Q17279998) Filippo Càssola (1925–2006): _storico dell'antichità italiano (1925-2006)_ — Napoli, Trieste — nato o morto in Friuli/Veneto; date compatibili
@@ -420,7 +428,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Cognolato, Gaetano** (voci 482; anni 1693–1792) → [Q55226751](https://www.wikidata.org/wiki/Q55226751) Gaetano Cognolato (1728–1802) — Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Colajanni, Napoleone** (voci 3591; anni 1853–1942) → [Q3870254](https://www.wikidata.org/wiki/Q3870254) Napoleone Colajanni (1847–1921): _scrittore e politico italiano (1847-1921)_ — lo scrittore e politico (1847-1921)
 - **Colloredo, Ermes** (voci 341, 342, 343, 344; anni 1690–1796) → [Q960864](https://www.wikidata.org/wiki/Q960864) Ermes di Colloredo (1622–1692): _poeta italiano_ — Colloredo di Monte Albano, Camino al Tagliamento — nato o morto in Friuli/Veneto; date compatibili
-- **Colloredo, Fabio** (voci 639; anni 1739–1739) → [Q3737885](https://www.wikidata.org/wiki/Q3737885) Fabio di Colloredo (1672–1742): _arcivescovo cattolico italiano_ — Colloredo di Monte Albano, Lucca — nato o morto in Friuli/Veneto; date compatibili
+- **Colloredo, Fabio** (voci 639, 819; anni 1739–1886) → [Q3737885](https://www.wikidata.org/wiki/Q3737885) Fabio di Colloredo (1672–1742): _arcivescovo cattolico italiano_ — Colloredo di Monte Albano, Lucca — nato o morto in Friuli/Veneto; date compatibili
 - **Colloredo, Leandro** (voci 606; anni 1629–1686) → [Q3228648](https://www.wikidata.org/wiki/Q3228648) Leandro Colloredo (1639–1709): _cardinale italiano_ — Colloredo di Monte Albano, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Colloredo, Marzio** (voci 616; anni 1559–1640) → [Q109860245](https://www.wikidata.org/wiki/Q109860245) Marzio Colloredo (1530–1591): _soldato, diplomatico_ — Siena — date compatibili
 - **Comelli, Francesco** (voci 518, 606; anni 1694–1727) → [Q111901732](https://www.wikidata.org/wiki/Q111901732) Francesco Antonio Comelli (1753–1823): _organaro italiano (1753-1823)_ — Nimis, Udine — nato o morto in Friuli/Veneto
@@ -470,6 +478,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Delfino, Giovanni** (voci 161, 441, 465, 481; anni 1207–1762) → [Q3107157](https://www.wikidata.org/wiki/Q3107157) Giovanni Dolfin (1617–1699): _cardinale, patriarca cattolico e drammaturgo italiano (1617-1699)_ — Venezia, Udine — confermato dal contesto
 - **Delfino, Marco** (voci 481; anni ?–?) → [Q3015062](https://www.wikidata.org/wiki/Q3015062) Daniele Dolfin (1653–1704): _cardinale, nunzio apostolico e arcivescovo cattolico italiano (1653-1704)_ — Venezia, Brescia — nato o morto in Friuli/Veneto
 - **Delfino, Pietro** (voci 468; anni 1517–1568) → [Q3903841](https://www.wikidata.org/wiki/Q3903841) Pietro Dolfin (1444–1525): _abate e umanista italiano_ — Venezia, Murano — nato o morto in Friuli/Veneto; date compatibili
+- **Della Bona, Giovanni** (voci 3924; anni 1770–1770) → [Q17280061](https://www.wikidata.org/wiki/Q17280061) Giovanni Della Bona (1712–1786): _medico italiano_ — Perarolo di Cadore, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Della Bona, Giuseppe Domenico** (voci 491, 563; anni 1833–1860) → [Q61791430](https://www.wikidata.org/wiki/Q61791430) Giuseppe Domenico Della Bona (1790–1864): _storico italiano_ — Gorizia — nato o morto in Friuli/Veneto; date compatibili
 - **Delminio, Giulio Camillo** (voci 420, 421, 422, 1423; anni ?–?) → [Q331003](https://www.wikidata.org/wiki/Q331003) Giulio Camillo Delminio (1480–1544): _umanista e filosofo italiano_ — Portogruaro, Milano — nato o morto in Friuli/Veneto
 - **Depretis, Agostino** (voci 3971; anni 1860–1860) → [Q356711](https://www.wikidata.org/wiki/Q356711) Agostino Depretis (1813–1887): _politico italiano (1813-1887)_ — Cava Manara, Stradella — date compatibili
@@ -507,7 +516,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Fedele, Cassandra** (voci 102; anni ?–?) → [Q442458](https://www.wikidata.org/wiki/Q442458) Cassandra Fedele (1465–1558): _umanista italiana_ — Venezia — nato o morto in Friuli/Veneto
 - **Federici, Domenico** (voci 465; anni ?–?) → [Q22808336](https://www.wikidata.org/wiki/Q22808336) Domenico Federici (1633–1720): _religioso, diplomatico e letterato italiano (1633-1720)_ — Serrungarina, Fano — confermato dal contesto
 - **Feletto, Antonio** (voci 618; anni 1341–1651) → [Q68903466](https://www.wikidata.org/wiki/Q68903466) Antonio Feletto (?–1488): _vescovo cattolico italiano_ — confermato dal contesto
-- **Ferdinando I** (voci 488; anni 1831–1853) → [Q150611](https://www.wikidata.org/wiki/Q150611) Ferdinando I d'Asburgo (1503–1564): _re di Boemia e d'Ungheria (r. 1526-1564) e sovrano del Sacro Romano Impero (r. 1556-1564)_ — Alcalá de Henares, Vienna
+- **Ferdinando I** (voci 488, 2602; anni 1831–1853) → [Q150611](https://www.wikidata.org/wiki/Q150611) Ferdinando I d'Asburgo (1503–1564): _re di Boemia e d'Ungheria (r. 1526-1564) e sovrano del Sacro Romano Impero (r. 1556-1564)_ — Alcalá de Henares, Vienna
 - **Ferdinando IV** (voci 807, 2138, 2142; anni 1768–1796) → [Q313167](https://www.wikidata.org/wiki/Q313167) Ferdinando IV di Toscana (1835–1908): _ultimo granduca di Toscana (r. 1859-1860)_ — Firenze, Salisburgo
 - **Ferrari, Giovanni** (voci 1432; anni ?–?) → [Q3767219](https://www.wikidata.org/wiki/Q3767219) Giovanni Ferrari (1744–1826): _scultore italiano_ — Crespano del Grappa, Venezia — nato o morto in Friuli/Veneto
 - **Ferretti, Giovanni** (voci 3183; anni ?–?) → [Q3107173](https://www.wikidata.org/wiki/Q3107173) Giovanni Ferretti (1540–1609): _compositore italiano (1540-1609)_ — Venezia — nato o morto in Friuli/Veneto
@@ -583,7 +592,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Gregorio XII** (voci 1550, 1552; anni ?–?) → [Q227694](https://www.wikidata.org/wiki/Q227694) papa Gregorio XII (1335–1417): _205° vescovo di Roma e papa della Chiesa cattolica dal 1406 al 1415_ — Venezia, Recanati — nato o morto in Friuli/Veneto
 - **Grigoletti, Michelangelo** (voci 2418; anni ?–?) → [Q842033](https://www.wikidata.org/wiki/Q842033) Michelangelo Grigoletti (1801–1870): _pittore italiano_ — Pordenone, Venezia — nato o morto in Friuli/Veneto
 - **Grimani, Antonio** (voci 1088; anni 1521–1521) → [Q602332](https://www.wikidata.org/wiki/Q602332) Antonio Grimani (1435–1523): _doge della Repubblica di Venezia dal 1521 al 1523_ — Venezia — confermato dal contesto
-- **Grimani, Giovanni** (voci 467, 765, 1123, 1224; anni 1569–1629) → [Q3767436](https://www.wikidata.org/wiki/Q3767436) Giovanni Grimani (1506–1593): _patriarca cattolico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Grimani, Giovanni** (voci 467, 765, 792, 1123; anni 1569–1629) → [Q3767436](https://www.wikidata.org/wiki/Q3767436) Giovanni Grimani (1506–1593): _patriarca cattolico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Grimani, Marino** (voci 826; anni 1207–1719) → [Q1898567](https://www.wikidata.org/wiki/Q1898567) Marino Grimani (1489–1546): _cardinale e patriarca cattolico italiano_ — Venezia, Orvieto — patriarca d'Aquileia
 - **Grimani, Pietro** (voci 3780; anni 1687–1748) → [Q786457](https://www.wikidata.org/wiki/Q786457) Pietro Grimani (1677–1752): _doge della Repubblica di Venezia_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Grion, Giusto** (voci 394, 524; anni 1688–1688) → [Q94295093](https://www.wikidata.org/wiki/Q94295093) Giusto Grion (1827–1904) — Trieste, Cividale del Friuli — nato o morto in Friuli/Veneto
@@ -637,6 +646,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Manin, Daniele** (voci 471; anni 1846–1887) → [Q1163753](https://www.wikidata.org/wiki/Q1163753) Daniele Manin (1804–1857): _patriota e politico italiano (1804-1857)_ — Venezia, ex II arrondissement di Parigi — nato o morto in Friuli/Veneto; date compatibili
 - **Manin, Leonardo** (voci 3719; anni 1525–1931) → [Q18758545](https://www.wikidata.org/wiki/Q18758545) Leonardo Manin (1771–1853): _letterato e numismatico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Manin, Lodovico** (voci 869, 1034; anni 1517–1802) → [Q458677](https://www.wikidata.org/wiki/Q458677) Ludovico Manin (1726–1802): _ultimo doge della Repubblica di Venezia_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Mansi, Giovanni Domenico** (voci 603; anni 1754–1754) → [Q939189](https://www.wikidata.org/wiki/Q939189) Giovanni Domenico Mansi (1692–1769): _arcivescovo cattolico, teologo e storico italiano_ — Lucca — date compatibili
 - **Mantica, Francesco** (voci 568, 606, 619; anni 1596–1608) → [Q3080997](https://www.wikidata.org/wiki/Q3080997) Francesco Mantica (1534–1614): _cardinale e giurista italiano (1534-1614)_ — Venzone, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Mantica, Germanico** (voci 619, 2275; anni ?–?) → [Q24288764](https://www.wikidata.org/wiki/Q24288764) Germanico Mantica (?–1639) — Adria — nato o morto in Friuli/Veneto
 - **Manuzio, Paolo** (voci 468, 524; anni 1561–1877) → [Q941151](https://www.wikidata.org/wiki/Q941151) Paolo Manuzio (1512–1574): _editore, tipografo e umanista italiano (1512-1574)_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
@@ -683,6 +693,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Milli, Giannina** (voci 3591; anni 1828–1931) → [Q3763686](https://www.wikidata.org/wiki/Q3763686) Giannina Milli (1825–1888): _scrittrice e poetessa italiana_ — Teramo, Firenze — date compatibili
 - **Minelli, Antonio** (voci 2559; anni 1854–1858) → [Q3619901](https://www.wikidata.org/wiki/Q3619901) Antonio Minelli (1798–1883): _tipografo e patriota italiano_ — Rovigo — nato o morto in Friuli/Veneto; date compatibili
 - **Mingarelli, Giovanni Luigi** (voci 598; anni 1766–1786) → [Q21545244](https://www.wikidata.org/wiki/Q21545244) Giovanni Luigi Mingarelli (1722–1793): _erudito, studioso_ — Grizzana, Bologna — date compatibili
+- **Minucci, Minuccio** (voci 564; anni 1592–1606) → [Q282495](https://www.wikidata.org/wiki/Q282495) Minuccio Minucci (1551–1604): _arcivescovo cattolico italiano_ — Serravalle, Monaco di Baviera — date compatibili
 - **Minzoni, Onofrio** (voci 824, 1140; anni 1788–1788) → [Q18115627](https://www.wikidata.org/wiki/Q18115627) Onofrio Minzoni (1734–1817): _poeta italiano_ — Ferrara — date compatibili
 - **Mocenigo, Tommaso** (voci 839; anni 1291–1765) → [Q654063](https://www.wikidata.org/wiki/Q654063) Tommaso Mocenigo (1343–1423): _doge della Repubblica di Venezia dal 1414 al 1423_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Molin, Alessandro** (voci 480; anni 1681–1747) → [Q71541037](https://www.wikidata.org/wiki/Q71541037) Alessandro Molin (?–?) — Venezia — nato o morto in Friuli/Veneto
@@ -691,7 +702,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Montagnone, Geremia** (voci 1409; anni ?–?) → [Q3761009](https://www.wikidata.org/wiki/Q3761009) Geremia da Montagnone (1250–1321): _umanista italiano_ — Padova — nato o morto in Friuli/Veneto
 - **Monteggia, Carlo** (voci 339; anni ?–?) → [Q134309852](https://www.wikidata.org/wiki/Q134309852) Carlo Monteggia (1801–1895): _poeta italiano (XIX secolo)_ — confermato dal contesto
 - **Montegnaco, Antonio** (voci 508, 643, 681, 878; anni 1570–1841) → [Q113847276](https://www.wikidata.org/wiki/Q113847276) Antonio Di Montegnacco (1699–1785): _ecclesiastico e giurista italiano_ — date compatibili
-- **Montelongo, Gregorio** (voci 626, 668, 1741, 1742; anni 1876–1876) → [Q3776550](https://www.wikidata.org/wiki/Q3776550) Gregorio da Montelongo (1200–1269): _patriarca cattolico italiano_ — Ferentino, Cividale del Friuli — nato o morto in Friuli/Veneto
+- **Montelongo, Gregorio** (voci 626, 668, 761, 1741; anni 1342–1876) → [Q3776550](https://www.wikidata.org/wiki/Q3776550) Gregorio da Montelongo (1200–1269): _patriarca cattolico italiano_ — Ferentino, Cividale del Friuli — nato o morto in Friuli/Veneto
 - **Monti, Vincenzo** (voci 18, 323, 336, 337; anni 1797–1832) → [Q723643](https://www.wikidata.org/wiki/Q723643) Vincenzo Monti (1754–1828): _poeta italiano_ — Alfonsine, Milano — date compatibili
 - **Monticoli, Nicolò** (voci 621, 651, 681, 878; anni 1273–1678) → [Q21548692](https://www.wikidata.org/wiki/Q21548692) Nicolo Monticoli (1464–1523) — date compatibili
 - **Mora, Bartolomeo** (voci 606; anni 1660–1731) → [Q28763735](https://www.wikidata.org/wiki/Q28763735) Bartolomeo Mora (?–?): _capitano della repubblica di Venezia_ — confermato dal contesto
@@ -758,7 +769,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Pilot, Antonio** (voci 3515; anni ?–?) → [Q17341053](https://www.wikidata.org/wiki/Q17341053) Antonio Pilot (1880–1930): _poeta veneziano (1880-1930)_ — confermato dal contesto
 - **Pindemonte, Giovanni** (voci 323, 338; anni ?–?) → [Q3767945](https://www.wikidata.org/wiki/Q3767945) Giovanni Pindemonte (1751–1812): _poeta e drammaturgo italiano_ — Verona — nato o morto in Friuli/Veneto
 - **Pindemonte, Ippolito** (voci 323; anni ?–?) → [Q1236766](https://www.wikidata.org/wiki/Q1236766) Ippolito Pindemonte (1753–1828): _poeta e letterato italiano_ — Verona — nato o morto in Friuli/Veneto
-- **Pio IX** (voci 804, 1385, 3534; anni 1793–1891) → [Q43720](https://www.wikidata.org/wiki/Q43720) papa Pio IX (1792–1878): _255° vescovo di Roma e papa della Chiesa cattolica dal 1846 al 1878_ — Senigallia, Palazzo Apostolico — date compatibili
+- **Pio IX** (voci 804, 1385, 3335, 3534; anni 1793–1891) → [Q43720](https://www.wikidata.org/wiki/Q43720) papa Pio IX (1792–1878): _255° vescovo di Roma e papa della Chiesa cattolica dal 1846 al 1878_ — Senigallia, Palazzo Apostolico — date compatibili
 - **Pio VI** (voci 31, 296, 476, 719; anni 1755–1796) → [Q128019](https://www.wikidata.org/wiki/Q128019) papa Pio VI (1717–1799): _250° vescovo di Roma e papa della Chiesa cattolica dal 1775 al 1799_ — Cesena, Valence — date compatibili
 - **Pio VII** (voci 822; anni 1816–1895) → [Q124754](https://www.wikidata.org/wiki/Q124754) papa Pio VII (1742–1823): _251° vescovo di Roma e papa della Chiesa cattolica dal 1800 al 1823_ — Cesena, Roma — date compatibili
 - **Pirona, Andrea Giulio** (voci 3, 7, 402, 471; anni 1532–1935) → [Q14886396](https://www.wikidata.org/wiki/Q14886396) Giulio Andrea Pirona (1822–1895): _naturalista, geologo e paleontologo italiano_ — Dignano, Udine — nato o morto in Friuli/Veneto; date compatibili
@@ -838,6 +849,8 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Sirani, Elisabetta** (voci 824; anni 1843–1848) → [Q271475](https://www.wikidata.org/wiki/Q271475) Elisabetta Sirani (1638–1665): _pittrice e incisora italiana (1638-1665)_ — Bologna
 - **Sisto V** (voci 1121; anni 1763–1763) → [Q133350](https://www.wikidata.org/wiki/Q133350) papa Sisto V (1521–1590): _227° vescovo di Roma e papa della Chiesa cattolica dal 1585 al 1590_ — Grottammare, Roma
 - **Sivori, Camillo** (voci 2134; anni ?–?) → [Q1029423](https://www.wikidata.org/wiki/Q1029423) Camillo Sivori (1815–1894): _violinista e compositore italiano_ — Genova
+- **Someda de Marco, Carlo** (voci 3848; anni 1940–1945) → [Q107280683](https://www.wikidata.org/wiki/Q107280683) Carlo Someda de Marco (1891–1975): _critico d'arte, pittore e storico dell'arte italiano_ — Mereto di Tomba, Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Someda de Marco, Pietro** (voci 4197, 4198, 4252, 4255; anni 1910–1928) → [Q128693025](https://www.wikidata.org/wiki/Q128693025) Pietro Someda de Marco (1891–1970): _notaio, scrittore, storico_ — Mereto di Tomba — nato o morto in Friuli/Veneto; date compatibili
 - **Sommariva, Giorgio** (voci 10; anni 1460–1470) → [Q18945373](https://www.wikidata.org/wiki/Q18945373) Giorgio Summaripa (1435–1497): _poeta e giurista italiano_ — Verona — nato o morto in Friuli/Veneto; date compatibili
 - **Sorrento, Luigi** (voci 3514, 3914; anni 1300–1944) → [Q5479807](https://www.wikidata.org/wiki/Q5479807) Luigi Sorrento (1884–1953): _linguista italiano (1884-1953)_ — Licata, Milano — date compatibili
 - **Spada, Virgilio** (voci 1190; anni ?–?) → [Q52154035](https://www.wikidata.org/wiki/Q52154035) Virgilio Spada (1596–1662): _disegnatore_ — Brisighella, Roma — confermato dal contesto
@@ -908,6 +921,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Visconti, Alfonso** (voci 596; anni 1589–1780) → [Q954559](https://www.wikidata.org/wiki/Q954559) Alfonso Visconti (1552–1608): _cardinale italiano_ — Milano, Macerata — confermato dal contesto
 - **Visconti, Filippo Maria** (voci 1100; anni 1425–1432) → [Q289285](https://www.wikidata.org/wiki/Q289285) Filippo Maria Visconti (1392–1447): _nobile italiano, ultimo duca di Milano della dinastia dei Visconti_ — Milano — confermato dal contesto
 - **Vittorelli, Jacopo** (voci 471; anni 1732–1820) → [Q1385125](https://www.wikidata.org/wiki/Q1385125) Iacopo Vittorelli (1749–1835): _poeta, librettista e letterato italiano_ — Bassano del Grappa, Milano — confermato dal contesto
+- **Vittorio Emanuele II** (voci 356, 3591; anni 1759–1906) → [Q168691](https://www.wikidata.org/wiki/Q168691) Vittorio Emanuele II di Savoia (1820–1878): _ultimo re di Sardegna (r. 1849-1861), poi primo re d'Italia (r. 1861-1878)_ — Torino, Roma — date compatibili
 - **Viviani, Quirico** (voci 337, 338, 340, 2490; anni 1832–1853) → [Q22988733](https://www.wikidata.org/wiki/Q22988733) Quirico Viviani (1780–1835): _scrittore_ — Farra di Soligo, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Volpi, Giovanni Antonio** (voci 114, 295; anni ?–?) → [Q3766475](https://www.wikidata.org/wiki/Q3766475) Giovanni Antonio Volpi (1686–1766): _critico letterario, editore e poeta italiano_ — Padova — nato o morto in Friuli/Veneto
 - **Zabeo, Giovanni Prosdocimo** (voci 482; anni 1693–1824) → [Q41618802](https://www.wikidata.org/wiki/Q41618802) Giovanni Prosdocimo Zabeo (1755–1828): _teologo (1753-1828)_ — Padova — nato o morto in Friuli/Veneto; date compatibili
@@ -922,6 +936,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Zoppi, Ottavio** (voci 3814; anni ?–?) → [Q3887261](https://www.wikidata.org/wiki/Q3887261) Ottavio Zoppi (1870–1962): _generale e politico italiano (1870-1962)_ — Novara, Milano — confermato dal contesto
 - **Zorutti, Pietro** (voci 385, 471, 491, 497; anni 1759–1944) → [Q2327335](https://www.wikidata.org/wiki/Q2327335) Pietro Zorutti (1792–1867): _poeta italiano_ — Dolegna del Collio, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Zucconi, Lodovico** (voci 558; anni 1765–1807) → [Q41618881](https://www.wikidata.org/wiki/Q41618881) Lodovico Zucconi (1706–1783): _1706-1783_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **d'Este, Eleonora** (voci 2003, 2004, 2005; anni ?–?) → [Q3721832](https://www.wikidata.org/wiki/Q3721832) Eleonora d'Este (1643–1722): _principessa e suora mantovana (1643-1722)_ — la carmelitana Maria Francesca dello Spirito Santo (1643-1722), non l'omonima del Cinquecento; verificato via SPARQL (fase 6)
 - **da Pordenone, Odorico** (voci 549, 825; anni 1347–1350) → [Q379733](https://www.wikidata.org/wiki/Q379733) Odorico da Pordenone (1286–1331): _presbitero e religioso italiano_ — Pordenone, Udine — nato o morto in Friuli/Veneto
 - **degli Azzoni, Rambaldo** (voci 619; anni 1773–1773) → [Q51144](https://www.wikidata.org/wiki/Q51144) Rambaldo degli Azzoni Avogaro (1719–1790): _storico e numismatico italiano (1719-1790)_ — Treviso — nato o morto in Friuli/Veneto; date compatibili
 - **degli Olivi, Enrico Palladio** (voci 622; anni 1737–1737) → [Q30087608](https://www.wikidata.org/wiki/Q30087608) Enrico Palladio degli Olivi (1580–1629): _medico e storico italiano_ — Udine — nato o morto in Friuli/Veneto
@@ -935,7 +950,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3174 persone
+## 4. Nessun candidato su Wikidata: 3128 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

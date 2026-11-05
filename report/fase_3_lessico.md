@@ -9,7 +9,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | abbreviazione | 0 | 2 | 0 | 281 | 283 | 606 |
 | cognome | 113 | 293 | 323 | 4879 | 5608 | 14372 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1833 |
-| luogo | 398 | 176 | 84 | 6 | 664 | 4517 |
+| luogo | 399 | 174 | 84 | 6 | 663 | 4512 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
 | nome_di_battesimo | 1254 | 145 | 0 | 0 | 1399 | 9273 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
@@ -22,7 +22,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 182.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 180.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -30,7 +30,6 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Utini | 30 | Udine | lista manuale | 523, 549, 561, 600, 606, 616, 621, 683 |
 | Sesto | 25 | Sesto al Reghena | contesto: badia di Sesto | 518, 606, 618, 666, 888, 1010, 1245, 1248 |
 | Moggio | 23 | Moggio Udinese | contesto: badia di Moggio | 518, 523, 525, 712, 1010, 1042, 1047, 1303 |
-| Brazzà | 19 | Brazzacco | curatore | 116, 117, 118, 339, 471, 590, 702, 1503 |
 | Forijulii | 11 | Friuli | lista manuale | 800, 885, 888, 970, 971, 972, 973, 974 |
 | Cargna | 8 | Carnia | lista manuale | 525, 655, 661, 663, 749, 3925 |
 | Rosa | 8 | Pieve di Rosa | contesto: «Pieve di Rosa», Camino al Tagliamento | 260, 1640, 2499, 2632/3, 4025, 4121, 4265 |
@@ -47,7 +46,6 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Tajedo | 4 | Taiedo | stessa forma normalizzata del nome ufficiale | 519, 525 |
 | Utinensi | 4 | Udine | lista manuale | 102, 622, 1628, 3867 |
 | Austriae | 3 | Austria | curatore | 568, 1537, 2521 |
-| Brazzà | 3 | Brazzacco | curatore | 1235, 3931 |
 | Butrio | 3 | Buttrio | GeoNames | 541, 568 |
 | Carintia | 3 | Carinzia | contesto | 518, 1367, 2685 |
 | Castelnuovo | 3 | Castelnovo del Friuli | contesto: feudi Savorgnan: Osoppo, Castelnuovo, Belgrado (2000) | 2000 |
@@ -691,11 +689,11 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
-| Albertum | 1 | Alberto | forma latina declinata di «Albertus» | 616 |
+| Albertum | 1 | Alberto | forma latina declinata di «Alberto» | 616 |
 | Andreae | 1 | Andrea | forma latina declinata di «Andrea» | 620 |
 | Antoninorum | 1 | Antonino | forma latina declinata di «Antoninus» | 819 |
 | Apostolorum | 1 | Apostolo | forma latina declinata di «Apostolus» | 2124 |
@@ -712,18 +710,18 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Bernardum | 1 | Bernardo | forma latina declinata di «Bernardo» | 606 |
 | Bortolamio | 1 | Bartolomeo | variante (lista manuale) | 606 |
 | Bortolomio | 1 | Bartolomeo | variante (lista manuale) | 473 |
-| Carolum | 1 | Carolo | forma latina declinata di «Carolus» | 617 |
+| Carolum | 1 | Carolo | forma latina declinata di «Carolo» | 617 |
 | Cesarea | 1 | — | Wikidata (la), forma italiana per regola | 606 |
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
 | Coronae | 1 | Corona | forma latina declinata di «Corona» | 3058 |
-| Darii | 1 | Dario | forma latina declinata di «Dario» | 194 |
+| Darii | 1 | Dario | forma latina declinata di «Darius» | 194 |
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
 | Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
-| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
-| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
+| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
+| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
 | Fr.co | 1 | Francesco | abbreviazione (lista manuale) | 1737 |
 | Fr.° | 1 | Francesco | abbreviazione (lista manuale) | 601 |
@@ -734,7 +732,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -770,10 +768,10 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Terrae | 1 | Terra | forma latina declinata di «Terra» | 2623/8 |
 | Tertij | 1 | — | forma latina declinata di «Tertius» | 562 |
 | Valentinorum | 1 | Valentino | forma latina declinata di «Valentinus» | 2277 |
-| Valentinum | 1 | Valentino | forma latina declinata di «Valentino» | 622 |
+| Valentinum | 1 | Valentino | forma latina declinata di «Valentinus» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
-| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |
+| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilius» | 11 |
 
 ## 4. Cognomi: varianti grafiche e correzioni del curatore
 
