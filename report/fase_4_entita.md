@@ -10,7 +10,7 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 | luogo | 560 | 63 | 4557 |
 | santo | 201 | 33 | 484 |
 
-Menzioni collegate a un'entità: 12412 su 20980. Senza entità: nome o cognome singolo 8300, parola o abbreviazione, non luogo 131, esclusa dal curatore 76, opera 43, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12412 su 20978. Senza entità: nome o cognome singolo 8298, parola o abbreviazione, non luogo 131, esclusa dal curatore 76, opera 43, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -207,7 +207,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Donato, Giovanni Battista**: Donato Giov. Battista (374)
 - **Donato, Lorenzo**: Lorenzo Donato (618)
 - **Donato, Nicolò**: Nicolò Donato (60)
-- **Donizetti, Gaetano**: C. Donizetti (4275); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
+- **Donizetti, Gaetano**: Donizetti (4275); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
 - **Doria, Baldassarre**: Doria Baldassare (1889)
 - **Dossi, Domenico**: Dossi Domenico (1657)
 - **Eber, G. B.**: Eber G.B. (2154)
@@ -483,7 +483,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **D'Aronco, Gianfranco**: D'Aronco, Gianfranco (3514, 3914); G. D'Aronco (3914, 4083)
 - **Dall'Ongaro, Francesco**: Dall'Ongaro F. (2262); Dall'Ongaro Francesco (86, 526); F. Dall'Ongaro (3995, 4108); Francesco Dall'Ongaro (2616)
 - **Deciani, Tiberio**: Tib. Deciani (1054); Tiberio (713); Tiberio Deciani (606, 1038, 1543)
-- **Donizetti, Gaetano**: C. Donizetti (4275); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
+- **Donizetti, Gaetano**: Donizetti (4275); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
 - **Erizo, Antonio**: P. A. Erizzo (130); P. Ant. Erizo (151); P. Ant. Erizzo Luog.te (208)
 - **Ferrazzi, Jacopo**: Ferrazzi Jacopo (487); J. Ferrazzi (4108)
 - **Feruglio, Angelo**: A. Feruglio (338); Ang. Feruglio (338); Angelo Feruglio (338); Feruglio ab. Angelo (1601, 1602)
@@ -571,7 +571,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Valvason, Jacopo**: J. di Valvasone (1571); Jacopo Valvason (102); Jacopo Valvason di Maniago (1490); Jacopo Valvasone (672); Jacopo Valvasone di Maniaco (525); Valvasón di Jacopo (1784)
 - **Verdi, Giuseppe**: Giuseppe Verdi (3350, 3358, 3434); Macbeth di Giuseppe Verdi (3362); Verdi G. (4279); Verdi Giuseppe (3249, 3261, 3287, 3350, 3358, 3362, 3434, 3460)
 - **Vida, Andrea**: A. Vida (205); Andrea Vida (339)
-- **Vittorio Emanuele II**: Roma di Vittorio Emanuele II (356); Vitt.Emanuele II (3591); Vittorio Emanuele (2501)
+- **Vittorio Emanuele II**: Roma di Vittorio Emanuele II (356); Vitt. Emanuele II (3591); Vittorio Emanuele (2501)
 - **Viviani, Quirico**: Q. Viviani (337); Quirico Viviani (338, 340); Viviani Quirico (2490)
 - **Volpi, Giovanni Antonio**: Volpi G. A. (114); Volpi Gio. Antonio (295)
 - **Wolf, Alessandro**: A. Wolf (525, 874, 889, 917, 944, 1564, 1565, 1566, 1567, 1568, 1571, 1572, 1573, 1575, 1576, 1577, 1578, 3773); Al. Wolf (1562, 1563); Aless. Wolf (329, 330, 501); Alessandro (2568, 3593); Alessandro Wolf (1561); Alessandro Wolff (665); Wolf A. (525); Wolf Alessandro (1558, 1852, 1853, 1854, 1855, 1856, 1923, 1924, 1925, 1926, 1927, 1928)

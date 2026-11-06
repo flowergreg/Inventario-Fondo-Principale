@@ -10,11 +10,11 @@ Generato da `script/report.py` su `dati/inventario.sqlite`. Sorgente: `sorgenti/
 | Paragrafi preliminari saltati (prima della voce 1) | 7 |
 | **Voci** | **4669** |
 | Intestazioni di sezione | 7 |
-| Annotazioni | 196 |
+| Annotazioni | 197 |
 | Voci con coda / senza coda | 1914 / 2755 |
 | Voci con residuo | 1 |
 | **Voci segmentate** (con almeno un riferimento) | **402** |
-| **Segmenti** (comprese le voci intere) | **8617** |
+| **Segmenti** (comprese le voci intere) | **8616** |
 
 ### Paragrafi preliminari saltati
 
@@ -51,10 +51,10 @@ Sezioni con ambito (aperte e chiuse da una riga «Fine …»); le intestazioni s
 ### Numeri anomali
 
 - **annotato** (3): `3074 (con 3079).`, `3079 (con 3074 - 4.8.89).`, `3864 (Provvisorio).`
-- **bis** (13): `1596-bis`, `2094 bis.`, `2528 bis.`, `2559 bis.`, `2706 bis.`, `2711 bis.`, `3014 bis.`, `3083 bis.`, `3249 bis.`, `3523-bis.`, `3652 bis.`, `3959/bis.`, `3982/bis.`
+- **bis** (13): `1596-bis.`, `2094 bis.`, `2528 bis.`, `2559 bis.`, `2706 bis.`, `2711 bis.`, `3014 bis.`, `3083 bis.`, `3249 bis.`, `3523-bis.`, `3652 bis.`, `3959/bis.`, `3982/bis.`
 - **fusa** (3): `2565/66.`, `2569/70.`, `3202-3203-3204.`
 - **lettera** (15): `542 a.`, `542 b.`, `560 a.`, `560 b.`, `873 a.`, `873 b.`, `2673/a.`, `2673/b.`, `2927/a.`, `2927/b.`, `3359/A.`, `3359/B.`, `3388 A.`, `3388 B.`, `3932-b.`
-- **omesso** (2): `2726`, `3078`
+- **omesso** (1): `2726`
 - **sottonumero** (140): `2623/1.`, `2623/2.`, `2623/3.`, `2623/4.`, `2623/5.`, `2623/6.`, `2623/7.`, `2623/8.`, `2630/1.`, `2630/2.`, `2630/3.`, `2630/4.`, `2630/5.`, `2630/6.`, `2630/7.`, `2630/8.`, `2630/9.`, `2630/10.`, `2630/11.`, `2630/12.`, `2631/1.`, `2631/2.`, `2631/3.`, `2631/4.`, `2631/5.`, `2631/6.`, `2631/7.`, `2631/8.`, `2631/9.`, `2631/10.`, `2631/11.`, `2632/1.`, `2632/2.`, `2632/3.`, `2632/4.`, `2632/5.`, `2632/6.`, `2632/7.`, `2632/8.`, `2632/9.`, `2632/10.`, `2632/11.`, `2632/12.`, `2632/13.`, `2632/14.`, `2632/15.`, `2633/16.`, `2633/17.`, `2633/18.`, `2633/19.`, `2633/20.`, `2633/21.`, `2633/22.`, `2633/23.`, `2633/24.`, `2634/1.`, `2634/2.`, `2634/3.`, `2634/4.`, `2634/5.`, `2634/6.`, `2634/7.`, `2634/8.`, `2634/9.`, `2634/10.`, `2634/11.`, `2634/12.`, `2634/13.`, `2634/14.`, `2634/15.`, `2634/16.`, `2634/17.`, `2635/1.`, `2635/2.`, `2635/3.`, `2635/4.`, `2635/5.`, `2635/6.`, `2635/7.`, `2635/8.`, `2635/9.`, `2635/10.`, `2635/11.`, `2635/12.`, `2635/13.`, `2635/14.`, `2635/15.`, `2635/16.`, `2635/17.`, `2635/18.`, `2635/19.`, `2635/20.`, `2635/21.`, `2636/1.`, `2636/2.`, `2636/3.`, `2636/4.`, `2636/5.`, `2636/6.`, `2636/7.`, `2637/1.`, `2637/2.`, `2637/3.`, `2637/4.`, `2637/5.`, `2637/6.`, `2637/7.`, `2637/8.`, `2637/9.`, `2637/10.`, `2637/11.`, `2637/12.`, `2637/13.`, `2637/14.`, `2637/15.`, `2637/16.`, `2637/17.`, `2637/18.`, `2637/19.`, `2637/20.`, `2638/1.`, `2638/2.`, `2639/1.`, `2639/2.`, `2639/3.`, `2639/4.`, `2639/5.`, `2639/6.`, `2639/7.`, `2639/8.`, `2639/9.`, `2639/10.`, `2639/11.`, `2639/12.`, `2639/13.`, `2639/23.`, `2639/24.`, `2639/25.`, `4132/1.`, `4132/2.`
 - **sottonumero_bis** (3): `2634/3 bis.`, `2635/16 bis.`, `2635/17 bis.`
 - **sottonumero_intervallo** (2): `2639/14-22.`, `4107/1-5.`
@@ -117,7 +117,7 @@ La coda riguarda il testo che la precede; il testo che la segue resta testo dell
 | coda | nota_a_margine | 2 |
 | indice | nota_a_margine | 2 |
 | indice | nota | 1 |
-| testo | nota_a_margine | 162 |
+| testo | nota_a_margine | 163 |
 | testo | nota | 12 |
 | testo | commento_del_compilatore | 8 |
 | testo | commento_a_matita | 3 |
@@ -131,27 +131,26 @@ La coda riguarda il testo che la precede; il testo che la segue resta testo dell
 
 - par. 1723 (dopo la voce 605.): [Nota a margine: «Catalogatore Bongiovanni Angelo fino al n. 844»]
 - par. 1983 (dopo la voce 844.): [Nota: «Catalogatore: Battistella Antonio fino al n. 1536»]
-- par. 3493 (dopo la voce 1596-bis): [Da qui mano diversa. Nota a margine: «17.7…»]
+- par. 3493 (dopo la voce 1596-bis.): [Da qui mano diversa. Nota a margine: «17.7…»]
 
 ### Da controllare
 
 - 1337. (par. 2968): etichetta «Aggiunta» non in grassetto
-- 525. (sede testo): contenuto senza virgolette «»: Cartaceo · 1 vol. · stato: b. · Acquisto Biagi, anno 1879
-- 603. (sede testo): contenuto senza virgolette «»: Cart. · 1 op. · Stato: b. · Proven.: Archivio vecchio del Comune (4 Maggio 1888)
+- 2634/17. (par. 5122): etichetta «Nota a margine» non in grassetto
 
 ## 6. Segmentazione
 
 | Tipo di segmento | Numero |
 |---|---|
 | voce_intera | 4267 |
-| riferimento | 3958 |
+| riferimento | 3957 |
 | preambolo | 389 |
 | chiusura | 3 |
 
 Voci con più segmenti:
 
 - 10.: 179 segmenti
-- 606.: 145 segmenti
+- 606.: 144 segmenti
 - 2134.: 91 segmenti
 - 18.: 85 segmenti
 - 3591.: 77 segmenti
