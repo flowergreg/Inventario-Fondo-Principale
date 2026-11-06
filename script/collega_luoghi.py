@@ -397,7 +397,7 @@ def main():
             aff = "alta" if (gid or qid) else None   # vuoto: non è un luogo
         if any(x in confermati for x in [nome] + altre_intestazioni(None, nota_e)) and aff == "media":
             aff, nota = "alta", "grafia confermata dal curatore" + (f"; {nota}" if nota else "")
-        if nota_senza_unioni(nota_e) and aff == "alta":
+        if nota_senza_unioni(nota_e) and aff == "alta" and not chiave_m:   # la decisione manuale prevale
             aff = "media"                          # forma già segnalata come incerta nel lessico
         risultati[eid] = (nome, gid, qid, aff, nota, alt, loc)
     qids = sorted({r[2] for r in risultati.values() if r[2]})
