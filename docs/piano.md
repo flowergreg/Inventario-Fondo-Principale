@@ -186,3 +186,13 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
   Bonaparte; Midolini/Mijlinus…). entita.py le aggiunge come varianti `manuale` dell'entità.
 - Verifiche in rete prima delle proposte: Dizionario Biografico dei Friulani (ricerca limitata al sito) e fonti
   generali; Wikidata solo via SPARQL, mai identificativi indovinati (Eleonora d'Este 1643-1722 = Q3721832).
+
+## Fase 6 — blocchi 3 e 4, eseguiti
+- Blocco 3 (`revisione/fase6_3_correzioni.csv`): ordine nome/cognome dedotto, epiteti (Carlo Magno), non persone;
+  correzioni in `persone_curatore.tsv`.
+- Blocco 4 (`revisione/fase6_4_wikidata.csv`): 133 collegamenti incerti; decisioni esplicite in
+  `persone_collegamenti.tsv` (QID confermato o sostituito, vuoto = nessun collegamento) e `luoghi_collegamenti.tsv`.
+  Principio: niente collegamento quando la forma raccoglie più persone omonime, perché sulla pagina il
+  collegamento varrebbe per tutte le voci. Restano 19 collegamenti «media» (compatibili, non verificabili).
+- Nella pagina l'etichetta di Wikidata non sostituisce la forma di riferimento: ne diventa una variante di
+  ricerca solo se il collegamento è sicuro (Cassono → Gastone della Torre).

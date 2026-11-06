@@ -4,27 +4,22 @@ Verifica del 2026-11-06. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 530 |
-| media | 4 |
-| bassa | 1 |
-| nessuna | 25 |
+| alta | 534 |
+| media | 0 |
+| bassa | 0 |
+| nessuna | 26 |
 
 ## 1. Affidabilità media: più candidati, da scegliere
 
-- **Nebek** (1 menz.; voci 476) → An Nabk — GeoNames [173193](https://www.geonames.org/173193) PPLA2, SY — Wikidata [Q2317068](https://www.wikidata.org/wiki/Q2317068) — Nebek (an-Nabk), Siria, sulla rotta Damasco-Homs (curatore)
-- **Persiceto** (1 menz.; voci 3804) → San Giovanni in Persiceto — GeoNames [3168239](https://www.geonames.org/3168239) PPLA3, reg. 05 (BO) — Wikidata [Q30029953](https://www.wikidata.org/wiki/Q30029953): _capoluogo dell'omonimo comune_ — San Giovanni in Persiceto
-- **Vignesie** (1 menz.; voci 2451) → Venezia — GeoNames [3164603](https://www.geonames.org/3164603) PPLA, Veneto (VE) — Wikidata [Q641](https://www.wikidata.org/wiki/Q641): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Veneto_ — Venezia (forma antica)
-- **Wien** (3 menz.; voci 2330, 2642, 3843) → Vienna — GeoNames [2761369](https://www.geonames.org/2761369) PPLC, AT — Wikidata [Q1741](https://www.wikidata.org/wiki/Q1741): _capitale e Stato federato dell'Austria_ — Vienna (forma tedesca), non il fiume
 
 ## 2. Affidabilità bassa: solo GeoNames fuori regione
 
-- **Salone** (1 menz.; voci 3849) → Stazione di Salone — GeoNames [8974078](https://www.geonames.org/8974078) PPL, reg. 07 (RM) — Wikidata [Q18455294](https://www.wikidata.org/wiki/Q18455294): _centro abitato situato presso Roma Capitale, città metropolitana di Roma Capitale_ — solo GeoNames, fuori regione
 
 ## 3. Nessuna corrispondenza
 
 Forme che non sono luoghi (cognomi, parole) o luoghi minori assenti da GeoNames e Wikidata.
 
-Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
+Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Salone (3849), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
 
 ## 4. Affidabilità alta
 
@@ -321,6 +316,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Mussons** (1 menz.; voci 1972) → Mussons — GeoNames [3217806](https://www.geonames.org/3217806) PPL, Friuli-Venezia Giulia (PN) — Wikidata [Q18448956](https://www.wikidata.org/wiki/Q18448956): _frazione del comune italiano di Morsano al Tagliamento, provincia di Pordenone_
 - **Muzzana del Turgnano** (2 menz.; voci 616, 1684) → Muzzana del Turgnano — GeoNames [3172406](https://www.geonames.org/3172406) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53291](https://www.wikidata.org/wiki/Q53291): _comune italiano_
 - **Napoli** (19 menz.; voci 23, 484, 490, 539) → Napoli — GeoNames [3172394](https://www.geonames.org/3172394) PPLA, reg. 04 (NA) — Wikidata [Q2634](https://www.wikidata.org/wiki/Q2634): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Campania_
+- **Nebek** (1 menz.; voci 476) → An Nabk — GeoNames [173193](https://www.geonames.org/173193) PPLA2, SY — Wikidata [Q2317068](https://www.wikidata.org/wiki/Q2317068) — Nebek (an-Nabk), Siria, sulla rotta Damasco-Homs (curatore)
 - **Neblo** (1 menz.; voci 1839) → Neblo — GeoNames [3194568](https://www.geonames.org/3194568) — Wikidata [Q1752569](https://www.wikidata.org/wiki/Q1752569): _insediamento in Slovenia_
 - **Nicea** (1 menz.; voci 46) → Nicea — Wikidata [Q739037](https://www.wikidata.org/wiki/Q739037): _antica città anatolica_
 - **Nimega** (1 menz.; voci 114) → Nimega — GeoNames [2750052](https://www.geonames.org/2750052) — Wikidata [Q47887](https://www.wikidata.org/wiki/Q47887): _comune olandese_
@@ -361,6 +357,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Percoto** (2 menz.; voci 476, 1003) → Percoto — GeoNames [3171223](https://www.geonames.org/3171223) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452390](https://www.wikidata.org/wiki/Q18452390): _frazione del comune italiano di Pavia di Udine, provincia di Udine_ — grafia confermata dal curatore; anche cognome nel testo
 - **Pers** (3 menz.; voci 1006, 1010, 1014) → Pers — GeoNames [3220074](https://www.geonames.org/3220074) PPL, Friuli-Venezia Giulia (UD) — grafia confermata dal curatore; anche cognome nel testo
 - **Persereano** (1 menz.; voci 2077) → Persereano — GeoNames [3171188](https://www.geonames.org/3171188) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452391](https://www.wikidata.org/wiki/Q18452391): _centro abitato situato presso Pavia di Udine, provincia di Udine_
+- **Persiceto** (1 menz.; voci 3804) → San Giovanni in Persiceto — GeoNames [3168239](https://www.geonames.org/3168239) PPLA3, reg. 05 (BO) — Wikidata [Q94990](https://www.wikidata.org/wiki/Q94990): _comune italiano_ — San Giovanni in Persiceto: il comune (ISTAT 037053), verificato (fase 6)
 - **Perteole** (1 menz.; voci 3735) → Perteole — GeoNames [3217426](https://www.geonames.org/3217426) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452393](https://www.wikidata.org/wiki/Q18452393): _frazione del comune italiano di Ruda, provincia di Udine_
 - **Perugia** (2 menz.; voci 594, 606) → Perugia — GeoNames [3171180](https://www.geonames.org/3171180) PPLA, reg. 18 (PG) — Wikidata [Q3437](https://www.wikidata.org/wiki/Q3437): _comune italiano, capoluogo dell'omonima provincia e della regione Umbria_
 - **Pesaro** (2 menz.; voci 10, 915) → Pesaro — GeoNames [3171173](https://www.geonames.org/3171173) PPLA2, reg. 10 (PU) — Wikidata [Q13134](https://www.wikidata.org/wiki/Q13134): _comune italiano, co-capoluogo della provincia di Pesaro e Urbino nelle Marche_
@@ -537,6 +534,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Vienna** (37 menz.; voci 18, 24, 202, 467) → Vienna — GeoNames [2761369](https://www.geonames.org/2761369) PPLC, AT — Wikidata [Q1741](https://www.wikidata.org/wiki/Q1741): _capitale e Stato federato dell'Austria_
 - **Viganò** (1 menz.; voci 2557) → Viganò — GeoNames [6535706](https://www.geonames.org/6535706) PPLA3, reg. 09 (LC) — Wikidata [Q42694](https://www.wikidata.org/wiki/Q42694): _comune italiano_
 - **Vigasio** (1 menz.; voci 1222) → Vigasio — GeoNames [3164381](https://www.geonames.org/3164381) PPLA3, Veneto (VR) — Wikidata [Q48133](https://www.wikidata.org/wiki/Q48133): _comune italiano_
+- **Vignesie** (1 menz.; voci 2451) → Venezia — GeoNames [3164603](https://www.geonames.org/3164603) PPLA, Veneto (VE) — Wikidata [Q641](https://www.wikidata.org/wiki/Q641): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Veneto_ — Venezia (forma antica)
 - **Villaco** (1 menz.; voci 568) → Villaco — GeoNames [2762366](https://www.geonames.org/2762366) — Wikidata [Q483522](https://www.wikidata.org/wiki/Q483522): _comune austriaco_
 - **Villafranca di Verona** (1 menz.; voci 2558) → Villafranca di Verona — GeoNames [3164241](https://www.geonames.org/3164241) PPLA3, Veneto (VR) — Wikidata [Q47614](https://www.wikidata.org/wiki/Q47614): _comune italiano_
 - **Villafredda** (6 menz.; voci 470, 482, 485, 487) → Villafredda — GeoNames [8977556](https://www.geonames.org/8977556) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452637](https://www.wikidata.org/wiki/Q18452637): _centro abitato situato presso Tarcento, provincia di Udine_
@@ -549,6 +547,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Visinale** (1 menz.; voci 3594) → Visinale — GeoNames [3343589](https://www.geonames.org/3343589) PPL, Friuli-Venezia Giulia (UD) — grafia confermata dal curatore; più località omonime in regione
 - **Vittoria** (1 menz.; voci 2534) → Vittoria — GeoNames [2522713](https://www.geonames.org/2522713) PPLA3, reg. 15 (RG) — Wikidata [Q34130](https://www.wikidata.org/wiki/Q34130): _comune italiano_
 - **Vittorio Veneto** (3 menz.; voci 3219, 3751, 4285) → Vittorio Veneto — GeoNames [3164028](https://www.geonames.org/3164028) PPLA3, Veneto (TV) — Wikidata [Q47578](https://www.wikidata.org/wiki/Q47578): _comune italiano_
+- **Wien** (3 menz.; voci 2330, 2642, 3843) → Vienna — GeoNames [2761369](https://www.geonames.org/2761369) PPLC, AT — Wikidata [Q1741](https://www.wikidata.org/wiki/Q1741): _capitale e Stato federato dell'Austria_ — Vienna (forma tedesca), non il fiume
 - **Worms** (1 menz.; voci 1876) → Worms — GeoNames [3247467](https://www.geonames.org/3247467) — Wikidata [Q3852](https://www.wikidata.org/wiki/Q3852): _città della Germania_
 - **Włocławek** (1 menz.; voci 1095) → Włocławek — GeoNames [3081741](https://www.geonames.org/3081741) PPLA2, PL — Wikidata [Q106681](https://www.wikidata.org/wiki/Q106681): _città attualmente in Polonia_
 - **Yeovil** (1 menz.; voci 493) → Yeovil — GeoNames [7301238](https://www.geonames.org/7301238) — Wikidata [Q550110](https://www.wikidata.org/wiki/Q550110): _comune inglese situato nella contea del Somerset_ — grafia confermata dal curatore; più elementi Wikidata omonimi
