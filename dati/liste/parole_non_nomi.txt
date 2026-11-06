@@ -1,0 +1,27 @@
+# parole con iniziale maiuscola che non sono nomi di persona o di luogo (lista del curatore)
+Vale Amen Deo Dominus Domini Iste Ista Cuncta Incipit Explicit Expliciunt Finis Laus Ego Nota Notule Nos Hic Haec
+Explicit Expl Inc Incip Explic Item Ibid Idem Id Ivi Vide Cfr Sec Secolo Anno Anni Opere Opera Tomo Libro
+Già Or Ora Però Poi Così Questo Questa Quello Quella Ecco Oh Ah Viva Tutti Tutte
+# parole dei titoli latini
+Epistolae Epistola Epistolarum Sinonima Synonyma Sententiae Sententia Epitaphium Epitaphia Carmina Carmen Liber Libri
+Historia Historiae Vita Vitae Commentarius Commentaria Opera Opuscula Annales Chronicon Statuta Constitutiones Acta
+Excerpta Index Regulae Regula Ars Artis Tractatus Summa Oratio Orationes Elegia Elegiae Maiorem Macte Magistri
+Ad Patrizii Veneti
+Olim Quidam Fiat
+# parole segnalate dal curatore e parole comuni frequenti tra i non classificati
+Opuscolo Miscellanea Endecasillabi Villanella Novissima Novissimo Dio Dragone Lamento Relazione Epitaffi Epitaffio
+Rhetoricae Scrittura Depositato Depositati Acquistato Acquistati Tesi Messa Diploma Sinfonia Sinfonie Annotazioni Duetto
+Kyrie Cavatina Cantata Suonate Suonata Sonata Sonate Osservazioni Dramma Novelle Novella Composizione Brano Tenor
+Miserere Cronica Cronaca Catastico Abbozzi Abbozzo Ristretto Diario Trio Traduz Facoltà Relatore Domine Tantum Ventisei
+Impetra
+Il La Lo Le Gli Amor
+Censura Crocchio Professori Caffè Risorgimento Odae Ode Hymni Hymnus Carmi Poesie Nel Cuor Cuore Domus Laudes
+Coronazione Forno Camerone Turco
+Illustre Illustrissimo Illustriss
+Laudi Hora Terrarum Cantiche Pastorella Viriatus Reliqua Vota
+Nello Passaporto Sinodo Assertiones Archiepiscopi Sommari Patria Rota Apparteneva Commissione Pregadi Numis Archeologia
+# ordini religiosi (non sono nomi di persona)
+Serviti Domenicani Francescani Cappuccini Cappuccine Gesuiti Barnabiti Filippini Carmelitani Agostiniani Benedettini
+Somaschi Minori Conventuali Teatini Camaldolesi Cistercensi Clarisse Orsoline Cassinensi Vallombrosani Templari Gioanniti
+Civico Civica Tot
+Pergam Membran Cartac Magistero Ven Patriae

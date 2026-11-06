@@ -1,0 +1,4 @@
+# dati scaricati da fonti esterne (ricreabili con script/liste_esterne.py)
+dati/esterni/
+dati/liste/luoghi.tsv
+__pycache__/

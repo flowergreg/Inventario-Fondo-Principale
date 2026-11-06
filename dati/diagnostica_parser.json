@@ -1,0 +1,166 @@
+{
+ "paragrafi_totali": 11275,
+ "paragrafi_vuoti_saltati": 0,
+ "preliminari": [
+  [
+   0,
+   "Trascrizione dell'inventario dei manoscritti del Fondo Principale"
+  ],
+  [
+   1,
+   "a cura di Gregorio Grasselli"
+  ],
+  [
+   2,
+   "Il Fondo Principale dei manoscritti della Biblioteca Civica «Vincenzo Joppi» di Udine si consulta ancora oggi attraverso il suo inventario manoscritto. Per le voci 1-479 si dispone anche delle descrizioni, assai più ampie, pubblicate da Giovanni Battista Corgnali in tre volumi della collana Inventari dei manoscritti delle biblioteche d’Italia avviata da Giuseppe Mazzatinti (voll. 46, 49 e 78, Firenze, Olschki, 1930-1952), ai quali si rinvia per un esame più approfondito di quei codici; per il resto del fondo il catalogo manoscritto rimane l’unico riferimento. Le riproduzioni digitali pubblicate in rete ne hanno reso possibile la consultazione a distanza, ma la lettura resta lenta e la ricerca per nome o per argomento è di fatto impossibile. Per offrire agli studiosi uno strumento più agevole, se ne propone qui la trascrizione integrale, voci da 1 a 4519."
+  ],
+  [
+   3,
+   "Compilato nell’arco di più di un secolo, il catalogo riflette criteri che cambiano sensibilmente da una mano all’altra. Variano l’estensione delle voci e il grado di dettaglio sul contenuto. C’è chi divide fra più voci materiali affini e chi riunisce sotto un unico numero materiali eterogenei. Cambiano l’uso della forma, dei segni e degli a-capo, e il modo di articolare un medesimo numero (542 a., 2528 bis, 2630/1…). Si è mantenuta di proposito questa eterogeneità: uniformarla avrebbe significato sostituire al documento un’interpretazione."
+  ],
+  [
+   4,
+   "Il criterio adottato è quindi documentario. Ogni voce è resa nella forma «numero d’inventario. descrizione», secondo la struttura del catalogo del Fondo Joppi. Si conservano grafie, abbreviazioni e refusi del compilatore; per le voci 1-479 il confronto con il Corgnali può aiutare a sanarli, ma con cautela, perché neppure l’edizione a stampa ne è esente. Quando l’originale li riporta, i dati materiali (supporto, consistenza, stato di conservazione ed eventuale provenienza) sono raccolti in una riga di coda in fondo alla voce. Le annotazioni a margine e quelle aggiunte da altra mano sono inserite in carattere minore, precedute dall’indicazione della loro natura in grassetto fra parentesi quadre."
+  ],
+  [
+   5,
+   "Le voci 4518 e 4519 non compaiono nelle riproduzioni digitali dell’originale. Le due opere sono però presenti e consultabili tra i manoscritti digitalizzati del Fondo: sono state quindi descritte e aggiunte in questa sede dal curatore della trascrizione."
+  ],
+  [
+   6,
+   "ottobre 2026"
+  ]
+ ],
+ "intestazioni": [
+  [
+   1210,
+   "Letteratura storica Friulana",
+   "511."
+  ],
+  [
+   3595,
+   "Archivio Manzano",
+   "1685."
+  ],
+  [
+   3786,
+   "Fine Archivio Manzano",
+   "1851."
+  ],
+  [
+   3792,
+   "Archivio della Porta",
+   "1856."
+  ],
+  [
+   3873,
+   "Fine sezione «Archivio della Porta»",
+   "1913."
+  ],
+  [
+   3997,
+   "Archivio della Nob. Famiglia Braida",
+   "1999."
+  ],
+  [
+   4118,
+   "Fine Archivio Braida",
+   "2094 bis."
+  ]
+ ],
+ "annotazioni_indice": [
+  [
+   1723,
+   "Nota a margine",
+   "«Catalogatore Bongiovanni Angelo fino al n. 844»",
+   "605."
+  ],
+  [
+   1983,
+   "Nota",
+   "«Catalogatore: Battistella Antonio fino al n. 1536»",
+   "844."
+  ],
+  [
+   3493,
+   "Da qui mano diversa. Nota a margine",
+   "«17.7…»",
+   "1596-bis"
+  ]
+ ],
+ "avvisi": {
+  "2565/66.": [
+   "testo dopo la coda (par. 4920): Fuso in un solo volume."
+  ],
+  "2691.": [
+   "testo dopo la coda (par. 5403): + alleg. a stampa Prospetti di confronto fra le soppresse numerazioni delle case",
+   "2 righe di coda"
+  ],
+  "3515.": [
+   "testo dopo la coda (par. 7113): Si trova nella cartella del ms. 3510."
+  ],
+  "3519.": [
+   "testo dopo la coda (par. 7127): Si trova nella cartella del ms. 3510."
+  ],
+  "3520.": [
+   "testo dopo la coda (par. 7131): Si trova nella cartella del ms. 3510."
+  ],
+  "3522.": [
+   "testo dopo la coda (par. 7138): Si trova nella cartella del ms. 3510."
+  ],
+  "3523.": [
+   "testo dopo la coda (par. 7142): Si trova nella cartella del ms. 3510."
+  ],
+  "3523-bis.": [
+   "testo dopo la coda (par. 7146): Si trova nella cartella del ms. 3510."
+  ],
+  "3524.": [
+   "testo dopo la coda (par. 7150): Si trova nella cartella del ms. 3510."
+  ],
+  "3525.": [
+   "testo dopo la coda (par. 7155): Si trova nella cartella del ms. 3510."
+  ],
+  "3578.": [
+   "testo dopo la coda (par. 7316): Si trova nella cartella del ms. 3510."
+  ],
+  "3790.": [
+   "testo dopo la coda (par. 7809): - Notizie riguardanti Marano Lagunare che si trovano nei registri dei Commemoria",
+   "testo dopo la coda (par. 7810): - Documenti relativi a Marano Lagunare rinvenuti nella Busta n. 218 nell'Archivi",
+   "testo dopo la coda (par. 7811): - Miscellanea Codici, Registro n. 182 (Indice degli Statuti di Marano). 2 pp.",
+   "testo dopo la coda (par. 7812): - Savio di Terra ferma alla Scrittura, 1651-1734 (Relaz. di 3 pp.).",
+   "testo dopo la coda (par. 7813): - 1580. Relatione del Nobil homo ser Lorenzo Capello ritornato Provveditor à Mar",
+   "testo dopo la coda (par. 7814): (A cura dell'Accattatis, 1939).",
+   "testo dopo la coda (par. 7815): - Relazione del Provveditore Andrea Bembo. 15 febbraio 1694 (Copia a cura di Tar",
+   "testo dopo la coda (par. 7816): - Seconda relazione del Provveditore di Marano Andrea Bembo, 10 genn. 1693 (id. ",
+   "testo dopo la coda (par. 7817): - Relazione del Provveditore di Marano Zaccaria Benardo, 1674 (id. id.).",
+   "testo dopo la coda (par. 7818): Palma.",
+   "testo dopo la coda (par. 7819): - Relazione di Giovanni Cornaro Provv. Gener. di Palma, 1694 (id. id.).",
+   "testo dopo la coda (par. 7820): - Relazione di Pietro Vendramin Provved. nella Patria del Friuli, da Palma 9 mag"
+  ],
+  "3955.": [
+   "testo dopo la coda (par. 8255): Depositato all'Arch. di Stato."
+  ],
+  "3984.": [
+   "testo dopo la coda (par. 8345): Depositati all'Archivio di Stato."
+  ],
+  "3985.": [
+   "testo dopo la coda (par. 8349): Depositati all'Archivio di Stato."
+  ],
+  "3986.": [
+   "testo dopo la coda (par. 8353): Depositati all'Archivio di Stato."
+  ],
+  "3987.": [
+   "testo dopo la coda (par. 8357): Depositati all'Archivio di Stato."
+  ],
+  "3988.": [
+   "testo dopo la coda (par. 8361): Depositati all'Archivio di Stato."
+  ]
+ },
+ "annotazioni_senza_grassetto": [
+  [
+   "1337.",
+   2968,
+   "Aggiunta"
+  ]
+ ]
+}
