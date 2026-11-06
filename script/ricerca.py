@@ -163,9 +163,18 @@ def costruisci_indice(db=DB):
         entita[stato_id[eid]]["m"].append([pos[vid], sede, ini, fin])
     for e in entita:
         e["v"] = sorted(x for x in e["v"] if x)
+    # parole che nel testo sono soprattutto nomi di luogo (Udine, Venezia, Cividale; non Savorgnan,
+    # Colloredo, Manzano, che sono soprattutto cognomi): se la domanda è fatta solo di parole così,
+    # non si riconosce una persona per forma («Udine» non trova «Vincenzo Giusti da Udine»)
+    occ = defaultdict(lambda: defaultdict(int))
+    for forma, parte, n in con.execute("SELECT forma, parte, occorrenze FROM lessico"):
+        for w in chiave(forma):
+            occ[w][parte] += n or 0
+    luoghi = {w for w, o in occ.items()
+              if o.get("luogo", 0) > o.get("cognome", 0) + o.get("nome_di_battesimo", 0)}
     con.close()
     return {"voci": voci, "espansioni": {k: sorted(v) for k, v in esp.items()}, "entita": entita,
-            "vuote": sorted(VUOTE)}
+            "vuote": sorted(VUOTE), "luoghi": sorted(luoghi)}
 
 
 # ---------------------------------------------------------------------------
@@ -213,11 +222,12 @@ def cerca(domanda, indice, finestra=None, approssimata=True):
     finestra = finestra or max(len(q) + 2, 4)
     risultati = defaultdict(list)           # voce → [(livello, sede, inizio, fine, entità)]
 
-    # 1. entità
+    # 1. entità (una domanda fatta solo di nomi di luogo non riconosce persone)
+    solo_luoghi = all(t in set(indice.get("luoghi", ())) for t in q)
     for e in indice["entita"]:
         for var in e["v"]:
             vw = set(var.split())
-            if all(s & vw for s in insiemi):
+            if all(s & vw for s in insiemi) and (e["t"] != "persona" or not solo_luoghi):
                 for vi, sede, ini, fin in e["m"]:
                     s = {"testo": "t", "coda": "c"}.get(sede, sede)
                     risultati[vi].append((1, s, ini, fin, e))

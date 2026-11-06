@@ -114,6 +114,7 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
 <script>
 const IDX = __INDICE__;
 const VUOTE = new Set(IDX.vuote);
+const LUOGHI = new Set(IDX.luoghi);   // parole soprattutto di luogo: da sole non riconoscono una persona
 const RX_PAROLA = /[\p{L}\p{N}]+/gu;
 const RX_STACCO = /[,;:\n\[\]]|\((?!\s*(?:di|de|da|d['’])\s*\))|(?<!\((?:di|de|da))\)/;
 function normParola(p) {
@@ -170,8 +171,9 @@ function cerca(domanda) {
   const q = chiave(domanda); if (!q.length) return {q, ris: []};
   const insiemi = q.map(espandi); const finestra = Math.max(q.length + 2, 4);
   const ris = new Map(); const add = (vi, h) => { if (!ris.has(vi)) ris.set(vi, []); ris.get(vi).push(h); };
+  const soloLuoghi = q.every(t => LUOGHI.has(t));   // solo nomi di luogo: nessuna persona per forma
   for (const e of ENT) {
-    if (e.vs.some(vw => insiemi.every(s => [...s].some(w => vw.has(w)))))
+    if ((e.t !== "persona" || !soloLuoghi) && e.vs.some(vw => insiemi.every(s => [...s].some(w => vw.has(w)))))
       for (const [vi, sede, ini, fin] of e.m) add(vi, [1, sede === "testo" ? "t" : sede === "coda" ? "c" : sede, ini, fin, e]);
   }
   for (const [vi, hs] of nelTesto(insiemi, finestra)) for (const [s, i, f] of hs) add(vi, [2, s, i, f, null]);
