@@ -19,6 +19,7 @@ Scrive report/fase_5_lessico.md.
 Uso: python3 script/arricchisci.py
 """
 
+import csv
 import difflib
 import json
 import re
@@ -144,6 +145,7 @@ def main():
         # persona collegata non basta a cambiare la forma di riferimento di una famiglia
         con.execute("UPDATE lessico SET origine=? WHERE forma=? AND parte='cognome' AND forma_normalizzata IS NULL",
                     (f"proposta: Wikidata scrive «{wd}» ({etichetta}, {qid})", forma))
+    fonti_curatore(con)
     con.commit()
     report(con, nuove, sciolti, confermati, grafie)
     con.close()
@@ -181,6 +183,33 @@ def report(con, nuove, sciolti, confermati, grafie):
       + ", ".join(sorted(confermati)) + "\n")
     OUT.write_text("\n".join(r) + "\n", encoding="utf-8")
     print(f"Report scritto in {OUT} ({OUT.stat().st_size // 1024} KB)")
+
+
+def fonti_curatore(con):
+    """Fonti indicate dal curatore per le forme di riferimento (dati/liste/fonti_curatore.tsv): una scheda
+    del Dizionario Biografico dei Friulani spiega perché alla forma del testo corrisponde una forma
+    diversa (Geronimiani → Agostino de Gerolami), anche dove Wikidata non c'è. Si conservano solo
+    fonte, URL e la forma della scheda, mai il testo della biografia."""
+    def chiave_i(x):
+        return frozenset(w for w in normalizza(x.replace(",", " ")).split()
+                         if w not in {"di", "de", "da", "d", "del", "della", "dei", "von", "van"})
+    indice = {}
+    for eid, tipo, intest, alias in con.execute("SELECT id, tipo, forma_intestazione, alias FROM entita"):
+        for v in [intest] + [a for a in (alias or "").split(" | ") if a]:
+            indice.setdefault((tipo, chiave_i(v)), eid)
+    con.execute("DELETE FROM identificatori WHERE fonte='DBF'")
+    mancanti = []
+    for r in csv.DictReader(open(RADICE / "dati" / "liste" / "fonti_curatore.tsv", encoding="utf-8"), delimiter="\t"):
+        eid = indice.get((r["tipo"], chiave_i(r["intestazione"])))
+        if not eid:
+            mancanti.append(r["intestazione"])
+            continue
+        con.execute("INSERT INTO identificatori (entita, fonte, codice, url, forma_autorizzata, data_verifica, stato, "
+                    "affidabilita, nota) VALUES (?,?,?,?,?,date('now'),'validato','alta',?)",
+                    (eid, "DBF", r["url"].rstrip("/").rsplit("/", 1)[1], r["url"], r["nota"] or None,
+                     f"{r['fonte']} (curatore)"))
+    if mancanti:
+        print(f"  fonti del curatore non applicate (intestazione non trovata): {'; '.join(mancanti)}", file=sys.stderr)
 
 
 if __name__ == "__main__":

@@ -6,7 +6,7 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3963 | 613 | 7371 |
+| persona | 3962 | 613 | 7371 |
 | luogo | 560 | 63 | 4557 |
 | santo | 201 | 33 | 484 |
 
@@ -849,7 +849,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Zuccolo, Leopoldo**: Leopoldo Zuccolo (511); Zuccolo Leopoldo (853)
 - **d'Este, Eleonora**: Eleonora d'Este [manuale]; Maria Francesca dello Spirito Santo [manuale]; Eleonora (2003, 2004, 2005); Venerabilis Serve Dei Matris Marie Francisce (2003)
 - **da Pordenone, Odorico**: B. Odorico (825); B. Odoricus de Portu Naonis Provinciae Fori Julii (549); B.° Odorico (549); Beato Odorico (549)
-- **de Gerolami, Agostino**: Agostino Germiniano [manuale]; Agostino Geronimiano [manuale]; Agostino de Gerolami [manuale]; Publio Augusto Graziani [manuale]; Augusto Hieronimiano (43); Publii Augusti Geronimiani Utinensis (43)
+- **de Gerolami, Agostino**: Agostino Germiniano [manuale]; Agostino Geronimiano [manuale]; Agostino de Gerolami [manuale]; Publio Augusto Graziani [manuale]; Augusto Hieronimiano (43); Hieronimiano Augusto (69); Publii Augusti Geronimiani Utinensis (43)
 - **di San Genesio, Bertrando**: Arca del B. Bertrando (803); B. Bertrando (826); Beato S.N. (533)
 - **Śrī, Gautam**: Iti Śrī Gautam (4495); Śrī Gautam (4351)
 
@@ -1168,7 +1168,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3330 entità: elenco completo nella tabella `entita`.
+3329 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

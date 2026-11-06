@@ -7,7 +7,7 @@ Verifica del 2026-11-06. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | alta | 731 |
 | media | 19 |
 | bassa | 30 |
-| nessuna | 3183 |
+| nessuna | 3182 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -833,7 +833,7 @@ Verifica del 2026-11-06. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3183 persone
+## 4. Nessun candidato su Wikidata: 3182 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

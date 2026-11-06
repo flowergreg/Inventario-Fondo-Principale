@@ -106,9 +106,10 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
 </div></div></div>
 <footer><div class="container">
   La ricerca normalizza la grafia (maiuscole, accenti, j/i, y/i, doppie) e la estende con le varianti registrate:
-  forme latine, venete e friulane, abbreviazioni, varianti dei nomi, correzioni del curatore, forme di Wikidata. Livelli: <b>forma di riferimento</b>
-  (tutte le grafie registrate dello stesso nome, anche lontane), <b>testo</b> (tutte le parole vicine nella voce),
-  <b>approssimata</b> (una lettera di differenza, solo se il resto non trova nulla). La forma di riferimento raccoglie
+  forme latine, venete e friulane, abbreviazioni, varianti dei nomi, correzioni del curatore, forme di Wikidata. Trova le voci attraverso la <b>forma di riferimento</b>
+  (tutte le grafie registrate dello stesso nome, anche lontane) e nel <b>testo</b> (tutte le parole vicine nella voce);
+  solo se non trova nulla, prova la ricerca <b>approssimata</b> (una lettera di differenza), segnalata accanto alla voce.
+  I collegamenti a Wikidata e al Dizionario Biografico dei Friulani indicano la fonte della forma di riferimento. La forma di riferimento raccoglie
   grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme. Indice del __DATA__.
 </div></footer>
 <script>
@@ -212,15 +213,20 @@ function mostra(domanda) {
   st.textContent = `${r.ris.length} voci` + (r.approssimata && r.ris.length ? " (ricerca approssimata)" : "") + ` · ${Math.round(performance.now() - t0)} ms`;
   el.innerHTML = r.ris.slice(0, 300).map(({vi, hs, liv}) => {
     const v = IDX.voci[vi]; const visti = new Set(); const punti = [];
-    for (const h of hs) { const k = h[1] + h[2]; if (visti.has(k)) continue; visti.add(k); punti.push(h); }
+    for (const h of hs) {        // niente doppioni: un tratto contenuto in uno già mostrato non si ripete
+      const k = h[1] + h[2]; if (visti.has(k)) continue;
+      if (punti.some(p => p[1] === h[1] && p[2] <= h[2] && h[3] <= p[3])) continue;
+      visti.add(k); punti.push(h);
+    }
     const ent = [...new Map(hs.filter(h => h[4]).map(h => [h[4].i, h[4]])).values()];
     const sedi = new Map(); punti.forEach(h => { if (!sedi.has(h[1])) sedi.set(h[1], []); sedi.get(h[1]).push([h[2], h[3]]); });
-    return `<article class="voce"><h2>Voce ${esc(v.n)} <span class="etichetta">${LIV[liv]}</span></h2>` +
+    return `<article class="voce"><h2>Voce ${esc(v.n)}${liv === 3 ? ` <span class="etichetta">ricerca approssimata</span>` : ""}</h2>` +
       punti.slice(0, 3).map(h => { const seg = segmento(v, h[1], h[2]);
         return `<div class="punto">${seg ? `<span class="seg">${esc(seg)}</span>` : ""}${frammento(testoSede(v, h[1]), h[2], h[3])}</div>`; }).join("") +
       (punti.length > 3 ? `<div class="entita">… e altri ${punti.length - 3} punti nella voce</div>` : "") +
       ent.map(e => `<div class="entita">Forma di riferimento${e.t === "luogo" ? " (luogo)" : e.t === "santo" ? " (santo)" : ""}: <b>${esc(e.f)}</b>` +
-        (e.st === "validato" ? "" : " · da validare") + (e.q ? ` · <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">Wikidata ${e.q}</a>` : "") + `</div>`).join("") +
+        (e.st === "validato" ? "" : " · da validare") + (e.q ? ` · <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">Wikidata ${e.q}</a>` : "") +
+        (e.d ? ` · <a href="${esc(e.d)}" target="_blank" rel="noopener">Dizionario Biografico dei Friulani</a>` : "") + `</div>`).join("") +
       `<details><summary>Testo della voce</summary><div class="testo-voce">${evidenzia(v.t, sedi.get("t") || [])}` +
       (v.c ? `\n\n<i>${evidenzia(v.c, sedi.get("c") || [])}</i>` : "") +
       v.a.map((a, k) => `\n\n[${evidenzia(a, sedi.get("a" + k) || [])}]`).join("") + `</div></details></article>`;
