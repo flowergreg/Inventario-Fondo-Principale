@@ -1,18 +1,20 @@
 # Fase 5 — Persone: collegamento a Wikidata (VIAF, SBN, DBI)
 
-Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
+Verifica del 2026-11-06. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 709 |
-| media | 108 |
+| alta | 713 |
+| media | 110 |
 | bassa | 30 |
-| nessuna | 3128 |
+| nessuna | 3110 |
 
 ## 1. Affidabilità media: da verificare
 
 - **Agricola, Leonardo** (voci 1460; anni 1584–1588) → [Q131278818](https://www.wikidata.org/wiki/Q131278818) Leonardo Agricola (?–?)
 - **Albertini, Pietro** (voci 340; anni ?–?) → [Q108437931](https://www.wikidata.org/wiki/Q108437931) Pietro Albertini (?–?): _vescovo cattolico_
+- **Alessandro Magno** (voci 548; anni ?–?) → [Q52222232](https://www.wikidata.org/wiki/Q52222232) Alessandro Magno (1538–1576): _viaggiatore del XVI secolo_ — Venezia — nato o morto in Friuli/Veneto
+  - altri: [Q960819](https://www.wikidata.org/wiki/Q960819) Alexandru Penciu (1932–2023): _rugbista a 15, allenatore di rugby e dirigente sportivo rumeno (1932-2023)_ — Bucarest, Belluno [1.5]; [Q8409](https://www.wikidata.org/wiki/Q8409) Alessandro Magno (-355–-322): _fondatore dell'impero ellenistico, fu re di Macedonia, egemone della lega ellenica, faraone d'Egitto e imperatore di Persia_ — Pella, Babilonia [0]; [Q112122083](https://www.wikidata.org/wiki/Q112122083) Alessandro Magno (1827–?): _prefetto italiano_ — Lecce [0]; [Q64734397](https://www.wikidata.org/wiki/Q64734397) Alessandro Magno (1687–1745): _vescovo cattolico_ [0]
 - **Antonini, Giuseppe** (voci 3600; anni 1862–1870) → [Q108176805](https://www.wikidata.org/wiki/Q108176805) Giuseppe Antonini (1833–1889): _scultore italiano (1833-1899)_ — Vercelli — date compatibili
   - altri: [Q63871521](https://www.wikidata.org/wiki/Q63871521) Giuseppe Antonini (1821–1869): _politico italiano (1821-1869)_ — Varallo [1]; [Q15690117](https://www.wikidata.org/wiki/Q15690117) Giuseppe Antonini (1864–1938): _psichiatra italiano (1864-1938)_ — Milano [0]; [Q3769983](https://www.wikidata.org/wiki/Q3769983) Giuseppe Antonini (1683–1765): _avvocato e geografo italiano (1683-1765)_ — Centola, Giugliano in Campania [0]; [Q635093](https://www.wikidata.org/wiki/Q635093) Giuseppe Antonini (1914–1989): _allenatore di calcio e calciatore italiano (1914-1989)_ — Verona [-1]
 - **Banfi, Giuseppe** (voci 590; anni ?–?) → [Q109856165](https://www.wikidata.org/wiki/Q109856165) Giuseppe Banfi (1812–1877): _docente italiano (1812-1877)_
@@ -38,6 +40,8 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Cainero, Enzo** (voci 4192; anni ?–?) → [Q3726469](https://www.wikidata.org/wiki/Q3726469) Enzo Cainero (1944–2023): _dirigente sportivo e calciatore italiano (1944-2023)_ — Tavagnacco, Udine — nato o morto in Friuli/Veneto; nato nel 1944: verificare
 - **Capello, Pietro** (voci 568; anni 1580–1593) → [Q3903749](https://www.wikidata.org/wiki/Q3903749) Pietro Cappello (1676–1729): _politico e diplomatico italiano_ — Venezia, Orgnano — nato o morto in Friuli/Veneto
   - altri: [Q87259128](https://www.wikidata.org/wiki/Q87259128) Pietro Cappello (1583–1658) [1]; [Q61483697](https://www.wikidata.org/wiki/Q61483697) Pietro Capello (?–?): _scrittore (floruit 1581-1582)_ [0]; [Q108449226](https://www.wikidata.org/wiki/Q108449226) Pietro Capello (?–1383): _vescovo cattolico_ [0]; [Q87255406](https://www.wikidata.org/wiki/Q87255406) Pietro Cappello (?–1524) [0]
+- **Carlo Magno** (voci 563, 603, 610, 2632/14; anni 1097–1902) → [Q3044](https://www.wikidata.org/wiki/Q3044) Carlo Magno (748–814): _re dei Franchi (r. 768-814) e dei Longobardi (r. 774-814), primo imperatore del Sacro Romano Impero (r. 800-814)_ — Regno franco, Aquisgrana
+  - altri: [Q65682654](https://www.wikidata.org/wiki/Q65682654) Carlo Magno (?–?) [0]; [Q88237178](https://www.wikidata.org/wiki/Q88237178) Carlo Magno (?–?) [0]
 - **Castelli, Luigi** (voci 30; anni ?–?) → [Q55281051](https://www.wikidata.org/wiki/Q55281051) Luigi Castelli (1810–1885) — Ozieri, Cagliari
   - altri: [Q1608292](https://www.wikidata.org/wiki/Q1608292) Luigi Castelli (?–?): _calciatore italiano_ — Palermo [0]; [Q57034472](https://www.wikidata.org/wiki/Q57034472) Luigi Castelli (?–?) [0]; [Q63929857](https://www.wikidata.org/wiki/Q63929857) Luigi Castelli (1814–?): _politico italiano_ [0]
 - **Castiglione, Giuseppe** (voci 120, 122; anni ?–?) → [Q458671](https://www.wikidata.org/wiki/Q458671) Giuseppe Castiglione (1688–1766): _gesuita, missionario e pittore italiano_ — Milano, Pechino
@@ -103,8 +107,6 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q52162258](https://www.wikidata.org/wiki/Q52162258) Emmanuele Lodi (1770–1845): _vescovo italiano (1770-1845)_ — Milano, Udine [3]
 - **Lozzini, Mariano** (voci 1217, 1376; anni 1775–1779) → [Q6762402](https://www.wikidata.org/wiki/Q6762402) Mariano Socini il giovane (1482–1556): _giurista italiano (1482-1556)_ — Siena, Bologna
   - altri: [Q41625474](https://www.wikidata.org/wiki/Q41625474) Mariano Socini il vecchio (1397–1467): _giurista italiano (1401-1467)_ — Siena [0]
-- **Magno, Alessandro** (voci 548; anni ?–?) → [Q52222232](https://www.wikidata.org/wiki/Q52222232) Alessandro Magno (1538–1576): _viaggiatore del XVI secolo_ — Venezia — nato o morto in Friuli/Veneto
-  - altri: [Q960819](https://www.wikidata.org/wiki/Q960819) Alexandru Penciu (1932–2023): _rugbista a 15, allenatore di rugby e dirigente sportivo rumeno (1932-2023)_ — Bucarest, Belluno [1.5]; [Q8409](https://www.wikidata.org/wiki/Q8409) Alessandro Magno (-355–-322): _fondatore dell'impero ellenistico, fu re di Macedonia, egemone della lega ellenica, faraone d'Egitto e imperatore di Persia_ — Pella, Babilonia [0]; [Q112122083](https://www.wikidata.org/wiki/Q112122083) Alessandro Magno (1827–?): _prefetto italiano_ — Lecce [0]; [Q64734397](https://www.wikidata.org/wiki/Q64734397) Alessandro Magno (1687–1745): _vescovo cattolico_ [0]
 - **Malacrida, Marzio** (voci 65, 66, 73, 606; anni 1561–1561) → [Q87736985](https://www.wikidata.org/wiki/Q87736985) Marzio Malacrida (?–?)
 - **Mambretti, Francesco** (voci 3982; anni ?–?) → [Q89748415](https://www.wikidata.org/wiki/Q89748415) Francesco Mambretti (?–?)
 - **Marchi, Giacomo** (voci 113, 541, 601, 2262; anni 1616–1761) → [Q88697273](https://www.wikidata.org/wiki/Q88697273) Giacomo Marchi (?–?)
@@ -152,6 +154,8 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Romanello, Giovanni Antonio** (voci 10; anni 1461–1461) → [Q87642949](https://www.wikidata.org/wiki/Q87642949) Giovanni Antonio Romanello (?–?)
 - **Rossi, Gian Vittorio** (voci 619; anni 1712–1712) → [Q3762764](https://www.wikidata.org/wiki/Q3762764) Gian Vittorio Rossi (1577–1647): _poeta, filologo e storico italiano_ — Roma
 - **Rucellai, Pandolfo** (voci 1101; anni 1588–1849) → [Q16586697](https://www.wikidata.org/wiki/Q16586697) Pandolfo Rucellai (1436–1497): _mercante italiano_ — Firenze
+- **Sebastiano** (voci 593; anni 1795–1800) → [Q183332](https://www.wikidata.org/wiki/Q183332) san Sebastiano (255–287): _santo e martire romano (256-288)_ — Narbona, Roma
+  - altri: [Q562376](https://www.wikidata.org/wiki/Q562376) Sebastiano (400–413): _usurpatore romano_ — Narbona [0]; [Q1136592](https://www.wikidata.org/wiki/Q1136592) Sebastiano (?–378): _militare romano_ — Edirne [0]; [Q3953722](https://www.wikidata.org/wiki/Q3953722) Sebastiano (?–450): _generale dell'Impero romano d'Occidente_ — Vandali [0]; [Q3953719](https://www.wikidata.org/wiki/Q3953719) Sebastiano (?–?): _funzionario dell'Impero romano d'Oriente_ [0]
 - **Simonetti, Antonio** (voci 509; anni 1788–1789) → [Q54086833](https://www.wikidata.org/wiki/Q54086833) Antonio Simonetti (?–?)
   - altri: [Q112072947](https://www.wikidata.org/wiki/Q112072947) Antonio Simonetti (?–?): _ingegnere informatico italiano_ [0]
 - **Spilimbergo, Antonio** (voci 758; anni 1482–1887) → [Q30071787](https://www.wikidata.org/wiki/Q30071787) Antonio Spilimbergo (?–?)
@@ -241,6 +245,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 ## 3. Affidabilità alta
 
 - **Acerbi, Giovanni** (voci 2557, 3968; anni 1852–1861) → [Q3106981](https://www.wikidata.org/wiki/Q3106981) Giovanni Acerbi (1825–1869): _nobile, militare, patriota e politico italiano (1825-1869)_ — Castel Goffredo, Firenze — date compatibili
+- **Alberto Magno** (voci 2097; anni ?–?) → [Q60059](https://www.wikidata.org/wiki/Q60059) Alberto Magno (1200–1280): _vescovo cattolico, religioso e santo tedesco_ — Lauingen, Colonia
 - **Albrizzi, Almorò** (voci 753; anni 1743–1743) → [Q55225031](https://www.wikidata.org/wiki/Q55225031) Almorò Albrizzi (1695–1764): _stampatore italiano (1695-1764)_ — Venezia, Forlì — nato o morto in Friuli/Veneto; date compatibili
 - **Aleandro, Girolamo** (voci 468, 619; anni 1517–1773) → [Q918330](https://www.wikidata.org/wiki/Q918330) Girolamo Aleandro (1480–1542): _cardinale e umanista italiano_ — Motta di Livenza, Roma — confermato dal contesto
 - **Aleardi, Aleardo** (voci 337, 3591, 3791; anni 1860–1910) → [Q620193](https://www.wikidata.org/wiki/Q620193) Aleardo Aleardi (1812–1878): _poeta e politico italiano (1812-1878)_ — Verona — nato o morto in Friuli/Veneto; date compatibili
@@ -256,7 +261,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Anassillide, Aglaja** (voci 339, 2526; anni ?–?) → [Q3616786](https://www.wikidata.org/wiki/Q3616786) Angela Veronese (1778–1847): _poetessa italiana_ — Montebelluna, Padova — nato o morto in Friuli/Veneto
 - **Andreuzzi, Antonio** (voci 3932, 3932-b; anni 1864–1864) → [Q3619181](https://www.wikidata.org/wiki/Q3619181) Antonio Andreuzzi (1804–1874): _patriota italiano (1804-1874)_ — Meduno, San Daniele del Friuli — nato o morto in Friuli/Veneto; date compatibili
 - **Anfossi, Pasquale** (voci 3388 A; anni ?–?) → [Q266985](https://www.wikidata.org/wiki/Q266985) Pasquale Anfossi (1727–1797): _compositore e violinista italiano_ — Taggia, Roma
-- **Angeli, Angelo** (voci 2695; anni 1929–1929) → [Q2327324](https://www.wikidata.org/wiki/Q2327324) Angelo Angeli (1864–1931): _chimico italiano_ — Tarcento, Firenze — nato o morto in Friuli/Veneto; date compatibili
+- **Angeli, Angelo** (voci 510, 2695; anni 1821–1929) → [Q2327324](https://www.wikidata.org/wiki/Q2327324) Angelo Angeli (1864–1931): _chimico italiano_ — Tarcento, Firenze — nato o morto in Friuli/Veneto; date compatibili
 - **Antivari, Pietro Antonio** (voci 2134; anni ?–?) → [Q64760410](https://www.wikidata.org/wiki/Q64760410) Pietro Antonio Antivari (1830–1899): _vescovo cattolico_ — confermato dal contesto
 - **Antonini, Carlo** (voci 563; anni 1837–1837) → [Q49742981](https://www.wikidata.org/wiki/Q49742981) Carlo Antonini (1740–1836): _incisore italiano (1740 circa-1836 circa)_ — Roma — confermato dal contesto
 - **Antonini, Prospero** (voci 491, 496, 507, 563; anni 1699–1883) → [Q3750504](https://www.wikidata.org/wiki/Q3750504) Francesco Prospero Antonini (1809–1884): _storico e patriota italiano_ — Udine, Firenze — nato o morto in Friuli/Veneto; date compatibili
@@ -616,6 +621,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Lazzarini, Alfredo** (voci 402, 403, 1536, 1600; anni 1698–1928) → [Q55064415](https://www.wikidata.org/wiki/Q55064415) Alfredo Lazzarini (1871–1945): _entomologo_ — date compatibili
 - **Lazzarini, Giuseppe Edgardo** (voci 2327, 2559; anni 1855–1959) → [Q60816889](https://www.wikidata.org/wiki/Q60816889) Giuseppe Edgardo Lazzarini (1832–1863): _avvocato e scrittore_ — date compatibili
 - **Leicht, Pier Silverio** (voci 4233; anni 1878–1956) → [Q21208632](https://www.wikidata.org/wiki/Q21208632) Pier Silverio Leicht (1874–1956): _giurista, storico e bibliotecario italiano (1874-1956)_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
+- **Leoni, Carlo** (voci 497; anni 1873–1887) → [Q3659520](https://www.wikidata.org/wiki/Q3659520) Pier Carlo Leoni (1812–1872): _storico ed epigrafista italiano_ — Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Leopardi, Giacomo** (voci 39; anni 1841–1841) → [Q172599](https://www.wikidata.org/wiki/Q172599) Giacomo Leopardi (1798–1837): _poeta, filosofo, scrittore e filologo italiano (1798-1837)_ — Recanati, Napoli — confermato dal contesto
 - **Liruti, Antonio** (voci 258, 511; anni 1806–1814) → [Q94990741](https://www.wikidata.org/wiki/Q94990741) Antonio Liruti (1773–1812): _avvocato e letterato italiano (1773-1812)_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Liruti, Gian Giuseppe** (voci 396, 470, 482, 485; anni 1373–1830) → [Q22682225](https://www.wikidata.org/wiki/Q22682225) Gian Giuseppe Liruti (1689–1780): _erudito italiano_ — Tarcento — nato o morto in Friuli/Veneto; date compatibili
@@ -659,6 +665,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Marchetti, Giuseppe** (voci 2609; anni ?–?) → [Q3397447](https://www.wikidata.org/wiki/Q3397447) Josef Marchet (1902–1966): _scrittore italiano (1902-1966)_ — Gemona del Friuli, Udine — confermato dal contesto
 - **Marchiori, Giuseppe** (voci 2134; anni ?–?) → [Q3770898](https://www.wikidata.org/wiki/Q3770898) Giuseppe Marchiori (1847–1900): _politico italiano_ — Lendinara, Roma — confermato dal contesto
 - **Marcotti, Giuseppe** (voci 2604, 2642, 3591, 4238; anni 1600–1959) → [Q52155434](https://www.wikidata.org/wiki/Q52155434) Giuseppe Marcotti (1850–1922): _scrittore, giornalista, avvocato e docente italiano_ — Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Marin, Carlo** (voci 3980, 3981, 3982, 3982/bis; anni 1816–1819) → [Q24262941](https://www.wikidata.org/wiki/Q24262941) Carlo Marin (1773–1852): _funzionario e poeta italiano (1773-1852)_ — Muggia, Mantova — nato o morto in Friuli/Veneto; date compatibili
 - **Marinelli, Gaetano** (voci 3238, 3239, 3295; anni ?–?) → [Q3757044](https://www.wikidata.org/wiki/Q3757044) Gaetano Marinelli (1754–?): _compositore italiano_ — Napoli — confermato dal contesto
 - **Marinelli, Giovanni** (voci 2134, 3591, 3730; anni 1828–1931) → [Q1605159](https://www.wikidata.org/wiki/Q1605159) Giovanni Marinelli (1846–1900): _geografo e politico italiano (1846-1900)_ — Udine, Firenze — il geografo
 - **Marini, Gaetano** (voci 579, 593; anni 1795–1800) → [Q3839667](https://www.wikidata.org/wiki/Q3839667) Luigi Gaetano Marini (1742–1815): _storico, archeologo e giurista italiano_ — Santarcangelo di Romagna, Parigi — date compatibili
@@ -906,6 +913,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Varchi, Benedetto** (voci 414, 639; anni ?–?) → [Q176833](https://www.wikidata.org/wiki/Q176833) Benedetto Varchi (1503–1565): _umanista, scrittore e storico italiano_ — Firenze
 - **Veggetti, Liborio** (voci 471; anni 1834–1859) → [Q130381443](https://www.wikidata.org/wiki/Q130381443) Liborio Veggetti (1785–1875): _professore, cavaliere, commendatore, bibliotecario e presidente del Collegio dei filologi_ — date compatibili
 - **Veludo, Giovanni** (voci 492; anni 1837–1872) → [Q4106954](https://www.wikidata.org/wiki/Q4106954) Giovanni Veludo (1811–1890): _bibliotecario, storico e filologo italiano (1811-1890)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Venanzio, Girolamo** (voci 490; anni 1833–1863) → [Q19357559](https://www.wikidata.org/wiki/Q19357559) Girolamo Venanzio (1791–1872) — date compatibili
 - **Veneto, Paolo** (voci 628, 1736; anni ?–?) → [Q2064265](https://www.wikidata.org/wiki/Q2064265) Paolo da Venezia (1369–1429): _umanista italiano_ — Udine, Padova — confermato dal contesto
 - **Venier, Francesco** (voci 606, 978; anni 1521–1551) → [Q774070](https://www.wikidata.org/wiki/Q774070) Francesco Venier (1489–1556): _doge della Repubblica di Venezia_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Venier, Maffio** (voci 2688; anni 1593–1593) → [Q3843049](https://www.wikidata.org/wiki/Q3843049) Maffio Venier (1550–1586): _arcivescovo e poeta italiano_ — Venezia, Torrenieri — nato o morto in Friuli/Veneto
@@ -921,7 +929,7 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Visconti, Alfonso** (voci 596; anni 1589–1780) → [Q954559](https://www.wikidata.org/wiki/Q954559) Alfonso Visconti (1552–1608): _cardinale italiano_ — Milano, Macerata — confermato dal contesto
 - **Visconti, Filippo Maria** (voci 1100; anni 1425–1432) → [Q289285](https://www.wikidata.org/wiki/Q289285) Filippo Maria Visconti (1392–1447): _nobile italiano, ultimo duca di Milano della dinastia dei Visconti_ — Milano — confermato dal contesto
 - **Vittorelli, Jacopo** (voci 471; anni 1732–1820) → [Q1385125](https://www.wikidata.org/wiki/Q1385125) Iacopo Vittorelli (1749–1835): _poeta, librettista e letterato italiano_ — Bassano del Grappa, Milano — confermato dal contesto
-- **Vittorio Emanuele II** (voci 356, 3591; anni 1759–1906) → [Q168691](https://www.wikidata.org/wiki/Q168691) Vittorio Emanuele II di Savoia (1820–1878): _ultimo re di Sardegna (r. 1849-1861), poi primo re d'Italia (r. 1861-1878)_ — Torino, Roma — date compatibili
+- **Vittorio Emanuele II** (voci 356, 2501, 3591; anni 1759–1906) → [Q168691](https://www.wikidata.org/wiki/Q168691) Vittorio Emanuele II di Savoia (1820–1878): _ultimo re di Sardegna (r. 1849-1861), poi primo re d'Italia (r. 1861-1878)_ — Torino, Roma — date compatibili
 - **Viviani, Quirico** (voci 337, 338, 340, 2490; anni 1832–1853) → [Q22988733](https://www.wikidata.org/wiki/Q22988733) Quirico Viviani (1780–1835): _scrittore_ — Farra di Soligo, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Volpi, Giovanni Antonio** (voci 114, 295; anni ?–?) → [Q3766475](https://www.wikidata.org/wiki/Q3766475) Giovanni Antonio Volpi (1686–1766): _critico letterario, editore e poeta italiano_ — Padova — nato o morto in Friuli/Veneto
 - **Zabeo, Giovanni Prosdocimo** (voci 482; anni 1693–1824) → [Q41618802](https://www.wikidata.org/wiki/Q41618802) Giovanni Prosdocimo Zabeo (1755–1828): _teologo (1753-1828)_ — Padova — nato o morto in Friuli/Veneto; date compatibili
@@ -948,9 +956,9 @@ Verifica del 2026-11-05. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **della Torre, Pagano** (voci 619, 667, 827, 1744; anni 1318–1843) → [Q3888926](https://www.wikidata.org/wiki/Q3888926) Pagano della Torre (?–1332): _patriarca cattolico italiano_ — confermato dal contesto
 - **di Bérenger, Adolfo** (voci 2633/16; anni ?–?) → [Q55847399](https://www.wikidata.org/wiki/Q55847399) Adolf von Berenger (1815–1895) — Monaco di Baviera, Roma — confermato dal contesto
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
-- **di San Genesio, Bertrando** (voci 533, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
+- **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3128 persone
+## 4. Nessun candidato su Wikidata: 3110 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

@@ -6,11 +6,11 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3975 | 610 | 7376 |
+| persona | 3963 | 613 | 7371 |
 | luogo | 560 | 63 | 4557 |
 | santo | 201 | 33 | 484 |
 
-Menzioni collegate a un'entità: 12417 su 20980. Senza entità: nome o cognome singolo 8300, parola o abbreviazione, non luogo 131, esclusa dal curatore 71, opera 43, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12412 su 20980. Senza entità: nome o cognome singolo 8300, parola o abbreviazione, non luogo 131, esclusa dal curatore 76, opera 43, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -105,22 +105,18 @@ Forme unite dalla normalizzazione grafica (doppie, j/i, accenti): controllare ch
 Nessuna parola è stata riconosciuta come cognome: è stata presa la parola preceduta da un articolo (Del Bianco) o quella usata più di rado come nome accanto a un altro cognome (Wolf, Venerio, Florio). Controllare l'ordine.
 
 - **Abel, Federico**: Abel Federico (3355, 3382, 3383); Federico Abel (3382, 3383)
-- **Academie, Angeli**: A. Angeli (510)
 - **Adelfo, Dositeo**: Adelfo Dositeo (1752)
 - **Agricol, Agricola**: Agricola (2598); Agricola co. Agricol (763)
 - **Agricola, Feliciano**: Feliciano Agricola (2604)
 - **Agricola, Leonardo**: Leonardo Agricola (1460)
 - **Alberto, Andrea**: Alberto Andrea (3750)
-- **Alberto, B.**: B. Alberto (2097)
-- **Alberto, Magno**: Alberto Magno (2097)
-- **Alberto, Rolando**: Alberto Rolando (10)
 - **Albini, Maffeo**: Maffeo Albini (23)
 - **Albino, Gaspare**: Gaspare Albino (618)
 - **Aleandro, Girolamo**: Gerolamo Aleandro (468); Girolamo Aleandro (619)
 - **Alessio, Francesco Tomaso**: Alessio Francesco Tomaso (476)
 - **Alessio, Giuseppe Mar.**: D. Gius. Mar. Alessio (804)
 - **Amarilli, Etrusca**: Amarilli Etrusca (18)
-- **Angeli, Angelo**: Angelo (2695)
+- **Angeli, Angelo**: A. Angeli (510); Angelo (2695)
 - **Antonino, Daniele**: Daniello Antonino (469)
 - **Antonino, Giacomo**: Giacomo Antonino (469)
 - **Appolonia, Sebastiano**: Sebastiano Appolonia (1203)
@@ -138,7 +134,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Basili, Andrea**: Basili Andrea (3189)
 - **Basso, Giovanni Battista**: Bassi G. B. [manuale]; Bassi G.B. [manuale]; Bassi Gio. Battista [manuale]; Basso Gio. Batta (465)
 - **Basso, Giovanni Maria**: Giovanni Maria (4210)
-- **Bell, Antonio**: Ant. Bell (565)
 - **Bellina, Antonio**: Bellina A. (2411); Bellina Antonio (1918)
 - **Bellina, G. Giuseppe**: G. Gius. Bellina (805)
 - **Bellina, Giacomo**: Bellina Giacomo (285); Giacomo Bellina (344, 866)
@@ -149,8 +144,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Bern, Francesco**: Franc. Bern (601)
 - **Bernabò, Gianfrancesco**: Bernabò Gianfrancesco (464)
 - **Bernadotte, Jean-Baptiste**: Bernadotte J. B. (1938)
-- **Bertrando, Arca Bertrando**: Arca del B. Bertrando (803)
-- **Bertrando, Beato**: De Beato (803)
 - **Bianco, Pellegrino**: Pellegrino Bianco (3041)
 - **Bona, Vincenzo**: Bona Vinc. (518)
 - **Bonaparte, Letizia**: Letizia Bonaparte (38)
@@ -165,10 +158,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Capello, G. B.**: G. B. Capello (1112)
 - **Capello, Lorenzo**: Lorenzo Capello (3790)
 - **Capello, Pietro**: L. T. Pietro Capello (568); Pietro Cappello e Leonardo Emo (999)
-- **Carlo, Ercole Colla**: Carlo Ercole Colla (487)
-- **Carlo, Leoni**: Carlo Leoni (497)
-- **Carlo, Magno**: Carlo Magno (563, 603, 610, 2632/14)
-- **Carlo, Marin**: Carlo Marin (3980, 3981, 3982, 3982/bis, 3983)
 - **Caro, Lucrezio**: Lucrezio Caro (597)
 - **Cassiano, Giovanni**: Gio. Cassiano (606)
 - **Cattaneo, Giuseppe**: Cattaneo Giuseppe (1618)
@@ -182,7 +171,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Colombo, C.**: C. Colombo (2639/14-22)
 - **Colombo, Giovanni**: Giovanni Colombo (10)
 - **Cornelio, Flaminio**: Flaminio Cornelio (619)
-- **Corno, Monte**: Monte Corno (2667)
 - **Cortenovis, A. M. C.**: A.M.C. (Cortenovis) (20)
 - **Cortenovis, Angelo**: P. D. Ang. Cortenovis (597); P. D. Angelo Cortenovis (531)
 - **Cortenovis, Angelo Maria**: A. M. Cortenovis (20, 569, 572, 593); Angelo Maria Cortenovis (470); Angelo Maria Cortinovis (592); Apografo A. M. Cortenovis (570); Cortenovis A. M. (577); Cortenovis P. Ang. M. (575, 576, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588); Cortenovis P. Ang. Maria (573, 574, 594, 595, 596, 597); Cortenovis P. Angelo M. (572); Cortenovis P. Angelo Maria (590, 591, 592); P. A. M. Cortenovis (593, 597); P. Ang. M. Cortenovis (589, 594)
@@ -223,12 +211,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Doria, Baldassarre**: Doria Baldassare (1889)
 - **Dossi, Domenico**: Dossi Domenico (1657)
 - **Eber, G. B.**: Eber G.B. (2154)
-- **Elena, St.**: St. Elena (3415)
 - **Elia, Rina**: Rina (2614)
 - **Elia, Roberto**: Elia Roberto (3994); Roberto Elia (3994)
-- **Ellen, Middleton**: Ellen Middleton (2630/2)
 - **Elze, Teodoro**: Teodoro Elze (344)
-- **Emanuele, Vittorio**: Vittorio Emanuele (2501)
 - **Emo, Leonardo**: Pietro Cappello e Leonardo Emo (999)
 - **Erico, Gaspare**: Erico Gaspare (287)
 - **Ermacora, A.**: A. Ermacora (763)
@@ -265,10 +250,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Giangiacomo**: Giangiacomo d'Ischia (875)
 - **Gianni, Francesco**: Francesco Gianni (323)
 - **Gioia, Melchiorre**: Melchiorre Gioia (3795)
-- **Girolamo, Cesarino**: Cesarino Girolamo (518)
-- **Girolamo, Prospero**: Girolamo Prospero (1932)
-- **Girolamo, Venanzio**: Girolamo Venanzio (490)
-- **Giulia, Venezia**: Venezia Giulia (3848)
 - **Giustiniano, Girolamo Ascanio**: Gerolamo Ascanio Giustiniano (501)
 - **Giustiniano, Leonardo**: Leonardo Giustiniano (10)
 - **Guerra, Giovanni Domenico**: D. Guerra (632); G. Dom.co Guerra (476); Gian Domenico Guerra (914); Giandomenico Guerra (601); Gio. Domenico Guerra (525)
@@ -290,13 +271,13 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Maffea, Angelo**: Angelo Maffea (10)
 - **Maffeo, Giacomo**: Giacomo Maffeo (10)
 - **Magni, Basilio**: Magni Basilio (2134)
-- **Magno, Alessandro**: Alessandro Magno (548)
 - **Magno, Celio**: Celio Magno (639)
 - **Malatesta, Pandolfo**: Pandolfo Malatesta (10)
 - **Marcello, Benedetto**: Marcello Benedetto (2899, 3180)
 - **Marcello, Paolo**: Paolo Marcello (1179)
 - **Mariani, Andrea**: Mariani Andrea (465)
 - **Marin, Augusto**: Augusto Marin (3979)
+- **Marin, Carlo**: Carlo Marin (3980, 3981, 3982, 3982/bis, 3983)
 - **Maron, Andrea**: Andrea Maron (824)
 - **Marone, Virgilio**: P. Virgilio Marone (348)
 - **Martina, Giuseppe**: G. Martina (2604); Gius. Martina (2604)
@@ -313,7 +294,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Mora, Bartolomeo**: Bart. Mora (606); Bortolamio Moro (606)
 - **Mora, Giovanni Francesco**: Mora Gio. Francesco (476)
 - **Nani, Giovanni**: Gio. Nani (824)
-- **Nicola, Giovanni**: Giovanni Nicola (10)
 - **Oliverio, Angelo**: A. Oliverio (3838, 3839, 3841, 3842, 3843, 3844, 3845, 3846, 3847); Angelo (3837, 3909); Angelo Oliverio (3840)
 - **Pace, Carlo**: Carlo Pace (23)
 - **Pace, Fabio**: Pace Fabio (52)
@@ -366,7 +346,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Rāj Sūri, Jin**: Jin Rāj Sūri (4379)
 - **Sagar, Jin**: Jin Sagar Suri (4370)
 - **Scott, Walter**: Walter Scott (2639/4)
-- **Sebastiano, E. C.**: D. Sebastiano E. C. (593)
 - **Seneca, Federico**: Federico Seneca (4235)
 - **Sforza, Daniele**: Sforza Daniello (346)
 - **Sforza, Fabio**: Fabio Sforza (43, 869)
@@ -422,8 +401,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **da Romano, Ezzelino**: Ezzelino da Romano (1702)
 - **da Zara, Simone**: Simone da Zara (1552)
 - **de Checco, A.**: A. de Checco (926)
-- **de Courtenay, Baudouin**: Baudouin de Courtenay (2635/14, 2635/5, 2636/5, 2637/10)
-- **de Courtenay, G. Baudouin**: G. Baudouin de Courtenay (2635/12)
 - **de Mauri, C.**: C. de' Mauri (606)
 - **de Pace, B.**: B. de Pace (3911)
 - **de Zorzi, Antoine**: Antoine de Zorzi (2948)
@@ -450,15 +427,16 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Altan, Antonio**: A-K. A. Altan (518); A. Altan (875); Antonio Altan (875); Antonio Altano (619)
 - **Altan, Federigo**: F. Altan (868); Federigo Altan (619)
 - **Amalteo, Marco Antonio**: M. A. Amalteo (102); Marcantonio Amalteo (60)
+- **Angeli, Angelo**: A. Angeli (510); Angelo (2695)
 - **Antonini, Antonio**: A. Antonini (481); Ant. Antonini (481); Antonio Antonini (23, 546)
 - **Aprilis, Bartolomeo**: B. Aprilis (875); Bart. Aprilis (511); Bartolomeo Aprilis (492)
 - **Arigone, Giovanni Battista**: Arigone Gio. Batta (287); G. B. Arrigone (102)
 - **Asquini, Fabio**: Asquini Fabio (558); Asquini co. Fabio (558); Dal co. Asquini F. (2473, 2474); Fabio Asquini (575, 721, 930); Fabio Asquino (471, 476, 508)
 - **Bassi, Giovanni Battista**: Basso Gio. Batta [manuale]; Bassi G. B. (524); Bassi G.B. (2134); Bassi Gio. Battista (518)
 - **Battistella, Antonio**: A. Battistella (721); Battistella A.° (1973); Battistella Ant.° (1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967); Battistella Antonio (1956); Battistella, Antonio (3520)
-- **Baudouin de Courtenay, Jan**: Jan Niecisław Baudouin de Courtenay [manuale]; Baudouin de Courtenay (2634/16, 2635/4)
+- **Baudouin de Courtenay, Jan**: Jan Niecisław Baudouin de Courtenay [manuale]; Baudouin de Courtenay (2634/16, 2635/14, 2635/4, 2635/5, 2636/5, 2637/10); G. Baudouin de Courtenay (2635/12)
 - **Belgrado, Jacopo**: J. Belgrado (1375); Jacopo Belgrado (875); Jacopo e Carlo Belgrado (1375)
-- **Belloni, Antonio**: A. Bellon (566); A. Belloni (764, 945); Antonii (769, 787); Antonii Belloni (621, 944); Antonio (688); Antonio Bellone (43, 566, 568, 1571); Antonio Belloni (561, 699, 771, 905, 944); Bellone Antonio (373); Belloni Antonio (565, 566, 1622, 1625); Protocollo Antonii Belloni (777); S. Antonio Bellon (777)
+- **Belloni, Antonio**: A. Bellon (566); A. Belloni (764, 945); Ant. Bell (565); Antonii (769, 787); Antonii Belloni (621, 944); Antonio (688); Antonio Bellone (43, 566, 568, 1571); Antonio Belloni (561, 699, 771, 905, 944); Bellone Antonio (373); Belloni Antonio (565, 566, 1622, 1625); Protocollo Antonii Belloni (777); S. Antonio Bellon (777)
 - **Beltrame, Giuseppe**: G. Beltrame (338, 1426, 1427); Giuseppe Beltrame (340, 866)
 - **Beretta, Antonio**: A. Beretta (524, 3591); Ant.o Beretta (476); Ant.° cav. Beretta (487); Beretta cav. Antonio (2134)
 - **Beretta, Francesco**: Beretta co. Francesco (518, 1668); Fr.° Beretta (601); Franc.° Beretta (485); Francesco Beretta (15, 485, 619, 771, 1668)
@@ -593,7 +571,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Valvason, Jacopo**: J. di Valvasone (1571); Jacopo Valvason (102); Jacopo Valvason di Maniago (1490); Jacopo Valvasone (672); Jacopo Valvasone di Maniaco (525); Valvasón di Jacopo (1784)
 - **Verdi, Giuseppe**: Giuseppe Verdi (3350, 3358, 3434); Macbeth di Giuseppe Verdi (3362); Verdi G. (4279); Verdi Giuseppe (3249, 3261, 3287, 3350, 3358, 3362, 3434, 3460)
 - **Vida, Andrea**: A. Vida (205); Andrea Vida (339)
-- **Vittorio Emanuele II**: Roma di Vittorio Emanuele II (356); Vitt.Emanuele II (3591)
+- **Vittorio Emanuele II**: Roma di Vittorio Emanuele II (356); Vitt.Emanuele II (3591); Vittorio Emanuele (2501)
 - **Viviani, Quirico**: Q. Viviani (337); Quirico Viviani (338, 340); Viviani Quirico (2490)
 - **Volpi, Giovanni Antonio**: Volpi G. A. (114); Volpi Gio. Antonio (295)
 - **Wolf, Alessandro**: A. Wolf (525, 874, 889, 917, 944, 1564, 1565, 1566, 1567, 1568, 1571, 1572, 1573, 1575, 1576, 1577, 1578, 3773); Al. Wolf (1562, 1563); Aless. Wolf (329, 330, 501); Alessandro (2568, 3593); Alessandro Wolf (1561); Alessandro Wolff (665); Wolf A. (525); Wolf Alessandro (1558, 1852, 1853, 1854, 1855, 1856, 1923, 1924, 1925, 1926, 1927, 1928)
@@ -608,6 +586,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 ## 5. Persone: altre entità con più forme (forme inverse, abbreviazioni, latino)
 
 - **Acerbi, Giovanni**: Giovanni (3968); Giovanni Acerbi (2557)
+- **Alberto Magno**: Alberto Magno (2097); B. Alberto (2097)
 - **Alighieri, Dante**: Divina Commedia di Dante Alighieri (3618); Divina Commedia di Dante Allighieri (433)
 - **Amalteo, Francesco**: Franc. Amalteo (468); Francesco Amalteo (468)
 - **Amalteo, Girolamo**: Amalteo Girolamo (287); Gerolamo Amalteo (102)
@@ -870,7 +849,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **d'Este, Eleonora**: Eleonora d'Este [manuale]; Maria Francesca dello Spirito Santo [manuale]; Eleonora (2003, 2004, 2005); Venerabilis Serve Dei Matris Marie Francisce (2003)
 - **da Pordenone, Odorico**: B. Odorico (825); B. Odoricus de Portu Naonis Provinciae Fori Julii (549); B.° Odorico (549); Beato Odorico (549)
 - **de Gerolami, Agostino**: Agostino Germiniano [manuale]; Agostino Geronimiano [manuale]; Agostino de Gerolami [manuale]; Publio Augusto Graziani [manuale]; Augusto Hieronimiano (43); Publii Augusti Geronimiani Utinensis (43)
-- **di San Genesio, Bertrando**: B. Bertrando (826); Beato S.N. (533)
+- **di San Genesio, Bertrando**: Arca del B. Bertrando (803); B. Bertrando (826); Beato S.N. (533)
 - **Śrī, Gautam**: Iti Śrī Gautam (4495); Śrī Gautam (4351)
 
 ## 6. Luoghi con più forme
@@ -1187,7 +1166,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3344 entità: elenco completo nella tabella `entita`.
+3330 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

@@ -4,7 +4,7 @@ Solo i collegamenti ad affidabilità **alta** (luoghi confermati dal curatore, p
 
 ## 1. Varianti di ricerca dalle fonti
 
-Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 375 per i luoghi, 879 per le persone. Esempi:
+Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 375 per i luoghi, 886 per le persone. Esempi:
 
 - **Bruxelles**: Brussel-stad; Brusselle; Bruxelles-Ville; Città di Brusselle; Ville de Bruxelles; Brucellae; Urbs Brucellae; Urbs Bruxellae
 - **Roma**: Caput Mundi; Urbs Aeterna; Urbs Marmorea; Città dei sette colli; Città di Roma; Città eterna; Urbe
@@ -56,7 +56,7 @@ Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_estern
 - **Giuseppe II**: Giuseppe II d'Asburgo-Lorena; Giuseppe II Benedetto Augusto Giovanni Antonio Michele Adamo Davide d'Asburgo-Lorena; Giuseppe II d'Asburgo; Giuseppe II d'Austria; Giuseppe II, Sacro Romano Imperatore; Imperatore Giuseppe II
 - **Clemente XIII**: papa Clemente XIII; Carlo Rezzonico; Carlo Rezzonico seniore; Michelangelo dei Conti; Carolus della Torre Rezzonico; Clemens PP. XIII
 - **Cicerone, Marco Tullio**: Marco Tullio Cicerone; Cicerone; M. Tullio Cicerone; M.Tullius M.f.M.n. Cor. Cicero; Tullio; Cicero
-- **Veneto, Paolo**: Paolo da Venezia; Paolo Niccoletti da Udine; Paolo Nicoletti; Paulus Venetus; Paulus de Venetiis
+- **Alberto Magno**: Sant'Alberto Magno; Alberto di Bollstädt; Alberto di Colonia; Albertus Magnus; Doctor Universalis; Albert Magnus
 
 ## 2. Nomi ambigui sciolti con la persona collegata
 
