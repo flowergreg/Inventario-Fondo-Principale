@@ -5,9 +5,9 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | Affidabilità | Persone |
 |---|---|
 | alta | 741 |
-| media | 27 |
+| media | 28 |
 | bassa | 31 |
-| nessuna | 3065 |
+| nessuna | 3060 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -46,6 +46,8 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q136443277](https://www.wikidata.org/wiki/Q136443277) Cosimo Riccardi (?–1649): _militare e funzionario italiano (-1649)_ [0]
 - **Romanello, Giovanni Antonio** (voci 10; anni 1461–1461) → [Q87642949](https://www.wikidata.org/wiki/Q87642949) Giovanni Antonio Romanello (?–?)
 - **Rossetti** (voci 2159; anni 1750–1750) → [Q21607432](https://www.wikidata.org/wiki/Q21607432)  (1866–?)
+- **Sassonia, Maria Amalia** (voci 714; anni 1716–1756) → [Q169512](https://www.wikidata.org/wiki/Q169512) Maria Amalia di Sassonia (1724–1760): _regina consorte di Napoli, Sicilia e Spagna_ — Dresda, Madrid — date compatibili
+  - altri: [Q69929](https://www.wikidata.org/wiki/Q69929) Maria Amalia di Sassonia (1794–1870): _principessa di Sassonia, compositrice e drammaturga tedesca_ — Dresda, Pillnitz [0]; [Q325897](https://www.wikidata.org/wiki/Q325897) Maria Amalia di Sassonia (1757–1831) — Dresda, Neuburg an der Donau [0]
 - **Suzzi, Celestino** (voci 334, 335; anni ?–?) → [Q112316093](https://www.wikidata.org/wiki/Q112316093) Celestino Suzzi (1815–1883)
 - **Tilatti, Andrea** (voci 1445; anni ?–?) → [Q89477491](https://www.wikidata.org/wiki/Q89477491) Andrea Tilatti (1962–?): _medievista italiano (1962-)_ — Udine — nato o morto in Friuli/Veneto; nato nel 1962: verificare
 - **Volpato Morghen, Domenica** (voci 2134; anni ?–?) → [Q131242678](https://www.wikidata.org/wiki/Q131242678) Domenica Volpato Morghen (?–?)
@@ -126,7 +128,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Alessandro VIII** (voci 606; anni 1689–1730) → [Q101294](https://www.wikidata.org/wiki/Q101294) papa Alessandro VIII (1610–1691): _241° vescovo di Roma e papa della Chiesa cattolica dal 1689 al 1691_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Aloi, Nicolò** (voci 15, 1303; anni 1566–1708) → [Q114863032](https://www.wikidata.org/wiki/Q114863032) Nicolò Aloi (1651–1731): _notaio, rimatore_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Alpruni, Francesco Antonio** (voci 470; anni 1774–1782) → [Q55225062](https://www.wikidata.org/wiki/Q55225062) Francesco Antonio Alpruni (1732–1814) — date compatibili
-- **Altan, Antonio** (voci 518, 619, 875; anni 1752–1752) → [Q18551912](https://www.wikidata.org/wiki/Q18551912) Antonio Altan (?–1450): _vescovo italiano del XV secolo_ — San Vito al Tagliamento, Barcellona — nato o morto in Friuli/Veneto
+- **Altan, Antonio** (voci 518, 619, 875, 938; anni 1752–1786) → [Q18551912](https://www.wikidata.org/wiki/Q18551912) Antonio Altan (?–1450): _vescovo italiano del XV secolo_ — San Vito al Tagliamento, Barcellona — nato o morto in Friuli/Veneto
 - **Altan, Federigo** (voci 619, 868; anni 1752–1763) → [Q122941036](https://www.wikidata.org/wiki/Q122941036) Federigo Altan (1714–1767): _abate, storico, poeta, poligrafo (1714-1767)_ — San Vito al Tagliamento — nato o morto in Friuli/Veneto; date compatibili
 - **Amalteo, Ascanio** (voci 568; anni 1578–1587) → [Q114890087](https://www.wikidata.org/wiki/Q114890087) Ascanio Amalteo (1630–1691): _precettore e poeta_ — Venezia — nato o morto in Friuli/Veneto
 - **Amalteo, Francesco** (voci 468; anni 1517–1568) → [Q114890147](https://www.wikidata.org/wiki/Q114890147) Francesco Amalteo (1480–1554): _rettore di scuola_ — Pordenone — confermato dal contesto
@@ -547,7 +549,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Mantica, Francesco** (voci 568, 606, 619; anni 1596–1608) → [Q3080997](https://www.wikidata.org/wiki/Q3080997) Francesco Mantica (1534–1614): _cardinale e giurista italiano (1534-1614)_ — Venzone, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Mantica, Germanico** (voci 619, 2275; anni ?–?) → [Q24288764](https://www.wikidata.org/wiki/Q24288764) Germanico Mantica (?–1639) — Adria — nato o morto in Friuli/Veneto
 - **Manuzio, Paolo** (voci 468, 524; anni 1561–1877) → [Q941151](https://www.wikidata.org/wiki/Q941151) Paolo Manuzio (1512–1574): _editore, tipografo e umanista italiano (1512-1574)_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
-- **Manzini, Giuseppe** (voci 3919, 4130; anni 1878–1878) → [Q97066228](https://www.wikidata.org/wiki/Q97066228) Giuseppe Manzini (1866–1956): _sacerdote italiano (1866-1956)_ — Cadidavid, Verona — nato o morto in Friuli/Veneto; date compatibili
+- **Manzini, Giuseppe** (voci 1317, 3919, 4130; anni 1859–1895) → [Q97066228](https://www.wikidata.org/wiki/Q97066228) Giuseppe Manzini (1866–1956): _sacerdote italiano (1866-1956)_ — Cadidavid, Verona — nato o morto in Friuli/Veneto; date compatibili
 - **Manzoni, Alessandro** (voci 291, 337, 471, 497; anni 1848–1887) → [Q1064](https://www.wikidata.org/wiki/Q1064) Alessandro Manzoni (1785–1873): _scrittore e poeta italiano (1785-1873)_ — Milano — confermato dal contesto
 - **Maometto III** (voci 1091; anni 1609–1609) → [Q171465](https://www.wikidata.org/wiki/Q171465) Mehmet III (1566–1603): _sultano ottomano (r. 1595-1603)_ — Magnesia, Costantinopoli
 - **Marcello, Benedetto** (voci 2899, 3180; anni ?–?) → [Q312784](https://www.wikidata.org/wiki/Q312784) Benedetto Marcello (1686–1739): _compositore italiano_ — Venezia, Brescia — nato o morto in Friuli/Veneto
@@ -808,7 +810,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Valsecchi, Antonio** (voci 482; anni 1775–1824) → [Q27067579](https://www.wikidata.org/wiki/Q27067579) Antonino Valsecchi (1708–1791): _apologeta domenicano italiano_ — Verona, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Valussi, Pacifico** (voci 491, 2559, 2604, 3800; anni 1685–1919) → [Q3547618](https://www.wikidata.org/wiki/Q3547618) Pacifico Valussi (1813–1893): _giornalista e politico italiano (1813-1893)_ — Talmassons, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Valvason, Erasmo** (voci 1598, 2600; anni 1523–1942) → [Q3731096](https://www.wikidata.org/wiki/Q3731096) Erasmo di Valvasone (1523–1593): _poeta italiano_ — Valvasone, Mantova — nato o morto in Friuli/Veneto; date compatibili
-- **Valvason, Jacopo** (voci 102, 525, 672, 1490; anni 1371–1561) → [Q136523650](https://www.wikidata.org/wiki/Q136523650) Jacopo Valvasone (1499–1580): _storico_ — confermato dal contesto
+- **Valvasone, Jacopo** (voci 102, 525, 672, 919; anni 1298–1793) → [Q136523650](https://www.wikidata.org/wiki/Q136523650) Jacopo Valvasone (1499–1580): _storico_ — confermato dal contesto
 - **Varchi, Benedetto** (voci 414, 639; anni ?–?) → [Q176833](https://www.wikidata.org/wiki/Q176833) Benedetto Varchi (1503–1565): _umanista, scrittore e storico italiano_ — Firenze
 - **Veggetti, Liborio** (voci 471; anni 1834–1859) → [Q130381443](https://www.wikidata.org/wiki/Q130381443) Liborio Veggetti (1785–1875): _professore, cavaliere, commendatore, bibliotecario e presidente del Collegio dei filologi_ — date compatibili
 - **Veludo, Giovanni** (voci 492; anni 1837–1872) → [Q4106954](https://www.wikidata.org/wiki/Q4106954) Giovanni Veludo (1811–1890): _bibliotecario, storico e filologo italiano (1811-1890)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
@@ -828,7 +830,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Visconti, Alfonso** (voci 596; anni 1589–1780) → [Q954559](https://www.wikidata.org/wiki/Q954559) Alfonso Visconti (1552–1608): _cardinale italiano_ — Milano, Macerata — confermato dal contesto
 - **Visconti, Filippo Maria** (voci 1100; anni 1425–1432) → [Q289285](https://www.wikidata.org/wiki/Q289285) Filippo Maria Visconti (1392–1447): _nobile italiano, ultimo duca di Milano della dinastia dei Visconti_ — Milano — confermato dal contesto
 - **Vittorelli, Jacopo** (voci 471; anni 1732–1820) → [Q1385125](https://www.wikidata.org/wiki/Q1385125) Iacopo Vittorelli (1749–1835): _poeta, librettista e letterato italiano_ — Bassano del Grappa, Milano — confermato dal contesto
-- **Vittorio Emanuele II** (voci 356, 1671, 2501, 3591; anni 1759–1906) → [Q168691](https://www.wikidata.org/wiki/Q168691) Vittorio Emanuele II di Savoia (1820–1878): _ultimo re di Sardegna (r. 1849-1861), poi primo re d'Italia (r. 1861-1878)_ — Torino, Roma — date compatibili
+- **Vittorio Emanuele II** (voci 1671, 2501, 3591; anni 1759–1906) → [Q168691](https://www.wikidata.org/wiki/Q168691) Vittorio Emanuele II di Savoia (1820–1878): _ultimo re di Sardegna (r. 1849-1861), poi primo re d'Italia (r. 1861-1878)_ — Torino, Roma — date compatibili
 - **Viviani, Quirico** (voci 337, 338, 340, 2490; anni 1832–1853) → [Q22988733](https://www.wikidata.org/wiki/Q22988733) Quirico Viviani (1780–1835): _scrittore_ — Farra di Soligo, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Volpi, Giovanni Antonio** (voci 114, 295; anni ?–?) → [Q3766475](https://www.wikidata.org/wiki/Q3766475) Giovanni Antonio Volpi (1686–1766): _critico letterario, editore e poeta italiano_ — Padova — nato o morto in Friuli/Veneto
 - **Zabeo, Giovanni Prosdocimo** (voci 482; anni 1693–1824) → [Q41618802](https://www.wikidata.org/wiki/Q41618802) Giovanni Prosdocimo Zabeo (1755–1828): _teologo (1753-1828)_ — Padova — nato o morto in Friuli/Veneto; date compatibili
@@ -859,7 +861,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3065 persone
+## 4. Nessun candidato su Wikidata: 3060 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

@@ -1,7 +1,7 @@
 voce	testo	persone	nota
 1484	Rodolfo Barnaba e Niccolò Comuzzi	Rodolfo / Barnaba | Niccolò Comuzzi	Barnaba è cognome: due persone
 1199	G. C. Antonelli a Lorenzo della Torre	G. C. Antonelli | Lorenzo della Torre	mittente e destinatario
-636	Aquileja di Raimondo Della Torre	Raimondo Della Torre	«Aquileja» appartiene alla frase
+636	Raimondo Della Torre	Raimondo Della Torre	«Aquileja» appartiene alla frase
 	G. Venerio	Girolamo Venerio	
 	A. Wolf	Alessandro Wolf	
 10	F. Ale	F. / Ale. Ve.	nome abbreviato completo: «F. Ale. Ve.»
@@ -193,7 +193,7 @@ voce	testo	persone	nota
 619	Margherita di Pellegrino Meynardi di Venzone	Margherita / Meynardi	fase 6, blocco 2
 1628	R. D. Jo. Dominicus Martinuzzi Publicus Philosophiae	Giovanni Domenico / Martinuzzi	fase 6, blocco 2
 616	Mathiae Mijlini de Sancto Daniele	Mattia / Midolini	fase 6, blocco 2: curatore: Mattia Midolini, latinizzato Mijlinus o Midolinus
-1150	Messina di G. U. Pagani Cesa	Giuseppe Urbano / Pagani Cesa	fase 6, blocco 2
+1150	G. U. Pagani Cesa	Giuseppe Urbano / Pagani Cesa	fase 6, blocco 2
 564	Minuccio de Minucci Secr.° di N. S.	Minuccio / Minucci	fase 6, blocco 2
 3895	P. Giovanni Nimis Cappellano di Zompitta	Giovanni / Nimis	fase 6, blocco 2
 525	Nobili S. Ant.° De Bidernuci Cam.° Sant. Andree	Antonio / de Bidernuci	fase 6, blocco 2
@@ -207,7 +207,7 @@ voce	testo	persone	nota
 2156	Napoleon I. Proclama del Cittadino Buonaparte	Napoleone I	fase 6, blocco 2
 3867	R.di Petri Busolini S. Theologiae	Pietro / Busolini	fase 6, blocco 2
 947	Regesta Honorii Papae III. Sono	Onorio III	fase 6, blocco 2
-356	Roma di Vittorio Emanuele II	Vittorio Emanuele II	fase 6, blocco 2
+356	Vittorio Emanuele II	Vittorio Emanuele II	fase 6, blocco 2
 576	De Sancto Jesu Christi Sepulchro	santo:Santo Sepolcro	fase 6, blocco 2
 530	Paolo Sarpi Servita Teologo della Seren	Paolo / Sarpi	fase 6, blocco 2
 2707	Sig.re Antonio de Comelli da Lionardo Marzona	Antonio / de Comelli | Leonardo / Marzona	fase 6, blocco 2: due persone
@@ -339,7 +339,7 @@ voce	testo	persone	nota
 501	Luog. Alvise Foscari	Alvise / Foscari	fase 6, scomposizioni
 519	V. Riv. Friul		fase 6, scomposizioni
 518	Riv. Friulana		fase 6, scomposizioni
-1542	Friuli di Pr. Antonini	Prospero / Antonini	fase 6, scomposizioni
+1542	Pr. Antonini	Prospero / Antonini	fase 6, scomposizioni
 469	Nicolò IV Gabrieli	Nicolò / Gabrieli	fase 6, scomposizioni
 4104	Genesi Capo XXIV		fase 6, scomposizioni
 606	A C. Gentili	C. / Gentili	fase 6, scomposizioni
@@ -439,3 +439,5 @@ voce	testo	persone	nota
 606	Giusto	Giusto / Fontanini	fase 6, scomposizioni: curatore («Abt. Domenico e Msgr. Giusto»)
 604	Savorgnani del Monte	Savorgnan /	famiglia («antica famiglia de' Savorgnani del Monte»)
 	Carlomagno	Carlo Magno /	curatore: variante di Carlo Magno
+523	Monte di Pietà di Udine		ente, non persona
+1571	Sacco di Udine di A. Savorgnano	A. / Savorgnano	«Sacco di Udine» è l'evento

@@ -215,7 +215,7 @@ def fonti_curatore(con):
     for r in righe:
         d = schede.get(r["url"].rstrip("/"))
         if d:
-            r["nota"] = f"{d['cognome']} {d['nome']}".strip() + (f" ({d['date']})" if d["date"] else "")
+            r["nota"] = (f"{d['cognome']}, {d['nome']}" if d["nome"] else d["cognome"]) + (f" ({d['date']})" if d["date"] else "")
         eid = indice.get((r["tipo"], chiave_i(r["intestazione"])))
         if not eid:
             mancanti.append(r["intestazione"])

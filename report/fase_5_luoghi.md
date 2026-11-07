@@ -4,9 +4,9 @@ Verifica del 2026-11-07. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 534 |
+| alta | 535 |
 | media | 0 |
-| bassa | 0 |
+| bassa | 1 |
 | nessuna | 26 |
 
 ## 1. Affidabilità media: più candidati, da scegliere
@@ -14,6 +14,7 @@ Verifica del 2026-11-07. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 ## 2. Affidabilità bassa: solo GeoNames fuori regione
 
+- **Affrica** (1 menz.; voci 1317) → Mahdia — GeoNames [2473572](https://www.geonames.org/2473572) PPLA, TN — Wikidata [Q466054](https://www.wikidata.org/wiki/Q466054): _città della Tunisia_ — solo GeoNames, fuori regione
 
 ## 3. Nessuna corrispondenza
 
@@ -33,7 +34,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **America** (3 menz.; voci 1578, 2634/17) → America — GeoNames [10861432](https://www.geonames.org/10861432) — Wikidata [Q828](https://www.wikidata.org/wiki/Q828): _continente della Terra_
 - **Ampezzo** (2 menz.; voci 1564, 4113) → Ampezzo — GeoNames [3183105](https://www.geonames.org/3183105) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53214](https://www.wikidata.org/wiki/Q53214): _comune italiano_
 - **Amsterdam** (1 menz.; voci 503) → Amsterdam — GeoNames [2759794](https://www.geonames.org/2759794) PPLC, NL — Wikidata [Q727](https://www.wikidata.org/wiki/Q727): _capitale dei Paesi Bassi_
-- **Aquileia** (169 menz.; voci 469, 476, 484, 485) → Aquileia — GeoNames [3182943](https://www.geonames.org/3182943) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53216](https://www.wikidata.org/wiki/Q53216): _comune italiano_
+- **Aquileia** (171 menz.; voci 469, 476, 484, 485) → Aquileia — GeoNames [3182943](https://www.geonames.org/3182943) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53216](https://www.wikidata.org/wiki/Q53216): _comune italiano_
 - **Armenia** (1 menz.; voci 3417) → Armenia — GeoNames [174982](https://www.geonames.org/174982) — Wikidata [Q399](https://www.wikidata.org/wiki/Q399): _stato dell'Eurasia_
 - **Artegna** (3 menz.; voci 525, 533, 3936) → Artegna — GeoNames [3182782](https://www.geonames.org/3182782) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53220](https://www.wikidata.org/wiki/Q53220): _comune italiano_
 - **Ascoli Piceno** (1 menz.; voci 10) → Ascoli Piceno — GeoNames [3182749](https://www.geonames.org/3182749) PPLA2, reg. 10 (AP) — Wikidata [Q6624](https://www.wikidata.org/wiki/Q6624): _comune italiano, capoluogo dell'omonima provincia nelle Marche_
@@ -106,7 +107,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Carbona** (1 menz.; voci 3855) → Carbona — GeoNames [3180575](https://www.geonames.org/3180575) PPL, Friuli-Venezia Giulia (PN) — Wikidata [Q18448342](https://www.wikidata.org/wiki/Q18448342): _frazione del comune italiano di San Vito al Tagliamento, provincia di Pordenone_
 - **Carinzia** (6 menz.; voci 518, 1224, 1367, 1955) → Carinzia — GeoNames [2774686](https://www.geonames.org/2774686) — Wikidata [Q37985](https://www.wikidata.org/wiki/Q37985): _stato federato dell'Austria_
 - **Carmagnola** (1 menz.; voci 1100) → Carmagnola — GeoNames [3180496](https://www.geonames.org/3180496) PPLA3, reg. 12 (TO) — Wikidata [Q9187](https://www.wikidata.org/wiki/Q9187): _comune italiano_
-- **Carnia** (63 menz.; voci 317, 330, 377, 389) → Carnia — Wikidata [Q369765](https://www.wikidata.org/wiki/Q369765): _regione storico-geografica in Italia_ — regione storica
+- **Carnia** (66 menz.; voci 317, 330, 370, 377) → Carnia — Wikidata [Q369765](https://www.wikidata.org/wiki/Q369765): _regione storico-geografica in Italia_ — regione storica
 - **Carniola** (7 menz.; voci 519, 542 a, 905, 1224) → Carniola — Wikidata [Q193474](https://www.wikidata.org/wiki/Q193474): _provincia tradizionale slovena_
 - **Casarsa** (2 menz.; voci 446, 4266) → Casarsa della Delizia — GeoNames [3180045](https://www.geonames.org/3180045) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q30023989](https://www.wikidata.org/wiki/Q30023989): _capoluogo dell'omonimo comune_
 - **Cassacco** (2 menz.; voci 888, 1015) → Cassacco — GeoNames [3179800](https://www.geonames.org/3179800) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53236](https://www.wikidata.org/wiki/Q53236): _comune italiano_
@@ -135,7 +136,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Cinto Caomaggiore** (1 menz.; voci 1444) → Cinto Caomaggiore — GeoNames [3178664](https://www.geonames.org/3178664) PPLA3, Veneto (VE) — Wikidata [Q47376](https://www.wikidata.org/wiki/Q47376): _comune italiano_
 - **Ciseriis** (1 menz.; voci 3563) → Ciseriis — GeoNames [3220050](https://www.geonames.org/3220050) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18450994](https://www.wikidata.org/wiki/Q18450994): _centro abitato situato presso Tarcento, provincia di Udine_
 - **Cittanova d'Istria** (2 menz.; voci 598, 891) → Cittanova — GeoNames [3194379](https://www.geonames.org/3194379) — Wikidata [Q5395](https://www.wikidata.org/wiki/Q5395): _città croata_ — Cittanova d'Istria (Novigrad)
-- **Cividale del Friuli** (166 menz.; voci 164, 170, 355, 371) → Cividale del Friuli — GeoNames [3178605](https://www.geonames.org/3178605) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53245](https://www.wikidata.org/wiki/Q53245): _comune italiano_
+- **Cividale del Friuli** (167 menz.; voci 164, 170, 355, 371) → Cividale del Friuli — GeoNames [3178605](https://www.geonames.org/3178605) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53245](https://www.wikidata.org/wiki/Q53245): _comune italiano_
 - **Civitavecchia** (1 menz.; voci 470) → Civitavecchia — GeoNames [3178587](https://www.geonames.org/3178587) PPLA3, reg. 07 (RM) — Wikidata [Q242533](https://www.wikidata.org/wiki/Q242533): _comune italiano_
 - **Clauiano** (2 menz.; voci 1685, 2078) → Clauiano — GeoNames [3178554](https://www.geonames.org/3178554) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q3680294](https://www.wikidata.org/wiki/Q3680294): _frazione del comune italiano di Trivignano Udinese_ — grafia confermata dal curatore; anche cognome nel testo
 - **Claut** (1 menz.; voci 618) → Claut — GeoNames [3221658](https://www.geonames.org/3221658) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53163](https://www.wikidata.org/wiki/Q53163): _comune italiano_
@@ -202,7 +203,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Francoforte sul Meno** (1 menz.; voci 617) → Francoforte sul Meno — GeoNames [3220968](https://www.geonames.org/3220968) — Wikidata [Q1794](https://www.wikidata.org/wiki/Q1794): _città extracircondariale della Germania_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Frauenfeld** (1 menz.; voci 2106) → Frauenfeld — GeoNames [2660727](https://www.geonames.org/2660727) PPLA, CH — Wikidata [Q68120](https://www.wikidata.org/wiki/Q68120): _città del cantone Turgovia, Svizzera_
 - **Fresis** (1 menz.; voci 1291) → Fresis — GeoNames [3219216](https://www.geonames.org/3219216) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18451555](https://www.wikidata.org/wiki/Q18451555): _frazione del comune italiano di Enemonzo, provincia di Udine_
-- **Friuli** (435 menz.; voci 15, 23, 53, 99) → Friuli — GeoNames [3165071](https://www.geonames.org/3165071) ADM2, Friuli-Venezia Giulia (UD) — Wikidata [Q160570](https://www.wikidata.org/wiki/Q160570): _regione storica dell'Italia nord-orientale_
+- **Friuli** (438 menz.; voci 15, 23, 53, 99) → Friuli — GeoNames [3165071](https://www.geonames.org/3165071) ADM2, Friuli-Venezia Giulia (UD) — Wikidata [Q160570](https://www.wikidata.org/wiki/Q160570): _regione storica dell'Italia nord-orientale_
 - **Fusea** (1 menz.; voci 1534) → Fusea — GeoNames [3219099](https://www.geonames.org/3219099) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18451567](https://www.wikidata.org/wiki/Q18451567): _frazione del comune italiano di Tolmezzo, provincia di Udine_
 - **Gaeta** (1 menz.; voci 3975) → Gaeta — GeoNames [3176438](https://www.geonames.org/3176438) PPLA3, reg. 07 (LT) — Wikidata [Q128089](https://www.wikidata.org/wiki/Q128089): _comune italiano_
 - **Gagliano** (1 menz.; voci 1046) → Gagliano — GeoNames [3176429](https://www.geonames.org/3176429) PPL, Friuli-Venezia Giulia (UD) — frazione di Cividale
@@ -267,7 +268,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Lumignacco** (2 menz.; voci 256, 350) → Lumignacco — GeoNames [3217504](https://www.geonames.org/3217504) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452037](https://www.wikidata.org/wiki/Q18452037): _centro abitato situato presso Pavia di Udine, provincia di Udine_
 - **Lusevera** (1 menz.; voci 4090) → Lusevera — GeoNames [3174428](https://www.geonames.org/3174428) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53275](https://www.wikidata.org/wiki/Q53275): _comune italiano_
 - **Macerata** (4 menz.; voci 20, 500, 576, 593) → Macerata — GeoNames [3174380](https://www.geonames.org/3174380) PPLA2, reg. 10 (MC) — Wikidata [Q13135](https://www.wikidata.org/wiki/Q13135): _comune italiano, capoluogo dell'omonima provincia nelle Marche_
-- **Madrid** (1 menz.; voci 721) → Madrid — GeoNames [6359304](https://www.geonames.org/6359304) — Wikidata [Q2807](https://www.wikidata.org/wiki/Q2807): _capitale della Spagna_
+- **Madrid** (2 menz.; voci 721, 3311) → Madrid — GeoNames [6359304](https://www.geonames.org/6359304) — Wikidata [Q2807](https://www.wikidata.org/wiki/Q2807): _capitale della Spagna_
 - **Magnano in Riviera** (1 menz.; voci 2044) → Magnano in Riviera — GeoNames [3174245](https://www.geonames.org/3174245) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53276](https://www.wikidata.org/wiki/Q53276): _comune italiano_
 - **Maiano** (1 menz.; voci 4217) → Majano — GeoNames [6535597](https://www.geonames.org/6535597) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q30027127](https://www.wikidata.org/wiki/Q30027127): _capoluogo dell'omonimo comune_
 - **Malborghetto** (1 menz.; voci 1564) → Malborghetto — GeoNames [3174190](https://www.geonames.org/3174190) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q30027132](https://www.wikidata.org/wiki/Q30027132): _capoluogo del comune di Malborghetto-Valbruna_
@@ -289,9 +290,9 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Mereto di Tomba** (7 menz.; voci 471, 476, 485, 525) → Mereto di Tomba — GeoNames [3173552](https://www.geonames.org/3173552) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53283](https://www.wikidata.org/wiki/Q53283): _comune italiano_
 - **Merlana** (2 menz.; voci 1048, 2038) → Merlana — GeoNames [3343600](https://www.geonames.org/3343600) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452159](https://www.wikidata.org/wiki/Q18452159): _frazione del comune italiano di Trivignano Udinese, provincia di Udine_
 - **Mersino** (1 menz.; voci 3753) → Mersino — GeoNames [3173540](https://www.geonames.org/3173540) PPL, Friuli-Venezia Giulia (UD)
-- **Messina** (2 menz.; voci 25, 4264) → Messina — GeoNames [2524170](https://www.geonames.org/2524170) PPLA2, reg. 15 (ME) — Wikidata [Q13666](https://www.wikidata.org/wiki/Q13666): _comune italiano, capoluogo dell'omonima città metropolitana in Sicilia_
+- **Messina** (3 menz.; voci 25, 1150, 4264) → Messina — GeoNames [2524170](https://www.geonames.org/2524170) PPLA2, reg. 15 (ME) — Wikidata [Q13666](https://www.wikidata.org/wiki/Q13666): _comune italiano, capoluogo dell'omonima città metropolitana in Sicilia_
 - **Mestre** (1 menz.; voci 2181) → Mestre — GeoNames [3173529](https://www.geonames.org/3173529) PPL, Veneto (VE) — Wikidata [Q541405](https://www.wikidata.org/wiki/Q541405): _località di terraferma del comune di Venezia_ — grafia confermata dal curatore; anche cognome nel testo
-- **Milano** (87 menz.; voci 3, 24, 102, 274) → Milano — GeoNames [3173435](https://www.geonames.org/3173435) PPLA, reg. 09 (MI) — Wikidata [Q490](https://www.wikidata.org/wiki/Q490): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Lombardia_ — grafia confermata dal curatore; più elementi Wikidata omonimi
+- **Milano** (88 menz.; voci 3, 24, 102, 274) → Milano — GeoNames [3173435](https://www.geonames.org/3173435) PPLA, reg. 09 (MI) — Wikidata [Q490](https://www.wikidata.org/wiki/Q490): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Lombardia_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Mira** (1 menz.; voci 2773) → Mira — GeoNames [6540220](https://www.geonames.org/6540220) ADM3, Veneto (VE) — Wikidata [Q48144](https://www.wikidata.org/wiki/Q48144): _comune italiano_
 - **Modena** (5 menz.; voci 470, 485, 2005, 2422) → Modena — GeoNames [3173331](https://www.geonames.org/3173331) PPLA2, reg. 05 (MO) — Wikidata [Q279](https://www.wikidata.org/wiki/Q279): _comune italiano, capoluogo dell'omonima provincia in Emilia-Romagna_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Modotto** (2 menz.; voci 1684, 2051) → Modotto — GeoNames [3220023](https://www.geonames.org/3220023) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452199](https://www.wikidata.org/wiki/Q18452199): _centro abitato situato presso Moruzzo, provincia di Udine_
@@ -336,7 +337,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Osoppo** (32 menz.; voci 466, 519, 525, 836) → Osoppo — GeoNames [3171842](https://www.geonames.org/3171842) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53297](https://www.wikidata.org/wiki/Q53297): _comune italiano_
 - **Ovaro** (1 menz.; voci 918) → Ovaro — GeoNames [3171770](https://www.geonames.org/3171770) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53298](https://www.wikidata.org/wiki/Q53298): _comune italiano_
 - **Ovasta** (1 menz.; voci 1456) → Ovasta — GeoNames [3171769](https://www.geonames.org/3171769) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q3887616](https://www.wikidata.org/wiki/Q3887616): _frazione di Ovaro_
-- **Padova** (103 menz.; voci 15, 18, 23, 36) → Padova — GeoNames [9032243](https://www.geonames.org/9032243) PPL, Veneto (PD) — Wikidata [Q617](https://www.wikidata.org/wiki/Q617): _comune italiano, capoluogo dell'omonima provincia in Veneto_
+- **Padova** (104 menz.; voci 15, 18, 23, 36) → Padova — GeoNames [9032243](https://www.geonames.org/9032243) PPL, Veneto (PD) — Wikidata [Q617](https://www.wikidata.org/wiki/Q617): _comune italiano, capoluogo dell'omonima provincia in Veneto_
 - **Pagnacco** (1 menz.; voci 1289) → Pagnacco — GeoNames [3220022](https://www.geonames.org/3220022) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53299](https://www.wikidata.org/wiki/Q53299): _comune italiano_
 - **Palazzolo** (5 menz.; voci 1492, 1494, 1495, 2000) → Palazzolo dello Stella — Wikidata [Q53301](https://www.wikidata.org/wiki/Q53301): _comune italiano_ — forma breve di Palazzolo dello Stella
 - **Palermo** (8 menz.; voci 3963, 3967, 3969, 3971) → Palermo — GeoNames [2523920](https://www.geonames.org/2523920) PPLA, reg. 15 (PA) — Wikidata [Q2656](https://www.wikidata.org/wiki/Q2656): _comune italiano, capoluogo dell'omonima città metropolitana e della regione autonoma Sicilia_
@@ -463,6 +464,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Sicilia** (3 menz.; voci 211, 606, 2142) → Sicilia — GeoNames [2523119](https://www.geonames.org/2523119) ADM1, reg. 15 — Wikidata [Q1460](https://www.wikidata.org/wiki/Q1460): _regione italiana a statuto speciale_
 - **Siena** (3 menz.; voci 10) → Siena — GeoNames [3166548](https://www.geonames.org/3166548) PPLA2, reg. 16 (SI) — Wikidata [Q2751](https://www.wikidata.org/wiki/Q2751): _comune italiano, capoluogo dell'omonima provincia in Toscana_
 - **Sile** (1 menz.; voci 863) → Sile — GeoNames [8956185](https://www.geonames.org/8956185) PPL, Friuli-Venezia Giulia (PN) — Wikidata [Q18449134](https://www.wikidata.org/wiki/Q18449134): _frazione del comune italiano di Casarsa della Delizia, provincia di Pordenone_ — grafia confermata dal curatore; più località omonime in regione
+- **Siracusa** (1 menz.; voci 3994) → Siracusa — GeoNames [2523083](https://www.geonames.org/2523083) PPLA2, reg. 15 (SR) — Wikidata [Q13670](https://www.wikidata.org/wiki/Q13670): _comune italiano, capoluogo dell’omonimo libero consorzio comunale in Sicilia_
 - **Siviglia** (3 menz.; voci 3324, 3458, 3483) → Siviglia — GeoNames [6361046](https://www.geonames.org/6361046) — Wikidata [Q8717](https://www.wikidata.org/wiki/Q8717): _città della Spagna, capitale dell'Andalusia_
 - **Slesia** (1 menz.; voci 467) → Slesia — GeoNames [3066138](https://www.geonames.org/3066138) — Wikidata [Q81720](https://www.wikidata.org/wiki/Q81720): _regione storica dell'Europa centrale_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Socchieve** (2 menz.; voci 918, 1564) → Socchieve — GeoNames [3220130](https://www.geonames.org/3220130) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q53366](https://www.wikidata.org/wiki/Q53366): _comune italiano_
@@ -509,12 +511,12 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Travesio** (2 menz.; voci 925, 1562) → Travesio — GeoNames [3165290](https://www.geonames.org/3165290) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53201](https://www.wikidata.org/wiki/Q53201): _comune italiano_
 - **Traù** (4 menz.; voci 467) → Traù — GeoNames [3188762](https://www.geonames.org/3188762) — Wikidata [Q189161](https://www.wikidata.org/wiki/Q189161): _città croata_
 - **Trento** (8 menz.; voci 530, 825, 853, 923) → Trento — GeoNames [3165243](https://www.geonames.org/3165243) PPLA, reg. 17 (TN) — Wikidata [Q3376](https://www.wikidata.org/wiki/Q3376): _comune italiano, capoluogo dell’omonima provincia autonoma e della regione Trentino-Alto Adige_
-- **Treviso** (18 menz.; voci 327, 483, 487, 513) → Treviso — GeoNames [3165201](https://www.geonames.org/3165201) PPLA2, Veneto (TV) — Wikidata [Q5475](https://www.wikidata.org/wiki/Q5475): _comune italiano, capoluogo dell'omonima provincia in Veneto_
+- **Treviso** (19 menz.; voci 327, 483, 487, 513) → Treviso — GeoNames [3165201](https://www.geonames.org/3165201) PPLA2, Veneto (TV) — Wikidata [Q5475](https://www.wikidata.org/wiki/Q5475): _comune italiano, capoluogo dell'omonima provincia in Veneto_
 - **Tricesimo** (27 menz.; voci 487, 525, 533, 853) → Tricesimo — GeoNames [3165189](https://www.geonames.org/3165189) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53387](https://www.wikidata.org/wiki/Q53387): _comune italiano_
 - **Trieste** (67 menz.; voci 476, 487, 491, 492) → Trieste — GeoNames [3165185](https://www.geonames.org/3165185) PPLA, Friuli-Venezia Giulia (TS) — Wikidata [Q546](https://www.wikidata.org/wiki/Q546): _comune italiano, capoluogo del Friuli-Venezia Giulia_
 - **Tripoli** (1 menz.; voci 23) → Tripoli — GeoNames [2210247](https://www.geonames.org/2210247) PPLC, LY — Wikidata [Q3579](https://www.wikidata.org/wiki/Q3579): _capitale della Libia_
 - **Trivignano** (1 menz.; voci 1683) → Trivignano Udinese — Wikidata [Q53388](https://www.wikidata.org/wiki/Q53388): _comune italiano_ — forma breve di Trivignano Udinese
-- **Udine** (915 menz.; voci 4, 10, 15, 18) → Udine — GeoNames [3165072](https://www.geonames.org/3165072) PPLA2, Friuli-Venezia Giulia (UD) — Wikidata [Q2790](https://www.wikidata.org/wiki/Q2790): _comune italiano_
+- **Udine** (920 menz.; voci 4, 10, 15, 18) → Udine — GeoNames [3165072](https://www.geonames.org/3165072) PPLA2, Friuli-Venezia Giulia (UD) — Wikidata [Q2790](https://www.wikidata.org/wiki/Q2790): _comune italiano_
 - **Ungheria** (2 menz.; voci 2418, 2626) → Ungheria — GeoNames [719819](https://www.geonames.org/719819) — Wikidata [Q28](https://www.wikidata.org/wiki/Q28): _stato dell'Europa centro-orientale, membro dell'Unione europea_
 - **Utrecht** (1 menz.; voci 324) → Utrecht — GeoNames [2745911](https://www.geonames.org/2745911) — Wikidata [Q803](https://www.wikidata.org/wiki/Q803): _città e comune olandese_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Valenza** (1 menz.; voci 606) → Valenza — GeoNames [3164920](https://www.geonames.org/3164920) PPLA3, reg. 12 (AL) — Wikidata [Q17689](https://www.wikidata.org/wiki/Q17689): _comune italiano della provincia di Alessandria, in Piemonte_

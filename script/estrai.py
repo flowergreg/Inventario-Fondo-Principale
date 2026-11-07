@@ -244,6 +244,11 @@ FONDI = {"Raccolta", "Racc.", "Collezione", "Collez.", "Coll.", "Legato", "Fondo
          "Acquisto", "Lascito", "Deposito", "Proven."}
 
 
+# parole che, seguite da «di» e da un nome, non sono un luogo a sé: «Monte di Pietà», «Sacco di Udine»,
+# «Mels di Colloretto» (famiglia)
+LUOGO_E_PERSONA_NO = {"monte", "sacco", "mels"}
+
+
 def tokenizza(testo):
     toks = []
     fine_prec = 0
@@ -1027,7 +1032,24 @@ def main():
             fonti.append(("annotazione", aid, atesto))
         for sede, aid, t in fonti:
             menzioni, scarti = estrattore.estrai(t)
+            divise = []
             for m in menzioni:
+                # «Padova di Giacomo Belgrado», «Aquileia di A. Altan»: un luogo seguito da un nome completo
+                # (almeno due parole maiuscole o iniziali) sono due menzioni; «Valvasone di Maniago» resta intera
+                x = re.match(r"(\S+) (?:di|da|d')\s?(?=[A-Z])", m["testo_esatto"])
+                resto = m["testo_esatto"][x.end():] if x else ""
+                k_l = chiave_luogo(x.group(1)) if x else ""
+                if x and m["tipo"] == "persona" and x.group(1).lower() not in LUOGO_E_PERSONA_NO \
+                        and x.group(1).lower() not in estrattore.nomi_esatti and (k_l in estrattore.luoghi["__citta__"] or
+                                                     k_l in estrattore.luoghi["__manuali__"] or
+                                                     estrattore.peso_luogo(x.group(1)) == "forte") \
+                        and len(re.findall(r"\b[A-Z][\w']*\.?", resto)) >= 2:
+                    divise.append(dict(m, testo_esatto=x.group(1), fine=m["inizio"] + len(x.group(1)), tipo="luogo",
+                                       correzione=None, forma_riferimento=None, metodo="luogo_e_persona",
+                                       affidabilita="media"))
+                    m = dict(m, testo_esatto=resto, inizio=m["inizio"] + x.end())
+                divise.append(m)
+            for m in divise:
                 # «A-K. A. Altan», «L-Z. Liruti»: le lettere della partizione alfabetica appartengono alla
                 # frase precedente, non al nome
                 x = re.match(r"[A-Z]-[A-Z]\.\s+", m["testo_esatto"])

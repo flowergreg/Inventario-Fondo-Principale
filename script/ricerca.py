@@ -163,6 +163,17 @@ def costruisci_indice(db=DB):
         if eid in stato_id:
             entita[stato_id[eid]].setdefault("d", []).append(
                 [url, "Dizionario Biografico dei Friulani" if fonte == "DBF" else nota, forma or ""])
+    # forma di riferimento mostrata: quella della scheda del Dizionario, quando le schede collegate concordano
+    # («Fabrizio, Daniele» per «Fabrizi, Daniele»), così testo, forma e scheda non si contraddicono
+    for e in entita:
+        schede = [x[2] for x in e.get("d", []) if x[1] == "Dizionario Biografico dei Friulani" and x[2]]
+        if not schede:
+            continue
+        basi = {re.sub(r"\s*\([^)]*\d[^)]*\)$", "", x).strip() for x in schede}      # senza le date
+        if len(basi) > 1:
+            basi = {re.sub(r"\s*\([^)]*\)$", "", x).strip() for x in basi}           # senza l'epiteto
+        if len(basi) == 1 and "," in next(iter(basi)):
+            e["f"] = next(iter(basi))
     for eid, vid, sede, aid, ini, fin in con.execute(
             "SELECT entita, voce, sede, annotazione, inizio, fine FROM menzioni WHERE entita IS NOT NULL"):
         if sede == "annotazione":
@@ -223,11 +234,28 @@ def segmento(v, sede, ini):
     return next((s[0] for s in v["s"] if s[1] <= ini < s[2]), "")
 
 
-def cerca(domanda, indice, finestra=None, approssimata=True):
+def vocabolario(indice):
+    """Parole dei testi e delle varianti delle entità (ricerca approssimata e per parte di parola)."""
+    if "_vocab" not in indice:
+        voc = set()
+        for v in indice["voci"]:
+            for _, testo in testi_voce(v):
+                voc.update(p[0] for p in parole(testo))
+        for e in indice["entita"]:
+            for var in e["v"]:
+                voc.update(var.split())
+        indice["_vocab"] = voc
+    return indice["_vocab"]
+
+
+def cerca(domanda, indice, finestra=None, approssimata=True, parte=False):
     q = chiave(domanda)
     if not q:
         return []
     insiemi = [espandi(t, indice) for t in q]
+    if parte:       # parte di parola: ogni parola cercata (almeno 3 lettere) vale anche dentro parole più lunghe
+        insiemi = [s | {x for w in vocabolario(indice) if any(len(t) >= 3 and t in w for t in s) for x in espandi(w, indice)}
+                   for s in insiemi]
     finestra = finestra or max(len(q) + 2, 4)
     risultati = defaultdict(list)           # voce → [(livello, sede, inizio, fine, entità)]
 
@@ -267,16 +295,12 @@ def cerca(domanda, indice, finestra=None, approssimata=True):
 
     # 3. approssimata
     if approssimata and not risultati:
-        vocabolario = set()
-        for v in indice["voci"]:
-            for _, testo in testi_voce(v):
-                vocabolario.update(p[0] for p in parole(testo))
         larghi = []
         for s in insiemi:
             simili = set(s)
             for t in s:
                 if len(t) >= 5:
-                    simili |= {w for w in vocabolario if distanza_uno(t, w)}
+                    simili |= {w for w in vocabolario(indice) if distanza_uno(t, w)}
             larghi.append(simili)
         for vi, hits in nel_testo(larghi).items():
             for sede, ini, fin in hits:

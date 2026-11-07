@@ -61,6 +61,7 @@ button { background: var(--color1); color: #fff; border: 0; font: bold 20px/20px
   padding: 15px 0; text-transform: uppercase; cursor: pointer; }
 button:hover { filter: brightness(.93); }
 .opzioni { font-size: 16px; color: var(--tenue); margin-top: 12px; }
+.parte { margin-right: 16px; white-space: nowrap; cursor: pointer; }
 .esempi a { cursor: pointer; margin-right: 12px; font-weight: bold; }
 .stato { font: bold 19px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 22px 0 4px; }
 .stato::first-letter { color: var(--color1); }
@@ -97,7 +98,7 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   <div class="ricerca">
   <form id="f"><input type="search" id="q" placeholder="Es. Zuan de Udene, Utinum, Florio Daniele, S. Pietro" autocomplete="off" autofocus aria-label="Nome di persona o di luogo">
   <button>Cerca</button></form>
-  <div class="opzioni"><span class="esempi">Prova: <a>Giovanni da Udine</a><a>Utinum</a><a>Jac. Pirona</a><a>Paulus Venetus</a><a>Ermes di Colloredo</a></span></div>
+  <div class="opzioni"><label class="parte"><input type="checkbox" id="parte"> anche parte di parola</label> <span class="esempi">Prova: <a>Giovanni da Udine</a><a>Utinum</a><a>Jac. Pirona</a><a>Paulus Venetus</a><a>Ermes di Colloredo</a></span></div>
   </div>
   <div class="stato" id="stato">Scrivi un nome di persona o di luogo.</div>
   <div class="forme" id="forme"></div>
@@ -113,7 +114,7 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme.
   I collegamenti alle schede sono proposti in base al nome e agli anni citati nella voce e <b>possono riferirsi a un omonimo</b>:
   quando più schede sono compatibili, sono indicate tutte, con le date, e la scelta spetta al lettore.
-  <p style="margin:12px 0 0">Trascrizione a cura di Gregorio Grasselli · indice del __DATA__.</p>
+  <p style="margin:12px 0 0">Trascrizione dall'inventario manoscritto a cura di Gregorio Grasselli · indice del __DATA__.</p>
 </div></footer>
 <script>
 const IDX = __INDICE__;
@@ -171,9 +172,17 @@ function nelTesto(insiemi, finestra) {
   });
   return trovati;
 }
-function cerca(domanda) {
+function vocabolario() {       // parole dei testi e delle varianti, per la ricerca approssimata e per parte di parola
+  if (!VOCAB) { VOCAB = new Set(); SEDI.forEach(sedi => sedi.forEach(([, , pw]) => pw.forEach(p => VOCAB.add(p[0]))));
+    ENT.forEach(e => e.vs.forEach(vw => vw.forEach(w => VOCAB.add(w)))); }
+  return VOCAB;
+}
+function cerca(domanda, parte = false) {
   const q = chiave(domanda); if (!q.length) return {q, ris: []};
-  const insiemi = q.map(espandi); const finestra = Math.max(q.length + 2, 4);
+  let insiemi = q.map(espandi);
+  // parte di parola: ogni parola cercata (almeno 3 lettere) vale anche dentro parole più lunghe
+  if (parte) insiemi = insiemi.map(s => { const n = new Set(s);
+    vocabolario().forEach(w => { if ([...s].some(t => t.length >= 3 && w.includes(t))) espandi(w).forEach(x => n.add(x)); }); return n; }); const finestra = Math.max(q.length + 2, 4);
   const ris = new Map(); const add = (vi, h) => { if (!ris.has(vi)) ris.set(vi, []); ris.get(vi).push(h); };
   const soloLuoghi = q.every(t => LUOGHI.has(t));   // solo nomi di luogo: nessuna persona per forma
   for (const e of ENT) {
@@ -183,8 +192,7 @@ function cerca(domanda) {
   for (const [vi, hs] of nelTesto(insiemi, finestra)) for (const [s, i, f] of hs) add(vi, [2, s, i, f, null]);
   let approssimata = false;
   if (!ris.size) {
-    if (!VOCAB) { VOCAB = new Set(); SEDI.forEach(sedi => sedi.forEach(([, , pw]) => pw.forEach(p => VOCAB.add(p[0])))); }
-    const larghi = insiemi.map(s => { const n = new Set(s); s.forEach(t => { if (t.length >= 5) VOCAB.forEach(w => { if (distUno(t, w)) n.add(w); }); }); return n; });
+    const larghi = insiemi.map(s => { const n = new Set(s); s.forEach(t => { if (t.length >= 5) vocabolario().forEach(w => { if (distUno(t, w)) n.add(w); }); }); return n; });
     for (const [vi, hs] of nelTesto(larghi, finestra)) for (const [s, i, f] of hs) add(vi, [3, s, i, f, null]);
     approssimata = true;
   }
@@ -209,11 +217,12 @@ function evidenzia(testo, tratti) {
   return out + esc(testo.slice(p));
 }
 function mostra(domanda) {
-  const t0 = performance.now(); const r = cerca(domanda);
+  const r = cerca(domanda, document.getElementById("parte").checked);
   const el = document.getElementById("risultati"), st = document.getElementById("stato"), fo = document.getElementById("forme");
   if (!r.q.length) { st.textContent = "Scrivi un nome di persona o di luogo."; fo.innerHTML = ""; el.innerHTML = ""; return; }
-  fo.innerHTML = "Forme cercate: " + r.insiemi.map(s => [...s].map(w => "<code>" + esc(w) + "</code>").join(" ")).join(" + ");
-  st.textContent = `${r.ris.length} voci` + (r.approssimata && r.ris.length ? " (ricerca approssimata)" : "") + ` · in ${((performance.now() - t0) / 1000).toFixed(2).replace(".", ",")} secondi`;
+  fo.innerHTML = "Forme cercate: " + r.insiemi.map(s => { const xs = [...s];
+    return xs.slice(0, 25).map(w => "<code>" + esc(w) + "</code>").join(" ") + (xs.length > 25 ? ` … e altre ${xs.length - 25}` : ""); }).join(" + ");
+  st.textContent = `${r.ris.length} voci` + (r.approssimata && r.ris.length ? " (ricerca approssimata)" : "");
   el.innerHTML = r.ris.slice(0, 300).map(({vi, hs, liv}) => {
     const v = IDX.voci[vi]; const visti = new Set(); const punti = [];
     for (const h of hs) {        // niente doppioni: un tratto contenuto in uno già mostrato non si ripete
@@ -245,6 +254,7 @@ function mostra(domanda) {
 }
 const form = document.getElementById("f"), q = document.getElementById("q");
 form.addEventListener("submit", ev => { ev.preventDefault(); mostra(q.value); history.replaceState(null, "", "#" + encodeURIComponent(q.value)); });
+document.getElementById("parte").addEventListener("change", () => { if (q.value.trim()) form.requestSubmit(); });
 document.querySelectorAll(".esempi a").forEach(a => a.addEventListener("click", () => { q.value = a.textContent; form.requestSubmit(); }));
 if (location.hash.length > 1) { q.value = decodeURIComponent(location.hash.slice(1)); mostra(q.value); }
 </script>

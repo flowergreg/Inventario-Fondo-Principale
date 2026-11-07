@@ -210,3 +210,6 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Pagine indicate dal curatore fuori dal Dizionario (fonte «curatore» in `fonti_curatore.tsv`): Antiche case di Udine per Adolfo della Porta.
 - Docx corretto dal curatore (Clemente, Univ. Cattol.); decisioni riallineate. Le lettere di partizione alfabetica («A-K.», «L-Z.») non entrano nel nome. «Carlomagno» è la stessa entità di Carlo Magno.
 - Link al Dizionario sempre con forma e date della scheda (dall'indice); la forma della scheda è variante di ricerca (Altan Enrico per «Altani Enrico»). Avvertenza sugli omonimi nel piè di pagina; «trascrizione a cura di» spostata in fondo.
+- Luogo + «di/da» + nome completo («Padova di Giacomo Belgrado», «Aquileia di A. Altan») diventa due menzioni, luogo e persona (21 casi); esclusi i nomi di battesimo (Ciro di Pers) e «Monte», «Sacco», «Mels».
+- Pagina: spunta «anche parte di parola» (ogni parola di almeno 3 lettere vale anche dentro parole più lunghe, varianti comprese); tolto il tempo di ricerca; «Trascrizione dall'inventario manoscritto a cura di Gregorio Grasselli» in fondo.
+- La forma di riferimento mostrata è quella della scheda del Dizionario quando le schede collegate concordano (Fabrizio, Daniele); la forma interna resta quella dell'inventario, perché le decisioni del curatore vi fanno riferimento.
