@@ -15,7 +15,7 @@ forma B; voci B; motivo; contesto A; contesto B. Il curatore cambia solo la colo
 (vuota = accetta la proposta) e, se vuole, scrive nella colonna «nota curatore». Le proposte e
 le motivazioni le compila il revisore dopo la generazione (non si rigenera un file già annotato).
 
-Uso: python3 script/revisione.py 1
+Uso: python3 script/revisione.py 1 | dbf
 """
 
 import csv
@@ -114,5 +114,126 @@ def blocco1(con):
     print(f"{n} righe in {out}")
 
 
+def blocco_dbf(con):
+    """Corrispondenze tra le forme di riferimento di persona e le schede del Dizionario Biografico dei
+    Friulani (indice e «Altri nomi» in dati/esterni/). Una scheda è candidata se il cognome della forma
+    coincide con il cognome della scheda o con uno dei suoi altri nomi (anche come radice: Geronimiani ~
+    Geronimiano) e il nome di battesimo è compatibile (varianti equivalenti comprese). Proposta «sì» se gli
+    anni scritti vicino alle menzioni cadono per almeno metà nella vita della persona."""
+    import json
+    import entita as ent_mod
+    from normalizza import normalizza
+    esterni = RADICE / "dati" / "esterni"
+    idx = json.load(open(esterni / "dbf_indice.json", encoding="utf-8"))
+    altri = json.load(open(esterni / "dbf_altri_nomi.json", encoding="utf-8")) if (esterni / "dbf_altri_nomi.json").exists() else {}
+    part = {"di", "de", "da", "del", "della", "dei", "degli", "d", "von", "van", "dal", "dalla", "le", "la", "delli"}
+
+    def parole(x):
+        return [w for w in normalizza(re.sub(r"\(.*?\)", " ", x).replace("'", " ")).split() if w not in part]
+
+    def nomi_k(x):
+        out = []
+        for w in normalizza(x).split():
+            w = ent_mod.EQUIVALENTI.get(w, w)
+            out.extend(ent_mod.FUSI.get(w, [w]))
+        return out
+
+    def radice(w):
+        return re.sub(r"(ius|ium|ii|ij|us|um|is|ae|am|i|o|e|a)$", "", w) if len(w) > 5 else w
+
+    schede = []
+    per_cognome = defaultdict(list)
+    for d in idx:
+        alt = [a.strip(" .") for a in re.split(r"\s*[,;/]\s*", altri.get(d["url"], "") or "") if a.strip(" .")]
+        cogn = {" ".join(parole(d["cognome"]))}
+        nomi = [nomi_k(d["nome"])]
+        for a in alt:
+            ws = parole(a)
+            if len(ws) == 1:
+                cogn.add(ws[0])
+            elif ws:
+                for w in ws:          # «Graziani Publio Augusto»: ogni parola può essere il cognome
+                    cogn.add(w)
+                nomi.append(nomi_k(" ".join(ws)))
+        d = dict(d, altri=alt, nomi=nomi)
+        schede.append(d)
+        for cg in cogn:
+            per_cognome[cg].append(d)
+            per_cognome[radice(cg)].append(d)
+
+    rx_anno = re.compile(r"\b(1[0-9]{3})\b")
+    anni = defaultdict(set)
+    for eid, t, i, f in con.execute("SELECT m.entita, v.testo, m.inizio, m.fine FROM menzioni m JOIN voci v "
+                                    "ON v.id=m.voce WHERE m.sede='testo' AND m.entita IS NOT NULL"):
+        anni[eid] |= {int(a) for a in rx_anno.findall((t or "")[max(0, i - 200):f + 200])}
+    gia = {eid for (eid,) in con.execute("SELECT entita FROM identificatori WHERE fonte='DBF'")}
+    miste = set()
+    for r in csv.DictReader(open(RADICE / "dati" / "liste" / "persone_collegamenti.tsv", encoding="utf-8"), delimiter="\t"):
+        if not r["qid"] and re.search(r"raccoglie|più persone|omonim", r["nota"] or ""):
+            miste.add(r["intestazione"])
+
+    def vita(d):
+        m = re.findall(r"(\d{3,4})", d["date"])
+        if not m:
+            return None
+        n0 = int(m[0]); n1 = int(m[-1]) if len(m) > 1 else n0 + 90
+        return n0, n1
+
+    righe = []
+    for eid, h in con.execute("SELECT id, forma_intestazione FROM entita WHERE tipo='persona' AND forma_intestazione LIKE '%, %'"):
+        if eid in gia:
+            continue
+        cogn, nomi = h.split(", ", 1)
+        if re.search(r"\b[A-Z]\.", nomi) or not nomi.strip():
+            continue
+        ck = " ".join(parole(cogn))
+        nk = nomi_k(nomi)
+        cand = {d["url"]: d for k in {ck, radice(ck)} for d in per_cognome.get(k, [])}
+        cand = [d for d in cand.values() if any(n[:1] == nk[:1] for n in d["nomi"])]
+        if not cand:
+            continue
+        ys = anni.get(eid, set())
+
+        def quota(d):
+            v = vita(d)
+            if not v or not ys:
+                return None
+            return sum(1 for y in ys if v[0] - 5 <= y <= v[1] + 60) / len(ys)
+        ok = [d for d in cand if quota(d) is None or quota(d) > 0]
+        voci = [v for (v,) in con.execute("SELECT DISTINCT v.numero FROM menzioni m JOIN voci v ON v.id=m.voce WHERE m.entita=?", (eid,))]
+        wd = con.execute("SELECT codice FROM identificatori WHERE entita=? AND fonte='Wikidata' AND affidabilita='alta'", (eid,)).fetchone()
+        via_altri = lambda d: " ".join(parole(d["cognome"])) not in (ck, radice(ck))
+        if len(ok) == 1:
+            d = ok[0]; q = quota(d)
+            if h in miste:
+                p, mot = "?", "la forma raccoglie più omonimi (collegamento Wikidata tolto nel blocco 4)"
+            elif q is None:
+                p, mot = "?", "stesso nome; nessun anno vicino alle menzioni per verificare"
+            elif q >= 0.5:
+                p, mot = "sì", "nome compatibile e anni della voce nella vita della persona"
+            else:
+                p, mot = "?", "solo una parte degli anni della voce cade nella vita della persona"
+            if via_altri(d):
+                mot += f"; trovata attraverso gli altri nomi ({', '.join(d['altri'])})"
+        elif len(ok) > 1:
+            d = None; p = "?"
+            mot = "più schede compatibili: " + "; ".join(f"{x['cognome']} {x['nome']} ({x['date']}) {x['url']}" for x in ok)
+        else:
+            d = cand[0]; p = "no"; mot = f"stesso nome ma un'altra epoca ({d['date']})"
+        righe.append([p, mot, h, ", ".join(voci[:6]), ", ".join(str(y) for y in sorted(ys)[:6]),
+                      f"{d['cognome']} {d['nome']}" if d else "", d["date"] if d else "",
+                      ", ".join(d["altri"]) if d else "", d["url"] if d else "", wd[0] if wd else ""])
+    righe.sort(key=lambda x: ({"sì": 0, "?": 1, "no": 2}[x[0]], x[2]))
+    out = DIR / "fase6_6_dbf.csv"
+    with open(out, "w", encoding="utf-8-sig", newline="") as fh:
+        w = csv.writer(fh, delimiter=";")
+        w.writerow(["n", "proposta", "motivazione", "decisione", "nota curatore", "forma", "voci", "anni nella voce",
+                    "scheda DBF", "date DBF", "altri nomi DBF", "url", "Wikidata già presente"])
+        for i, x in enumerate(righe, 1):
+            w.writerow([i, x[0], x[1], "", ""] + x[2:])
+    from collections import Counter
+    print(f"{len(righe)} righe in {out}: {dict(Counter(x[0] for x in righe))}")
+
+
 if __name__ == "__main__":
-    {"1": blocco1}[sys.argv[1] if len(sys.argv) > 1 else "1"](sqlite3.connect(DB))
+    {"1": blocco1, "dbf": blocco_dbf}[sys.argv[1] if len(sys.argv) > 1 else "1"](sqlite3.connect(DB))

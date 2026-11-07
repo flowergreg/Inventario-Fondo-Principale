@@ -210,6 +210,24 @@ def fonti_curatore(con):
                      f"{r['fonte']} (curatore)"))
     if mancanti:
         print(f"  fonti del curatore non applicate (intestazione non trovata): {'; '.join(mancanti)}", file=sys.stderr)
+    # «Altri nomi» delle schede collegate (dati/esterni/dbf_altri_nomi.json): varianti di ricerca della forma
+    # di riferimento, come le etichette di Wikidata (Geronimiano, Germiniano per Agostino de Gerolami)
+    altri = RADICE / "dati" / "esterni" / "dbf_altri_nomi.json"
+    altri = json.loads(altri.read_text(encoding="utf-8")) if altri.exists() else {}
+    con.execute("DELETE FROM varianti WHERE origine='fonte_esterna' AND riferimento LIKE 'Dizionario Biografico%'")
+    n = 0
+    for eid, url in con.execute("SELECT entita, url FROM identificatori WHERE fonte='DBF'").fetchall():
+        esistenti = {normalizza(f) for (f,) in con.execute("SELECT forma FROM varianti WHERE entita=?", (eid,))}
+        for forma in re.split(r"\s*[,;/]\s*", altri.get(url.rstrip("/"), "") or altri.get(url, "")):
+            forma = forma.strip(" .")
+            if len(forma.replace(" ", "")) < 3 or normalizza(forma) in esistenti:
+                continue
+            esistenti.add(normalizza(forma))
+            con.execute("INSERT INTO varianti (entita, forma, forma_normalizzata, origine, riferimento) "
+                        "VALUES (?,?,?,?,?)", (eid, forma, normalizza(forma), "fonte_esterna",
+                                               "Dizionario Biografico dei Friulani, altri nomi"))
+            n += 1
+    print(f"  altri nomi dal Dizionario Biografico dei Friulani: {n} varianti", file=sys.stderr)
 
 
 if __name__ == "__main__":
