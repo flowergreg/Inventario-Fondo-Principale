@@ -217,3 +217,10 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Validazione in blocco del curatore: 4622 entità in `dati/liste/validazioni.tsv` (tipo, forma di riferimento). Le forme nuove o cambiate da una rigenerazione tornano «proposto» e la pagina le segnala «da validare».
 - `.nojekyll` alla radice: la pagina si può pubblicare con GitHub Pages (branch, cartella radice) all'indirizzo …/web/.
 - GitHub Pages pubblica la cartella `docs/` (copia di `web/index.html` scritta da `pagina.py`, più `.nojekyll`): la radice intera (22 MB) andava in timeout.
+
+### Fase 6, correzioni dopo le prove sulla pagina
+- Santi: il nome del santo senza le specificazioni dell'edificio o del luogo (`nomi_santo` in entita.py): San Pietro di Osoppo → San Pietro, Madonna del Carmine → Madonna, «San Pietro - S. Canciano» → due santi; restano gli epiteti del santo (d'Assisi, da Padova, d'Aquino, Martire, Battista). Nella ricerca le forme con specificazione non valgono come varianti del santo (si trovano nel testo).
+- Evidenziazione (`ev_inizio`, `ev_fine` in `menzioni`, calcolati in entita.py; testo e menzione invariati): si tolgono titoli, iniziali isolate estranee al nome, luoghi e il titolo dell'opera dopo il punto («Vittorio Emanuele II», «De Vit D.co.»); l'intestazione spezzata «Del Torso, Enrico» e la correzione tra quadre «Z. [Mario]» entrano nel tratto. Eccezioni in `dati/liste/evidenziazioni_curatore.tsv`.
+- Menzioni con più persone: tabella `menzioni_entita`, così «Antonio e Girolamo Savorgnan» si trova da entrambi.
+- Domanda fatta di nomi di luogo: la persona si trova solo se il cognome coincide con le parole cercate (Brazzà sì, «da Udine» no).
+- Correzioni puntuali: Pier Antonio Zorzi, De Vit Domenico, Iacopino del Torso, Brazzà (Pietro, Giacomo, Antonio, Ascanio), Corgnali, i due Tristano Savorgnan (entrambi i link), famiglia Savorgnan (949, 1016, 1503), G. P. de Vecchi, Giovanni e Antonio Savorgnan, Maria-Letizia Bonaparte, Maria Teresa, de Zorzi Antoine = Antonio Zorzi. Tolta la variante «Beata Vergine di Screncis di Bertiolo» (con il santo senza specificazioni avrebbe esteso Bertiolo a tutte le voci di Santa Maria).

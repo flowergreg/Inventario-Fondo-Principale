@@ -147,10 +147,19 @@ def costruisci_indice(db=DB):
         if re.search(r"\s(?:e|ed)\s", forma) and entita[stato_id[eid]]["t"] == "persona":
             continue           # «Girolamo e Lorenzo Carboni»: più persone, la variante confonderebbe i nomi
         k = " ".join(chiave(forma))
+        e_ = entita[stato_id[eid]]
+        # santi: le forme con la specificazione dell'edificio o del luogo («San Pietro di Osoppo») non
+        # valgono come varianti del santo, altrimenti «Osoppo» darebbe tutte le voci di San Pietro;
+        # quelle voci si trovano nel testo
+        if e_["t"] == "santo" and len(k.split()) > len(chiave(e_["f"])):
+            continue
         if k:
-            entita[stato_id[eid]]["v"].add(k)
+            e_["v"].add(k)
     for eid, intest in con.execute("SELECT id, forma_intestazione FROM entita"):
         entita[stato_id[eid]]["v"].add(" ".join(chiave(intest)))
+        # parole del cognome (prima della virgola): una domanda fatta di nomi di luogo trova la persona
+        # solo se è il suo cognome («Brazzà», non «da Udine»)
+        entita[stato_id[eid]]["c"] = chiave(intest.split(",")[0]) if "," in intest else []
     for eid, qid in con.execute("SELECT entita, codice FROM identificatori WHERE fonte='Wikidata' "
                                 "AND affidabilita='alta'"):
         if eid in stato_id:
@@ -175,7 +184,8 @@ def costruisci_indice(db=DB):
         if len(basi) == 1 and "," in next(iter(basi)):
             e["f"] = next(iter(basi))
     for eid, vid, sede, aid, ini, fin in con.execute(
-            "SELECT entita, voce, sede, annotazione, inizio, fine FROM menzioni WHERE entita IS NOT NULL"):
+            "SELECT x.entita, voce, sede, annotazione, coalesce(ev_inizio, inizio), coalesce(ev_fine, fine) "
+            "FROM menzioni m JOIN menzioni_entita x ON x.menzione = m.id"):
         if sede == "annotazione":
             if aid not in ann_pos:
                 continue
@@ -264,7 +274,9 @@ def cerca(domanda, indice, finestra=None, approssimata=True, parte=False):
     for e in indice["entita"]:
         for var in e["v"]:
             vw = set(var.split())
-            if all(s & vw for s in insiemi) and (e["t"] != "persona" or not solo_luoghi):
+            if all(s & vw for s in insiemi) and (e["t"] != "persona" or not solo_luoghi
+                                                  or (e.get("c") and all(s & set(e["c"]) for s in insiemi)
+                                                      and all(any(w in s for s in insiemi) for w in e["c"]))):
                 for vi, sede, ini, fin in e["m"]:
                     s = {"testo": "t", "coda": "c"}.get(sede, sede)
                     risultati[vi].append((1, s, ini, fin, e))

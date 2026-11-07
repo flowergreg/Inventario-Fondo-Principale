@@ -396,6 +396,27 @@ FEMMINILI_SANTE = {"Maria", "Chiara", "Lucia", "Apollonia", "Anna", "Agnese", "B
                    "Sofia", "Rosa", "Concezione", "Immacolata"}
 
 
+# specificazioni che identificano il santo stesso (non l'edificio o il luogo): restano nel nome
+SANTI_EPITETI = ("d'Assisi", "da Padova", "di Padova", "d'Aquino", "da Siena", "di Chiaravalle", "di Canterbury")
+
+
+def nomi_santo(nome):
+    """Il santo, senza le specificazioni dell'edificio o del luogo (curatore, fase 6): «San Pietro di Osoppo»,
+    «Madonna del Carmine», «San Giovanni del Tempio», «Santa Maria Maggiore di Udine» → San Pietro, Madonna,
+    San Giovanni, Santa Maria; «San Pietro - S. Canciano» → due santi. Restano gli epiteti del santo
+    (San Francesco d'Assisi, San Pietro Martire, San Giovanni Battista)."""
+    out = []
+    for x in re.split(r"\s+-\s+", nome):
+        x = espandi_santo(x.strip())
+        ep = next((ep for ep in SANTI_EPITETI if ep in x), None)
+        base = re.sub(r"\s+(?:di|da|de|del|della|dei|degli|delle|dell'|de'|d')\b.*$|\s*\b(?:d'|dell'|de')\S.*$", "", x).strip()
+        base = re.sub(r"\s+(?:Maggiore|Sanvitense|martire)$", "", base)
+        if ep:
+            base = (base + " " + ep).replace("di Padova", "da Padova")
+        out.append(base or x)
+    return out
+
+
 def espandi_santo(testo):
     """«S. Pietro» → «San Pietro», «S. Chiara» → «Santa Chiara», «S. Antonio» → «Sant'Antonio»,
     «S. Stefano» → «Santo Stefano», «SS. Trinità» → «Santissima Trinità», «SS. Gervasio» → «Santi Gervasio»:
@@ -552,13 +573,14 @@ def main():
                     r = (lex.get(testo) or [None])[0]
                     norm = espandi_santo((d["forma_normalizzata"] if d else None) or (r[2] if r and r[2] else None)
                                          or testo)
-                    e = ent("santo", normalizza(norm), norm)
-                    e["varianti"][(testo, "testo")].add(num)
-                    if norm != testo:
-                        e["varianti"][(norm, "manuale")].add("santo: abbreviazione sciolta" if not d else
-                                                             "contesto: " + (d["nota"] or "forma italiana"))
-                    e["menzioni"].append(mid)
-                    e["voci"].add(num)
+                    for nome_s in nomi_santo(norm):
+                        e = ent("santo", normalizza(nome_s), nome_s)
+                        e["varianti"][(testo, "testo")].add(num)
+                        if norm != testo:
+                            e["varianti"][(norm, "manuale")].add("santo: abbreviazione sciolta" if not d else
+                                                                 "contesto: " + (d["nota"] or "forma italiana"))
+                        e["menzioni"].append(mid)
+                        e["voci"].add(num)
                     continue
                 manuale_santo = d["forma_normalizzata"]
             testo_chiave = testo_p if tipo_eff == "persona" and tipo != "santo" else testo
@@ -575,10 +597,11 @@ def main():
             manuale = ["santo:" + testo]          # «Madonna del Carmine», «Madonna di Rosa»
         if manuale and manuale[0].startswith("santo:"):
             nome = manuale[0][6:].strip()           # «St. Claude», «San Daniele»: santi, non persone
-            e = ent("santo", normalizza(nome), nome)
-            e["varianti"][(testo, "testo")].add(num)
-            e["menzioni"].append(mid)
-            e["voci"].add(num)
+            for nome_s in nomi_santo(nome) if nome.startswith(("S", "Madonna")) else [nome]:
+                e = ent("santo", normalizza(nome_s), nome_s)
+                e["varianti"][(testo, "testo")].add(num)
+                e["menzioni"].append(mid)
+                e["voci"].add(num)
             continue
         if manuale:
             # persone indicate dal curatore (dati/liste/persone_curatore.tsv)
@@ -683,6 +706,7 @@ def main():
             e["note"].add("cognome in grafie diverse: " + ", ".join(sorted(grafie)))
 
     scrivi(con, entita)
+    evidenziazioni(con, entita, titoli)
     report(con, entita, senza, soli)
     con.close()
 
@@ -819,8 +843,14 @@ def intestazione_persona(vista):
     return f"{cognome}, {' '.join(nomi)}" if nomi else cognome
 
 
+PAROLE_NOME = defaultdict(set)     # menzione → parole del nome (forme viste e nomi), per l'evidenziazione
+
+
 def registra(e, mid, num, testo, corr, nomi, iniziali, cognomi, vista, multipla):
     e.setdefault("viste", Counter())[intestazione_persona(vista)] += 1
+    PAROLE_NOME[mid].update(normalizza(w) for w in " ".join(list(vista[0] or []) + [vista[1] or ""]).split())
+    PAROLE_NOME[mid].update(x for n in nomi for x in n)
+    PAROLE_NOME[mid].update(w for c in cognomi for w in (c or "").split())
     e["varianti"][(testo, "testo")].add(num)
     if corr:
         e["varianti"][(corr.strip("[] "), "correzione_curatore")].add(num)
@@ -858,6 +888,8 @@ def validate():
 
 
 def scrivi(con, entita):
+    con.execute("DROP TABLE IF EXISTS menzioni_entita")
+    con.execute("CREATE TABLE menzioni_entita (menzione INTEGER, entita INTEGER, PRIMARY KEY (menzione, entita))")
     valide = validate()
     for (tipo, chiave), e in sorted(entita.items(), key=lambda x: (x[0][0], x[1]["intestazione"])):
         alias = (set(e.get("viste", ())) | set(e.get("unite", ()))) - {e["intestazione"]}
@@ -883,6 +915,132 @@ def scrivi(con, entita):
             con.execute("INSERT INTO varianti (entita, forma, forma_normalizzata, origine, riferimento) "
                         "VALUES (?,?,?,?,?)", (eid, forma, normalizza(forma), origine, r))
         con.executemany("UPDATE menzioni SET entita=? WHERE id=?", [(eid, m) for m in e["menzioni"]])
+        # una menzione può nominare più persone («Antonio e Girolamo Savorgnan»): tutte le coppie
+        con.executemany("INSERT OR IGNORE INTO menzioni_entita (menzione, entita) VALUES (?,?)",
+                        [(m, eid) for m in e["menzioni"]])
+    con.commit()
+
+
+TITOLI_EV = {"sua", "maesta", "racc", "ill", "illmo", "ecc", "eccmo", "sig", "sign", "nh", "sommo", "pontefice",
+             "principessa", "arciduchessa", "doge", "card", "sermo", "dott", "msgr", "mons", "abt"}
+RX_TOK = re.compile(r"[^\W\d_][\w'’]*\.?(?:[a-zà-ü]+\.?)?")
+
+
+def evidenziazioni(con, entita, titoli):
+    """Tratto da evidenziare nella pagina (ev_inizio, ev_fine), senza toccare il testo né la menzione:
+    - solo le parole del nome: «Andraeam Georgium [Praesidem Clarissimum]», «[Sua S. R. M.] Vittorio
+      Emanuele II [. Marcia]»; le abbreviazioni e iniziali dei nomi della persona restano («P. A. Zorzi»,
+      «Liruti Gian Gius.»);
+    - l'intestazione spezzata «Del Torso, Enrico», «N. H. Z. [Mario]»: il cognome o la sigla subito
+      prima, senza entità o della stessa entità, entra nel tratto."""
+    cols = {r[1] for r in con.execute("PRAGMA table_info(menzioni)")}
+    for c in ("ev_inizio", "ev_fine"):
+        if c not in cols:
+            con.execute(f"ALTER TABLE menzioni ADD COLUMN {c} INTEGER")
+    con.execute("UPDATE menzioni SET ev_inizio=NULL, ev_fine=NULL")
+    nomi_ent = {}
+    for (tipo, _), e in entita.items():
+        if tipo == "persona" and e.get("id"):
+            nomi_ent[e["id"]] = {w for n in e.get("nomi", []) for w in n} | \
+                {w for c in e.get("cognomi", ()) for w in (c or "").split()} | \
+                {normalizza(w) for w in re.split(r"[ ,]+", e["intestazione"]) if w}
+    occ = defaultdict(Counter)
+    for forma, parte, n in con.execute("SELECT forma, parte, occorrenze FROM lessico"):
+        occ[normalizza(forma)][parte] += n
+    luoghi = {w for w, o in occ.items() if o["luogo"] > sum(o.values()) - o["luogo"]}
+    nomi_noti = {w for w, o in occ.items() if o["nome_di_battesimo"] + o["cognome"] >= 3}
+    battesimo = {normalizza(r["forma"]) for r in csv.DictReader(open(LISTE / "nomi.tsv", encoding="utf-8"),
+                                                                delimiter="\t")}
+    manuali = {}
+    f = LISTE / "evidenziazioni_curatore.tsv"
+    if f.exists():
+        manuali = {(r["voce"], r["testo"]): r["evidenziato"]
+                   for r in csv.DictReader(open(f, encoding="utf-8"), delimiter="\t")}
+    numeri = dict(con.execute("SELECT id, numero FROM voci"))
+    righe = con.execute("SELECT id, voce, sede, annotazione, testo_esatto, inizio, fine, entita, tipo "
+                        "FROM menzioni ORDER BY voce, sede, annotazione, inizio").fetchall()
+    ev = {}
+    for mid, voce, sede, aid, testo, ini, fin, eid, tipo in righe:
+        if tipo != "persona" or eid not in nomi_ent:
+            continue
+        m_man = manuali.get((numeri[voce], testo))
+        if m_man and m_man in testo:
+            ev[mid] = [ini + testo.index(m_man), ini + testo.index(m_man) + len(m_man)]
+            continue
+        nomi = PAROLE_NOME.get(mid, set()) | nomi_ent[eid]
+        iniz = {w[:1] for w in nomi if w}
+        toks = [(m.start(), m.end(), m.group(0)) for m in RX_TOK.finditer(testo)]
+
+        def k(t):
+            return normalizza(t.rstrip(".°")).replace(" ", "")
+
+        def simile(t):
+            # parola che può far parte del nome: nota come nome o cognome, o vicina a un nome della persona
+            # («Batta», «Dall'Ongaro», «Baronii» ~ Baronio)
+            parti = normalizza(t.rstrip(".°")).split()
+            return all(x in nomi or x in nomi_noti or (len(x) >= 5 and any(w[:5] == x[:5] for w in nomi))
+                       for x in parti) if parti else False
+
+        def abbr(t):
+            return t.endswith((".", "°"))
+
+        def nome(t):
+            return k(t) in nomi or (abbr(t) and (any(w.startswith(k(t)) for w in nomi) or
+                                                 (len(k(t)) <= 2 and k(t)[:1] in iniz)))
+
+        def via_sinistra(t):
+            # titoli noti, minuscole, luoghi e iniziali isolate estranee al nome («D.», «N. H.», «L. T.», «S. R. M.»)
+            return not nome(t) and (t[:1].islower() or k(t) in titoli or t.lower() in titoli or k(t) in luoghi
+                                    or k(t) in TITOLI_EV or (abbr(t) and len(k(t)) <= 1))
+        i, j = 0, len(toks)
+        while i < j - 1 and via_sinistra(toks[i][2]):
+            i += 1
+        while j - 1 > i and not nome(toks[j - 1][2]) and not re.match(r"[a-z]+['’][A-Z]", toks[j - 1][2]) and (
+                toks[j - 1][2][:1].islower() or k(toks[j - 1][2]) in titoli or k(toks[j - 1][2]) in TITOLI_EV):
+            j -= 1
+        # ultima parola dopo una parola chiusa dal punto («II. Marcia», «D.co. Lezione», «Imo. Lettere»),
+        # estranea al nome: è il titolo dell'opera
+        ult = toks[j - 1][2]
+        if j - i >= 2 and not nome(ult) and not simile(ult) and not re.search(r"\w[.°]\w", ult) \
+                and not (len(ult) <= 4 and ult[:1].isupper()) \
+                and not (k(ult) in battesimo and not re.fullmatch(r"[IVXLC]+\.", toks[j - 2][2])):
+            p_ = toks[j - 2][2]
+            if p_.endswith(".") and not (re.fullmatch(r"[IVXLC]+\.", p_) and j - i < 3):
+                j -= 1
+        if (i, j) != (0, len(toks)) and j > i:
+            ev[mid] = [ini + toks[i][0], ini + toks[j - 1][1]]
+    # intestazione spezzata: menzione precedente adiacente (solo spazi, virgole, parentesi tra le due)
+    testi = {}
+    prec = None
+    for mid, voce, sede, aid, testo, ini, fin, eid, tipo in righe:
+        if prec and prec[1:4] == (voce, sede, aid) and eid in nomi_ent and prec[8] == "persona" \
+                and (prec[7] == eid or (prec[7] is None and set(normalizza(prec[4]).replace(",", " ").split())
+                                        <= nomi_ent[eid] | {"di", "de", "del", "della", "da"})):
+            if voce not in testi:
+                testi[voce] = dict(((s, a), t) for s, a, t in con.execute(
+                    "SELECT 'testo', NULL, testo FROM voci WHERE id=? UNION ALL SELECT 'coda', NULL, coda FROM voci "
+                    "WHERE id=? UNION ALL SELECT 'annotazione', id, testo FROM annotazioni WHERE voce=?", (voce, voce, voce)))
+            t = testi[voce].get((sede, aid)) or ""
+            if re.fullmatch(r"[\s,\[\]()]*", t[prec[6]:ini]) and ini - prec[6] <= 4:
+                a, b = ev.get(mid, [ini, fin])
+                if "(" in t[prec[6]:ini] and t[b:b + 1] == ")":
+                    b += 1                      # «Calligaris (G.B.)»: la parentesi si chiude
+                ev[mid] = [prec[5], b]
+                if prec[7] == eid:
+                    ev[prec[0]] = [prec[5], b]
+        # correzione del curatore tra quadre subito dopo il nome: «N. H. Z. [Mario]»
+        if eid in nomi_ent:
+            if voce not in testi:
+                testi[voce] = dict(((s_, a_), t_) for s_, a_, t_ in con.execute(
+                    "SELECT 'testo', NULL, testo FROM voci WHERE id=? UNION ALL SELECT 'coda', NULL, coda FROM voci "
+                    "WHERE id=? UNION ALL SELECT 'annotazione', id, testo FROM annotazioni WHERE voce=?", (voce, voce, voce)))
+            t = testi[voce].get((sede, aid)) or ""
+            q = re.match(r"\s?\[[^\]]*[^\W\d_][^\]]*\]", t[fin:])
+            if q:
+                a, b = ev.get(mid, [ini, fin])
+                ev[mid] = [a, fin + q.end()]
+        prec = (mid, voce, sede, aid, testo, ini, fin, eid, tipo)
+    con.executemany("UPDATE menzioni SET ev_inizio=?, ev_fine=? WHERE id=?", [(a, b, m) for m, (a, b) in ev.items()])
     con.commit()
 
 

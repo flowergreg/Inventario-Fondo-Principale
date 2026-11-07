@@ -654,7 +654,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Mariae | 5 | Maria | forma latina declinata di «Maria» | 523, 606, 648, 1285, 2997 |
 | Aldus | 4 | Aldo | forma latina declinata di «Aldo» | 2631/5, 2631/6, 2631/10, 2631/11 |
 | Bart. | 4 | Bartolomeo | abbreviazione (lista manuale) | 511, 606, 721 |
-| Fabii | 4 | Fabio | forma latina declinata di «Fabio» | 647, 786, 819, 1487 |
+| Fabii | 4 | Fabio | forma latina declinata di «Fabius» | 647, 786, 819, 1487 |
 | Fed. | 4 | Federico | abbreviazione (lista manuale) | 505, 519, 606, 3913 |
 | Georgium | 4 | Giorgio | contesto | 606, 622, 1903 |
 | Gio | 4 | Giovanni | variante (lista manuale) | 669, 1777, 2406, 4113 |
@@ -690,7 +690,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
@@ -716,7 +716,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
 | Coronae | 1 | Corona | forma latina declinata di «Corona» | 3058 |
-| Darii | 1 | Dario | forma latina declinata di «Darius» | 194 |
+| Darii | 1 | Dario | forma latina declinata di «Dario» | 194 |
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
@@ -769,7 +769,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Terrae | 1 | Terra | forma latina declinata di «Terra» | 2623/8 |
 | Tertij | 1 | — | forma latina declinata di «Tertius» | 562 |
 | Valentinorum | 1 | Valentino | forma latina declinata di «Valentinus» | 2277 |
-| Valentinum | 1 | Valentino | forma latina declinata di «Valentinus» | 622 |
+| Valentinum | 1 | Valentino | forma latina declinata di «Valentino» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
 | Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |

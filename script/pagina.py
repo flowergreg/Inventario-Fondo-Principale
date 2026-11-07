@@ -187,7 +187,9 @@ function cerca(domanda, parte = false) {
   const ris = new Map(); const add = (vi, h) => { if (!ris.has(vi)) ris.set(vi, []); ris.get(vi).push(h); };
   const soloLuoghi = q.every(t => LUOGHI.has(t));   // solo nomi di luogo: nessuna persona per forma
   for (const e of ENT) {
-    if ((e.t !== "persona" || !soloLuoghi) && e.vs.some(vw => insiemi.every(s => [...s].some(w => vw.has(w)))))
+    if ((e.t !== "persona" || !soloLuoghi || ((e.c || []).length && insiemi.every(s => e.c.some(w => s.has(w)))
+                                               && e.c.every(w => insiemi.some(s => s.has(w)))))
+        && e.vs.some(vw => insiemi.every(s => [...s].some(w => vw.has(w)))))
       for (const [vi, sede, ini, fin] of e.m) add(vi, [1, sede === "testo" ? "t" : sede === "coda" ? "c" : sede, ini, fin, e]);
   }
   for (const [vi, hs] of nelTesto(insiemi, finestra)) for (const [s, i, f] of hs) add(vi, [2, s, i, f, null]);

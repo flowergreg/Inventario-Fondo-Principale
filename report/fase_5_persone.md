@@ -4,10 +4,10 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 741 |
-| media | 28 |
+| alta | 740 |
+| media | 29 |
 | bassa | 31 |
-| nessuna | 3058 |
+| nessuna | 3053 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -51,6 +51,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Suzzi, Celestino** (voci 334, 335; anni ?–?) → [Q112316093](https://www.wikidata.org/wiki/Q112316093) Celestino Suzzi (1815–1883)
 - **Tilatti, Andrea** (voci 1445; anni ?–?) → [Q89477491](https://www.wikidata.org/wiki/Q89477491) Andrea Tilatti (1962–?): _medievista italiano (1962-)_ — Udine — nato o morto in Friuli/Veneto; nato nel 1962: verificare
 - **Volpato Morghen, Domenica** (voci 2134; anni ?–?) → [Q131242678](https://www.wikidata.org/wiki/Q131242678) Domenica Volpato Morghen (?–?)
+- **di Brazzà, Giacomo** (voci 1503, 4108; anni ?–?) → [Q13521921](https://www.wikidata.org/wiki/Q13521921) Giacomo Savorgnan di Brazzà (1859–1888): _esploratore italiano naturalizzato francese_ — Roma
 
 ## 2. Candidati scartati (date incompatibili)
 
@@ -211,7 +212,6 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Bolena, Anna** (voci 3340, 3441; anni ?–?) → [Q80823](https://www.wikidata.org/wiki/Q80823) Anna Bolena (1501–1536): _regina consorte d'Inghilterra e Irlanda, seconda moglie di Enrico VIII Tudor_ — Blickling Hall, Torre di Londra
 - **Bombardini, Giuseppe** (voci 77, 487, 1534; anni 1833–1858) → [Q3770138](https://www.wikidata.org/wiki/Q3770138) Giuseppe Bombardini (1781–1867): _poeta italiano_ — Bassano del Grappa — nato o morto in Friuli/Veneto; date compatibili
 - **Bona, Vincenzo** (voci 518; anni 1837–1859) → [Q87268869](https://www.wikidata.org/wiki/Q87268869) Vincenzo Bona (1811–1874): _tipografo italiano (1811-1874)_ — Alba, Torino — date compatibili
-- **Bonaparte, Letizia** (voci 38; anni 1846–1846) → [Q151995](https://www.wikidata.org/wiki/Q151995) Maria Letizia Ramolino (1750–1836): _madre di Napoleone Bonaparte_ — Ajaccio, Roma — confermato dal contesto
 - **Bonatelli, Francesco** (voci 2634/4; anni ?–?) → [Q2270825](https://www.wikidata.org/wiki/Q2270825) Francesco Bonatelli (1830–1911): _filosofo italiano_ — Iseo, Padova — nato o morto in Friuli/Veneto
 - **Bondi, Clemente** (voci 304, 323, 824; anni 1808–1808) → [Q2978890](https://www.wikidata.org/wiki/Q2978890) Clemente Bondi (1742–1821): _poeta e traduttore italiano_ — Mezzani, Vienna — date compatibili
 - **Bonghi, Ruggero** (voci 2134; anni ?–?) → [Q1394707](https://www.wikidata.org/wiki/Q1394707) Ruggiero Bonghi (1826–1895): _filologo e politico italiano_ — Napoli, Torre del Greco
@@ -845,7 +845,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Zeno, Apostolo** (voci 1775; anni ?–?) → [Q349507](https://www.wikidata.org/wiki/Q349507) Apostolo Zeno (1668–1750): _poeta, librettista e giornalista italiano_ — Venezia — nato o morto in Friuli/Veneto
 - **Zoppi, Ottavio** (voci 3814; anni ?–?) → [Q3887261](https://www.wikidata.org/wiki/Q3887261) Ottavio Zoppi (1870–1962): _generale e politico italiano (1870-1962)_ — Novara, Milano — confermato dal contesto
 - **Zorutti, Pietro** (voci 385, 471, 491, 497; anni 1759–1944) → [Q2327335](https://www.wikidata.org/wiki/Q2327335) Pietro Zorutti (1792–1867): _poeta italiano_ — Dolegna del Collio, Udine — nato o morto in Friuli/Veneto; date compatibili
-- **Zorzi, Pietro Antonio** (voci 1903; anni 1793–1959) → [Q1081403](https://www.wikidata.org/wiki/Q1081403) Pietro Antonio Zorzi (1745–1803): _cardinale italiano_ — fase 6, blocco 4: verificato: arcivescovo di Udine 1792-1803
+- **Zorzi, Pietro Antonio** (voci 1224, 1383, 1903; anni 1729–1959) → [Q1081403](https://www.wikidata.org/wiki/Q1081403) Pietro Antonio Zorzi (1745–1803): _cardinale italiano_ — fase 6, blocco 4: verificato: arcivescovo di Udine 1792-1803
 - **Zucconi, Lodovico** (voci 558; anni 1765–1807) → [Q41618881](https://www.wikidata.org/wiki/Q41618881) Lodovico Zucconi (1706–1783): _1706-1783_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **d'Este, Eleonora** (voci 2003, 2004, 2005; anni ?–?) → [Q3721832](https://www.wikidata.org/wiki/Q3721832) Eleonora d'Este (1643–1722): _principessa e suora mantovana (1643-1722)_ — la carmelitana Maria Francesca dello Spirito Santo (1643-1722), non l'omonima del Cinquecento; verificato via SPARQL (fase 6)
 - **da Pordenone, Odorico** (voci 549, 825; anni 1347–1350) → [Q379733](https://www.wikidata.org/wiki/Q379733) Odorico da Pordenone (1286–1331): _presbitero e religioso italiano_ — Pordenone, Udine — nato o morto in Friuli/Veneto
@@ -861,7 +861,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3058 persone
+## 4. Nessun candidato su Wikidata: 3053 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
