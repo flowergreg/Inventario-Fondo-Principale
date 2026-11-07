@@ -218,6 +218,14 @@ function mostra(domanda) {
       if (punti.some(p => p[1] === h[1] && p[2] <= h[2] && h[3] <= p[3])) continue;
       visti.add(k); punti.push(h);
     }
+    // schede del Dizionario (più d'una per gli omonimi: con la forma e gli anni) e pagine del curatore
+    function collegamenti(d) {
+      if (!d) return "";
+      const per = new Map(); d.forEach(x => { if (!per.has(x[1])) per.set(x[1], []); per.get(x[1]).push(x); });
+      return [...per].map(([fonte, xs]) => xs.length === 1
+        ? ` · <a href="${esc(xs[0][0])}" target="_blank" rel="noopener">${esc(fonte)}</a>`
+        : ` · ${esc(fonte)}: ` + xs.map(x => `<a href="${esc(x[0])}" target="_blank" rel="noopener">${esc(x[2] || x[0])}</a>`).join(", ")).join("");
+    }
     const ent = [...new Map(hs.filter(h => h[4]).map(h => [h[4].i, h[4]])).values()];
     const sedi = new Map(); punti.forEach(h => { if (!sedi.has(h[1])) sedi.set(h[1], []); sedi.get(h[1]).push([h[2], h[3]]); });
     return `<article class="voce"><h2>Voce ${esc(v.n)}${liv === 3 ? ` <span class="etichetta">ricerca approssimata</span>` : ""}</h2>` +
@@ -226,7 +234,7 @@ function mostra(domanda) {
       (punti.length > 3 ? `<div class="entita">… e altri ${punti.length - 3} punti nella voce</div>` : "") +
       ent.map(e => `<div class="entita">Forma di riferimento${e.t === "luogo" ? " (luogo)" : e.t === "santo" ? " (santo)" : ""}: <b>${esc(e.f)}</b>` +
         (e.st === "validato" ? "" : " · da validare") + (e.q ? ` · <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">Wikidata ${e.q}</a>` : "") +
-        (e.d ? ` · <a href="${esc(e.d)}" target="_blank" rel="noopener">Dizionario Biografico dei Friulani</a>` : "") + `</div>`).join("") +
+        collegamenti(e.d) + `</div>`).join("") +
       `<details><summary>Testo della voce</summary><div class="testo-voce">${evidenzia(v.t, sedi.get("t") || [])}` +
       (v.c ? `\n\n<i>${evidenzia(v.c, sedi.get("c") || [])}</i>` : "") +
       v.a.map((a, k) => `\n\n[${evidenzia(a, sedi.get("a" + k) || [])}]`).join("") + `</div></details></article>`;

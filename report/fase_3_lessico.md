@@ -7,11 +7,11 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
 | abbreviazione | 0 | 2 | 0 | 280 | 282 | 605 |
-| cognome | 113 | 293 | 323 | 4878 | 5607 | 14371 |
+| cognome | 113 | 293 | 323 | 4877 | 5606 | 14370 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1832 |
 | luogo | 399 | 174 | 84 | 6 | 663 | 4512 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
-| nome_di_battesimo | 1254 | 145 | 0 | 0 | 1399 | 9274 |
+| nome_di_battesimo | 1255 | 145 | 0 | 0 | 1400 | 9276 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
 | opera | 17 | 0 | 0 | 0 | 17 | 47 |
 | parola | 0 | 0 | 0 | 0 | 125 | 498 |
@@ -684,16 +684,16 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Girol. | 2 | Girolamo | abbreviazione (lista manuale) | 606 |
 | Io. | 2 | Giovanni | curatore | 12, 414 |
 | Jacobum | 2 | Giacomo o Jacopo | contesto: ambiguo: da decidere con le fonti | 606, 622 |
-| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardo» | 620, 2521 |
+| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardus» | 620, 2521 |
 | Lunardo | 2 | Leonardo | variante (lista manuale) | 10, 473 |
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
-| Albertum | 1 | Alberto | forma latina declinata di «Albertus» | 616 |
+| Albertum | 1 | Alberto | forma latina declinata di «Alberto» | 616 |
 | Andreae | 1 | Andrea | forma latina declinata di «Andrea» | 620 |
 | Antoninorum | 1 | Antonino | forma latina declinata di «Antoninus» | 819 |
 | Apostolorum | 1 | Apostolo | forma latina declinata di «Apostolus» | 2124 |
@@ -732,7 +732,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -760,7 +760,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Patricij | 1 | Patrizio | forma latina declinata di «Patricio» | 553 |
 | Petronii | 1 | Petronio | curatore: 414 | 414 |
 | Poloniae | 1 | Polonia | forma latina declinata di «Polonia» | 619 |
-| Publii | 1 | Publio | forma latina declinata di «Publio» | 43 |
+| Publii | 1 | Publio | forma latina declinata di «Publius» | 43 |
 | Romae | 1 | Roma | forma latina declinata di «Roma» | 565 |
 | Servae | 1 | Servo | forma latina declinata di «Serva» | 2002 |
 | Spiritus | 1 | Spirito | forma latina declinata di «Spirito» | 3081 |
@@ -771,7 +771,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Valentinum | 1 | Valentino | forma latina declinata di «Valentinus» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
-| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilius» | 11 |
+| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |
 
 ## 4. Cognomi: varianti grafiche e correzioni del curatore
 
@@ -1081,7 +1081,7 @@ Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ 
 
 ## 6. Cognomi da verificare nelle fonti
 
-4878 forme (10853 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4877 forme (10852 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 

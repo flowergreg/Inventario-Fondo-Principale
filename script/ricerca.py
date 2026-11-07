@@ -155,9 +155,14 @@ def costruisci_indice(db=DB):
                                 "AND affidabilita='alta'"):
         if eid in stato_id:
             entita[stato_id[eid]]["q"] = qid
-    for eid, url in con.execute("SELECT entita, url FROM identificatori WHERE fonte='DBF'"):
+    # schede del Dizionario Biografico dei Friulani (anche più d'una, per omonimi) e pagine indicate dal
+    # curatore: [url, fonte, forma della scheda]
+    for eid, fonte, url, forma, nota in con.execute(
+            "SELECT entita, fonte, url, forma_autorizzata, nota FROM identificatori "
+            "WHERE fonte IN ('DBF', 'curatore') ORDER BY entita, forma_autorizzata"):
         if eid in stato_id:
-            entita[stato_id[eid]]["d"] = url          # scheda del Dizionario Biografico dei Friulani
+            entita[stato_id[eid]].setdefault("d", []).append(
+                [url, "Dizionario Biografico dei Friulani" if fonte == "DBF" else nota, forma or ""])
     for eid, vid, sede, aid, ini, fin in con.execute(
             "SELECT entita, voce, sede, annotazione, inizio, fine FROM menzioni WHERE entita IS NOT NULL"):
         if sede == "annotazione":

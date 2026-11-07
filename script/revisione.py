@@ -141,6 +141,12 @@ def blocco_dbf(con):
     def radice(w):
         return re.sub(r"(ius|ium|ii|ij|us|um|is|ae|am|i|o|e|a)$", "", w) if len(w) > 5 else w
 
+    occ = defaultdict(lambda: defaultdict(int))
+    for forma, parte, n in con.execute("SELECT forma, parte, occorrenze FROM lessico"):
+        occ[normalizza(forma)][parte] += n
+    battesimo = {w for w, o in occ.items() if o["nome_di_battesimo"] >= 10 and o["nome_di_battesimo"] > o["cognome"]}
+    battesimo |= set(ent_mod.EQUIVALENTI) | set(ent_mod.EQUIVALENTI.values())
+
     schede = []
     per_cognome = defaultdict(list)
     for d in idx:
@@ -152,9 +158,13 @@ def blocco_dbf(con):
             if len(ws) == 1:
                 cogn.add(ws[0])
             elif ws:
-                for w in ws:          # «Graziani Publio Augusto»: ogni parola può essere il cognome
-                    cogn.add(w)
-                nomi.append(nomi_k(" ".join(ws)))
+                # «Graziani Publio Augusto»: può essere cognome ogni parola che non sia un nome di battesimo
+                # («Giovanni Battista Bianchi» non rende «Battista» un cognome)
+                propri = set(nomi_k(d["nome"]))      # i nomi della scheda stessa non sono il cognome
+                for w in ws:
+                    if w not in battesimo and w not in propri and ent_mod.EQUIVALENTI.get(w, w) not in propri:
+                        cogn.add(w)
+                nomi.append(nomi_k(" ".join(w for w in ws if w in battesimo) or " ".join(ws)))
         d = dict(d, altri=alt, nomi=nomi)
         schede.append(d)
         for cg in cogn:
@@ -176,6 +186,8 @@ def blocco_dbf(con):
         m = re.findall(r"(\d{3,4})", d["date"])
         if not m:
             return None
+        if re.match(r"\s*\?", d["date"]):          # «? - 1394»: nota solo la morte
+            return int(m[-1]) - 90, int(m[-1])
         n0 = int(m[0]); n1 = int(m[-1]) if len(m) > 1 else n0 + 90
         return n0, n1
 
@@ -205,6 +217,11 @@ def blocco_dbf(con):
                 return None
             return sum(1 for y in ys if v[0] - 5 <= y <= v[1] + 60) / len(ys)
         ok = [d for d in cand if quota(d) is None or quota(d) > 0]
+        # una scheda trovata per cognome principale esclude quelle trovate solo attraverso gli altri nomi
+        # (Angeli Angelo, non Bandarini Angelo)
+        diretti = [d for d in ok if {" ".join(parole(d["cognome"])), radice(" ".join(parole(d["cognome"])))} & {ck, radice(ck)}]
+        if diretti:
+            ok = diretti
         voci = [v for (v,) in con.execute("SELECT DISTINCT v.numero FROM menzioni m JOIN voci v ON v.id=m.voce WHERE m.entita=?", (eid,))]
         wd = con.execute("SELECT codice FROM identificatori WHERE entita=? AND fonte='Wikidata' AND affidabilita='alta'", (eid,)).fetchone()
         via_altri = lambda d: not {" ".join(parole(d["cognome"])), radice(" ".join(parole(d["cognome"])))} & {ck, radice(ck)}
@@ -222,12 +239,14 @@ def blocco_dbf(con):
                 mot += f"; trovata attraverso gli altri nomi ({', '.join(d['altri'])})"
         elif len(ok) > 1:
             d = None; p = "?"
-            mot = "più schede compatibili: " + "; ".join(f"{x['cognome']} {x['nome']} ({x['date']}) {x['url']}" for x in ok)
+            mot = "più schede compatibili: si collegano tutte, il lettore sceglie"
         else:
             d = cand[0]; p = "no"; mot = f"stesso nome ma un'altra epoca ({d['date']})"
+        xs = [d] if d else ok                   # più schede: campi separati da « | »
         righe.append([p, mot, h, ", ".join(voci[:6]), ", ".join(str(y) for y in sorted(ys)[:6]),
-                      f"{d['cognome']} {d['nome']}" if d else "", d["date"] if d else "",
-                      ", ".join(d["altri"]) if d else "", d["url"] if d else "", wd[0] if wd else ""])
+                      " | ".join(f"{x['cognome']} {x['nome']}".strip() for x in xs), " | ".join(x["date"] for x in xs),
+                      " | ".join(", ".join(x["altri"]) for x in xs), " | ".join(x["url"] for x in xs),
+                      wd[0] if wd else ""])
     righe.sort(key=lambda x: ({"sì": 0, "?": 1, "no": 2}[x[0]], x[2]))
     out = DIR / "fase6_6_dbf.csv"
     with open(out, "w", encoding="utf-8-sig", newline="") as fh:

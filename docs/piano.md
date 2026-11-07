@@ -196,3 +196,15 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
   collegamento varrebbe per tutte le voci. Restano 19 collegamenti «media» (compatibili, non verificabili).
 - Nella pagina l'etichetta di Wikidata non sostituisce la forma di riferimento: ne diventa una variante di
   ricerca solo se il collegamento è sicuro (Cassono → Gastone della Torre).
+
+### Fase 6, scomposizioni e Dizionario Biografico dei Friulani
+- Scomposizioni (`revisione/fase6_5_scomposizioni_curatore.csv`): 155 decisioni del curatore in `dati/liste/persone_curatore.tsv`, più «Msgr. Giusto» Fontanini (606) e «Savorgnani del Monte» (famiglia, 604). Gesù Cristo e San Francesco d'Assisi sono registrati come santi; varianti del curatore per Fior (Adalgiso, Giso, Gjiso), Gyrowetz/Jírovec, Murad IV, Ignaz Franz von Mosel.
+- Indice del Dizionario riscaricato: l'espressione precedente fondeva le schede senza nome di battesimo con le successive (2318 → 2690 schede); «altri nomi» da 264 schede.
+- Principi del curatore per i collegamenti (`dati/liste/dbf_collegamenti.tsv`, generato dalla tabella `revisione/fase6_6_dbf.csv`):
+  - più schede compatibili: si collegano tutte, con forma e anni, e il lettore sceglie;
+  - anni assenti o solo in parte compatibili: il link si mette comunque;
+  - «no» (altra epoca): il link si toglie solo quando la voce esclude con certezza la persona (Amalteo Ascanio, Antonini Alfonso e altri 15); negli altri casi gli anni della voce sono di copie, edizioni, depositi o del contenuto e il link resta (Belgrado, Edo, Grimani Marino…);
+  - una scheda trovata per cognome principale esclude quelle trovate solo attraverso gli altri nomi (Angeli Angelo, non Bandarini Angelo); negli altri nomi i nomi di battesimo non valgono come cognome.
+  - escluso Foscarini Alvise (luogotenente nel 1637, non Ludovico Foscarini).
+- Forme diverse collegate alla stessa scheda (Haedus Petrus / Edo Pietro) diventano varianti di ricerca l'una dell'altra; restano entità distinte, da validare.
+- Pagine indicate dal curatore fuori dal Dizionario (fonte «curatore» in `fonti_curatore.tsv`): Antiche case di Udine per Adolfo della Porta.

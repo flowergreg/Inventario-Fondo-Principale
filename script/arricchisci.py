@@ -197,17 +197,32 @@ def fonti_curatore(con):
     for eid, tipo, intest, alias in con.execute("SELECT id, tipo, forma_intestazione, alias FROM entita"):
         for v in [intest] + [a for a in (alias or "").split(" | ") if a]:
             indice.setdefault((tipo, chiave_i(v)), eid)
-    con.execute("DELETE FROM identificatori WHERE fonte='DBF'")
+    con.execute("DELETE FROM identificatori WHERE fonte IN ('DBF', 'curatore')")
     mancanti = []
-    for r in csv.DictReader(open(RADICE / "dati" / "liste" / "fonti_curatore.tsv", encoding="utf-8"), delimiter="\t"):
+    righe = list(csv.DictReader(open(RADICE / "dati" / "liste" / "fonti_curatore.tsv", encoding="utf-8"), delimiter="\t"))
+    # collegamenti al Dizionario decisi nella revisione (fase 6): più schede per una forma quando
+    # l'identità è incerta (omonimi): il lettore sceglie da sé
+    dbf = RADICE / "dati" / "liste" / "dbf_collegamenti.tsv"
+    if dbf.exists():
+        righe += [dict(tipo="persona", fonte="Dizionario Biografico dei Friulani", url=r["url"],
+                       nota=f"{r['scheda']} ({r['date']})" if r["date"] else r["scheda"], intestazione=r["intestazione"],
+                       origine=r["nota"])
+                  for r in csv.DictReader(open(dbf, encoding="utf-8"), delimiter="\t")]
+    visti = set()
+    for r in righe:
         eid = indice.get((r["tipo"], chiave_i(r["intestazione"])))
         if not eid:
             mancanti.append(r["intestazione"])
             continue
+        if (eid, r["url"].rstrip("/")) in visti:
+            continue
+        visti.add((eid, r["url"].rstrip("/")))
+        # fonte «DBF» per il Dizionario; «curatore» per altre pagine indicate dal curatore (nome nella nota)
+        fonte = "DBF" if r["fonte"].startswith("Dizionario Biografico") else "curatore"
         con.execute("INSERT INTO identificatori (entita, fonte, codice, url, forma_autorizzata, data_verifica, stato, "
                     "affidabilita, nota) VALUES (?,?,?,?,?,date('now'),'validato','alta',?)",
-                    (eid, "DBF", r["url"].rstrip("/").rsplit("/", 1)[1], r["url"], r["nota"] or None,
-                     f"{r['fonte']} (curatore)"))
+                    (eid, fonte, r["url"].rstrip("/").rsplit("/", 1)[1], r["url"], r["nota"] or None,
+                     r["fonte"] if fonte == "curatore" else f"{r['fonte']} ({r.get('origine') or 'curatore'})"))
     if mancanti:
         print(f"  fonti del curatore non applicate (intestazione non trovata): {'; '.join(mancanti)}", file=sys.stderr)
     # «Altri nomi» delle schede collegate (dati/esterni/dbf_altri_nomi.json): varianti di ricerca della forma
@@ -215,6 +230,28 @@ def fonti_curatore(con):
     altri = RADICE / "dati" / "esterni" / "dbf_altri_nomi.json"
     altri = json.loads(altri.read_text(encoding="utf-8")) if altri.exists() else {}
     con.execute("DELETE FROM varianti WHERE origine='fonte_esterna' AND riferimento LIKE 'Dizionario Biografico%'")
+    # forme diverse collegate alla stessa scheda (Haedus, Petrus / Edo, Pietro): ognuna è variante di
+    # ricerca dell'altra; solo per le forme con una sola scheda (non per gli omonimi incerti)
+    uniche = {eid for eid, k in con.execute("SELECT entita, COUNT(*) FROM identificatori WHERE fonte='DBF' "
+                                             "GROUP BY entita") if k == 1}
+    per_url = defaultdict(set)
+    for eid, url in con.execute("SELECT entita, url FROM identificatori WHERE fonte='DBF'"):
+        if eid in uniche:
+            per_url[url.rstrip("/")].add(eid)
+    for url, eids in per_url.items():
+        if len(eids) < 2:
+            continue
+        forme = {eid: {f for (f,) in con.execute("SELECT forma FROM varianti WHERE entita=? AND origine='testo'", (eid,))}
+                 for eid in eids}
+        for eid in eids:
+            esistenti = {normalizza(f) for (f,) in con.execute("SELECT forma FROM varianti WHERE entita=?", (eid,))}
+            for altro in eids - {eid}:
+                for forma in sorted(forme[altro]):
+                    if normalizza(forma) not in esistenti:
+                        esistenti.add(normalizza(forma))
+                        con.execute("INSERT INTO varianti (entita, forma, forma_normalizzata, origine, riferimento) "
+                                    "VALUES (?,?,?,?,?)", (eid, forma, normalizza(forma), "fonte_esterna",
+                                                           "Dizionario Biografico dei Friulani, stessa scheda"))
     n = 0
     for eid, url in con.execute("SELECT entita, url FROM identificatori WHERE fonte='DBF'").fetchall():
         esistenti = {normalizza(f) for (f,) in con.execute("SELECT forma FROM varianti WHERE entita=?", (eid,))}
