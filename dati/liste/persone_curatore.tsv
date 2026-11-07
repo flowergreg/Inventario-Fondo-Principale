@@ -5,7 +5,7 @@ voce	testo	persone	nota
 	G. Venerio	Girolamo Venerio	
 	A. Wolf	Alessandro Wolf	
 10	F. Ale	F. / Ale. Ve.	nome abbreviato completo: «F. Ale. Ve.»
-518	A-K. A. Altan	A. Altan	«A-K.»: lettere contenute nel volume
+518	A. Altan	A. Altan	«A-K.»: lettere contenute nel volume
 385	Gentil signora Anetta	Anetta /	solo «Anetta» è il nome
 840	Annalia Civ		Annali della città: non è una persona
 2275	Beata Elena V.	Elena / Valentinis	
@@ -287,7 +287,7 @@ voce	testo	persone	nota
 676	Aneddoti del Liruti Tom I	Liruti /	fase 6, scomposizioni: curatore
 3989	Libr. Antiquaria		fase 6, scomposizioni
 3601	G. Batt. Antologia	Giovanni Battista / Jaconissi	fase 6, scomposizioni: curatore
-1542	Carlomagno di Pr. Antonini	Prospero / Antonini	fase 6, scomposizioni: curatore
+1542	Carlomagno di Pr. Antonini	Carlo Magno / | Prospero / Antonini	fase 6, scomposizioni: curatore
 617	Thes. Eccl. Aquil		fase 6, scomposizioni
 2529	Bande Nere. Frammento		fase 6, scomposizioni
 616	Caes. Baronii	Cesare / Baronio	fase 6, scomposizioni
@@ -302,7 +302,7 @@ voce	testo	persone	nota
 593	Castel Gandolfo		fase 6, scomposizioni
 3755	A Bortolo Castion	Bortolo / Castion	fase 6, scomposizioni
 599	Ex Johanne de Civitate	Giovanni / da Cividale	fase 6, scomposizioni: curatore
-825	Clemento XII. XIII	Clemente XII	fase 6, scomposizioni: curatore
+825	Clemente XII. XIII	Clemente XII	fase 6, scomposizioni: curatore
 3847	Codex Marcianus XIII		fase 6, scomposizioni
 598	Pio VI. Codice	Pio VI	fase 6, scomposizioni
 2666	On. Commune di Majano		fase 6, scomposizioni
@@ -316,7 +316,7 @@ voce	testo	persone	nota
 3471	Bach. Concertoni N° VI	Bach /	fase 6, scomposizioni
 523	Luog. Marco Contarini	Marco / Contarini	fase 6, scomposizioni
 618	Min. Conv.		fase 6, scomposizioni
-3514	Univ. Ctatol		fase 6, scomposizioni
+3514	Univ. Cattol		fase 6, scomposizioni
 3563	XIX. Pre Antonio Cuntigh	Antonio / Cuntigh	fase 6, scomposizioni
 3708	A Gabriele D'Annunzio	Gabriele / D'Annunzio	fase 6, scomposizioni
 619	D.no P. Paulo III	Paolo III	fase 6, scomposizioni
@@ -356,7 +356,7 @@ voce	testo	persone	nota
 2139	P. XIII. Lettera	Clemente XIII	fase 6, scomposizioni
 2140	P. XIV. Lettera	Benedetto XIV	fase 6, scomposizioni
 620	Joha. Jos	Giovanni Giuseppe / Liruti	fase 6, scomposizioni
-519	L-Z. Liruti Gian Gius.	Gian Giuseppe / Liruti	fase 6, scomposizioni
+519	Liruti Gian Gius.	Gian Giuseppe / Liruti	fase 6, scomposizioni
 502	Mr. de Lolme	Jean-Louis / de Lolme	fase 6, scomposizioni
 4255	A Giovanni Lorenzoni	Giovanni / Lorenzoni	fase 6, scomposizioni
 4511	Iti Madan Mo(da)		fase 6, scomposizioni
@@ -438,3 +438,4 @@ voce	testo	persone	nota
 4519	G[aspero] Barbera	Gaspero / Barbera	fase 6, scomposizioni
 606	Giusto	Giusto / Fontanini	fase 6, scomposizioni: curatore («Abt. Domenico e Msgr. Giusto»)
 604	Savorgnani del Monte	Savorgnan /	famiglia («antica famiglia de' Savorgnani del Monte»)
+	Carlomagno	Carlo Magno /	curatore: variante di Carlo Magno

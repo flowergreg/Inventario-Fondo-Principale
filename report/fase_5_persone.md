@@ -7,7 +7,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | alta | 741 |
 | media | 27 |
 | bassa | 31 |
-| nessuna | 3066 |
+| nessuna | 3065 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -265,7 +265,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Carga, Giovanni** (voci 102; anni ?–?) → [Q104383458](https://www.wikidata.org/wiki/Q104383458) Giovanni Carga (1520–1600): _n. ca. 1520 Letterato friulano, nato verso il 1520, fratello maggiore di Camillo_ — confermato dal contesto
 - **Carletti, Ercole** (voci 2564, 3720, 3892, 3912; anni 1899–1948) → [Q11919538](https://www.wikidata.org/wiki/Q11919538) Ercole Carletti (1877–1946): _giornalista, scrittore_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Carli, Gian Rinaldo** (voci 485, 701; anni 1720–1768) → [Q3762758](https://www.wikidata.org/wiki/Q3762758) Gian Rinaldo Carli (1720–1795): _scrittore, economista e storico italiano (1720-1795)_ — Capodistria, Milano — date compatibili
-- **Carlo Magno** (voci 563, 603, 610, 2632/14; anni 1097–1902) → [Q3044](https://www.wikidata.org/wiki/Q3044) Carlo Magno (748–814): _re dei Franchi (r. 768-814) e dei Longobardi (r. 774-814), primo imperatore del Sacro Romano Impero (r. 800-814)_ — fase 6, blocco 4: Carlo Magno
+- **Carlo Magno** (voci 407, 408, 409, 518; anni 1097–1902) → [Q3044](https://www.wikidata.org/wiki/Q3044) Carlo Magno (748–814): _re dei Franchi (r. 768-814) e dei Longobardi (r. 774-814), primo imperatore del Sacro Romano Impero (r. 800-814)_ — fase 6, blocco 4: Carlo Magno
 - **Carlo V** (voci 1098, 2529; anni 1936–1936) → [Q32500](https://www.wikidata.org/wiki/Q32500) Carlo V d'Asburgo (1500–1558): _duca di Borgogna (r. 1506-1556), re di Spagna (r. 1516-1556) e imperatore del Sacro Romano Impero (r. 1519-1556)_ — Gand, Monastero di Yuste
 - **Caro, Lucrezio** (voci 597; anni 1792–1792) → [Q47154](https://www.wikidata.org/wiki/Q47154) Tito Lucrezio Caro (-93–-54): _poeta e filosofo romano_ — Pompei, Roma
 - **Carpani, Melchiorre** (voci 593; anni 1778–1783) → [Q55226584](https://www.wikidata.org/wiki/Q55226584) Melchiorre Carpani (1726–1797): _missionario_ — Lodi — date compatibili
@@ -859,7 +859,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3066 persone
+## 4. Nessun candidato su Wikidata: 3065 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

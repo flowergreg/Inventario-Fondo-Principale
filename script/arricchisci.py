@@ -208,8 +208,14 @@ def fonti_curatore(con):
                        nota=f"{r['scheda']} ({r['date']})" if r["date"] else r["scheda"], intestazione=r["intestazione"],
                        origine=r["nota"])
                   for r in csv.DictReader(open(dbf, encoding="utf-8"), delimiter="\t")]
+    # forma e date della scheda dall'indice del Dizionario (dati/esterni/dbf_indice.json): si mostrano sempre
+    idx_dbf = RADICE / "dati" / "esterni" / "dbf_indice.json"
+    schede = {d["url"].rstrip("/"): d for d in json.loads(idx_dbf.read_text(encoding="utf-8"))} if idx_dbf.exists() else {}
     visti = set()
     for r in righe:
+        d = schede.get(r["url"].rstrip("/"))
+        if d:
+            r["nota"] = f"{d['cognome']} {d['nome']}".strip() + (f" ({d['date']})" if d["date"] else "")
         eid = indice.get((r["tipo"], chiave_i(r["intestazione"])))
         if not eid:
             mancanti.append(r["intestazione"])
@@ -252,6 +258,14 @@ def fonti_curatore(con):
                         con.execute("INSERT INTO varianti (entita, forma, forma_normalizzata, origine, riferimento) "
                                     "VALUES (?,?,?,?,?)", (eid, forma, normalizza(forma), "fonte_esterna",
                                                            "Dizionario Biografico dei Friulani, stessa scheda"))
+    # la forma della scheda è variante di ricerca («Altan Enrico» per «Altani, Enrico»), senza date ed epiteti
+    for eid, forma in con.execute("SELECT entita, forma_autorizzata FROM identificatori WHERE fonte='DBF'").fetchall():
+        forma = re.sub(r"\s+", " ", re.sub(r"\([^)]*\)", " ", forma or "")).strip()
+        esistenti = {normalizza(f) for (f,) in con.execute("SELECT forma FROM varianti WHERE entita=?", (eid,))}
+        if len(forma) >= 3 and normalizza(forma) not in esistenti:
+            con.execute("INSERT INTO varianti (entita, forma, forma_normalizzata, origine, riferimento) "
+                        "VALUES (?,?,?,?,?)", (eid, forma, normalizza(forma), "fonte_esterna",
+                                               "Dizionario Biografico dei Friulani, scheda"))
     n = 0
     for eid, url in con.execute("SELECT entita, url FROM identificatori WHERE fonte='DBF'").fetchall():
         esistenti = {normalizza(f) for (f,) in con.execute("SELECT forma FROM varianti WHERE entita=?", (eid,))}

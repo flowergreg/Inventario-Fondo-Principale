@@ -1028,6 +1028,12 @@ def main():
         for sede, aid, t in fonti:
             menzioni, scarti = estrattore.estrai(t)
             for m in menzioni:
+                # «A-K. A. Altan», «L-Z. Liruti»: le lettere della partizione alfabetica appartengono alla
+                # frase precedente, non al nome
+                x = re.match(r"[A-Z]-[A-Z]\.\s+", m["testo_esatto"])
+                if x and m["tipo"] == "persona" and len(m["testo_esatto"]) > x.end():
+                    m["testo_esatto"] = m["testo_esatto"][x.end():]
+                    m["inizio"] += x.end()
                 seg = None
                 if sede == "testo":
                     seg = next((s for s, a, b in segmenti if a <= m["inizio"] < b), None)

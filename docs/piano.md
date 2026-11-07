@@ -208,3 +208,5 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
   - escluso Foscarini Alvise (luogotenente nel 1637, non Ludovico Foscarini).
 - Forme diverse collegate alla stessa scheda (Haedus Petrus / Edo Pietro) diventano varianti di ricerca l'una dell'altra; restano entità distinte, da validare.
 - Pagine indicate dal curatore fuori dal Dizionario (fonte «curatore» in `fonti_curatore.tsv`): Antiche case di Udine per Adolfo della Porta.
+- Docx corretto dal curatore (Clemente, Univ. Cattol.); decisioni riallineate. Le lettere di partizione alfabetica («A-K.», «L-Z.») non entrano nel nome. «Carlomagno» è la stessa entità di Carlo Magno.
+- Link al Dizionario sempre con forma e date della scheda (dall'indice); la forma della scheda è variante di ricerca (Altan Enrico per «Altani Enrico»). Avvertenza sugli omonimi nel piè di pagina; «trascrizione a cura di» spostata in fondo.

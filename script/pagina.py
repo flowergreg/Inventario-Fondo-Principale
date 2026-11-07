@@ -92,7 +92,7 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   <div class="column-1"><div class="section">Ricerca</div></div>
   <div class="column-2">
   <h1 class="page-title">Fondo Principale</h1>
-  <p class="sottotitolo">Inventario dei manoscritti, voci 1–4519 · trascrizione a cura di Gregorio Grasselli</p>
+  <p class="sottotitolo">Inventario dei manoscritti, voci 1–4519</p>
   <p class="opzioni" style="margin-top:4px">Persone e luoghi in qualunque grafia.</p>
   <div class="ricerca">
   <form id="f"><input type="search" id="q" placeholder="Es. Zuan de Udene, Utinum, Florio Daniele, S. Pietro" autocomplete="off" autofocus aria-label="Nome di persona o di luogo">
@@ -110,7 +110,10 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   (tutte le grafie registrate dello stesso nome, anche lontane) e nel <b>testo</b> (tutte le parole vicine nella voce);
   solo se non trova nulla, prova la ricerca <b>approssimata</b> (una lettera di differenza), segnalata accanto alla voce.
   I collegamenti a Wikidata e al Dizionario Biografico dei Friulani indicano la fonte della forma di riferimento. La forma di riferimento raccoglie
-  grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme. Indice del __DATA__.
+  grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme.
+  I collegamenti alle schede sono proposti in base al nome e agli anni citati nella voce e <b>possono riferirsi a un omonimo</b>:
+  quando più schede sono compatibili, sono indicate tutte, con le date, e la scelta spetta al lettore.
+  <p style="margin:12px 0 0">Trascrizione a cura di Gregorio Grasselli · indice del __DATA__.</p>
 </div></footer>
 <script>
 const IDX = __INDICE__;
@@ -210,7 +213,7 @@ function mostra(domanda) {
   const el = document.getElementById("risultati"), st = document.getElementById("stato"), fo = document.getElementById("forme");
   if (!r.q.length) { st.textContent = "Scrivi un nome di persona o di luogo."; fo.innerHTML = ""; el.innerHTML = ""; return; }
   fo.innerHTML = "Forme cercate: " + r.insiemi.map(s => [...s].map(w => "<code>" + esc(w) + "</code>").join(" ")).join(" + ");
-  st.textContent = `${r.ris.length} voci` + (r.approssimata && r.ris.length ? " (ricerca approssimata)" : "") + ` · ${Math.round(performance.now() - t0)} ms`;
+  st.textContent = `${r.ris.length} voci` + (r.approssimata && r.ris.length ? " (ricerca approssimata)" : "") + ` · in ${((performance.now() - t0) / 1000).toFixed(2).replace(".", ",")} secondi`;
   el.innerHTML = r.ris.slice(0, 300).map(({vi, hs, liv}) => {
     const v = IDX.voci[vi]; const visti = new Set(); const punti = [];
     for (const h of hs) {        // niente doppioni: un tratto contenuto in uno già mostrato non si ripete
@@ -222,7 +225,7 @@ function mostra(domanda) {
     function collegamenti(d) {
       if (!d) return "";
       const per = new Map(); d.forEach(x => { if (!per.has(x[1])) per.set(x[1], []); per.get(x[1]).push(x); });
-      return [...per].map(([fonte, xs]) => xs.length === 1
+      return [...per].map(([fonte, xs]) => xs.every(x => !x[2])
         ? ` · <a href="${esc(xs[0][0])}" target="_blank" rel="noopener">${esc(fonte)}</a>`
         : ` · ${esc(fonte)}: ` + xs.map(x => `<a href="${esc(x[0])}" target="_blank" rel="noopener">${esc(x[2] || x[0])}</a>`).join(", ")).join("");
     }

@@ -6,11 +6,11 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3865 | 631 | 7312 |
+| persona | 3864 | 632 | 7317 |
 | luogo | 560 | 63 | 4557 |
 | santo | 202 | 35 | 488 |
 
-Menzioni collegate a un'entità: 12357 su 20979. Senza entità: nome o cognome singolo 8298, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12362 su 20979. Senza entità: nome o cognome singolo 8293, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -425,7 +425,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 - **Aleardi, Aleardo**: A. Aleardi (337); Aleardi, Aleardo (3791); Aleardo Aleardi (3591)
 - **Aloi, Nicolò**: Aloj N. (15); Nicolò Aloi (15); Nicolò Aloj (15); Nicolò Aloy (1303)
-- **Altan, Antonio**: A-K. A. Altan (518); A. Altan (875); Antonio Altan (875); Antonio Altano (619)
+- **Altan, Antonio**: A. Altan (518, 875); Antonio Altan (875); Antonio Altano (619)
 - **Altan, Federigo**: F. Altan (868); Federigo Altan (619)
 - **Amalteo, Marco Antonio**: M. A. Amalteo (102); Marcantonio Amalteo (60)
 - **Angeli, Angelo**: A. Angeli (510); Angelo (2695)
@@ -507,7 +507,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Lampugnani, Alessandro**: A. Lampugnani (3995, 4108); Lampugnani, Alessandro (2559, 3964)
 - **Lazzarini, Alfredo**: A. Lazzarini (403); Alfredo Lazzarini (402, 1536); Lazzarini Alfredo (1600); Lazzarini, Alfredo (3705)
 - **Lazzarini, Giuseppe Edgardo**: Lazzarini G. E. (2327); Lazzarini, Giuseppe Edgardo (2559)
-- **Liruti, Gian Giuseppe**: G. G. Liruti (778, 800, 873 a, 875, 877, 944, 1005); G.G. Liruti (1034); Gian Gius. (829); Gian Giuseppe Liruti (482, 485, 601, 771); Gio. Gius. (759); Gio. Giuseppe (614, 615); Joha. Jos (620); L-Z. Liruti Gian Gius. (519); Liruti G. Giuseppe (598); Liruti Gian Giuseppe (396, 470)
+- **Liruti, Gian Giuseppe**: G. G. Liruti (778, 800, 873 a, 875, 877, 944, 1005); G.G. Liruti (1034); Gian Gius. (829); Gian Giuseppe Liruti (482, 485, 601, 771); Gio. Gius. (759); Gio. Giuseppe (614, 615); Joha. Jos (620); Liruti G. Giuseppe (598); Liruti Gian Gius. (519); Liruti Gian Giuseppe (396, 470)
 - **Lodi, Emanuele**: E. Lodi (1545); Em. Lodi (511); Eman. Lodi (471, 1224); Emanuele Lodi (2263, 2520, 3636); Emanuele Lodi Episcopo Utinensi Parochialem (186); Emmanuele Lodi (491); Lodi Emanuele (2134, 2392)
 - **Loschi, Giuseppe**: G. Loschi (2630/11, 2631/1, 2631/11, 2631/2, 2631/3, 2631/4, 2631/5, 2631/6, 2631/7, 2631/8, 2631/9, 2632/14, 2633/16, 2633/17, 2633/18, 2633/19, 2633/21, 2634/1, 2634/16, 2634/17, 2634/2, 2634/5, 2635/12, 2635/13, 2635/14, 2635/17, 2635/17 bis, 2635/18, 2635/8, 2637/9, 2639/14-22); Gius. (2637/15); Gius. Loschi (2630/6, 2630/8, 2631/10, 2634/11, 2634/15, 2634/9); Giuseppe (2634/17); Giuseppe Loschi (2630/1, 2630/10, 2630/12, 2630/2, 2630/3, 2630/4, 2630/5, 2630/7, 2630/9, 2635/10); Loschi, Gius. Sulla (2637/20); Loschi, Giuseppe (2632/15, 2633/22, 2633/23, 2633/24, 2634/10, 2634/13, 2634/14, 2634/6, 2634/7, 2634/8, 2635/1, 2635/11, 2635/12, 2635/15, 2635/16, 2635/16 bis, 2635/19, 2635/2, 2635/20, 2635/21, 2635/3, 2635/6, 2635/7, 2635/9, 2637/1, 2637/20, 2637/7, 2637/8, 2638/1, 2638/2, 2639/4)
 - **Manara, Giovanni Orti**: G. Orti Manara (487); Gio. Orti Manara (492)
@@ -580,7 +580,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Zanella, Giacomo**: G. Zanella (4108); Giacomo Zanella (487)
 - **Zanon, Antonio**: A. Zanon (508, 721, 3913); Ant.° Zanon (508); Antonio (721, 722); Antonio Zanon (471, 508, 558); Zanon Antonio (519)
 - **del Torso, Enrico**: E. del Torso (2582, 2583, 2599, 3931, 4286); Enrico (2613, 3658, 3718, 3793); Enrico Del Torso (3715); Enrico del Torso (2379, 2422, 3931, 4232, 4285)
-- **della Porta, Giovanni Battista**: Della Porta G. B. (2253, 2254); Gio. Batta (3619); Gio. Battista (2691, 2692, 2693, 2694); Gio. Battista Della Porta (2692); Giovanni Battista (3849); Porta (della) Giov. Battista (383)
+- **della Porta, Giovanni Battista**: Della Porta G. B. (2253, 2254); Gio. Batta (3619); Gio. Battista (2691, 2692, 2693, 2694, 2703); Gio. Battista Della Porta (2692); Giovanni Battista (3849); Porta (della) Giov. Battista (383)
 - **della Porta, Uldarico**: U. della Porta (1032); Uldarico della Porta (1032)
 - **Śrī, Ma**: Iti Śrī Ma (4416); Iti Śrī Mā (4510)
 
@@ -658,7 +658,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Cimarosa, Domenico**: Cimarosa Domenico (3453); Domenico Cimarosa (3453)
 - **Clama, Domenico**: Clama Domenico (1505, 1506); Domenico Clama (3936)
 - **Clemente XI**: Clemente XI (24, 606); Nro Sig.re Papa Clemente XI (607)
-- **Clemente XII**: Clemente XII (606); Clemento XII. XIII (825)
+- **Clemente XII**: Clemente XII (606); Clemente XII. XIII (825)
 - **Colautti, Giuseppe**: Colautti Giuseppe (2257); Giuseppe Colautti (619); P. Giuseppe (3735)
 - **Colloredo, Fabio**: Fabii de Colloreto Utinensis Conjugis (819); Fabio Colloredo (639)
 - **Colloredo, Filippo Antonio**: Filippo Ant. Colloredo (339); Filippo Ant. di Colloredo (339); Filippo Antonio di Colloredo (487)
@@ -1185,7 +1185,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3210 entità: elenco completo nella tabella `entita`.
+3208 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
