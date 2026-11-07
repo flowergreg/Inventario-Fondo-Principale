@@ -848,11 +848,22 @@ def chiave_voce(n):
     return (int(m.group(1)) if m else 0, str(n))
 
 
+def validate():
+    """Entità confermate dal curatore (dati/liste/validazioni.tsv), per tipo e forma di riferimento: restano
+    validate anche quando l'estrazione si rifà; una forma nuova o cambiata torna «proposto»."""
+    f = LISTE / "validazioni.tsv"
+    if not f.exists():
+        return set()
+    return {(r["tipo"], r["intestazione"]) for r in csv.DictReader(open(f, encoding="utf-8"), delimiter="\t")}
+
+
 def scrivi(con, entita):
+    valide = validate()
     for (tipo, chiave), e in sorted(entita.items(), key=lambda x: (x[0][0], x[1]["intestazione"])):
         alias = (set(e.get("viste", ())) | set(e.get("unite", ()))) - {e["intestazione"]}
         cur = con.execute("INSERT INTO entita (tipo, forma_intestazione, stato, chiave, nota, alias) "
-                          "VALUES (?,?,?,?,?,?)", (tipo, e["intestazione"], "proposto", chiave,
+                          "VALUES (?,?,?,?,?,?)", (tipo, e["intestazione"],
+                                                   "validato" if (tipo, e["intestazione"]) in valide else "proposto", chiave,
                                                    "; ".join(sorted(e["note"])) or None,
                                                    " | ".join(sorted(alias)) or None))
         eid = cur.lastrowid
@@ -884,7 +895,7 @@ def report(con, entita, senza, soli):
     r = []
     w = r.append
     w("# Fase 4 — Entità proposte\n")
-    w("Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la conferma del curatore. "
+    w("Le entità sono in stato **proposto** finché il curatore non le conferma (dati/liste/validazioni.tsv). "
       "Tabelle: `entita` (tipo, forma di intestazione, chiave, nota), `varianti` (forma, forma normalizzata, "
       "origine, riferimento), `menzioni.entita`.\n")
     w("## Riepilogo\n")

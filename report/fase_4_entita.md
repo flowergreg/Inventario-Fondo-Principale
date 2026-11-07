@@ -6,11 +6,11 @@ Tutte le entità sono in stato **proposto**: diventano «validato» solo dopo la
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3860 | 631 | 7317 |
+| persona | 3858 | 631 | 7318 |
 | luogo | 562 | 63 | 4578 |
 | santo | 202 | 35 | 488 |
 
-Menzioni collegate a un'entità: 12383 su 21000. Senza entità: nome o cognome singolo 8292, esclusa dal curatore 133, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12384 su 21000. Senza entità: nome o cognome singolo 8291, esclusa dal curatore 133, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -75,7 +75,6 @@ Famiglie con omonimi noti: l'entità può riunire più persone.
 Forme unite dalla normalizzazione grafica (doppie, j/i, accenti): controllare che sia la stessa persona.
 
 - **Aloi, Nicolò** — _cognome in grafie diverse: Aloi, Aloj, Aloy; iniziali sciolte nella stessa voce_: Aloj N. (15); Nicolò Aloi (15); Nicolò Aloj (15); Nicolò Aloy (1303)
-- **Arigone, Giovanni Battista** — _cognome in grafie diverse: Arigone, Arrigone; comprende forme con iniziali_: Arigone Gio. Batta (287); G. B. Arrigone (102)
 - **Caimo, Marco Antonio** — _cognome in grafie diverse: Caimo, Cajmo_: Caimo Marco Antonio (280); Marco Antonio Cajmo (505)
 - **Capello, Pietro** — _cognome che è anche nome di battesimo: ordine dedotto; cognome in grafie diverse: Capello, Cappello; menzione con più persone («… e …»)_: L. T. Pietro Capello (568); Pietro Cappello e Leonardo Emo (999)
 - **Cappellari, Mattia** — _cognome in grafie diverse: Capellari, Cappellari_: Capellari Mattia (2141); Cappellari Mattia (1392); Mattia Cappellari (1224)
@@ -431,7 +430,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Angeli, Angelo**: A. Angeli (510); Angelo (2695)
 - **Antonini, Antonio**: A. Antonini (481); Ant. Antonini (481); Antonio Antonini (23, 546)
 - **Aprilis, Bartolomeo**: B. Aprilis (875); Bart. Aprilis (511); Bartolomeo Aprilis (492)
-- **Arigone, Giovanni Battista**: Arigone Gio. Batta (287); G. B. Arrigone (102)
+- **Arigone, Giovanni Battista**: Arigone Gio. Batta (287); G. B. Arrigone (102); G. B. Arrigoni (102); I. B. Arigonii (102)
 - **Asquini, Fabio**: Asquini Fabio (558); Asquini co. Fabio (558); Dal co. Asquini F. (2473, 2474); Fabio Asquini (575, 721, 930); Fabio Asquino (471, 476, 508)
 - **Bassi, Giovanni Battista**: Basso Gio. Batta [manuale]; Bassi G. B. (524); Bassi G.B. (2134); Bassi Gio. Battista (518)
 - **Battistella, Antonio**: A. Battistella (721); Battistella A.° (1973); Battistella Ant.° (1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967); Battistella Antonio (1956); Battistella, Antonio (3520)
@@ -1190,7 +1189,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3205 entità: elenco completo nella tabella `entita`.
+3203 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

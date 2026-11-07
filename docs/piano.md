@@ -213,3 +213,6 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Luogo + «di/da» + nome completo («Padova di Giacomo Belgrado», «Aquileia di A. Altan») diventa due menzioni, luogo e persona (21 casi); esclusi i nomi di battesimo (Ciro di Pers) e «Monte», «Sacco», «Mels».
 - Pagina: spunta «anche parte di parola» (ogni parola di almeno 3 lettere vale anche dentro parole più lunghe, varianti comprese); tolto il tempo di ricerca; «Trascrizione dall'inventario manoscritto a cura di Gregorio Grasselli» in fondo.
 - La forma di riferimento mostrata è quella della scheda del Dizionario quando le schede collegate concordano (Fabrizio, Daniele); la forma interna resta quella dell'inventario, perché le decisioni del curatore vi fanno riferimento.
+- Unione Arigonii I. B. / Arrigoni G. B. / Arigone Giovanni Battista (curatore); «Fabricio» (102) persona a sé.
+- Validazione in blocco del curatore: 4622 entità in `dati/liste/validazioni.tsv` (tipo, forma di riferimento). Le forme nuove o cambiate da una rigenerazione tornano «proposto» e la pagina le segnala «da validare».
+- `.nojekyll` alla radice: la pagina si può pubblicare con GitHub Pages (branch, cartella radice) all'indirizzo …/web/.
