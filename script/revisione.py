@@ -189,7 +189,12 @@ def blocco_dbf(con):
         ck = " ".join(parole(cogn))
         nk = nomi_k(nomi)
         cand = {d["url"]: d for k in {ck, radice(ck)} for d in per_cognome.get(k, [])}
-        cand = [d for d in cand.values() if any(n[:1] == nk[:1] for n in d["nomi"])]
+        def nomi_ok(n):
+            # stesso primo nome; se entrambe le forme hanno due nomi, anche il secondo deve combaciare
+            if not n or not nk or n[0] != nk[0]:
+                return False
+            return len(n) < 2 or len(nk) < 2 or n[1] == nk[1]
+        cand = [d for d in cand.values() if any(nomi_ok(n) for n in d["nomi"])]
         if not cand:
             continue
         ys = anni.get(eid, set())
@@ -202,7 +207,7 @@ def blocco_dbf(con):
         ok = [d for d in cand if quota(d) is None or quota(d) > 0]
         voci = [v for (v,) in con.execute("SELECT DISTINCT v.numero FROM menzioni m JOIN voci v ON v.id=m.voce WHERE m.entita=?", (eid,))]
         wd = con.execute("SELECT codice FROM identificatori WHERE entita=? AND fonte='Wikidata' AND affidabilita='alta'", (eid,)).fetchone()
-        via_altri = lambda d: " ".join(parole(d["cognome"])) not in (ck, radice(ck))
+        via_altri = lambda d: not {" ".join(parole(d["cognome"])), radice(" ".join(parole(d["cognome"])))} & {ck, radice(ck)}
         if len(ok) == 1:
             d = ok[0]; q = quota(d)
             if h in miste:
