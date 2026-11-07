@@ -18,6 +18,7 @@ from ricerca import costruisci_indice  # noqa: E402
 
 RADICE = Path(__file__).resolve().parent.parent
 OUT = RADICE / "web" / "index.html"
+PAGES = RADICE / "docs" / "index.html"      # copia pubblicata con GitHub Pages (cartella /docs)
 
 MODELLO = r"""<!doctype html>
 <html lang="it">
@@ -269,6 +270,7 @@ def main():
     html = MODELLO.replace("__INDICE__", dati).replace("__DATA__", date.today().strftime("%d/%m/%Y"))
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
+    PAGES.write_text(html, encoding="utf-8")
     print(f"Pagina scritta in {OUT} ({OUT.stat().st_size // 1024} KB)")
 
 

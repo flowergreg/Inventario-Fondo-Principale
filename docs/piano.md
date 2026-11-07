@@ -216,3 +216,4 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Unione Arigonii I. B. / Arrigoni G. B. / Arigone Giovanni Battista (curatore); «Fabricio» (102) persona a sé.
 - Validazione in blocco del curatore: 4622 entità in `dati/liste/validazioni.tsv` (tipo, forma di riferimento). Le forme nuove o cambiate da una rigenerazione tornano «proposto» e la pagina le segnala «da validare».
 - `.nojekyll` alla radice: la pagina si può pubblicare con GitHub Pages (branch, cartella radice) all'indirizzo …/web/.
+- GitHub Pages pubblica la cartella `docs/` (copia di `web/index.html` scritta da `pagina.py`, più `.nojekyll`): la radice intera (22 MB) andava in timeout.
