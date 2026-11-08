@@ -235,3 +235,5 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Segnalazioni: modulo Google configurato; casella su una riga nel piè di pagina.
 - Cognome precedente anche negli elenchi a trattini («- Cernazai, Giuseppe.») e con un titolo nella parentesi («Brazzoni (nob. Antonio»): 18 menzioni collegate in più. Correzioni del curatore: Joppi (Vincenzo, Antonio, Alessandro), P. Zorutti = Pietro, de Franceschi (senza «di Osoppo»), de Mutina Giovanni; Tolstoi Lev Nikolaevič.
 - Segnalazioni: la dicitura chiarisce che le grafie diverse sono quelle del manoscritto.
+- Una domanda fatta solo di parole di solito ignorate (titoli, particelle: «abate», «conte») si cerca così com'è nel testo.
+- Correzioni del curatore: abate Domenico Ongaro e abate Giuseppe Bianchi (forme col solo cognome), Tolstoi (tutte le forme), Fabbricj Gion. Maria, Parravicini L. A., Foi Amadio (Rizzi nato Foi), Grimani Domenico, i Barnaba (783, 1488, 1490, 1916), A. Joppi = Antonio; 102: Barnaba di Prampero, traduttore dell'«Orlando Innamorato».

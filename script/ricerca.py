@@ -274,7 +274,11 @@ def vocabolario(indice):
 def cerca(domanda, indice, finestra=None, approssimata=True, parte=False):
     q = chiave(domanda)
     if not q:
-        return []
+        # domanda fatta solo di parole che di solito si ignorano (titoli, particelle: «abate», «conte»):
+        # si cercano così come sono, nel testo
+        q = [p[0] for p in parole(domanda) if p[0]]
+        if not q:
+            return []
     insiemi = [espandi(t, indice) for t in q]
     if parte:       # parte di parola: ogni parola cercata (almeno 3 lettere) vale anche dentro parole più lunghe
         insiemi = [s | {x for w in vocabolario(indice) if any(len(t) >= 3 and t in w for t in s) for x in espandi(w, indice)}

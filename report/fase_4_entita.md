@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3880 | 649 | 7406 |
+| persona | 3875 | 653 | 7423 |
 | luogo | 562 | 63 | 4570 |
 | santo | 125 | 44 | 491 |
 
-Menzioni collegate a un'entità: 12467 su 20994. Senza entità: nome o cognome singolo 8203, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12484 su 20993. Senza entità: nome o cognome singolo 8185, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -24,7 +24,6 @@ Le menzioni con iniziali non sono state unite: indica a quale persona appartengo
 - **Colloredo, F.** — _iniziali compatibili con più persone: Colloredo, Fabio; Colloredo, Filippo_: F. di Colloredo (524)
 - **Frangipane, C.** — _iniziali compatibili con più persone: Frangipane, Cinzio; Frangipane, Cornelio; Frangipane, Cristoforo_: C. Frangipane (868, 896, 2458)
 - **Galvani, A.** — _iniziali compatibili con più persone: Galvani, Andrea; Galvani, Antonio_: Galvani A. (132)
-- **Joppi, A.** — _iniziali compatibili con più persone: Joppi, Alessandro; Joppi, Antonio_: A. Joppi (394)
 - **Manin, G.** — _iniziali compatibili con più persone: Manin, Giulio; Manin, Zuane_: G. Manin (931)
 - **Porcia, G.** — _iniziali compatibili con più persone: Porcia, Giovanni; Porcia, Girolamo_: G. di Porcia (3911)
 - **Rizzi, A.** — _iniziali compatibili con più persone: Rizzi, Amadio; Rizzi, Ambrogio_: A. Rizzi (875)
@@ -130,7 +129,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Barbera, Gaspero**: G[aspero] Barbera (4519)
 - **Barnaba, B.**: B. Barnaba (1490)
 - **Barnaba, Domenico**: Domenico (3521, 3653, 3657)
+- **Barnaba, Ermanno**: Barnaba Ermanno [manuale]; Erman Barnabe di Buie (1916)
 - **Barnaba, F.**: del Sr. F. Barnaba (1491)
+- **Barnaba, Pietro**: Pietro Barnaba di Buja (783)
 - **Barnaba, Rodolfo**: Barnaba Rodolfo (1972); Rodolfo Barnaba e Niccolò Comuzzi (1484)
 - **Basili, Andrea**: Basili Andrea (3189)
 - **Basso, Giovanni Battista**: Bassi G. B. [manuale]; Bassi G.B. [manuale]; Bassi Gio. Battista [manuale]; Basso Gio. Batta (465)
@@ -481,7 +482,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Cossio, Giuseppe Maria**: Cossio Giuseppe Maria (180); Cossio Giuseppe Maria di Tarcento (185); G. M. Cossio (339); Gius. Maria (819)
 - **Curti, Pier Ambrogio**: Curti, Pier Ambrogio (2552); Pier Ambr. Curti (2536)
 - **D'Aronco, Gianfranco**: D'Aronco, Gianfranco (3514, 3914); G. D'Aronco (3914, 4083)
-- **Dall'Ongaro, Francesco**: Dall'Ongaro F. (2262); Dall'Ongaro Francesco (86, 526); F. Dall'Ongaro (3995, 4108); Francesco Dall'Ongaro (2616)
+- **Dall'Ongaro, Francesco**: Dall'Ongaro F. (2262); Dall'Ongaro Francesco (86, 526); F. Dall'Ongaro (3995, 4108); Francesco Dall'Ongaro (2616); Ongaro (492)
 - **Deciani, Tiberio**: Tib. Deciani (1054); Tiberio (713); Tiberio Deciani (606, 1038, 1543)
 - **Donizetti, Gaetano**: Donizetti (4275); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
 - **Erizo, Antonio**: P. A. Erizzo (130); P. Ant. Erizo (151); P. Ant. Erizzo Luog.te (208)
@@ -597,6 +598,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Bach**: Bach. Concertoni (3408, 3409); Bach. Concertoni N° VI (3467, 3468, 3469, 3470, 3471)
 - **Bach, Giovanni**: Bach Giovanni (3403, 3406); Giovanni Bach. (3406)
 - **Baini, Lorenzo**: Baini Lorenzo (3372); Lorenzo Baini (3372)
+- **Barnaba**: Barnabae di Buia (1490); Pergamene Barnaba (1488)
 - **Baroni, Isidoro**: Baroni, Isidoro (3679); Isidoro Baroni (2604)
 - **Bearzi, Vincenzo**: Bearzi Vincenzo (338); Vincenzo Bearzi (338)
 - **Belgrado, Francesco**: Franc. Belgrado (480); Francesco Belgrado (507)
@@ -721,7 +723,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Haenel, Gustavo**: Gustavo Haenel (487); Haenel Gustavo (471)
 - **Hummel, Jean**: Hummel Jean (3418); Jean Hummel (3418)
 - **Jaconissi, Romano**: Jaconissi, Romano (3630); Romano Jaconissi (3601, 3602, 3603, 3604, 3605, 3606, 3607, 3608, 3609, 3610, 3611, 3612, 3613, 3614, 3615, 3616, 3617)
-- **Joppi, Antonio**: Antonio (1971); Antonio Joppi (1294)
+- **Joppi, Antonio**: A. Joppi (394); Antonio (1971); Antonio Joppi (1294)
 - **Küffner, Giuseppe**: Giuseppe Küffner (3395); Küffner Giuseppe (3395)
 - **Leduc, Alfonso**: Alfonso Leduc (4270); Leduc, Alfonso (4270)
 - **Leitenburg, Francesco**: Francesco de Leitenburg (4132/1, 4132/2, 4133, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4146, 4147, 4151, 4154, 4155, 4156); Leitenburg (de) Francesco (4131, 4132/1, 4132/2, 4133, 4134, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4144, 4145, 4146, 4147, 4148, 4149, 4150, 4151, 4152, 4153, 4154, 4155, 4156, 4157); Leitenburg Francesco (378)
@@ -783,7 +785,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Nievo, Ippolito**: Ippolito D.r Nievo (3901); Ippolito Nievo (2537, 2539, 2540, 2541, 2542, 2543, 2544, 2545, 2546, 2547, 2548, 2549, 2550, 2551, 2552, 2553, 2554, 2555, 2556, 2557, 2558, 2559, 3961, 3962, 3963, 3964, 3965, 3966, 3967, 3968, 3969, 3970, 3971, 3972, 3973, 3974); Nievo Ippolito (3901); Nievo, Ippolito (2529, 2530, 2531, 2532, 2533, 2534, 2535, 2536, 2537, 2538, 3937, 3938, 3939, 3940, 3941, 3942, 3943, 3944, 3945, 3946, 3947, 3948, 3952, 3953, 3957, 3958, 3959, 3960, 3989, 4518)
 - **Nievo, Marin**: Marin Nievo (2553); Nievo Marin (3961)
 - **Nogarolo, Antonio**: Antonio Nogarolo (10); Antonio de Nogarolo (10)
-- **Ongaro, Domenico**: Dom.co Ongaro (718, 2686); Domenico (638, 639); Domenico Ongaro (286, 601, 639, 1378, 1545, 2683, 2684); Ongaro Domenico (464, 518, 598)
+- **Ongaro, Domenico**: D. Ongaro (874, 1005, 1547, 1553); Dom.co Ongaro (718, 2686); Domenico (638, 639); Domenico Ongaro (286, 601, 639, 1378, 1545, 2683, 2684); Ongaro (770, 3956); Ongaro Domenico (464, 518, 598)
 - **Onorio III**: Onorio III. (947); Regesta Honorii Papae III. Sono (947)
 - **Orca, Tomaso**: Orca Tomaso (249); Orca Tommaso (250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277); Tomaso Orca (248)
 - **Ostermann, Leopoldo**: Leopoldo Ostermann (3598); Ostermann, Leopoldo (3598, 3918)
@@ -792,6 +794,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Pacini, Giovanni**: Giovanni Pacini (3348); Pacini Giovanni (3348)
 - **Paghini, Domenico**: Domenico Paghini (946, 2682); Paghini Domenico (2418)
 - **Paolo III**: D.no P. Paulo III (619); P. Pauli III (619)
+- **Parravicini, Luigi Alessandro**: Aless. Parravicini (471); Parravicini L. A. (519)
 - **Partenopeo, Ercole**: Ercole Partenopeo (1446); Partenopeo Ercole (287)
 - **Pavona, Luigi**: Luigi (3712); Pavona Luigi (177)
 - **Pavona, Pietro**: D. Pietro Pavona (2799); Pavona Don Pietro (3452); Pavona Pietro (2714, 2798, 2799, 2800, 2801, 2802, 2803, 2804, 2805, 2806, 2807, 2808, 2809, 2810, 2811, 2812, 2813, 2814, 2815, 2816, 2817, 2818, 2819, 2820, 2821, 2822, 2823, 2824, 2825, 2826, 2827, 2828, 2829, 2830, 2831, 2832, 2833, 2834, 2835, 2836, 2837, 2838, 2839, 2840, 2841, 2842, 2843, 2844, 2845, 2846, 2847); Pietro Pavona (2714, 2800, 3452)
@@ -852,6 +855,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Strazzolini, Nicolò**: Niccolò (709); Nicolò Strazzolini (706)
 - **Sturolo, Gaetano**: Gaetano Sturolo (923); P. Gaetano Sturolo (718)
 - **Tiepolo, G. B.**: G. B. Tiepolo (870); Tiepolo G. B. (1954)
+- **Tolstoi, Lev Nikolaevič**: L. N. (2639/7); Leone Tolstoi (2639/13); Tolstoi (2639/10); Tolstoi, A. N. (2639/7); Tolstoi, L. (2639/5, 2639/6); Tolstoi, Leone (2632/12, 2634/2)
 - **Tomadini, G. B.**: G. B. Tomadini (3080); Tomadini G. B. (3071, 3072, 3073, 3074 (con 3079), 3075, 3079 (con 3074 - 4.8.89), 3080)
 - **Tomadini, Jacopo**: Jacopo Tomadini (3047, 3049, 3518, 3913, 4201); Tomadini Jacopo (3047, 3048); Tomadini, Jacopo (3518)
 - **Trento, Federico**: Fed. Trento (3913); Trento Federico (190)
@@ -887,6 +891,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **de Mutina, Paolo**: Paolo (762); Paulum (761)
 - **del Torso, Jacopino**: Del Torso Giacobino (541); Giacomino del Torso (66); Jacopino del Torso (614, 1550, 1552)
 - **di Brazzà, Giacomo**: G. di Brazzà (1503); G. di Brazzà Savorgnan (4108)
+- **di Prampero, Barnaba**: Barnaba di Prampero (619); Orlando Innamorato di Barnaba di Prampero (102)
 - **di San Genesio, Bertrando**: Arca del B. Bertrando (803); B. Bertrando (826); Beato S.N. (533)
 - **Śrī, Gautam**: Iti Śrī Gautam (4495); Śrī Gautam (4351)
 
@@ -1139,7 +1144,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3207 entità: elenco completo nella tabella `entita`.
+3198 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

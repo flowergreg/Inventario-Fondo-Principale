@@ -4,10 +4,10 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 744 |
+| alta | 747 |
 | media | 34 |
 | bassa | 31 |
-| nessuna | 3071 |
+| nessuna | 3063 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -169,6 +169,8 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Barbarigo, Agostino** (voci 3779; anni 1493–1493) → [Q395582](https://www.wikidata.org/wiki/Q395582) Agostino Barbarigo (1419–1501): _doge della Repubblica di Venezia dal 1486 al 1501_ — Venezia — confermato dal contesto
 - **Barbaro, Luigi** (voci 693; anni 1511–1511) → [Q141935618](https://www.wikidata.org/wiki/Q141935618) Luigi Barbaro (?–1533): _editore italiano (fl. 1516)_ — confermato dal contesto
 - **Barbera, Gaspero** (voci 4519; anni 1857–1867) → [Q3758692](https://www.wikidata.org/wiki/Q3758692) Gaspero Barbera (1818–1880): _editore e tipografo italiano_ — Torino, Firenze — date compatibili
+- **Barnaba** (voci 1488, 1490; anni 1246–1588) → [Q185856](https://www.wikidata.org/wiki/Q185856) Barnaba (1–61): _vescovo cipriota_ — Salamina
+- **Barnaba, Pietro** (voci 783; anni 1839–1839) → [Q108435200](https://www.wikidata.org/wiki/Q108435200) Pietro Barnaba (1823–1882): _patriota italiano (1823-1882)_ — Buja — nato o morto in Friuli/Veneto; date compatibili
 - **Baroni, Isidoro** (voci 2604, 3679; anni 1685–1919) → [Q137691021](https://www.wikidata.org/wiki/Q137691021) Isidoro Baroni (1863–1930): _astronomo, capitano di marina, traduttore_ — date compatibili
 - **Baroni, Isidoro G.** (voci 3582; anni ?–?) → [Q137691021](https://www.wikidata.org/wiki/Q137691021) Isidoro Baroni (1863–1930): _astronomo, capitano di marina, traduttore_ — confermato dal contesto
 - **Baronio, Cesare** (voci 616; anni 1751–1815) → [Q317900](https://www.wikidata.org/wiki/Q317900) Cesare Baronio (1538–1607): _storico, religioso e cardinale italiano_ — Sora, Roma
@@ -356,7 +358,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **D'Aronco, Raimondo** (voci 4115; anni 1965–1965) → [Q2638404](https://www.wikidata.org/wiki/Q2638404) Raimondo D'Aronco (1857–1932): _architetto e politico italiano (1857–1932)_ — Gemona del Friuli, Sanremo — nato o morto in Friuli/Veneto
 - **D'Orlandi, Lea** (voci 2620, 3626; anni 1610–1683) → [Q106956684](https://www.wikidata.org/wiki/Q106956684) Lea D'Orlandi (1890–1965): _pittrice, folclorista e scrittrice italiana (1890-1965)_ — fissato dopo l'unione con «D'Orlando» (fase 6)
 - **D'Ovidio, Francesco** (voci 2635/18; anni 1908–1908) → [Q3749858](https://www.wikidata.org/wiki/Q3749858) Francesco D'Ovidio (1849–1925): _filologo romanzo e critico letterario italiano (1849-1926)_ — Campobasso, Napoli — date compatibili
-- **Dall'Ongaro, Francesco** (voci 86, 526, 2262, 2616; anni 1545–1941) → [Q725583](https://www.wikidata.org/wiki/Q725583) Francesco Dall'Ongaro (1808–1873): _poeta, drammaturgo e librettista italiano_ — Mansuè, Napoli — nato o morto in Friuli/Veneto; date compatibili
+- **Dall'Ongaro, Francesco** (voci 86, 492, 526, 2262; anni 1545–1941) → [Q725583](https://www.wikidata.org/wiki/Q725583) Francesco Dall'Ongaro (1808–1873): _poeta, drammaturgo e librettista italiano_ — Mansuè, Napoli — nato o morto in Friuli/Veneto; date compatibili
 - **Dandolo, Andrea** (voci 518; anni 1852–1852) → [Q353193](https://www.wikidata.org/wiki/Q353193) Andrea Dandolo (1306–1354): _doge della repubblica di venezia dal 1343 al 1354_ — Venezia — confermato dal contesto
 - **Dandolo, Francesco** (voci 772; anni 1329–1339) → [Q768846](https://www.wikidata.org/wiki/Q768846) Francesco Dandolo (1258–1339): _doge della repubblica di venezia dal 1329 al 1339_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **De Castro, Vincenzo** (voci 2542; anni 1855–1936) → [Q94518558](https://www.wikidata.org/wiki/Q94518558) Vincenzo De Castro (1808–1886): _professore universitario, traduttore italiano (1808-1886)_ — Pirano, Milano — date compatibili
@@ -494,6 +496,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Gregorio XII** (voci 1550, 1552; anni ?–?) → [Q227694](https://www.wikidata.org/wiki/Q227694) papa Gregorio XII (1335–1417): _205° vescovo di Roma e papa della Chiesa cattolica dal 1406 al 1415_ — Venezia, Recanati — nato o morto in Friuli/Veneto
 - **Grigoletti, Michelangelo** (voci 2418; anni ?–?) → [Q842033](https://www.wikidata.org/wiki/Q842033) Michelangelo Grigoletti (1801–1870): _pittore italiano_ — Pordenone, Venezia — nato o morto in Friuli/Veneto
 - **Grimani, Antonio** (voci 1088; anni 1521–1521) → [Q602332](https://www.wikidata.org/wiki/Q602332) Antonio Grimani (1435–1523): _doge della Repubblica di Venezia dal 1521 al 1523_ — Venezia — confermato dal contesto
+- **Grimani, Domenico** (voci 618; anni 1466–1651) → [Q582339](https://www.wikidata.org/wiki/Q582339) Domenico Grimani (1461–1523): _cardinale e patriarca cattolico italiano_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Grimani, Giovanni** (voci 467, 765, 792, 1123; anni 1569–1629) → [Q3767436](https://www.wikidata.org/wiki/Q3767436) Giovanni Grimani (1506–1593): _patriarca cattolico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Grimani, Marino** (voci 826; anni 1207–1719) → [Q1898567](https://www.wikidata.org/wiki/Q1898567) Marino Grimani (1489–1546): _cardinale e patriarca cattolico italiano_ — Venezia, Orvieto — patriarca d'Aquileia
 - **Grimani, Pietro** (voci 523, 3780; anni 1674–1802) → [Q786457](https://www.wikidata.org/wiki/Q786457) Pietro Grimani (1677–1752): _doge della Repubblica di Venezia_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
@@ -654,7 +657,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Panigai, Bartolomeo** (voci 464; anni 1769–1790) → [Q130544008](https://www.wikidata.org/wiki/Q130544008) Bartolomeo di Panigai (?–?): _gesuita, matematico e geografo italiano_ — Cividale del Friuli — nato o morto in Friuli/Veneto
 - **Panzacchi, Enrico** (voci 3591; anni 1868–1917) → [Q779096](https://www.wikidata.org/wiki/Q779096) Enrico Panzacchi (1840–1904): _poeta, politico, critico d'arte e critico musicale italiano (1840-1904)_ — Ozzano dell'Emilia, Bologna — date compatibili
 - **Paolo III** (voci 619; anni 1536–1536) → [Q133001](https://www.wikidata.org/wiki/Q133001) papa Paolo III (1468–1549): _220° vescovo di Roma e papa della Chiesa cattolica dal 1534 al 1549_ — Latium, Roma — date compatibili
-- **Parravicini, Luigi Alessandro** (voci 471; anni 1778–1846) → [Q52158538](https://www.wikidata.org/wiki/Q52158538) Luigi Alessandro Parravicini (1797–1880): _pedagogista italiano (1797-1880)_ — Ispra, Vittorio Veneto — nato o morto in Friuli/Veneto; date compatibili
+- **Parravicini, Luigi Alessandro** (voci 471, 519; anni 1660–1846) → [Q52158538](https://www.wikidata.org/wiki/Q52158538) Luigi Alessandro Parravicini (1797–1880): _pedagogista italiano (1797-1880)_ — Ispra, Vittorio Veneto — nato o morto in Friuli/Veneto; date compatibili
 - **Pascaleo, Alberto** (voci 618; anni 1717–1761) → [Q3608501](https://www.wikidata.org/wiki/Q3608501) Alberto Pasquale (1487–1544): _vescovo cattolico e letterato italiano_ — Udine — nato o morto in Friuli/Veneto
 - **Passionei, Domenico** (voci 78; anni ?–?) → [Q1226897](https://www.wikidata.org/wiki/Q1226897) Domenico Silvio Passionei (1682–1761): _cardinale italiano_ — Fossombrone, Eremo dei Camaldoli
 - **Pastonchi, Francesco** (voci 3591; anni 1868–1917) → [Q3750427](https://www.wikidata.org/wiki/Q3750427) Francesco Pastonchi (1874–1953): _poeta e critico letterario italiano (1874-1953)_ — Riva Ligure, Torino — date compatibili
@@ -872,7 +875,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3071 persone
+## 4. Nessun candidato su Wikidata: 3063 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

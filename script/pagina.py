@@ -192,7 +192,10 @@ function vocabolario() {       // parole dei testi e delle varianti, per la rice
   return VOCAB;
 }
 function cerca(domanda, parte = false) {
-  const q = chiave(domanda); if (!q.length) return {q, ris: []};
+  let q = chiave(domanda);
+  // solo parole di solito ignorate (titoli, particelle: «abate»): si cercano così come sono
+  if (!q.length) q = parole(domanda).map(p => p[0]).filter(w => w);
+  if (!q.length) return {q, ris: []};
   let insiemi = q.map(espandi);
   // parte di parola: ogni parola cercata (almeno 3 lettere) vale anche dentro parole più lunghe
   if (parte) insiemi = insiemi.map(s => { const n = new Set(s);
