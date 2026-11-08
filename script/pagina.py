@@ -67,6 +67,7 @@ button:hover { filter: brightness(.93); }
 .stato { font: bold 19px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 22px 0 4px; }
 .stato::first-letter { color: var(--color1); }
 .forme { font-size: 15px; color: var(--tenue); margin: 0 0 18px; }
+.nota { font-size: .9em; color: var(--tenue); }
 .avviso { font-size: 15px; color: var(--scuro); background: var(--fascia); border-left: 4px solid var(--color1); padding: 6px 10px; margin: 10px 0 0; }
 .segnala { display: block; margin: 12px 0 0; }
 .segnala label { display: block; margin-bottom: 4px; }
@@ -90,6 +91,7 @@ mark { background: var(--evidenza); color: inherit; padding: 0 1px; }
 details { margin-top: 6px; } summary { font: italic 500 16px var(--font-titoli); color: var(--accento); cursor: pointer; }
 .testo-voce { white-space: pre-wrap; background: var(--fascia); padding: 10px 14px; margin-top: 6px; font-size: 17px; }
 footer { background: var(--color1); color: #fff; margin-top: 30px; padding: 16px 0; font-size: 16px; }
+footer a { color: #fff; text-decoration: underline; }
 footer b { font-family: var(--font-titoli); font-weight: 600; }
 @media (max-width: 991px) {
   .row-1 { display: block; } .column-1, .column-2 { width: 100%; padding-left: 0; }
@@ -117,16 +119,15 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   </div>
 </div></div></div>
 <footer><div class="container">
-  La ricerca normalizza la grafia (maiuscole, accenti, j/i, y/i, doppie) e la estende con le varianti registrate:
-  forme latine, venete e friulane, abbreviazioni, varianti dei nomi, correzioni del curatore, forme di Wikidata. Trova le voci attraverso la <b>forma di riferimento</b>
-  (tutte le grafie registrate dello stesso nome, anche lontane) e nel <b>testo</b> (tutte le parole vicine nella voce);
-  solo se non trova nulla, prova la ricerca <b>approssimata</b> (una lettera di differenza), segnalata accanto alla voce.
-  I collegamenti a Wikidata e al Dizionario Biografico dei Friulani indicano la fonte della forma di riferimento. La forma di riferimento raccoglie
-  grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme.
-  I collegamenti alle schede sono proposti in base al nome e agli anni citati nella voce e <b>possono riferirsi a un omonimo</b>:
-  quando più schede sono compatibili, sono indicate tutte, con le date, e la scelta spetta al lettore.
-  <form id="segnala" class="segnala"><label for="segnala-testo">Hai trovato una persona confusa con un'altra o un collegamento sbagliato? Segnalalo
-  (le grafie diverse sono quelle del manoscritto, non errori):</label>
+  L'inventario manoscritto è stato trascritto con criterio documentario, conservando grafie, abbreviazioni e refusi del compilatore.
+  Questa pagina raccoglie le grafie normalizzate dei nomi («forma di riferimento») e le collega alle loro varianti in latino,
+  in veneto, in friulano, e alle relative abbreviazioni. La ricerca di un nome restituisce le voci dell'inventario che contengono
+  il nome e le relative varianti; solo se non trova nulla, restituisce termini approssimati (una lettera di differenza).
+  I collegamenti a <a href="https://www.wikidata.org/" target="_blank" rel="noopener">Wikidata</a> e al
+  <a href="https://www.dizionariobiograficodeifriulani.it/" target="_blank" rel="noopener">Dizionario Biografico dei Friulani</a>
+  indicano la fonte della grafia normalizzata. Sono proposti in base al nome e agli anni citati nella voce e possono riferirsi
+  a un omonimo. Il discrimine spetta al lettore.
+  <form id="segnala" class="segnala"><label for="segnala-testo">Avete trovato una persona confusa con un'altra, o un collegamento sbagliato? Segnalatelo:</label>
   <span class="segnala-riga"><input id="segnala-testo" type="text" maxlength="2000" required
     placeholder="voce e nome da correggere"><button>Invia</button></span>
   <span id="segnala-esito" role="status"></span></form>
@@ -232,10 +233,28 @@ function frammento(testo, ini, fin, c = 90) {
   const a = Math.max(0, ini - c), b = Math.min(testo.length, fin + c);
   return (a ? "…" : "") + esc(testo.slice(a, ini)) + "<mark>" + esc(testo.slice(ini, fin)) + "</mark>" + esc(testo.slice(fin, b)) + (b < testo.length ? "…" : "");
 }
-function evidenzia(testo, tratti) {
-  tratti = tratti.slice().sort((a, b) => a[0] - b[0]); let out = "", p = 0;
-  for (const [i, f] of tratti) { if (i < p) continue; out += esc(testo.slice(p, i)) + "<mark>" + esc(testo.slice(i, f)) + "</mark>"; p = f; }
-  return out + esc(testo.slice(p));
+// testo con i tratti evidenziati e, facoltativamente, frammenti HTML inseriti in posizioni date
+// (le annotazioni tra quadre rimesse dove stavano nella voce)
+function evidenzia(testo, tratti, inserti = []) {
+  tratti = tratti.slice().sort((a, b) => a[0] - b[0]);
+  const ins = inserti.slice().sort((a, b) => a[0] - b[0]); let out = "", p = 0, k = 0;
+  const fino = n => { while (k < ins.length && ins[k][0] <= n) { const q = Math.max(p, ins[k][0]);
+      out += esc(testo.slice(p, q)) + ins[k][1]; p = q; k++; }
+    out += esc(testo.slice(p, n)); p = Math.max(p, n); };
+  for (const [i, f] of tratti) { if (i < p) continue; fino(i); out += "<mark>" + esc(testo.slice(i, f)) + "</mark>"; p = f; }
+  fino(testo.length); while (k < ins.length) out += ins[k++][1];
+  return out;
+}
+function nota(v, k, sedi) {
+  const [, , etich] = v.ap[k] || [];
+  return `<span class="nota">[${esc(etich ? etich + ": " : "")}${evidenzia(v.a[k], sedi.get("a" + k) || [])}]</span>`;
+}
+function testoCompleto(v, sedi) {       // la voce come nell'inventario, annotazioni al loro posto
+  const per = s => (v.ap || []).map((x, k) => [x, k]).filter(([x]) => x[0] === s && x[1] != null)
+    .map(([x, k]) => [x[1], nota(v, k, sedi)]);
+  const senzaPosto = (v.ap || []).map((x, k) => [x, k]).filter(([x]) => x[1] == null).map(([, k]) => "\n\n" + nota(v, k, sedi));
+  return evidenzia(v.t, sedi.get("t") || [], per("t")) +
+    (v.c ? `\n\n<i>${evidenzia(v.c, sedi.get("c") || [], per("c"))}</i>` : "") + senzaPosto.join("");
 }
 function mostra(domanda) {
   const r = cerca(domanda, document.getElementById("parte").checked);
@@ -268,9 +287,7 @@ function mostra(domanda) {
       ent.map(e => `<div class="entita">Forma di riferimento${e.t === "luogo" ? " (luogo)" : e.t === "santo" ? " (santo)" : ""}: <b>${esc(e.f)}</b>` +
         (e.st === "validato" ? "" : " · da validare") + (e.q ? ` · <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">Wikidata ${e.q}</a>` : "") +
         collegamenti(e.d) + `</div>`).join("") +
-      `<details><summary>Testo della voce</summary><div class="testo-voce">${evidenzia(v.t, sedi.get("t") || [])}` +
-      (v.c ? `\n\n<i>${evidenzia(v.c, sedi.get("c") || [])}</i>` : "") +
-      v.a.map((a, k) => `\n\n[${evidenzia(a, sedi.get("a" + k) || [])}]`).join("") + `</div></details></article>`;
+      `<details><summary>Testo della voce</summary><div class="testo-voce">${testoCompleto(v, sedi)}</div></details></article>`;
   }).join("") + (r.ris.length > 300 ? `<p class="stato">Mostrate le prime 300 voci di ${r.ris.length}.</p>` : "");
 }
 const form = document.getElementById("f"), q = document.getElementById("q");

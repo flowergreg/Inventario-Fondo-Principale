@@ -6,7 +6,7 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3875 | 653 | 7423 |
+| persona | 3874 | 653 | 7423 |
 | luogo | 562 | 63 | 4570 |
 | santo | 125 | 44 | 491 |
 
@@ -350,7 +350,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Scott, Walter**: Walter Scott (2639/4)
 - **Seneca, Federico**: Federico Seneca (4235)
 - **Sforza, Daniele**: Sforza Daniello (346)
-- **Sforza, Fabio**: Fabio Sforza (43, 869)
 - **Silio, Pietro**: Silio Pietro (147)
 - **Silverio, Agostino**: Agostino Silverio (329)
 - **Silverio, Pietro**: Pietro Silverio (330)
@@ -1144,7 +1143,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3198 entità: elenco completo nella tabella `entita`.
+3197 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

@@ -83,11 +83,15 @@ def costruisci_indice(db=DB):
     voci, pos = [], {}
     for vid, numero, testo, coda in con.execute("SELECT id, numero, testo, coda FROM voci ORDER BY id"):
         pos[vid] = len(voci)
-        voci.append({"n": numero, "t": testo or "", "c": coda or "", "a": [], "s": []})
+        voci.append({"n": numero, "t": testo or "", "c": coda or "", "a": [], "ap": [], "s": []})
     ann_pos = {}
-    for aid, vid, testo in con.execute("SELECT id, voce, testo FROM annotazioni WHERE voce IS NOT NULL ORDER BY id"):
+    # annotazioni: testo, e dove stavano nella voce (sede, posizione, etichetta) per rimetterle al loro posto
+    for aid, vid, testo, sede, posz, etich in con.execute(
+            "SELECT id, voce, testo, sede, posizione, etichetta_originale FROM annotazioni "
+            "WHERE voce IS NOT NULL ORDER BY id"):
         ann_pos[aid] = (pos[vid], len(voci[pos[vid]]["a"]))
         voci[pos[vid]]["a"].append(testo or "")
+        voci[pos[vid]]["ap"].append(["c" if sede == "coda" else "t", posz, etich or ""])
     for vid, etichetta, ini, fin in con.execute("SELECT voce, etichetta, inizio, fine FROM segmenti "
                                                 "ORDER BY voce, ordine"):
         if etichetta:

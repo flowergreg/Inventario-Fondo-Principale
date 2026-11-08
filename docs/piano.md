@@ -239,3 +239,6 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Correzioni del curatore: abate Domenico Ongaro e abate Giuseppe Bianchi (forme col solo cognome), Tolstoi (tutte le forme), Fabbricj Gion. Maria, Parravicini L. A., Foi Amadio (Rizzi nato Foi), Grimani Domenico, i Barnaba (783, 1488, 1490, 1916), A. Joppi = Antonio; 102: Barnaba di Prampero, traduttore dell'«Orlando Innamorato».
 - Dicitura in testa: «Strumento non ufficiale, a cura di Gregorio Grasselli: non è un servizio della Biblioteca Civica «V. Joppi»».
 - Cambio di nome del repository (Inventario_Joppi → Inventario-Fondo-Principale, per non far pensare al Fondo Joppi): GitHub Pages non reindirizza il vecchio indirizzo; `rimando/index.html` è la pagina da pubblicare in un repository con il vecchio nome perché il vecchio link continui a funzionare (conserva anche la ricerca dopo #).
+- Le annotazioni tra quadre sono mostrate nel testo della voce al punto in cui stavano (colonna `posizione`), con la loro etichetta; senza posizione, in fondo.
+- Testo in calce riscritto dal curatore, con i link a Wikidata e al Dizionario Biografico dei Friulani.
+- Fabio della Forza = Fabio Sforza (curatore), con link al Dizionario.
