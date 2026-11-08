@@ -67,7 +67,8 @@ button:hover { filter: brightness(.93); }
 .stato { font: bold 19px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 22px 0 4px; }
 .stato::first-letter { color: var(--color1); }
 .forme { font-size: 15px; color: var(--tenue); margin: 0 0 18px; }
-form.segnala { display: block; margin: 12px 0 0; }
+.avviso { font-size: 15px; color: var(--scuro); background: var(--fascia); border-left: 4px solid var(--color1); padding: 6px 10px; margin: 10px 0 0; }
+.segnala { display: block; margin: 12px 0 0; }
 .segnala label { display: block; margin-bottom: 4px; }
 .segnala-riga { display: flex; gap: 8px; max-width: 640px; }
 .segnala input { flex: 1 1 auto; min-width: 0; font: inherit; font-size: 16px; padding: 5px 8px; border: 1px solid #fff; background: #fff; color: var(--color2); }
@@ -103,6 +104,7 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   <div class="column-2">
   <h1 class="page-title">Fondo Principale</h1>
   <p class="sottotitolo">Inventario dei manoscritti, voci 1–4519</p>
+  <p class="avviso">Strumento non ufficiale, a cura di Gregorio Grasselli: non è un servizio della Biblioteca Civica «V. Joppi».</p>
   <p class="opzioni" style="margin-top:4px">Persone e luoghi in qualunque grafia.</p>
   <div class="ricerca">
   <form id="f"><input type="search" id="q" placeholder="Es. Zuan de Udene, Utinum, Florio Daniele, S. Pietro" autocomplete="off" autofocus aria-label="Nome di persona o di luogo">
