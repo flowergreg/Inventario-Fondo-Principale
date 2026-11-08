@@ -242,3 +242,4 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Le annotazioni tra quadre sono mostrate nel testo della voce al punto in cui stavano (colonna `posizione`), con la loro etichetta; senza posizione, in fondo.
 - Testo in calce riscritto dal curatore, con i link a Wikidata e al Dizionario Biografico dei Friulani.
 - Fabio della Forza = Fabio Sforza (curatore), con link al Dizionario.
+- La ricerca nel testo mostra tutte le occorrenze nella voce (fino a 5 punti, poi «e altri N»), non solo la prima.

@@ -176,13 +176,14 @@ function nelTesto(insiemi, finestra) {
   SEDI.forEach((sedi, vi) => {
     for (const [sede, , pw] of sedi) {
       if (!insiemi.every(s => pw.some(p => s.has(p[0])))) continue;
+      let dopo = -1;                  // tutte le occorrenze nella voce, senza sovrapposizioni
       for (let i = 0; i < pw.length; i++) {
-        if (!tutte.has(pw[i][0])) continue;
+        if (!tutte.has(pw[i][0]) || pw[i][1] < dopo) continue;
         const tratto = pw.slice(i, i + finestra).filter(p => p[3] === pw[i][3]);
         if (insiemi.every(s => tratto.some(p => s.has(p[0])))) {
           const fine = Math.max(...tratto.filter(p => tutte.has(p[0])).map(p => p[2]));
           if (!trovati.has(vi)) trovati.set(vi, []);
-          trovati.get(vi).push([sede, pw[i][1], fine]); break;
+          trovati.get(vi).push([sede, pw[i][1], fine]); dopo = fine;
         }
       }
     }
@@ -281,9 +282,9 @@ function mostra(domanda) {
     const ent = [...new Map(hs.filter(h => h[4]).map(h => [h[4].i, h[4]])).values()];
     const sedi = new Map(); punti.forEach(h => { if (!sedi.has(h[1])) sedi.set(h[1], []); sedi.get(h[1]).push([h[2], h[3]]); });
     return `<article class="voce"><h2>Voce ${esc(v.n)}${liv === 3 ? ` <span class="etichetta">ricerca approssimata</span>` : ""}</h2>` +
-      punti.slice(0, 3).map(h => { const seg = segmento(v, h[1], h[2]);
+      punti.slice(0, 5).map(h => { const seg = segmento(v, h[1], h[2]);
         return `<div class="punto">${seg ? `<span class="seg">${esc(seg)}</span>` : ""}${frammento(testoSede(v, h[1]), h[2], h[3])}</div>`; }).join("") +
-      (punti.length > 3 ? `<div class="entita">… e altri ${punti.length - 3} punti nella voce</div>` : "") +
+      (punti.length > 5 ? `<div class="entita">… e altri ${punti.length - 5} punti nella voce</div>` : "") +
       ent.map(e => `<div class="entita">Forma di riferimento${e.t === "luogo" ? " (luogo)" : e.t === "santo" ? " (santo)" : ""}: <b>${esc(e.f)}</b>` +
         (e.st === "validato" ? "" : " · da validare") + (e.q ? ` · <a href="https://www.wikidata.org/wiki/${e.q}" target="_blank" rel="noopener">Wikidata ${e.q}</a>` : "") +
         collegamenti(e.d) + `</div>`).join("") +

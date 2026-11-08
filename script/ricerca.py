@@ -312,14 +312,15 @@ def cerca(domanda, indice, finestra=None, approssimata=True, parte=False):
                 if not all(any(p[0] in s for p in pw) for s in insiemi_):
                     continue
                 tutte = set().union(*insiemi_)
+                dopo = -1                       # tutte le occorrenze nella voce, senza sovrapposizioni
                 for i, (w, ini, fin, bl) in enumerate(pw):
-                    if w not in tutte:
+                    if w not in tutte or ini < dopo:
                         continue
                     tratto = [p for p in pw[i:i + finestra] if p[3] == bl]     # stesso blocco
                     if all(any(p[0] in s for p in tratto) for s in insiemi_):
                         fine = max(p[2] for p in tratto if p[0] in tutte)
                         trovati[vi].append((sede, ini, fine))
-                        break
+                        dopo = fine
         return trovati
 
     for vi, hits in nel_testo(insiemi).items():
