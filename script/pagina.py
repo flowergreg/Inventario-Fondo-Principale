@@ -67,6 +67,12 @@ button:hover { filter: brightness(.93); }
 .stato { font: bold 19px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 22px 0 4px; }
 .stato::first-letter { color: var(--color1); }
 .forme { font-size: 15px; color: var(--tenue); margin: 0 0 18px; }
+.segnala { margin: 40px 0 10px; padding-top: 18px; border-top: 1px solid var(--linea); }
+.segnala h2 { font-family: var(--font-titoli); font-weight: 600; font-size: 20px; margin: 0 0 6px; }
+.segnala p { font-size: 15px; color: var(--tenue); margin: 0 0 10px; }
+.segnala textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 8px; border: 1px solid var(--linea); }
+.segnala-riga { display: flex; align-items: center; gap: 14px; margin-top: 8px; flex-wrap: wrap; }
+.segnala-riga span { font-size: 15px; }
 .forme a.forma { font-family: var(--font-testo); background: var(--fascia); padding: 1px 5px; color: inherit; text-decoration: none; cursor: pointer; display: inline-block; margin: 2px 0; }
 .forme a.forma:hover { text-decoration: underline; color: var(--colorHref); }
 .voce { border-top: 1px solid var(--linea); padding: 14px 0 12px; }
@@ -105,6 +111,14 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   <div class="stato" id="stato">Scrivi un nome di persona o di luogo.</div>
   <div class="forme" id="forme"></div>
   <div id="risultati"></div>
+  <section class="segnala" aria-labelledby="segnala-t">
+    <h2 id="segnala-t">Segnala un errore</h2>
+    <p>Hai trovato un nome letto male, una persona confusa con un'altra, un collegamento sbagliato? Scrivilo qui,
+    indicando se puoi il numero della voce. La ricerca in corso viene allegata alla segnalazione.</p>
+    <form id="segnala"><textarea id="segnala-testo" rows="4" maxlength="3000" required
+      placeholder="Es.: voce 621, «Locadello» è Pier Paolo Locatelli"></textarea>
+    <div class="segnala-riga"><button>Invia</button><span id="segnala-esito" role="status"></span></div></form>
+  </section>
   </div>
 </div></div></div>
 <footer><div class="container">
@@ -258,6 +272,22 @@ function mostra(domanda) {
 }
 const form = document.getElementById("f"), q = document.getElementById("q");
 form.addEventListener("submit", ev => { ev.preventDefault(); mostra(q.value); history.replaceState(null, "", "#" + encodeURIComponent(q.value)); });
+// segnalazioni: si inviano in silenzio al modulo configurato in dati/liste/segnalazioni.json (un modulo
+// Google: le risposte finiscono nel foglio del curatore), senza lasciare la pagina
+const SEGNALA = __SEGNALA__;
+document.getElementById("segnala").addEventListener("submit", async ev => {
+  ev.preventDefault();
+  const t = document.getElementById("segnala-testo"), esito = document.getElementById("segnala-esito");
+  if (!SEGNALA.modulo) { esito.textContent = "Le segnalazioni non sono ancora attive."; return; }
+  const dati = new URLSearchParams();
+  dati.append(SEGNALA.campi.messaggio, t.value.trim());
+  if (SEGNALA.campi.ricerca) dati.append(SEGNALA.campi.ricerca, q.value.trim());
+  esito.textContent = "Invio in corso…";
+  try {
+    await fetch(SEGNALA.modulo, {method: "POST", mode: "no-cors", body: dati});
+    t.value = ""; esito.textContent = "Grazie, la segnalazione è stata inviata.";
+  } catch (e) { esito.textContent = "Invio non riuscito: controlla la connessione e riprova."; }
+});
 // le forme cercate sono cliccabili: una nuova ricerca per quella sola forma
 document.getElementById("forme").addEventListener("click", ev => {
   const a = ev.target.closest("a.forma"); if (!a) return;
@@ -275,7 +305,10 @@ if (location.hash.length > 1) { q.value = decodeURIComponent(location.hash.slice
 def main():
     indice = costruisci_indice()
     dati = json.dumps(indice, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
-    html = MODELLO.replace("__INDICE__", dati).replace("__DATA__", date.today().strftime("%d/%m/%Y"))
+    conf = RADICE / "dati" / "liste" / "segnalazioni.json"     # {"modulo": url formResponse, "campi": {...}}
+    segnala = json.loads(conf.read_text(encoding="utf-8")) if conf.exists() else {"modulo": "", "campi": {}}
+    html = MODELLO.replace("__INDICE__", dati).replace("__DATA__", date.today().strftime("%d/%m/%Y")) \
+        .replace("__SEGNALA__", json.dumps(segnala, ensure_ascii=False))
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
     PAGES.write_text(html, encoding="utf-8")
