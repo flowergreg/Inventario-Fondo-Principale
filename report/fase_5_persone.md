@@ -4,10 +4,10 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 743 |
+| alta | 744 |
 | media | 34 |
 | bassa | 31 |
-| nessuna | 3067 |
+| nessuna | 3071 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -858,6 +858,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **d'Este, Eleonora** (voci 2003, 2004, 2005; anni ?–?) → [Q3721832](https://www.wikidata.org/wiki/Q3721832) Eleonora d'Este (1643–1722): _principessa e suora mantovana (1643-1722)_ — la carmelitana Maria Francesca dello Spirito Santo (1643-1722), non l'omonima del Cinquecento; verificato via SPARQL (fase 6)
 - **da Pordenone, Odorico** (voci 519, 549, 774, 825; anni 1292–1350) → [Q379733](https://www.wikidata.org/wiki/Q379733) Odorico da Pordenone (1286–1331): _presbitero e religioso italiano_ — Pordenone, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **da Udine, Giovanni** (voci 870, 1195, 1197, 4283; anni 1542–1954) → [Q983350](https://www.wikidata.org/wiki/Q983350) Giovanni da Udine (1487–1564): _pittore, decoratore e architetto italiano_ — Udine, Roma — nato o morto in Friuli/Veneto; date compatibili
+- **de Franceschi, Francesco** (voci 1998; anni 1475–1806) → [Q1106262](https://www.wikidata.org/wiki/Q1106262) Francesco De Franceschi (1530–1599): _editore e tipografo italiano (fl. 1558-1599)_ — Siena, Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **de Lolme, Jean-Louis** (voci 502; anni 1778–1785) → [Q116870](https://www.wikidata.org/wiki/Q116870) Jean-Louis de Lolme (1741–1806): _giurista e filosofo svizzero e inglese_ — Ginevra, Seewen — date compatibili
 - **degli Azzoni, Rambaldo** (voci 619; anni 1773–1773) → [Q51144](https://www.wikidata.org/wiki/Q51144) Rambaldo degli Azzoni Avogaro (1719–1790): _storico e numismatico italiano (1719-1790)_ — Treviso — nato o morto in Friuli/Veneto; date compatibili
 - **degli Olivi, Enrico Palladio** (voci 622; anni 1737–1737) → [Q30087608](https://www.wikidata.org/wiki/Q30087608) Enrico Palladio degli Olivi (1580–1629): _medico e storico italiano_ — Udine — nato o morto in Friuli/Veneto
@@ -871,7 +872,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3067 persone
+## 4. Nessun candidato su Wikidata: 3071 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

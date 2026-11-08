@@ -233,3 +233,5 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Titolo tra cognome e nome nell'intestazione («Faidutti, mons. Luigi»): l'evidenziazione lo comprende.
 - Le varianti del testo usano solo la parte evidenziata (Candotti non risponde più a «Maris Stella»); per i santi si scartano solo le varianti con specificazione (Osoppo), non le forme diverse (Ave Maris Stella = Madonna).
 - Segnalazioni: modulo Google configurato; casella su una riga nel piè di pagina.
+- Cognome precedente anche negli elenchi a trattini («- Cernazai, Giuseppe.») e con un titolo nella parentesi («Brazzoni (nob. Antonio»): 18 menzioni collegate in più. Correzioni del curatore: Joppi (Vincenzo, Antonio, Alessandro), P. Zorutti = Pietro, de Franceschi (senza «di Osoppo»), de Mutina Giovanni; Tolstoi Lev Nikolaevič.
+- Segnalazioni: la dicitura chiarisce che le grafie diverse sono quelle del manoscritto.

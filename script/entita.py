@@ -338,8 +338,12 @@ def cognome_precedente(testo, inizio, lex, titoli):
     non dà per luogo, titolo, parola o nome di battesimo."""
     # con la virgola solo in apertura di frase («…1858). Pecile, Gabriele Luigi»), non negli elenchi
     # («cte de Beauregard, Giulio Ventura»); con la parentesi ovunque
-    m = re.search(r"(?:^|[.;)\n]\s*)((?:[Dd]e|[Dd]i|[Dd]el|[Dd]ella|[Dd]a)\s+)?([A-ZÀ-Ý][\w'’]+),\s*$", testo[:inizio]) or \
-        re.search(r"(?:^|[\s.;])((?:[Dd]e|[Dd]i|[Dd]el|[Dd]ella|[Dd]a)\s+)?([A-ZÀ-Ý][\w'’]+)\s*\(\s*$", testo[:inizio])
+    # anche in un elenco a trattini («- Cernazai, Giuseppe.») e con un titolo nella parentesi
+    # («Brazzoni (nob. Antonio»)
+    m = re.search(r"(?:^|[.;)\n]\s*|[-–]\s+)((?:[Dd]e|[Dd]i|[Dd]el|[Dd]ella|[Dd]a)\s+)?([A-ZÀ-Ý][\w'’]+),\s*$",
+                  testo[:inizio]) or \
+        re.search(r"(?:^|[\s.;])((?:[Dd]e|[Dd]i|[Dd]el|[Dd]ella|[Dd]a)\s+)?([A-ZÀ-Ý][\w'’]+)\s*\(\s*"
+                  r"(?:(?:nob|co|conte|ab|abate|don|dott|prof|mons|cav|sac|can|p|fr)\.?\s+)?$", testo[:inizio])
     if not m or m.group(2).lower() in titoli:
         return None
     righe = lex.get(m.group(2), [])

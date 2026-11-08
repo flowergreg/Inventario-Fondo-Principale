@@ -123,7 +123,8 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme.
   I collegamenti alle schede sono proposti in base al nome e agli anni citati nella voce e <b>possono riferirsi a un omonimo</b>:
   quando più schede sono compatibili, sono indicate tutte, con le date, e la scelta spetta al lettore.
-  <form id="segnala" class="segnala"><label for="segnala-testo">Hai trovato un errore? Segnalalo:</label>
+  <form id="segnala" class="segnala"><label for="segnala-testo">Hai trovato una persona confusa con un'altra o un collegamento sbagliato? Segnalalo
+  (le grafie diverse sono quelle del manoscritto, non errori):</label>
   <span class="segnala-riga"><input id="segnala-testo" type="text" maxlength="2000" required
     placeholder="voce e nome da correggere"><button>Invia</button></span>
   <span id="segnala-esito" role="status"></span></form>

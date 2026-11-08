@@ -6,8 +6,8 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
-| abbreviazione | 0 | 2 | 0 | 278 | 280 | 603 |
-| cognome | 113 | 293 | 323 | 4870 | 5599 | 14357 |
+| abbreviazione | 0 | 2 | 0 | 278 | 280 | 604 |
+| cognome | 113 | 293 | 323 | 4870 | 5599 | 14358 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1835 |
 | luogo | 401 | 174 | 84 | 6 | 665 | 4525 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
@@ -653,7 +653,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Mariae | 5 | Maria | forma latina declinata di «Maria» | 523, 606, 648, 1285, 2997 |
 | Aldus | 4 | Aldo | forma latina declinata di «Aldo» | 2631/5, 2631/6, 2631/10, 2631/11 |
 | Bart. | 4 | Bartolomeo | abbreviazione (lista manuale) | 511, 606, 721 |
-| Fabii | 4 | Fabio | forma latina declinata di «Fabius» | 647, 786, 819, 1487 |
+| Fabii | 4 | Fabio | forma latina declinata di «Fabio» | 647, 786, 819, 1487 |
 | Fed. | 4 | Federico | abbreviazione (lista manuale) | 505, 519, 606, 3913 |
 | Georgium | 4 | Giorgio | contesto | 606, 622, 1903 |
 | Gio | 4 | Giovanni | variante (lista manuale) | 669, 1777, 2406, 4113 |
@@ -684,7 +684,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Girol. | 2 | Girolamo | abbreviazione (lista manuale) | 606 |
 | Io. | 2 | Giovanni | curatore | 12, 414 |
 | Jacobum | 2 | Giacomo o Jacopo | contesto: ambiguo: da decidere con le fonti | 606, 622 |
-| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardo» | 620, 2521 |
+| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardus» | 620, 2521 |
 | Lunardo | 2 | Leonardo | variante (lista manuale) | 10, 473 |
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
@@ -693,7 +693,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
-| Albertum | 1 | Alberto | forma latina declinata di «Albertus» | 616 |
+| Albertum | 1 | Alberto | forma latina declinata di «Alberto» | 616 |
 | Andreae | 1 | Andrea | forma latina declinata di «Andrea» | 620 |
 | Antoninorum | 1 | Antonino | forma latina declinata di «Antoninus» | 819 |
 | Apostolorum | 1 | Apostolo | forma latina declinata di «Apostolus» | 2124 |
@@ -715,13 +715,13 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
 | Coronae | 1 | Corona | forma latina declinata di «Corona» | 3058 |
-| Darii | 1 | Dario | forma latina declinata di «Darius» | 194 |
+| Darii | 1 | Dario | forma latina declinata di «Dario» | 194 |
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
-| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenio» | 2623/3 |
-| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
-| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
+| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
+| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
+| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
 | Fr.co | 1 | Francesco | abbreviazione (lista manuale) | 1737 |
 | Fr.° | 1 | Francesco | abbreviazione (lista manuale) | 601 |
@@ -732,7 +732,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -751,7 +751,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Marquardus | 1 | Marquardo | forma latina declinata di «Marquardo» | 606 |
 | Martii | 1 | Marzio | forma latina declinata di «Martio» | 3949 |
 | Mich. | 1 | Michele | abbreviazione (lista manuale) | 606 |
-| Octavii | 1 | Octavio | forma latina declinata di «Octavius» | 1375 |
+| Octavii | 1 | Octavio | forma latina declinata di «Octavio» | 1375 |
 | Odoricum | 1 | Odorico | forma latina declinata di «Odorico» | 617 |
 | Osmus | 1 | Osmo | forma latina declinata di «Osmo» | 606 |
 | Ovidii | 1 | Ovidio | forma latina declinata di «Ovidio» | 836 |
@@ -1081,7 +1081,7 @@ Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ 
 
 ## 6. Cognomi da verificare nelle fonti
 
-4870 forme (10840 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4870 forme (10841 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 
