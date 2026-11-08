@@ -318,7 +318,9 @@ def cerca(domanda, indice, finestra=None, approssimata=True, parte=False):
                         continue
                     tratto = [p for p in pw[i:i + finestra] if p[3] == bl]     # stesso blocco
                     if all(any(p[0] in s for p in tratto) for s in insiemi_):
-                        fine = max(p[2] for p in tratto if p[0] in tutte)
+                        # fin dove serve: per ogni parola cercata la prima occorrenza nel tratto
+                        # («Strassoldo», non «Strassoldo e Marianna Strassoldo»)
+                        fine = max(next(p[2] for p in tratto if p[0] in s) for s in insiemi_)
                         trovati[vi].append((sede, ini, fine))
                         dopo = fine
         return trovati

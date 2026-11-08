@@ -243,3 +243,5 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Testo in calce riscritto dal curatore, con i link a Wikidata e al Dizionario Biografico dei Friulani.
 - Fabio della Forza = Fabio Sforza (curatore), con link al Dizionario.
 - La ricerca nel testo mostra tutte le occorrenze nella voce (fino a 5 punti, poi «e altri N»), non solo la prima.
+- Classificazioni manuali di luogo con forma di riferimento (Castello di Lientz → Lienz). Evidenziazione: dopo un'iniziale si toglie la parola estranea al nome della persona («Candotti G. B. Litanie»). Ricerca nel testo: il tratto evidenziato arriva fino alla prima occorrenza di ogni parola cercata.
+- Correzioni del curatore: Camillo (III) di Colloredo, Domenico Del Bianco (Meni Muse), Bindo Chiurlo, il Burchiello (Domenico di Giovanni, Q1058842), Giustiniano Pozzi, ser Lorenzo Giustiniano, Antonio Gazzoletti («Falco Lovaria» è l'opera), Giambattista Pighi, Zocculuti, i Strassoldo (Rizzardo, Panfilo, Giovanni, Soldoniero, Gian Felice), Concina Daniele Vincenzo senza la scheda di Daniele (de) Concina, Megaluzza = Megaluzzi.

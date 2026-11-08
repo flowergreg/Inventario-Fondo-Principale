@@ -181,7 +181,7 @@ function nelTesto(insiemi, finestra) {
         if (!tutte.has(pw[i][0]) || pw[i][1] < dopo) continue;
         const tratto = pw.slice(i, i + finestra).filter(p => p[3] === pw[i][3]);
         if (insiemi.every(s => tratto.some(p => s.has(p[0])))) {
-          const fine = Math.max(...tratto.filter(p => tutte.has(p[0])).map(p => p[2]));
+          const fine = Math.max(...insiemi.map(s => tratto.find(p => s.has(p[0]))[2]));
           if (!trovati.has(vi)) trovati.set(vi, []);
           trovati.get(vi).push([sede, pw[i][1], fine]); dopo = fine;
         }

@@ -578,6 +578,8 @@ def main():
                     norm, nota = testo, "corrispondenza con le fonti incerta: non unita"
                 else:
                     norm, nota = (r[2] if r and r[2] else testo), None
+                if rif_forma:                    # forma indicata dal curatore («Castello di Lientz» → Lienz)
+                    norm, nota = rif_forma, None
                 # «Brazzano Nebula» = Brazzano | Neblo: una menzione, più luoghi
                 for norm in [x.strip() for x in norm.split("|")]:
                     e = registra_luogo(ent, norm, testo, corr, nota, r, num, mid)
@@ -1027,7 +1029,11 @@ def evidenziazioni(con, entita, titoli):
         # ultima parola dopo una parola chiusa dal punto («II. Marcia», «D.co. Lezione», «Imo. Lettere»),
         # estranea al nome: è il titolo dell'opera
         ult = toks[j - 1][2]
-        if j - i >= 2 and not nome(ult) and not simile(ult) and not re.search(r"\w[.°]\w", ult) \
+        # dopo un'iniziale («Candotti G. B. Litanie») la parola estranea al nome è il titolo, anche se frequente
+        if j - i >= 2 and k(ult) not in nomi_ent[eid] and re.fullmatch(r"[A-Z]\.", toks[j - 2][2]) and ult[:1].isupper() \
+                and len(ult) > 4 and k(ult) not in battesimo:
+            j -= 1
+        elif j - i >= 2 and not nome(ult) and not simile(ult) and not re.search(r"\w[.°]\w", ult) \
                 and not (len(ult) <= 4 and ult[:1].isupper()) \
                 and not (k(ult) in battesimo and not re.fullmatch(r"[IVXLC]+\.", toks[j - 2][2])):
             p_ = toks[j - 2][2]

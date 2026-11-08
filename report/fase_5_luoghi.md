@@ -4,7 +4,7 @@ Verifica del 2026-11-08. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 535 |
+| alta | 536 |
 | media | 0 |
 | bassa | 1 |
 | nessuna | 26 |
@@ -250,6 +250,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Lestizza** (2 menz.; voci 1446, 3672) → Lestizza — GeoNames [3174824](https://www.geonames.org/3174824) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53271](https://www.wikidata.org/wiki/Q53271): _comune italiano_
 - **Levada** (1 menz.; voci 2068) → Levada — GeoNames [8965313](https://www.geonames.org/8965313) PPL, Friuli-Venezia Giulia (PN) — Wikidata [Q18448862](https://www.wikidata.org/wiki/Q18448862): _frazione del comune italiano di Sesto al Reghena_ — grafia confermata dal curatore; più località omonime in regione
 - **Levante** (1 menz.; voci 3740) → Levante — GeoNames [305104](https://www.geonames.org/305104) — Wikidata [Q81483](https://www.wikidata.org/wiki/Q81483): _regione del Mediterraneo orientale_
+- **Lienz** (1 menz.; voci 3744) → Lienz — GeoNames [7873678](https://www.geonames.org/7873678) — Wikidata [Q336250](https://www.wikidata.org/wiki/Q336250): _comune austriaco_
 - **Lignano** (1 menz.; voci 863) → Lignano Sabbiadoro — GeoNames [3174729](https://www.geonames.org/3174729) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q30026642](https://www.wikidata.org/wiki/Q30026642): _capoluogo dell'omonimo comune_
 - **Liguria** (3 menz.; voci 1854, 1925, 1928) → Liguria — GeoNames [3174725](https://www.geonames.org/3174725) ADM1, reg. 08 — Wikidata [Q1256](https://www.wikidata.org/wiki/Q1256): _regione italiana a statuto ordinario_
 - **Lipsia** (6 menz.; voci 471, 487, 619, 720) → Lipsia — GeoNames [2879137](https://www.geonames.org/2879137) — Wikidata [Q2079](https://www.wikidata.org/wiki/Q2079): _città tedesca_ — grafia confermata dal curatore; più elementi Wikidata omonimi
@@ -480,7 +481,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Stiria** (3 menz.; voci 1367, 1955, 2685) → Stiria — GeoNames [2764581](https://www.geonames.org/2764581) — Wikidata [Q41358](https://www.wikidata.org/wiki/Q41358): _stato federato dell'Austria_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Stoccolma** (1 menz.; voci 1585) → Stoccolma — GeoNames [2673730](https://www.geonames.org/2673730) PPLC, SE — Wikidata [Q1754](https://www.wikidata.org/wiki/Q1754): _capitale della Svezia_
 - **Stolvizza** (1 menz.; voci 2427) → Stolvizza — GeoNames [3166128](https://www.geonames.org/3166128) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452559](https://www.wikidata.org/wiki/Q18452559): _frazione del comune italiano di Resia, provincia di Udine_
-- **Strassoldo** (10 menz.; voci 473, 554, 619, 824) → Strassoldo — GeoNames [3217427](https://www.geonames.org/3217427) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q2258943](https://www.wikidata.org/wiki/Q2258943): _frazione del comune italiano di Cervignano del Friuli_ — grafia confermata dal curatore; anche cognome nel testo
+- **Strassoldo** (9 menz.; voci 473, 554, 824, 1006) → Strassoldo — GeoNames [3217427](https://www.geonames.org/3217427) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q2258943](https://www.wikidata.org/wiki/Q2258943): _frazione del comune italiano di Cervignano del Friuli_ — grafia confermata dal curatore; anche cognome nel testo
 - **Suceava** (1 menz.; voci 805) → Suceava — GeoNames [8334903](https://www.geonames.org/8334903) — Wikidata [Q46400](https://www.wikidata.org/wiki/Q46400): _municipio della Romania_
 - **Suri** (2 menz.; voci 4322, 4367) → Suri — GeoNames [1255955](https://www.geonames.org/1255955) PPL, IN — Wikidata [Q2667851](https://www.wikidata.org/wiki/Q2667851)
 - **Susàns** (3 menz.; voci 471, 524, 1052) → Susàns — GeoNames [3220189](https://www.geonames.org/3220189) PPL, Friuli-Venezia Giulia (UD)

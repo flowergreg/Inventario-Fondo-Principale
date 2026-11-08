@@ -4,10 +4,10 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 747 |
-| media | 34 |
+| alta | 748 |
+| media | 35 |
 | bassa | 31 |
-| nessuna | 3062 |
+| nessuna | 3066 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -55,6 +55,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Sassonia, Maria Amalia** (voci 714; anni 1716–1756) → [Q169512](https://www.wikidata.org/wiki/Q169512) Maria Amalia di Sassonia (1724–1760): _regina consorte di Napoli, Sicilia e Spagna_ — Dresda, Madrid — date compatibili
   - altri: [Q69929](https://www.wikidata.org/wiki/Q69929) Maria Amalia di Sassonia (1794–1870): _principessa di Sassonia, compositrice e drammaturga tedesca_ — Dresda, Pillnitz [0]; [Q325897](https://www.wikidata.org/wiki/Q325897) Maria Amalia di Sassonia (1757–1831) — Dresda, Neuburg an der Donau [0]
 - **Stella, Francesco Maria** (voci 94; anni 1671–1671) → [Q131684534](https://www.wikidata.org/wiki/Q131684534) Francesco Maria Stella (1745–1800): _1745-1800_
+- **Strassoldo, Panfilo** (voci 619; anni 1536–1536) → [Q68911661](https://www.wikidata.org/wiki/Q68911661) Panfilo Strassoldo (?–1545): _arcivescovo cattolico_
 - **Suzzi, Celestino** (voci 334, 335; anni ?–?) → [Q112316093](https://www.wikidata.org/wiki/Q112316093) Celestino Suzzi (1815–1883)
 - **Tilatti, Andrea** (voci 1445; anni ?–?) → [Q89477491](https://www.wikidata.org/wiki/Q89477491) Andrea Tilatti (1962–?): _medievista italiano (1962-)_ — Udine — nato o morto in Friuli/Veneto; nato nel 1962: verificare
 - **Volpato Morghen, Domenica** (voci 2134; anni ?–?) → [Q131242678](https://www.wikidata.org/wiki/Q131242678) Domenica Volpato Morghen (?–?)
@@ -302,7 +303,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Checchini, Aldo** (voci 3716; anni ?–?) → [Q18758611](https://www.wikidata.org/wiki/Q18758611) Aldo Checchini (1885–1973): _giurista italiano (1885-1973)_ — Campodarsego, Padova — nato o morto in Friuli/Veneto
 - **Chiari, Alberto** (voci 2696; anni 1559–1942) → [Q27468058](https://www.wikidata.org/wiki/Q27468058) Alberto Chiari (1900–1998): _filologo, docente e critico letterario italiano (1900-1998)_ — Firenze — date compatibili
 - **Chierico, Didimo** (voci 2510; anni ?–?) → [Q166234](https://www.wikidata.org/wiki/Q166234) Ugo Foscolo (1778–1827): _poeta, scrittore, drammaturgo, traduttore e critico letterario italiano (1778-1827)_ — Zante, Turnham Green
-- **Chiurlo, Bindo** (voci 3913, 4215; anni 1968–1968) → [Q11909385](https://www.wikidata.org/wiki/Q11909385) Bindo Chiurlo (1886–1943): _letterato e poeta italiano (1886-1943)_ — Cassacco, Torino — nato o morto in Friuli/Veneto
+- **Chiurlo, Bindo** (voci 3913, 4215, 4255; anni 1910–1968) → [Q11909385](https://www.wikidata.org/wiki/Q11909385) Bindo Chiurlo (1886–1943): _letterato e poeta italiano (1886-1943)_ — Cassacco, Torino — nato o morto in Friuli/Veneto; date compatibili
 - **Ciani, Giuseppe** (voci 339, 492; anni 1838–1842) → [Q3770319](https://www.wikidata.org/wiki/Q3770319) Giuseppe Ciani (1793–1867): _presbitero e storico italiano_ — Domegge di Cadore, Vittorio Veneto — nato o morto in Friuli/Veneto; date compatibili
 - **Ciano Mussolini, Edda** (voci 3591; anni 1853–1942) → [Q259934](https://www.wikidata.org/wiki/Q259934) Edda Ciano (1910–1995): _contessa di Cortellazzo e Buccari e socialite italiana, figlia di Benito Mussolini_ — Forlì, Roma — date compatibili
 - **Ciarlantini, Franco** (voci 3591; anni 1853–1942) → [Q24054056](https://www.wikidata.org/wiki/Q24054056) Franco Ciarlantini (1885–1940): _giornalista, insegnante, saggista, editore italiano (1885-1940)_ — San Ginesio, Roma — date compatibili
@@ -454,7 +455,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Gasparri, Pietro** (voci 3770; anni 1920–1920) → [Q44905](https://www.wikidata.org/wiki/Q44905) Pietro Gasparri (1852–1934): _cardinale e arcivescovo cattolico italiano (1852-1934)_ — Ussita, Roma — date compatibili
 - **Gatteri, Giuseppe** (voci 1669, 3934; anni 1851–1954) → [Q5565444](https://www.wikidata.org/wiki/Q5565444) Giuseppe Lorenzo Gatteri (1829–1884): _pittore e incisore italiano (1829-1884)_ — fase 6, blocco 4: lettere di Zorutti 1851-1852 e disegno della dedizione di Udine: il pittore triestino
 - **Gavardo, Alessandro** (voci 601; anni 1616–1761) → [Q124439755](https://www.wikidata.org/wiki/Q124439755) Alessandro Gavardo (1732–1818): _1715(?)-1818 // Poeta, accademico dell'Arcadia, sotto lo pseudonimo di Assionico Idruntino. Nato a Capodistria, morto a venezia; Assionico Idruntino_ — Capodistria, Trieste — nato o morto in Friuli/Veneto; date compatibili
-- **Gazzoletti, Antonio** (voci 1619; anni 1862–1862) → [Q602183](https://www.wikidata.org/wiki/Q602183) Antonio Gazzoletti (1813–1866): _giurista, numismatico e poeta italiano (1813-1866)_ — Nago-Torbole, Milano — date compatibili
+- **Gazzoletti, Antonio** (voci 1619, 3754; anni 1843–1862) → [Q602183](https://www.wikidata.org/wiki/Q602183) Antonio Gazzoletti (1813–1866): _giurista, numismatico e poeta italiano (1813-1866)_ — Nago-Torbole, Milano — date compatibili
 - **Gerra, Pietro** (voci 636, 667; anni ?–?) → [Q3903918](https://www.wikidata.org/wiki/Q3903918) Pietro Gerra (1201–1301): _patriarca cattolico italiano_ — Ferentino, Udine — nato o morto in Friuli/Veneto
 - **Gesualdo, Filippo** (voci 2007; anni 1599–1599) → [Q55835541](https://www.wikidata.org/wiki/Q55835541) Filippo Gesualdo (1550–1619): _scrittore_ — Castrovillari, Cariati — confermato dal contesto
 - **Giacomelli, Angelo** (voci 2366; anni 1959–1959) → [Q63711048](https://www.wikidata.org/wiki/Q63711048) Angelo Giacomelli (1816–1907): _politico italiano_ — Trivignano Udinese, Treviso — nato o morto in Friuli/Veneto
@@ -872,10 +873,11 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **della Torre, Ludovico** (voci 667; anni ?–?) → [Q770010](https://www.wikidata.org/wiki/Q770010) Ludovico della Torre (?–1365): _patriarca cattolico italiano_ — fase 6, blocco 4: 
 - **della Torre, Pagano** (voci 619, 667, 827, 1744; anni 1318–1843) → [Q3888926](https://www.wikidata.org/wiki/Q3888926) Pagano della Torre (?–1332): _patriarca cattolico italiano_ — fase 6, blocco 4: 
 - **di Bérenger, Adolfo** (voci 2633/16; anni ?–?) → [Q55847399](https://www.wikidata.org/wiki/Q55847399) Adolf von Berenger (1815–1895) — Monaco di Baviera, Roma — confermato dal contesto
+- **di Giovanni, Domenico** (voci 10; anni ?–?) → [Q1058842](https://www.wikidata.org/wiki/Q1058842) Domenico di Giovanni (1404–1449): _poeta italiano_ — curatore: il Burchiello (1404-1449), verificato con SPARQL
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3062 persone
+## 4. Nessun candidato su Wikidata: 3066 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

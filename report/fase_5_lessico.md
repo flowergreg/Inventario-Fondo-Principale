@@ -4,7 +4,7 @@ Solo i collegamenti ad affidabilità **alta** (luoghi confermati dal curatore, p
 
 ## 1. Varianti di ricerca dalle fonti
 
-Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 385 per i luoghi, 971 per le persone. Esempi:
+Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 385 per i luoghi, 973 per le persone. Esempi:
 
 - **Bruxelles**: Brussel-stad; Brusselle; Bruxelles-Ville; Città di Brusselle; Ville de Bruxelles; Brucellae; Urbs Brucellae; Urbs Bruxellae
 - **Roma**: Caput Mundi; Urbs Aeterna; Urbs Marmorea; Città dei sette colli; Città di Roma; Città eterna; Urbe
