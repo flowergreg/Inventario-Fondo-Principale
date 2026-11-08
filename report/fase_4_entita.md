@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3853 | 636 | 7327 |
-| luogo | 562 | 63 | 4578 |
-| santo | 125 | 45 | 488 |
+| persona | 3856 | 638 | 7342 |
+| luogo | 562 | 63 | 4570 |
+| santo | 125 | 44 | 487 |
 
-Menzioni collegate a un'entità: 12393 su 21000. Senza entità: nome o cognome singolo 8281, esclusa dal curatore 134, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12399 su 20993. Senza entità: nome o cognome singolo 8268, esclusa dal curatore 134, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -49,11 +49,12 @@ Famiglie con omonimi noti: l'entità può riunire più persone.
 - **Savorgnan, Antonio** — _comprende forme con iniziali; famiglia con omonimi noti: controllare; forme unite dal curatore: Savorgnani, Antonio | Savorgnano, Antonio; menzione con più persone («… e …»)_: Antonio Savorgnan (684, 1247, 2637/6, 2661); Antonio Savorgnani (1016); Antonio Savorgnano (561); Antonio e Girolamo (2000); Antonio e Girolamo Savorgnan (2000); Sacco di Udine di A. Savorgnano (1571); Savorgnan (di) Antonio (2134)
 - **Savorgnan, Eleonora** — _famiglia con omonimi noti: controllare_: Eleonora Savorgnan (541)
 - **Savorgnan, Gian Carlo** — _famiglia con omonimi noti: controllare_: Gian Carlo Savorgnan (941); Gio. Carlo Savorgnan (2000)
-- **Savorgnan, Giovanni** — _famiglia con omonimi noti: controllare_: Giovanni (1016); Giovanni Savorgnan (1614)
+- **Savorgnan, Giovanni** — _famiglia con omonimi noti: controllare_: Giovanni (941, 1016); Giovanni Savorgnan (1614)
 - **Savorgnan, Girolamo** — _famiglia con omonimi noti: controllare; forme unite dal curatore: Savorgnan della Bandiera, Girolamo | Savorgnano, Girolamo; menzione con più persone («… e …»)_: Antonio e Girolamo (2000); Antonio e Girolamo Savorgnan (2000); Gerolamo Savorgnano (466); Gerolamo Savorgnán (2396); Girolamo Savorgnan (1495); Girolamo Savorgnano (468); Girolamo di Savorgnan (2000); Savorgnan della Bandiera Girolamo (541)
 - **Savorgnan, Giulia** — _famiglia con omonimi noti: controllare_: Giulia Savorgnan (541)
 - **Savorgnan, Giulio** — _famiglia con omonimi noti: controllare_: Savorgnan, Giulio (2646, 2647)
 - **Savorgnan, Mario** — _famiglia con omonimi noti: controllare_: Mario Savorgnan (2000)
+- **Savorgnan, Tristano** — _famiglia con omonimi noti: controllare; forme unite dal curatore: Savorgnano, Tristano_: Tristano Savorgnan (1247, 1358); Tristano Savorgnano (466, 616)
 - **Savorgnan, Urbano** — _famiglia con omonimi noti: controllare; forme unite dal curatore: Savorgnano, Urbano_: Urbano Savorgnan (102); Urbano Savorgnano (616)
 - **Torre, Luigi** — _famiglia con omonimi noti: controllare_: P. Luigi Torre (487)
 - **Torre, M.** — _famiglia con omonimi noti: controllare; forme unite dal curatore: della Torre, M._: Fr. M. Torre (875); M. della Torre (923)
@@ -393,7 +394,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Zorzi, Giuseppe**: Zorzi Giuseppe (3112, 3113, 3114, 3115, 3116, 3117, 3118, 3119, 3120, 3121)
 - **Zorzi, Mario**: N. H. Mario [correzione_curatore]; Mario (2524); N. H. Z. (2524)
 - **Zorzi, Nives**: Nives (3865)
-- **Zorzi, Pietro Antonio**: P. A. Zorzi (1224); Petrum Antonium Georgium Archiepiscopum Utinensem Metropolitanam Ecclesiam (1903); di Udine P. A. Zorzi (1383)
+- **Zorzi, Pietro Antonio**: P. A. Zorzi (1224); P. A. card. Zorzi (480); Petrum Antonium Georgium Archiepiscopum Utinensem Metropolitanam Ecclesiam (1903); Zorzi (480); di Udine P. A. Zorzi (1383)
 - **Zuane, Giovanni**: Giovanni Zuane (926)
 - **da Camino, Francesco**: Francesco da Camino (487)
 - **da Mula, Francesco**: Francesco da Mula (102)
@@ -799,6 +800,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Pieri, Gino**: Gino Pieri (4189); Pieri, Gino (4189)
 - **Pilosio, Antonio**: Ant. Pilosio (338, 340); Pilosio Antonio (2183)
 - **Pilosio, Giuseppe**: Gius. Pilosio (338, 339); Pilosio Gius. (339); Pilosio Giuseppe (339)
+- **Pilosio, Odorico**: Odorici de S. (566); S. Odorici de Pilosis de S. (566)
 - **Pilot, Antonio**: Antonio Pilot (3515); Pilot, Antonio (3515)
 - **Pindemonte, Giovanni**: Gio. Pindemonte (338); Giovanni Pindemonte (323)
 - **Pio VI**: Pio VI (31, 296, 476, 3201); Pio VI dalla Germania (926); Pio VI. Codice (598); Pontifice Pio VI (2147); Santo Padre Pio VI (719); Sommo Pontefice Pio VI. Sonetto (1616)
@@ -818,7 +820,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Sabbadini, Domenico**: Domenico Sabbadini (875, 4196); Sabbadini ab. Domenico (279, 491, 529); Sabbadini, Domenico (4196)
 - **Sabbatini, Carlo**: Carlo Sabbatini (479); Sabbatini avv. Carlo (479)
 - **Sanlucar, Pietro**: P. Pietro Sanlucar (1894); Sanlucar Pietro (1894)
-- **Savorgnan**: Savorgnan (1503); Savorgnani (1016); Savorgnani del Monte (604); Savorgnano di G. (949)
+- **Savorgnan**: Savorgnan (1503); Savorgnani (941, 1016); Savorgnani del Monte (604); Savorgnano di G. (949)
 - **Savorgnano, Federico**: Federico Savorgnano (616); Federico di Savorgnano (1550)
 - **Sborz, Pietro**: Pietro Sborz (74); Sborz Pietro (74)
 - **Sbruglio, Rizzardo**: Rizzardo Sbruglio (482, 926); Rizzardo di Sbruglio (102)
@@ -867,7 +869,8 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Zorutti, Pietro**: Pietro Zorutti (471, 491, 497, 3514, 3591, 4251); Zorutti Pietro (385, 524, 1669)
 - **Zuccolo, Leopoldo**: Leopoldo Zuccolo (511); Zuccolo Leopoldo (853)
 - **d'Este, Eleonora**: Eleonora d'Este [manuale]; Maria Francesca dello Spirito Santo [manuale]; Eleonora (2003, 2004, 2005); Venerabilis Serve Dei Matris Marie Francisce (2003)
-- **da Pordenone, Odorico**: B. Odorico (825); B. Odoricus de Portu Naonis Provinciae Fori Julii (549); B.° Odorico (549); Beato Odorico (549)
+- **da Pordenone, Odorico**: B. Odorico (825); B. Odoricus de Portu Naonis Provinciae Fori Julii (549); B.° Odorico (549); Beato Odorico (549); Odorico da Pordenone (519, 774, 2634/7)
+- **da Udine, Giovanni**: Giovanni (4283); Giovanni da Udine (870, 1195, 1197)
 - **de Gerolami, Agostino**: Agostino Germiniano [manuale]; Agostino Geronimiano [manuale]; Agostino de Gerolami [manuale]; Publio Augusto Graziani [manuale]; Augusto Hieronimiano (43); Hieronimiano Augusto (69); Publii Augusti Geronimiani Utinensis (43)
 - **del Torso, Jacopino**: Del Torso Giacobino (541); Giacomino del Torso (66); Jacopino del Torso (614, 1550, 1552)
 - **di Brazzà, Giacomo**: G. di Brazzà (1503); G. di Brazzà Savorgnan (4108)
@@ -992,7 +995,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Tarcento**: Tarcento (836, 925, 1000, 1352, 1532, 1550, 1562, 2557, 3729); Tarcint (2641)
 - **Traù**: Traù (467); Traù. Pastorale (467); Traù. Risposta (467)
 - **Trieste**: Tergeste (492); Trieste (476, 487, 491, 492, 502, 596, 619, 718, 764, 824, 856, 1041, 1220, 1562, 1578, 2557, 2559, 2639/14-22, 2759, 3412, 3853, 4020, 4021, 4022, 4034, 4037, 4038, 4042, 4043, 4044, 4047, 4084, 4085, 4086, 4087, 4112, 4113, 4114, 4115, 4116, 4117, 4118, 4158, 4159, 4160, 4163, 4169, 4192, 4193, 4199, 4200, 4212, 4216, 4231, 4233, 4234, 4236, 4259, 4265, 4284)
-- **Udine**: Udene (2598); Udin (4244, 4253); Udine (4, 10, 15, 18, 19, 38, 40, 53, 78, 81, 102, 110, 143, 153, 175, 176, 186, 187, 190, 191, 207, 211, 213, 215, 216, 218, 220, 250, 252, 258, 259, 271, 274, 279, 284, 289, 293, 328, 338, 341, 343, 350, 352, 355, 373, 385, 394, 423, 443, 445, 457, 461, 466, 468, 469, 470, 471, 472, 473, 475, 476, 478, 479, 480, 482, 484, 485, 487, 489, 490, 491, 492, 493, 494, 495, 496, 497, 504, 505, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 521, 522, 523, 524, 525, 529, 531, 533, 540, 541, 551, 554, 555, 557, 559, 561, 563, 566, 568, 572, 574, 580, 584, 585, 587, 590, 591, 592, 593, 598, 599, 601, 603, 604, 606, 608, 609, 612, 616, 617, 618, 619, 621, 622, 623, 629, 632, 639, 640, 642, 650, 651, 652, 655, 666, 668, 675, 676, 678, 681, 682, 683, 684, 686, 687, 688, 690, 691, 699, 703, 704, 710, 719, 721, 723, 724, 725, 727, 730, 731, 733, 737, 757, 771, 777, 797, 801, 804, 805, 822, 824, 825, 826, 827, 837, 846, 849, 852, 853, 854, 855, 856, 857, 858, 860, 861, 862, 867, 868, 869, 870, 874, 876, 877, 878, 882, 888, 889, 891, 893, 895, 897, 898, 905, 906, 909, 926, 928, 933, 934, 936, 938, 942, 952, 961, 962, 966, 980, 983, 986, 990, 994, 995, 997, 999, 1002, 1003, 1008, 1011, 1015, 1024, 1034, 1040, 1067, 1070, 1079, 1088, 1091, 1118, 1132, 1150, 1166, 1188, 1193, 1195, 1197, 1199, 1200, 1203, 1219, 1224, 1244, 1256, 1261, 1280, 1286, 1290, 1292, 1293, 1309, 1310, 1317, 1318, 1322, 1323, 1324, 1328, 1329, 1330, 1332, 1333, 1334, 1336, 1337, 1338, 1339, 1342, 1343, 1344, 1345, 1346, 1347, 1353, 1356, 1357, 1358, 1359, 1361, 1362, 1363, 1364, 1370, 1371, 1375, 1376, 1389, 1406, 1414, 1430, 1433, 1457, 1458, 1460, 1462, 1465, 1467, 1468, 1476, 1477, 1491, 1510, 1513, 1514, 1517, 1537, 1543, 1547, 1552, 1553, 1559, 1571, 1576, 1578, 1582, 1599, 1614, 1625, 1634, 1652, 1655, 1657, 1658, 1683, 1770, 1896, 1919, 1934, 1937, 1973, 1980, 1981, 1991, 2023, 2024, 2078, 2090, 2091, 2110, 2116, 2135, 2136, 2141, 2159, 2161, 2200, 2278, 2318, 2319, 2367, 2387, 2406, 2409, 2436, 2501, 2557, 2558, 2559, 2561, 2563, 2571, 2572, 2574, 2575, 2576, 2577, 2581, 2586, 2587, 2588, 2597, 2617, 2632/15, 2637/11, 2637/8, 2641, 2642, 2643, 2656, 2657, 2690, 2691, 2692, 2694, 2699, 2700, 2703, 2705, 2734, 2955, 3126, 3498, 3501, 3575, 3579, 3583, 3585, 3590, 3591, 3596, 3597, 3599, 3620, 3652, 3661, 3672, 3673, 3698, 3700, 3719, 3731, 3736, 3737, 3755, 3757, 3759, 3775, 3802, 3805, 3806, 3812, 3817, 3821, 3832, 3850, 3852, 3863, 3934, 3937, 3956, 3976, 3980, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4016, 4054, 4072, 4083, 4089, 4090, 4094, 4119, 4124, 4127, 4128, 4130, 4132/2, 4133, 4134, 4135, 4137, 4138, 4146, 4150, 4151, 4152, 4155, 4156, 4164, 4169, 4171, 4173, 4192, 4201, 4202, 4211, 4217, 4226, 4230, 4231, 4237, 4250, 4254, 4265, 4283, 4287, 4516, 4519); Udine Don Tosolino (824); Udine Millenaria (4516); Utinensi (102, 622, 1628, 3867); Utinensis (463, 523, 566, 768); Utini (523, 549, 561, 600, 606, 616, 621, 683, 803, 824, 839, 840, 841, 846, 848, 861, 868, 884, 886, 887, 888, 891, 996, 2277, 3512, 3886, 3949); Utini XII Kal. Octob (565); Utinum (549)
+- **Udine**: Udene (2598); Udin (4244, 4253); Udine (4, 10, 15, 18, 19, 38, 40, 53, 78, 81, 102, 110, 143, 153, 175, 176, 186, 187, 190, 191, 207, 211, 213, 215, 216, 218, 220, 250, 252, 258, 259, 271, 274, 279, 284, 289, 293, 328, 338, 341, 343, 350, 352, 355, 373, 385, 394, 423, 443, 445, 457, 461, 466, 468, 469, 470, 471, 472, 473, 475, 476, 478, 479, 480, 482, 484, 485, 487, 489, 490, 491, 492, 493, 494, 495, 496, 497, 504, 505, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 521, 522, 523, 524, 525, 529, 531, 533, 540, 541, 551, 554, 555, 557, 559, 561, 563, 566, 568, 572, 574, 580, 584, 585, 587, 590, 591, 592, 593, 598, 599, 601, 603, 604, 606, 608, 609, 612, 616, 617, 618, 619, 621, 622, 623, 629, 632, 639, 640, 642, 650, 651, 652, 655, 666, 668, 675, 676, 678, 681, 682, 683, 684, 686, 687, 688, 690, 691, 699, 703, 704, 710, 719, 721, 723, 724, 725, 727, 730, 731, 733, 737, 757, 771, 777, 797, 801, 804, 805, 822, 824, 825, 826, 827, 837, 846, 849, 852, 853, 854, 855, 856, 857, 858, 860, 861, 862, 867, 868, 869, 870, 874, 876, 877, 878, 882, 888, 889, 891, 893, 895, 897, 898, 905, 906, 909, 926, 928, 933, 934, 936, 938, 942, 952, 961, 962, 966, 980, 983, 986, 990, 994, 995, 997, 999, 1002, 1003, 1008, 1011, 1015, 1024, 1034, 1040, 1067, 1070, 1079, 1088, 1091, 1118, 1132, 1150, 1166, 1188, 1193, 1197, 1199, 1200, 1203, 1219, 1224, 1244, 1256, 1261, 1280, 1286, 1290, 1292, 1293, 1309, 1310, 1317, 1318, 1322, 1323, 1324, 1328, 1329, 1330, 1332, 1333, 1334, 1336, 1337, 1338, 1339, 1342, 1343, 1344, 1345, 1346, 1347, 1353, 1356, 1357, 1358, 1359, 1361, 1362, 1363, 1364, 1370, 1371, 1375, 1376, 1389, 1406, 1414, 1430, 1433, 1457, 1458, 1460, 1462, 1465, 1467, 1468, 1476, 1477, 1491, 1510, 1513, 1514, 1517, 1537, 1543, 1547, 1552, 1553, 1559, 1571, 1576, 1578, 1582, 1599, 1614, 1625, 1634, 1652, 1655, 1657, 1658, 1683, 1770, 1896, 1919, 1934, 1937, 1973, 1980, 1981, 1991, 2023, 2024, 2078, 2090, 2091, 2110, 2116, 2135, 2136, 2141, 2159, 2161, 2200, 2278, 2318, 2319, 2367, 2387, 2406, 2409, 2436, 2501, 2557, 2558, 2559, 2561, 2563, 2571, 2572, 2574, 2575, 2576, 2577, 2581, 2586, 2587, 2588, 2597, 2617, 2632/15, 2637/11, 2637/8, 2641, 2642, 2643, 2656, 2657, 2690, 2691, 2692, 2694, 2699, 2700, 2703, 2705, 2734, 2955, 3126, 3498, 3501, 3575, 3579, 3583, 3585, 3590, 3591, 3596, 3597, 3599, 3620, 3652, 3661, 3672, 3673, 3698, 3700, 3719, 3731, 3736, 3737, 3755, 3757, 3759, 3775, 3802, 3805, 3806, 3812, 3817, 3821, 3832, 3850, 3852, 3863, 3934, 3937, 3956, 3976, 3980, 3995, 3996, 3997, 3998, 3999, 4000, 4001, 4016, 4054, 4072, 4083, 4089, 4090, 4094, 4119, 4124, 4127, 4128, 4130, 4132/2, 4133, 4134, 4135, 4137, 4138, 4146, 4150, 4151, 4152, 4155, 4156, 4164, 4169, 4171, 4173, 4192, 4201, 4202, 4211, 4217, 4226, 4230, 4231, 4237, 4250, 4254, 4265, 4283, 4287, 4516, 4519); Udine Don Tosolino (824); Udine Millenaria (4516); Utinensi (102, 622, 1628, 3867); Utinensis (463, 523, 566, 768); Utini (523, 549, 561, 600, 606, 616, 621, 683, 803, 824, 839, 840, 841, 846, 848, 861, 868, 884, 886, 887, 888, 891, 996, 2277, 3512, 3886, 3949); Utini XII Kal. Octob (565); Utinum (549)
 - **Valle**: Valle [manuale]; Vāle (4503)
 - **Venezia**: Venetia (610, 713, 717, 813, 4206); Venetiis (617); Venetiis MDCXIV (606); Venetijs (3883); Venezia (1, 10, 18, 23, 41, 57, 72, 102, 229, 300, 314, 337, 467, 468, 469, 471, 473, 476, 479, 480, 482, 483, 484, 485, 486, 487, 488, 489, 492, 495, 502, 513, 518, 519, 524, 530, 539, 558, 560 a, 563, 568, 593, 594, 601, 606, 614, 616, 617, 618, 619, 621, 641, 648, 651, 757, 825, 850, 858, 861, 868, 869, 872, 874, 879, 905, 926, 980, 1004, 1008, 1059, 1095, 1096, 1099, 1100, 1102, 1103, 1108, 1109, 1110, 1197, 1199, 1222, 1224, 1368, 1432, 1433, 1485, 1489, 1513, 1550, 1562, 1578, 1603, 1755, 1960, 1994, 1999, 2102, 2103, 2137, 2159, 2384, 2439, 2468, 2528, 2557, 3184, 3196, 3223, 3228, 3363, 3642, 3658, 3719, 3740, 3781, 3790, 3831, 3846, 3901, 3934, 4013, 4053, 4167)
 - **Vienna**: Viena (467); Vienna (18, 24, 202, 475, 476, 485, 487, 488, 492, 493, 495, 497, 502, 511, 518, 593, 606, 617, 619, 622, 810, 879, 947, 2101, 2161, 2388, 2422, 2559, 3749, 3839)
@@ -1002,7 +1005,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Vittorio Veneto**: Vittorio Veneto [fonte_esterna]; Vittorio (3219, 3751, 4285)
 - **Worms**: Worms [manuale]; Vormanzia (1876)
 - **Włocławek**: Włocławek [manuale]; Wladislaw (1095)
-- **Yeovil**: Yeovil [manuale]; Penn-hill Yeovil (493)
 
 ## 7. Santi con più forme
 
@@ -1092,7 +1094,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Sant'Eligio**: Sant'Eligio [manuale]; S. Alò (1326)
 - **Sant'Eufemia**: Sant'Eufemia [manuale]; S. Eufemia (592)
 - **Sant'Eugenio**: Sant'Eugenio [manuale]; S. Eugenio (555, 826)
-- **Sant'Odorico**: Sant'Odorico [manuale]; S. Odorici de Pilosis de S. (566); S. Odorico (525, 1513)
+- **Sant'Odorico**: Sant'Odorico [manuale]; S. Odorico (525, 1513)
 - **Sant'Ulderico**: Sant'Ulderico [manuale]; S. Ulderico (1362)
 - **Santa Barbara**: Santa Barbara [manuale]; S. Barbara (541)
 - **Santa Brigida**: Santa Brigida [manuale]; S.ta Brigida (825)
@@ -1124,9 +1126,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3193 entità: elenco completo nella tabella `entita`.
+3194 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
-Tessitori (249), Fin (113), Minelli (101), Liruti (92), Marzona (73), Processo (42), Elti (40), Toppo (36), Francesco (34), Fontanini (34), Savorgnan (32), di Udine (32), Jacopo (31), Pirona (28), Braida (27), Joppi (26), Valvasone di Maniago (26), Śrī (26), Giovanni (25), Nicoletti (25), Buddharās (25), G. B. (24), Del Torso (24), Corgnali (24), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Belloni (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Giuseppe (16), Accad (16), Florio (15), Frangipane (15), Antonio (15), Castello (15), Barnaba (15), Pavona (15), di Aquileja (14), Ath (14), Burchiello (13), Napoleone (13), Zanon (13), Modotti (13), Carlo (12), Cortenovis (12), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Nicolò (11), Madrisio (11), Asquini (11), Grado (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Maria (10), Angelo (10), Bertoli (10), R. (10), Della Torre (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Alessandro (9), Pietro (9), Palladio (9), del Friuli (9), S. M. (9), Delfino (9), Zorzi (9), Antonini (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Andrea (8), Girolamo (8), Wolf (8), Locatelli (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Paolo (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6)
+Tessitori (249), Fin (113), Minelli (101), Liruti (92), Marzona (73), Processo (42), Elti (40), Toppo (36), Francesco (34), Fontanini (34), Savorgnan (32), di Udine (32), Jacopo (31), Pirona (28), Braida (27), Joppi (26), Valvasone di Maniago (26), Śrī (26), Nicoletti (25), Buddharās (25), G. B. (24), Del Torso (24), Corgnali (24), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Giovanni (19), Belloni (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Giuseppe (16), Accad (16), Florio (15), Frangipane (15), Antonio (15), Castello (15), Barnaba (15), Pavona (15), di Aquileja (14), Ath (14), Burchiello (13), Napoleone (13), Zanon (13), Modotti (13), Carlo (12), Cortenovis (12), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Nicolò (11), Madrisio (11), Asquini (11), Grado (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Maria (10), Angelo (10), Bertoli (10), R. (10), Della Torre (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Alessandro (9), Pietro (9), Palladio (9), del Friuli (9), S. M. (9), Delfino (9), Antonini (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Andrea (8), Girolamo (8), Wolf (8), Locatelli (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Paolo (7), Zorzi (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6)
 

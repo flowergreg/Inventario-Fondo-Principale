@@ -7,22 +7,22 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
 | abbreviazione | 0 | 2 | 0 | 278 | 280 | 603 |
-| cognome | 113 | 293 | 323 | 4870 | 5599 | 14347 |
-| iniziale | 20 | 0 | 0 | 0 | 20 | 1832 |
-| luogo | 400 | 175 | 84 | 6 | 665 | 4533 |
+| cognome | 113 | 293 | 323 | 4870 | 5599 | 14357 |
+| iniziale | 20 | 0 | 0 | 0 | 20 | 1835 |
+| luogo | 401 | 174 | 84 | 6 | 665 | 4525 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
-| nome_di_battesimo | 1255 | 145 | 0 | 0 | 1400 | 9278 |
+| nome_di_battesimo | 1256 | 145 | 0 | 0 | 1401 | 9280 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
 | opera | 17 | 0 | 0 | 0 | 17 | 47 |
 | parola | 0 | 0 | 0 | 0 | 125 | 498 |
 | parte | 0 | 1 | 0 | 0 | 1 | 1 |
-| particella | 32 | 0 | 0 | 0 | 32 | 2139 |
-| santo | 0 | 6 | 0 | 278 | 284 | 614 |
-| titolo | 69 | 0 | 0 | 0 | 69 | 826 |
+| particella | 32 | 0 | 0 | 0 | 32 | 2150 |
+| santo | 0 | 6 | 0 | 277 | 283 | 613 |
+| titolo | 69 | 0 | 0 | 0 | 69 | 828 |
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 181.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 180.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -156,7 +156,6 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Patavii | 1 | Padova | curatore: 1952 | 1952 |
 | Patti fra Cividale | 1 | Cividale del Friuli | contesto: «Patti fra Cividale e Venezia» | 1562 |
 | Pavia d'Udine | 1 | Pavia di Udine | GeoNames | 3828 |
-| Penn-hill Yeovil | 1 | Yeovil | contesto | 493 |
 | Percotto | 1 | Percoto | GeoNames | 476 |
 | Pietroburgo | 1 | San Pietroburgo | contesto | 1679 |
 | Pradamano Lovaria | 1 | Pradamano | Lovaria | contesto: due luoghi (1684) | 1684 |
@@ -411,7 +410,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Plasencis | 2 | — | anche nome ufficiale di luogo (GeoNames) | 4197, 4198 |
 | Porto | 2 | — | anche nome ufficiale di luogo (GeoNames) | 484, 980 |
 | Povoletto | 2 | — | ISTAT | 1070, 3683 |
-| Premariacco | 2 | — | ISTAT | 1552, 4129 |
+| Premariacco | 2 | — | anche nome ufficiale di luogo (ISTAT) | 614, 1552 |
 | Prodolone | 2 | — | GeoNames | 487, 2060 |
 | Ragogna | 2 | — | anche nome ufficiale di luogo (ISTAT) | 606, 2193 |
 | Righi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 4206 |
@@ -581,7 +580,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Pozzo | 1 | — | GeoNames | 1041 |
 | Pradamano | 1 | — | anche nome ufficiale di luogo (ISTAT) | 3699 |
 | Pradamano | 1 | — | ISTAT | 4007 |
-| Premariacco | 1 | — | anche nome ufficiale di luogo (ISTAT) | 614 |
+| Premariacco | 1 | — | ISTAT | 4129 |
 | Provesano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 869 |
 | Puccini | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2134 |
 | Pulfero | 1 | — | anche nome ufficiale di luogo (ISTAT) | 525 |
@@ -654,7 +653,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Mariae | 5 | Maria | forma latina declinata di «Maria» | 523, 606, 648, 1285, 2997 |
 | Aldus | 4 | Aldo | forma latina declinata di «Aldo» | 2631/5, 2631/6, 2631/10, 2631/11 |
 | Bart. | 4 | Bartolomeo | abbreviazione (lista manuale) | 511, 606, 721 |
-| Fabii | 4 | Fabio | forma latina declinata di «Fabius» | 647, 786, 819, 1487 |
+| Fabii | 4 | Fabio | forma latina declinata di «Fabio» | 647, 786, 819, 1487 |
 | Fed. | 4 | Federico | abbreviazione (lista manuale) | 505, 519, 606, 3913 |
 | Georgium | 4 | Giorgio | contesto | 606, 622, 1903 |
 | Gio | 4 | Giovanni | variante (lista manuale) | 669, 1777, 2406, 4113 |
@@ -690,7 +689,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
@@ -711,16 +710,16 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Bernardum | 1 | Bernardo | forma latina declinata di «Bernardo» | 606 |
 | Bortolamio | 1 | Bartolomeo | variante (lista manuale) | 606 |
 | Bortolomio | 1 | Bartolomeo | variante (lista manuale) | 473 |
-| Carolum | 1 | Carolo | forma latina declinata di «Carolus» | 617 |
+| Carolum | 1 | Carolo | forma latina declinata di «Carolo» | 617 |
 | Cesarea | 1 | — | Wikidata (la), forma italiana per regola | 606 |
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
 | Coronae | 1 | Corona | forma latina declinata di «Corona» | 3058 |
-| Darii | 1 | Dario | forma latina declinata di «Dario» | 194 |
+| Darii | 1 | Dario | forma latina declinata di «Darius» | 194 |
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
-| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
+| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenio» | 2623/3 |
 | Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
 | Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
@@ -733,7 +732,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -761,7 +760,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Patricij | 1 | Patrizio | forma latina declinata di «Patricio» | 553 |
 | Petronii | 1 | Petronio | curatore: 414 | 414 |
 | Poloniae | 1 | Polonia | forma latina declinata di «Polonia» | 619 |
-| Publii | 1 | Publio | forma latina declinata di «Publio» | 43 |
+| Publii | 1 | Publio | forma latina declinata di «Publius» | 43 |
 | Romae | 1 | Roma | forma latina declinata di «Roma» | 565 |
 | Servae | 1 | Servo | forma latina declinata di «Serva» | 2002 |
 | Spiritus | 1 | Spirito | forma latina declinata di «Spirito» | 3081 |
@@ -769,7 +768,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Terrae | 1 | Terra | forma latina declinata di «Terra» | 2623/8 |
 | Tertij | 1 | — | forma latina declinata di «Tertius» | 562 |
 | Valentinorum | 1 | Valentino | forma latina declinata di «Valentinus» | 2277 |
-| Valentinum | 1 | Valentino | forma latina declinata di «Valentino» | 622 |
+| Valentinum | 1 | Valentino | forma latina declinata di «Valentinus» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
 | Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |
@@ -1082,11 +1081,11 @@ Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ 
 
 ## 6. Cognomi da verificare nelle fonti
 
-4870 forme (10831 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4870 forme (10840 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 
-Forme intere. Forme: 284.
+Forme intere. Forme: 283.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -1150,5 +1149,5 @@ Forme intere. Forme: 284.
 | S. M. Maddalena | 2 | S. Maria Maddalena | curatore: santa (1332, 1337) | 1332, 1337 |
 | S. Maria dei Battuti | 2 | — | santo da dirimere | 1337 |
 | S. Maria di Tarcento | 2 | — | santo da dirimere | 1264, 1271 |
-| … | | | altre 224 forme nella tabella `lessico` | |
+| … | | | altre 223 forme nella tabella `lessico` | |
 

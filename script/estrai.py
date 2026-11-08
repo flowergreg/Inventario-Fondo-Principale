@@ -1098,8 +1098,20 @@ def main():
             if r["tipo"] == "nessuno":
                 con.execute("DELETE FROM menzioni WHERE voce=? AND testo_esatto=?", (vid, r["forma"]))
                 continue
-            con.execute("UPDATE menzioni SET tipo=?, forma_riferimento=?, metodo='curatore', affidabilita='alta' "
-                        "WHERE voce=? AND testo_esatto=?", (r["tipo"], rif, vid, r["forma"]))
+            cur = con.execute("UPDATE menzioni SET tipo=?, forma_riferimento=?, metodo='curatore', affidabilita='alta' "
+                              "WHERE voce=? AND testo_esatto=?", (r["tipo"], rif, vid, r["forma"]))
+            if not cur.rowcount and not con.execute("SELECT 1 FROM non_classificati WHERE voce=? AND testo_esatto=?",
+                                                    (vid, r["forma"])).fetchone():
+                # forma che l'estrazione non ha colto («Fiore di Premariacco»): si cerca nel testo della voce,
+                # le menzioni sovrapposte lasciano il posto a quella del curatore
+                testo_v = con.execute("SELECT testo FROM voci WHERE id=?", (vid,)).fetchone()[0] or ""
+                for mm in re.finditer(re.escape(r["forma"]), testo_v):
+                    a0, a1 = mm.start(), mm.end()
+                    con.execute("DELETE FROM menzioni WHERE voce=? AND sede='testo' AND inizio<? AND fine>?", (vid, a1, a0))
+                    x = con.execute("SELECT id FROM segmenti WHERE voce=? AND inizio<=? AND ?<fine", (vid, a0, a0)).fetchone()
+                    con.execute("INSERT INTO menzioni (voce, sede, annotazione, segmento, testo_esatto, inizio, fine, tipo,"
+                                " forma_riferimento, metodo, affidabilita) VALUES (?,'testo',NULL,?,?,?,?,?,?,'curatore','alta')",
+                                (vid, x[0] if x else None, r["forma"], a0, a1, r["tipo"], rif))
             for nid, sede, aid, a0, a1 in con.execute(
                     "SELECT id, sede, annotazione, inizio, fine FROM non_classificati WHERE voce=? AND testo_esatto=?",
                     (vid, r["forma"])).fetchall():

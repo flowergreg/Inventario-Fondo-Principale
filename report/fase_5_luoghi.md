@@ -1,6 +1,6 @@
 # Fase 5 — Luoghi: collegamento a GeoNames e Wikidata
 
-Verifica del 2026-11-07. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
+Verifica del 2026-11-08. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
 
 | Affidabilità | Luoghi |
 |---|---|
@@ -379,7 +379,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Polonia** (2 menz.; voci 824, 1095) → Polonia — GeoNames [798544](https://www.geonames.org/798544) — Wikidata [Q36](https://www.wikidata.org/wiki/Q36): _stato dell'Europa centro-orientale, membro dell'Unione europea_
 - **Pontebba** (4 menz.; voci 473, 525, 2431, 3750) → Pontebba — GeoNames [3170297](https://www.geonames.org/3170297) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53309](https://www.wikidata.org/wiki/Q53309): _comune italiano_
 - **Porcia** (9 menz.; voci 487, 925, 1015, 1049) → Porcia — GeoNames [3170154](https://www.geonames.org/3170154) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53182](https://www.wikidata.org/wiki/Q53182): _comune italiano_
-- **Pordenone** (41 menz.; voci 404, 447, 487, 513) → Pordenone — GeoNames [3170147](https://www.geonames.org/3170147) PPLA2, Friuli-Venezia Giulia (PN) — Wikidata [Q6606](https://www.wikidata.org/wiki/Q6606): _comune italiano_
+- **Pordenone** (38 menz.; voci 404, 447, 487, 513) → Pordenone — GeoNames [3170147](https://www.geonames.org/3170147) PPLA2, Friuli-Venezia Giulia (PN) — Wikidata [Q6606](https://www.wikidata.org/wiki/Q6606): _comune italiano_
 - **Porpetto** (3 menz.; voci 810, 885, 1588) → Porpetto — GeoNames [3170136](https://www.geonames.org/3170136) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53312](https://www.wikidata.org/wiki/Q53312): _comune italiano_
 - **Portobuffolè** (1 menz.; voci 3645) → Portobuffolé — GeoNames [3170105](https://www.geonames.org/3170105) PPLA3, Veneto (TV) — Wikidata [Q46129](https://www.wikidata.org/wiki/Q46129): _comune italiano_
 - **Portogruaro** (26 menz.; voci 390, 487, 488, 490) → Portogruaro — GeoNames [3170086](https://www.geonames.org/3170086) PPLA3, Veneto (VE) — Wikidata [Q47143](https://www.wikidata.org/wiki/Q47143): _comune italiano_
@@ -393,7 +393,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Pramaggiore** (2 menz.; voci 1024) → Pramaggiore — GeoNames [3217965](https://www.geonames.org/3217965) PPLA3, Veneto (VE) — Wikidata [Q47147](https://www.wikidata.org/wiki/Q47147): _comune italiano_
 - **Prata** (2 menz.; voci 921, 1010) → Prata di Pordenone — GeoNames [3169935](https://www.geonames.org/3169935) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q30029148](https://www.wikidata.org/wiki/Q30029148): _capoluogo dell'omonimo comune_
 - **Prato Carnico** (1 menz.; voci 1564) → Prato Carnico — GeoNames [3169913](https://www.geonames.org/3169913) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q53316](https://www.wikidata.org/wiki/Q53316): _comune italiano_
-- **Premariacco** (2 menz.; voci 1552, 4129) → Premariacco — GeoNames [3169862](https://www.geonames.org/3169862) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53318](https://www.wikidata.org/wiki/Q53318): _comune italiano_
+- **Premariacco** (1 menz.; voci 4129) → Premariacco — GeoNames [3169862](https://www.geonames.org/3169862) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53318](https://www.wikidata.org/wiki/Q53318): _comune italiano_
 - **Preone** (1 menz.; voci 1070) → Preone — GeoNames [3220127](https://www.geonames.org/3220127) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53319](https://www.wikidata.org/wiki/Q53319): _comune italiano_
 - **Privano** (1 menz.; voci 2059) → Privano — GeoNames [8950437](https://www.geonames.org/8950437) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452450](https://www.wikidata.org/wiki/Q18452450): _frazione del comune italiano di Bagnaria Arsa, provincia di Udine_
 - **Prodolone** (2 menz.; voci 487, 2060) → Prodolone — GeoNames [3217730](https://www.geonames.org/3217730) PPL, Friuli-Venezia Giulia (PN) — grafia confermata dal curatore; anche cognome nel testo
@@ -516,7 +516,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Trieste** (67 menz.; voci 476, 487, 491, 492) → Trieste — GeoNames [3165185](https://www.geonames.org/3165185) PPLA, Friuli-Venezia Giulia (TS) — Wikidata [Q546](https://www.wikidata.org/wiki/Q546): _comune italiano, capoluogo del Friuli-Venezia Giulia_
 - **Tripoli** (1 menz.; voci 23) → Tripoli — GeoNames [2210247](https://www.geonames.org/2210247) PPLC, LY — Wikidata [Q3579](https://www.wikidata.org/wiki/Q3579): _capitale della Libia_
 - **Trivignano** (1 menz.; voci 1683) → Trivignano Udinese — Wikidata [Q53388](https://www.wikidata.org/wiki/Q53388): _comune italiano_ — forma breve di Trivignano Udinese
-- **Udine** (920 menz.; voci 4, 10, 15, 18) → Udine — GeoNames [3165072](https://www.geonames.org/3165072) PPLA2, Friuli-Venezia Giulia (UD) — Wikidata [Q2790](https://www.wikidata.org/wiki/Q2790): _comune italiano_
+- **Udine** (916 menz.; voci 4, 10, 15, 18) → Udine — GeoNames [3165072](https://www.geonames.org/3165072) PPLA2, Friuli-Venezia Giulia (UD) — Wikidata [Q2790](https://www.wikidata.org/wiki/Q2790): _comune italiano_
 - **Ungheria** (2 menz.; voci 2418, 2626) → Ungheria — GeoNames [719819](https://www.geonames.org/719819) — Wikidata [Q28](https://www.wikidata.org/wiki/Q28): _stato dell'Europa centro-orientale, membro dell'Unione europea_
 - **Utrecht** (1 menz.; voci 324) → Utrecht — GeoNames [2745911](https://www.geonames.org/2745911) — Wikidata [Q803](https://www.wikidata.org/wiki/Q803): _città e comune olandese_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Valenza** (1 menz.; voci 606) → Valenza — GeoNames [3164920](https://www.geonames.org/3164920) PPLA3, reg. 12 (AL) — Wikidata [Q17689](https://www.wikidata.org/wiki/Q17689): _comune italiano della provincia di Alessandria, in Piemonte_

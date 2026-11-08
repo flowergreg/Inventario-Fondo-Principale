@@ -67,7 +67,8 @@ button:hover { filter: brightness(.93); }
 .stato { font: bold 19px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 22px 0 4px; }
 .stato::first-letter { color: var(--color1); }
 .forme { font-size: 15px; color: var(--tenue); margin: 0 0 18px; }
-.forme code { font-family: var(--font-testo); background: var(--fascia); padding: 1px 5px; }
+.forme a.forma { font-family: var(--font-testo); background: var(--fascia); padding: 1px 5px; color: inherit; text-decoration: none; cursor: pointer; display: inline-block; margin: 2px 0; }
+.forme a.forma:hover { text-decoration: underline; color: var(--colorHref); }
 .voce { border-top: 1px solid var(--linea); padding: 14px 0 12px; }
 .voce h2 { font: bold 21px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 0 0 6px;
   display: flex; gap: 10px; flex-wrap: wrap; align-items: baseline; }
@@ -224,7 +225,7 @@ function mostra(domanda) {
   const el = document.getElementById("risultati"), st = document.getElementById("stato"), fo = document.getElementById("forme");
   if (!r.q.length) { st.textContent = "Scrivi un nome di persona o di luogo."; fo.innerHTML = ""; el.innerHTML = ""; return; }
   fo.innerHTML = "Forme cercate: " + r.insiemi.map(s => { const xs = [...s];
-    return xs.slice(0, 25).map(w => "<code>" + esc(w) + "</code>").join(" ") + (xs.length > 25 ? ` … e altre ${xs.length - 25}` : ""); }).join(" + ");
+    return xs.slice(0, 25).map(w => `<a class="forma" title="Cerca solo questa forma">${esc(w)}</a>`).join(" ") + (xs.length > 25 ? ` … e altre ${xs.length - 25}` : ""); }).join(" + ");
   st.textContent = `${r.ris.length} voci` + (r.approssimata && r.ris.length ? " (ricerca approssimata)" : "");
   el.innerHTML = r.ris.slice(0, 300).map(({vi, hs, liv}) => {
     const v = IDX.voci[vi]; const visti = new Set(); const punti = [];
@@ -257,6 +258,11 @@ function mostra(domanda) {
 }
 const form = document.getElementById("f"), q = document.getElementById("q");
 form.addEventListener("submit", ev => { ev.preventDefault(); mostra(q.value); history.replaceState(null, "", "#" + encodeURIComponent(q.value)); });
+// le forme cercate sono cliccabili: una nuova ricerca per quella sola forma
+document.getElementById("forme").addEventListener("click", ev => {
+  const a = ev.target.closest("a.forma"); if (!a) return;
+  q.value = a.textContent; form.requestSubmit(); window.scrollTo({top: 0, behavior: "smooth"});
+});
 document.getElementById("parte").addEventListener("change", () => { if (q.value.trim()) form.requestSubmit(); });
 document.querySelectorAll(".esempi a").forEach(a => a.addEventListener("click", () => { q.value = a.textContent; form.requestSubmit(); }));
 if (location.hash.length > 1) { q.value = decodeURIComponent(location.hash.slice(1)); mostra(q.value); }

@@ -1,13 +1,13 @@
 # Fase 5 — Persone: collegamento a Wikidata (VIAF, SBN, DBI)
 
-Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
+Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 740 |
+| alta | 742 |
 | media | 29 |
 | bassa | 31 |
-| nessuna | 3053 |
+| nessuna | 3054 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -845,13 +845,15 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Zeno, Apostolo** (voci 1775; anni ?–?) → [Q349507](https://www.wikidata.org/wiki/Q349507) Apostolo Zeno (1668–1750): _poeta, librettista e giornalista italiano_ — Venezia — nato o morto in Friuli/Veneto
 - **Zoppi, Ottavio** (voci 3814; anni ?–?) → [Q3887261](https://www.wikidata.org/wiki/Q3887261) Ottavio Zoppi (1870–1962): _generale e politico italiano (1870-1962)_ — Novara, Milano — confermato dal contesto
 - **Zorutti, Pietro** (voci 385, 471, 491, 497; anni 1759–1944) → [Q2327335](https://www.wikidata.org/wiki/Q2327335) Pietro Zorutti (1792–1867): _poeta italiano_ — Dolegna del Collio, Udine — nato o morto in Friuli/Veneto; date compatibili
-- **Zorzi, Pietro Antonio** (voci 1224, 1383, 1903; anni 1729–1959) → [Q1081403](https://www.wikidata.org/wiki/Q1081403) Pietro Antonio Zorzi (1745–1803): _cardinale italiano_ — fase 6, blocco 4: verificato: arcivescovo di Udine 1792-1803
+- **Zorzi, Pietro Antonio** (voci 480, 1224, 1383, 1903; anni 1729–1959) → [Q1081403](https://www.wikidata.org/wiki/Q1081403) Pietro Antonio Zorzi (1745–1803): _cardinale italiano_ — fase 6, blocco 4: verificato: arcivescovo di Udine 1792-1803
 - **Zucconi, Lodovico** (voci 558; anni 1765–1807) → [Q41618881](https://www.wikidata.org/wiki/Q41618881) Lodovico Zucconi (1706–1783): _1706-1783_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **d'Este, Eleonora** (voci 2003, 2004, 2005; anni ?–?) → [Q3721832](https://www.wikidata.org/wiki/Q3721832) Eleonora d'Este (1643–1722): _principessa e suora mantovana (1643-1722)_ — la carmelitana Maria Francesca dello Spirito Santo (1643-1722), non l'omonima del Cinquecento; verificato via SPARQL (fase 6)
-- **da Pordenone, Odorico** (voci 549, 825; anni 1347–1350) → [Q379733](https://www.wikidata.org/wiki/Q379733) Odorico da Pordenone (1286–1331): _presbitero e religioso italiano_ — Pordenone, Udine — nato o morto in Friuli/Veneto
+- **da Pordenone, Odorico** (voci 519, 549, 774, 825; anni 1292–1350) → [Q379733](https://www.wikidata.org/wiki/Q379733) Odorico da Pordenone (1286–1331): _presbitero e religioso italiano_ — Pordenone, Udine — nato o morto in Friuli/Veneto; date compatibili
+- **da Udine, Giovanni** (voci 870, 1195, 1197, 4283; anni 1542–1954) → [Q983350](https://www.wikidata.org/wiki/Q983350) Giovanni da Udine (1487–1564): _pittore, decoratore e architetto italiano_ — Udine, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **de Lolme, Jean-Louis** (voci 502; anni 1778–1785) → [Q116870](https://www.wikidata.org/wiki/Q116870) Jean-Louis de Lolme (1741–1806): _giurista e filosofo svizzero e inglese_ — Ginevra, Seewen — date compatibili
 - **degli Azzoni, Rambaldo** (voci 619; anni 1773–1773) → [Q51144](https://www.wikidata.org/wiki/Q51144) Rambaldo degli Azzoni Avogaro (1719–1790): _storico e numismatico italiano (1719-1790)_ — Treviso — nato o morto in Friuli/Veneto; date compatibili
 - **degli Olivi, Enrico Palladio** (voci 622; anni 1737–1737) → [Q30087608](https://www.wikidata.org/wiki/Q30087608) Enrico Palladio degli Olivi (1580–1629): _medico e storico italiano_ — Udine — nato o morto in Friuli/Veneto
+- **dei Liberi, Fiore** (voci 614, 1552; anni ?–?) → [Q1058654](https://www.wikidata.org/wiki/Q1058654) Fiore dei Liberi (1350–?): _maestro di scherma e schermidore italiano_ — Cividale del Friuli — nato o morto in Friuli/Veneto
 - **del Torso, Enrico** (voci 2379, 2422, 2582, 2583; anni 1842–1959) → [Q52148568](https://www.wikidata.org/wiki/Q52148568) Enrico Del Torso (1876–1955): _saggista, fotografo, storico_ — Trieste, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **della Porta, Giovanni Battista** (voci 383, 2253, 2254, 2691; anni 1810–1946) → [Q98456982](https://www.wikidata.org/wiki/Q98456982) Giovanni Battista Della Porta (1873–1954): _1873-1954; Erudito e storico friulano_ — Cividale del Friuli, Firenze — nato o morto in Friuli/Veneto; date compatibili
 - **della Torre, Gastone** (voci 1547; anni ?–?) → [Q3662024](https://www.wikidata.org/wiki/Q3662024) Cassono della Torre (1301–1318): _patriarca cattolico italiano_ — fase 6, blocco 4: Gastone (Cassono) della Torre, patriarca, tomba a Firenze
@@ -861,7 +863,7 @@ Verifica del 2026-11-07. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3053 persone
+## 4. Nessun candidato su Wikidata: 3054 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
