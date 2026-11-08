@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3856 | 638 | 7342 |
+| persona | 3851 | 638 | 7350 |
 | luogo | 562 | 63 | 4570 |
-| santo | 125 | 44 | 487 |
+| santo | 125 | 44 | 491 |
 
-Menzioni collegate a un'entità: 12399 su 20993. Senza entità: nome o cognome singolo 8268, esclusa dal curatore 134, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12411 su 20993. Senza entità: nome o cognome singolo 8258, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 43, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -82,7 +82,6 @@ Forme unite dalla normalizzazione grafica (doppie, j/i, accenti): controllare ch
 - **Chedì, Giovanni** — _cognome in grafie diverse: Chedi, Chedì_: Chedi Giovanni (3391); Giovanni Chedì (3244)
 - **Chispa, Muni** — _cognome in grafie diverse: Chispa, Chiṣpa_: Chispa Muni (4317); Chiṣpa Muni (4317)
 - **Cillenio, Raffaele** — _cognome in grafie diverse: Cillenio, Cyllenio_: Cillenio Raffaele (287); Cyllenio Raffaele (429)
-- **Colloredo, Ermes** — _cognome in grafie diverse: Colloredo, Coloredo_: Colloredo (di) Ermes (341, 342, 343, 344); Colloredo Co. Ermes (349); Ermes Colloredo (465, 3818); Ermes di Colloredo (356, 390, 483, 2681, 3820, 3913); Ermes di Coloredo (350)
 - **Cuccagna, Gerardo** — _cognome in grafie diverse: Cucagna, Cuccagna_: Gerardo di Cucagna (1070); Gerardo di Cuccagna (541)
 - **Gabrielli, Nicolò** — _cognome in grafie diverse: Gabrieli, Gabrielli_: Gabrielli Nicolò (380); Nicolò IV Gabrieli (469)
 - **Gabrielli, Tommaso** — _cognome in grafie diverse: Gabrieli, Gabrielli_: Tommaso Gabrieli (125); Tommaso Gabrielli (124, 196)
@@ -664,7 +663,8 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Clemente XII**: Clemente XII (606); Clemente XII. XIII (825)
 - **Colautti, Giuseppe**: Colautti Giuseppe (2257); Giuseppe Colautti (619); P. Giuseppe (3735)
 - **Colletti, Girolamo**: Girolamo (715); Girolamo Colletti (933)
-- **Colloredo, Fabio**: Fabii de Colloreto Utinensis Conjugis (819); Fabio Colloredo (639)
+- **Colloredo, Ermes**: Colloredo (di) Ermes (341, 342, 343, 344); Colloredo Co. Ermes (349); Ermes (3819); Ermes Colloredo (465, 3818); Ermes di Colloredo (356, 390, 483, 2681, 3820, 3913); Ermes di Coloredo (350)
+- **Colloredo, Fabio**: Fabii de Colloreto Utinensis Conjugis (819); Fabio (2559); Fabio Colloredo (639)
 - **Colloredo, Filippo Antonio**: Filippo Ant. Colloredo (339); Filippo Ant. di Colloredo (339); Filippo Antonio di Colloredo (487)
 - **Comencini, Francesco**: Comencini Francesco (3155, 3156); Francesco (3719)
 - **Concina, Daniele Vincenzo**: Concina Daniello Vinc.zo (464); Daniello Vincenzo Concina (475)
@@ -680,7 +680,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Del Torre, Filippo**: Del Torre Filippo (519); Filippo Del Torre (1768); Filippo del Torre (868, 923, 938)
 - **Della Forza, Antonio**: Antonio della Forza (718); Della Forza Antonio (541, 2312)
 - **Della Stua, Giovanni Pietro**: Della Stua Gio. Pietro (464); Della Stua Giovan Pietro (598)
-- **Diacono, Paolo**: Diacono Paolo (518); Paolo Diacono (628, 875, 3781)
+- **Diacono, Paolo**: Diacono Paolo (518); Paolo Diacono (628, 875, 3781); Paulo Diacono (1736)
 - **Dragoni, Antonio**: Antonio Dragoni (1199); Dragoni Antonio (1655)
 - **Duodo, Pietro**: Duodo, Pietro (2682); Pietro Duodo (686, 1143, 1144)
 - **Dussech, Franco**: Dussech Franco (3456); Franco Dussech (3456)
@@ -721,6 +721,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Leitenburg, Francesco**: Francesco de Leitenburg (4132/1, 4132/2, 4133, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4146, 4147, 4151, 4154, 4155, 4156); Leitenburg (de) Francesco (4131, 4132/1, 4132/2, 4133, 4134, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4144, 4145, 4146, 4147, 4148, 4149, 4150, 4151, 4152, 4153, 4154, 4155, 4156, 4157); Leitenburg Francesco (378)
 - **Leonarduzzi, Francesco**: Francesco Leonarduzzi (2410); Leonarduzzi Francesco (2367)
 - **Leonarduzzi, Giuseppe**: Giuseppe Leonarduzzi (2410); Leonarduzzi Giuseppe (2410)
+- **Locatelli, Pier Paolo**: Pier Paolo Locatello [manuale]; Locadelli Petri Pauli J. C. Patricij Utinensis Urbis (553); Locadello (621); Locatelli Pietro Paolo (2276); P. Pauli Locadelli (621); Petri Pauli Locadelli (621); Petrum Paulum Locadellum (621); Pier Paolo (739, 740); Pier Paolo Locadello (651); Pier Paolo Locatelli (1058); Pietro Paolo Locadello (621); Trascrisse P. Paolo Locadello J.C. (621)
 - **Lorenzi, Paolina**: Lorenzi Paolina (2357); Paolina Lorenzi (2357)
 - **Loschi-Trento, Elena**: Elena Loschi-Trento (2634/8); Loschi-Trento, Elena (2634/9)
 - **Luigi XIV**: Luigi XIV (23); Luigi XIV. Versione (3797)
@@ -834,10 +835,10 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Someda, Pietro**: Pietro Someda (390, 508, 722); Someda Pietro (2271)
 - **Sozzini, Mariano**: Mariano Soccini [manuale]; Mariano Socini [manuale]; Mariano Lozzini (1376); P. Mariano Sozzini (1217)
 - **Spergheri, Ignazio**: Ignazio Spergheri (3082); Spergheri Ignazio (3082)
-- **Spilimbergo, Eusebio**: Eusebio Stella di Spilimbergo (347); Stella Eusebio di Spilimbergo (347)
 - **Sporeno, Giuseppe**: Giuseppe Sporeno (11, 102); Sporeno Giuseppe (97, 100)
 - **Sporeno, Plutarco**: Plutarco Sporeno (390); Sporeno Plutarco (346)
 - **Starzer, Alberto**: Starzer Alberto (2635/10); Starzer, Albert (2635/17); Starzer, Alberto (2635/10)
+- **Stella, Eusebio Simone**: Eusebio Stella di Spilimbergo (347); Stella Eusebio di Spilimbergo (347)
 - **Strassoldo, Rosanna**: Me Rosanna di Strassoldo del Anno (4208); Strassoldo (di) Rosanna (4208)
 - **Strazzolini, Nicolò**: Niccolò (709); Nicolò Strazzolini (706)
 - **Sturolo, Gaetano**: Gaetano Sturolo (923); P. Gaetano Sturolo (718)
@@ -1011,7 +1012,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Geremia profeta**: De Lamentatione Jeremiae Prophetae (2988); De Lamentatione Jeremiae Prophetae Misericordiae (2859); Jeremiae Prophetae (2861, 2862)
 - **Gesù Cristo**: Natività di Gesù Cristo MDCCXVIII (2690); Societate Jesu. Goritiae (3881)
 - **Immacolata Concezione**: Immacolata Concezione [manuale]; S. Immacolata Concezione (1311)
-- **Madonna**: B. Vergine (867); Madonna (24, 326, 622, 922, 1256, 1257, 3050, 3945, 4040, 4286); Madonna del Carmine (1282); Madonna del Sasso (1537); Madonna di Meschio (4120); Madonna di Monte (3040); Madonna di Rosa (260); Sacratissimae Deip. Virg. Mariae (606)
+- **Madonna**: Ave Maris Stella (2943, 3091); B. Vergine (867); Madonna (24, 326, 622, 922, 1256, 1257, 3050, 3945, 4040, 4286); Madonna del Carmine (1282); Madonna del Sasso (1537); Madonna di Meschio (4120); Madonna di Monte (3040); Madonna di Rosa (260); Sacratissimae Deip. Virg. Mariae (606)
 - **San Bartolomeo**: San Bartolomeo [manuale]; S. Bartolomeo (593)
 - **San Benedetto**: San Benedetto [manuale]; S. Benedetto (4518)
 - **San Bernardino**: San Bernardino [manuale]; S. Bernardino (1329, 1656)
@@ -1065,7 +1066,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **San Pancrazio**: San Pancrazio [manuale]; S. Pancrazio (606)
 - **San Pantaleone**: San Pantaleone [manuale]; S. Pantaleone (3782)
 - **San Paolino**: San Paolino [manuale]; San Paolino di Aquileja [manuale]; S. Paolino (632, 826, 1212, 1552, 1736, 2637/20); S. Paolino di Aquileja (628); San Paulino (631)
-- **San Paolo**: San Paolo [manuale]; San Paolo di Macerata [manuale]; S. Paolo (1375, 1516); S. Paolo di Macerata (22); S. Pauli (597)
+- **San Paolo**: San Paolo [manuale]; San Paolo di Macerata [manuale]; Discipuli Pauli (596); Paolo (618); S. Paolo (1375, 1516); S. Paolo di Macerata (22); S. Pauli (597)
 - **San Pietro**: San Pietro [manuale]; San Pietro - S. Canciano [manuale]; San Pietro di Carnia [manuale]; San Pietro di Osoppo [manuale]; San Pietro di Ragogna [manuale]; San Pietro di Rosazzo [manuale]; San Pietro di Tavella di Grazzano [manuale]; Divi Petri (606); Honorem B. Petri Apostolorum Principis Responsorium (2124); S. Pieri (4102); S. Pietro (181, 182, 521, 836, 919, 920, 1045, 1270, 1281, 1315, 1329, 1338, 1342, 1354, 1375, 1376, 4095, 4126); S. Pietro - S. Canciano (920); S. Pietro di Carnia (2438); S. Pietro di Osoppo (836, 1998); S. Pietro di Ragogna (2590); S. Pietro di Rosazzo (519); S. Pietro di Tavella di Grazzano (521); San Pieri (4090)
 - **San Pietro Martire**: San Pietro Martire [manuale]; San Pietro Martire di Udine [manuale]; S. Petri Martyris de Utino (1341); S. Pietro M.re di Udine (618); S. Pietro Martire (618, 1354); S. Pietro Martire  di Udine (1354); S. Pietro Martire di Udine (1365)
 - **San Pio V**: San Pio V [manuale]; S. Pio V Sommo Pontefice (24)
@@ -1126,9 +1127,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3194 entità: elenco completo nella tabella `entita`.
+3189 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
-Tessitori (249), Fin (113), Minelli (101), Liruti (92), Marzona (73), Processo (42), Elti (40), Toppo (36), Francesco (34), Fontanini (34), Savorgnan (32), di Udine (32), Jacopo (31), Pirona (28), Braida (27), Joppi (26), Valvasone di Maniago (26), Śrī (26), Nicoletti (25), Buddharās (25), G. B. (24), Del Torso (24), Corgnali (24), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Giovanni (19), Belloni (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Giuseppe (16), Accad (16), Florio (15), Frangipane (15), Antonio (15), Castello (15), Barnaba (15), Pavona (15), di Aquileja (14), Ath (14), Burchiello (13), Napoleone (13), Zanon (13), Modotti (13), Carlo (12), Cortenovis (12), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Nicolò (11), Madrisio (11), Asquini (11), Grado (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Maria (10), Angelo (10), Bertoli (10), R. (10), Della Torre (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Alessandro (9), Pietro (9), Palladio (9), del Friuli (9), S. M. (9), Delfino (9), Antonini (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Andrea (8), Girolamo (8), Wolf (8), Locatelli (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Paolo (7), Zorzi (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6)
+Tessitori (249), Fin (113), Minelli (101), Liruti (92), Marzona (73), Processo (42), Elti (40), Toppo (36), Francesco (34), Fontanini (34), Savorgnan (32), di Udine (32), Jacopo (31), Pirona (28), Braida (27), Joppi (26), Valvasone di Maniago (26), Śrī (26), Nicoletti (25), Buddharās (25), G. B. (24), Del Torso (24), Corgnali (24), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Giovanni (19), Belloni (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Giuseppe (16), Accad (16), Florio (15), Frangipane (15), Antonio (15), Castello (15), Barnaba (15), Pavona (15), di Aquileja (14), Ath (14), Burchiello (13), Napoleone (13), Zanon (13), Modotti (13), Carlo (12), Cortenovis (12), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Nicolò (11), Madrisio (11), Asquini (11), Grado (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Maria (10), Angelo (10), Bertoli (10), R. (10), Della Torre (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Alessandro (9), Pietro (9), Palladio (9), del Friuli (9), S. M. (9), Delfino (9), Antonini (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Andrea (8), Girolamo (8), Wolf (8), Locatelli (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6)
 

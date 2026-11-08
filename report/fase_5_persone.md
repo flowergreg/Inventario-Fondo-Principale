@@ -5,9 +5,9 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | Affidabilità | Persone |
 |---|---|
 | alta | 742 |
-| media | 29 |
+| media | 31 |
 | bassa | 31 |
-| nessuna | 3054 |
+| nessuna | 3047 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -32,6 +32,8 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q91398094](https://www.wikidata.org/wiki/Q91398094) Andrea Mariani (?–?) [0]; [Q77538493](https://www.wikidata.org/wiki/Q77538493) Andrea Mariani (1967–?): _sacerdote e teologo italiano (1967-)_ — Lissone [-0.5]; [Q108321134](https://www.wikidata.org/wiki/Q108321134) Andrea Mariani (1944–?): _americanista italiano (1944-)_ — Roma [-0.5]; [Q108321160](https://www.wikidata.org/wiki/Q108321160) Andrea Mariani (1993–?): _ingegnere biomedico italiano (1993-)_ [-0.5]
 - **Marini, Leonardo** (voci 597; anni 1772–1781) → [Q87252822](https://www.wikidata.org/wiki/Q87252822) Leonardo Marini (1737–1806): _pittore_ — date compatibili
   - altri: [Q3830391](https://www.wikidata.org/wiki/Q3830391) Leonardo Marini (1509–1573): _arcivescovo cattolico e teologo italiano_ — Chio, Roma [0]; [Q28599790](https://www.wikidata.org/wiki/Q28599790) Leonardo Marini (1995–?): _cestista italiano_ — Padova [-1]
+- **Moretti, Paolo** (voci 3882; anni ?–?) → [Q11802784](https://www.wikidata.org/wiki/Q11802784) Paolo Moretti (1759–1804) — Stoccolma
+  - altri: [Q80317088](https://www.wikidata.org/wiki/Q80317088) Paolo Moretti (?–?) [0]; [Q90369638](https://www.wikidata.org/wiki/Q90369638) Paolo Moretti (?–?) [0]; [Q99633482](https://www.wikidata.org/wiki/Q99633482) Paolo Moretti (?–?) [0]; [Q3894290](https://www.wikidata.org/wiki/Q3894290) Paolo Moretti (1970–?): _cestista e allenatore di pallacanestro italiano_ — Arezzo [-0.5]
 - **Moro** (voci 3810; anni ?–?) → [Q102283130](https://www.wikidata.org/wiki/Q102283130) Moro (?–?): _compositore_
 - **Orsetti, Cristoforo** (voci 2603; anni ?–?) → [Q29156778](https://www.wikidata.org/wiki/Q29156778) Cristoforo Orsetti (1608–1664)
 - **Pace, Fabio** (voci 52; anni ?–?) → [Q94933571](https://www.wikidata.org/wiki/Q94933571) Fabio Pace (1547–1614): _filosofo, medico, autore_
@@ -48,6 +50,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Rossetti** (voci 2159; anni 1750–1750) → [Q21607432](https://www.wikidata.org/wiki/Q21607432)  (1866–?)
 - **Sassonia, Maria Amalia** (voci 714; anni 1716–1756) → [Q169512](https://www.wikidata.org/wiki/Q169512) Maria Amalia di Sassonia (1724–1760): _regina consorte di Napoli, Sicilia e Spagna_ — Dresda, Madrid — date compatibili
   - altri: [Q69929](https://www.wikidata.org/wiki/Q69929) Maria Amalia di Sassonia (1794–1870): _principessa di Sassonia, compositrice e drammaturga tedesca_ — Dresda, Pillnitz [0]; [Q325897](https://www.wikidata.org/wiki/Q325897) Maria Amalia di Sassonia (1757–1831) — Dresda, Neuburg an der Donau [0]
+- **Stella, Francesco Maria** (voci 94; anni 1671–1671) → [Q131684534](https://www.wikidata.org/wiki/Q131684534) Francesco Maria Stella (1745–1800): _1745-1800_
 - **Suzzi, Celestino** (voci 334, 335; anni ?–?) → [Q112316093](https://www.wikidata.org/wiki/Q112316093) Celestino Suzzi (1815–1883)
 - **Tilatti, Andrea** (voci 1445; anni ?–?) → [Q89477491](https://www.wikidata.org/wiki/Q89477491) Andrea Tilatti (1962–?): _medievista italiano (1962-)_ — Udine — nato o morto in Friuli/Veneto; nato nel 1962: verificare
 - **Volpato Morghen, Domenica** (voci 2134; anni ?–?) → [Q131242678](https://www.wikidata.org/wiki/Q131242678) Domenica Volpato Morghen (?–?)
@@ -312,7 +315,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Cognolato, Gaetano** (voci 482; anni 1693–1792) → [Q55226751](https://www.wikidata.org/wiki/Q55226751) Gaetano Cognolato (1728–1802) — Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Colajanni, Napoleone** (voci 3591; anni 1853–1942) → [Q3870254](https://www.wikidata.org/wiki/Q3870254) Napoleone Colajanni (1847–1921): _scrittore e politico italiano (1847-1921)_ — lo scrittore e politico (1847-1921)
 - **Colloredo, Ermes** (voci 341, 342, 343, 344; anni 1690–1796) → [Q960864](https://www.wikidata.org/wiki/Q960864) Ermes di Colloredo (1622–1692): _poeta italiano_ — Colloredo di Monte Albano, Camino al Tagliamento — nato o morto in Friuli/Veneto; date compatibili
-- **Colloredo, Fabio** (voci 639, 819; anni 1739–1886) → [Q3737885](https://www.wikidata.org/wiki/Q3737885) Fabio di Colloredo (1672–1742): _arcivescovo cattolico italiano_ — Colloredo di Monte Albano, Lucca — nato o morto in Friuli/Veneto; date compatibili
+- **Colloredo, Fabio** (voci 639, 819, 2559; anni 1739–1886) → [Q3737885](https://www.wikidata.org/wiki/Q3737885) Fabio di Colloredo (1672–1742): _arcivescovo cattolico italiano_ — Colloredo di Monte Albano, Lucca — nato o morto in Friuli/Veneto; date compatibili
 - **Colloredo, Leandro** (voci 606; anni 1629–1686) → [Q3228648](https://www.wikidata.org/wiki/Q3228648) Leandro Colloredo (1639–1709): _cardinale italiano_ — Colloredo di Monte Albano, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Colloredo, Marzio** (voci 616; anni 1559–1640) → [Q109860245](https://www.wikidata.org/wiki/Q109860245) Marzio Colloredo (1530–1591): _soldato, diplomatico_ — Siena — date compatibili
 - **Comelli, Francesco** (voci 518, 606; anni 1694–1727) → [Q111901732](https://www.wikidata.org/wiki/Q111901732) Francesco Antonio Comelli (1753–1823): _organaro italiano (1753-1823)_ — Nimis, Udine — nato o morto in Friuli/Veneto
@@ -369,7 +372,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Della Torre, Lucio** (voci 541, 554, 723, 825; anni 1663–1748) → [Q29846652](https://www.wikidata.org/wiki/Q29846652) Lucio della Torre (1696–1723) — fase 6, blocco 4: bando del Consiglio dei Dieci contro Lucio della Torre: il bandito di Fagagna (1696-1723)
 - **Delminio, Giulio Camillo** (voci 420, 421, 422, 1423; anni ?–?) → [Q331003](https://www.wikidata.org/wiki/Q331003) Giulio Camillo Delminio (1480–1544): _umanista e filosofo italiano_ — Portogruaro, Milano — nato o morto in Friuli/Veneto
 - **Depretis, Agostino** (voci 3971; anni 1860–1860) → [Q356711](https://www.wikidata.org/wiki/Q356711) Agostino Depretis (1813–1887): _politico italiano (1813-1887)_ — Cava Manara, Stradella — date compatibili
-- **Diacono, Paolo** (voci 518, 628, 875, 3781; anni 1834–1901) → [Q160424](https://www.wikidata.org/wiki/Q160424) Paolo Diacono (720–799): _monaco, storico e poeta longobardo_ — Cividale del Friuli, abbazia di Montecassino — nato o morto in Friuli/Veneto
+- **Diacono, Paolo** (voci 518, 628, 875, 1736; anni 1834–1901) → [Q160424](https://www.wikidata.org/wiki/Q160424) Paolo Diacono (720–799): _monaco, storico e poeta longobardo_ — Cividale del Friuli, abbazia di Montecassino — nato o morto in Friuli/Veneto
 - **Dolfin, Daniele** (voci 476; anni 1725–1796) → [Q3014934](https://www.wikidata.org/wiki/Q3014934) Daniele Dolfin (1688–1762): _cardinale, ultimo patriarca di Aquileia e primo arcivescovo di Udine (1688-1762)_ — Venezia, Udine — confermato dal contesto
 - **Dolfin, Giovanni** (voci 1380; anni ?–?) → [Q3107157](https://www.wikidata.org/wiki/Q3107157) Giovanni Dolfin (1617–1699): _cardinale, patriarca cattolico e drammaturgo italiano (1617-1699)_ — fase 6, blocco 4: «elogio del patriarca Giovanni Dolfin»: il patriarca e cardinale (1617-1699), non il doge del Trecento
 - **Dolfin, Marco** (voci 2153; anni 1701–1701) → [Q3015062](https://www.wikidata.org/wiki/Q3015062) Daniele Dolfin (1653–1704): _cardinale, nunzio apostolico e arcivescovo cattolico italiano (1653-1704)_ — Venezia, Brescia — nato o morto in Friuli/Veneto; date compatibili
@@ -734,7 +737,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Sanguinacci, Jacopo** (voci 7; anni ?–?) → [Q41618032](https://www.wikidata.org/wiki/Q41618032) Jacopo Sanguinacci (1401–1500): _scrittore (XV secolo)_ — confermato dal contesto
 - **Sanseverino, Faustino** (voci 492; anni 1835–1840) → [Q3740325](https://www.wikidata.org/wiki/Q3740325) Faustino Sanseverino (1801–1878): _conte di Castel Palazzo e politico italiano_ — Crema, Milano — date compatibili
 - **Sanudo, Marino** (voci 619; anni 1318–1318) → [Q1898561](https://www.wikidata.org/wiki/Q1898561) Marino Sanudo (1270–1343): _letterato italiano (1260 ca. - 1340 ca.)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
-- **Sarpi, Paolo** (voci 530, 1095, 1105, 1429; anni 1577–1606) → [Q1349158](https://www.wikidata.org/wiki/Q1349158) Paolo Sarpi (1552–1623): _religioso, teologo e storico italiano (1552–1623)_ — fissato dopo l'unione con «Scarpi» (fase 6)
+- **Sarpi, Paolo** (voci 530, 813, 1095, 1105; anni 1577–1606) → [Q1349158](https://www.wikidata.org/wiki/Q1349158) Paolo Sarpi (1552–1623): _religioso, teologo e storico italiano (1552–1623)_ — fissato dopo l'unione con «Scarpi» (fase 6)
 - **Sarti, Giuseppe** (voci 3186, 3188; anni 1798–1798) → [Q455199](https://www.wikidata.org/wiki/Q455199) Giuseppe Sarti (1729–1802): _compositore italiano_ — Faenza, Berlino — confermato dal contesto
 - **Savorgnan, Giulio** (voci 2646, 2647; anni 1577–1577) → [Q3769780](https://www.wikidata.org/wiki/Q3769780) Giulio Savorgnan (1510–1595): _ingegnere italiano_ — fase 6, blocco 4: lettere del 1577: compatibile
 - **Scapin, Carlo** (voci 1020; anni 1600–1804) → [Q94844292](https://www.wikidata.org/wiki/Q94844292) Carlo Scapin (1726–1801): _1724-1801_ — date compatibili
@@ -863,7 +866,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3054 persone
+## 4. Nessun candidato su Wikidata: 3047 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
