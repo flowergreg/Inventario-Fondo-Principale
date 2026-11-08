@@ -143,7 +143,18 @@ def costruisci_indice(db=DB):
     for eid, tipo, intest, stato in con.execute("SELECT id, tipo, forma_intestazione, stato FROM entita ORDER BY id"):
         stato_id[eid] = len(entita)
         entita.append({"i": eid, "t": tipo, "f": intest, "st": stato, "v": set(), "m": [], "q": None})
+    # forme del testo ristrette al nome evidenziato: «Candotti G. B. Ave Maris Stella» vale «Candotti G. B.»,
+    # così «Maris Stella» non trova Candotti
+    ristrette = defaultdict(dict)
+    for eid, forma, testo, a, b in con.execute(
+            "SELECT x.entita, m.testo_esatto, v.testo, m.ev_inizio, m.ev_fine FROM menzioni m "
+            "JOIN menzioni_entita x ON x.menzione = m.id JOIN voci v ON v.id = m.voce "
+            "WHERE m.ev_inizio IS NOT NULL AND m.sede = 'testo'"):
+        ev_t = (testo or "")[a:b]
+        if ev_t and ev_t in forma:
+            ristrette[eid][forma] = ev_t
     for eid, forma in con.execute("SELECT entita, forma FROM varianti"):
+        forma = ristrette.get(eid, {}).get(forma, forma)
         if re.search(r"\s(?:e|ed)\s", forma) and entita[stato_id[eid]]["t"] == "persona":
             continue           # «Girolamo e Lorenzo Carboni»: più persone, la variante confonderebbe i nomi
         k = " ".join(chiave(forma))
@@ -151,7 +162,9 @@ def costruisci_indice(db=DB):
         # santi: le forme con la specificazione dell'edificio o del luogo («San Pietro di Osoppo») non
         # valgono come varianti del santo, altrimenti «Osoppo» darebbe tutte le voci di San Pietro;
         # quelle voci si trovano nel testo
-        if e_["t"] == "santo" and len(k.split()) > len(chiave(e_["f"])):
+        nucleo = set(chiave(e_["f"])) - {"san", "santa", "santo", "sant", "santi", "s", "ss", "beato", "b"}
+        if e_["t"] == "santo" and nucleo and nucleo <= set(k.split()) and \
+                set(k.split()) - nucleo - {"san", "santa", "santo", "sant", "santi", "s", "ss", "beato", "b"}:
             continue
         if k:
             e_["v"].add(k)

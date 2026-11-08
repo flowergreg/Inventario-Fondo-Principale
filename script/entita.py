@@ -520,6 +520,25 @@ def main():
             cognomi_voce[voce].update(c for c in cogn if c)
             if apre:
                 intestazione_voce[voce].update(c for c in cogn if c and " " not in c)
+    # «Paolo q. Johannis de Mutina», «Francesco Cernazai q.m Girolamo»: il nome senza cognome, separato
+    # da «q.», «q.m», «quondam», «fu» da una persona con cognome, ne prende il cognome (figlio e padre)
+    quondam = {}
+    pers = [m for m in menzioni if m[3] == "persona" and m[6] == "testo"]
+    for a, b in zip(pers, pers[1:]):
+        if a[1] != b[1]:
+            continue
+        gap = (testi.get(a[1]) or "")[a[8]:b[7]]
+        if re.fullmatch(r"\s+(?:q\.\s?m\.?|qm\.|q\.|quondam|del fu|fu)\s+", gap):
+            for x, y in ((a, b), (b, a)):
+                c_y = scomponi(y[2], lex, titoli, dedurre=False)
+                c_x = scomponi(x[2], lex, titoli, dedurre=False)
+                cog = c_y[3][1] if c_y[2] else ""
+                # «Udine Giovanni q. Tommaso»: un luogo in testa alla menzione non è il cognome
+                solo_luogo = cog and lex.get(cog) and (all(r[0] == "luogo" for r in lex.get(cog)) or (
+                    y[2].startswith(cog) and any(r[0] == "luogo" and r[3] == "ISTAT" for r in lex.get(cog))))
+                if not c_x[2] and c_x[0] and cog and not solo_luogo:
+                    quondam[x[0]] = cog
+
     for mid, voce, testo, tipo, corr, rif_forma, sede, inizio, fine in menzioni:
         # ordine Cognome Nome: all'inizio della voce, e nelle intestazioni ed elenchi interni
         # («20. Delfino Daniele. Concessione…», «…, Zorzi Carlo Maria, De Lepre…»)
@@ -609,6 +628,9 @@ def main():
             if not persone:                     # non è una persona (Belle Arti, Annalia Civ.)
                 senza["esclusa dal curatore"] += 1
                 continue
+        elif tipo == "persona" and mid in quondam:
+            persone = [scomponi_manuale(f"{p} / {quondam[mid]}", lex, titoli)       # «Agostino e Nicolò q. …»
+                       for p in re.split(r"\s(?:e|ed)\s", testo_chiave) if p.strip()]
         elif tipo == "persona" and sede == "testo" and not scomponi(testo_chiave, lex, titoli, dedurre=False)[2] \
                 and (prec := cognome_precedente(testi.get(voce, ""), inizio, lex, titoli)):
             # «Pecile, Gabriele Luigi»: il cognome sta subito prima, separato da virgola o parentesi
@@ -1021,7 +1043,9 @@ def evidenziazioni(con, entita, titoli):
                     "SELECT 'testo', NULL, testo FROM voci WHERE id=? UNION ALL SELECT 'coda', NULL, coda FROM voci "
                     "WHERE id=? UNION ALL SELECT 'annotazione', id, testo FROM annotazioni WHERE voce=?", (voce, voce, voce)))
             t = testi[voce].get((sede, aid)) or ""
-            if re.fullmatch(r"[\s,\[\]()]*", t[prec[6]:ini]) and ini - prec[6] <= 4:
+            # «Faidutti, mons. Luigi»: tra cognome e nome può stare un titolo
+            if re.fullmatch(r"[\s,\[\]()]*(?:(?:mons|msgr|cav|don|prof|dott|ab|avv|ing|co|sac|can)\.?\s+)?",
+                            t[prec[6]:ini]) and ini - prec[6] <= 12:
                 a, b = ev.get(mid, [ini, fin])
                 if "(" in t[prec[6]:ini] and t[b:b + 1] == ")":
                     b += 1                      # «Calligaris (G.B.)»: la parentesi si chiude

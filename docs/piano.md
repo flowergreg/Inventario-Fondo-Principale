@@ -229,3 +229,7 @@ Le menzioni «santo» sono un insieme misto, classificato in `dati/liste/santi_d
 - Pagina: le «forme cercate» sono cliccabili e avviano la ricerca di quella forma.
 - Altre correzioni del curatore: Pier Paolo Locatelli (tutte le forme Locadello/Locadelli), Paolo Diacono (con Paulo; Paulo e Paulum = Paolo), discepoli di San Paolo, santi Giovanni e Paolo (618), Stella Francesco Maria ed Eusebio Simone, Candotti G. B., «Ave Maris Stella» = Madonna, Paolo Sarpi, Colloredo Fabio ed Ermes, famiglia Colloredo Mels, Ippolito Peres, Paolo Moretti, Paolo de Mutina.
 - Pagina: casella «Segnala un errore» in fondo; invia il testo e la ricerca in corso a un modulo Google (configurazione in `dati/liste/segnalazioni.json`: indirizzo formResponse e codici dei campi), senza lasciare la pagina.
+- Regola «quondam»: un nome senza cognome separato da «q.», «q.m», «qm.», «quondam», «fu» da una persona con cognome ne prende il cognome (figlio e padre; «Agostino e Nicolò q. …» due persone; non un luogo in testa alla menzione). Le persone nuove restano «proposto».
+- Titolo tra cognome e nome nell'intestazione («Faidutti, mons. Luigi»): l'evidenziazione lo comprende.
+- Le varianti del testo usano solo la parte evidenziata (Candotti non risponde più a «Maris Stella»); per i santi si scartano solo le varianti con specificazione (Osoppo), non le forme diverse (Ave Maris Stella = Madonna).
+- Segnalazioni: modulo Google configurato; casella su una riga nel piè di pagina.

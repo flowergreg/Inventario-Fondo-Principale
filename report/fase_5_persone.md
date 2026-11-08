@@ -4,16 +4,19 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 742 |
-| media | 31 |
+| alta | 743 |
+| media | 34 |
 | bassa | 31 |
-| nessuna | 3047 |
+| nessuna | 3067 |
 
 ## 1. Affidabilità media: da verificare
 
+- **Aloi, Francesco** (voci 15; anni 1679–1679) → [Q92502584](https://www.wikidata.org/wiki/Q92502584) Francesco Aloi (?–?)
 - **Bach** (voci 3408, 3409, 3467, 3468; anni ?–?) → [Q1861386](https://www.wikidata.org/wiki/Q1861386) Bach (1882–1953) — Fontanil-Cornillon, Nogent-le-Rotrou
   - altri: [Q6828338](https://www.wikidata.org/wiki/Q6828338) Michael Bach (1808–1878): _entomologo, botanico_ — Boppard [0]
 - **Bianchini, Giacomo** (voci 3854, 3855, 3856; anni ?–?) → [Q20481812](https://www.wikidata.org/wiki/Q20481812) Giacomo Bianchini (1875–1954): _esperantista e sacerdote italiano_
+- **Borghi, Luigi** (voci 3288, 3396, 3473; anni ?–?) → [Q1766160](https://www.wikidata.org/wiki/Q1766160) Luigi Borghi (1745–1806): _compositore e violinista italiano_ — Bologna, Londra
+  - altri: [Q106714140](https://www.wikidata.org/wiki/Q106714140) Luigi Borghi (1924–2006): _politico italiano (1924-2006)_ — Como [-0.5]; [Q18602963](https://www.wikidata.org/wiki/Q18602963) Luigi Borghi (1933–?): _calciatore italiano_ — Seveso [-0.5]
 - **Cainero, Enzo** (voci 4192; anni ?–?) → [Q3726469](https://www.wikidata.org/wiki/Q3726469) Enzo Cainero (1944–2023): _dirigente sportivo e calciatore italiano (1944-2023)_ — Tavagnacco, Udine — nato o morto in Friuli/Veneto; nato nel 1944: verificare
 - **Della Torre, Giorgio** (voci 466; anni 1493–1499) → [Q88475097](https://www.wikidata.org/wiki/Q88475097) Giorgio Della Torre (?–1512)
   - altri: [Q94939776](https://www.wikidata.org/wiki/Q94939776) Giorgio Della Torre (1607–1688): _botanico, professore, medico (1607-1688)_ [0]
@@ -35,6 +38,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Moretti, Paolo** (voci 3882; anni ?–?) → [Q11802784](https://www.wikidata.org/wiki/Q11802784) Paolo Moretti (1759–1804) — Stoccolma
   - altri: [Q80317088](https://www.wikidata.org/wiki/Q80317088) Paolo Moretti (?–?) [0]; [Q90369638](https://www.wikidata.org/wiki/Q90369638) Paolo Moretti (?–?) [0]; [Q99633482](https://www.wikidata.org/wiki/Q99633482) Paolo Moretti (?–?) [0]; [Q3894290](https://www.wikidata.org/wiki/Q3894290) Paolo Moretti (1970–?): _cestista e allenatore di pallacanestro italiano_ — Arezzo [-0.5]
 - **Moro** (voci 3810; anni ?–?) → [Q102283130](https://www.wikidata.org/wiki/Q102283130) Moro (?–?): _compositore_
+- **Ongaro, Giuseppe** (voci 2582; anni ?–?) → [Q114436176](https://www.wikidata.org/wiki/Q114436176) Giuseppe Ongaro (?–?): _calciatore italiano_
 - **Orsetti, Cristoforo** (voci 2603; anni ?–?) → [Q29156778](https://www.wikidata.org/wiki/Q29156778) Cristoforo Orsetti (1608–1664)
 - **Pace, Fabio** (voci 52; anni ?–?) → [Q94933571](https://www.wikidata.org/wiki/Q94933571) Fabio Pace (1547–1614): _filosofo, medico, autore_
   - altri: [Q95624794](https://www.wikidata.org/wiki/Q95624794) Fabio Pace (?–?): _ricercatore_ [0]
@@ -399,6 +403,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Facchi, Giorgio** (voci 4202; anni 1951–1968) → [Q93268696](https://www.wikidata.org/wiki/Q93268696) Giorgio Facchi (1908–2008) — date compatibili
 - **Facciolati, Giacomo** (voci 44; anni ?–?) → [Q3157640](https://www.wikidata.org/wiki/Q3157640) Jacopo Facciolati (1682–1769): _poeta, scrittore e latinista italiano_ — Torreglia, Padova — nato o morto in Friuli/Veneto
 - **Facen, Jacopo** (voci 33; anni 1841–1841) → [Q61475682](https://www.wikidata.org/wiki/Q61475682) Jacopo Facen (1803–1886): _scienziato (1803-1886)_ — date compatibili
+- **Faidutti, Luigi** (voci 3765; anni 1934–1934) → [Q3839612](https://www.wikidata.org/wiki/Q3839612) Luigi Faidutti (1861–1931): _presbitero e politico italiano_ — San Leonardo, Königsberg — nato o morto in Friuli/Veneto; date compatibili
 - **Faifofer, Aureliano** (voci 3913; anni ?–?) → [Q3629790](https://www.wikidata.org/wiki/Q3629790) Aureliano Faifofer (1843–1909): _matematico italiano (1843–1909)_ — Borgo Valsugana, Venezia — nato o morto in Friuli/Veneto
 - **Fambri, Paulo** (voci 2557; anni 1854–1857) → [Q3898226](https://www.wikidata.org/wiki/Q3898226) Paulo Fambri (1827–1897): _patriota e politico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Fanna, Fedele** (voci 2528; anni 1870–1870) → [Q97066191](https://www.wikidata.org/wiki/Q97066191) Fedele da Fanna (1838–1881) — Fanna, Quaracchi — nato o morto in Friuli/Veneto; date compatibili
@@ -649,7 +654,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Panigai, Bartolomeo** (voci 464; anni 1769–1790) → [Q130544008](https://www.wikidata.org/wiki/Q130544008) Bartolomeo di Panigai (?–?): _gesuita, matematico e geografo italiano_ — Cividale del Friuli — nato o morto in Friuli/Veneto
 - **Panzacchi, Enrico** (voci 3591; anni 1868–1917) → [Q779096](https://www.wikidata.org/wiki/Q779096) Enrico Panzacchi (1840–1904): _poeta, politico, critico d'arte e critico musicale italiano (1840-1904)_ — Ozzano dell'Emilia, Bologna — date compatibili
 - **Paolo III** (voci 619; anni 1536–1536) → [Q133001](https://www.wikidata.org/wiki/Q133001) papa Paolo III (1468–1549): _220° vescovo di Roma e papa della Chiesa cattolica dal 1534 al 1549_ — Latium, Roma — date compatibili
-- **Parravicini, Alessandro** (voci 471, 519; anni 1660–1846) → [Q52158538](https://www.wikidata.org/wiki/Q52158538) Luigi Alessandro Parravicini (1797–1880): _pedagogista italiano (1797-1880)_ — Ispra, Vittorio Veneto — nato o morto in Friuli/Veneto; date compatibili
+- **Parravicini, Luigi Alessandro** (voci 471; anni 1778–1846) → [Q52158538](https://www.wikidata.org/wiki/Q52158538) Luigi Alessandro Parravicini (1797–1880): _pedagogista italiano (1797-1880)_ — Ispra, Vittorio Veneto — nato o morto in Friuli/Veneto; date compatibili
 - **Pascaleo, Alberto** (voci 618; anni 1717–1761) → [Q3608501](https://www.wikidata.org/wiki/Q3608501) Alberto Pasquale (1487–1544): _vescovo cattolico e letterato italiano_ — Udine — nato o morto in Friuli/Veneto
 - **Passionei, Domenico** (voci 78; anni ?–?) → [Q1226897](https://www.wikidata.org/wiki/Q1226897) Domenico Silvio Passionei (1682–1761): _cardinale italiano_ — Fossombrone, Eremo dei Camaldoli
 - **Pastonchi, Francesco** (voci 3591; anni 1868–1917) → [Q3750427](https://www.wikidata.org/wiki/Q3750427) Francesco Pastonchi (1874–1953): _poeta e critico letterario italiano (1874-1953)_ — Riva Ligure, Torino — date compatibili
@@ -866,7 +871,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3047 persone
+## 4. Nessun candidato su Wikidata: 3067 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

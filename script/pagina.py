@@ -67,12 +67,13 @@ button:hover { filter: brightness(.93); }
 .stato { font: bold 19px var(--font-etichette); text-transform: uppercase; color: var(--scuro); margin: 22px 0 4px; }
 .stato::first-letter { color: var(--color1); }
 .forme { font-size: 15px; color: var(--tenue); margin: 0 0 18px; }
-.segnala { margin: 40px 0 10px; padding-top: 18px; border-top: 1px solid var(--linea); }
-.segnala h2 { font-family: var(--font-titoli); font-weight: 600; font-size: 20px; margin: 0 0 6px; }
-.segnala p { font-size: 15px; color: var(--tenue); margin: 0 0 10px; }
-.segnala textarea { width: 100%; box-sizing: border-box; font: inherit; font-size: 16px; padding: 8px; border: 1px solid var(--linea); }
-.segnala-riga { display: flex; align-items: center; gap: 14px; margin-top: 8px; flex-wrap: wrap; }
-.segnala-riga span { font-size: 15px; }
+form.segnala { display: block; margin: 12px 0 0; }
+.segnala label { display: block; margin-bottom: 4px; }
+.segnala-riga { display: flex; gap: 8px; max-width: 640px; }
+.segnala input { flex: 1 1 auto; min-width: 0; font: inherit; font-size: 16px; padding: 5px 8px; border: 1px solid #fff; background: #fff; color: var(--color2); }
+.segnala button, .segnala-riga button { flex: 0 0 auto; width: auto; font: inherit; font-size: 16px; font-weight: bold; padding: 5px 16px;
+  border: 1px solid #fff; background: var(--color2); color: #fff; cursor: pointer; text-transform: none; }
+#segnala-esito { display: block; margin-top: 4px; min-height: 1em; }
 .forme a.forma { font-family: var(--font-testo); background: var(--fascia); padding: 1px 5px; color: inherit; text-decoration: none; cursor: pointer; display: inline-block; margin: 2px 0; }
 .forme a.forma:hover { text-decoration: underline; color: var(--colorHref); }
 .voce { border-top: 1px solid var(--linea); padding: 14px 0 12px; }
@@ -111,14 +112,6 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   <div class="stato" id="stato">Scrivi un nome di persona o di luogo.</div>
   <div class="forme" id="forme"></div>
   <div id="risultati"></div>
-  <section class="segnala" aria-labelledby="segnala-t">
-    <h2 id="segnala-t">Segnala un errore</h2>
-    <p>Hai trovato un nome letto male, una persona confusa con un'altra, un collegamento sbagliato? Scrivilo qui,
-    indicando se puoi il numero della voce. La ricerca in corso viene allegata alla segnalazione.</p>
-    <form id="segnala"><textarea id="segnala-testo" rows="4" maxlength="3000" required
-      placeholder="Es.: voce 621, «Locadello» è Pier Paolo Locatelli"></textarea>
-    <div class="segnala-riga"><button>Invia</button><span id="segnala-esito" role="status"></span></div></form>
-  </section>
   </div>
 </div></div></div>
 <footer><div class="container">
@@ -130,6 +123,10 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
   grafie diverse dello stesso nome: non identifica una persona, e omonimi compaiono insieme.
   I collegamenti alle schede sono proposti in base al nome e agli anni citati nella voce e <b>possono riferirsi a un omonimo</b>:
   quando più schede sono compatibili, sono indicate tutte, con le date, e la scelta spetta al lettore.
+  <form id="segnala" class="segnala"><label for="segnala-testo">Hai trovato un errore? Segnalalo:</label>
+  <span class="segnala-riga"><input id="segnala-testo" type="text" maxlength="2000" required
+    placeholder="voce e nome da correggere"><button>Invia</button></span>
+  <span id="segnala-esito" role="status"></span></form>
   <p style="margin:12px 0 0">Trascrizione dall'inventario manoscritto a cura di Gregorio Grasselli · indice del __DATA__.</p>
 </div></footer>
 <script>
