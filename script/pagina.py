@@ -323,39 +323,37 @@ if (location.hash.length > 1) { q.value = decodeURIComponent(location.hash.slice
 """
 
 
-# Variante «terminale anni '80»: stessa pagina, stessi dati, solo un altro vestito (schermo nero,
-# fosfori verdi, carattere a matrice di punti). Si aggiunge in coda allo stile originale.
+# Variante semplice per la consultazione privata: tema scuro sobrio, carattere di sistema senza grazie,
+# una colonna, nessun richiamo allo stile di Teche Udine. Si aggiunge in coda allo stile originale.
 RETRO = """
-<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
 <style>
-:root, :root * { --color1: #33ff66; --colorHref: #7dff9a; --color2: #000; --color3: #000; --color4: #33ff66;
-  --sfondo: #000; --carta: #000; --fascia: #031a08; --testo: #33ff66; --scuro: #66ff88; --tenue: #1fa843;
-  --linea: #145c25; --accento: #9dffb3; --evidenza: #33ff66;
-  --font-testo: "VT323", "Courier New", monospace; --font-titoli: "VT323", "Courier New", monospace;
-  --font-etichette: "VT323", "Courier New", monospace; }
-html { color-scheme: dark; background: #000; }
-body { background: #000; color: #33ff66; font-size: 22px; line-height: 1.3; text-shadow: 0 0 2px rgba(51,255,102,.35); }
-b, strong, h2, .esempi a, summary { color: #2ee05c; text-shadow: none; }
-h1.page-title { font-size: 46px; letter-spacing: 2px; text-transform: uppercase; }
-h1.page-title::after { content: "_"; animation: lampeggia 1s steps(1) infinite; }
-@keyframes lampeggia { 50% { opacity: 0; } }
+:root, :root * { --color1: #8ab4f8; --colorHref: #8ab4f8; --color2: #e6e6e6; --color3: #e6e6e6; --color4: #d0d0d0;
+  --sfondo: #1c1c1e; --carta: #1c1c1e; --fascia: #2a2a2d; --testo: #d0d0d0; --scuro: #e6e6e6; --tenue: #9a9a9e;
+  --linea: #3a3a3e; --accento: #8ab4f8; --evidenza: #4a4426;
+  --font-testo: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-titoli: var(--font-testo); --font-etichette: var(--font-testo); }
+html { color-scheme: dark; background: #1c1c1e; }
+body { background: #1c1c1e; color: #d0d0d0; font-size: 17px; line-height: 1.55; }
 .column-1 { display: none; }
-.column-2 { width: 100%; max-width: 960px; margin: 0 auto; padding-left: 0; }
-input[type=search], .segnala input { background: #000; color: #33ff66; border: 1px solid #33ff66; caret-color: #33ff66;
-  font-family: "VT323", monospace; font-size: 24px; }
-input[type=search]::placeholder, .segnala input::placeholder { color: #1fa843; opacity: 1; }
-button, .segnala button, .segnala-riga button { background: #000; color: #33ff66; border: 1px solid #33ff66;
-  font-family: "VT323", monospace; font-size: 24px; text-shadow: inherit; }
-button:hover { background: #33ff66; color: #000; filter: none; }
-mark { background: #33ff66; color: #000; text-shadow: none; }
-.avviso { background: #031a08; color: #66ff88; border-left-color: #33ff66; }
-.forme a.forma { background: #031a08; color: #33ff66; }
-article.voce { border-color: #145c25; }
-footer { background: #000; color: #33ff66; border-top: 1px dashed #33ff66; }
-footer a { color: #9dffb3; }
-input[type=checkbox] { accent-color: #33ff66; }
-.lavori { display: inline-block; margin: 12px 0 0; padding: 2px 10px; border: 1px solid #33ff66; color: #000;
-  background: #33ff66; text-shadow: none; letter-spacing: 3px; font-size: 22px; }
+.column-2 { width: 100%; max-width: 860px; margin: 0 auto; padding-left: 0; }
+h1.page-title { font-size: 32px; font-weight: 600; color: #e6e6e6; }
+.sottotitolo { font-style: normal; color: #9a9a9e; }
+input[type=search], .segnala input { background: #2a2a2d; color: #e6e6e6; border: 1px solid #4a4a4e; font: 17px var(--font-testo); }
+input[type=search]::placeholder, .segnala input::placeholder { color: #8a8a8e; opacity: 1; }
+input[type=search]:focus { outline: 2px solid #8ab4f8; }
+button, .segnala button, .segnala-riga button { background: #3a3a3e; color: #e6e6e6; border: 1px solid #4a4a4e;
+  font: 600 16px var(--font-testo); text-transform: none; }
+button:hover { background: #4a4a4e; filter: none; }
+mark { background: #4a4426; color: #f0e6b0; }
+h2, b, strong, summary { color: #e6e6e6; font-family: var(--font-testo); }
+.avviso { background: #2a2a2d; color: #c8c8cc; border-left-color: #8ab4f8; }
+.lavori { display: inline-block; margin: 10px 0 0; padding: 1px 8px; border: 1px solid #6a6a6e; border-radius: 3px;
+  color: #c8c8cc; font-size: 13px; letter-spacing: 1px; }
+.forme a.forma { background: #2a2a2d; color: #d0d0d0; }
+article.voce { border-color: #3a3a3e; }
+footer { background: #151517; color: #b0b0b4; border-top: 1px solid #3a3a3e; }
+footer a { color: #8ab4f8; }
+input[type=checkbox] { accent-color: #8ab4f8; }
 </style>
 """
 
@@ -370,7 +368,7 @@ def main():
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
     PAGES.write_text(html, encoding="utf-8")
-    retro = RADICE / "web" / "retro" / "index.html"          # variante «terminale anni '80»
+    retro = RADICE / "web" / "retro" / "index.html"          # variante semplice, tema scuro
     retro.parent.mkdir(exist_ok=True)
     retro.write_text(html.replace("</head>", RETRO + "</head>", 1)
                      .replace('<p class="avviso">', '<p class="lavori">LAVORI IN CORSO</p>\n  <p class="avviso">', 1),
