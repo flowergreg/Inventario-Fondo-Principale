@@ -1,13 +1,13 @@
 # Fase 5 — Persone: collegamento a Wikidata (VIAF, SBN, DBI)
 
-Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
+Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
 
 | Affidabilità | Persone |
 |---|---|
 | alta | 748 |
 | media | 35 |
 | bassa | 31 |
-| nessuna | 3066 |
+| nessuna | 3063 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -142,7 +142,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Amalteo, Ascanio** (voci 568; anni 1578–1587) → [Q114890087](https://www.wikidata.org/wiki/Q114890087) Ascanio Amalteo (1630–1691): _precettore e poeta_ — Venezia — nato o morto in Friuli/Veneto
 - **Amalteo, Francesco** (voci 468; anni 1517–1568) → [Q114890147](https://www.wikidata.org/wiki/Q114890147) Francesco Amalteo (1480–1554): _rettore di scuola_ — Pordenone — confermato dal contesto
 - **Amalteo, Girolamo** (voci 102, 287; anni ?–?) → [Q21543475](https://www.wikidata.org/wiki/Q21543475) Girolamo Amalteo (1506–1574): _medico, letterato e poeta italiano_ — Oderzo — nato o morto in Friuli/Veneto
-- **Amaseo, Gregorio** (voci 540, 561, 683, 684; anni 1511–1827) → [Q3776488](https://www.wikidata.org/wiki/Q3776488) Gregorio Amaseo (1464–1541): _umanista italiano_ — Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Amaseo, Gregorio** (voci 540, 561, 683, 684; anni 1273–1827) → [Q3776488](https://www.wikidata.org/wiki/Q3776488) Gregorio Amaseo (1464–1541): _umanista italiano_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Anassillide, Aglaja** (voci 339, 2526; anni ?–?) → [Q3616786](https://www.wikidata.org/wiki/Q3616786) Angela Veronese (1778–1847): _poetessa italiana_ — Montebelluna, Padova — nato o morto in Friuli/Veneto
 - **Andreuzzi, Antonio** (voci 3932, 3932-b; anni 1864–1864) → [Q3619181](https://www.wikidata.org/wiki/Q3619181) Antonio Andreuzzi (1804–1874): _patriota italiano (1804-1874)_ — Meduno, San Daniele del Friuli — nato o morto in Friuli/Veneto; date compatibili
 - **Anfossi, Pasquale** (voci 3388 A; anni ?–?) → [Q266985](https://www.wikidata.org/wiki/Q266985) Pasquale Anfossi (1727–1797): _compositore e violinista italiano_ — Taggia, Roma
@@ -186,7 +186,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Belgrado, Jacopo** (voci 875, 1375; anni 1688–1854) → [Q3805845](https://www.wikidata.org/wiki/Q3805845) Jacopo Belgrado (1704–1789): _matematico, fisico e astronomo e gesuita italiano_ — fase 6, blocco 4: ab. Jacopo Belgrado, gesuita (1704-1789): compatibile
 - **Belli, Gioacchino** (voci 4189; anni 1943–1943) → [Q2080788](https://www.wikidata.org/wiki/Q2080788) Giuseppe Gioachino Belli (1791–1863): _poeta italiano_ — Roma
 - **Belli, Marco** (voci 2634/3, 2634/3 bis; anni ?–?) → [Q3845931](https://www.wikidata.org/wiki/Q3845931) Marco Belli (1857–1929): _sacerdote e letterato italiano_ — Portogruaro — nato o morto in Friuli/Veneto
-- **Belloni, Antonio** (voci 43, 373, 561, 565; anni 1273–1880) → [Q16527382](https://www.wikidata.org/wiki/Q16527382) Antonio Belloni (1479–1554): _notaio e storico italiano_ — Udine — il notaio e cronista udinese
+- **Belloni, Antonio** (voci 43, 373, 522, 561; anni 1252–1880) → [Q16527382](https://www.wikidata.org/wiki/Q16527382) Antonio Belloni (1479–1554): _notaio e storico italiano_ — Udine — il notaio e cronista udinese
 - **Bellonus, Antonius** (voci 566, 683; anni 1511–1596) → [Q16527382](https://www.wikidata.org/wiki/Q16527382) Antonio Belloni (1479–1554): _notaio e storico italiano_ — Udine — il cronista udinese Antonio Belloni
 - **Beltrame, Pietro** (voci 2706; anni ?–?) → [Q56000291](https://www.wikidata.org/wiki/Q56000291) Pietro Beltrame (?–?) — Venezia — nato o morto in Friuli/Veneto
 - **Benedetti, Antonio** (voci 480; anni 1737–1754) → [Q21543487](https://www.wikidata.org/wiki/Q21543487) Antonio Benedetti (1715–1788): _filologo e numismatico italiano (1715-1788)_ — Fermo — confermato dal contesto
@@ -341,7 +341,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Cornaro, Giovanni** (voci 23, 480, 3790; anni 1674–1803) → [Q323395](https://www.wikidata.org/wiki/Q323395) Giovanni Cornaro (1720–1789): _cardinale italiano_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Cornelio, Flaminio** (voci 619; anni 1764–1764) → [Q3746370](https://www.wikidata.org/wiki/Q3746370) Flaminio Corner (1693–1778): _storico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Corradi, Alfonso** (voci 487; anni 1838–1862) → [Q1503496](https://www.wikidata.org/wiki/Q1503496) Alfonso Corradi (1833–1892): _patologo e farmacologo italiano (1833-1892)_ — Bologna, Pavia — confermato dal contesto
-- **Cortenovis, Angelo Maria** (voci 20, 470, 569, 570; anni 1609–1801) → [Q55875425](https://www.wikidata.org/wiki/Q55875425) Angelo Maria Cortenovis (1727–1801): _barnabita e archeologo italiano (1727-1801)_ — Bergamo, Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Cortenovis, Angelo Maria** (voci 20, 470, 569, 570; anni 1557–1862) → [Q55875425](https://www.wikidata.org/wiki/Q55875425) Angelo Maria Cortenovis (1727–1801): _barnabita e archeologo italiano (1727-1801)_ — Bergamo, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Cortenovis, Girolamo** (voci 470, 593; anni 1721–1800) → [Q18945472](https://www.wikidata.org/wiki/Q18945472) Girolamo Cortinovis (1701–1800): _matematico italiano (XVIII secolo)_ — date compatibili
 - **Cortenovis, Marcello** (voci 593; anni 1752–1800) → [Q69437580](https://www.wikidata.org/wiki/Q69437580) Marcello Cortenovis (1731–1798) — date compatibili
 - **Cortona, Giovanni Antonio** (voci 3714; anni ?–?) → [Q103842857](https://www.wikidata.org/wiki/Q103842857) Giovanni Antonio da Cortona (?–1560): _pittore italiano_ — Udine — nato o morto in Friuli/Veneto
@@ -390,7 +390,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Dotti, Bartolomeo** (voci 2506; anni ?–?) → [Q3635364](https://www.wikidata.org/wiki/Q3635364) Bartolomeo Dotti (1651–1713): _poeta italiano_ — Brescia, Venezia — nato o morto in Friuli/Veneto
 - **Dragoni, Antonio** (voci 1199, 1655; anni 1616–1660) → [Q18945038](https://www.wikidata.org/wiki/Q18945038) Antonio Dragoni (1778–1860): _sacerdote e storico italiano (1778-1860)_ — Piacenza — confermato dal contesto
 - **Dugoni, Antonio** (voci 3913; anni ?–?) → [Q10728662](https://www.wikidata.org/wiki/Q10728662) Antonio Dugoni (1827–1874): _pittore italiano del XIX secolo_ — Cividale del Friuli — nato o morto in Friuli/Veneto
-- **Duodo, Francesco** (voci 479; anni 1797–1797) → [Q3749936](https://www.wikidata.org/wiki/Q3749936) Francesco Duodo (1518–1592): _ammiraglio italiano_ — Venezia — nato o morto in Friuli/Veneto
+- **Duodo, Francesco** (voci 479, 1084; anni 1797–1797) → [Q3749936](https://www.wikidata.org/wiki/Q3749936) Francesco Duodo (1518–1592): _ammiraglio italiano_ — Venezia — nato o morto in Friuli/Veneto
 - **Duodo, Pietro** (voci 686, 1143, 1144, 2682; anni 1797–1827) → [Q11816875](https://www.wikidata.org/wiki/Q11816875) Pietro Duodo (1554–1610): _letterato e diplomatico veneziano (1554 – 1610)_ — Venezia — nato o morto in Friuli/Veneto
 - **Ellero, Giuseppe** (voci 3913; anni ?–?) → [Q55227235](https://www.wikidata.org/wiki/Q55227235) Giuseppe Ellero (1866–1925): _sacerdote e scrittore italiano (1866-1925)_ — Tricesimo, Udine — il sacerdote e scrittore di Tricesimo
 - **Ellero, Pietro** (voci 404, 3591; anni 1837–1930) → [Q3903853](https://www.wikidata.org/wiki/Q3903853) Pietro Ellero (1833–1933): _giurista italiano (1833-1933)_ — Pordenone, Roma — nato o morto in Friuli/Veneto; date compatibili
@@ -493,7 +493,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Graziani, Antonio Maria** (voci 619; anni 1712–1712) → [Q55228464](https://www.wikidata.org/wiki/Q55228464) Antonio Maria Graziani (1537–1611): _vescovo e storico italiano (1537-1611)_ — Sansepolcro, Amelia — confermato dal contesto
 - **Graziani, Erasmo** (voci 102, 1091; anni 1609–1609) → [Q39805801](https://www.wikidata.org/wiki/Q39805801) Erasmo Graziani (1527–1609): _giureconsulto friulano_ — date compatibili
 - **Graziani, Giuseppe** (voci 340; anni ?–?) → [Q95147409](https://www.wikidata.org/wiki/Q95147409) Giuseppe Graziani (1699–?): _pittore italiano del XVIII secolo_ — Centrale, Bassano del Grappa — nato o morto in Friuli/Veneto
-- **Greati, Giuseppe** (voci 80, 249, 338, 875; anni ?–?) → [Q110163643](https://www.wikidata.org/wiki/Q110163643) Giuseppe Greatti (1758–1812): _abate e politico italiano (1758-1812)_ — San Vito al Tagliamento — nato o morto in Friuli/Veneto
+- **Greati, Giuseppe** (voci 80, 249, 338, 466; anni 1797–1797) → [Q110163643](https://www.wikidata.org/wiki/Q110163643) Giuseppe Greatti (1758–1812): _abate e politico italiano (1758-1812)_ — San Vito al Tagliamento — nato o morto in Friuli/Veneto; date compatibili
 - **Gregorio XII** (voci 1550, 1552; anni ?–?) → [Q227694](https://www.wikidata.org/wiki/Q227694) papa Gregorio XII (1335–1417): _205° vescovo di Roma e papa della Chiesa cattolica dal 1406 al 1415_ — Venezia, Recanati — nato o morto in Friuli/Veneto
 - **Grigoletti, Michelangelo** (voci 2418; anni ?–?) → [Q842033](https://www.wikidata.org/wiki/Q842033) Michelangelo Grigoletti (1801–1870): _pittore italiano_ — Pordenone, Venezia — nato o morto in Friuli/Veneto
 - **Grimani, Antonio** (voci 1088; anni 1521–1521) → [Q602332](https://www.wikidata.org/wiki/Q602332) Antonio Grimani (1435–1523): _doge della Repubblica di Venezia dal 1521 al 1523_ — Venezia — confermato dal contesto
@@ -877,7 +877,7 @@ Verifica del 2026-11-08. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3066 persone
+## 4. Nessun candidato su Wikidata: 3063 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

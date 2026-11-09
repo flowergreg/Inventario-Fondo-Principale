@@ -1,6 +1,6 @@
 # Fase 5 — Luoghi: collegamento a GeoNames e Wikidata
 
-Verifica del 2026-11-08. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
+Verifica del 2026-11-09. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
 
 | Affidabilità | Luoghi |
 |---|---|
