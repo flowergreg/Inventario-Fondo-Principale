@@ -354,6 +354,8 @@ article.voce { border-color: #145c25; }
 footer { background: #000; color: #33ff66; border-top: 1px dashed #33ff66; }
 footer a { color: #9dffb3; }
 input[type=checkbox] { accent-color: #33ff66; }
+.lavori { display: inline-block; margin: 12px 0 0; padding: 2px 10px; border: 1px solid #33ff66; color: #000;
+  background: #33ff66; text-shadow: none; letter-spacing: 3px; font-size: 22px; }
 </style>
 """
 
@@ -370,7 +372,9 @@ def main():
     PAGES.write_text(html, encoding="utf-8")
     retro = RADICE / "web" / "retro" / "index.html"          # variante «terminale anni '80»
     retro.parent.mkdir(exist_ok=True)
-    retro.write_text(html.replace("</head>", RETRO + "</head>", 1), encoding="utf-8")
+    retro.write_text(html.replace("</head>", RETRO + "</head>", 1)
+                     .replace('<p class="avviso">', '<p class="lavori">LAVORI IN CORSO</p>\n  <p class="avviso">', 1),
+                     encoding="utf-8")
     print(f"Pagina scritta in {OUT} ({OUT.stat().st_size // 1024} KB)")
 
 
