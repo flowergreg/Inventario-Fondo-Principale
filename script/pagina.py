@@ -334,13 +334,13 @@ RETRO = """
   --font-testo: "VT323", "Courier New", monospace; --font-titoli: "VT323", "Courier New", monospace;
   --font-etichette: "VT323", "Courier New", monospace; }
 html { color-scheme: dark; background: #000; }
-body { background: #000; color: #33ff66; font-size: 22px; line-height: 1.3; text-shadow: 0 0 4px rgba(51,255,102,.55); }
-body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 9;
-  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.28) 2px 3px); }
+body { background: #000; color: #33ff66; font-size: 22px; line-height: 1.3; text-shadow: 0 0 2px rgba(51,255,102,.35); }
+b, strong, h2, .esempi a, summary { color: #2ee05c; text-shadow: none; }
 h1.page-title { font-size: 46px; letter-spacing: 2px; text-transform: uppercase; }
 h1.page-title::after { content: "_"; animation: lampeggia 1s steps(1) infinite; }
 @keyframes lampeggia { 50% { opacity: 0; } }
-.column-1 .section { background: transparent; color: #33ff66; border: 1px solid #33ff66; font-style: normal; }
+.column-1 { display: none; }
+.column-2 { width: 100%; max-width: 960px; margin: 0 auto; padding-left: 0; }
 input[type=search], .segnala input { background: #000; color: #33ff66; border: 1px solid #33ff66; caret-color: #33ff66;
   font-family: "VT323", monospace; font-size: 24px; }
 input[type=search]::placeholder, .segnala input::placeholder { color: #1fa843; opacity: 1; }
