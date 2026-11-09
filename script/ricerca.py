@@ -157,7 +157,14 @@ def costruisci_indice(db=DB):
         ev_t = (testo or "")[a:b]
         if ev_t and ev_t in forma:
             ristrette[eid][forma] = ev_t
-    for eid, forma in con.execute("SELECT entita, forma FROM varianti"):
+    # forme del testo che nominano più persone («Carlomagno di Pr. Antonini»): non valgono come varianti
+    # di ciascuna, altrimenti «Antonini» troverebbe Carlo Magno
+    multiple = {t for (t,) in con.execute(
+        "SELECT m.testo_esatto FROM menzioni m JOIN menzioni_entita x ON x.menzione = m.id "
+        "GROUP BY m.id HAVING COUNT(DISTINCT x.entita) > 1")}
+    for eid, forma, origine in con.execute("SELECT entita, forma, origine FROM varianti"):
+        if origine == "testo" and forma in multiple:
+            continue
         forma = ristrette.get(eid, {}).get(forma, forma)
         if re.search(r"\s(?:e|ed)\s", forma) and entita[stato_id[eid]]["t"] == "persona":
             continue           # «Girolamo e Lorenzo Carboni»: più persone, la variante confonderebbe i nomi

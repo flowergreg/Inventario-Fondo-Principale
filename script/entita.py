@@ -367,7 +367,8 @@ def scomponi_manuale(testo, lex, titoli):
         # «Maria Vittoria»: valgono tutte le parole indicate dal curatore, anche se il lessico ne
         # legge una come luogo
         nomi, vis_n = [(normalizza(x),) for x in parole_sx], parole_sx
-    if cogn and not nomi:                       # il curatore indica come nomi parole non riconosciute
+    if (cogn or sx) and not nomi and not iniziali:   # il curatore indica come nomi parole non riconosciute
+                                                    # («Vittoria», che il lessico dà per parola comune)
         nomi, vis_n = [(normalizza(x),) for x in sx.split()], sx.split()
     # «Berlingero /»: persona nota solo per nome; la particella non entra nella chiave
     chiave = " ".join(x for x in normalizza(dx).split() if x not in ("di", "de", "da", "d")) if dx else ""

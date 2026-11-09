@@ -4,14 +4,15 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 750 |
-| media | 35 |
-| bassa | 31 |
-| nessuna | 3069 |
+| alta | 752 |
+| media | 37 |
+| bassa | 32 |
+| nessuna | 3073 |
 
 ## 1. Affidabilità media: da verificare
 
 - **Aloi, Francesco** (voci 15; anni 1679–1679) → [Q92502584](https://www.wikidata.org/wiki/Q92502584) Francesco Aloi (?–?)
+- **Antonini, Adriano** (voci ; anni ?–?) → [Q132228586](https://www.wikidata.org/wiki/Q132228586) Adriano Antonini (1934–?) — Lucerna — nato nel 1934: verificare
 - **Bach** (voci 3408, 3409, 3467, 3468; anni ?–?) → [Q1861386](https://www.wikidata.org/wiki/Q1861386) Bach (1882–1953) — Fontanil-Cornillon, Nogent-le-Rotrou
   - altri: [Q6828338](https://www.wikidata.org/wiki/Q6828338) Michael Bach (1808–1878): _entomologo, botanico_ — Boppard [0]
 - **Bianchini, Giacomo** (voci 3854, 3855, 3856; anni ?–?) → [Q20481812](https://www.wikidata.org/wiki/Q20481812) Giacomo Bianchini (1875–1954): _esperantista e sacerdote italiano_
@@ -54,6 +55,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Rossetti** (voci 2159; anni 1750–1750) → [Q21607432](https://www.wikidata.org/wiki/Q21607432)  (1866–?)
 - **Sassonia, Maria Amalia** (voci 714; anni 1716–1756) → [Q169512](https://www.wikidata.org/wiki/Q169512) Maria Amalia di Sassonia (1724–1760): _regina consorte di Napoli, Sicilia e Spagna_ — Dresda, Madrid — date compatibili
   - altri: [Q69929](https://www.wikidata.org/wiki/Q69929) Maria Amalia di Sassonia (1794–1870): _principessa di Sassonia, compositrice e drammaturga tedesca_ — Dresda, Pillnitz [0]; [Q325897](https://www.wikidata.org/wiki/Q325897) Maria Amalia di Sassonia (1757–1831) — Dresda, Neuburg an der Donau [0]
+- **Scala, Giovanni** (voci 824; anni 1518–1836) → [Q41618086](https://www.wikidata.org/wiki/Q41618086) Giovanni Scala (?–?): _fl. 1547-1599_
 - **Stella, Francesco Maria** (voci 94; anni 1671–1671) → [Q131684534](https://www.wikidata.org/wiki/Q131684534) Francesco Maria Stella (1745–1800): _1745-1800_
 - **Strassoldo, Panfilo** (voci 619; anni 1536–1536) → [Q68911661](https://www.wikidata.org/wiki/Q68911661) Panfilo Strassoldo (?–1545): _arcivescovo cattolico_
 - **Suzzi, Celestino** (voci 334, 335; anni ?–?) → [Q112316093](https://www.wikidata.org/wiki/Q112316093) Celestino Suzzi (1815–1883)
@@ -99,8 +101,10 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q3619864](https://www.wikidata.org/wiki/Q3619864) Antonio Mattioli (1940–?): _calciatore italiano_ — Roma [-3]
 - **Merlo, Giorgio** (voci 102; anni 1551–1551)
   - altri: [Q3765595](https://www.wikidata.org/wiki/Q3765595) Giorgio Merlo (1960–?): _politico italiano_ — Cavour [-3]
-- **Nicoletti, Antonio** (voci 492; anni 1828–1835)
+- **Nicoletti, Antonio** (voci 492, 1838; anni 1754–1835)
   - altri: [Q134839441](https://www.wikidata.org/wiki/Q134839441) Antonio Nicoletti (1974–?): _politico italiano (1974-)_ — Bari [-3]
+- **Nicoletti, Michele** (voci 606, 1838, 1849; anni 1560–1754)
+  - altri: [Q5561197](https://www.wikidata.org/wiki/Q5561197) Michele Nicoletti (1956–?): _politico e filosofo italiano (1956-)_ — Trento [-3]; [Q102169287](https://www.wikidata.org/wiki/Q102169287) Michele Nicoletti (1977–?): _calciatore italiano_ — Inverigo [-3]
 - **Pace** (voci 2450; anni 1649–1649)
   - altri: [Q21522499](https://www.wikidata.org/wiki/Q21522499) Loretta Pace (1961–?) [-3]
 - **Pace, Giovanni** (voci 764; anni 1386–1386)
@@ -128,6 +132,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 ## 3. Affidabilità alta
 
+- **Accoramboni, Vittoria** (voci 1018; anni ?–?) → [Q379412](https://www.wikidata.org/wiki/Q379412) Vittoria Accoramboni (1557–1585): _nobile italiana_ — curatore: Vittoria Accoramboni (1557-1585), verificato
 - **Acerbi, Giovanni** (voci 2557, 3968; anni 1852–1861) → [Q3106981](https://www.wikidata.org/wiki/Q3106981) Giovanni Acerbi (1825–1869): _nobile, militare, patriota e politico italiano (1825-1869)_ — Castel Goffredo, Firenze — date compatibili
 - **Alberto Magno** (voci 2097; anni ?–?) → [Q60059](https://www.wikidata.org/wiki/Q60059) Alberto Magno (1200–1280): _vescovo cattolico, religioso e santo tedesco_ — Lauingen, Colonia
 - **Albrizzi, Almorò** (voci 753; anni 1743–1743) → [Q55225031](https://www.wikidata.org/wiki/Q55225031) Almorò Albrizzi (1695–1764): _stampatore italiano (1695-1764)_ — Venezia, Forlì — nato o morto in Friuli/Veneto; date compatibili
@@ -149,7 +154,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Angeli, Angelo** (voci 510, 2695; anni 1821–1929) → [Q2327324](https://www.wikidata.org/wiki/Q2327324) Angelo Angeli (1864–1931): _chimico italiano_ — Tarcento, Firenze — nato o morto in Friuli/Veneto; date compatibili
 - **Antivari, Pietro Antonio** (voci 2134; anni ?–?) → [Q64760410](https://www.wikidata.org/wiki/Q64760410) Pietro Antonio Antivari (1830–1899): _vescovo cattolico_ — confermato dal contesto
 - **Antonini, Carlo** (voci 563; anni 1837–1837) → [Q49742981](https://www.wikidata.org/wiki/Q49742981) Carlo Antonini (1740–1836): _incisore italiano (1740 circa-1836 circa)_ — Roma — confermato dal contesto
-- **Antonini, Prospero** (voci 491, 496, 507, 563; anni 1699–1883) → [Q3750504](https://www.wikidata.org/wiki/Q3750504) Francesco Prospero Antonini (1809–1884): _storico e patriota italiano_ — fase 6, blocco 4: senatore, lettere 1858-1869: date compatibili
+- **Antonini, Prospero** (voci 491, 496, 507, 563; anni 1545–1883) → [Q3750504](https://www.wikidata.org/wiki/Q3750504) Francesco Prospero Antonini (1809–1884): _storico e patriota italiano_ — fase 6, blocco 4: senatore, lettere 1858-1869: date compatibili
 - **Antonioli, Fausto** (voci 3806, 3807, 3808; anni ?–?) → [Q3740336](https://www.wikidata.org/wiki/Q3740336) Fausto Antonioli (1814–1882): _pittore italiano_ — Bergamo, Udine — nato o morto in Friuli/Veneto
 - **Aprilis, Bartolomeo** (voci 492, 511, 875; anni 1786–1834) → [Q61472277](https://www.wikidata.org/wiki/Q61472277) Bartolomeo Aprilis (1783–1841): _medico e scrittore (1783-1841)_ — Bannia — nato o morto in Friuli/Veneto; date compatibili
 - **Ardigò, Roberto** (voci 2134; anni ?–?) → [Q1803058](https://www.wikidata.org/wiki/Q1803058) Roberto Ardigò (1828–1920): _psicologo, filosofo e pedagogista italiano (1828-1920)_ — Casteldidone, Mantova
@@ -325,6 +330,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Colloredo, Fabio** (voci 639, 819, 2559; anni 1739–1886) → [Q3737885](https://www.wikidata.org/wiki/Q3737885) Fabio di Colloredo (1672–1742): _arcivescovo cattolico italiano_ — Colloredo di Monte Albano, Lucca — nato o morto in Friuli/Veneto; date compatibili
 - **Colloredo, Leandro** (voci 606; anni 1629–1686) → [Q3228648](https://www.wikidata.org/wiki/Q3228648) Leandro Colloredo (1639–1709): _cardinale italiano_ — Colloredo di Monte Albano, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Colloredo, Marzio** (voci 616; anni 1559–1640) → [Q109860245](https://www.wikidata.org/wiki/Q109860245) Marzio Colloredo (1530–1591): _soldato, diplomatico_ — Siena — date compatibili
+- **Colonna, Vittoria** (voci 47, 639; anni ?–?) → [Q255368](https://www.wikidata.org/wiki/Q255368) Vittoria Colonna (1492–1547): _poetessa e nobildonna italiana_ — curatore: Vittoria Colonna (1492-1547), verificato
 - **Comelli, Francesco** (voci 518, 606; anni 1694–1727) → [Q111901732](https://www.wikidata.org/wiki/Q111901732) Francesco Antonio Comelli (1753–1823): _organaro italiano (1753-1823)_ — Nimis, Udine — nato o morto in Friuli/Veneto
 - **Comelli, Giovanni** (voci 4518; anni ?–?) → [Q104675833](https://www.wikidata.org/wiki/Q104675833) Giovanni Comelli (1913–2015): _bibliotecario e bibliografo italiano (1913-2015)_ — Nimis, Tarcento — nato o morto in Friuli/Veneto
 - **Comencini, Francesco** (voci 3155, 3156, 3719; anni 1843–1931) → [Q55680969](https://www.wikidata.org/wiki/Q55680969) Franz Comencini (1792–1864) — Mantova, Udine — nato o morto in Friuli/Veneto; date compatibili
@@ -426,8 +432,8 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Filicaia, Vincenzo** (voci 23; anni 1724–1724) → [Q2252971](https://www.wikidata.org/wiki/Q2252971) Vincenzo da Filicaja (1642–1707): _poeta italiano_ — Firenze
 - **Filippi, Filippo** (voci 2557; anni 1856–1857) → [Q621087](https://www.wikidata.org/wiki/Q621087) Filippo Filippi (1830–1887): _critico musicale e compositore italiano_ — Vicenza, Milano — nato o morto in Friuli/Veneto; date compatibili
 - **Fistulario, Paolo** (voci 346, 353, 389, 464; anni 1656–1834) → [Q129677081](https://www.wikidata.org/wiki/Q129677081) Paolo Fistulario (1703–1779): _politico e storico locale italiano (1703-1779)_ — fase 6, blocco 4: Paolo Fistulario, Udine (1703-1779)
-- **Florio, Daniele** (voci 23, 91, 173, 195; anni 1700–1928) → [Q55227681](https://www.wikidata.org/wiki/Q55227681) Daniele Florio (1710–1789): _erudito e poeta italiano_ — fase 6, blocco 4: Daniele Florio, Udine (1710-1789)
-- **Florio, Francesco** (voci 464, 470, 477, 485; anni 1616–1800) → [Q41528964](https://www.wikidata.org/wiki/Q41528964) Francesco Florio (1705–1792): _sacerdote, giurista e letterato italiano (1705-1792)_ — fase 6, blocco 4: mons. Francesco Florio, Udine 1767
+- **Florio, Daniele** (voci 23, 91, 157, 173; anni 1700–1928) → [Q55227681](https://www.wikidata.org/wiki/Q55227681) Daniele Florio (1710–1789): _erudito e poeta italiano_ — fase 6, blocco 4: Daniele Florio, Udine (1710-1789)
+- **Florio, Francesco** (voci 464, 470, 477, 485; anni 1433–1854) → [Q41528964](https://www.wikidata.org/wiki/Q41528964) Francesco Florio (1705–1792): _sacerdote, giurista e letterato italiano (1705-1792)_ — fase 6, blocco 4: mons. Francesco Florio, Udine 1767
 - **Folena, Gianfranco** (voci 4214; anni 1968–1968) → [Q1350256](https://www.wikidata.org/wiki/Q1350256) Gianfranco Folena (1920–1992): _linguista e filologo italiano (1920-1992)_ — Savigliano, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Fontanini, Giusto** (voci 107, 141, 395, 470; anni 1693–1799) → [Q3108184](https://www.wikidata.org/wiki/Q3108184) Giusto Fontanini (1666–1736): _storico, archeologo, arcivescovo cattolico italiano (1666-1736)_ — San Daniele del Friuli, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Foramiti, Francesco** (voci 487; anni 1833–1858) → [Q41569512](https://www.wikidata.org/wiki/Q41569512) Francesco Foramiti (1760–1843): _giurista italiano (1760-1843)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
@@ -437,7 +443,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Foscolo, Ugo** (voci 291, 2510; anni 1797–1821) → [Q166234](https://www.wikidata.org/wiki/Q166234) Ugo Foscolo (1778–1827): _poeta, scrittore, drammaturgo, traduttore e critico letterario italiano (1778-1827)_ — Zante, Turnham Green — date compatibili
 - **Fracassetti, Giuseppe** (voci 471; anni 1834–1859) → [Q45835145](https://www.wikidata.org/wiki/Q45835145) Giuseppe Fracassetti (1802–1883): _letterato e avvocato italiano_ — Fermo — date compatibili
 - **Francesco II** (voci 2626; anni 1938–1938) → [Q206223](https://www.wikidata.org/wiki/Q206223) Francesco II delle Due Sicilie (1836–1894): _ultimo re delle Due Sicilie (1836-1894; r. 1859-1861)_ — Napoli, Arco
-- **Frangipane, Cornelio** (voci 102, 339, 405, 423; anni 1542–1836) → [Q93071198](https://www.wikidata.org/wiki/Q93071198) Cornelio Frangipane (1508–1588): _avvocato italiano_ — Tarcento — nato o morto in Friuli/Veneto; date compatibili
+- **Frangipane, Cornelio** (voci 102, 339, 405, 423; anni 1291–1836) → [Q93071198](https://www.wikidata.org/wiki/Q93071198) Cornelio Frangipane (1508–1588): _avvocato italiano_ — Tarcento — nato o morto in Friuli/Veneto; date compatibili
 - **Frangipane, Nicolò** (voci 2641; anni 1854–1909) → [Q64733154](https://www.wikidata.org/wiki/Q64733154) Nicolò Frangipane (1804–1872): _vescovo cattolico_ — Concordia Sagittaria — nato o morto in Friuli/Veneto; date compatibili
 - **Frangipane, Odorico** (voci 810; anni 1683–1882) → [Q87182039](https://www.wikidata.org/wiki/Q87182039) Odorico Frangipane (1659–1734): _scrittore di viaggi_ — date compatibili
 - **Freschi, Francesco** (voci 518; anni 1834–1857) → [Q15673281](https://www.wikidata.org/wiki/Q15673281) Francesco Freschi (1808–1859): _segretario del Comitato Centrale della Società Nazionale per la Confederazione Italiana_ — Piacenza — date compatibili
@@ -879,7 +885,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3069 persone
+## 4. Nessun candidato su Wikidata: 3073 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
