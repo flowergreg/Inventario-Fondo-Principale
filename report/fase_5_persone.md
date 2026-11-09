@@ -4,10 +4,10 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 748 |
+| alta | 750 |
 | media | 35 |
 | bassa | 31 |
-| nessuna | 3063 |
+| nessuna | 3069 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -398,7 +398,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Erizzo, Niccolò** (voci 1137; anni 1702–1704) → [Q21548689](https://www.wikidata.org/wiki/Q21548689) Nicolò Erizzo (1655–1709): _diplomatico italiano (1655-1709)_ — Venezia — confermato dal contesto
 - **Erizzo, Paolo** (voci 123; anni ?–?) → [Q16586844](https://www.wikidata.org/wiki/Q16586844) Paolo Erizzo (1411–1470): _politico italiano_ — Venezia — nato o morto in Friuli/Veneto
 - **Fabani, Carlo** (voci 2604; anni 1685–1925) → [Q61475662](https://www.wikidata.org/wiki/Q61475662) Carlo Fabani (1858–1906): _sacerdote e naturalista italiano (1858-1906)_ — Morbegno — date compatibili
-- **Fabricius, Albert** (voci 603; anni 1754–1754) → [Q61894](https://www.wikidata.org/wiki/Q61894) Johann Albert Fabricius (1668–1736): _classicista e bibliografo tedesco (1668-1736)_ — fase 6, blocco 4: Johann Albert Fabricius (1668-1736), l'autore della Bibliotheca Latina
+- **Fabricius, Johann Albert** (voci 603; anni 1754–1754) → [Q61894](https://www.wikidata.org/wiki/Q61894) Johann Albert Fabricius (1668–1736): _classicista e bibliografo tedesco (1668-1736)_ — Lipsia, Amburgo
 - **Fabris, Giovanni** (voci 2167; anni 1537–1537) → [Q107127028](https://www.wikidata.org/wiki/Q107127028) Giovanni Fabris (1878–1953): _docente italiano (1878-1953)_ — Sernaglia della Battaglia, Padova — nato o morto in Friuli/Veneto
 - **Fabris, Nicolò** (voci 3933; anni ?–?) → [Q25688039](https://www.wikidata.org/wiki/Q25688039) Nicolò Fabris (1818–1908): _politico e medico italiano_ — Lestizza — nato o morto in Friuli/Veneto
 - **Fabris, Riccardo** (voci 3933; anni ?–?) → [Q21542479](https://www.wikidata.org/wiki/Q21542479) Riccardo Fabris (1853–1911): _1853-1911; Direttore della Cassa Nazionale Infortuni di Milano, autore di diverse pubblicazioni sui problemi del lavoro e della previdenza e d'interesse friulano. Nato e morto a Lestizza (UD)._ — Lestizza — nato o morto in Friuli/Veneto
@@ -667,7 +667,8 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Pecile, Gabriele Luigi** (voci 2559; anni 1855–1858) → [Q3756623](https://www.wikidata.org/wiki/Q3756623) Gabriele Luigi Pecile (1826–1902): _agronomo e politico italiano (1826-1902)_ — Fagagna — nato o morto in Friuli/Veneto; date compatibili
 - **Pellico, Silvio** (voci 2504; anni ?–?) → [Q435151](https://www.wikidata.org/wiki/Q435151) Silvio Pellico (1789–1854): _scrittore, poeta e patriota italiano (1789-1854)_ — Saluzzo, Torino
 - **Pellis, Ugo** (voci 2404, 3591, 3624, 3646; anni 1868–1945) → [Q4002869](https://www.wikidata.org/wiki/Q4002869) Ugo Pellis (1882–1943): _letterato e fotografo italiano_ — Fiumicello, Gorizia — nato o morto in Friuli/Veneto; date compatibili
-- **Percoto, Caterina** (voci 497, 2134, 2489, 2591; anni 1545–1973) → [Q3548089](https://www.wikidata.org/wiki/Q3548089) Caterina Percoto (1812–1887): _scrittrice e poetessa italiana_ — Manzano, Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Percoto, Caterina** (voci 449, 497, 2134, 2489; anni 1545–1973) → [Q3548089](https://www.wikidata.org/wiki/Q3548089) Caterina Percoto (1812–1887): _scrittrice e poetessa italiana_ — Manzano, Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Percoto, Giovanni Maria** (voci 476, 4109; anni 1565–1791) → [Q64746439](https://www.wikidata.org/wiki/Q64746439) Giovanni Maria Percoto (1729–1776): _vescovo cattolico_ — date compatibili
 - **Perfetti, Bernardino** (voci 1909; anni 1720–1959) → [Q3638725](https://www.wikidata.org/wiki/Q3638725) Bernardino Perfetti (1681–1746): _giurista e poeta italiano_ — Siena — date compatibili
 - **Perosa, Albino** (voci 4516; anni ?–?) → [Q3608787](https://www.wikidata.org/wiki/Q3608787) Albino Perosa (1915–1997): _presbitero e compositore italiano (1915-1997)_ — Rivignano, Udine — nato o morto in Friuli/Veneto
 - **Pers, Ciro** (voci 46, 47, 465, 524; anni 1559–1959) → [Q3678183](https://www.wikidata.org/wiki/Q3678183) Ciro di Pers (1599–1663): _poeta italiano_ — Pers, San Daniele del Friuli — nato o morto in Friuli/Veneto; date compatibili
@@ -859,6 +860,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Zorutti, Pietro** (voci 385, 471, 491, 497; anni 1759–1944) → [Q2327335](https://www.wikidata.org/wiki/Q2327335) Pietro Zorutti (1792–1867): _poeta italiano_ — Dolegna del Collio, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Zorzi, Pietro Antonio** (voci 480, 1224, 1383, 1903; anni 1729–1959) → [Q1081403](https://www.wikidata.org/wiki/Q1081403) Pietro Antonio Zorzi (1745–1803): _cardinale italiano_ — fase 6, blocco 4: verificato: arcivescovo di Udine 1792-1803
 - **Zucconi, Lodovico** (voci 558; anni 1765–1807) → [Q41618881](https://www.wikidata.org/wiki/Q41618881) Lodovico Zucconi (1706–1783): _1706-1783_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **d'Attems, Carlo Michele** (voci 617, 875, 879, 2144; anni 1445–1753) → [Q3813058](https://www.wikidata.org/wiki/Q3813058) Karl Michael von Attems (1711–1774): _arcivescovo cattolico austriaco_ — Gorizia — nato o morto in Friuli/Veneto; date compatibili
 - **d'Este, Eleonora** (voci 2003, 2004, 2005; anni ?–?) → [Q3721832](https://www.wikidata.org/wiki/Q3721832) Eleonora d'Este (1643–1722): _principessa e suora mantovana (1643-1722)_ — la carmelitana Maria Francesca dello Spirito Santo (1643-1722), non l'omonima del Cinquecento; verificato via SPARQL (fase 6)
 - **da Pordenone, Odorico** (voci 519, 549, 774, 825; anni 1292–1350) → [Q379733](https://www.wikidata.org/wiki/Q379733) Odorico da Pordenone (1286–1331): _presbitero e religioso italiano_ — Pordenone, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **da Udine, Giovanni** (voci 870, 1195, 1197, 4283; anni 1542–1954) → [Q983350](https://www.wikidata.org/wiki/Q983350) Giovanni da Udine (1487–1564): _pittore, decoratore e architetto italiano_ — Udine, Roma — nato o morto in Friuli/Veneto; date compatibili
@@ -877,7 +879,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3063 persone
+## 4. Nessun candidato su Wikidata: 3069 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

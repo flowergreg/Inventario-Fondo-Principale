@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3877 | 665 | 7487 |
-| luogo | 563 | 63 | 4570 |
+| persona | 3885 | 673 | 7528 |
+| luogo | 563 | 62 | 4569 |
 | santo | 124 | 44 | 490 |
 
-Menzioni collegate a un'entità: 12547 su 20996. Senza entità: nome o cognome singolo 8124, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12587 su 20996. Senza entità: nome o cognome singolo 8084, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -225,8 +225,8 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Erminio, Marzio**: Marzio Erminio (471)
 - **Esprit, M.**: M. Esprit (1198)
 - **Evangelista, Pompeo**: Evangelista Pompeo (306)
-- **Fabricius, Albert**: Bibliothecae Latinae Alberti Fabricij Mediae (603)
 - **Fabricius, Carolus**: Carolus Fabricius (600)
+- **Fabricius, Johann Albert**: Bibliothecae Latinae Alberti Fabricij Mediae (603)
 - **Fabrizio, C. G.**: C. G. Fabrizio (906)
 - **Fabrizio, Carlo**: Carlo Fabricio (883); Carlo Fabrizi (601); Carlo Fabrizio (443); Fabrizi Carlo (599, 600); Fabrizio Carlo (443, 444, 445)
 - **Fabrizio, Nicolò**: Nicolò Fabrizio (16)
@@ -529,7 +529,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Palin, Antonio**: A. Palin (4181); Palin, Antonio (4181)
 - **Palladio, Giovanni Francesco**: G. F. Palladio (1054); Gio. Francesco Palladio (469); Palladio Gian Franc. (519); Palladio Gio Francesco (1777)
 - **Paulinis, Niccolò**: N. de Paulinis (1299); Niccolò de Paulinis (1448); Nicolò de Paulinis (1449)
-- **Percoto, Caterina**: C. Percoto (4109); Caterina Percoto (497, 2591, 4083, 4089, 4090, 4094, 4107/1-5, 4108, 4214, 4216, 4264); Percoto Caterina (2134, 2489); Percoto, Caterina (3995, 3996, 3997, 3998, 3999, 4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029, 4030, 4031, 4032, 4033, 4034, 4035, 4036, 4037, 4038, 4039, 4040, 4041, 4042, 4043, 4044, 4045, 4046, 4047, 4048, 4049, 4050, 4051, 4052, 4053, 4054, 4055, 4056, 4057, 4058, 4059, 4060, 4061, 4062, 4063, 4064, 4065, 4066, 4067, 4068, 4069, 4070, 4071, 4072, 4073, 4074, 4075, 4076, 4077, 4078, 4079, 4080, 4081, 4082, 4084, 4085, 4086, 4087, 4088, 4091, 4092, 4093, 4094, 4095, 4096, 4097, 4098, 4099, 4100, 4101, 4102, 4103, 4104, 4105, 4106, 4107/1-5, 4519)
+- **Percoto, Caterina**: C. Percoto (4109); Caterina Percoto (497, 2591, 4083, 4089, 4090, 4094, 4107/1-5, 4108, 4214, 4216, 4264); Percoto Caterina (2134, 2489); Percoto Catterina (449); Percoto, Caterina (3995, 3996, 3997, 3998, 3999, 4000, 4001, 4002, 4003, 4004, 4005, 4006, 4007, 4008, 4009, 4010, 4011, 4012, 4013, 4014, 4015, 4016, 4017, 4018, 4019, 4020, 4021, 4022, 4023, 4024, 4025, 4026, 4027, 4028, 4029, 4030, 4031, 4032, 4033, 4034, 4035, 4036, 4037, 4038, 4039, 4040, 4041, 4042, 4043, 4044, 4045, 4046, 4047, 4048, 4049, 4050, 4051, 4052, 4053, 4054, 4055, 4056, 4057, 4058, 4059, 4060, 4061, 4062, 4063, 4064, 4065, 4066, 4067, 4068, 4069, 4070, 4071, 4072, 4073, 4074, 4075, 4076, 4077, 4078, 4079, 4080, 4081, 4082, 4084, 4085, 4086, 4087, 4088, 4091, 4092, 4093, 4094, 4095, 4096, 4097, 4098, 4099, 4100, 4101, 4102, 4103, 4104, 4105, 4106, 4107/1-5, 4519)
 - **Pirona, Andrea Giulio**: G. A. Pirona (3, 7, 402, 471, 497, 704, 1147); Giulio Andrea Pirona (4517); Pirona Andrea Giulio (519); Pirona Giulio Andrea (2192); Pirona, Giulio Andrea (3577)
 - **Polcenigo, Giorgio**: G. di Polcenigo (165); Giorgio Polcenigo (23, 3756); Giorgio Pulcenigo (329); Giorgio di Polcenigo (165, 166, 167); Polcenigo (di) co. Giorgio (168, 169, 170, 171, 172); Polcenigo Giorgio (282, 283, 284); Polcenigo co. Giorgio (281, 547); Polcenigo di Giorgio (1892, 1953); Polcenigo, Giorgio (3756)
 - **Pontini, Antonio**: A. Pontini (4284); A. dr. Pontini (4284); Antonio (4284); Pontini Antonio (2288, 2289); Pontini prof. Antonio (1582, 1583); Pontini, Antonio (4284)
@@ -594,6 +594,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Andreuzzi, Antonio**: Andreuzzi, Antonio (3932); Antonio Andreuzzi (3932-b)
 - **Antonini, Giuseppe**: Antonini, Giuseppe (3600); Giuseppe Antonini (3600)
 - **Asquini, Girolamo**: Asquini Girolamo (471); Girolamo Asquini (471, 525)
+- **Attems (d'), Francesco**: Attems co. Francesco (471); Francesco d'Attems (487)
 - **Bach**: Bach. Concertoni (3408, 3409); Bach. Concertoni N° VI (3467, 3468, 3469, 3470, 3471)
 - **Bach, Giovanni**: Bach Giovanni (3403, 3406); Giovanni Bach. (3406)
 - **Baini, Lorenzo**: Baini Lorenzo (3372); Lorenzo Baini (3372)
@@ -748,9 +749,10 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Maniago, Nicolò**: Nicolò Maniago (2259); Nicolò di Maniago (771)
 - **Mantica, Giulio**: Giulio Mantica (1431); Mantica Giulio (464)
 - **Mantica, Nicolò**: Mantica Nicolò (1649); Nicolò Mantica (496, 3745)
-- **Manzano, Leonardo**: Leonardo (1847); Leonardo di Nicolò di Manzano (1841)
+- **Manzano, Francesco**: Fr. di Manzano (875); Fr.co di Manzano del Sec. XIX. (1737); Francesco (1812, 1821, 1822); Francesco di Manzano (491, 496, 624, 1698, 1728); Manzano (di) Francesco (1686, 1687, 1688, 1689, 1690, 1691, 1692, 1693, 1694, 1695, 1696, 1697, 1698, 1699, 1700, 1701, 1702, 1703, 1704, 1705, 1706, 1707, 1708, 1709, 1710, 1711, 1712, 1713, 1714, 1715, 1716, 1717, 1718, 1719, 1720, 1721, 1722, 1723, 1724, 1725, 1726, 1727, 1728, 1729, 1730, 1731, 1732, 1733, 1734, 1735, 1798, 1799); Manzano (di) co. Francesco (1834, 1835, 1836); Manzano Francesco (519)
 - **Manzano, Marco Antonio**: Marc'Antonio Manzano (469); Marcantonio (1811, 1840); Marcantonio di Manzano (1837)
 - **Manzano, Ottaviano**: Manzano (di) Ottaviano (1796); Ottaviano Sign. di Manzano (1822); Ottaviano di Manzano (1812, 1821)
+- **Manzano, Sigismondo**: Manzano (di) Sigismondo (1787, 1801, 1802, 1807, 1813); Processo dei Sig.ri Sigismondo (1805); Sigismondo (1812, 1821, 1846)
 - **Marchetti, Luigi**: Luigi Marchetti (3412); Marchetti Luigi (3412)
 - **Marchi, Giacomo**: Giacomo Marchi (601); Marchi Giacomo (113, 541, 2262)
 - **Marchi, Virginio**: Marchi Virginio (3152, 3196, 3336); Virginio Marchi (3153)
@@ -802,9 +804,11 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Parravicini, Luigi Alessandro**: Aless. Parravicini (471); Parravicini L. A. (519)
 - **Partenopeo, Ercole**: Ercole Partenopeo (1446); Partenopeo Ercole (287)
 - **Pavona, Luigi**: Luigi (3712); Pavona Luigi (177)
-- **Pavona, Pietro**: D. Pietro Pavona (2799); Pavona Don Pietro (3452); Pavona Pietro (2714, 2798, 2799, 2800, 2801, 2802, 2803, 2804, 2805, 2806, 2807, 2808, 2809, 2810, 2811, 2812, 2813, 2814, 2815, 2816, 2817, 2818, 2819, 2820, 2821, 2822, 2823, 2824, 2825, 2826, 2827, 2828, 2829, 2830, 2831, 2832, 2833, 2834, 2835, 2836, 2837, 2838, 2839, 2840, 2841, 2842, 2843, 2844, 2845, 2846, 2847); Pietro Pavona (2714, 2800, 3452)
+- **Pavona, Pietro**: D. Pietro Pavona (2799); Pavona (3061, 3110, 3111, 3135, 3137); Pavona Don Pietro (3452); Pavona Pietro (2714, 2798, 2799, 2800, 2801, 2802, 2803, 2804, 2805, 2806, 2807, 2808, 2809, 2810, 2811, 2812, 2813, 2814, 2815, 2816, 2817, 2818, 2819, 2820, 2821, 2822, 2823, 2824, 2825, 2826, 2827, 2828, 2829, 2830, 2831, 2832, 2833, 2834, 2835, 2836, 2837, 2838, 2839, 2840, 2841, 2842, 2843, 2844, 2845, 2846, 2847); Pietro Pavona (2714, 2800, 3452)
+- **Pecile, Domenico**: Pecile (3157, 3158, 3159); Pecile Domenico (2848, 2849, 2850, 2851, 2852, 2853, 2854, 2855, 2856, 2857, 2858, 2859, 2860, 2861, 2862, 2863, 2864, 2865, 2866, 2867, 2868, 2869, 2870, 2871, 2872, 2873, 2874, 2875, 2876, 2877, 2878, 2879, 2880, 2881, 2882, 2883, 2884, 2885, 2886, 2887, 2888, 2889, 2890, 2891, 2892, 2896, 2897, 2898, 2900, 2901, 2902, 2903, 2904, 2905, 2906, 2907, 2908)
 - **Pellegrini, Giovanni Andrea**: Gio. Andrea Pellegrini (486); Pellegrini Gio. Andrea (464)
 - **Pellis, Ugo**: Pellis, Ugo (3646, 4281, 4282); Ugo Pellis (2404, 3591, 3624)
+- **Percoto, Giovanni Maria**: Giovanni M. Percoto (4109); Percotto Giovan Maria (476)
 - **Percuto, Pietro**: Piero Percuto (102); Pietro Percuto (102)
 - **Perosa, Albino**: Albino Perosa (4516); Perosa, Albino (4516)
 - **Perucchini, G. B.**: G. B. Perucchini (3451); Perucchini G. B. (3451)
@@ -984,7 +988,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Parigi**: Parigi (307, 469, 606, 616, 721, 804, 1095, 1171, 1552, 2150, 2355, 2532, 3241, 3931); Paris (518, 519)
 - **Pasiano di Pordenone**: Pasiano di Pordenone [manuale]; Pasiano (2585)
 - **Pavia di Udine**: Pavia di Udine [fonte_esterna]; Pavia d'Udine (3828)
-- **Percoto**: Percoto (1003); Percotto (476)
 - **Pieve di Rosa**: Pieve di Rosa [manuale]; Rosa (2629, 3944)
 - **Poffabro**: Poffabro [manuale]; Pofabro (3768, 3803)
 - **Porpetto**: Porpetto [fonte_esterna]; Castel (810); Porpeto (885, 1588)
@@ -1152,9 +1155,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3188 entità: elenco completo nella tabella `entita`.
+3189 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
-Tessitori (249), Fin (113), Minelli (101), Liruti (92), Marzona (73), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Jacopo (31), Pirona (28), Braida (27), Joppi (26), Valvasone di Maniago (26), Śrī (26), Nicoletti (25), Buddharās (25), G. B. (24), Francesco (24), Del Torso (24), Corgnali (24), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Giovanni (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Florio (15), Frangipane (15), Castello (15), Barnaba (15), Pavona (15), Giuseppe (14), di Aquileja (14), Ath (14), Napoleone (13), Zanon (13), Modotti (13), Antonio (12), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Carlo (11), Madrisio (11), Asquini (11), Grado (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Nicolò (10), Angelo (10), Bertoli (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), Antonini (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Wolf (8), Locatelli (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6)
+Tessitori (249), Fin (113), Minelli (101), Liruti (92), Marzona (73), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Jacopo (31), Pirona (28), Braida (27), Joppi (26), Valvasone di Maniago (26), Śrī (26), Nicoletti (25), Buddharās (25), Del Torso (24), Corgnali (24), G. B. (23), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Francesco (20), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Florio (15), Giovanni (15), Frangipane (15), Castello (15), Barnaba (15), Giuseppe (14), di Aquileja (14), Ath (14), Napoleone (13), Zanon (13), Modotti (13), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Carlo (11), Madrisio (11), Asquini (11), Antonio (11), Grado (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Angelo (10), Bertoli (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), Nicolò (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), Antonini (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Wolf (8), Locatelli (8), Pavona (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6)
 

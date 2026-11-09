@@ -361,6 +361,12 @@ def scomponi_manuale(testo, lex, titoli):
         return scomponi(testo, lex, titoli)
     sx, dx = (x.strip() for x in testo.split("/", 1))
     nomi, iniziali, cogn, (vis_n, _) = scomponi(sx, lex, titoli, dedurre=False)
+    parole_sx = sx.split()
+    if not iniziali and nomi and len(vis_n) < len(parole_sx) and \
+            all(w[:1].isupper() and not w.endswith((".", "°")) for w in parole_sx):
+        # «Maria Vittoria»: valgono tutte le parole indicate dal curatore, anche se il lessico ne
+        # legge una come luogo
+        nomi, vis_n = [(normalizza(x),) for x in parole_sx], parole_sx
     if cogn and not nomi:                       # il curatore indica come nomi parole non riconosciute
         nomi, vis_n = [(normalizza(x),) for x in sx.split()], sx.split()
     # «Berlingero /»: persona nota solo per nome; la particella non entra nella chiave
