@@ -323,6 +323,41 @@ if (location.hash.length > 1) { q.value = decodeURIComponent(location.hash.slice
 """
 
 
+# Variante «terminale anni '80»: stessa pagina, stessi dati, solo un altro vestito (schermo nero,
+# fosfori verdi, carattere a matrice di punti). Si aggiunge in coda allo stile originale.
+RETRO = """
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+<style>
+:root, :root * { --color1: #33ff66; --colorHref: #7dff9a; --color2: #000; --color3: #000; --color4: #33ff66;
+  --sfondo: #000; --carta: #000; --fascia: #031a08; --testo: #33ff66; --scuro: #66ff88; --tenue: #1fa843;
+  --linea: #145c25; --accento: #9dffb3; --evidenza: #33ff66;
+  --font-testo: "VT323", "Courier New", monospace; --font-titoli: "VT323", "Courier New", monospace;
+  --font-etichette: "VT323", "Courier New", monospace; }
+html { color-scheme: dark; background: #000; }
+body { background: #000; color: #33ff66; font-size: 22px; line-height: 1.3; text-shadow: 0 0 4px rgba(51,255,102,.55); }
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 9;
+  background: repeating-linear-gradient(to bottom, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.28) 2px 3px); }
+h1.page-title { font-size: 46px; letter-spacing: 2px; text-transform: uppercase; }
+h1.page-title::after { content: "_"; animation: lampeggia 1s steps(1) infinite; }
+@keyframes lampeggia { 50% { opacity: 0; } }
+.column-1 .section { background: transparent; color: #33ff66; border: 1px solid #33ff66; font-style: normal; }
+input[type=search], .segnala input { background: #000; color: #33ff66; border: 1px solid #33ff66; caret-color: #33ff66;
+  font-family: "VT323", monospace; font-size: 24px; }
+input[type=search]::placeholder, .segnala input::placeholder { color: #1fa843; opacity: 1; }
+button, .segnala button, .segnala-riga button { background: #000; color: #33ff66; border: 1px solid #33ff66;
+  font-family: "VT323", monospace; font-size: 24px; text-shadow: inherit; }
+button:hover { background: #33ff66; color: #000; filter: none; }
+mark { background: #33ff66; color: #000; text-shadow: none; }
+.avviso { background: #031a08; color: #66ff88; border-left-color: #33ff66; }
+.forme a.forma { background: #031a08; color: #33ff66; }
+article.voce { border-color: #145c25; }
+footer { background: #000; color: #33ff66; border-top: 1px dashed #33ff66; }
+footer a { color: #9dffb3; }
+input[type=checkbox] { accent-color: #33ff66; }
+</style>
+"""
+
+
 def main():
     indice = costruisci_indice()
     dati = json.dumps(indice, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
@@ -333,6 +368,9 @@ def main():
     OUT.parent.mkdir(exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
     PAGES.write_text(html, encoding="utf-8")
+    retro = RADICE / "web" / "retro" / "index.html"          # variante «terminale anni '80»
+    retro.parent.mkdir(exist_ok=True)
+    retro.write_text(html.replace("</head>", RETRO + "</head>", 1), encoding="utf-8")
     print(f"Pagina scritta in {OUT} ({OUT.stat().st_size // 1024} KB)")
 
 
