@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3894 | 679 | 7563 |
+| persona | 3897 | 681 | 7707 |
 | luogo | 563 | 62 | 4569 |
 | santo | 124 | 44 | 490 |
 
-Menzioni collegate a un'entità: 12622 su 20996. Senza entità: nome o cognome singolo 8049, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12766 su 20996. Senza entità: nome o cognome singolo 7905, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -569,7 +569,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Toppo, Francesco**: Francesco di Toppo (340, 541, 3740); Toppo co. Franc.° (560 a)
 - **Toppo, Nicolò**: Sgn. co. Nicolò di Toppo (1880); Toppo N (2182); Toppo Nicolò (541)
 - **Valentinelli, Giuseppe**: G. Valentinelli (853); Giuseppe Valentinelli (487)
-- **Valvasone, Jacopo**: J. di Valvasone (1571); Jacopo Valvason (102); Jacopo Valvason di Maniago (1490); Jacopo Valvasone (672); Jacopo Valvasone di Maniaco (525); Jacopo di Valvasone (919); Valvasón di Jacopo (1784)
+- **Valvasone di Maniago, Jacopo**: J. di Valvasone (1571); Jacopo (652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 681); Jacopo Valvason (102); Jacopo Valvason di Maniago (1490); Jacopo Valvasone (672); Jacopo Valvasone di Maniaco (525); Jacopo di Valvasone (919); Valvasone (670); Valvasone Di Maniago (652, 653, 654, 655); Valvasone di Maniago (656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 681); Valvasón di Jacopo (1784)
 - **Vecchi, Germano**: De' Vecchi Germano (519); Germano (682); P. de Vecchi (949)
 - **Verdi, Giuseppe**: Giuseppe Verdi (3350, 3358, 3434); Macbeth di Giuseppe Verdi (3362); Verdi G. (4279); Verdi Giuseppe (3249, 3261, 3287, 3350, 3358, 3362, 3434, 3460)
 - **Vida, Andrea**: A. Vida (205); Andrea Vida (339)
@@ -604,7 +604,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Barnaba**: Barnabae di Buia (1490); Pergamene Barnaba (1488)
 - **Baroni, Isidoro**: Baroni, Isidoro (3679); Isidoro Baroni (2604)
 - **Bearzi, Vincenzo**: Bearzi Vincenzo (338); Vincenzo Bearzi (338)
-- **Belgrado, Francesco**: Franc. Belgrado (480); Francesco Belgrado (507)
+- **Belgrado, Francesco**: Franc. Belgrado (480); Francesco (2140); Francesco Belgrado (507)
 - **Belgrado, Giacomo**: Belgrado Giacomo (476); Giacomo Belgrado (309); P. Giacomo Belgrado (1894)
 - **Belloni, Pietro**: Pietro (3730); Pietro Belloni (3591)
 - **Bendl, Carlo**: Bendl Carlo (3461); Carlo Bendl (3461)
@@ -627,7 +627,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Borghi, Luigi**: Borghi Luigi (3288, 3396, 3473); Luigi Borghi (3396, 3473)
 - **Bragato, Giuseppe**: Bragato, Giuseppe (3631, 3632, 3648); Giuseppe Bragato (3956)
 - **Braida, Pietro**: Braida Pietro (1382, 1383); Pietro Braida (469, 471, 476, 482, 1020, 1034, 1381, 1382, 1547, 2022)
-- **Braida, Tomaso**: Braida Tomaso (2024); Tomaso Braida (2022)
+- **Braida, Tommaso**: Braida Tom (476); Braida Tomaso (2024); Tomaso Braida (2022)
 - **Brazzoni, Antonio**: Ant. Brazzoni (249); Antonio (734)
 - **Brazzà, Antonio**: A. di Brazzà (339); Ant.o di Brazzà (471); Antonio di Brazzà (117, 590); Brazzà (di) Antonio (116)
 - **Brazzà, Pietro**: P. di Brazzà Savorgnan (4108); Pietro di Brazzà (3931)
@@ -752,6 +752,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Malacrida, Marzio**: Malacrida Marzio (65, 73); Marzio Malacrida (66, 606)
 - **Maniago, Fabio**: Di Maniago Fabio (471); Fabio dei S.ri di Maniaco (771); Fabio di Maniago (485, 953, 2418)
 - **Maniago, Nicolò**: Nicolò Maniago (2259); Nicolò di Maniago (771)
+- **Maniago, Pietro**: Maniago Co. Pietro (76, 77, 183); Maniago Pietro (291, 2262); Pietro Maniago (339); Pietro di Maniago (83, 337)
 - **Mantica, Giulio**: Giulio Mantica (1431); Mantica Giulio (464)
 - **Mantica, Nicolò**: Mantica Nicolò (1649); Nicolò Mantica (496, 3745)
 - **Manzano**: Manzana (1811); Manzanae (54)
@@ -909,6 +910,8 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **de Mutina, Paolo**: Paolo (762); Paulum (761)
 - **del Torso, Jacopino**: Del Torso Giacobino (541); Giacomino del Torso (66); Jacopino del Torso (614, 1550, 1552)
 - **di Brazzà, Giacomo**: G. di Brazzà (1503); G. di Brazzà Savorgnan (4108)
+- **di Cergneu, Giovanni Battista**: Cergnocco (694, 695, 696); Gio. Bat. (694, 695, 696)
+- **di Maniago, Ailino**: Ailino (699); Ailino Di Maniago (788); Ailino di Maniaco (771); Ailino di Maniago (699, 771)
 - **di Prampero, Barnaba**: Barnaba di Prampero (619); Orlando Innamorato di Barnaba di Prampero (102)
 - **di San Genesio, Bertrando**: Arca del B. Bertrando (803); B. Bertrando (826); Beato S.N. (533)
 - **Śrī, Gautam**: Iti Śrī Gautam (4495); Śrī Gautam (4351)
@@ -1165,5 +1168,5 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
-Tessitori (249), Fin (113), Minelli (101), Liruti (92), Marzona (73), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Jacopo (31), Pirona (28), Braida (27), Joppi (26), Valvasone di Maniago (26), Śrī (26), Buddharās (25), Del Torso (24), Corgnali (24), G. B. (23), Nicoletti (23), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Francesco (20), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Giovanni (15), Castello (15), Barnaba (15), Frangipane (14), Giuseppe (14), di Aquileja (14), Ath (14), Napoleone (13), Zanon (13), Modotti (13), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Carlo (11), Madrisio (11), Asquini (11), Grado (11), Florio (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Angelo (10), Bertoli (10), Antonio (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), Nicolò (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Locatelli (8), Pavona (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6)
+Tessitori (249), Fin (113), Minelli (101), Liruti (92), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Pirona (28), Braida (27), Joppi (26), Śrī (26), Buddharās (25), Del Torso (24), Corgnali (24), G. B. (23), Nicoletti (23), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Francesco (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Giovanni (15), Castello (15), Barnaba (15), Frangipane (14), Giuseppe (14), di Aquileja (14), Ath (14), Napoleone (13), Zanon (13), Modotti (13), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Carlo (11), Madrisio (11), Asquini (11), Grado (11), Florio (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Angelo (10), Bertoli (10), Antonio (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), Nicolò (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Locatelli (8), Pavona (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6), Prampero (6), Gradenigo (6), Trento (6)
 

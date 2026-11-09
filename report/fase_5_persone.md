@@ -7,7 +7,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | alta | 752 |
 | media | 37 |
 | bassa | 32 |
-| nessuna | 3073 |
+| nessuna | 3076 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -829,7 +829,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Valsecchi, Antonio** (voci 482; anni 1775–1824) → [Q27067579](https://www.wikidata.org/wiki/Q27067579) Antonino Valsecchi (1708–1791): _apologeta domenicano italiano_ — Verona, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Valussi, Pacifico** (voci 491, 2559, 2604, 3800; anni 1685–1919) → [Q3547618](https://www.wikidata.org/wiki/Q3547618) Pacifico Valussi (1813–1893): _giornalista e politico italiano (1813-1893)_ — Talmassons, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Valvason, Erasmo** (voci 1598, 2600; anni 1523–1942) → [Q3731096](https://www.wikidata.org/wiki/Q3731096) Erasmo di Valvasone (1523–1593): _poeta italiano_ — Valvasone, Mantova — nato o morto in Friuli/Veneto; date compatibili
-- **Valvasone, Jacopo** (voci 102, 525, 672, 919; anni 1298–1793) → [Q136523650](https://www.wikidata.org/wiki/Q136523650) Jacopo Valvasone (1499–1580): _storico_ — confermato dal contesto
+- **Valvasone di Maniago, Jacopo** (voci 102, 525, 652, 653; anni 1273–1880) → [Q136523650](https://www.wikidata.org/wiki/Q136523650) Jacopo Valvasone (1499–1580): _storico_ — confermato dal contesto
 - **Varchi, Benedetto** (voci 414, 639; anni ?–?) → [Q176833](https://www.wikidata.org/wiki/Q176833) Benedetto Varchi (1503–1565): _umanista, scrittore e storico italiano_ — Firenze
 - **Veggetti, Liborio** (voci 471; anni 1834–1859) → [Q130381443](https://www.wikidata.org/wiki/Q130381443) Liborio Veggetti (1785–1875): _professore, cavaliere, commendatore, bibliotecario e presidente del Collegio dei filologi_ — date compatibili
 - **Veludo, Giovanni** (voci 492; anni 1837–1872) → [Q4106954](https://www.wikidata.org/wiki/Q4106954) Giovanni Veludo (1811–1890): _bibliotecario, storico e filologo italiano (1811-1890)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
@@ -885,7 +885,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3073 persone
+## 4. Nessun candidato su Wikidata: 3076 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
