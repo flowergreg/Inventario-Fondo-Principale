@@ -529,7 +529,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Varmo** (3 menz.; voci 525, 1010) → Varmo — GeoNames [3164692](https://www.geonames.org/3164692) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53389](https://www.wikidata.org/wiki/Q53389): _comune italiano_
 - **Veneto** (2 menz.; voci 501, 534) → Veneto — GeoNames [3164604](https://www.geonames.org/3164604) ADM1, Veneto — Wikidata [Q1243](https://www.wikidata.org/wiki/Q1243): _regione italiana a statuto ordinario_
 - **Venezia** (228 menz.; voci 1, 10, 18, 23) → Venezia — GeoNames [8973797](https://www.geonames.org/8973797) PPL, Veneto (VI) — Wikidata [Q641](https://www.wikidata.org/wiki/Q641): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Veneto_
-- **Venzone** (67 menz.; voci 285, 344, 463, 519) → Venzone — GeoNames [3164570](https://www.geonames.org/3164570) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53391](https://www.wikidata.org/wiki/Q53391): _comune italiano_
+- **Venzone** (70 menz.; voci 285, 344, 463, 519) → Venzone — GeoNames [3164570](https://www.geonames.org/3164570) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53391](https://www.wikidata.org/wiki/Q53391): _comune italiano_
 - **Vergnacco** (1 menz.; voci 2035) → Vergnacco — GeoNames [8504684](https://www.geonames.org/8504684) PPL, Friuli-Venezia Giulia (UD)
 - **Veroli** (1 menz.; voci 568) → Veroli — GeoNames [3164528](https://www.geonames.org/3164528) PPLA3, reg. 07 (FR) — Wikidata [Q42466](https://www.wikidata.org/wiki/Q42466): _comune italiano_
 - **Verona** (35 menz.; voci 10, 18, 81, 467) → Verona — GeoNames [3164527](https://www.geonames.org/3164527) PPLA2, Veneto (VR) — Wikidata [Q2028](https://www.wikidata.org/wiki/Q2028): _comune italiano del Veneto_

@@ -9,7 +9,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | abbreviazione | 0 | 2 | 0 | 285 | 287 | 619 |
 | cognome | 112 | 293 | 325 | 4869 | 5599 | 14392 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1835 |
-| luogo | 401 | 176 | 85 | 6 | 668 | 4514 |
+| luogo | 401 | 178 | 85 | 6 | 670 | 4517 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
 | nome_di_battesimo | 1255 | 145 | 0 | 0 | 1400 | 9285 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
@@ -22,7 +22,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 182.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 184.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -75,6 +75,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Sicilie | 2 | Sicilia | curatore | 211, 2142 |
 | Sūri | 2 | Suri | GeoNames | 4322, 4367 |
 | Udin | 2 | Udine | GeoNames | 4244, 4253 |
+| Ventiono | 2 | — | nessuna corrispondenza nelle liste | 2623/4 |
 | Affrica | 1 | — | nessuna corrispondenza nelle liste | 1317 |
 | Amanins | 1 | Domanins | curatore: Villa di Domanins (2036) | 2036 |
 | Aquileiense | 1 | Aquileia | curatore: 1744 | 1744 |
@@ -195,6 +196,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Venetiis | 1 | Venezia | lista manuale | 617 |
 | Venetiis MDCXIV | 1 | Venezia | curatore: 606 | 606 |
 | Venetijs | 1 | Venezia | curatore: 3883 | 3883 |
+| Ventioni | 1 | — | nessuna corrispondenza nelle liste | 2623/4 |
 | Victoria | 1 | Vittoria | GeoNames | 2534 |
 | Viena | 1 | Vienna | GeoNames | 467 |
 | Villacco | 1 | Villaco | curatore: 568 | 568 |
@@ -658,7 +660,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Mariae | 5 | Maria | forma latina declinata di «Maria» | 523, 606, 648, 1285, 2997 |
 | Aldus | 4 | Aldo | forma latina declinata di «Aldo» | 2631/5, 2631/6, 2631/10, 2631/11 |
 | Bart. | 4 | Bartolomeo | abbreviazione (lista manuale) | 511, 606, 721 |
-| Fabii | 4 | Fabio | forma latina declinata di «Fabio» | 647, 786, 819, 1487 |
+| Fabii | 4 | Fabio | forma latina declinata di «Fabius» | 647, 786, 819, 1487 |
 | Fed. | 4 | Federico | abbreviazione (lista manuale) | 505, 519, 606, 3913 |
 | Georgium | 4 | Giorgio | contesto | 606, 622, 1903 |
 | Gio | 4 | Giovanni | variante (lista manuale) | 669, 1777, 2406, 4113 |
@@ -737,7 +739,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -756,7 +758,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Marquardus | 1 | Marquardo | forma latina declinata di «Marquardo» | 606 |
 | Martii | 1 | Marzio | forma latina declinata di «Martio» | 3949 |
 | Mich. | 1 | Michele | abbreviazione (lista manuale) | 606 |
-| Octavii | 1 | Octavio | forma latina declinata di «Octavius» | 1375 |
+| Octavii | 1 | Octavio | forma latina declinata di «Octavio» | 1375 |
 | Odoricum | 1 | Odorico | forma latina declinata di «Odorico» | 617 |
 | Osmus | 1 | Osmo | forma latina declinata di «Osmo» | 606 |
 | Ovidii | 1 | Ovidio | forma latina declinata di «Ovidio» | 836 |
@@ -765,7 +767,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Patricij | 1 | Patrizio | forma latina declinata di «Patricio» | 553 |
 | Petronii | 1 | Petronio | curatore: 414 | 414 |
 | Poloniae | 1 | Polonia | forma latina declinata di «Polonia» | 619 |
-| Publii | 1 | Publio | forma latina declinata di «Publius» | 43 |
+| Publii | 1 | Publio | forma latina declinata di «Publio» | 43 |
 | Romae | 1 | Roma | forma latina declinata di «Roma» | 565 |
 | Servae | 1 | Servo | forma latina declinata di «Serva» | 2002 |
 | Spiritus | 1 | Spirito | forma latina declinata di «Spirito» | 3081 |
