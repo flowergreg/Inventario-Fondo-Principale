@@ -25,3 +25,5 @@ Serviti Domenicani Francescani Cappuccini Cappuccine Gesuiti Barnabiti Filippini
 Somaschi Minori Conventuali Teatini Camaldolesi Cistercensi Clarisse Orsoline Cassinensi Vallombrosani Templari Gioanniti
 Civico Civica Tot
 Pergam Membran Cartac Magistero Ven Patriae
+# fase 7: incipit/explicit, termini musicali, parole dei manoscritti indiani, istituzioni
+Fin Processo Accad Sventati Annali Turchi Scritti Articoli Oratorio Allegro Adagio Kyrie

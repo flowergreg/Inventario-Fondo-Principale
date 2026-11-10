@@ -4,14 +4,16 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 754 |
-| media | 42 |
+| alta | 756 |
+| media | 44 |
 | bassa | 33 |
-| nessuna | 3091 |
+| nessuna | 3041 |
 
 ## 1. Affidabilità media: da verificare
 
 - **Aloi, Francesco** (voci 15; anni 1679–1679) → [Q92502584](https://www.wikidata.org/wiki/Q92502584) Francesco Aloi (?–?)
+- **Antonelli, Giacomo** (voci 1583; anni 1927–1927) → [Q3761974](https://www.wikidata.org/wiki/Q3761974) Giacomo Antonelli (1834–1927): _ingegnere italiano_ — Terzo di Aquileia — date compatibili
+  - altri: [Q712085](https://www.wikidata.org/wiki/Q712085) Giacomo Antonelli (1806–1876): _cardinale italiano_ — Sonnino, Roma [0]
 - **Antonini, Adriano** (voci ; anni ?–?) → [Q132228586](https://www.wikidata.org/wiki/Q132228586) Adriano Antonini (1934–?) — Lucerna — nato nel 1934: verificare
 - **Bach** (voci 3408, 3409, 3467, 3468; anni ?–?) → [Q1861386](https://www.wikidata.org/wiki/Q1861386) Bach (1882–1953) — Fontanil-Cornillon, Nogent-le-Rotrou
   - altri: [Q6828338](https://www.wikidata.org/wiki/Q6828338) Michael Bach (1808–1878): _entomologo, botanico_ — Boppard [0]
@@ -39,6 +41,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q91398094](https://www.wikidata.org/wiki/Q91398094) Andrea Mariani (?–?) [0]; [Q77538493](https://www.wikidata.org/wiki/Q77538493) Andrea Mariani (1967–?): _sacerdote e teologo italiano (1967-)_ — Lissone [-0.5]; [Q108321134](https://www.wikidata.org/wiki/Q108321134) Andrea Mariani (1944–?): _americanista italiano (1944-)_ — Roma [-0.5]; [Q108321160](https://www.wikidata.org/wiki/Q108321160) Andrea Mariani (1993–?): _ingegnere biomedico italiano (1993-)_ [-0.5]
 - **Marini, Leonardo** (voci 597; anni 1772–1781) → [Q87252822](https://www.wikidata.org/wiki/Q87252822) Leonardo Marini (1737–1806): _pittore_ — date compatibili
   - altri: [Q3830391](https://www.wikidata.org/wiki/Q3830391) Leonardo Marini (1509–1573): _arcivescovo cattolico e teologo italiano_ — Chio, Roma [0]; [Q28599790](https://www.wikidata.org/wiki/Q28599790) Leonardo Marini (1995–?): _cestista italiano_ — Padova [-1]
+- **Mazzuchelli, Giammaria** (voci 619; anni ?–?) → [Q3105131](https://www.wikidata.org/wiki/Q3105131) Giammaria Mazzuchelli (1707–1765): _letterato, bibliografo e storico italiano (1707 – 1765)_ — Brescia
 - **Moretti, Paolo** (voci 3882; anni ?–?) → [Q11802784](https://www.wikidata.org/wiki/Q11802784) Paolo Moretti (1759–1804) — Stoccolma
   - altri: [Q80317088](https://www.wikidata.org/wiki/Q80317088) Paolo Moretti (?–?) [0]; [Q90369638](https://www.wikidata.org/wiki/Q90369638) Paolo Moretti (?–?) [0]; [Q99633482](https://www.wikidata.org/wiki/Q99633482) Paolo Moretti (?–?) [0]; [Q3894290](https://www.wikidata.org/wiki/Q3894290) Paolo Moretti (1970–?): _cestista e allenatore di pallacanestro italiano_ — Arezzo [-0.5]
 - **Moro** (voci 3810; anni ?–?) → [Q102283130](https://www.wikidata.org/wiki/Q102283130) Moro (?–?): _compositore_
@@ -230,6 +233,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Bini, Giuseppe** (voci 371, 464, 470, 485; anni 1000–1786) → [Q105224468](https://www.wikidata.org/wiki/Q105224468) Giuseppe Bini (1689–1773): _presbitero ed erudito italiano (1689-1773)_ — Varmo, Gemona del Friuli — nato o morto in Friuli/Veneto; date compatibili
 - **Biondelli, Bernardino** (voci 487, 518; anni 1753–1853) → [Q3638693](https://www.wikidata.org/wiki/Q3638693) Bernardino Biondelli (1804–1886): _linguista, numismatico e archeologo italiano_ — Zevio, Milano — nato o morto in Friuli/Veneto; date compatibili
 - **Blanc, Giuseppe** (voci 3719; anni 1870–1931) → [Q3107993](https://www.wikidata.org/wiki/Q3107993) Giuseppe Blanc (1886–1969): _compositore italiano (1886-1969)_ — Bardonecchia, Santa Margherita Ligure — date compatibili
+- **Bo, Carlo** (voci 3921; anni 1950–1950) → [Q1041908](https://www.wikidata.org/wiki/Q1041908) Carlo Bo (1911–2001): _critico letterario, traduttore, accademico e politico italiano (1911-2001)_ — Sestri Levante, Genova — date compatibili
 - **Boccardi, Alberto** (voci 2642, 3591; anni 1860–1913) → [Q46388146](https://www.wikidata.org/wiki/Q46388146) Alberto Boccardi (1854–1921): _avvocato e scrittore italiano (1854-1921)_ — Trieste — nato o morto in Friuli/Veneto; date compatibili
 - **Bodio, Luigi** (voci 2134; anni ?–?) → [Q320857](https://www.wikidata.org/wiki/Q320857) Luigi Bodio (1840–1920): _economista italiano, statistico, professore, politico, matematico (1840-1920)_ — Milano, Roma
 - **Boiani, Benvenuta** (voci 1624; anni 1768–1768) → [Q2901965](https://www.wikidata.org/wiki/Q2901965) Benvenuta Boiani (1255–1292) — Cividale del Friuli — nato o morto in Friuli/Veneto
@@ -293,6 +297,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Carli, Gian Rinaldo** (voci 485, 599, 601, 701; anni 1720–1769) → [Q3762758](https://www.wikidata.org/wiki/Q3762758) Gian Rinaldo Carli (1720–1795): _scrittore, economista e storico italiano (1720-1795)_ — Capodistria, Milano — date compatibili
 - **Carlo Magno** (voci 407, 408, 409, 518; anni 1097–1902) → [Q3044](https://www.wikidata.org/wiki/Q3044) Carlo Magno (748–814): _re dei Franchi (r. 768-814) e dei Longobardi (r. 774-814), primo imperatore del Sacro Romano Impero (r. 800-814)_ — fase 6, blocco 4: Carlo Magno
 - **Carlo V** (voci 1098, 2529; anni 1936–1936) → [Q32500](https://www.wikidata.org/wiki/Q32500) Carlo V d'Asburgo (1500–1558): _duca di Borgogna (r. 1506-1556), re di Spagna (r. 1516-1556) e imperatore del Sacro Romano Impero (r. 1519-1556)_ — Gand, Monastero di Yuste
+- **Carneo, Antonio** (voci 2108; anni 1667–1684) → [Q4776506](https://www.wikidata.org/wiki/Q4776506) Antonio Carneo (1637–1692): _pittore italiano_ — Concordia Sagittaria, Portogruaro — nato o morto in Friuli/Veneto; date compatibili
 - **Caro, Lucrezio** (voci 597; anni 1792–1792) → [Q47154](https://www.wikidata.org/wiki/Q47154) Tito Lucrezio Caro (-93–-54): _poeta e filosofo romano_ — Pompei, Roma
 - **Carpani, Melchiorre** (voci 593; anni 1778–1783) → [Q55226584](https://www.wikidata.org/wiki/Q55226584) Melchiorre Carpani (1726–1797): _missionario_ — Lodi — date compatibili
 - **Carrara, Francesco** (voci 488, 492; anni 1836–1872) → [Q3749739](https://www.wikidata.org/wiki/Q3749739) Francesco Carrara (1812–1854): _archeologo italiano_ — Spalato, Venezia — confermato dal contesto
@@ -431,7 +436,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Fedele, Cassandra** (voci 102; anni ?–?) → [Q442458](https://www.wikidata.org/wiki/Q442458) Cassandra Fedele (1465–1558): _umanista italiana_ — Venezia — nato o morto in Friuli/Veneto
 - **Federici, Domenico** (voci 465; anni ?–?) → [Q22808336](https://www.wikidata.org/wiki/Q22808336) Domenico Federici (1633–1720): _religioso, diplomatico e letterato italiano (1633-1720)_ — Serrungarina, Fano — confermato dal contesto
 - **Feletto, Antonio** (voci 618; anni 1341–1651) → [Q68903466](https://www.wikidata.org/wiki/Q68903466) Antonio Feletto (?–1488): _vescovo cattolico italiano_ — confermato dal contesto
-- **Ferdinando I** (voci 488, 2602; anni 1831–1853) → [Q150611](https://www.wikidata.org/wiki/Q150611) Ferdinando I d'Asburgo (1503–1564): _re di Boemia e d'Ungheria (r. 1526-1564) e sovrano del Sacro Romano Impero (r. 1556-1564)_ — Alcalá de Henares, Vienna
+- **Ferdinando I** (voci 488, 2602, 2706; anni 1831–1853) → [Q150611](https://www.wikidata.org/wiki/Q150611) Ferdinando I d'Asburgo (1503–1564): _re di Boemia e d'Ungheria (r. 1526-1564) e sovrano del Sacro Romano Impero (r. 1556-1564)_ — Alcalá de Henares, Vienna
 - **Ferdinando IV** (voci 807, 2138, 2142; anni 1768–1796) → [Q313167](https://www.wikidata.org/wiki/Q313167) Ferdinando IV di Toscana (1835–1908): _ultimo granduca di Toscana (r. 1859-1860)_ — Firenze, Salisburgo
 - **Ferrari, Giovanni** (voci 1432; anni ?–?) → [Q3767219](https://www.wikidata.org/wiki/Q3767219) Giovanni Ferrari (1744–1826): _scultore italiano_ — Crespano del Grappa, Venezia — nato o morto in Friuli/Veneto
 - **Ferretti, Giovanni** (voci 3183; anni ?–?) → [Q3107173](https://www.wikidata.org/wiki/Q3107173) Giovanni Ferretti (1540–1609): _compositore italiano (1540-1609)_ — Venezia — nato o morto in Friuli/Veneto
@@ -522,7 +527,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Guadagnoli, Antonio** (voci 2134; anni ?–?) → [Q602343](https://www.wikidata.org/wiki/Q602343) Antonio Guadagnoli (1798–1858): _poeta e letterato italiano_ — Arezzo, Cortona — confermato dal contesto
 - **Gualandi, Michelangelo** (voci 471; anni 1856–1859) → [Q19997569](https://www.wikidata.org/wiki/Q19997569) Michelangelo Gualandi (1795–1865): _storico dell'arte_ — Bologna — date compatibili
 - **Guasti, Cesare** (voci 2134; anni ?–?) → [Q3665445](https://www.wikidata.org/wiki/Q3665445) Cesare Guasti (1822–1889): _scrittore e filologo italiano (1822-1889)_ — Prato, Firenze — confermato dal contesto
-- **Guerrazzi, Francesco Domenico** (voci 497, 2134; anni 1868–1873) → [Q518925](https://www.wikidata.org/wiki/Q518925) Francesco Domenico Guerrazzi (1804–1873): _politico e scrittore italiano (1804-1873)_ — Livorno, Cecina — date compatibili
+- **Guerrazzi, Francesco Domenico** (voci 497, 2134; anni 1868–1887) → [Q518925](https://www.wikidata.org/wiki/Q518925) Francesco Domenico Guerrazzi (1804–1873): _politico e scrittore italiano (1804-1873)_ — Livorno, Cecina — date compatibili
 - **Gungl, Joseph** (voci 4273; anni 1856–1856) → [Q463861](https://www.wikidata.org/wiki/Q463861) Joseph Gungl (1810–1889): _compositore, oboista, direttore d'orchestra_ — Zsámbék, Weimar — date compatibili
 - **Guyon, Bruno** (voci 3668; anni ?–?) → [Q61637505](https://www.wikidata.org/wiki/Q61637505) Bruno Guyon (1868–1943): _linguista, professore universitario, slavista_ — San Pietro al Natisone, Napoli — nato o morto in Friuli/Veneto
 - **Haedus, Petrus** (voci 615; anni ?–?) → [Q7179205](https://www.wikidata.org/wiki/Q7179205) Petrus Haedus (1427–1504): _scrittore italiano (1427-1504)_ — confermato dal contesto
@@ -627,7 +632,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Mocenigo, Tommaso** (voci 839; anni 1291–1765) → [Q654063](https://www.wikidata.org/wiki/Q654063) Tommaso Mocenigo (1343–1423): _doge della Repubblica di Venezia dal 1414 al 1423_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Molin, Alessandro** (voci 480; anni 1681–1747) → [Q71541037](https://www.wikidata.org/wiki/Q71541037) Alessandro Molin (?–?) — Venezia — nato o morto in Friuli/Veneto
 - **Monaci, Ernesto** (voci 3591; anni 1828–1931) → [Q3732290](https://www.wikidata.org/wiki/Q3732290) Ernesto Monaci (1844–1918): _filologo e critico letterario italiano (1844-1918)_ — Soriano nel Cimino, Roma — date compatibili
-- **Monico, Jacopo** (voci 1199; anni 1429–1826) → [Q246412](https://www.wikidata.org/wiki/Q246412) Jacopo Monico (1778–1851): _cardinale e patriarca italiano_ — Riese Pio X, Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Monico, Jacopo** (voci 926, 1199; anni 1429–1851) → [Q246412](https://www.wikidata.org/wiki/Q246412) Jacopo Monico (1778–1851): _cardinale e patriarca italiano_ — Riese Pio X, Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Montagnone, Geremia** (voci 1409; anni ?–?) → [Q3761009](https://www.wikidata.org/wiki/Q3761009) Geremia da Montagnone (1250–1321): _umanista italiano_ — Padova — nato o morto in Friuli/Veneto
 - **Monteggia, Carlo** (voci 339; anni ?–?) → [Q134309852](https://www.wikidata.org/wiki/Q134309852) Carlo Monteggia (1801–1895): _poeta italiano (XIX secolo)_ — confermato dal contesto
 - **Montelongo, Gregorio** (voci 626, 668, 761, 1741; anni 1342–1876) → [Q3776550](https://www.wikidata.org/wiki/Q3776550) Gregorio da Montelongo (1200–1269): _patriarca cattolico italiano_ — Ferentino, Cividale del Friuli — nato o morto in Friuli/Veneto
@@ -858,7 +863,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Visconti, Alfonso** (voci 596; anni 1589–1780) → [Q954559](https://www.wikidata.org/wiki/Q954559) Alfonso Visconti (1552–1608): _cardinale italiano_ — Milano, Macerata — confermato dal contesto
 - **Visconti, Filippo Maria** (voci 1100; anni 1425–1432) → [Q289285](https://www.wikidata.org/wiki/Q289285) Filippo Maria Visconti (1392–1447): _nobile italiano, ultimo duca di Milano della dinastia dei Visconti_ — Milano — confermato dal contesto
 - **Vittorelli, Jacopo** (voci 471; anni 1732–1820) → [Q1385125](https://www.wikidata.org/wiki/Q1385125) Iacopo Vittorelli (1749–1835): _poeta, librettista e letterato italiano_ — Bassano del Grappa, Milano — confermato dal contesto
-- **Vittorio Emanuele II** (voci 1671, 2501, 3591; anni 1759–1906) → [Q168691](https://www.wikidata.org/wiki/Q168691) Vittorio Emanuele II di Savoia (1820–1878): _ultimo re di Sardegna (r. 1849-1861), poi primo re d'Italia (r. 1861-1878)_ — Torino, Roma — date compatibili
+- **Vittorio Emanuele II** (voci 356, 1671, 2501, 3591; anni 1759–1906) → [Q168691](https://www.wikidata.org/wiki/Q168691) Vittorio Emanuele II di Savoia (1820–1878): _ultimo re di Sardegna (r. 1849-1861), poi primo re d'Italia (r. 1861-1878)_ — Torino, Roma — date compatibili
 - **Viviani, Quirico** (voci 337, 338, 340, 2490; anni 1832–1853) → [Q22988733](https://www.wikidata.org/wiki/Q22988733) Quirico Viviani (1780–1835): _scrittore_ — Farra di Soligo, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Volpi, Giovanni Antonio** (voci 114, 295; anni ?–?) → [Q3766475](https://www.wikidata.org/wiki/Q3766475) Giovanni Antonio Volpi (1686–1766): _critico letterario, editore e poeta italiano_ — Padova — nato o morto in Friuli/Veneto
 - **Zabeo, Giovanni Prosdocimo** (voci 482; anni 1693–1824) → [Q41618802](https://www.wikidata.org/wiki/Q41618802) Giovanni Prosdocimo Zabeo (1755–1828): _teologo (1753-1828)_ — Padova — nato o morto in Friuli/Veneto; date compatibili
@@ -896,7 +901,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di San Genesio, Bertrando** (voci 102, 519, 533, 541; anni 1207–1938) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto; date compatibili
 - **di Toppo, Francesco** (voci 14, 17, 340, 490; anni 1338–1863) → [Q105098383](https://www.wikidata.org/wiki/Q105098383) Francesco Di Toppo (1797–1883): _collezionista_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 
-## 4. Nessun candidato su Wikidata: 3091 persone
+## 4. Nessun candidato su Wikidata: 3041 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
