@@ -956,7 +956,8 @@ def scrivi(con, entita):
     con.commit()
 
 
-TITOLI_EV = {"sua", "maesta", "racc", "ill", "illmo", "ecc", "eccmo", "sig", "sign", "nh", "sommo", "pontefice",
+PARTICELLE_EV = {"de", "di", "del", "della", "da", "dal", "dalla", "dei", "degli", "von", "van", "de'"}
+TITOLI_EV = {"sindaco", "sua", "maesta", "racc", "ill", "illmo", "ecc", "eccmo", "sig", "sign", "nh", "sommo", "pontefice",
              "principessa", "arciduchessa", "doge", "card", "sermo", "dott", "msgr", "mons", "abt"}
 RX_TOK = re.compile(r"[^\W\d_][\w'’]*\.?(?:[a-zà-ü]+\.?)?")
 
@@ -1029,6 +1030,9 @@ def evidenziazioni(con, entita, titoli):
                                     or k(t) in TITOLI_EV or (abbr(t) and len(k(t)) <= 1))
         i, j = 0, len(toks)
         while i < j - 1 and via_sinistra(toks[i][2]):
+            # la particella davanti al cognome resta («de Grassi Luigi»)
+            if toks[i][2].lower() in PARTICELLE_EV and nome(toks[i + 1][2]):
+                break
             i += 1
         while j - 1 > i and not nome(toks[j - 1][2]) and not re.match(r"[a-z]+['’][A-Z]", toks[j - 1][2]) and (
                 toks[j - 1][2][:1].islower() or k(toks[j - 1][2]) in titoli or k(toks[j - 1][2]) in TITOLI_EV):
@@ -1069,6 +1073,17 @@ def evidenziazioni(con, entita, titoli):
                 ev[mid] = [prec[5], b]
                 if prec[7] == eid:
                     ev[prec[0]] = [prec[5], b]
+        # particella scritta subito prima della menzione e parte del cognome: «de Grassi Luigi»
+        if eid in nomi_ent:
+            if voce not in testi:
+                testi[voce] = dict(((s_, a_), t_) for s_, a_, t_ in con.execute(
+                    "SELECT 'testo', NULL, testo FROM voci WHERE id=? UNION ALL SELECT 'coda', NULL, coda FROM voci "
+                    "WHERE id=? UNION ALL SELECT 'annotazione', id, testo FROM annotazioni WHERE voce=?", (voce, voce, voce)))
+            t = testi[voce].get((sede, aid)) or ""
+            a, b = ev.get(mid, [ini, fin])
+            q = re.search(r"(?:^|(?<=\s))(de|De|di|Di|da|del|della|dal|dalla|de'|De')\s$", t[max(0, a - 8):a])
+            if q and a == ini and (q.group(1).lower().rstrip("'") in nomi_ent[eid] or a - len(q.group(0)) <= 2):
+                ev[mid] = [a - (len(q.group(0))), b]
         # correzione del curatore tra quadre subito dopo il nome: «N. H. Z. [Mario]»
         if eid in nomi_ent:
             if voce not in testi:

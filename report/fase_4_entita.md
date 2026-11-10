@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3897 | 681 | 7707 |
-| luogo | 563 | 62 | 4569 |
+| persona | 3900 | 689 | 7775 |
+| luogo | 564 | 62 | 4571 |
 | santo | 124 | 44 | 490 |
 
-Menzioni collegate a un'entità: 12766 su 20996. Senza entità: nome o cognome singolo 7905, esclusa dal curatore 132, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12836 su 20997. Senza entità: nome o cognome singolo 7835, esclusa dal curatore 133, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -144,10 +144,8 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Beltrame, Giuseppe**: G. Beltrame (338, 1426, 1427); Giuseppe Beltrame (340, 866)
 - **Beltrame, Luigi Vittorio**: Luigi Vittorio (3730)
 - **Beltrame, Pietro**: Pietro dott. Beltrame (2706)
-- **Bern, Francesco**: Franc. Bern (601)
 - **Bernabò, Gianfrancesco**: Bernabò Gianfrancesco (464)
 - **Bernadotte, Jean-Baptiste**: Bernadotte J. B. (1938)
-- **Bianco, Pellegrino**: Pellegrino Bianco (3041)
 - **Bona, Vincenzo**: Bona Vinc. (518)
 - **Boni, Mauro**: Mauro Boni (592, 593)
 - **Bonifacio, Baldassarre**: Baldassare Bonifacio (639)
@@ -190,7 +188,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Davide, Antonio**: Davide Antonio (476)
 - **De Luca, Arcangelo**: Arcangelo De Luca (3913)
 - **De Luca, Tommaso**: De' Luca Tommaso (471)
-- **De Rossi, Flaminio**: Flaminio (650)
+- **De Rossi, Flaminio**: De Rossi (650); Flaminio (650)
 - **De Vit, Domenico**: De Vit D.co. Lezione (3151)
 - **De Vit, Giacomo**: De Vit Giacomo (3113, 3136, 3162)
 - **Del Ben, Francesco**: Francesco Del Ben (836)
@@ -433,7 +431,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Antonini, Antonio**: A. Antonini (481); Ant. Antonini (481); Antonio Antonini (23, 546)
 - **Aprilis, Bartolomeo**: B. Aprilis (875); Bart. Aprilis (511); Bartolomeo Aprilis (492)
 - **Arigone, Giovanni Battista**: Arigone Gio. Batta (287); G. B. Arrigone (102); G. B. Arrigoni (102); I. B. Arigonii (102)
-- **Asquini, Fabio**: Asquini Fabio (558); Asquini co. Fabio (558); Dal co. Asquini F. (2473, 2474); Fabio Asquini (575, 721, 930); Fabio Asquino (471, 476, 508)
+- **Asquini, Fabio**: Asquini (575, 721); Asquini Fabio (558); Asquini co. Fabio (558); Dal co. Asquini F. (2473, 2474); Fabio Asquini (575, 721, 930); Fabio Asquino (471, 476, 508)
 - **Bassi, Giovanni Battista**: Basso Gio. Batta [manuale]; Bassi G. B. (524); Bassi G.B. (2134); Bassi Gio. Battista (518)
 - **Battistella, Antonio**: A. Battistella (721); Battistella A.° (1973); Battistella Ant.° (1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967); Battistella Antonio (1956); Battistella, Antonio (3520)
 - **Baudouin de Courtenay, Jan**: Jan Niecisław Baudouin de Courtenay [manuale]; Baudouin de Courtenay (2634/16, 2635/14, 2635/4, 2635/5, 2636/5, 2637/10); G. Baudouin de Courtenay (2635/12)
@@ -497,7 +495,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Giustinian, Antonio**: Antonio Giustinian (3790); L. T. A. Giustinian (987)
 - **Giustinian, Marco Antonio**: M. A. Giustinian (160); Marco Antonio Giustinian (3780)
 - **Gortani, Giovanni**: G. Gortani (4108); Giovanni Gortani (3827, 4064)
-- **Gradenigo, Gian Girolamo**: G. G. Gradenigo (598, 1005); G. Gir. Gradenigo (870, 1224); G. Gradenigo Arc. (207); Gian Gerolamo Gradenigo (563); Gian Girolamo Gradenigo (315, 598, 649); Gradenigo Gian Girolamo (315); Ill.mi D. D. Jo. Hieronymi Gradonici (3869); Jo. Hieronimi Gradonici (463)
+- **Gradenigo, Gian Girolamo**: G. G. Gradenigo (598, 1005); G. Gir. Gradenigo (870, 1224); G. Gradenigo Arc. (207); Gian Gerolamo Gradenigo (563); Gian Girolamo Gradenigo (315, 598, 649); Gradenigo (598, 1005, 3736); Gradenigo Gian Girolamo (315); Ill.mi D. D. Jo. Hieronymi Gradonici (3869); Jo. Hieronimi Gradonici (463); di Msgr. Gradenigo (638); di Udine Gradenigo (1020)
 - **Greati, Giuseppe**: Gius. Greati (338); Giuseppe Greati (249); Giuseppe Greatti (875); Greatti (466, 479, 824); Greatti G. (80)
 - **Grimani, Giovanni**: De Johannis Grimani Patriarchae Aquilejensis (792); G. Grimani (1224); Giovanni (2685); Giovanni Grimani (765, 1123); d'Aquileja Giovanni Grimani (467)
 - **Gubernatis, Angelo**: A. De Gubernatis (4108); Angelo De Gubernatis (3591)
@@ -536,7 +534,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Polcenigo, Giorgio**: G. di Polcenigo (165); Giorgio Polcenigo (23, 3756); Giorgio Pulcenigo (329); Giorgio di Polcenigo (165, 166, 167); Polcenigo (di) co. Giorgio (168, 169, 170, 171, 172); Polcenigo Giorgio (282, 283, 284); Polcenigo co. Giorgio (281, 547); Polcenigo di Giorgio (1892, 1953); Polcenigo, Giorgio (3756)
 - **Pontini, Antonio**: A. Pontini (4284); A. dr. Pontini (4284); Antonio (4284); Pontini Antonio (2288, 2289); Pontini prof. Antonio (1582, 1583); Pontini, Antonio (4284)
 - **Portis, Filippo**: F. de Portis (923); Filippo de Portis (2388)
-- **Prampero, Antonino**: A. di Prampero (875, 2642); Antonino di Prampero (200, 496); Prampero (di) Antonino (2134, 2504); Sindaco Antonino di Prampero (852)
 - **Prati, Giuseppe**: G. Prati (337); Giuseppe Prati (337)
 - **Puppi, Raimondo**: Puppi (de) Raimondo (4261); Puppi Raimondo (181); R. Puppi (182); Raimondo de Puppi (487, 4262)
 - **Putelli, Giuseppe Giacomo**: G. G. Putelli (487); Putelli Giuseppe Giacomo (2262)
@@ -549,8 +546,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Ristori, Adelaide**: A. Ristori (512); Ristori Adelaide (2134)
 - **Rizzardi, Giuseppe**: G. Rizzardi (1185); Rizzardi Giuseppe (464)
 - **Roberti, Giambattista**: Giambattista Roberti (482); Roberti G. B. (598)
-- **Rossini, Gioachino**: Gioacchino Rossini (3284); Gioachino Rossini (3309, 3342, 3359/A, 3413, 3454, 3475); Pio IX di Gioacchino Rossini (4272); Rossini G. (3443, 3458, 3483, 3485); Rossini Gioachino (2893, 3284, 3303, 3309, 3324, 3342, 3359/A, 3413, 3454, 3475); Rossini, Gioacchino (4272)
-- **Rubeis, Flaminio**: Fl. de Rubeis (1054); Flaminio de Rubeis (1057, 1114); Flaminius de Rubeis (606)
+- **Rossini, Gioachino**: Gioacchino Rossini (3284); Gioachino Rossini (3309, 3342, 3359/A, 3413, 3454, 3475); Pio IX di Gioacchino Rossini (4272); Rossini (1584, 3485, 3495); Rossini G. (3443, 3458, 3483, 3485); Rossini Gioachino (2893, 3284, 3303, 3309, 3324, 3342, 3359/A, 3413, 3454, 3475); Rossini, Gioacchino (4272)
 - **Sagredo, Nicolò**: N. Sagredo (1224); Nicolò Sagredo (768); Sagredo Nicolò (464)
 - **Savorgnan, Antonio**: Antonio Savorgnan (684, 1247, 2637/6, 2661); Antonio Savorgnani (1016); Antonio Savorgnano (561); Antonio e Girolamo (2000); Antonio e Girolamo Savorgnan (2000); Sacco di Udine di A. Savorgnano (1571); Savorgnan (di) Antonio (2134)
 - **Scrosoppi, Antonio**: A. Scrosoppi (2695); Antonio Scrosoppi (3803)
@@ -580,8 +576,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Zambelli, Giovanni Battista**: G. Batta Zambelli (338); Gio. Batta Zambelli (338); Zambelli G. B. (339)
 - **Zanella, Giacomo**: G. Zanella (4108); Giacomo Zanella (487)
 - **Zanon, Antonio**: A. Zanon (508, 721, 3913); Ant.° Zanon (508); Antonio (721, 722); Antonio Zanon (471, 508, 558); Zanon Antonio (519)
+- **de Rubeis, Flaminio**: De Rubeis (650); Fl. de Rubeis (1054); Flaminio (650); Flaminio de Rubeis (1057, 1114); Flaminius de Rubeis (606)
 - **del Torso, Enrico**: E. del Torso (2582, 2583, 2599, 3931, 4286); Enrico (2613, 3658, 3718, 3793); Enrico Del Torso (3715); Enrico del Torso (2379, 2422, 3931, 4232, 4285)
-- **della Porta, Giovanni Battista**: Della Porta G. B. (2253, 2254); Gio. Batta (3619); Gio. Battista (2691, 2692, 2693, 2694, 2703); Gio. Battista Della Porta (2692); Giovanni Battista (3849); Porta (della) Giov. Battista (383)
+- **della Porta, Giovanni Battista**: Della Porta (2693); Della Porta G. B. (2253, 2254); Gio. Batta (3619); Gio. Battista (2691, 2692, 2693, 2694, 2703); Gio. Battista Della Porta (2692); Giovanni Battista (3849); Porta (2253, 2254); Porta (della) Giov. Battista (383); Porta Utinensis (2693)
 - **della Porta, Uldarico**: U. della Porta (1032); Uldarico della Porta (1032)
 - **Śrī, Ma**: Iti Śrī Ma (4416); Iti Śrī Mā (4510)
 
@@ -596,7 +593,8 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Andreuzzi, Antonio**: Andreuzzi, Antonio (3932); Antonio Andreuzzi (3932-b)
 - **Antonini, Giuseppe**: Antonini, Giuseppe (3600); Giuseppe Antonini (3600)
 - **Antonini, Lodovica**: Lodovica Antonini (875); Ludovica Antonini Udinese (550)
-- **Asquini, Girolamo**: Asquini Girolamo (471); Girolamo Asquini (471, 525)
+- **Asquini, Basilio**: Asquini (518, 759); Basilio Asquini (619, 759, 790, 875)
+- **Asquini, Girolamo**: Asquini (471); Asquini Girolamo (471); Girolamo Asquini (471, 525)
 - **Attems (d'), Francesco**: Attems co. Francesco (471); Francesco d'Attems (487)
 - **Bach**: Bach. Concertoni (3408, 3409); Bach. Concertoni N° VI (3467, 3468, 3469, 3470, 3471)
 - **Bach, Giovanni**: Bach Giovanni (3403, 3406); Giovanni Bach. (3406)
@@ -648,7 +646,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Candotti, Luigi**: Candotti ab. Luigi (339); Candotti prof. Luigi (2134); Candotti, Luigi (3504); Luigi Candotti (496)
 - **Cannobio, Carlo**: Cannobio Carlo (3311); Carlo Cannobio (3311)
 - **Capuzzi, Antonio**: Antonio Capuzzi (3363); Capuzzi Antonio (3363)
-- **Carli, Gian Rinaldo**: Gian Rinaldo (701); Gian Rinaldo Carli (485)
+- **Carli, Gian Rinaldo**: Carli-Rubbi (599, 726); Gian Rinaldo (701); Gian Rinaldo Carli (485); Gianrinaldo (726); Gianrinaldo Carli Rubbi (601)
 - **Carlo V**: Carlo V (2529); Proteste di Carlo V (1098)
 - **Carlo X**: Carlo Decimo (3788); Carlo X (1194)
 - **Carnico, Giulio**: De Julio Carnico (759); Giulio Carnico (525)
@@ -724,6 +722,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Gobio, Carlo**: Carlo (2559); Carlo Gobio (2535, 2536)
 - **Gorgo, Camillo**: Camillo Gorgo (875, 2312); Gorgo Camillo (1394)
 - **Gorgo, Giacomo**: Giacomo Gorgo (505, 507, 875); da Giacomo Gorgo (507)
+- **Gradenigo, Giovanni Agostino**: D. Giannagostino Gradenigo (508); G. A. Gradenigo (43); G. Agostino (616); Gradenigo (616)
+- **Gradenigo, Pietro**: P. Gradenigo (938); Pietro Gradenigo (639)
+- **Grassi, Luigi**: Grassi Luigi (1616, 2988, 2989, 2990, 2991, 2992, 2993, 2994, 2995, 2996, 2997, 2998, 2999, 3000, 3001); L. Grassi (3218)
 - **Grassulinis, Giacomo**: Giacomo de Grassulinis (1877); Grassulinis Giacomo (1877)
 - **Grazioli, Giovambattista**: Giovambattista Grazioli (3190); Grazioli Giovambattista (3190)
 - **Gregorio XII**: Gregorio XII (1550); Gregorio XII. (1552)
@@ -743,6 +744,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Locatelli, Pier Paolo**: Pier Paolo Locatello [manuale]; Locadelli Petri Pauli J. C. Patricij Utinensis Urbis (553); Locadello (621); Locatelli Pietro Paolo (2276); P. Pauli Locadelli (621); Petri Pauli Locadelli (621); Petrum Paulum Locadellum (621); Pier Paolo (739, 740); Pier Paolo Locadello (651); Pier Paolo Locatelli (1058); Pietro Paolo Locadello (621); Trascrisse P. Paolo Locadello J.C. (621)
 - **Lorenzi, Paolina**: Lorenzi Paolina (2357); Paolina Lorenzi (2357)
 - **Loschi-Trento, Elena**: Elena Loschi-Trento (2634/8); Loschi-Trento, Elena (2634/9)
+- **Lucera Del Bianco, Armida**: Armida (4174, 4175); Lucera Del Bianco (4174, 4175)
 - **Luigi XIV**: Luigi XIV (23); Luigi XIV. Versione (3797)
 - **Luigi XV**: Luigi 15° (1095); Luigi XV (926)
 - **Luzzatto, Oscar**: Dr Oscar Luzzatto (2617); Oscar Luzzatto (3788, 3951)
@@ -846,7 +848,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Righi, Giovanni Maria**: Gio. Maria Righi (4206); Righi, Gio. Maria (4206)
 - **Rota, Francesco**: Fr. Rota (987, 994); Francesco (644); Francesco Rota (525); Rota Francesco (954, 955, 956, 957, 958, 959, 960)
 - **Rubeis, Bernardo**: P. Bernardo (649); P. Bernardo de Rubeis (605)
-- **Rubeis, Bernardo Maria**: Bernardo Maria de Rubeis (486); P. Bernardo Maria de Rubeis (486, 721)
 - **Sabbadini, Domenico**: Domenico Sabbadini (875, 4196); Sabbadini ab. Domenico (279, 491, 529); Sabbadini, Domenico (4196)
 - **Sabbatini, Carlo**: Carlo Sabbatini (479); Sabbatini avv. Carlo (479)
 - **Sanlucar, Pietro**: P. Pietro Sanlucar (1894); Sanlucar Pietro (1894)
@@ -908,11 +909,14 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **da Udine, Giovanni**: Giovanni (4283); Giovanni da Udine (870, 1195, 1197)
 - **de Gerolami, Agostino**: Agostino Germiniano [manuale]; Agostino Geronimiano [manuale]; Agostino de Gerolami [manuale]; Publio Augusto Graziani [manuale]; Augusto Hieronimiano (43); Hieronimiano Augusto (69); Publii Augusti Geronimiani Utinensis (43)
 - **de Mutina, Paolo**: Paolo (762); Paulum (761)
+- **de Rubeis, Bernardo Maria**: Bernardo Maria de Rubeis (486); De Rubeis (603, 605, 617, 648, 649, 757, 776, 794, 938, 1005); De' Rubeis (520); Franc. Bern. Maria de Rubeis (601); Francesco Bernardo Maria de' Rubeis (485); Joh. Bernardi Mariae (648); P. Bernardo Maria de Rubeis (486, 721); P. De Rubeis (603); P. de Rubeis (485, 603, 649); Rubeis (519, 871, 874, 1124, 1552)
 - **del Torso, Jacopino**: Del Torso Giacobino (541); Giacomino del Torso (66); Jacopino del Torso (614, 1550, 1552)
 - **di Brazzà, Giacomo**: G. di Brazzà (1503); G. di Brazzà Savorgnan (4108)
 - **di Cergneu, Giovanni Battista**: Cergnocco (694, 695, 696); Gio. Bat. (694, 695, 696)
 - **di Maniago, Ailino**: Ailino (699); Ailino Di Maniago (788); Ailino di Maniaco (771); Ailino di Maniago (699, 771)
+- **di Prampero, Artico**: Artico (3200); Prampero (di) (3200)
 - **di Prampero, Barnaba**: Barnaba di Prampero (619); Orlando Innamorato di Barnaba di Prampero (102)
+- **di Prampero, Cristoforo**: Cristoforo (724); Di Prampero (724)
 - **di San Genesio, Bertrando**: Arca del B. Bertrando (803); B. Bertrando (826); Beato S.N. (533)
 - **Śrī, Gautam**: Iti Śrī Gautam (4495); Śrī Gautam (4351)
 
@@ -962,6 +966,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Gemona del Friuli**: Gemona (371, 470, 471, 525, 533, 567, 616, 618, 619, 639, 715, 721, 743, 755, 860, 867, 877, 888, 905, 931, 955, 1041, 1265, 1310, 1490, 1552, 1567, 1576, 2119, 2195, 2201, 2202, 2218, 2225, 2229, 2245, 2455, 2614, 2648, 2799, 3648, 3994, 4170); Gemona del Friuli (4217)
 - **Gerusalemme**: Gerosolima (18, 32); Gerusalemme (323, 576, 1552)
 - **Giassico**: Giassicco (496); Giassico (491, 1822)
+- **Goricizza**: Goricizza [manuale]; Gorisizza (878)
 - **Graz**: Gratz (476); Graz (470, 493, 632, 867)
 - **Grazzano**: Grazzano (520, 852, 3741); Grizan (520); Grizàn (23)
 - **Gropello Cairoli**: Gropello Cairoli [manuale]; Gropallo (497)
@@ -1164,9 +1169,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3192 entità: elenco completo nella tabella `entita`.
+3187 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
-Tessitori (249), Fin (113), Minelli (101), Liruti (92), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Pirona (28), Braida (27), Joppi (26), Śrī (26), Buddharās (25), Del Torso (24), Corgnali (24), G. B. (23), Nicoletti (23), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Francesco (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Giovanni (15), Castello (15), Barnaba (15), Frangipane (14), Giuseppe (14), di Aquileja (14), Ath (14), Napoleone (13), Zanon (13), Modotti (13), Ciconi (12), Varmo (12), De Rubeis (12), Caiselli (12), Della Porta (12), Oliverio (12), Carlo (11), Madrisio (11), Asquini (11), Grado (11), Florio (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Angelo (10), Bertoli (10), Antonio (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), Nicolò (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Porta (8), Locatelli (8), Pavona (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Rubeis (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6), Prampero (6), Gradenigo (6), Trento (6)
+Tessitori (249), Fin (113), Minelli (101), Liruti (92), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Pirona (28), Braida (27), Joppi (26), Śrī (26), Buddharās (25), Del Torso (24), Corgnali (24), G. B. (23), Nicoletti (23), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Francesco (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Giovanni (15), Castello (15), Barnaba (15), Frangipane (14), Giuseppe (14), di Aquileja (14), Ath (14), Napoleone (13), Zanon (13), Modotti (13), Ciconi (12), Varmo (12), Caiselli (12), Oliverio (12), Carlo (11), Madrisio (11), Grado (11), Florio (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Angelo (10), Bertoli (10), Antonio (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), Nicolò (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Della Porta (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Locatelli (8), Pavona (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6), Trento (6), Tolmino (6), Gorgo (6), Valle (6), Venzoni (6), Zanutto (6), Scisma (6)
 

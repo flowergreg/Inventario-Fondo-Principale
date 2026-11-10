@@ -1,0 +1,47 @@
+﻿n;cognome;voci;testo;problema;proposta;certezza;decisione;nota curatore
+1;Prampero;102;Orlando Innamorato di Barnaba di Prampero;evidenziato anche il titolo del poema;evidenziare solo ®Barnaba di Prampero¯;s;;
+2;Prampero;533;castello di Prampero;il castello  registrato come persona (famiglia);luogo: Prampero;s;;
+3;Prampero;852;Sindaco Antonino di Prampero;evidenziato anche ®Sindaco¯;evidenziare solo ®Antonino di Prampero¯ (regola generale: ®Sindaco¯ come titolo);s;;
+4;Prampero;3751;co. Ca.ø Prampero;forma ®Prampero, Ca.ø¯: abbreviazione da sciogliere;?: Camillo? Carlo? (dimmelo tu);?;Indecidibile, resta Ca.ø;
+5;Prampero;568;tra Smeralda del Torso e Prampero di Prampero;persona non riconosciuta: Prampero  il nome di battesimo;Prampero / di Prampero;s;;
+6;Prampero;724;Di Prampero (Cristoforo). Cronaca del Friuli;intestazione non riconosciuta;Cristoforo / di Prampero;s;;
+7;Prampero;836;Dono del Sen. A. di Prampero 25 lug. 1880;®A.¯ senatore nel 1880;Antonino di Prampero (Dizionario, 1836-1920);s;;
+8;Prampero;3200;Prampero (di), Artico, medaglia d'oro;intestazione non riconosciuta;Artico / di Prampero;s;;
+9;Prampero;2642, 1503;Giacomo di Prampero;gi collegato al Dizionario (1876-1953);nessuna;ok;;
+10;Rubi;2195-2211;dono comm. D.ø Rubi [?];"forma ®Rubi, D.ø¯; evidenziato anche ®[?]¯";"Domenico / Rubi; evidenziare solo ®D.ø Rubi¯";s;;
+11;Rubi;601, 599, 726;"Gianrinaldo Carli Rubbi; Carli-Rubbi";forma separata ®Carli Rubbi, Gianrinaldo¯ e menzioni senza forma;unire a ®Carli, Gian Rinaldo¯ (Wikidata Q3762758);s;;
+12;della Porta;877;Regesti ? raccolte da G. della Porta;®della Porta, G.¯ da sciogliere;?: Giovanni Battista (lo storico, 1867-1954)?;?;indecidibile, resta G.;
+13;della Porta;2253, 2254;Dono G. B. della Porta, 20-5-1935;nel ®Dono¯ il nome non  riconosciuto;Giovanni Battista della Porta (lo storico);s;;
+14;della Porta;2693;Opus Johannis Baptistae a Porta Utinensis;forma latina non riconosciuta;Giovanni Battista della Porta (lo storico);s;;
+15;della Porta;1074, 1075;"Della Porta: Notabilia; G. B. Della Porta: Notabilia ex juris civilis fontibus";"®G. B.¯ non riconosciuto; potrebbe essere l'altro G. B. (1789-1864)";?: quale Giovanni Battista? altrimenti entrambi i link;?;entrambi i link;
+16;della Porta;3598;Provenienza: Co. G. della Porta[?];®della Porta, G.¯ da sciogliere;?;?;indecidibile;
+17;della Porta;?;porta (sostantivo);cercando ®della Porta¯ escono anche le voci con ®porta¯ (della porta, porta la data);"nessuna:  la parola cercata; l'utente pu aggiungere il nome";ok;;
+18;Del Bianco;3041;Coro di contadini nel Pellegrino Bianco;®Bianco, Pellegrino¯  il titolo di un'opera;non persona (opera);s;;
+19;Del Bianco;4174, 4175;Lucera Del Bianco, Armida;forma sbagliata ®Lucera, Bianco¯;Armida / Lucera Del Bianco;s;;
+20;Asquini;491;Fabio Maria card. Asquini, Roma 1841-55;il cardinale non  riconosciuto;Asquini, Fabio Maria (Dizionario, 1802-1878);s;;
+21;Asquini;tutte;Asquini, Fabio;la forma ha due schede del Dizionario (Fabio 1726-1818 e Fabio Maria);tenere solo la scheda di Fabio (1726-1818);s;;
+22;Asquini;471;dedica fatta da questo all'Asquini (Zorutti);cognome da solo;Girolamo Asquini;s;;
+23;Asquini;575;lettera-dissertazione diretta all'Asquini suddetto;cognome da solo;Fabio Asquini;s;;
+24;Asquini;721;carteggio dello Z. coll'Asquini (6 volte);cognome da solo;Fabio Asquini;s;;
+25;Asquini;759;risposta dell'Asquini al Liruti;cognome da solo;Basilio Asquini;s;;
+26;Asquini;518;Istorie del Friuli di Bas. Asquini;®Bas.¯ non sciolto;Basilio Asquini;s;;
+27;Asquini;2473, 2474;[Dal co. Asquini F.];evidenziato anche ®Dal co.¯;evidenziare solo ®Asquini F.¯;s;;
+28;Asquini;590;?Franceschinis, Asquini, Marco Regolo?;cognome da solo in un elenco;?: lasciare cos?;?;s,  indecidibile;
+29;Rubeis;485, 601, 757, 648, 874;"Francesco Bernardo Maria de' Rubeis; Franc. Bern. Maria de Rubeis; Gio. Fran. Bern. M.; fr. Joh. Bernardi Mariae; B. M. de Rubeis";il P. Bernardo Maria de Rubeis  diviso in 4 forme (una  ®Rubeis, Maria¯);unire tutto in ®de Rubeis, Bernardo Maria¯ (Dizionario 1687-1775);s;;
+30;Rubeis;485, 519, 520, 603, 605, 617, 649, 776, 794, 871, 938, 1005, 1124, 1552;"il P. de Rubeis; Monumenta del De Rubeis";cognome da solo:  l'autore dei Monumenta Ecclesiae Aquileiensis;Bernardo Maria de Rubeis;s;;
+31;Rubeis;870;3ø De Rubeis G. B., grosso quaderno?;®Rubeis, G. B.¯;Giovanni Battista de Rubeis (Dizionario, 1743-1819)?;?;s, essendo cos importante da essere nel Dizionario;
+32;Rubeis;870;lettera di T. de Rubeis con cui offre il quadro;®T.¯ non sciolto;?: Tommaso de Rubeis (464)?;?;no, troppo generico;
+33;Rubeis;650;De Rubeis o De Rossi (Flaminio). Della nobilt;intestazione non riconosciuta;Flaminio de Rubeis;s;"Nel tomo (una trascrizione tarda)  scritto in effetti ""de Rossi"" ma il compilatore dell'indice dubita giustamente che fosse in realt ""de Rubeis"". Da mantenere entrambi.";
+34;Rubeis;1054;G. F. Palladio, Fl. de Rubeis, Diana, Tib. Deciani;®Diana¯  collegata a ®de Rubeis, Diana¯:  un altro giureconsulto;Diana (cognome) /;s;;
+35;Rubeis;878;Documenti delle famiglie Rubeis di Gorisizza;famiglia;nessuna;ok;"Verifica di avere ""Goricizza/Gorisizza"" tra i luoghi.";
+36;Rubeis;4518;Lettera a Maria Della Chiave de Rubeis;persona non riconosciuta;Maria / Della Chiave de Rubeis;s;"Non  un cognome unico ma il suo cognome da nubile + il suo cognome da sposata. Va associata perci a due forme: ""Maria della Chiave"" e ""Maria de Rubeis"".";
+37;Gradenigo;43, 616, 508;"G. A. Gradenigo; Gradenigo (G. Agostino), monaco; D. Giannagostino Gradenigo";tre forme per lo stesso monaco;Gradenigo, Giovanni Agostino;s;;
+38;Gradenigo;207;Madrigale a G. Gradenigo Arc. di Udine;evidenziato anche ®Arc.¯;evidenziare solo ®G. Gradenigo¯;s;;
+39;Gradenigo;3869;Sub auspiciis Ill.mi D. D. Jo. Hieronymi Gradonici;evidenziato anche ®Ill.mi D. D.¯;evidenziare solo ®Jo. Hieronymi Gradonici¯;s;;
+40;Gradenigo;598, 638, 1005, 1020, 3736;"del Gradenigo; Msgr. Gradenigo arciv.; arcivescovo di Udine Gradenigo; Gradenigo, Giangirolamo";cognome da solo o intestazione non riconosciuta;Gian Girolamo Gradenigo;s;;
+41;Gradenigo;3790;Relazione del Provveditore Niccol Gradenigo;persona non riconosciuta;Niccol / Gradenigo;s;;
+42;Gradenigo;938;Memorie di Aquileia ? una di P. Gradenigo;®P.¯ da sciogliere;?: Pietro Gradenigo?;?;S;
+43;Battistella;?;;nessun problema;nessuna;ok;;
+44;Grassi;2988-3001;de Grassi Luigi;evidenziato senza ®de¯;regola generale: la particella davanti al cognome resta evidenziata;s;;
+45;Grassi;3218;Parole di L. Grassi;®L.¯ da sciogliere;?: Luigi Francesco de Grassi (1766-1831)? Il testo  friulano;?;"S perch anche altrove viene chiamato ""Luigi"" senza ""Francesco"".";
+46;Rossini;3485, 1584, 3495;"del Mø Rossini; Rossini, sua vita e sue opere; Rossini e Bellini";cognome da solo;Gioachino Rossini;s;;

@@ -1,10 +1,10 @@
 # Fase 5 — Luoghi: collegamento a GeoNames e Wikidata
 
-Verifica del 2026-11-09. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
+Verifica del 2026-11-10. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 536 |
+| alta | 537 |
 | media | 0 |
 | bassa | 1 |
 | nessuna | 26 |
@@ -218,6 +218,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Giassico** (3 menz.; voci 491, 496, 1822) → Giassico — GeoNames [3343590](https://www.geonames.org/3343590) PPL, Friuli-Venezia Giulia (GO) — Wikidata [Q18448153](https://www.wikidata.org/wiki/Q18448153): _frazione del comune italiano di Cormons, provincia di Gorizia_
 - **Ginevra** (2 menz.; voci 502) → Ginevra — GeoNames [7285902](https://www.geonames.org/7285902) — Wikidata [Q71](https://www.wikidata.org/wiki/Q71): _città della Svizzera e capitale del Canton Ginevra_
 - **Godia** (2 menz.; voci 1684, 2078) → Godia — GeoNames [3176020](https://www.geonames.org/3176020) PPL, Friuli-Venezia Giulia (UD)
+- **Goricizza** (1 menz.; voci 878) → Goricizza — GeoNames [3217641](https://www.geonames.org/3217641) PPL, Friuli-Venezia Giulia (UD)
 - **Gorizia** (41 menz.; voci 348, 401, 471, 487) → Gorizia — GeoNames [3175986](https://www.geonames.org/3175986) PPLA2, Friuli-Venezia Giulia (GO) — Wikidata [Q6596](https://www.wikidata.org/wiki/Q6596): _comune italiano_
 - **Gosaldo** (1 menz.; voci 3682) → Gosaldo — GeoNames [3175974](https://www.geonames.org/3175974) PPLA3, Veneto (BL) — Wikidata [Q40922](https://www.wikidata.org/wiki/Q40922): _comune italiano_
 - **Gradisca** (16 menz.; voci 469, 484, 525, 701) → Gradisca d'Isonzo — Wikidata [Q53129](https://www.wikidata.org/wiki/Q53129): _comune italiano_ — forma breve di Gradisca d'Isonzo

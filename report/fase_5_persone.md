@@ -1,11 +1,11 @@
 # Fase 5 — Persone: collegamento a Wikidata (VIAF, SBN, DBI)
 
-Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
+Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 752 |
-| media | 37 |
+| alta | 754 |
+| media | 38 |
 | bassa | 32 |
 | nessuna | 3076 |
 
@@ -21,6 +21,8 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Cainero, Enzo** (voci 4192; anni ?–?) → [Q3726469](https://www.wikidata.org/wiki/Q3726469) Enzo Cainero (1944–2023): _dirigente sportivo e calciatore italiano (1944-2023)_ — Tavagnacco, Udine — nato o morto in Friuli/Veneto; nato nel 1944: verificare
 - **Della Torre, Giorgio** (voci 466; anni 1493–1499) → [Q88475097](https://www.wikidata.org/wiki/Q88475097) Giorgio Della Torre (?–1512)
   - altri: [Q94939776](https://www.wikidata.org/wiki/Q94939776) Giorgio Della Torre (1607–1688): _botanico, professore, medico (1607-1688)_ [0]
+- **Diana** (voci 1054; anni ?–?) → [Q36429](https://www.wikidata.org/wiki/Q36429) Aylar Lie (1984–?): _modella, cantante e attrice pornografica iraniana-norvegese_ — Teheran — nato nel 1984: verificare
+  - altri: [Q21553162](https://www.wikidata.org/wiki/Q21553162) Diana (1923–1997) — L'Aia [-0.5]; [Q21510321](https://www.wikidata.org/wiki/Q21510321) Silvana Diana (1942–?): _botanica italiana_ [-0.5]; [Q27580499](https://www.wikidata.org/wiki/Q27580499) Emiliana Nchama (1986–?): _calciatrice equatoguineana_ — Acurenam [-0.5]; [Q3026126](https://www.wikidata.org/wiki/Q3026126) Diana (1965–?) — Basilea [-0.5]
 - **Farnese, Ranuccio** (voci 2010; anni 1573–1573) → [Q708666](https://www.wikidata.org/wiki/Q708666) Ranuccio Farnese (1530–1565): _cardinale italiano_ — Valentano, Parma
   - altri: [Q321379](https://www.wikidata.org/wiki/Q321379) Ranuccio Farnese il Vecchio (1390–1450): _nobile e condottiero italiano_ — Ischia di Castro [0]; [Q107101529](https://www.wikidata.org/wiki/Q107101529) Ranuccio Farnese (1456–1495) — Fornovo di Taro [0]
 - **Foscari, Alvise** (voci 501; anni 1667–1674) → [Q3613464](https://www.wikidata.org/wiki/Q3613464) Alvise Foscari (1679–1758): _patriarca cattolico italiano_ — Venezia — nato o morto in Friuli/Veneto
@@ -160,8 +162,9 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Ardigò, Roberto** (voci 2134; anni ?–?) → [Q1803058](https://www.wikidata.org/wiki/Q1803058) Roberto Ardigò (1828–1920): _psicologo, filosofo e pedagogista italiano (1828-1920)_ — Casteldidone, Mantova
 - **Arrivabene, Giovanni** (voci 2549; anni 1855–1855) → [Q323687](https://www.wikidata.org/wiki/Q323687) Giovanni Arrivabene (1787–1881): _nobile, patriota, politico e economista italiano_ — Mantova — confermato dal contesto
 - **Ascoli, Graziadio** (voci 497; anni 1873–1892) → [Q472212](https://www.wikidata.org/wiki/Q472212) Graziadio Isaia Ascoli (1829–1907): _linguista italiano (1829-1907)_ — Gorizia, Milano — nato o morto in Friuli/Veneto; date compatibili
-- **Asquini, Basilio** (voci 619, 759, 790, 875; anni 1712–1739) → [Q94528092](https://www.wikidata.org/wiki/Q94528092) Basilio Asquini (1682–1745): _storico locale (1682-1745)_ — Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Asquini, Basilio** (voci 518, 619, 759, 790; anni 1665–1851) → [Q94528092](https://www.wikidata.org/wiki/Q94528092) Basilio Asquini (1682–1745): _storico locale (1682-1745)_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Asquini, Fabio** (voci 471, 476, 508, 558; anni 1458–1936) → [Q5427789](https://www.wikidata.org/wiki/Q5427789) Fabio Asquini (1726–1818): _agronomo, economista_ — l'agronomo (1726-1818), non il cardinale Fabio Maria; fissato dopo l'unione con «Asquino» (fase 6)
+- **Asquini, Fabio Maria** (voci 491; anni 1841–1851) → [Q1390563](https://www.wikidata.org/wiki/Q1390563) Fabio Maria Asquini (1802–1878): _cardinale italiano (1802-1878)_ — Fagagna, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Asquini, Girolamo** (voci 471, 525; anni 1200–1859) → [Q61200190](https://www.wikidata.org/wiki/Q61200190) Girolamo Asquini (1762–1837): _archeologo italiano (1762-1837)_ — Fagagna, Parma — nato o morto in Friuli/Veneto; date compatibili
 - **Asteo, Girolamo** (voci 568; anni 1599–1608) → [Q53231842](https://www.wikidata.org/wiki/Q53231842) Girolamo Asteo (1562–1626): _sacerdote italiano_ — Veroli — date compatibili
 - **Attimis, Tristano** (voci 104; anni ?–?) → [Q12007462](https://www.wikidata.org/wiki/Q12007462) Tristano Attimis (1707–1748): _missionario gesuita (1707-1748)_ — Attimis — nato o morto in Friuli/Veneto
@@ -281,7 +284,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Carducci, Giosuè** (voci 497; anni 1871–1892) → [Q43440](https://www.wikidata.org/wiki/Q43440) Giosuè Carducci (1835–1907): _poeta, scrittore e critico letterario italiano (1835-1907)_ — Valdicastello Carducci, Bologna — date compatibili
 - **Carga, Giovanni** (voci 102; anni ?–?) → [Q104383458](https://www.wikidata.org/wiki/Q104383458) Giovanni Carga (1520–1600): _n. ca. 1520 Letterato friulano, nato verso il 1520, fratello maggiore di Camillo_ — confermato dal contesto
 - **Carletti, Ercole** (voci 2564, 3720, 3892, 3912; anni 1899–1948) → [Q11919538](https://www.wikidata.org/wiki/Q11919538) Ercole Carletti (1877–1946): _giornalista, scrittore_ — Udine — nato o morto in Friuli/Veneto; date compatibili
-- **Carli, Gian Rinaldo** (voci 485, 701; anni 1720–1768) → [Q3762758](https://www.wikidata.org/wiki/Q3762758) Gian Rinaldo Carli (1720–1795): _scrittore, economista e storico italiano (1720-1795)_ — Capodistria, Milano — date compatibili
+- **Carli, Gian Rinaldo** (voci 485, 599, 601, 701; anni 1720–1769) → [Q3762758](https://www.wikidata.org/wiki/Q3762758) Gian Rinaldo Carli (1720–1795): _scrittore, economista e storico italiano (1720-1795)_ — Capodistria, Milano — date compatibili
 - **Carlo Magno** (voci 407, 408, 409, 518; anni 1097–1902) → [Q3044](https://www.wikidata.org/wiki/Q3044) Carlo Magno (748–814): _re dei Franchi (r. 768-814) e dei Longobardi (r. 774-814), primo imperatore del Sacro Romano Impero (r. 800-814)_ — fase 6, blocco 4: Carlo Magno
 - **Carlo V** (voci 1098, 2529; anni 1936–1936) → [Q32500](https://www.wikidata.org/wiki/Q32500) Carlo V d'Asburgo (1500–1558): _duca di Borgogna (r. 1506-1556), re di Spagna (r. 1516-1556) e imperatore del Sacro Romano Impero (r. 1519-1556)_ — Gand, Monastero di Yuste
 - **Caro, Lucrezio** (voci 597; anni 1792–1792) → [Q47154](https://www.wikidata.org/wiki/Q47154) Tito Lucrezio Caro (-93–-54): _poeta e filosofo romano_ — Pompei, Roma
@@ -491,10 +494,11 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Gortani, Luigi** (voci 3634; anni ?–?) → [Q21514145](https://www.wikidata.org/wiki/Q21514145) Luigi Gortani (1850–1908): _botanico_ — Tolmezzo — nato o morto in Friuli/Veneto
 - **Gozzi, Carlo** (voci ; anni ?–?) → [Q263270](https://www.wikidata.org/wiki/Q263270) Carlo Gozzi (1720–1806): _drammaturgo italiano (1720-1806)_ — fase 6, blocco 4: 
 - **Gozzi, Gaspare** (voci 36, 339, 471, 1603; anni 1778–1846) → [Q1232500](https://www.wikidata.org/wiki/Q1232500) Gasparo Gozzi (1713–1786): _scrittore e critico letterario italiano (1713-1786)_ — fase 6, blocco 4: 
-- **Gradenigo, Gian Girolamo** (voci 207, 315, 463, 563; anni 1729–1862) → [Q3767387](https://www.wikidata.org/wiki/Q3767387) Giovanni Girolamo Gradenigo (1708–1786): _arcivescovo cattolico italiano_ — Venezia, Udine — nato o morto in Friuli/Veneto; date compatibili
+- **Gradenigo, Gian Girolamo** (voci 207, 315, 463, 563; anni 1700–1862) → [Q3767387](https://www.wikidata.org/wiki/Q3767387) Giovanni Girolamo Gradenigo (1708–1786): _arcivescovo cattolico italiano_ — Venezia, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Gradenigo, Giorgio** (voci 53, 102; anni 1600–1600) → [Q55228433](https://www.wikidata.org/wiki/Q55228433) Giorgio Gradenigo (1522–1600): _governatore, letterato, poeta (1522-1600)_ — date compatibili
+- **Gradenigo, Giovanni Agostino** (voci 43, 508, 616; anni 1756–1869) → [Q22231575](https://www.wikidata.org/wiki/Q22231575) Giovanni Agostino Gradenigo (1725–1774): _vescovo e storico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Gradenigo, Marco** (voci 483; anni 1712–1755) → [Q3846180](https://www.wikidata.org/wiki/Q3846180) Marco Gradenigo (1663–1734): _patriarca di Venezia_ — Venezia, Padova — confermato dal contesto
-- **Gradenigo, Pietro** (voci 639; anni 1739–1739) → [Q108867130](https://www.wikidata.org/wiki/Q108867130) Pietro Gradenigo (1695–1776): _erudito e storico veneziano_ — Venezia — confermato dal contesto
+- **Gradenigo, Pietro** (voci 639, 938; anni 1500–1739) → [Q108867130](https://www.wikidata.org/wiki/Q108867130) Pietro Gradenigo (1695–1776): _erudito e storico veneziano_ — Venezia — confermato dal contesto
 - **Gratarol, Pietro Antonio** (voci 1753; anni 1779–1779) → [Q104383460](https://www.wikidata.org/wiki/Q104383460) Pierantonio Gratarol (1738–1785): _politico italiano (1738-1785)_ — Venezia, Madagascar — nato o morto in Friuli/Veneto; date compatibili
 - **Graziani, Antonio Maria** (voci 619; anni 1712–1712) → [Q55228464](https://www.wikidata.org/wiki/Q55228464) Antonio Maria Graziani (1537–1611): _vescovo e storico italiano (1537-1611)_ — Sansepolcro, Amelia — confermato dal contesto
 - **Graziani, Erasmo** (voci 102, 1091; anni 1609–1609) → [Q39805801](https://www.wikidata.org/wiki/Q39805801) Erasmo Graziani (1527–1609): _giureconsulto friulano_ — date compatibili
@@ -709,7 +713,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Porcia, Girolamo** (voci 945; anni 1567–1567) → [Q64745734](https://www.wikidata.org/wiki/Q64745734) Girolamo di Porzia (1559–1612): _vescovo cattolico_ — Porcia — nato o morto in Friuli/Veneto
 - **Porcia, Jacopo** (voci 468, 875; anni 1517–1568) → [Q110136409](https://www.wikidata.org/wiki/Q110136409) Jacopo di Porcia (1462–1538): _storico_ — Porcia — nato o morto in Friuli/Veneto; date compatibili
 - **Portogallo, Marco** (voci 3291; anni ?–?) → [Q957869](https://www.wikidata.org/wiki/Q957869) Marcos António Portugal (1762–1830): _compositore portoghese_ — Lisbona, Rio de Janeiro
-- **Prampero, Antonino** (voci 200, 496, 852, 875; anni 1737–1876) → [Q3619131](https://www.wikidata.org/wiki/Q3619131) Antonino di Prampero (1836–1920): _politico italiano (1836-1920)_ — Udine, Roma — nato o morto in Friuli/Veneto; date compatibili
+- **Prampero, Antonino** (voci 200, 496, 836, 852; anni 1737–1880) → [Q3619131](https://www.wikidata.org/wiki/Q3619131) Antonino di Prampero (1836–1920): _politico italiano (1836-1920)_ — Udine, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Prata, Pileo** (voci 875, 1552; anni ?–?) → [Q2477289](https://www.wikidata.org/wiki/Q2477289) Pietro Pileo da Prata (1329–1401): _cardinale italiano del XIV secolo_ — Prata di Pordenone — nato o morto in Friuli/Veneto
 - **Priuli, Antonio** (voci 796; anni 1594–1888) → [Q604434](https://www.wikidata.org/wiki/Q604434) Antonio Priuli (1548–1623): _doge della Repubblica di Venezia_ — fase 6, blocco 4: ducale del 1618, doge Antonio Priuli
 - **Priuli, Girolamo** (voci 606; anni 1561–1561) → [Q5564782](https://www.wikidata.org/wiki/Q5564782) Girolamo Priuli (1476–1547): _cronachista e banchiere veneziano_ — confermato dal contesto
@@ -739,7 +743,7 @@ Verifica del 2026-11-09. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Rorario, Girolamo** (voci 619; anni ?–?) → [Q15917043](https://www.wikidata.org/wiki/Q15917043) Gerolamo Rorario (1485–1556): _umanista italiano_ — Pordenone — nato o morto in Friuli/Veneto
 - **Rossi, Gian Vittorio** (voci 619; anni 1712–1712) → [Q3762764](https://www.wikidata.org/wiki/Q3762764) Gian Vittorio Rossi (1577–1647): _poeta, filologo e storico italiano_ — fase 6, blocco 4: Gian Vittorio Rossi (Janus Nicius Erythraeus), confermato dal curatore
 - **Rossi, Giuseppe** (voci 577; anni 1609–1769) → [Q110213690](https://www.wikidata.org/wiki/Q110213690) Giuseppe Rossi (1732–1796) — 
-- **Rossini, Gioachino** (voci 2893, 3284, 3303, 3309; anni 1818–1818) → [Q9726](https://www.wikidata.org/wiki/Q9726) Gioachino Rossini (1792–1868): _compositore italiano (1792-1868)_ — Pesaro, Passy — date compatibili
+- **Rossini, Gioachino** (voci 1584, 2893, 3284, 3303; anni 1818–1818) → [Q9726](https://www.wikidata.org/wiki/Q9726) Gioachino Rossini (1792–1868): _compositore italiano (1792-1868)_ — Pesaro, Passy — date compatibili
 - **Rucellai, Orazio** (voci 469; anni 1603–1643) → [Q93853896](https://www.wikidata.org/wiki/Q93853896) Orazio Rucellai (1521–1605) — date compatibili
 - **Ruggia, Girolamo** (voci 480; anni 1746–1803) → [Q64026461](https://www.wikidata.org/wiki/Q64026461) Girolamo Ruggia (1748–1823): _gesuita e poeta svizzero (1748-1823)_ — Morcote, Bologna — date compatibili
 - **Sabbadino, Cristoforo** (voci 1432; anni ?–?) → [Q1140461](https://www.wikidata.org/wiki/Q1140461) Cristoforo Sabbadino (1489–1560): _ingegnere italiano_ — Chioggia, Venezia — nato o morto in Friuli/Veneto
