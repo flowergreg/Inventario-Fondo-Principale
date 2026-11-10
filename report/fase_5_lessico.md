@@ -4,7 +4,7 @@ Solo i collegamenti ad affidabilità **alta** (luoghi confermati dal curatore, p
 
 ## 1. Varianti di ricerca dalle fonti
 
-Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 405 per i luoghi, 998 per le persone. Esempi:
+Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 405 per i luoghi, 1000 per le persone. Esempi:
 
 - **Fiume (Rijeka)**: Rijeka; Fanum Sancti Viti; Fanum Sancti Viti Fluminiensis; Flumen; Flumen Sancti Viti; Tarsaticum; Tharsatica; Tharsaticum; Vitopolis
 - **Bruxelles**: Brussel-stad; Brusselle; Bruxelles-Ville; Città di Brusselle; Ville de Bruxelles; Brucellae; Urbs Brucellae; Urbs Bruxellae

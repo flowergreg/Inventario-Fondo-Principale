@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3924 | 754 | 9132 |
+| persona | 3924 | 755 | 9132 |
 | luogo | 572 | 65 | 4686 |
 | santo | 124 | 44 | 490 |
 
-Menzioni collegate a un'entità: 14308 su 20588. Senza entità: nome o cognome singolo 5874, esclusa dal curatore 344, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 14308 su 20587. Senza entità: nome o cognome singolo 5873, esclusa dal curatore 344, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -479,7 +479,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Ciconi, Giuseppe**: Ciconi G. (868); Giuseppe Ciconi (524)
 - **Cicuto, Antonio**: Ant. Cicuto (337); Cicuto P. A. (175)
 - **Cigolotti, Giuseppe**: Cigolotti Giuseppe (339); G. Cigolotti (487)
-- **Clemente XIII**: C. XIII (836); Clemente XIII (23, 537); Clemente XIII. (107); P. XIII. Lettera (2139)
 - **Coiz, Antonio**: A. Coiz (4044, 4108); D. Antonio Coiz (487)
 - **Colloredo, Giovanni**: Colloredo (di) Giovanni (2332); G. Colloredo (158)
 - **Coluta, Giandomenico**: G. Domenico Coluta (619); Giandomenico Coluta (107); Gio. Domenico Coluta (470)
@@ -688,6 +687,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Clama, Domenico**: Clama Domenico (1505, 1506); Domenico Clama (3936)
 - **Clemente XI**: Clemente XI (24, 606); Nro Sig.re Papa Clemente XI (607)
 - **Clemente XII**: Clemente XII (606); Clemente XII. XIII (825)
+- **Clemente XIII**: Clemente XIII (23, 537); Clemente XIII. (107); P. XIII. Lettera (2139)
 - **Cogoi, Giovanna**: Autrice (4217); Cogoi, Giovanna (4217)
 - **Colautti, Giuseppe**: Colautti Giuseppe (2257); Giuseppe Colautti (619); P. Giuseppe (3735)
 - **Colletti, Girolamo**: Girolamo (715); Girolamo Colletti (933)
@@ -856,6 +856,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Ottelio, Lodovico**: Governator Successore Co. Lodovico Ottelio (1655); L. Ottelio (1507)
 - **Ottelio, Tommaso**: T. Ottelio (2604); Tommaso Ottelio (10)
 - **Ottomano, Maurizio**: Maurizio Ottomano (1093); di Maurizio Ottomano (1093)
+- **Ovidio Nasone, Publio**: Ovidio (836); P. Ovidii Nasonis Heroides (836)
 - **Paciani, Gabriele**: Gabriele Paciani (619); Paciani Gabriele (345)
 - **Pacini, Giovanni**: Giovanni Pacini (3348); Pacini Giovanni (3348)
 - **Paghini, Domenico**: Domenico Paghini (946, 2682); Paghini Domenico (2418)
@@ -1248,9 +1249,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3145 entità: elenco completo nella tabella `entita`.
+3144 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
-Francesco (19), G. B. (15), Giovanni (15), Pirona (13), Modotti (13), Giuseppe (12), Carlo (11), Angelo (10), Maria (9), Delfino (9), Antonio (9), Alessandro (8), Orazio (8), Monti (8), Manin (8), Nicolò (8), Maria Teresa (8), Biasutti (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Murero (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), Lazzarini (7), Magnificat (7), Śiv (7), Pagani (6), A. (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Attimis (6), Madrisio (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6), Trento (6), Tolmino (6), Gorgo (6), Valle (6), Venzoni (6), Zanutto (6), Scisma (6), Proclama (6), Album (6), Michele Nikolaievic (6), Litanie (6), Valtz (6), Haydn (6), Padmāvatī (6), Pākṣik (6), Portis (5), Eloisa (5), Abelardo (5), Metastasio (5), Oliva (5), Abstemio (5), Sporeno (5), Elena (5), Aut. (5), Franceschinis (5), Cernazai (5), De Renaldis (5), Porta (5), De Dominis (5), Andreuzzi (5), di Trieste (5), Muratori (5), Formentini (5), Rizzi (5), Aneddoti del Liruti (5), Jura (5), Girolamo (5), Spilimbergo (5), di Padova (5), Repertorium (5), di Sesto (5), Passerino (5), Ermacora (5), Cesare (5), Tartagna (5), Benedetto (5), Marquardo (5), Venerio (5), G. (5), Raimondi (5), Carreri (5), D'Aronco (5), Nievo (5), Elementi (5), Sagoskin (5), Loschi (5), Dragoni (5), Fiala (5), Vincieri (5), Pārsanāthjī (5), Petri (4), Cicerone (4), Nicola (4), Ovidio (4), Bondi (4), Sonetto (4), Simone (4), Passionei (4), Amalteo (4), Cimbriaco (4), Palladio (4), Giulio (4), Arrigoni (4), di Flambro (4), Silvio (4), Nolini (4), Fisco (4), Ecclesiae (4), di Polonia (4), Veneto (4), Pola (4), Inni (4), Documenti (4), Paolo (4), P. (4), di Verona (4), Kandler (4), Acc. (4), Accademie (4), Canal del Ferro (4)
+Francesco (19), G. B. (15), Giovanni (15), Pirona (13), Modotti (13), Giuseppe (12), Carlo (11), Angelo (10), Maria (9), Delfino (9), Antonio (9), Alessandro (8), Orazio (8), Monti (8), Manin (8), Nicolò (8), Maria Teresa (8), Biasutti (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Murero (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), Lazzarini (7), Magnificat (7), Śiv (7), Pagani (6), A. (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Attimis (6), Madrisio (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6), Trento (6), Tolmino (6), Gorgo (6), Valle (6), Venzoni (6), Zanutto (6), Scisma (6), Proclama (6), Album (6), Michele Nikolaievic (6), Litanie (6), Valtz (6), Haydn (6), Padmāvatī (6), Pākṣik (6), Portis (5), Eloisa (5), Abelardo (5), Metastasio (5), Oliva (5), Abstemio (5), Sporeno (5), Elena (5), Aut. (5), Franceschinis (5), Cernazai (5), De Renaldis (5), Porta (5), De Dominis (5), Andreuzzi (5), di Trieste (5), Muratori (5), Formentini (5), Rizzi (5), Aneddoti del Liruti (5), Jura (5), Girolamo (5), Spilimbergo (5), di Padova (5), Repertorium (5), di Sesto (5), Passerino (5), Ermacora (5), Cesare (5), Tartagna (5), Benedetto (5), Marquardo (5), Venerio (5), G. (5), Raimondi (5), Carreri (5), D'Aronco (5), Nievo (5), Elementi (5), Sagoskin (5), Loschi (5), Dragoni (5), Fiala (5), Vincieri (5), Pārsanāthjī (5), Petri (4), Cicerone (4), Nicola (4), Bondi (4), Sonetto (4), Simone (4), Passionei (4), Amalteo (4), Cimbriaco (4), Palladio (4), Giulio (4), Arrigoni (4), di Flambro (4), Silvio (4), Nolini (4), Fisco (4), Ecclesiae (4), di Polonia (4), Veneto (4), Pola (4), Inni (4), Documenti (4), Paolo (4), P. (4), di Verona (4), Kandler (4), Acc. (4), Accademie (4), Canal del Ferro (4), Strassoldo (4)
 

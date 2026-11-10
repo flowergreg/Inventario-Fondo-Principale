@@ -93,6 +93,14 @@ details { margin-top: 6px; } summary { font: italic 500 16px var(--font-titoli);
 footer { background: var(--color1); color: #fff; margin-top: 30px; padding: 16px 0; font-size: 16px; }
 footer a { color: #fff; text-decoration: underline; }
 footer b { font-family: var(--font-titoli); font-weight: 600; }
+/* tasto fisso per tornare alla casella di ricerca */
+button.su { position: fixed; left: 16px; bottom: 20px; z-index: 10; width: 48px !important; height: 48px; padding: 0;
+  border-radius: 50%; border: 1px solid var(--color4); background: var(--color1); color: #fff; font: 600 24px/1 var(--font-testo);
+  box-shadow: 0 2px 6px rgba(0,0,0,.25); cursor: pointer; opacity: 0; visibility: hidden; transition: opacity .2s; }
+button.su.visibile { opacity: .9; visibility: visible; }
+button.su:hover { opacity: 1; }
+@media (max-width: 575px) { button.su { width: 42px !important; height: 42px; left: 10px; bottom: 14px; font-size: 21px; } button.su.visibile { opacity: .8; } }
+@media print { button.su { display: none; } }
 @media (max-width: 991px) {
   .row-1 { display: block; } .column-1, .column-2 { width: 100%; padding-left: 0; }
   .section { margin-bottom: 16px; display: inline-block; padding-right: 10px; }
@@ -101,6 +109,7 @@ footer b { font-family: var(--font-titoli); font-weight: 600; }
 </style>
 </head>
 <body>
+<button type="button" id="su" class="su" aria-label="Torna alla ricerca" title="Torna alla ricerca">↑</button>
 <div class="lyt"><div class="container"><div class="row-1">
   <div class="column-1"><div class="section">Ricerca</div></div>
   <div class="column-2">
@@ -317,6 +326,13 @@ document.getElementById("forme").addEventListener("click", ev => {
 document.getElementById("parte").addEventListener("change", () => { if (q.value.trim()) form.requestSubmit(); });
 document.querySelectorAll(".esempi a").forEach(a => a.addEventListener("click", () => { q.value = a.textContent; form.requestSubmit(); }));
 if (location.hash.length > 1) { q.value = decodeURIComponent(location.hash.slice(1)); mostra(q.value); }
+// tasto «↑»: compare scorrendo i risultati e riporta alla casella di ricerca
+const su = document.getElementById("su");
+addEventListener("scroll", () => su.classList.toggle("visibile", scrollY > 400), {passive: true});
+su.addEventListener("click", () => {
+  window.scrollTo({top: 0, behavior: "smooth"});
+  if (matchMedia("(pointer: fine)").matches) q.focus({preventScroll: true});   // sul telefono niente tastiera
+});
 </script>
 </body>
 </html>
@@ -344,6 +360,7 @@ input[type=search]:focus { outline: 2px solid #8ab4f8; }
 button, .segnala button, .segnala-riga button { background: #3a3a3e; color: #e6e6e6; border: 1px solid #4a4a4e;
   font: 600 16px var(--font-testo); text-transform: none; }
 button:hover { background: #4a4a4e; filter: none; }
+button.su { background: #3a3a3e; color: #e6e6e6; border-color: #6a6a6e; }
 mark { background: #4a4426; color: #f0e6b0; }
 h2, b, strong, summary { color: #e6e6e6; font-family: var(--font-testo); }
 .avviso { background: #2a2a2d; color: #c8c8cc; border-left-color: #8ab4f8; }

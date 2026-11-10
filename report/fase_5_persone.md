@@ -4,10 +4,10 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 763 |
+| alta | 764 |
 | media | 45 |
 | bassa | 34 |
-| nessuna | 3082 |
+| nessuna | 3081 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -340,7 +340,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Cimarosa, Domenico** (voci 3453; anni ?–?) → [Q191775](https://www.wikidata.org/wiki/Q191775) Domenico Cimarosa (1749–1801): _compositore italiano_ — Aversa, Venezia — nato o morto in Friuli/Veneto
 - **Clemente XI** (voci 24, 606, 607; anni 1689–1730) → [Q129967](https://www.wikidata.org/wiki/Q129967) papa Clemente XI (1649–1721): _243° vescovo di Roma e papa della Chiesa cattolica dal 1700 al 1721_ — Urbino, Roma — date compatibili
 - **Clemente XII** (voci 606, 825; anni 1689–1748) → [Q133108](https://www.wikidata.org/wiki/Q133108) papa Clemente XII (1652–1740): _246° vescovo di Roma e papa della Chiesa cattolica dal 1730 al 1740_ — Firenze, Roma — date compatibili
-- **Clemente XIII** (voci 23, 107, 537, 836; anni 1767–1884) → [Q133121](https://www.wikidata.org/wiki/Q133121) papa Clemente XIII (1693–1769): _248° vescovo di Roma e papa della Chiesa cattolica dal 1758 al 1769_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
+- **Clemente XIII** (voci 23, 107, 537, 2139; anni 1767–1768) → [Q133121](https://www.wikidata.org/wiki/Q133121) papa Clemente XIII (1693–1769): _248° vescovo di Roma e papa della Chiesa cattolica dal 1758 al 1769_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Clemente XIV** (voci 18, 23; anni 1770–1770) → [Q131587](https://www.wikidata.org/wiki/Q131587) papa Clemente XIV (1705–1774): _249° vescovo di Roma e papa della Chiesa cattolica dal 1769 al 1774_ — Santarcangelo di Romagna, Roma — date compatibili
 - **Cognolato, Gaetano** (voci 482; anni 1693–1792) → [Q55226751](https://www.wikidata.org/wiki/Q55226751) Gaetano Cognolato (1728–1802) — Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Colajanni, Napoleone** (voci 3591; anni 1853–1942) → [Q3870254](https://www.wikidata.org/wiki/Q3870254) Napoleone Colajanni (1847–1921): _scrittore e politico italiano (1847-1921)_ — lo scrittore e politico (1847-1921)
@@ -679,6 +679,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Oppizzoni, Carlo** (voci 3804; anni 1808–1808) → [Q1042349](https://www.wikidata.org/wiki/Q1042349) Carlo Oppizzoni (1769–1855): _cardinale e arcivescovo cattolico italiano (1769-1855)_ — Milano, Bologna — date compatibili
 - **Orsato, Sertorio** (voci 465; anni 1658–1666) → [Q21545675](https://www.wikidata.org/wiki/Q21545675) Sertorio Orsato (1617–1678): _storico ed erudito italiano_ — Padova, Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Ottelio, Marco Antonio** (voci 64, 619, 1085; anni 1000–1800) → [Q55906601](https://www.wikidata.org/wiki/Q55906601) Marco Antonio Ottelio (1550–1628): _giurista italiano (1550-1628)_ — Udine, Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Ovidio Nasone, Publio** (voci 836; anni ?–?) → [Q7198](https://www.wikidata.org/wiki/Q7198) Publio Ovidio Nasone (-42–17): _poeta romano_ — Sulmona
 - **Paciani, Gabriele** (voci 345, 619; anni 1763–1763) → [Q55679282](https://www.wikidata.org/wiki/Q55679282) Gabriele Paciani (1712–1793): _scrittore_ — Cividale del Friuli — nato o morto in Friuli/Veneto; date compatibili
 - **Pacini, Giovanni** (voci 3348; anni ?–?) → [Q357022](https://www.wikidata.org/wiki/Q357022) Giovanni Pacini (1796–1867): _compositore italiano_ — Catania, Pescia — confermato dal contesto
 - **Paghini, Domenico** (voci 946, 2418, 2682; anni 1822–1822) → [Q52154473](https://www.wikidata.org/wiki/Q52154473) Domenico Paghini (1778–1850): _pittore_ — Venezia, Udine — nato o morto in Friuli/Veneto; date compatibili
@@ -911,7 +912,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di San Genesio, Bertrando** (voci 102, 519, 533, 541; anni 1207–1938) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto; date compatibili
 - **di Toppo, Francesco** (voci 14, 17, 340, 490; anni 1338–1863) → [Q105098383](https://www.wikidata.org/wiki/Q105098383) Francesco Di Toppo (1797–1883): _collezionista_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 
-## 4. Nessun candidato su Wikidata: 3082 persone
+## 4. Nessun candidato su Wikidata: 3081 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
