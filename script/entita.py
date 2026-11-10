@@ -570,8 +570,10 @@ def main():
         tipo_eff = tipo
         if tipo in ("luogo", "santo"):
             r = riga_luogo(lex.get(testo, [])) if tipo == "luogo" else (lex.get(testo) or [None])[0]
-            if r and tipo == "luogo" and r[0] != "luogo":
-                # il curatore ha riclassificato la forma: «Battistella A.°» è una persona, «Alla» una parola
+            if r and tipo == "luogo" and r[0] != "luogo" and not rif_forma:
+                # il curatore ha riclassificato la forma: «Battistella A.°» è una persona, «Alla» una parola;
+                # non quando la voce stessa indica il luogo (classificazioni_manuali con forma di riferimento:
+                # «Riva» = Riva del Garda nella 2557, anche se altrove Riva è un cognome)
                 if r[0] in ("parola", "abbreviazione", "opera"):
                     senza["parola o abbreviazione, non luogo"] += 1
                     continue
