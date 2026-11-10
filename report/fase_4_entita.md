@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3900 | 689 | 7775 |
+| persona | 3906 | 688 | 7799 |
 | luogo | 564 | 62 | 4571 |
 | santo | 124 | 44 | 490 |
 
-Menzioni collegate a un'entità: 12836 su 20997. Senza entità: nome o cognome singolo 7835, esclusa dal curatore 133, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 12860 su 20998. Senza entità: nome o cognome singolo 7812, esclusa dal curatore 133, parola o abbreviazione, non luogo 131, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -208,7 +208,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Donato, Giovanni Battista**: Donato Giov. Battista (374)
 - **Donato, Lorenzo**: Lorenzo Donato (618)
 - **Donato, Nicolò**: Nicolò Donato (60)
-- **Donizetti, Gaetano**: Donizetti (4275); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
+- **Donizetti, Gaetano**: Donizetti (4275); Donizetti G. Fantaisie (3419); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
 - **Doria, Baldassarre**: Doria Baldassare (1889)
 - **Dossi, Domenico**: Dossi Domenico (1657)
 - **Eber, G. B.**: Eber G.B. (2154)
@@ -373,7 +373,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Varmo, Italo**: Varmo (di) Italo (4213)
 - **Varmo, Pietro**: Pietro Varmo (805)
 - **Venerio, Antonio**: Antonio Venerio (2604)
-- **Venerio, Girolamo**: G. Venerio (1520, 1522, 1523, 1524, 1525, 1526, 1527, 1528); Girolamo Venerio (875, 930, 1521); Venerio Girolamo (1546)
+- **Venerio, Francesco**: Franciscum Venerium (622)
+- **Venerio, Giacomo**: Venerium (606)
+- **Venerio, Girolamo**: G. Venerio (1520, 1522, 1523, 1524, 1525, 1526, 1527, 1528); Girolamo Venerio (875, 930, 1521); Venerio Girolamo (1538, 1546)
 - **Ventura, Giulio**: Giulio Ventura (2642)
 - **Vico, G. B.**: Vico G. B. (1762)
 - **Vid, F.**: F. Vid (337)
@@ -442,7 +444,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Beretta, Francesco**: Beretta co. Francesco (518, 1668); Ct. F. Beretta (771); Fr.° Beretta (601); Franc.° Beretta (485); Francesco Beretta (15, 485, 619, 771, 1668)
 - **Berghinz, Raffaele**: Berghinz Raffaello (2175); Berghinz, Raffaele (3665, 3666, 3667); R. Berghinz (2415)
 - **Bernardi, Jacopo**: Bernardi ab. Jacopo (492); J. Bernardi (4108)
-- **Bini, Giuseppe**: Bini Giuseppe (464, 525, 598, 2134); Bini Msgr. Giuseppe (616); G. Bini (879); Giuseppe Bini (470, 485, 601, 811, 877, 1047, 1379, 4232)
+- **Bini, Giuseppe**: Bini (371, 525, 721, 801, 879, 905); Bini Giuseppe (464, 525, 598, 2134); Bini Msgr. Giuseppe (616); G. Bini (879); Giuseppe (801); Giuseppe Bini (470, 485, 601, 811, 877, 1047, 1379, 4232)
 - **Biondelli, Bernardino**: Biondelli B. (487); Biondelli Bernardino (518)
 - **Boccardi, Alberto**: A. Boccardi (2642); Alberto Boccardi (3591)
 - **Bombardini, Giuseppe**: Bombardini Giuseppe (487, 1534); G. Bombardini (77)
@@ -454,7 +456,6 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Bricito, Zaccaria**: Bricito Zaccaria (2134, 2324); Z. Bricito (1224); Zaccaria Bricito (2328, 3596, 3913)
 - **Burlo, Francesco**: Burlo Franc° (2375); Franciscum Burlo (313)
 - **Caetani, Antonio**: A. Caetani (1550); Antonij Patriarcæ Aquilegiensis Dignissimi (562); Antonio Caetani (1549); Antonio Gaetani (1548); Antonio Gaetano (667); d'Aquileia Antonio Gaetano (562)
-- **Caiselli, Girolamo**: Caiselli G. (3370); Girolamo Caiselli (509)
 - **Cantù, Cesare**: A Cesare Cantù (1919); C. Cantù (519); Cantù Cesare (518); Cesare Cantù (471)
 - **Capodagli, Giovanni Giuseppe**: Capodaglio Giov. Giuseppe (533); G. G. Capodaglio (950); Gian Giuseppe (710); Gio. Giuseppe Capodagli (469)
 - **Capponi, Gino**: Capponi Gino (2134); G. Capponi (4108)
@@ -483,7 +484,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **D'Aronco, Gianfranco**: D'Aronco, Gianfranco (3514, 3914); G. D'Aronco (3914, 4083)
 - **Dall'Ongaro, Francesco**: Dall'Ongaro F. (2262); Dall'Ongaro Francesco (86, 526); F. Dall'Ongaro (3995, 4108); Francesco Dall'Ongaro (2616); Ongaro (492)
 - **Deciani, Tiberio**: Tib. Deciani (1054); Tiberio (713); Tiberio Deciani (606, 1038, 1543)
-- **Donizetti, Gaetano**: Donizetti (4275); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
+- **Donizetti, Gaetano**: Donizetti (4275); Donizetti G. Fantaisie (3419); Donizetti Gaetano (2895, 3249 bis, 3251, 3294, 3322, 3325, 3340, 3345, 3349, 3386, 3415, 3441); G. Donizetti (3419); Gaetano Donizetti (2895, 3294, 3325, 3340, 3349, 3386, 3415)
 - **Erizo, Antonio**: P. A. Erizzo (130); P. Ant. Erizo (151); P. Ant. Erizzo Luog.te (208)
 - **Ferrazzi, Jacopo**: Ferrazzi Jacopo (487); J. Ferrazzi (4108)
 - **Feruglio, Angelo**: A. Feruglio (338); Ang. Feruglio (338); Angelo Feruglio (338); Feruglio ab. Angelo (1601, 1602)
@@ -837,7 +838,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Pio VI**: Pio VI (31, 296, 476, 3201); Pio VI dalla Germania (926); Pio VI. Codice (598); Pontifice Pio VI (2147); Santo Padre Pio VI (719); Sommo Pontefice Pio VI. Sonetto (1616)
 - **Pio VII**: Pio VII (822); Pio VII. Allocuzione (616)
 - **Plai, Nicolò**: D. Nicolò Plai (2190); Plai Nicolò (2190)
-- **Pleyel, Ignazio**: Ignazio (3306, 3354); Ignazio Pleyel (3257, 3258, 3296, 3365, 3387, 3393, 3422); Pleyel Ignazio (3257, 3258, 3292, 3296, 3307, 3344, 3365, 3368, 3387, 3393, 3422)
+- **Pleyel, Ignazio**: Ignazio (3306, 3354); Ignazio Pleyel (3257, 3258, 3296, 3365, 3387, 3393, 3422); Pleyel (3332, 3333, 3354); Pleyel Ignazio (3257, 3258, 3292, 3296, 3307, 3344, 3365, 3368, 3387, 3393, 3422)
 - **Pontello, Leonardo**: Leonardo Pontello (70); Pontello Leonardo (70)
 - **Pontoni, Leonardo**: Leonardo Pontoni (2490); Pontoni Leonardo (2341)
 - **Portis, A.**: A. Portis (487); A. de Portis (3911)
@@ -876,8 +877,8 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Sturolo, Gaetano**: Gaetano Sturolo (923); P. Gaetano Sturolo (718)
 - **Tiepolo, G. B.**: G. B. Tiepolo (870); Tiepolo G. B. (1954)
 - **Tolstoi, Lev Nikolaevič**: L. N. (2639/7); Leone Tolstoi (2639/13); Tolstoi (2639/10); Tolstoi, A. N. (2639/7); Tolstoi, L. (2639/5, 2639/6); Tolstoi, Leone (2632/12, 2634/2)
-- **Tomadini, G. B.**: G. B. Tomadini (3080); Tomadini G. B. (3071, 3072, 3073, 3074 (con 3079), 3075, 3079 (con 3074 - 4.8.89), 3080)
-- **Tomadini, Jacopo**: Jacopo Tomadini (3047, 3049, 3518, 3913, 4201); Tomadini Jacopo (3047, 3048); Tomadini, Jacopo (3518)
+- **Tomadini, G. B.**: G. B. Tomadini (3080); Tomadini (2732, 3077); Tomadini G. B. (3071, 3072, 3073, 3074 (con 3079), 3075, 3079 (con 3074 - 4.8.89), 3080)
+- **Tomadini, Jacopo**: Jacopo Tomadini (3047, 3049, 3518, 3913, 4201); Tomadini (3048, 3060); Tomadini Jacopo (3047, 3048); Tomadini, Jacopo (3518)
 - **Trento, Federico**: Fed. Trento (3913); Trento Federico (190)
 - **Trento, Francesco**: Francesco Trento (470, 482); Trento Francesco (328, 476)
 - **Treo, Enrico**: Enrico Treo (469); Treo Enrico (105)
@@ -1169,9 +1170,9 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3187 entità: elenco completo nella tabella `entita`.
+3192 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
-Tessitori (249), Fin (113), Minelli (101), Liruti (92), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Pirona (28), Braida (27), Joppi (26), Śrī (26), Buddharās (25), Del Torso (24), Corgnali (24), G. B. (23), Nicoletti (23), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Francesco (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Giovanni (15), Castello (15), Barnaba (15), Frangipane (14), Giuseppe (14), di Aquileja (14), Ath (14), Napoleone (13), Zanon (13), Modotti (13), Ciconi (12), Varmo (12), Caiselli (12), Oliverio (12), Carlo (11), Madrisio (11), Grado (11), Florio (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Angelo (10), Bertoli (10), Antonio (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), Nicolò (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Della Porta (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Bini (8), Scritti (8), Locatelli (8), Pavona (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6), Trento (6), Tolmino (6), Gorgo (6), Valle (6), Venzoni (6), Zanutto (6), Scisma (6)
+Tessitori (249), Fin (113), Minelli (101), Liruti (92), Processo (42), Elti (40), Toppo (36), Fontanini (34), Savorgnan (32), di Udine (32), Pirona (28), Braida (27), Joppi (26), Śrī (26), Buddharās (25), Del Torso (24), Corgnali (24), G. B. (23), Nicoletti (23), Manzano (di) (23), Autrice (22), S. F. F. (22), L. Pilosio (22), Iti (22), d'Aquileia (20), Francesco (19), Pertoldeo (19), Jaconissi (19), Bertrando (18), Turchi (18), Mantica (18), Valentinis (17), Gloria (17), Cordans Bartolomio (17), Accad (16), Giovanni (15), Castello (15), Barnaba (15), Frangipane (14), di Aquileja (14), Ath (14), Napoleone (13), Giuseppe (13), Zanon (13), Modotti (13), Ciconi (12), Varmo (12), Caiselli (12), Oliverio (12), Carlo (11), Madrisio (11), Grado (11), Florio (11), Torriani (11), G. (11), Cossio (11), Manzano (di) Famiglia (11), I. N. (11), Ottelio (10), Monti (10), Angelo (10), Bertoli (10), Antonio (10), R. (10), Della Torre (10), Belloni (10), Treo (10), Allegro (10), Śrī Gaṇeśā (10), Maria (9), Palladio (9), Nicolò (9), del Friuli (9), S. M. (9), Cortenovis (9), Delfino (9), di Gorizia (9), Sventati (9), Annali (9), Romani (9), L. (9), Sbroiavacca (9), Pilosio (9), Della Porta (9), Śrāvakarī (9), Alessandro (8), Orazio (8), Natale (8), Cesarotti (8), Maria Teresa (8), Biasutti (8), di Concordia (8), Scritti (8), Locatelli (8), Pavona (8), Zucco (8), Lazzarini (8), Oratorio (8), Articoli (8), Poliza (8), Amarli (8), Simonutti (8), Iti Śrī (8), Pārśvanāth (8), Colloredo (7), Lodi (7), Zorzi (7), Antonini (7), Beretta (7), Aquil (7), C. (7), Papa (7), Andrea (7), Monticoli (7), Amaseo (7), L. Zuccolo (7), Mediocrità (7), Riccati (7), Pasqua (7), dell'Oratorio (7), Carreri (7), Magnificat (7), Śiv (7), Pagani (6), Portis (6), Caterina (6), di Spalatro (6), Virgilio (6), di Cividale (6), Frugoni (6), Cristo (6), Pietro (6), Sertor (6), Aristotelis (6), Concina (6), Manin (6), Attimis (6), Gesù (6), di Traù (6), Doge (6), Dizionario (6), Marciana (6), Trento (6), Tolmino (6), Gorgo (6), Valle (6), Venzoni (6), Zanutto (6), Scisma (6), Proclama (6)
 

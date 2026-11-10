@@ -11,7 +11,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1835 |
 | luogo | 401 | 175 | 84 | 6 | 666 | 4526 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
-| nome_di_battesimo | 1255 | 145 | 0 | 0 | 1400 | 9283 |
+| nome_di_battesimo | 1255 | 145 | 0 | 0 | 1400 | 9285 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
 | opera | 18 | 0 | 0 | 0 | 18 | 48 |
 | parola | 0 | 0 | 0 | 0 | 125 | 498 |
@@ -691,7 +691,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
@@ -722,8 +722,8 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
 | Eugenii | 1 | Eugenio | forma latina declinata di «Eugenio» | 2623/3 |
-| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
-| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
+| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
+| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
 | Fr.co | 1 | Francesco | abbreviazione (lista manuale) | 1737 |
 | Fr.° | 1 | Francesco | abbreviazione (lista manuale) | 601 |
@@ -734,7 +734,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -770,10 +770,10 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Terrae | 1 | Terra | forma latina declinata di «Terra» | 2623/8 |
 | Tertij | 1 | — | forma latina declinata di «Tertius» | 562 |
 | Valentinorum | 1 | Valentino | forma latina declinata di «Valentinus» | 2277 |
-| Valentinum | 1 | Valentino | forma latina declinata di «Valentinus» | 622 |
+| Valentinum | 1 | Valentino | forma latina declinata di «Valentino» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
-| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilius» | 11 |
+| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |
 
 ## 4. Cognomi: varianti grafiche e correzioni del curatore
 

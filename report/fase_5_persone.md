@@ -5,9 +5,9 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | Affidabilità | Persone |
 |---|---|
 | alta | 754 |
-| media | 38 |
-| bassa | 32 |
-| nessuna | 3076 |
+| media | 39 |
+| bassa | 33 |
+| nessuna | 3080 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -62,11 +62,15 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Strassoldo, Panfilo** (voci 619; anni 1536–1536) → [Q68911661](https://www.wikidata.org/wiki/Q68911661) Panfilo Strassoldo (?–1545): _arcivescovo cattolico_
 - **Suzzi, Celestino** (voci 334, 335; anni ?–?) → [Q112316093](https://www.wikidata.org/wiki/Q112316093) Celestino Suzzi (1815–1883)
 - **Tilatti, Andrea** (voci 1445; anni ?–?) → [Q89477491](https://www.wikidata.org/wiki/Q89477491) Andrea Tilatti (1962–?): _medievista italiano (1962-)_ — Udine — nato o morto in Friuli/Veneto; nato nel 1962: verificare
+- **Venerio** (voci 1538; anni ?–?) → [Q1432734](https://www.wikidata.org/wiki/Q1432734) Venerio (350–408): _arcivescovo e santo italiano_ — Milano
+  - altri: [Q2899778](https://www.wikidata.org/wiki/Q2899778) Venerio (560–630): _monaco italiano_ — Palmaria, Isola del Tino [0]
 - **Volpato Morghen, Domenica** (voci 2134; anni ?–?) → [Q131242678](https://www.wikidata.org/wiki/Q131242678) Domenica Volpato Morghen (?–?)
 - **di Brazzà, Giacomo** (voci 1503, 4108; anni ?–?) → [Q13521921](https://www.wikidata.org/wiki/Q13521921) Giacomo Savorgnan di Brazzà (1859–1888): _esploratore italiano naturalizzato francese_ — Roma
 
 ## 2. Candidati scartati (date incompatibili)
 
+- **Bini, Giacomo** (voci 1198; anni 1692–1776)
+  - altri: [Q16796781](https://www.wikidata.org/wiki/Q16796781) Giacomo Bini (1938–2014): _presbitero e missionario italiano (1938-2014)_ — Ostra Vetere, Roma [-3]; [Q9267793](https://www.wikidata.org/wiki/Q9267793) Giacomo Bini (1990–?): _pallanuotista italiano, attaccante della Rari Nantes Florentia_ — Bagno a Ripoli [-3]
 - **Bonetti, Leonardo** (voci 1384; anni 1844–1867)
   - altri: [Q3830331](https://www.wikidata.org/wiki/Q3830331) Leonardo Bonetti (1963–?): _poeta e scrittore italiano_ — Roma [-3]
 - **Bortolotto, Giovanni** (voci 4126; anni 1729–1730)
@@ -220,7 +224,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Bianchini, Giovanni Fortunato** (voci 508, 2159; anni 1750–1791) → [Q3767255](https://www.wikidata.org/wiki/Q3767255) Giovanni Fortunato Bianchini (1719–1779): _medico italiano_ — Chieti, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Bianconi, Girolamo** (voci 352; anni 1853–1853) → [Q94821938](https://www.wikidata.org/wiki/Q94821938) Girolamo Bianconi (1772–1847): _docente di Archeologia presso l'Università di Bologna_ — confermato dal contesto
 - **Billiani, Luigi** (voci 3801; anni 1894–1894) → [Q122304224](https://www.wikidata.org/wiki/Q122304224) Luigi Billiani (1851–1896): _cultore di studi storici, farmacista (1851-1896)_ — Gemona del Friuli — nato o morto in Friuli/Veneto; date compatibili
-- **Bini, Giuseppe** (voci 464, 470, 485, 525; anni 1000–1786) → [Q105224468](https://www.wikidata.org/wiki/Q105224468) Giuseppe Bini (1689–1773): _presbitero ed erudito italiano (1689-1773)_ — Varmo, Gemona del Friuli — nato o morto in Friuli/Veneto; date compatibili
+- **Bini, Giuseppe** (voci 371, 464, 470, 485; anni 1000–1786) → [Q105224468](https://www.wikidata.org/wiki/Q105224468) Giuseppe Bini (1689–1773): _presbitero ed erudito italiano (1689-1773)_ — Varmo, Gemona del Friuli — nato o morto in Friuli/Veneto; date compatibili
 - **Biondelli, Bernardino** (voci 487, 518; anni 1753–1853) → [Q3638693](https://www.wikidata.org/wiki/Q3638693) Bernardino Biondelli (1804–1886): _linguista, numismatico e archeologo italiano_ — Zevio, Milano — nato o morto in Friuli/Veneto; date compatibili
 - **Blanc, Giuseppe** (voci 3719; anni 1870–1931) → [Q3107993](https://www.wikidata.org/wiki/Q3107993) Giuseppe Blanc (1886–1969): _compositore italiano (1886-1969)_ — Bardonecchia, Santa Margherita Ligure — date compatibili
 - **Boccardi, Alberto** (voci 2642, 3591; anni 1860–1913) → [Q46388146](https://www.wikidata.org/wiki/Q46388146) Alberto Boccardi (1854–1921): _avvocato e scrittore italiano (1854-1921)_ — Trieste — nato o morto in Friuli/Veneto; date compatibili
@@ -807,7 +811,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Tessitori, Luigi Pio** (voci 3770; anni 1920–1920) → [Q6700115](https://www.wikidata.org/wiki/Q6700115) Luigi Pio Tessitori (1887–1919): _indologo italiano_ — Udine, Bikaner — nato o morto in Friuli/Veneto; date compatibili
 - **Tessitori, Tiziano** (voci 3913; anni ?–?) → [Q3992013](https://www.wikidata.org/wiki/Q3992013) Tiziano Tessitori (1895–1973): _politico italiano (1895-1973)_ — Sedegliano, Udine — nato o morto in Friuli/Veneto
 - **Tinivella, Umberto** (voci 3508; anni ?–?) → [Q116614043](https://www.wikidata.org/wiki/Q116614043) Umberto Tinivella (1881–1941): _Militare italiano_ — Lucca — confermato dal contesto
-- **Tomadini, Jacopo** (voci 3047, 3048, 3049, 3518; anni ?–?) → [Q14447625](https://www.wikidata.org/wiki/Q14447625) Jacopo Tomadini (1820–1883): _compositore e presbitero italiano_ — Cividale del Friuli — nato o morto in Friuli/Veneto
+- **Tomadini, Jacopo** (voci 3047, 3048, 3049, 3060; anni ?–?) → [Q14447625](https://www.wikidata.org/wiki/Q14447625) Jacopo Tomadini (1820–1883): _compositore e presbitero italiano_ — Cividale del Friuli — nato o morto in Friuli/Veneto
 - **Tomasoni, Giovanni** (voci 487; anni 1836–1862) → [Q27986850](https://www.wikidata.org/wiki/Q27986850) Giovanni Tomasoni (1821–1881) — Udine, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Tommasi, Antonio** (voci 23; anni 1724–1724) → [Q123496053](https://www.wikidata.org/wiki/Q123496053) Antonio Tommasi (1658–1735): _padre teatino, poeta, professore di retorica (1658-1735)_ — fase 6, blocco 4: sonetti del primo Settecento: compatibile
 - **Toppo, Francesco** (voci 340, 541, 560 a, 3740; anni 1338–1850) → [Q105098383](https://www.wikidata.org/wiki/Q105098383) Francesco Di Toppo (1797–1883): _collezionista_ — Udine — nato o morto in Friuli/Veneto; date compatibili
@@ -889,7 +893,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3076 persone
+## 4. Nessun candidato su Wikidata: 3080 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

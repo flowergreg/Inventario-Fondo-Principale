@@ -483,8 +483,11 @@ def main():
     santi = {r["forma"]: r for r in csv.DictReader(open(LISTE / "santi_decisioni.tsv", encoding="utf-8"),
                                                     delimiter="\t")}
     curatore = {}
+    non_sciogliere = set()          # iniziali che il curatore lascia non sciolte
     for r in csv.DictReader(open(LISTE / "persone_curatore.tsv", encoding="utf-8"), delimiter="\t"):
         curatore[(r["voce"], r["testo"])] = [x.strip() for x in r["persone"].split("|")]
+        if re.search(r"indecidibil|troppo generico|resta [A-Z]", r["nota"] or ""):
+            non_sciogliere.add((r["voce"], r["testo"]))
     titoli = {t.lower() for t in estrai.leggi_parole("titoli.txt")}
     numeri = dict(con.execute("SELECT id, numero FROM voci"))
     menzioni = con.execute("SELECT id, voce, testo_esatto, tipo, correzione, forma_riferimento, sede, inizio, fine FROM menzioni "
@@ -671,7 +674,8 @@ def main():
         apre_mid[mid] = apre_voce
         for nomi, iniziali, cognomi, vista in valide:
             dato = (mid, num, testo, corr, nomi, iniziali, cognomi, vista, len(valide) > 1)
-            if iniziali:
+            # le iniziali indicate dal curatore restano tali («G. / Caiselli»: indecidibile)
+            if iniziali and (num, testo) not in non_sciogliere and ("", testo) not in non_sciogliere:
                 persone_iniziali.append(dato)
             else:
                 aggiungi_persona(ent, *dato)
