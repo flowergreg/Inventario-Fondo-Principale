@@ -4,7 +4,7 @@ Verifica del 2026-11-10. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 | Affidabilità | Luoghi |
 |---|---|
-| alta | 537 |
+| alta | 538 |
 | media | 0 |
 | bassa | 1 |
 | nessuna | 26 |
@@ -20,7 +20,7 @@ Verifica del 2026-11-10. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 Forme che non sono luoghi (cognomi, parole) o luoghi minori assenti da GeoNames e Wikidata.
 
-Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Salone (3849), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (541, 616, 702, 723), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
+Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Salone (3849), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (616, 966, 1001, 1003), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
 
 ## 4. Affidabilità alta
 
@@ -446,8 +446,8 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **San Pier d'Isonzo** (3 menz.; voci 596, 1220, 2146) → San Pier d'Isonzo — GeoNames [3167871](https://www.geonames.org/3167871) PPLA3, Friuli-Venezia Giulia (GO) — Wikidata [Q53143](https://www.wikidata.org/wiki/Q53143): _comune italiano_
 - **San Pietroburgo** (1 menz.; voci 1679) → San Pietroburgo — GeoNames [536203](https://www.geonames.org/536203) — Wikidata [Q656](https://www.wikidata.org/wiki/Q656): _città federale russa_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **San Vidotto** (3 menz.; voci 2087, 2088, 2093) → San Vidotto — GeoNames [3167210](https://www.geonames.org/3167210) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452510](https://www.wikidata.org/wiki/Q18452510): _frazione del comune italiano di Camino al Tagliamento, provincia di Udine_
-- **San Vito al Tagliamento** (26 menz.; voci 33, 39, 473, 484) → San Vito al Tagliamento — GeoNames [3167186](https://www.geonames.org/3167186) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53194](https://www.wikidata.org/wiki/Q53194): _comune italiano_
-- **San Vito al Torre** (1 menz.; voci 470) → San Vito al Torre — GeoNames [3217440](https://www.geonames.org/3217440) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53359](https://www.wikidata.org/wiki/Q53359): _comune italiano_
+- **San Vito al Tagliamento** (25 menz.; voci 33, 39, 473, 484) → San Vito al Tagliamento — GeoNames [3167186](https://www.geonames.org/3167186) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53194](https://www.wikidata.org/wiki/Q53194): _comune italiano_
+- **San Vito al Torre** (2 menz.; voci 470, 4260) → San Vito al Torre — GeoNames [3217440](https://www.geonames.org/3217440) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53359](https://www.wikidata.org/wiki/Q53359): _comune italiano_
 - **San Vito di Fagagna** (1 menz.; voci 1684) → San Vito di Fagagna — GeoNames [3167181](https://www.geonames.org/3167181) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53360](https://www.wikidata.org/wiki/Q53360): _comune italiano_
 - **Sant'Odorico** (1 menz.; voci 2024) → Sant'Odorico — GeoNames [3167285](https://www.geonames.org/3167285) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452521](https://www.wikidata.org/wiki/Q18452521): _centro abitato situato presso Flaibano, provincia di Udine_
 - **Sappada** (2 menz.; voci 1564, 2639/14-22) → Sappada — GeoNames [3167153](https://www.geonames.org/3167153) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q40216](https://www.wikidata.org/wiki/Q40216): _comune italiano_
@@ -460,6 +460,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Scutari** (1 menz.; voci 1095) → Scutari — GeoNames [3184081](https://www.geonames.org/3184081) PPLA, AL — Wikidata [Q131638](https://www.wikidata.org/wiki/Q131638): _comune albanese_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Sedegliano** (2 menz.; voci 666, 3504) → Sedegliano — GeoNames [3166827](https://www.geonames.org/3166827) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53365](https://www.wikidata.org/wiki/Q53365): _comune italiano_
 - **Sella** (1 menz.; voci 525) → Sella — GeoNames [3217592](https://www.geonames.org/3217592) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452531](https://www.wikidata.org/wiki/Q18452531): _frazione del comune italiano di Rivignano Teor, provincia di Udine_ — grafia confermata dal curatore; anche cognome nel testo
+- **Senigallia** (1 menz.; voci 1623) → Senigallia — GeoNames [3166740](https://www.geonames.org/3166740) PPLA3, reg. 10 (AN) — Wikidata [Q124925](https://www.wikidata.org/wiki/Q124925): _comune italiano_
 - **Serravalle** (2 menz.; voci 593, 596) → Serravalle — GeoNames [3166644](https://www.geonames.org/3166644) PPL, Veneto (TV) — Serravalle di Vittorio Veneto
 - **Sesto al Reghena** (25 menz.; voci 518, 606, 618, 666) → Sesto al Reghena — GeoNames [3166605](https://www.geonames.org/3166605) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53196](https://www.wikidata.org/wiki/Q53196): _comune italiano_
 - **Sevegliano** (1 menz.; voci 1683) → Sevegliano — GeoNames [3217435](https://www.geonames.org/3217435) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q18452535](https://www.wikidata.org/wiki/Q18452535): _frazione del comune italiano di Bagnaria Arsa, provincia di Udine_
@@ -523,9 +524,9 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Utrecht** (1 menz.; voci 324) → Utrecht — GeoNames [2745911](https://www.geonames.org/2745911) — Wikidata [Q803](https://www.wikidata.org/wiki/Q803): _città e comune olandese_ — grafia confermata dal curatore; più elementi Wikidata omonimi
 - **Valenza** (1 menz.; voci 606) → Valenza — GeoNames [3164920](https://www.geonames.org/3164920) PPLA3, reg. 12 (AL) — Wikidata [Q17689](https://www.wikidata.org/wiki/Q17689): _comune italiano della provincia di Alessandria, in Piemonte_
 - **Valle** (1 menz.; voci 4503) → Vale — GeoNames [8976037](https://www.geonames.org/8976037) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452604](https://www.wikidata.org/wiki/Q18452604): _centro abitato situato presso Venzone, provincia di Udine_
-- **Valvasone** (6 menz.; voci 525, 561, 681, 1311) → Valvasone — GeoNames [3164745](https://www.geonames.org/3164745) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q30031538](https://www.wikidata.org/wiki/Q30031538): _capoluogo dell'omonimo comune_ — grafia confermata dal curatore; anche cognome nel testo
+- **Valvasone** (5 menz.; voci 525, 681, 1311) → Valvasone — GeoNames [3164745](https://www.geonames.org/3164745) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q30031538](https://www.wikidata.org/wiki/Q30031538): _capoluogo dell'omonimo comune_ — grafia confermata dal curatore; anche cognome nel testo
 - **Variano** (1 menz.; voci 525) → Variano — GeoNames [3220007](https://www.geonames.org/3220007) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q16620405](https://www.wikidata.org/wiki/Q16620405): _frazione del comune italiano di Basiliano_
-- **Varmo** (2 menz.; voci 525) → Varmo — GeoNames [3164692](https://www.geonames.org/3164692) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53389](https://www.wikidata.org/wiki/Q53389): _comune italiano_
+- **Varmo** (3 menz.; voci 525, 1010) → Varmo — GeoNames [3164692](https://www.geonames.org/3164692) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53389](https://www.wikidata.org/wiki/Q53389): _comune italiano_
 - **Veneto** (2 menz.; voci 501, 534) → Veneto — GeoNames [3164604](https://www.geonames.org/3164604) ADM1, Veneto — Wikidata [Q1243](https://www.wikidata.org/wiki/Q1243): _regione italiana a statuto ordinario_
 - **Venezia** (228 menz.; voci 1, 10, 18, 23) → Venezia — GeoNames [8973797](https://www.geonames.org/8973797) PPL, Veneto (VI) — Wikidata [Q641](https://www.wikidata.org/wiki/Q641): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Veneto_
 - **Venzone** (67 menz.; voci 285, 344, 463, 519) → Venzone — GeoNames [3164570](https://www.geonames.org/3164570) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53391](https://www.wikidata.org/wiki/Q53391): _comune italiano_

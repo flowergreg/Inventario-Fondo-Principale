@@ -1,0 +1,88 @@
+n;cognome;voci;testo;problema;certezza;proposta;decisione;nota curatore
+1;Puppi;786;Per Johannem Baptistam Puppi Doctor;evidenziato anche «Per» e «Doctor»;sì;evidenziare solo «Johannem Baptistam Puppi»;;
+2;Puppi;525;del dott. Puppi (2 volte), circa il 1800;cognome da solo;?;?: Raimondo Puppi?;indecidibile;
+3;Rossi;619;dall'opera Jani Nicii Erythrei Pinacotheca;evidenziato anche «Pinacotheca» (il titolo);sì;evidenziare solo «Jani Nicii Erythrei» (Gian Vittorio Rossi);;
+4;Rossi;1899;Lazzaro e Antonio Maria fratelli Rossi Padovani;Antonio Maria non riconosciuto;sì;Antonio Maria / Rossi;;
+5;Rossi;3681;Morelli de Rossi, Giuseppe;intestazione non riconosciuta;sì;Giuseppe / Morelli de Rossi;;
+6;Rossi;4167;Rossi, Marino. Ritratti…;intestazione non riconosciuta;sì;Marino / Rossi;;
+7;Rota;644;Rota (Francesco). Delle gravezze e pubbliche imposte;intestazione non riconosciuta;sì;Francesco Rota (Dizionario 1756-1820);;
+8;Rota;—;Rota, Francesco;nessun collegamento al Dizionario;sì;collegare a Rota Francesco (1756-1820);;
+9;Rota;525;Notizie dirette al co. Rota Paolo;persona non riconosciuta;sì;Paolo / Rota;;
+10;Rota;338, 470;"canzonetta del co. Rota; sonetto del curato Rota";cognome da solo;?;?;indecidibile;
+11;Sinigaglia;1623;Commento… Sinigaglia 1883;è la città (Senigallia), non il cognome;sì;luogo: Senigallia;;
+12;Treo;105;Rime di Henrico Treo figlio di Servilio Secondo;"Enrico non collegato; «Servilio Secondo» evidenziato come Servilio";sì;"Enrico / Treo; Servilio Treo";poco più avanti c'è anche Lucrezio (Treo);
+13;Treo;561;appartenne a Lucretio Treo;cognome non collegato;sì;Lucrezio Treo;;
+14;Treo;796;Ducali dirette al Treo (fino al 1618);cognome da solo;?;?: Servilio Treo (1548-1622)?;sì;
+15;Treo;1632;Patrielli contro Treo. Processo;evidenziato anche «Processo»;sì;evidenziare solo «Treo» (famiglia);;
+16;Carletti;4250;Al prof. Carletti 6.8.1932;forma «Carletti, Al»;sì;Ercole Carletti;;
+17;Carletti;3720;Dono Carletti 1946;cognome da solo;?;?;indecidibile;
+18;Fabrizi;602, 3497, 534;"Fabrizi (o Fabricio) Daniele; Fabrizio, Daniele. 1630; Fabrizio avvocato K.r Daniele";intestazioni non riconosciute;sì;Daniele Fabrizio (Dizionario 1582-1643);;Fabrizi=Fabrizio
+19;Fabrizi;603;"Bibliotheca Fabricii; Fabricii Bibl.; ex Fabricio";forme sbagliate «Bibliotheca, Fabrizio» e «Bibl, Fabrizio»;sì;Johann Albert Fabricius;;? se cerco Fabrizi non trovo questa voce
+20;Fabrizi;102;Fabricio (2 volte);forma «Fabricio» senza nome;?;?: lasciare così (poeta nell'elenco)?;lasciare, però fare in modo che chi cerca Fabrizi trovi anche Fabricio;? se cerco Fabrizi non trovo questa voce
+21;Fabrizi;870;di T. Fabrizio cancelliere del comune;non riconosciuto;sì;T. / Fabrizio;;? se cerco Fabrizi non trovo questa voce
+22;Fabrizi;856, 936;"di provenienza Fabrizio; collezione Fabrizio";cognome da solo;?;?: famiglia o Daniele Fabrizio?;famiglia;? se cerco Fabrizi non trovo questa voce
+23;Fistulario;464;lettere di Girolamo e Paolo Fistulario;riconosciuto solo Girolamo;sì;aggiungere Paolo Fistulario;;
+24;Fistulario;529;Nob. Sig.ª Cont.ª Marzia Fistulario Caporiaco;evidenziato anche «Cont.ª»;sì;evidenziare solo «Marzia Fistulario Caporiaco»;;
+25;Fistulario;603, 938;"scrittura del Fistulario; di mano di P. Fistulario; memoria di P. Fistulario";cognome da solo o iniziale;sì;Paolo Fistulario (Dizionario 1703-1779);;
+26;Fistulario;2128, 3620;"mons. Fistulario; A M.a Fistulario";cognome da solo;?;?;Il monsignore è indecidibile. L'altra persona è una donna, Fistulario M.a;
+27;Fontanini;606;Msgr. / Arcivescovo / Mons. Fontanini (molte volte);cognome da solo;sì;Giusto Fontanini;;
+28;Fontanini;606;all'ab. Fontanini;cognome da solo;sì;Domenico Fontanini (l'abate);;
+29;Fontanini;606;al can. / can.co Fontanini;cognome da solo;sì;Girolamo Fontanini (il canonico);;
+30;Fontanini;606;del Fontanini (senza titolo);cognome da solo;?;?: Giusto?;sì;
+31;Fontanini;483, 468, 525, 607, 616, 619, 771;"Mons./Msgr. Fontanini; Mss. Fontanini; Fontanini (Msgr. Giusto)";cognome da solo o intestazione;sì;Giusto Fontanini;;
+32;Fontanini;102, 476;"al Fontanini; all'ab. Fontanini, 1742";cognome da solo;?;?;Domenico;
+33;Giusti;1198;Vita di Dorotea Bojani di Fr. Giusti (1776);non riconosciuto;sì;Francesco / Giusti;;
+34;Giusti;651, 878, 2623/2;"cronaca Giusti; libro d'oro del Giusti";cognome da solo;?;?: Vincenzo Giusti?;sì;
+35;Ottelio;619;il collocamento dell'Ottelio a riposo (1625);cognome da solo;sì;Marco Antonio Ottelio (Dizionario 1548-1628);;
+36;Ottelio;568;Oratione del dott. Ottelio Ottelij (1587);persona non riconosciuta: Ottelio è il nome;sì;Ottelio / Ottelio;;
+37;Ottelio;1655;al Governator Successore Co. Lodovico Ottelio;evidenziato anche «Governator Successore Co.»;sì;evidenziare solo «Lodovico Ottelio»;;
+38;Ottelio;2604;al co. T. Ottelio (1852);iniziale;?;?: Tommaso Ottelio?;sì;e L. Ottelio di 1507?
+39;Ottelio;27, 31, 102, 288, 294, 803, 3647;"Dai manoscritti Ottelio; Provenienza Ottelio";famiglia;sì;famiglia Ottelio;;
+40;Sini;389;alcune del Sini;cognome da solo;sì;Girolamo Sini;;
+41;Sini;606;Giacomo Adriatico Sini;forma «Adriatico, Giacomo Sini»;?;Giacomo / Sini (Dizionario: Iacopo Sini)?;sì;
+42;Toppo;circa 40 voci (525-559 ecc.);"Proven.: Toppo; Legato Toppo; Collezione Toppo co. Franc.°";cognome da solo: il legato del co. Francesco di Toppo (1883);sì;Francesco di Toppo (Dizionario 1797-1882);;
+43;Toppo;490, 557;"Francesco co. di Toppo; pel co. di Toppo; co. Fr. di Toppo";non riconosciuto;sì;Francesco di Toppo;;
+44;Toppo;541;Dono della co. Margherita di Toppo, 1885;persona non riconosciuta;sì;Margherita / di Toppo;;
+45;Toppo;560 a, 1880;"Toppo co. Franc.°; Sgn. co. Nicolò di Toppo";evidenziati anche i titoli;sì;evidenziare solo i nomi;;
+46;Toppo;2266;al co. Toppo (1797);cognome da solo;?;?;indecidibile;
+47;Valentinis;2410;nob. Sign. Co Antonio Valentinis;evidenziato anche «Co»;sì;evidenziare solo «Antonio Valentinis»;;
+48;Valentinis;1882;eredi di Martin Valentinis;non riconosciuto;sì;Martino / Valentinis;;
+49;Valentinis;3792;Dono Dr Valentinis 1946;cognome da solo;?;?;indecidibile;
+50;Valvasone;482;morte accidentale del co. Zanetto Valvasone;non riconosciuto;sì;Zanetto / Valvasone;;
+51;Valvasone;1000;Denunzia di feudo di L. di Valvasone (1630);non riconosciuto;sì;L. / di Valvasone;;
+52;Valvasone;1567;la descrizione della Carnia del Valvasone;cognome da solo;sì;Jacopo Valvasone di Maniago (autore della Descrizione della Carnia);;è anche a 561.
+53;Verdi;3362;Nel Macbeth di Giuseppe Verdi;evidenziato anche «Macbeth di»;sì;evidenziare solo «Giuseppe Verdi»;;
+54;Verdi;2557;(Suzzara Verdi), Paride;forma «Verdi, Paride»;sì;Paride / Suzzara Verdi;;
+55;Barbaro;891, 1224, 1262;"patriarca Fr. Barbaro; Franc. Barbarum patriarcham";non riconosciuto;sì;Francesco Barbaro (patriarca);;
+56;Barnaba;1484;periti Rodolfo Barnaba e Niccolò Comuzzi;"già due persone; evidenziazione unica";ok;nessuna;;
+57;Barnaba;1490, 1491;"B. Barnaba; del Sr. F. Barnaba";iniziali;?;?;si tengono così;
+58;Barnaba;2557;Barnaba, Dom.co. Lettere a Ippolito Nievo;intestazione non riconosciuta;sì;Domenico / Barnaba;;
+59;Beltrame;533, 568, 667, 803, 826 e molte altre;"Beato S.N.D. Beltrame; B. Beltrame Patriarcha; Beltramo francese (Bertrando); patriarca Bertrando (una ventina di voci)";il beato patriarca Bertrando è diviso in più forme e spesso non riconosciuto;sì;Bertrando di Saint-Geniès (Dizionario);;
+60;Beltrame;1391;Beltrame di Buttrio, prete;forma «Buttrio, Beltrame»;sì;Beltrame / di Buttrio;;
+61;Beltrame;2706;Pietro dott. Beltrame trivigiano;evidenziato anche «dott.»;ok;nessuna (accettabile);;
+62;Bertoli;594, 851, 485, 507, 572, 770;"del Bertoli; cano. Bertoli; Bertoli al Beretta";cognome da solo;sì;Gian Domenico Bertoli;;
+63;Bertoli;923;G.D. Bertoli;forma separata «Bertoli, G. D.»;sì;unire a Gian Domenico Bertoli;;
+64;Bertoli;619;Id. dei tre Bertoli;famiglia;ok;nessuna;;
+65;Brazzà;702;Di Brazzà (Nicolò). Feste e cerimonie;intestazione non riconosciuta;sì;Nicolò / di Brazzà;;
+66;Brazzà;2641;Brazzà (di), Ascanio. Sonetto;intestazione non riconosciuta;sì;Ascanio di Brazzà;;
+67;Brazzà;3931;Olga di Brazzà Savorgnan;«Savorgnan» evidenziato (fa parte del cognome);ok;nessuna;;
+68;Deciani;713;attribuito al Deciani;cognome da solo;sì;Tiberio Deciani;;
+69;Deciani;178;Ode al Co. Fr. Deciani, Prefetto del dipartimento di Passariano;non riconosciuto;sì;Francesco / Deciani;;
+70;Comelli;606;Gemin. Franc. Comelli di Stuckenfeld;forma «Comelli, Francesco» separata da «Comelli Stuckenfeld, Geminiano Francesco»;sì;unire a Geminiano Francesco Comelli di Stuckenfeld;;
+71;Comelli;4108;di P. Comelli (5);iniziale;?;?;Pietro Comelli come nella stessa voce;
+72;Del Torre;923;"M. della Torre; Michele della Torre";"forma «Torre, M.»; Michele non riconosciuto";sì;Michele della Torre (canonico di Cividale);;
+73;Del Torre;471, 491, 853, 936;"Della Torre Michele cano.; mons. Michele co. Della Torre Valsassina; Co. Michele della Torre";non riconosciuto;sì;Michele della Torre Valsassina;;
+74;Del Torre;1744;"Raimondo della Torre; Castone della Torre; Pagano della Torre (patriarchi)";non riconosciuti;sì;Raimondo, Gastone, Pagano della Torre;;
+75;Del Torre;541;"Della Torre Gierolamo; Della Torre Michiele";non riconosciuti;sì;Girolamo e Michele della Torre;;
+76;Del Torre;4119, 4170, 751;"Della Torre, Antonio; Della Torre, Franco; Del Torre (Filippo)";intestazioni non riconosciute;sì;Antonio, Franco, Filippo della Torre;;
+77;Del Torre;—;Torre (23 menzioni);forma «Torre» senza nome;?;?: famiglia della Torre?;;è anche luogo: valutare
+78;Del Torre;470;S. Vito di Crauglio;collegato a «San Vito al Torre»;ok;nessuna (è giusto);;
+79;Del Torre;2139;Clemens P.P. XIII. Lettera;evidenziato anche «Lettera»;sì;evidenziare solo «XIII»;;
+80;Montegnaco;643;del Can.co Antonio di Montegnacco;evidenziato anche «Can.co»;sì;evidenziare solo «Antonio di Montegnacco»;;
+81;Montegnaco;681;Ms. di M. A. Montegnacco 1769;non riconosciuto;sì;Marco Antonio di Montegnacco;;
+82;Montegnaco;3833;Montegnacco (di), Max. Relazione…;intestazione non riconosciuta;sì;Max / di Montegnacco;;
+83;Duodo;686, 1144;"Il Duodo nella dedica; lo stesso Duodo";cognome da solo;sì;Pietro Duodo;;
+84;Duodo;153;Ode a S. Eccell. Duodo, luogotenente;cognome da solo;?;?;è luogotenente, quindi Tomaso;vedi 2651
+85;Fabrizio;600;"Carolus Fabricius; (Fabricius extraxit)";forma latina separata;?;?: Carlo Fabrizi?;sì;
+86;Fabrizio;524;Fabrizio ingegnere;cognome da solo;?;?;indecidibile;
+87;Follini;2420, 2676, 3722, 3723;"Archivio della fam.a Follini; Folini (famiglia)";famiglia;sì;famiglia Follini (Folini come variante);;

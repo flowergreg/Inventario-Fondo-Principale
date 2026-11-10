@@ -6,23 +6,23 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
-| abbreviazione | 0 | 2 | 0 | 283 | 285 | 615 |
-| cognome | 113 | 293 | 324 | 4869 | 5599 | 14373 |
+| abbreviazione | 0 | 2 | 0 | 285 | 287 | 619 |
+| cognome | 112 | 293 | 325 | 4869 | 5599 | 14392 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1835 |
-| luogo | 401 | 175 | 84 | 6 | 666 | 4526 |
+| luogo | 401 | 176 | 85 | 6 | 668 | 4514 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
 | nome_di_battesimo | 1255 | 145 | 0 | 0 | 1400 | 9285 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
 | opera | 18 | 0 | 0 | 0 | 18 | 48 |
 | parola | 0 | 0 | 0 | 0 | 125 | 498 |
 | parte | 0 | 1 | 0 | 0 | 1 | 1 |
-| particella | 32 | 0 | 0 | 0 | 32 | 2151 |
-| santo | 0 | 6 | 0 | 276 | 282 | 612 |
-| titolo | 70 | 0 | 0 | 0 | 70 | 836 |
+| particella | 32 | 0 | 0 | 0 | 32 | 2170 |
+| santo | 0 | 6 | 0 | 276 | 282 | 611 |
+| titolo | 71 | 0 | 0 | 0 | 71 | 851 |
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 181.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 182.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -174,6 +174,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Rome | 1 | Roma | GeoNames | 366 |
 | Rosazzis | 1 | Rosazzo | contesto: latino | 596 |
 | Roterdam | 1 | Rotterdam | GeoNames | 590 |
+| S. Vito al Torre | 1 | — | nessuna corrispondenza nelle liste | 4260 |
 | Sandaniele | 1 | San Daniele | lista manuale | 525 |
 | Sandaniello | 1 | San Daniele | curatore: 470 | 470 |
 | Schiavonia | 1 | Schiavonea | GeoNames | 523 |
@@ -210,7 +211,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 
 ## 2. Doppia lettura: nomi ufficiali di luogo che sono anche cognomi o famiglie
 
-Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo ≠ Savorgnan famiglia). Forme: 408.
+Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo ≠ Savorgnan famiglia). Forme: 410.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -219,7 +220,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Manzano | 121 | — | anche nome ufficiale di luogo (ISTAT) | 469, 491, 496, 519, 568, 624, 1686, 1687 |
 | Maniago | 64 | — | anche nome ufficiale di luogo (ISTAT) | 76, 77, 83, 91, 183, 282, 284, 291 |
 | Colloredo | 58 | — | anche nome ufficiale di luogo (GeoNames) | 40, 158, 239, 339, 340, 341, 342, 343 |
-| Valvasone | 45 | — | anche nome ufficiale di luogo (GeoNames) | 91, 482, 519, 525, 652, 653, 654, 655 |
+| Valvasone | 46 | — | anche nome ufficiale di luogo (GeoNames) | 91, 482, 519, 525, 652, 653, 654, 655 |
 | Belgrado | 44 | — | anche nome ufficiale di luogo (GeoNames) | 3, 82, 102, 117, 155, 289, 309, 352 |
 | Castello | 32 | — | anche nome ufficiale di luogo (GeoNames) | 493, 513, 518, 521, 523, 525, 541, 633 |
 | Tricesimo | 27 | — | ISTAT | 487, 525, 533, 853, 888, 925, 945, 1221 |
@@ -279,7 +280,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Feruglio | 6 | — | anche nome ufficiale di luogo (GeoNames) | 338, 1160, 1601, 1602 |
 | Sacco | 6 | — | anche nome ufficiale di luogo (ISTAT) | 684, 687, 690, 1571, 2318 |
 | Tricesimo | 6 | — | anche nome ufficiale di luogo (ISTAT) | 680, 1300, 1552, 2272, 2274, 2281 |
-| Valvasone | 6 | — | GeoNames | 525, 561, 681, 1311 |
 | Villa | 6 | — | anche nome ufficiale di luogo (GeoNames) | 619, 1007, 2033, 2048, 2050, 2117 |
 | Villalta | 6 | — | GeoNames | 467, 525, 566, 606, 888, 3724 |
 | Antonelli | 5 | — | anche nome ufficiale di luogo (GeoNames) | 1, 2, 518, 1199, 1583 |
@@ -296,6 +296,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Osoppo | 5 | — | anche nome ufficiale di luogo (ISTAT) | 1537, 1998, 2666, 4006 |
 | Ponte | 5 | — | anche nome ufficiale di luogo (ISTAT) | 74, 110, 390, 1490, 2063 |
 | Romanello | 5 | — | anche nome ufficiale di luogo (GeoNames) | 10, 541, 623, 651, 1201 |
+| Valvasone | 5 | — | GeoNames | 525, 681, 1311 |
 | Zoppola | 5 | — | anche nome ufficiale di luogo (ISTAT) | 563, 590, 1006, 4209 |
 | Alpi | 4 | — | anche nome ufficiale di luogo (GeoNames) | 2642, 3919, 3933, 4517 |
 | Bragato | 4 | — | anche nome ufficiale di luogo (GeoNames) | 3631, 3632, 3648, 3956 |
@@ -350,6 +351,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Sedegliano | 3 | — | anche nome ufficiale di luogo (ISTAT) | 1883, 2574, 2575 |
 | Tarcento | 3 | — | anche nome ufficiale di luogo (ISTAT) | 185, 2447, 3617 |
 | Tavani | 3 | — | anche nome ufficiale di luogo (GeoNames) | 340, 2604, 3755 |
+| Varmo | 3 | — | ISTAT | 525, 1010 |
 | Venturini | 3 | — | anche nome ufficiale di luogo (GeoNames) | 2022, 2250, 4126 |
 | Veronese | 3 | — | anche nome ufficiale di luogo (GeoNames) | 10, 240 |
 | Villaorba | 3 | — | GeoNames | 1683, 4514 |
@@ -427,7 +429,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Tommasi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 23 |
 | Valentini | 2 | — | anche nome ufficiale di luogo (GeoNames) | 484 |
 | Vanzetti | 2 | — | anche nome ufficiale di luogo (GeoNames) | 519, 524 |
-| Varmo | 2 | — | ISTAT | 525 |
 | Veneto | 2 | — | GeoNames | 501, 534 |
 | Zomeais | 2 | — | GeoNames | 918, 3566 |
 | Zucchi | 2 | — | anche nome ufficiale di luogo (GeoNames) | 1158, 3893 |
@@ -571,6 +572,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Ovaro | 1 | — | ISTAT | 918 |
 | Pagnacco | 1 | — | anche nome ufficiale di luogo (ISTAT) | 175 |
 | Pagnacco | 1 | — | ISTAT | 1289 |
+| Palazzo | 1 | — | anche nome ufficiale di luogo (GeoNames) | 541 |
 | Palo | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1998 |
 | Partistagno | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3431 |
 | Pascoli | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2262 |
@@ -604,6 +606,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Sella | 1 | — | GeoNames | 525 |
 | Sette | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1362 |
 | Siacco | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1362 |
+| Sinigaglia | 1 | — | GeoNames | 1623 |
 | Taboga | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2730 |
 | Tasca | 1 | — | anche nome ufficiale di luogo (GeoNames) | 3639 |
 | Tessari | 1 | — | anche nome ufficiale di luogo (GeoNames) | 2262 |
@@ -686,7 +689,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Girol. | 2 | Girolamo | abbreviazione (lista manuale) | 606 |
 | Io. | 2 | Giovanni | curatore | 12, 414 |
 | Jacobum | 2 | Giacomo o Jacopo | contesto: ambiguo: da decidere con le fonti | 606, 622 |
-| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardus» | 620, 2521 |
+| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardo» | 620, 2521 |
 | Lunardo | 2 | Leonardo | variante (lista manuale) | 10, 473 |
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
@@ -717,11 +720,11 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
 | Coronae | 1 | Corona | forma latina declinata di «Corona» | 3058 |
-| Darii | 1 | Dario | forma latina declinata di «Darius» | 194 |
+| Darii | 1 | Dario | forma latina declinata di «Dario» | 194 |
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
-| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
+| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenio» | 2623/3 |
 | Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
 | Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
@@ -734,7 +737,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -930,7 +933,7 @@ Grafie che la normalizzazione già unisce (Aloi/Aloj/Aloy) e correzioni tra quad
 | Maioris | 1 | — | variante grafica di Majoris | 617 |
 | Majoris | 1 | — | variante grafica di Maioris | 523 |
 | Maniacco | 2 | — | variante grafica di Maniaco | 4219 |
-| Maniaco | 5 | — | variante grafica di Maniacco | 525, 561, 771 |
+| Maniaco | 5 | — | variante grafica di Maniacco | 525, 771, 561 |
 | Marzutini | 1 | — | variante grafica di Marzuttini | 340 |
 | Marzuttini | 3 | — | variante grafica di Marzutini | 340, 491, 493 |
 | Mazzucchelli | 1 | — | variante grafica di Mazzuchelli | 619 |
@@ -1083,7 +1086,7 @@ Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ 
 
 ## 6. Cognomi da verificare nelle fonti
 
-4869 forme (10855 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4869 forme (10871 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 
@@ -1093,7 +1096,7 @@ Forme intere. Forme: 282.
 |---|---|---|---|---|
 | S. Daniele | 59 | — | santo da dirimere | 395, 467, 468, 470, 471, 475, 483, 484 |
 | S. Pietro | 26 | — | santo da dirimere | 181, 182, 521, 836, 919, 920, 1045, 1270 |
-| S. Vito | 24 | — | santo da dirimere | 33, 39, 473, 484, 496, 525, 557, 593 |
+| S. Vito | 23 | — | santo da dirimere | 33, 39, 473, 484, 496, 525, 557, 593 |
 | S. Marco | 21 | — | santo da dirimere | 308, 521, 541, 555, 570, 606, 666, 854 |
 | S. Chiara | 18 | — | santo da dirimere | 138, 156, 220, 938, 1311, 1315, 1354, 1357 |
 | S. Nicolò | 17 | — | santo da dirimere | 618, 1286, 1351, 1355, 1356, 1362, 2011 |
