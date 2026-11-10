@@ -7,7 +7,7 @@ Verifica del 2026-11-10. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 | alta | 540 |
 | media | 0 |
 | bassa | 2 |
-| nessuna | 26 |
+| nessuna | 27 |
 
 ## 1. Affidabilità media: più candidati, da scegliere
 
@@ -21,7 +21,7 @@ Verifica del 2026-11-10. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 Forme che non sono luoghi (cognomi, parole) o luoghi minori assenti da GeoNames e Wikidata.
 
-Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Salone (3849), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (616, 966, 1001, 1003), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842)
+Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (2041, 2074), Cimpello (921), Cucagna (1015, 1946, 1949), Cusano (23, 165, 168, 1947), Duomo di Udine (555), Fiume (23, 863, 2578, 3591), Frattuzza (2069), Grazzano (23, 520, 852, 3741), Iutizzo (2607), Orcenico (487), Pieve di Rosa (2629, 3944), Prampero (533), Remugnano (2037), Rialto (2465), Salone (3849), San Giovanni di Tuba (518), Soffumbergo (519), Templum (606), Torre (616, 966, 1001, 1003), Tramonti (618), Tursa (4081), Villanova (618, 1822, 1825, 1842), Zucco (1000, 1706)
 
 ## 4. Affidabilità alta
 
@@ -529,7 +529,7 @@ Alnicco (1302), Brizza (1367), Caiada (1148), Castellutto (3922), Ceresetto (204
 - **Valle** (1 menz.; voci 4503) → Vale — GeoNames [8976037](https://www.geonames.org/8976037) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18452604](https://www.wikidata.org/wiki/Q18452604): _centro abitato situato presso Venzone, provincia di Udine_
 - **Valvasone** (5 menz.; voci 525, 681, 1311) → Valvasone — GeoNames [3164745](https://www.geonames.org/3164745) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q30031538](https://www.wikidata.org/wiki/Q30031538): _capoluogo dell'omonimo comune_ — grafia confermata dal curatore; anche cognome nel testo
 - **Variano** (1 menz.; voci 525) → Variano — GeoNames [3220007](https://www.geonames.org/3220007) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q16620405](https://www.wikidata.org/wiki/Q16620405): _frazione del comune italiano di Basiliano_
-- **Varmo** (4 menz.; voci 525, 1010, 2648) → Varmo — GeoNames [3164692](https://www.geonames.org/3164692) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53389](https://www.wikidata.org/wiki/Q53389): _comune italiano_
+- **Varmo** (6 menz.; voci 525, 1010, 1849, 2648) → Varmo — GeoNames [3164692](https://www.geonames.org/3164692) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53389](https://www.wikidata.org/wiki/Q53389): _comune italiano_
 - **Veneto** (2 menz.; voci 501, 534) → Veneto — GeoNames [3164604](https://www.geonames.org/3164604) ADM1, Veneto — Wikidata [Q1243](https://www.wikidata.org/wiki/Q1243): _regione italiana a statuto ordinario_
 - **Venezia** (229 menz.; voci 1, 10, 18, 23) → Venezia — GeoNames [8973797](https://www.geonames.org/8973797) PPL, Veneto (VI) — Wikidata [Q641](https://www.wikidata.org/wiki/Q641): _comune italiano, capoluogo dell'omonima città metropolitana e della regione Veneto_
 - **Venzone** (70 menz.; voci 285, 344, 463, 519) → Venzone — GeoNames [3164570](https://www.geonames.org/3164570) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53391](https://www.wikidata.org/wiki/Q53391): _comune italiano_

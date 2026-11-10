@@ -7,11 +7,11 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
 | abbreviazione | 0 | 2 | 0 | 286 | 288 | 594 |
-| cognome | 112 | 292 | 321 | 4842 | 5567 | 14139 |
+| cognome | 112 | 292 | 321 | 4842 | 5567 | 14137 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1831 |
-| luogo | 404 | 185 | 84 | 6 | 679 | 4640 |
+| luogo | 404 | 186 | 84 | 6 | 680 | 4644 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
-| nome_di_battesimo | 1249 | 144 | 0 | 0 | 1393 | 9117 |
+| nome_di_battesimo | 1249 | 144 | 0 | 0 | 1393 | 9114 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 126 |
 | opera | 18 | 0 | 0 | 0 | 18 | 48 |
 | parola | 0 | 0 | 0 | 0 | 125 | 498 |
@@ -22,7 +22,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 191.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 192.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -82,6 +82,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Sūri | 2 | Suri | GeoNames | 4322, 4367 |
 | Udin | 2 | Udine | GeoNames | 4244, 4253 |
 | Ventiono | 2 | — | nessuna corrispondenza nelle liste | 2623/4 |
+| Zucco | 2 | — | nessuna corrispondenza nelle liste | 1000, 1706 |
 | Affrica | 1 | — | nessuna corrispondenza nelle liste | 1317 |
 | Amanins | 1 | Domanins | curatore: Villa di Domanins (2036) | 2036 |
 | Aquileiense | 1 | Aquileia | curatore: 1744 | 1744 |
@@ -304,6 +305,7 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Ponte | 5 | — | anche nome ufficiale di luogo (ISTAT) | 74, 110, 390, 1490, 2063 |
 | Romanello | 5 | — | anche nome ufficiale di luogo (GeoNames) | 10, 541, 623, 651, 1201 |
 | Valvasone | 5 | — | GeoNames | 525, 681, 1311 |
+| Varmo | 5 | — | ISTAT | 525, 1010, 1849 |
 | Zoppola | 5 | — | anche nome ufficiale di luogo (ISTAT) | 563, 590, 1006, 4209 |
 | Alpi | 4 | — | anche nome ufficiale di luogo (GeoNames) | 2642, 3919, 3933, 4517 |
 | Bragato | 4 | — | anche nome ufficiale di luogo (GeoNames) | 3631, 3632, 3648, 3956 |
@@ -359,7 +361,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Sedegliano | 3 | — | anche nome ufficiale di luogo (ISTAT) | 1883, 2574, 2575 |
 | Tarcento | 3 | — | anche nome ufficiale di luogo (ISTAT) | 185, 2447, 3617 |
 | Tavani | 3 | — | anche nome ufficiale di luogo (GeoNames) | 340, 2604, 3755 |
-| Varmo | 3 | — | ISTAT | 525, 1010 |
 | Venturini | 3 | — | anche nome ufficiale di luogo (GeoNames) | 2022, 2250, 4126 |
 | Veronese | 3 | — | anche nome ufficiale di luogo (GeoNames) | 10, 240 |
 | Villaorba | 3 | — | GeoNames | 1683, 4514 |
@@ -662,7 +663,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Mariae | 5 | Maria | forma latina declinata di «Maria» | 523, 606, 648, 1285, 2997 |
 | Aldus | 4 | Aldo | forma latina declinata di «Aldo» | 2631/5, 2631/6, 2631/10, 2631/11 |
 | Bart. | 4 | Bartolomeo | abbreviazione (lista manuale) | 511, 606, 721 |
-| Fabii | 4 | Fabio | forma latina declinata di «Fabius» | 647, 786, 819, 1487 |
+| Fabii | 4 | Fabio | forma latina declinata di «Fabio» | 647, 786, 819, 1487 |
 | Fed. | 4 | Federico | abbreviazione (lista manuale) | 505, 519, 606, 3913 |
 | Georgium | 4 | Giorgio | contesto | 606, 622, 1903 |
 | Gio | 4 | Giovanni | variante (lista manuale) | 669, 1777, 2406, 4113 |
@@ -693,12 +694,12 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Girol. | 2 | Girolamo | abbreviazione (lista manuale) | 606 |
 | Io. | 2 | Giovanni | curatore | 12, 414 |
 | Jacobum | 2 | Giacomo o Jacopo | contesto: ambiguo: da decidere con le fonti | 606, 622 |
-| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardus» | 620, 2521 |
+| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardo» | 620, 2521 |
 | Lunardo | 2 | Leonardo | variante (lista manuale) | 10, 473 |
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
@@ -728,7 +729,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
-| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
+| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenio» | 2623/3 |
 | Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
 | Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
@@ -741,7 +742,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Helenae | 1 | Elena | forma latina declinata di «Helena» | 54 |
 | Hieronimo | 1 | Girolamo | variante (lista manuale) | 2147 |
 | Hieronymum | 1 | Girolamo | forma latina declinata di «Hieronymus» | 622 |
-| Honorii | 1 | Onorio | forma latina declinata di «Honorio» | 947 |
+| Honorii | 1 | Onorio | forma latina declinata di «Honorius» | 947 |
 | Italiae | 1 | Italia | forma latina declinata di «Italia» | 692 |
 | Iulium | 1 | Giulio | curatore: 744 | 744 |
 | Ja. | 1 | Jacopo | abbreviazione (lista manuale) | 353 |
@@ -768,7 +769,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Patricij | 1 | Patrizio | forma latina declinata di «Patricio» | 553 |
 | Petronii | 1 | Petronio | curatore: 414 | 414 |
 | Poloniae | 1 | Polonia | forma latina declinata di «Polonia» | 619 |
-| Publii | 1 | Publio | forma latina declinata di «Publio» | 43 |
+| Publii | 1 | Publio | forma latina declinata di «Publius» | 43 |
 | Romae | 1 | Roma | forma latina declinata di «Roma» | 565 |
 | Servae | 1 | Servo | forma latina declinata di «Serva» | 2002 |
 | Spiritus | 1 | Spirito | forma latina declinata di «Spirito» | 3081 |
@@ -1088,7 +1089,7 @@ Abstemio ~ Astemio, Accademia ~ Accademica, Accademia ~ Accademie, Accademica ~ 
 
 ## 6. Cognomi da verificare nelle fonti
 
-4842 forme (10648 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
+4842 forme (10646 occorrenze) senza varianti nel testo: la forma di riferimento verrà dalle fonti enciclopediche (fase 5). Elenco completo nella tabella `lessico` (`parte='cognome' AND stato='da_verificare'`).
 
 ## 7. Santi (da dirimere)
 
