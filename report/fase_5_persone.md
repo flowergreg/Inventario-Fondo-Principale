@@ -7,7 +7,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | alta | 754 |
 | media | 39 |
 | bassa | 33 |
-| nessuna | 3080 |
+| nessuna | 3081 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -59,7 +59,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q69929](https://www.wikidata.org/wiki/Q69929) Maria Amalia di Sassonia (1794–1870): _principessa di Sassonia, compositrice e drammaturga tedesca_ — Dresda, Pillnitz [0]; [Q325897](https://www.wikidata.org/wiki/Q325897) Maria Amalia di Sassonia (1757–1831) — Dresda, Neuburg an der Donau [0]
 - **Scala, Giovanni** (voci 824; anni 1518–1836) → [Q41618086](https://www.wikidata.org/wiki/Q41618086) Giovanni Scala (?–?): _fl. 1547-1599_
 - **Stella, Francesco Maria** (voci 94; anni 1671–1671) → [Q131684534](https://www.wikidata.org/wiki/Q131684534) Francesco Maria Stella (1745–1800): _1745-1800_
-- **Strassoldo, Panfilo** (voci 619; anni 1536–1536) → [Q68911661](https://www.wikidata.org/wiki/Q68911661) Panfilo Strassoldo (?–1545): _arcivescovo cattolico_
+- **Strassoldo, Panfilo** (voci 619; anni 1536–1542) → [Q68911661](https://www.wikidata.org/wiki/Q68911661) Panfilo Strassoldo (?–1545): _arcivescovo cattolico_
 - **Suzzi, Celestino** (voci 334, 335; anni ?–?) → [Q112316093](https://www.wikidata.org/wiki/Q112316093) Celestino Suzzi (1815–1883)
 - **Tilatti, Andrea** (voci 1445; anni ?–?) → [Q89477491](https://www.wikidata.org/wiki/Q89477491) Andrea Tilatti (1962–?): _medievista italiano (1962-)_ — Udine — nato o morto in Friuli/Veneto; nato nel 1962: verificare
 - **Venerio** (voci 1538; anni ?–?) → [Q1432734](https://www.wikidata.org/wiki/Q1432734) Venerio (350–408): _arcivescovo e santo italiano_ — Milano
@@ -512,7 +512,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Grigoletti, Michelangelo** (voci 2418; anni ?–?) → [Q842033](https://www.wikidata.org/wiki/Q842033) Michelangelo Grigoletti (1801–1870): _pittore italiano_ — Pordenone, Venezia — nato o morto in Friuli/Veneto
 - **Grimani, Antonio** (voci 1088; anni 1521–1521) → [Q602332](https://www.wikidata.org/wiki/Q602332) Antonio Grimani (1435–1523): _doge della Repubblica di Venezia dal 1521 al 1523_ — Venezia — confermato dal contesto
 - **Grimani, Domenico** (voci 618; anni 1466–1651) → [Q582339](https://www.wikidata.org/wiki/Q582339) Domenico Grimani (1461–1523): _cardinale e patriarca cattolico italiano_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
-- **Grimani, Giovanni** (voci 467, 765, 792, 1123; anni 1569–1629) → [Q3767436](https://www.wikidata.org/wiki/Q3767436) Giovanni Grimani (1506–1593): _patriarca cattolico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Grimani, Giovanni** (voci 389, 467, 765, 792; anni 1569–1629) → [Q3767436](https://www.wikidata.org/wiki/Q3767436) Giovanni Grimani (1506–1593): _patriarca cattolico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Grimani, Marino** (voci 826; anni 1207–1719) → [Q1898567](https://www.wikidata.org/wiki/Q1898567) Marino Grimani (1489–1546): _cardinale e patriarca cattolico italiano_ — Venezia, Orvieto — patriarca d'Aquileia
 - **Grimani, Pietro** (voci 523, 3780; anni 1674–1802) → [Q786457](https://www.wikidata.org/wiki/Q786457) Pietro Grimani (1677–1752): _doge della Repubblica di Venezia_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Grion, Giusto** (voci 394, 524; anni 1688–1688) → [Q94295093](https://www.wikidata.org/wiki/Q94295093) Giusto Grion (1827–1904) — Trieste, Cividale del Friuli — nato o morto in Friuli/Veneto
@@ -572,7 +572,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Manin, Leonardo** (voci 3719; anni 1525–1931) → [Q18758545](https://www.wikidata.org/wiki/Q18758545) Leonardo Manin (1771–1853): _letterato e numismatico italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Manin, Lodovico** (voci 869, 1034; anni 1517–1802) → [Q458677](https://www.wikidata.org/wiki/Q458677) Ludovico Manin (1726–1802): _ultimo doge della Repubblica di Venezia_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Mansi, Giovanni Domenico** (voci 603; anni 1754–1754) → [Q939189](https://www.wikidata.org/wiki/Q939189) Giovanni Domenico Mansi (1692–1769): _arcivescovo cattolico, teologo e storico italiano_ — Lucca — date compatibili
-- **Mantica, Francesco** (voci 568, 606, 619; anni 1596–1608) → [Q3080997](https://www.wikidata.org/wiki/Q3080997) Francesco Mantica (1534–1614): _cardinale e giurista italiano (1534-1614)_ — Venzone, Roma — nato o morto in Friuli/Veneto; date compatibili
+- **Mantica, Francesco** (voci 568, 606, 619, 1552; anni 1596–1608) → [Q3080997](https://www.wikidata.org/wiki/Q3080997) Francesco Mantica (1534–1614): _cardinale e giurista italiano (1534-1614)_ — Venzone, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Mantica, Germanico** (voci 619, 2275; anni ?–?) → [Q24288764](https://www.wikidata.org/wiki/Q24288764) Germanico Mantica (?–1639) — Adria — nato o morto in Friuli/Veneto
 - **Manuzio, Paolo** (voci 468, 524; anni 1561–1877) → [Q941151](https://www.wikidata.org/wiki/Q941151) Paolo Manuzio (1512–1574): _editore, tipografo e umanista italiano (1512-1574)_ — Venezia, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Manzini, Giuseppe** (voci 1317, 3919, 4130; anni 1859–1895) → [Q97066228](https://www.wikidata.org/wiki/Q97066228) Giuseppe Manzini (1866–1956): _sacerdote italiano (1866-1956)_ — Cadidavid, Verona — nato o morto in Friuli/Veneto; date compatibili
@@ -893,7 +893,7 @@ Verifica del 2026-11-10. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di Lorena, Carlo** (voci 204; anni ?–?) → [Q158232](https://www.wikidata.org/wiki/Q158232) Carlo Alessandro di Lorena (1712–1780): _Gran maestro dell'Ordine teutonico e Governatore dei Paesi Bassi Austriaci_ — Carlo Alessandro di Lorena, sposo di Marianna d'Austria (204)
 - **di San Genesio, Bertrando** (voci 533, 803, 826; anni 1207–1719) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto
 
-## 4. Nessun candidato su Wikidata: 3080 persone
+## 4. Nessun candidato su Wikidata: 3081 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
