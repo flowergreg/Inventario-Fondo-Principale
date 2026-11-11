@@ -336,9 +336,20 @@ def cerca(domanda, indice, finestra=None, approssimata=True, parte=False):
                         dopo = fine
         return trovati
 
+    # un tratto trovato nel testo dentro la menzione di un'entità ne mostra la forma di riferimento
+    # («Maniago» nella 339: «Pietro di Montereale Maniago [Mantica]» → Montereale Mantica, Pietro)
+    if "_menz" not in indice:
+        menz = defaultdict(list)
+        for e in indice["entita"]:
+            for vi, sede, ini, fin in e["m"]:
+                menz[(vi, {"testo": "t", "coda": "c"}.get(sede, sede))].append((ini, fin, e))
+        indice["_menz"] = menz
+    def entita_di(vi, sede, ini, fin):
+        return next((e for a, b, e in indice["_menz"].get((vi, sede), ()) if a <= ini and fin <= b), None)
+
     for vi, hits in nel_testo(insiemi).items():
         for sede, ini, fin in hits:
-            risultati[vi].append((2, sede, ini, fin, None))
+            risultati[vi].append((2, sede, ini, fin, entita_di(vi, sede, ini, fin)))
 
     # 3. approssimata
     if approssimata and not risultati:

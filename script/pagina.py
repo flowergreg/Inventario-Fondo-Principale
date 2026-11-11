@@ -204,6 +204,7 @@ function vocabolario() {       // parole dei testi e delle varianti, per la rice
     ENT.forEach(e => e.vs.forEach(vw => vw.forEach(w => VOCAB.add(w)))); }
   return VOCAB;
 }
+let MENZ = null;   // menzioni per voce e sede, costruite alla prima ricerca
 function cerca(domanda, parte = false) {
   let q = chiave(domanda);
   // solo parole di solito ignorate (titoli, particelle: «abate»): si cercano così come sono
@@ -221,7 +222,12 @@ function cerca(domanda, parte = false) {
         && e.vs.some(vw => insiemi.every(s => [...s].some(w => vw.has(w)))))
       for (const [vi, sede, ini, fin] of e.m) add(vi, [1, sede === "testo" ? "t" : sede === "coda" ? "c" : sede, ini, fin, e]);
   }
-  for (const [vi, hs] of nelTesto(insiemi, finestra)) for (const [s, i, f] of hs) add(vi, [2, s, i, f, null]);
+  // un tratto trovato nel testo dentro la menzione di un'entità ne mostra la forma di riferimento
+  if (!MENZ) { MENZ = new Map(); for (const e of ENT) for (const [vi, sede, ini, fin] of e.m) {
+    const k = vi + "|" + (sede === "testo" ? "t" : sede === "coda" ? "c" : sede);
+    if (!MENZ.has(k)) MENZ.set(k, []); MENZ.get(k).push([ini, fin, e]); } }
+  const entitaDi = (vi, s, i, f) => { const m = (MENZ.get(vi + "|" + s) || []).find(([a, b]) => a <= i && f <= b); return m ? m[2] : null; };
+  for (const [vi, hs] of nelTesto(insiemi, finestra)) for (const [s, i, f] of hs) add(vi, [2, s, i, f, entitaDi(vi, s, i, f)]);
   let approssimata = false;
   if (!ris.size) {
     const larghi = insiemi.map(s => { const n = new Set(s); s.forEach(t => { if (t.length >= 5) vocabolario().forEach(w => { if (distUno(t, w)) n.add(w); }); }); return n; });
