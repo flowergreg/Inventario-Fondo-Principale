@@ -4,10 +4,10 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 
 | Affidabilità | Persone |
 |---|---|
-| alta | 763 |
+| alta | 762 |
 | media | 46 |
 | bassa | 34 |
-| nessuna | 3060 |
+| nessuna | 3034 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -210,7 +210,6 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Belli, Gioacchino** (voci 4189; anni 1943–1943) → [Q2080788](https://www.wikidata.org/wiki/Q2080788) Giuseppe Gioachino Belli (1791–1863): _poeta italiano_ — Roma
 - **Belli, Marco** (voci 2634/3, 2634/3 bis; anni ?–?) → [Q3845931](https://www.wikidata.org/wiki/Q3845931) Marco Belli (1857–1929): _sacerdote e letterato italiano_ — Portogruaro — nato o morto in Friuli/Veneto
 - **Belloni, Antonio** (voci 43, 373, 522, 561; anni 1252–1880) → [Q16527382](https://www.wikidata.org/wiki/Q16527382) Antonio Belloni (1479–1554): _notaio e storico italiano_ — Udine — il notaio e cronista udinese
-- **Bellonus, Antonius** (voci 566, 683; anni 1511–1596) → [Q16527382](https://www.wikidata.org/wiki/Q16527382) Antonio Belloni (1479–1554): _notaio e storico italiano_ — Udine — il cronista udinese Antonio Belloni
 - **Beltrame, Pietro** (voci 2706; anni ?–?) → [Q56000291](https://www.wikidata.org/wiki/Q56000291) Pietro Beltrame (?–?) — Venezia — nato o morto in Friuli/Veneto
 - **Benedetti, Antonio** (voci 480; anni 1737–1754) → [Q21543487](https://www.wikidata.org/wiki/Q21543487) Antonio Benedetti (1715–1788): _filologo e numismatico italiano (1715-1788)_ — Fermo — confermato dal contesto
 - **Benedetto XIII** (voci 111, 606; anni 1417–1736) → [Q155971](https://www.wikidata.org/wiki/Q155971) papa Benedetto XIII (1649–1730): _245° vescovo di Roma e papa della Chiesa cattolica dal 1724 al 1730_ — Gravina in Puglia, Roma — date compatibili
@@ -333,7 +332,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Ciano Mussolini, Edda** (voci 3591; anni 1853–1942) → [Q259934](https://www.wikidata.org/wiki/Q259934) Edda Ciano (1910–1995): _contessa di Cortellazzo e Buccari e socialite italiana, figlia di Benito Mussolini_ — Forlì, Roma — date compatibili
 - **Ciarlantini, Franco** (voci 3591; anni 1853–1942) → [Q24054056](https://www.wikidata.org/wiki/Q24054056) Franco Ciarlantini (1885–1940): _giornalista, insegnante, saggista, editore italiano (1885-1940)_ — San Ginesio, Roma — date compatibili
 - **Cicerone, Marco Tullio** (voci 412; anni ?–?) → [Q1541](https://www.wikidata.org/wiki/Q1541) Marco Tullio Cicerone (-106–-42): _avvocato, politico, scrittore, oratore e filosofo romano_ — l'oratore, non il figlio
-- **Cichino, Giorgio** (voci 102; anni ?–?) → [Q97772635](https://www.wikidata.org/wiki/Q97772635) Giorgio Cichino (1509–1599): _poeta italiano (1509-1599)_ — San Daniele del Friuli — nato o morto in Friuli/Veneto
+- **Cichino, Giorgio** (voci 102, 622; anni 1575–1577) → [Q97772635](https://www.wikidata.org/wiki/Q97772635) Giorgio Cichino (1509–1599): _poeta italiano (1509-1599)_ — San Daniele del Friuli — nato o morto in Friuli/Veneto; date compatibili
 - **Cicogna, Emmanuele** (voci 471, 487, 503, 3591; anni 1634–1942) → [Q1338457](https://www.wikidata.org/wiki/Q1338457) Emmanuele Antonio Cicogna (1789–1868): _storico italiano (1789-1868)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Ciconi, Giandomenico** (voci 496, 511, 512, 513; anni 1118–1877) → [Q65807973](https://www.wikidata.org/wiki/Q65807973) Giovanni Domenico Ciconi (1802–1869): _medico e scrittore italiano_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Ciconi, Teobaldo** (voci 87, 338, 2134, 2551; anni 1850–1858) → [Q3983828](https://www.wikidata.org/wiki/Q3983828) Teobaldo Ciconi (1824–1863): _giornalista, poeta e drammaturgo italiano (1824-1863)_ — San Daniele del Friuli, Milano — nato o morto in Friuli/Veneto; date compatibili
@@ -731,7 +730,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Polli, Giovanni** (voci 606; anni 1696–1739) → [Q95236365](https://www.wikidata.org/wiki/Q95236365) Giovanni Polli (1826–1861) — Trieste — nato o morto in Friuli/Veneto
 - **Pontoni, Antonio** (voci 487; anni 1835–1850) → [Q63720878](https://www.wikidata.org/wiki/Q63720878) Antonio Pontoni (1814–1880): _politico italiano_ — Premariacco — nato o morto in Friuli/Veneto; date compatibili
 - **Porcia, Girolamo** (voci 945; anni 1567–1567) → [Q64745734](https://www.wikidata.org/wiki/Q64745734) Girolamo di Porzia (1559–1612): _vescovo cattolico_ — Porcia — nato o morto in Friuli/Veneto
-- **Porcia, Jacopo** (voci 468, 875; anni 1517–1568) → [Q110136409](https://www.wikidata.org/wiki/Q110136409) Jacopo di Porcia (1462–1538): _storico_ — Porcia — nato o morto in Friuli/Veneto; date compatibili
+- **Porcia, Jacopo** (voci 468, 620, 875; anni 1517–1568) → [Q110136409](https://www.wikidata.org/wiki/Q110136409) Jacopo di Porcia (1462–1538): _storico_ — Porcia — nato o morto in Friuli/Veneto; date compatibili
 - **Portogallo, Marco** (voci 3291; anni ?–?) → [Q957869](https://www.wikidata.org/wiki/Q957869) Marcos António Portugal (1762–1830): _compositore portoghese_ — Lisbona, Rio de Janeiro
 - **Prampero, Antonino** (voci 200, 496, 836, 852; anni 1737–1880) → [Q3619131](https://www.wikidata.org/wiki/Q3619131) Antonino di Prampero (1836–1920): _politico italiano (1836-1920)_ — Udine, Roma — nato o morto in Friuli/Veneto; date compatibili
 - **Prata, Pileo** (voci 875, 1552; anni ?–?) → [Q2477289](https://www.wikidata.org/wiki/Q2477289) Pietro Pileo da Prata (1329–1401): _cardinale italiano del XIV secolo_ — Prata di Pordenone — nato o morto in Friuli/Veneto
@@ -776,7 +775,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Salvagnoli, Vincenzo** (voci 2134; anni ?–?) → [Q4013508](https://www.wikidata.org/wiki/Q4013508) Vincenzo Salvagnoli (1802–1861): _giurista e politico italiano (1802-1861)_ — Empoli, Pisa — confermato dal contesto
 - **Sanguinacci, Jacopo** (voci 7; anni ?–?) → [Q41618032](https://www.wikidata.org/wiki/Q41618032) Jacopo Sanguinacci (1401–1500): _scrittore (XV secolo)_ — confermato dal contesto
 - **Sanseverino, Faustino** (voci 492; anni 1835–1840) → [Q3740325](https://www.wikidata.org/wiki/Q3740325) Faustino Sanseverino (1801–1878): _conte di Castel Palazzo e politico italiano_ — Crema, Milano — date compatibili
-- **Sanudo, Marino** (voci 619, 692; anni 1318–1509) → [Q1898561](https://www.wikidata.org/wiki/Q1898561) Marino Sanudo (1270–1343): _letterato italiano (1260 ca. - 1340 ca.)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
+- **Sanudo, Marino** (voci 619, 692, 715; anni 1318–1763) → [Q1898561](https://www.wikidata.org/wiki/Q1898561) Marino Sanudo (1270–1343): _letterato italiano (1260 ca. - 1340 ca.)_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Sarpi, Paolo** (voci 530, 813, 1095, 1105; anni 1577–1606) → [Q1349158](https://www.wikidata.org/wiki/Q1349158) Paolo Sarpi (1552–1623): _religioso, teologo e storico italiano (1552–1623)_ — fissato dopo l'unione con «Scarpi» (fase 6)
 - **Sarti, Giuseppe** (voci 3186, 3188; anni 1798–1798) → [Q455199](https://www.wikidata.org/wiki/Q455199) Giuseppe Sarti (1729–1802): _compositore italiano_ — Faenza, Berlino — confermato dal contesto
 - **Savorgnan, Giulio** (voci 2646, 2647; anni 1577–1577) → [Q3769780](https://www.wikidata.org/wiki/Q3769780) Giulio Savorgnan (1510–1595): _ingegnere italiano_ — fase 6, blocco 4: lettere del 1577: compatibile
@@ -807,7 +806,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Spirito, Lorenzo** (voci 1156; anni ?–?) → [Q3837084](https://www.wikidata.org/wiki/Q3837084) Lorenzo Spirito Gualtieri (1425–1496): _poeta, umanista e militare italiano_ — Perugia — confermato dal contesto
 - **Spontone, Ciro** (voci 1754; anni ?–?) → [Q22991717](https://www.wikidata.org/wiki/Q22991717) Ciro Spontone (1550–1612): _scrittore e politico italiano_ — Bologna — confermato dal contesto
 - **Starzer, Alberto** (voci 2635/10, 2635/17; anni 1413–1893) → [Q55846838](https://www.wikidata.org/wiki/Q55846838) Albert Starzer (1863–1909) — Albert Starzer; fissato dopo l'equivalenza Albert = Alberto (fase 6)
-- **Stellini, Jacopo** (voci 2589; anni 1926–1926) → [Q3547989](https://www.wikidata.org/wiki/Q3547989) Jacopo Stellini (1699–1770): _abate, scrittore e filosofo italiano_ — Cividale del Friuli, Padova — nato o morto in Friuli/Veneto
+- **Stellini, Jacopo** (voci 615, 875, 2589; anni 1926–1926) → [Q3547989](https://www.wikidata.org/wiki/Q3547989) Jacopo Stellini (1699–1770): _abate, scrittore e filosofo italiano_ — Cividale del Friuli, Padova — nato o morto in Friuli/Veneto
 - **Strozzi, Giulio** (voci 300; anni 1636–1636) → [Q3769792](https://www.wikidata.org/wiki/Q3769792) Giulio Strozzi (1583–1652): _poeta italiano_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Suzzara Verdi, Paride** (voci 2557; anni 1853–1863) → [Q3895856](https://www.wikidata.org/wiki/Q3895856) Paride Suzzara Verdi (1826–1879): _patriota, giornalista e politico italiano_ — San Giorgio Bigarello, Mantova — date compatibili
 - **Svezia, Cristina** (voci 502; anni ?–?) → [Q52937](https://www.wikidata.org/wiki/Q52937) Cristina I di Svezia (1626–1689): _regina di Svezia (r. 1632-1654)_ — Stoccolma, Roma — confermato dal contesto
@@ -913,7 +912,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di San Genesio, Bertrando** (voci 102, 519, 533, 541; anni 1207–1938) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto; date compatibili
 - **di Toppo, Francesco** (voci 14, 17, 340, 490; anni 1338–1863) → [Q105098383](https://www.wikidata.org/wiki/Q105098383) Francesco Di Toppo (1797–1883): _collezionista_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 
-## 4. Nessun candidato su Wikidata: 3060 persone
+## 4. Nessun candidato su Wikidata: 3034 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

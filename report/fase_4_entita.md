@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3903 | 761 | 9127 |
-| luogo | 572 | 65 | 4686 |
-| santo | 124 | 44 | 490 |
+| persona | 3876 | 765 | 9113 |
+| luogo | 572 | 65 | 4690 |
+| santo | 124 | 45 | 494 |
 
-Menzioni collegate a un'entità: 14303 su 20587. Senza entità: nome o cognome singolo 5873, esclusa dal curatore 349, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 14297 su 20587. Senza entità: nome o cognome singolo 5871, esclusa dal curatore 357, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -441,7 +441,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Battistella, Antonio**: A. Battistella (721); Battistella A.° (1973); Battistella Ant.° (1958, 1959, 1960, 1961, 1962, 1963, 1964, 1965, 1966, 1967); Battistella Antonio (1956); Battistella, Antonio (3520)
 - **Baudouin de Courtenay, Jan**: Jan Niecisław Baudouin de Courtenay [manuale]; Baudouin de Courtenay (2634/16, 2635/14, 2635/4, 2635/5, 2636/5, 2637/10); G. Baudouin de Courtenay (2635/12)
 - **Belgrado, Jacopo**: J. Belgrado (1375); Jacopo Belgrado (875); Jacopo e Carlo Belgrado (1375)
-- **Belloni, Antonio**: A. Bellon (566); A. Belloni (764, 945); Ant. Bell (565); Ant.° Bellonus Not.° Utin.s (561); Antonii (769, 787); Antonii Belloni (621, 944); Antonij Belloni Utinensis (565); Antonio (688); Antonio Bellone (43, 566, 568, 1571); Antonio Belloni (561, 699, 771, 905, 944); Bellone Antonio (373); Belloni (522, 565, 566, 621, 651, 688, 690, 697, 761, 769, 771, 787, 928, 944, 3730); Belloni Antonio (565, 566, 1622, 1625); Protocollo Antonii Belloni (777); S. Antonio Bellon (777)
+- **Belloni, Antonio**: A. Bellon (566); A. Belloni (764, 945); Ant. Bell (565); Ant. Bellonum (566); Ant.° Bellonus Not.° Utin.s (561); Antonii (769, 787); Antonii Belloni (621, 944); Antonij Belloni Utinensis (565); Antonio (688); Antonio Bellone (43, 566, 568, 1571); Antonio Belloni (561, 699, 771, 905, 944); Antonium Bellonum (566); Antonium Bellonum de Utino Notarium (1625); Antonius (683); Antonius Bellonus (566); Antonius Bellonus Utinensis Tabellio (683); Bellone Antonio (373); Belloni (522, 565, 566, 621, 651, 688, 690, 697, 761, 769, 771, 787, 928, 944, 3730); Belloni Antonio (565, 566, 1622, 1625); Protocollo Antonii Belloni (777); S. Antonio Bellon (777)
 - **Beltrame, Giuseppe**: G. Beltrame (338, 1426, 1427); Giuseppe Beltrame (340, 866)
 - **Beretta, Antonio**: A. Beretta (524, 3591); Ant.o Beretta (476); Ant.° cav. Beretta (487); Beretta cav. Antonio (2134)
 - **Beretta, Francesco**: Beretta co. Francesco (518, 1668); Ct. F. Beretta (771); Fr.° Beretta (601); Franc.° Beretta (485); Francesco Beretta (15, 485, 619, 771, 1668)
@@ -492,6 +492,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Erizo, Antonio**: P. A. Erizzo (130); P. Ant. Erizo (151); P. Ant. Erizzo Luog.te (208)
 - **Ferrazzi, Jacopo**: Ferrazzi Jacopo (487); J. Ferrazzi (4108)
 - **Feruglio, Angelo**: A. Feruglio (338); Ang. Feruglio (338); Angelo Feruglio (338); Feruglio ab. Angelo (1601, 1602)
+- **Fiducio, Marco Antonio**: M. A. Fiducio (102, 859, 868); M. Antonii (792)
 - **Filaferro, Antonio**: A. Filaferro (176); Ant. Filaferro (176); Filaferro Antonio (176)
 - **Filaferro, Carlo**: C. Filaferro (1387); D. Carlo Filaferro (544, 545)
 - **Frangipane, Antigono**: A. Frangipane (524); Antigono Frangipane (875)
@@ -522,6 +523,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Marzutini, Giuseppe Onorio**: G. O. Marzuttini (340); Gius. Onorio Marzutini (340); Giuseppe Onorio Marzuttini (493)
 - **Massari, Giovanni Battista**: Gio. Batta Massari (339); Massari G. Batta (339)
 - **Mercadante, Saverio**: Mercadante Saverio (3282, 3283); S. Mercadante (3283); Saverio Mercadante (3282)
+- **Mocenigo, Girolamo**: G. Mocenigo (338); Virum Hieronymum Mocenicum (622)
 - **Monti, Vincenzo**: Monti Vin (291); Monti Vincenzo (336); V. Monti (337); Vincenzo Monti (18, 323, 356, 2490)
 - **Monticoli, Nicolò**: N. Monticoli (878); Niccolò (681); Niccolò Monticoli (651); Nicolò Monticoli (621, 878, 1571)
 - **Moro, Anton Lazzaro**: A. Lazzaro Moro (875); Anton Lazzaro Moro. (1124)
@@ -583,7 +585,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Zanon, Antonio**: A. Zanon (508, 721, 3913); Ant.° Zanon (508); Antonio (721, 722); Antonio Zanon (471, 508, 558); Zanon (721, 722); Zanon Antonio (519)
 - **de Castro, Giovanni**: Castro (2535); G. De Castro (2535)
 - **de Rubeis, Flaminio**: De Rubeis (650); Fl. de Rubeis (1054); Flaminio (650); Flaminio de Rubeis (1057, 1114); Flaminius de Rubeis (606)
-- **della Porta, Giovanni Battista**: Della Porta (2652, 2653, 2691, 2692, 2693, 2694, 2703, 3619, 3849); Della Porta G. B. (2253, 2254); Gio. Batta (3619); Gio. Battista (2691, 2692, 2693, 2694, 2703); Gio. Battista Della Porta (2692); Giovanni Battista (3849); Porta (2253, 2254); Porta (della) Giov. Battista (383); Porta Utinensis (2693)
+- **della Porta, Giovanni Battista**: Della Porta (2652, 2653, 2691, 2692, 2693, 2694, 2703, 3619, 3849); Della Porta G. B. (2253, 2254); Gio. Batta (3619); Gio. Battista (2691, 2692, 2693, 2694, 2703); Gio. Battista Della Porta (2692); Giovanni Battista (3849); Opus Johannis Baptistae (2693); Porta (2253, 2254); Porta (della) Giov. Battista (383); Porta Utinensis (2693)
 - **della Porta, Uldarico**: U. della Porta (1032); Uldarico della Porta (1032)
 - **di Toppo, Francesco**: Francesco di Toppo (340, 541, 3740); Toppo (14, 17, 525, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 542 a, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 556, 557, 558, 559); Toppo Fr. L. (555); Toppo co. Franc.° (560 a); di Toppo (490, 557)
 - **di Varmo, Giovanni Battista**: G. B. (2646, 2647, 2649, 2650, 2651); Joanne Baptista de Varmo (3512); Varmo (2646, 2647, 2649, 2651)
@@ -656,6 +658,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Cancianini, Bernardino**: Bernardino Cancianini (350); Cancianini Bernardino (350)
 - **Candotti, Luigi**: Candotti ab. Luigi (339); Candotti prof. Luigi (2134); Candotti, Luigi (3504); Luigi Candotti (496)
 - **Cannobio, Carlo**: Cannobio Carlo (3311); Carlo Cannobio (3311)
+- **Canussio, Nicolò**: Nicolai (793); Nicolai Canussii (621); Nicolai Canussii de Restituttione (620)
 - **Capriz, Paolina**: Autrice (4264); Capriz, Paolina (4264)
 - **Capuzzi, Antonio**: Antonio Capuzzi (3363); Capuzzi Antonio (3363)
 - **Carli, Gian Rinaldo**: Carli-Rubbi (599, 726); G. Carli (601); Gian Rinaldo (701); Gian Rinaldo Carli (485); Gianrinaldo (726); Gianrinaldo Carli Rubbi (601)
@@ -673,6 +676,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Cesarotti, Melchiorre**: Cesarotti (90, 185, 248, 285, 291, 323, 338, 482); Melchior Cesarotti (185, 482); Melchiorre Cesarotti (248, 2494)
 - **Chiurlo, Bindo**: A Bindo (4255); Bindo Chiurlo (3913, 4215); Chiurlo (4255)
 - **Ciani, Giuseppe**: Ciani ab. Giuseppe (339); Giuseppe Ciani (492)
+- **Cichino, Giorgio**: Georgium Cichinum (622); Giorgio Cichino (102)
 - **Ciconi, Teobaldo**: Ciconi Teobaldo (87, 2134); Ciconi, Teobaldo (2551); Teobaldo Ciconi (338)
 - **Cicuta, Lorenzo**: Cicuta Don Lorenzo (438, 439); Cicuta Lorenzo (437, 527); Lorenzo Cicuta (440)
 - **Cillo, Girolama**: Autrice (2597); Cillo, Girolama (2597)
@@ -891,6 +895,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Pleyel, Ignazio**: Ignazio (3306, 3354); Ignazio Pleyel (3257, 3258, 3296, 3365, 3387, 3393, 3422); Pleyel (3332, 3333, 3354); Pleyel Ignazio (3257, 3258, 3292, 3296, 3307, 3344, 3365, 3368, 3387, 3393, 3422)
 - **Pontello, Leonardo**: Leonardo Pontello (70); Pontello Leonardo (70)
 - **Pontoni, Leonardo**: Leonardo Pontoni (2490); Pontoni Leonardo (2341)
+- **Porcia, Jacopo**: Comitis Jacobi Purliliensis (620); Jacopo di Porcia (468, 875)
 - **Portis, A.**: A. Portis (487); A. de Portis (3911)
 - **Prampero, Cecilio**: Prampero (di) Cecilio (1914, 2191); Prampero Cecilio (2457)
 - **Querini, Silvana**: Querini, Silvana (3921); Silvana Querini (3921)
@@ -903,7 +908,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Sabbatini, Carlo**: Carlo Sabbatini (479); Sabbatini avv. Carlo (479)
 - **Sacchi, Giuseppe**: G. Sacchi (4108); Giuseppe Sacchi (511)
 - **Sanlucar, Pietro**: P. Pietro Sanlucar (1894); Sanlucar Pietro (1894)
-- **Sanudo, Marino**: Marino (692); Marino Sanudo (619)
+- **Sanudo, Marino**: Diarii di Marin Sanudo (715); Marino (692); Marino Sanudo (619)
 - **Sasso, Giovanni**: Giovanni (4110); Sasso (4110)
 - **Savorgnan**: Savorgnan (23, 967, 1199, 1247, 1455, 1490, 1492, 1493, 1494, 1495, 1502, 1503, 1534, 1552, 1556, 1557, 1560, 1592, 1593, 2016, 2268, 2382, 2443, 2450, 2623/3, 2671, 2674); Savorgnani (941, 1016); Savorgnani del Monte (604); Savorgnano (95); Savorgnano di G. (949)
 - **Savorgnano, Federico**: Federico Savorgnano (616); Federico di Savorgnano (1550)
@@ -924,6 +929,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Sporeno, Plutarco**: Plutarco Sporeno (390); Sporeno Plutarco (346)
 - **Starzer, Alberto**: Starzer Alberto (2635/10); Starzer, Albert (2635/17); Starzer, Alberto (2635/10)
 - **Stella, Eusebio Simone**: Eusebio Stella di Spilimbergo (347); Stella Eusebio di Spilimbergo (347)
+- **Stellini, Jacopo**: Elogium Jacobi Stellini (875); Jacopo Stellini (2589); Stellini Jacobus (615)
 - **Strassoldo, Giovanni**: Giov. (824); Giov. co. di Strasoldo (465)
 - **Strassoldo, Panfilo**: Pamph. de Strassoldo (619); Pamphilo (619); Strassoldo (619); Strassoldo Proton (619)
 - **Strassoldo, Rosanna**: Me Rosanna di Strassoldo del Anno (4208); Strassoldo (di) Rosanna (4208)
@@ -939,7 +945,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Trento, Federico**: Fed. Trento (3913); Trento Federico (190)
 - **Trento, Francesco**: Francesco Trento (470, 482); Trento Francesco (328, 476)
 - **Treo, Enrico**: Enrico Treo (469); Henrico Treo (105); Treo Enrico (105)
-- **Treo, Lucrezio**: Lucretio (105); Lucretio Treo (561); Lucrezio Treo (868); Treo (711)
+- **Treo, Lucrezio**: Lucretio (105); Lucretio Treo (561); Lucrezio Treo (868); Opus Lucretii Trei (768); Treo (711)
 - **Treo, Servilio**: Servilio (796); Servilio Secondo (105); Servilio Treo (1055, 1083, 1972); Servilio Treo. (51, 1055); Treo (796)
 - **Trevisanato, Giuseppe Luigi**: A Monsignor Gius. Luigi Travisanato (356); G. L. Trevisanato (1224, 1317); G. Trevisanato (926); Trevisanato Giuseppe Luigi (2134)
 - **Usubellis, Francesco**: Francesco de Usubellis (1613); Usubellis (De) Francesco (1613)
@@ -968,6 +974,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **d'Este, Eleonora**: Eleonora d'Este [manuale]; Maria Francesca dello Spirito Santo [manuale]; Eleonora (2003, 2004, 2005); Venerabilis Serve Dei Matris Marie Francisce (2003)
 - **da Pordenone, Odorico**: B. Odorico (825); B. Odoricus de Portu Naonis Provinciae Fori Julii (549); B.° Odorico (549); Beato Odorico (549); Odorico da Pordenone (519, 774, 2634/7)
 - **da Riva, Giovanni Antonio**: Riva (537, 538); Zan Antonio (538)
+- **da Udine, Geremia**: Geremia (616); Jeremiae Utinensis (616)
 - **da Udine, Giovanni**: Giovanni (4283); Giovanni da Udine (870, 1195, 1197)
 - **de Gerolami, Agostino**: Agostino Germiniano [manuale]; Agostino Geronimiano [manuale]; Agostino de Gerolami [manuale]; Publio Augusto Graziani [manuale]; Augusto Hieronimiano (43); Hieronimiano Augusto (69); Publii Augusti Geronimiani Utinensis (43)
 - **de Mutina, Paolo**: Paolo (762); Paulum (761)
@@ -1017,7 +1024,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Chiusaforte**: Chiusa (533, 568); Chiusaforte (525, 2427)
 - **Cinto Caomaggiore**: Cinto Caomaggiore [fonte_esterna]; Cinto (1444)
 - **Cittanova d'Istria**: Cittanova d'Istria [manuale]; Cittanova (891); Città Nuova (598)
-- **Cividale del Friuli**: Cividale (164, 170, 355, 371, 372, 394, 469, 471, 476, 486, 488, 491, 525, 573, 596, 606, 610, 614, 617, 618, 619, 621, 669, 706, 707, 708, 716, 741, 742, 744, 752, 824, 862, 874, 876, 877, 905, 906, 914, 915, 923, 924, 974, 979, 1010, 1046, 1130, 1135, 1197, 1223, 1227, 1228, 1230, 1236, 1265, 1266, 1267, 1304, 1307, 1310, 1311, 1366, 1367, 1368, 1369, 1370, 1390, 1437, 1438, 1439, 1440, 1441, 1457, 1537, 1547, 1550, 1552, 1562, 1567, 1576, 1577, 1593, 1710, 1738, 1798, 1799, 1803, 1877, 2435, 2506, 2658, 3047, 3049, 3655, 3673, 3674, 3727, 3762, 3782, 3786, 4226); Cividale del Friuli (752, 1537, 4259); Cividale di Friuli (610); Civitas Austriae (744); Patti fra Cividale (1562)
+- **Cividale del Friuli**: Cividale (164, 170, 355, 371, 372, 394, 469, 471, 476, 486, 488, 491, 525, 573, 596, 606, 610, 614, 617, 618, 619, 621, 669, 706, 707, 708, 716, 741, 742, 744, 752, 824, 862, 874, 876, 877, 905, 906, 914, 915, 923, 924, 974, 979, 1010, 1046, 1130, 1135, 1197, 1223, 1227, 1228, 1230, 1236, 1265, 1266, 1267, 1304, 1307, 1310, 1311, 1366, 1367, 1368, 1369, 1370, 1390, 1437, 1438, 1439, 1440, 1441, 1457, 1537, 1547, 1550, 1552, 1562, 1567, 1576, 1577, 1593, 1710, 1738, 1798, 1799, 1803, 1877, 2435, 2506, 2658, 3047, 3049, 3655, 3673, 3674, 3727, 3762, 3782, 3786, 4226); Cividale del Friuli (752, 1537, 4259); Cividale di Friuli (610); Civitas Austriae (744); Ecclesiae Forojuliensis (773); Iulium Castrum (744); Patti fra Cividale (1562)
 - **Clauiano**: Clauiano (1685); Claujano (2078)
 - **Comeglians**: Comeglians [manuale]; Comeglons (2076)
 - **Concordia Sagittaria**: Concordia Sagittaria [manuale]; di Concordia (340, 483, 618, 875, 888, 1000, 1489, 1552)
@@ -1033,7 +1040,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Fiume (fiume)**: Fiume (fiume) [fonte_esterna]; Fiume (863)
 - **Fiume Veneto**: Fiume Veneto [fonte_esterna]; Fiume (2578)
 - **Francoforte sul Meno**: Francoforte sul Meno [fonte_esterna]; Francoforte (617)
-- **Friuli**: Forijulii (800, 885, 888, 970, 971, 972, 973, 974, 975, 976, 1038); Forogiulio del Kandler (923); Forojulii (996); Friuli (15, 23, 53, 99, 130, 151, 160, 194, 217, 321, 337, 419, 471, 478, 485, 488, 511, 512, 513, 517, 518, 519, 520, 521, 522, 523, 525, 534, 552, 561, 563, 568, 574, 585, 587, 589, 592, 595, 597, 599, 602, 603, 604, 606, 608, 610, 614, 616, 618, 619, 621, 623, 625, 626, 639, 641, 644, 645, 651, 652, 657, 658, 659, 662, 666, 667, 670, 672, 673, 674, 677, 680, 681, 693, 700, 701, 710, 712, 714, 715, 718, 722, 724, 725, 726, 728, 735, 743, 782, 794, 797, 798, 802, 814, 825, 827, 855, 856, 860, 861, 863, 865, 874, 877, 878, 879, 893, 899, 900, 901, 902, 905, 906, 907, 911, 927, 928, 936, 937, 938, 940, 941, 944, 945, 951, 952, 965, 966, 967, 977, 978, 979, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1010, 1011, 1012, 1014, 1015, 1018, 1033, 1034, 1041, 1042, 1106, 1113, 1150, 1178, 1199, 1232, 1243, 1251, 1252, 1253, 1254, 1255, 1318, 1323, 1364, 1433, 1463, 1477, 1479, 1504, 1509, 1513, 1529, 1530, 1539, 1540, 1542, 1543, 1549, 1550, 1552, 1556, 1558, 1562, 1565, 1571, 1577, 1578, 1591, 1653, 1685, 1686, 1692, 1693, 1695, 1696, 1701, 1703, 1704, 1723, 1724, 1725, 1729, 1731, 1732, 1733, 1777, 1784, 1853, 1910, 1943, 1970, 2111, 2145, 2276, 2329, 2341, 2388, 2406, 2417, 2527, 2563, 2577, 2584, 2598, 2601, 2614, 2618, 2623/5, 2623/6, 2635/10, 2637/20, 2637/6, 2637/7, 2637/9, 2642, 2649, 2694, 3197, 3520, 3575, 3589, 3629, 3658, 3728, 3740, 3780, 3790, 3848, 3851, 3853, 3857, 3865, 3898, 3919, 3932, 3932-b, 3950, 3985, 3992, 4002, 4007, 4009, 4033, 4044, 4056, 4068, 4070, 4098, 4112, 4118, 4119, 4158, 4159, 4164, 4168, 4170, 4189, 4193, 4213, 4223, 4234, 4242, 4244); del Friuli (208, 522, 587, 875, 994, 995, 1242, 1253)
+- **Friuli**: Fori Julij (553); Forijulii (800, 885, 888, 926, 970, 971, 972, 973, 974, 975, 976, 1038); Forogiulio del Kandler (923); Forojulii (996); Friuli (15, 23, 53, 99, 130, 151, 160, 194, 217, 321, 337, 419, 471, 478, 485, 488, 511, 512, 513, 517, 518, 519, 520, 521, 522, 523, 525, 534, 552, 561, 563, 568, 574, 585, 587, 589, 592, 595, 597, 599, 602, 603, 604, 606, 608, 610, 614, 616, 618, 619, 621, 623, 625, 626, 639, 641, 644, 645, 651, 652, 657, 658, 659, 662, 666, 667, 670, 672, 673, 674, 677, 680, 681, 693, 700, 701, 710, 712, 714, 715, 718, 722, 724, 725, 726, 728, 735, 743, 782, 794, 797, 798, 802, 814, 825, 827, 855, 856, 860, 861, 863, 865, 874, 877, 878, 879, 893, 899, 900, 901, 902, 905, 906, 907, 911, 927, 928, 936, 937, 938, 940, 941, 944, 945, 951, 952, 965, 966, 967, 977, 978, 979, 986, 987, 988, 989, 990, 991, 992, 993, 994, 995, 996, 997, 998, 999, 1010, 1011, 1012, 1014, 1015, 1018, 1033, 1034, 1041, 1042, 1106, 1113, 1150, 1178, 1199, 1232, 1243, 1251, 1252, 1253, 1254, 1255, 1318, 1323, 1364, 1433, 1463, 1477, 1479, 1504, 1509, 1513, 1529, 1530, 1539, 1540, 1542, 1543, 1549, 1550, 1552, 1556, 1558, 1562, 1565, 1571, 1577, 1578, 1591, 1653, 1685, 1686, 1692, 1693, 1695, 1696, 1701, 1703, 1704, 1723, 1724, 1725, 1729, 1731, 1732, 1733, 1777, 1784, 1853, 1910, 1943, 1970, 2111, 2145, 2276, 2329, 2341, 2388, 2406, 2417, 2527, 2563, 2577, 2584, 2598, 2601, 2614, 2618, 2623/5, 2623/6, 2635/10, 2637/20, 2637/6, 2637/7, 2637/9, 2642, 2649, 2694, 3197, 3520, 3575, 3589, 3629, 3658, 3728, 3740, 3780, 3790, 3848, 3851, 3853, 3857, 3865, 3898, 3919, 3932, 3932-b, 3950, 3985, 3992, 4002, 4007, 4009, 4033, 4044, 4056, 4068, 4070, 4098, 4112, 4118, 4119, 4158, 4159, 4164, 4168, 4170, 4189, 4193, 4213, 4223, 4234, 4242, 4244); del Friuli (208, 522, 587, 875, 994, 995, 1242, 1253)
 - **Gagliano**: Gagliano [manuale]; Galliano (1046)
 - **Gaiarine** — _forme unite dal curatore: Gajanine_: Gaiarine (3863); Gajanine (492)
 - **Gemona del Friuli**: Gemona (371, 470, 471, 525, 533, 567, 616, 618, 619, 639, 715, 721, 743, 755, 860, 867, 877, 888, 905, 931, 955, 1041, 1265, 1310, 1490, 1552, 1567, 1576, 2119, 2195, 2201, 2202, 2218, 2225, 2229, 2245, 2455, 2614, 2648, 2799, 3648, 3994, 4170); Gemona del Friuli (4217)
@@ -1137,7 +1144,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **San Bartolomeo**: San Bartolomeo [manuale]; S. Bartolomeo (593)
 - **San Benedetto**: San Benedetto [manuale]; S. Benedetto (4518)
 - **San Bernardino**: San Bernardino [manuale]; S. Bernardino (1329, 1656)
-- **San Bernardo**: S. Bernardo (386); San Bernardo (1684)
+- **San Bernardo**: Passionis D. N. Jesu Christi di Bernardo (1407); S. Bernardo (386); San Bernardo (1684)
 - **San Bernardo di Chiaravalle**: San Bernardo di Chiaravalle [manuale]; S. Bernardo di Chiaravalle (411)
 - **San Biagio vescovo**: San Biagio vescovo [manuale]; S. Blasii Ep. (3044)
 - **San Bonifacio**: San Bonifacio [manuale]; S. Bonifacio (619, 2634/3)
@@ -1177,7 +1184,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **San Lorenzo Martire**: San Lorenzo Martire [manuale]; S. Lorenzo Martire (2024)
 - **San Luigi**: San Luigi [manuale]; S. Luigi (2807)
 - **San Luigi Gonzaga**: San Luigi Gonzaga [manuale]; S. Luigi Gonzaga (355, 910, 1375)
-- **San Marco**: San Marco [manuale]; San Marco del Friuli [manuale]; San Marco di Pordenone [manuale]; San Marco di Venezia [manuale]; S. Marc (1953); S. Marci (583); S. Marci de Portunaone (1326); S. Marco (308, 521, 541, 555, 570, 606, 666, 854, 888, 938, 988, 1117, 1376, 1552, 2641, 3184, 3231); S. Marco del Friuli (2641); S. Marco di Venezia (3190); San Marc de Glesie (1953)
+- **San Marco**: San Marco [manuale]; San Marco del Friuli [manuale]; San Marco di Pordenone [manuale]; San Marco di Venezia [manuale]; Cathedram S. Marci (597); S. Marc (1953); S. Marci (583); S. Marci de Portunaone (1326); S. Marco (308, 521, 541, 555, 570, 606, 666, 854, 888, 938, 988, 1117, 1376, 1552, 2641, 3184, 3231); S. Marco del Friuli (2641); S. Marco di Venezia (3190); San Marc de Glesie (1953)
 - **San Martino**: San Martino di Codroipo [manuale]; San Martino di Duino [manuale]; San Martino di Manzano [manuale]; S. Martini Duniensis (586); S. Martino di Codroipo (4287); S. Martino di Manzano (1820); San Martino di Fanna (3813)
 - **San Mauro**: San Mauro [manuale]; S. Mauro (616)
 - **San Michele**: San Michele [manuale]; S. Michele (606, 4162)
@@ -1198,7 +1205,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **San Severo**: San Severo [manuale]; S. Severo (2632/11)
 - **San Simeone**: San Simeone [manuale]; S. Simeone (920)
 - **San Tommaso**: San Tomaso [manuale]; San Tommaso [manuale]; San Tommaso di S. Daniele dei Templari [manuale]; S. Tomaso (1288); S. Tommaso (85, 1362, 2623/5); S. Tommaso di S. Daniele dei Templari (525)
-- **San Tommaso d'Aquino**: San Tommaso d'Aquino [manuale]; S. Tommaso di Aquino di Giov. Pindemonte (926)
+- **San Tommaso d'Aquino**: San Tommaso d'Aquino [manuale]; S. Tommaso di Aquino di Giov. Pindemonte (926); Secundae Divi Thomae (3886)
 - **San Valentino**: San Valentino [manuale]; S. Valentino (152, 1512)
 - **San Vito**: San Vito de Caschanan [manuale]; S. Vito de Caschanan (1280)
 - **Sant'Agnese**: Sant'Agnese di Gemona [manuale]; S. Agnese di Gemona (1268)
@@ -1222,7 +1229,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Santa Caterina**: Santa Caterina [manuale]; S. Caterina (1290)
 - **Santa Caterina da Siena**: Santa Caterina da Siena [manuale]; S. Caterina da Siena (1362, 2372)
 - **Santa Cecilia**: Santa Cecilia [manuale]; S. Cecilia (18)
-- **Santa Chiara**: Santa Chiara [manuale]; Santa Chiara di Cividale [manuale]; Santa Chiara di Gemona [manuale]; Santa Chiara di Udine [manuale]; S. Chiara (138, 156, 220, 938, 1311, 1315, 1354, 1357, 1362, 1368, 2011, 4057, 4058); S. Chiara di Cividale (891, 1261, 1263, 1368); S. Chiara di Gemona (1269, 1306); S. Chiara di Udine (135, 568, 891, 4224); S. Clara di Cividale (1199)
+- **Santa Chiara**: Santa Chiara [manuale]; Santa Chiara di Cividale [manuale]; Santa Chiara di Gemona [manuale]; Santa Chiara di Udine [manuale]; Monasterii S. Clarae (1225); S. Chiara (138, 156, 220, 938, 1311, 1315, 1354, 1357, 1362, 1368, 2011, 4057, 4058); S. Chiara di Cividale (891, 1261, 1263, 1368); S. Chiara di Gemona (1269, 1306); S. Chiara di Udine (135, 568, 891, 4224); S. Clara di Cividale (1199)
 - **Santa Croce**: Santa Croce [manuale]; Santa Croce di Casarsa [manuale]; S. Croce (1286, 3660, 4266); S. Croce di Casarsa (4266); Santa Croce di Vipacco (4195)
 - **Santa Felicita**: Santa Felicita [manuale]; Santa Felicita di Castellutto [manuale]; S. Felicita (834); Santa Felicita di Casteluto (3923)
 - **Santa Fiora**: Santa Fiora [manuale]; S. Fiora (1851)
@@ -1247,7 +1254,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3117 entità: elenco completo nella tabella `entita`.
+3086 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 

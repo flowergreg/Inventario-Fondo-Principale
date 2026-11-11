@@ -4,7 +4,7 @@ Solo i collegamenti ad affidabilità **alta** (luoghi confermati dal curatore, p
 
 ## 1. Varianti di ricerca dalle fonti
 
-Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 405 per i luoghi, 999 per le persone. Esempi:
+Etichette e alias di Wikidata (it, la, fur) aggiunti come varianti `fonte_esterna`: 405 per i luoghi, 998 per le persone. Esempi:
 
 - **Fiume (Rijeka)**: Rijeka; Fanum Sancti Viti; Fanum Sancti Viti Fluminiensis; Flumen; Flumen Sancti Viti; Tarsaticum; Tharsatica; Tharsaticum; Vitopolis
 - **Bruxelles**: Brussel-stad; Brusselle; Bruxelles-Ville; Città di Brusselle; Ville de Bruxelles; Brucellae; Urbs Brucellae; Urbs Bruxellae
@@ -66,7 +66,6 @@ _Nessuno._
 
 Proposte per il curatore: la forma del testo resta quella di riferimento nel lessico; la grafia di Wikidata è già una variante della persona collegata. Se la grafia vale per tutta la famiglia, va aggiunta a normalizzazioni_curatore.tsv.
 
-- Bellonus → **Belloni** (Antonio Belloni, [Q16527382](https://www.wikidata.org/wiki/Q16527382))
 - Delfino → **Dolfin** (Pietro Dolfin, [Q3903841](https://www.wikidata.org/wiki/Q3903841))
 - Gallizioli → **Gallicioli** (Giovanni Battista Gallicioli, [Q18945406](https://www.wikidata.org/wiki/Q18945406))
 - Giustiniani → **Giustinian** (Nicolò Antonio Giustinian, [Q3876534](https://www.wikidata.org/wiki/Q3876534))
