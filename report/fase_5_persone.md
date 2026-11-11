@@ -7,7 +7,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | alta | 762 |
 | media | 46 |
 | bassa | 34 |
-| nessuna | 3034 |
+| nessuna | 3023 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -912,7 +912,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di San Genesio, Bertrando** (voci 102, 519, 533, 541; anni 1207–1938) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto; date compatibili
 - **di Toppo, Francesco** (voci 14, 17, 340, 490; anni 1338–1863) → [Q105098383](https://www.wikidata.org/wiki/Q105098383) Francesco Di Toppo (1797–1883): _collezionista_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 
-## 4. Nessun candidato su Wikidata: 3034 persone
+## 4. Nessun candidato su Wikidata: 3023 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 

@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3876 | 765 | 9113 |
+| persona | 3865 | 767 | 9106 |
 | luogo | 572 | 65 | 4690 |
-| santo | 124 | 45 | 494 |
+| santo | 124 | 46 | 495 |
 
-Menzioni collegate a un'entità: 14297 su 20587. Senza entità: nome o cognome singolo 5871, esclusa dal curatore 357, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 14291 su 20587. Senza entità: nome o cognome singolo 5871, esclusa dal curatore 363, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -291,6 +291,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Mora, Bartolomeo**: Bart. Mora (606); Bortolamio Moro (606)
 - **Mora, Giovanni Francesco**: Mora Gio. Francesco (476)
 - **Nani, Giovanni**: Gio. Nani (824)
+- **Odorico, Valentino**: Valentinum Odoricium (622)
 - **Oliverio, Angelo**: A. Oliverio (3838, 3839, 3841, 3842, 3843, 3844, 3845, 3846, 3847); Angelo (3837, 3909); Angelo Oliverio (3840); Oliverio (3838, 3839, 3840, 3841, 3842, 3843, 3844, 3845, 3846, 3847)
 - **Pace, Carlo**: Carlo Pace (23)
 - **Pace, Fabio**: Pace Fabio (52)
@@ -697,6 +698,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Comelli Stuckenfeld, Geminiano Francesco**: Gemin. Franc. Comelli di Stuckenfeld (606); Geminiano Franc. Comelli de Stuckenfeld (606)
 - **Comelli, Pietro**: P. Comelli (4108); Pietro Comelli (4108, 4109)
 - **Comencini, Francesco**: Comencini Francesco (3155, 3156); Francesco (3719)
+- **Comoretti, Antonio**: P. Antonio Comoretti (1376); P. Antonius Comorettus (773)
 - **Concina, Daniele Vincenzo**: Concina Daniello Vinc.zo (464); Daniello Vincenzo Concina (475)
 - **Concina, Giacomo**: Concina co. Giacomo (138); Giacomo Concina (338); Giacomo de Concina (340)
 - **Concina, Nicolò**: Concina Nicolò (464); Niccolò Concina (547); Nicolò Concina (475)
@@ -727,6 +729,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Duodo, Pietro**: Duodo (686, 1144); Duodo, Pietro (2682); Pietro Duodo (686, 1143, 1144)
 - **Duodo, Tomaso**: Duodo (153); Luog. Tomaso Duodo (2651)
 - **Dussech, Franco**: Dussech Franco (3456); Franco Dussech (3456)
+- **Edo, Pietro**: Petrum Edum (1325); Pietro Edo (2637/20)
 - **Ellero, Pietro**: Pietro Ellero (3591); Pietro prof. Ellero (404)
 - **Errera, G.**: Errera G. (3221, 3225); G. Errera (3221)
 - **Fabricius, Johann Albert**: Bibliotheca Fabricii (603); Bibliothecae Latinae Alberti Fabricij Mediae (603); Fabricii Bibl. (603); Fabricio (603)
@@ -883,7 +886,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Piccoli, Pietro**: Piccoli Pietro (3402); Pietro Piccoli (3402)
 - **Pick, Adolfo**: Adolfo Pick. Sottoscrizione (1976); Pick Adolfo (1584, 1585, 1586, 1587, 1974, 1975, 1976, 1977, 1978)
 - **Pieri, Gino**: Gino Pieri (4189); Pieri, Gino (4189)
-- **Pilosio, Antonio**: Ant. Pilosio (338, 340); Pilosio Antonio (2183)
+- **Pilosio, Antonio**: Ant. Pilosio (338, 340); L. S. Antonii de Pilosis de S. (566); L. S. Antonij Pilosi de S. Daniel (566); Pilosio Antonio (2183)
 - **Pilosio, Giuseppe**: Gius. Pilosio (338, 339); Pilosio Gius. (339); Pilosio Giuseppe (339)
 - **Pilosio, Leone**: L. Pilosio (4131, 4132/1, 4132/2, 4133, 4134, 4135, 4136, 4137, 4138, 4139, 4140, 4141, 4142, 4143, 4144, 4145, 4146, 4147, 4148, 4149, 4150, 4151); Pilosio (4152, 4153, 4154, 4155, 4156, 4157)
 - **Pilosio, Odorico**: Odorici de S. (566); S. Odorici de Pilosis de S. (566)
@@ -1155,6 +1158,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **San Carlo Borromeo**: San Carlo Borromeo [manuale]; S. Carlo Borromeo (467, 3530)
 - **San Cristoforo**: San Cristoforo [manuale]; S. Christophori (1404); S. Cristoforo (1513); San Christofolo (723)
 - **San Cromazio**: San Cromazio [manuale]; S. Chromatium (1547); S. Cromazio (1383)
+- **San Daniele**: Ecclesiam S. Danielis (186); San Daniele (3590)
 - **San Domenico**: San Domenico [manuale]; San Domenico di Udine [manuale]; S. Dom.° (1322); S. Domenico (1230); S. Domenico di Udine (1354)
 - **San Donato**: San Donato [manuale]; S. Donato (915, 3026)
 - **San Fantino**: San Fantino [manuale]; S. Fantino (2460)
@@ -1254,7 +1258,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 
 ## 8. Persone con una sola forma
 
-3086 entità: elenco completo nella tabella `entita`.
+3073 entità: elenco completo nella tabella `entita`.
 
 ## 9. Nomi singoli senza entità (più frequenti)
 
