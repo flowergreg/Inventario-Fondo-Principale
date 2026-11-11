@@ -331,7 +331,9 @@ const su = document.getElementById("su");
 addEventListener("scroll", () => su.classList.toggle("visibile", scrollY > 400), {passive: true});
 su.addEventListener("click", () => {
   window.scrollTo({top: 0, behavior: "smooth"});
-  if (matchMedia("(pointer: fine)").matches) q.focus({preventScroll: true});   // sul telefono niente tastiera
+  if (matchMedia("(pointer: fine)").matches) {   // sul telefono niente tastiera
+    q.focus({preventScroll: true}); q.select();   // il testo evidenziato: scrivendo, la vecchia ricerca sparisce
+  }
 });
 </script>
 </body>
