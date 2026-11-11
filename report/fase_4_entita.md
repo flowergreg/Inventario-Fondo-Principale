@@ -7,10 +7,10 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
 | persona | 3869 | 771 | 9141 |
-| luogo | 572 | 65 | 4687 |
+| luogo | 572 | 65 | 4688 |
 | santo | 124 | 46 | 494 |
 
-Menzioni collegate a un'entità: 14322 su 20587. Senza entità: nome o cognome singolo 5839, esclusa dal curatore 364, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 14323 su 20588. Senza entità: nome o cognome singolo 5839, esclusa dal curatore 364, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 

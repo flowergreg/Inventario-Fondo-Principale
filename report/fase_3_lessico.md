@@ -7,15 +7,15 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | Parte | normale | da normalizzare | doppia lettura | da verificare | Totale forme | Occorrenze |
 |---|---|---|---|---|---|---|
 | abbreviazione | 0 | 1 | 0 | 286 | 287 | 594 |
-| cognome | 67 | 290 | 322 | 4849 | 5528 | 14156 |
+| cognome | 67 | 290 | 321 | 4849 | 5527 | 14155 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1836 |
-| luogo | 401 | 188 | 85 | 4 | 678 | 4642 |
+| luogo | 402 | 188 | 84 | 4 | 678 | 4643 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
 | nome_di_battesimo | 1246 | 143 | 0 | 0 | 1389 | 9112 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 125 |
 | opera | 16 | 0 | 0 | 0 | 16 | 44 |
 | parola | 0 | 0 | 0 | 0 | 49 | 374 |
-| particella | 32 | 0 | 0 | 0 | 32 | 2070 |
+| particella | 32 | 0 | 0 | 0 | 32 | 2069 |
 | santo | 0 | 6 | 0 | 273 | 279 | 608 |
 | titolo | 71 | 0 | 0 | 0 | 71 | 851 |
 
@@ -220,7 +220,7 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 
 ## 2. Doppia lettura: nomi ufficiali di luogo che sono anche cognomi o famiglie
 
-Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo ≠ Savorgnan famiglia). Forme: 407.
+Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo ≠ Savorgnan famiglia). Forme: 405.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -522,8 +522,6 @@ Normali come luogo, ma da non unire d'ufficio alla famiglia (Savorgnano luogo �
 | Duino | 1 | — | anche nome ufficiale di luogo (GeoNames) | 511 |
 | Facchini | 1 | — | anche nome ufficiale di luogo (GeoNames) | 494 |
 | Fantini | 1 | — | anche nome ufficiale di luogo (GeoNames) | 419 |
-| Farra | 1 | — | GeoNames | 606 |
-| Farra | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1034 |
 | Fausti | 1 | — | anche nome ufficiale di luogo (GeoNames) | 616 |
 | Firmano | 1 | — | anche nome ufficiale di luogo (GeoNames) | 606 |
 | Fontanabona | 1 | — | anche nome ufficiale di luogo (GeoNames) | 1477 |
@@ -730,9 +728,9 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
-| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenio» | 2623/3 |
-| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
-| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
+| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
+| Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricius» | 603 |
+| Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricius» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
 | Fr.co | 1 | Francesco | abbreviazione (lista manuale) | 1737 |
 | Fr.° | 1 | Francesco | abbreviazione (lista manuale) | 601 |
@@ -760,7 +758,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Marcianus | 1 | Marciano | forma latina declinata di «Marciano» | 3847 |
 | Marquardus | 1 | Marquardo | forma latina declinata di «Marquardo» | 606 |
 | Mich. | 1 | Michele | abbreviazione (lista manuale) | 606 |
-| Octavii | 1 | Octavio | forma latina declinata di «Octavius» | 1375 |
+| Octavii | 1 | Octavio | forma latina declinata di «Octavio» | 1375 |
 | Odoricum | 1 | Odorico | forma latina declinata di «Odorico» | 617 |
 | Osmus | 1 | Osmo | forma latina declinata di «Osmo» | 606 |
 | Ovidii | 1 | Ovidio | forma latina declinata di «Ovidio» | 836 |
@@ -769,7 +767,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Patricij | 1 | Patrizio | forma latina declinata di «Patricio» | 553 |
 | Petronii | 1 | Petronio | curatore: 414 | 414 |
 | Poloniae | 1 | Polonia | forma latina declinata di «Polonia» | 619 |
-| Publii | 1 | Publio | forma latina declinata di «Publius» | 43 |
+| Publii | 1 | Publio | forma latina declinata di «Publio» | 43 |
 | Romae | 1 | Roma | forma latina declinata di «Roma» | 565 |
 | Servae | 1 | Servo | forma latina declinata di «Serva» | 2002 |
 | Spiritus | 1 | Spirito | forma latina declinata di «Spirito» | 3081 |
@@ -777,10 +775,10 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Terrae | 1 | Terra | forma latina declinata di «Terra» | 2623/8 |
 | Tertij | 1 | — | forma latina declinata di «Tertius» | 562 |
 | Valentinorum | 1 | Valentino | forma latina declinata di «Valentinus» | 2277 |
-| Valentinum | 1 | Valentino | forma latina declinata di «Valentino» | 622 |
+| Valentinum | 1 | Valentino | forma latina declinata di «Valentinus» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
-| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |
+| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilius» | 11 |
 
 ## 4. Cognomi: varianti grafiche e correzioni del curatore
 

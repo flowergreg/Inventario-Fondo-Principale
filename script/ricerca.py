@@ -162,8 +162,12 @@ def costruisci_indice(db=DB):
     multiple = {t for (t,) in con.execute(
         "SELECT m.testo_esatto FROM menzioni m JOIN menzioni_entita x ON x.menzione = m.id "
         "GROUP BY m.id HAVING COUNT(DISTINCT x.entita) > 1")}
+    # forme del testo corrette dal curatore tra quadre («Montereale Maniago [Mantica]»): la forma sbagliata
+    # non è variante della persona, altrimenti «Maniago» darebbe tutte le voci di Pietro di Montereale Mantica;
+    # la voce con l'errore si trova comunque nel testo
+    corrette = {t for (t,) in con.execute("SELECT testo_esatto FROM menzioni WHERE correzione IS NOT NULL")}
     for eid, forma, origine in con.execute("SELECT entita, forma, origine FROM varianti"):
-        if origine == "testo" and forma in multiple:
+        if origine == "testo" and (forma in multiple or forma in corrette):
             continue
         forma = ristrette.get(eid, {}).get(forma, forma)
         if re.search(r"\s(?:e|ed)\s", forma) and entita[stato_id[eid]]["t"] == "persona":

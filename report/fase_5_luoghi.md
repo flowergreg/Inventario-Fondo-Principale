@@ -187,7 +187,7 @@ Alnicco (1302), Berenice (3587), Brizza (1367), Caiada (1148), Castellutto (3922
 - **Faedis** (4 menz.; voci 1041, 1946, 2270, 3666) → Faedis — GeoNames [3177305](https://www.geonames.org/3177305) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53256](https://www.wikidata.org/wiki/Q53256): _comune italiano_
 - **Fagagna** (21 menz.; voci 525, 529, 575, 606) → Fagagna — GeoNames [3177292](https://www.geonames.org/3177292) PPLA3, Friuli-Venezia Giulia (UD) — Wikidata [Q53258](https://www.wikidata.org/wiki/Q53258): _comune italiano_
 - **Fanna** (3 menz.; voci 282, 284, 1000) → Fanna — GeoNames [3177221](https://www.geonames.org/3177221) PPLA3, Friuli-Venezia Giulia (PN) — Wikidata [Q53170](https://www.wikidata.org/wiki/Q53170): _comune italiano_
-- **Farra** (1 menz.; voci 606) → Farra d'Isonzo — Wikidata [Q53127](https://www.wikidata.org/wiki/Q53127): _comune italiano_ — forma breve di Farra d'Isonzo
+- **Farra** (2 menz.; voci 606, 1034) → Farra d'Isonzo — Wikidata [Q53127](https://www.wikidata.org/wiki/Q53127): _comune italiano_ — forma breve di Farra d'Isonzo
 - **Farra d'Isonzo** (1 menz.; voci 4204) → Farra d'Isonzo — GeoNames [6535599](https://www.geonames.org/6535599) PPLA3, Friuli-Venezia Giulia (GO) — Wikidata [Q53127](https://www.wikidata.org/wiki/Q53127): _comune italiano_
 - **Faugnacco** (1 menz.; voci 3740) → Faugnacco — GeoNames [3220014](https://www.geonames.org/3220014) PPL, Friuli-Venezia Giulia (UD)
 - **Felettano** (1 menz.; voci 1246) → Felettano — GeoNames [8952905](https://www.geonames.org/8952905) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q18451432](https://www.wikidata.org/wiki/Q18451432): _frazione del comune italiano di Tricesimo_
