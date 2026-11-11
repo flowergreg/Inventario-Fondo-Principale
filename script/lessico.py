@@ -210,6 +210,7 @@ def main():
     voci = defaultdict(list)
     parte_di = {}
     correzioni = {}
+    senza_corr = Counter()   # parole viste in menzioni senza correzione del curatore
     for testo, tipo, voce, corr in con.execute("SELECT testo_esatto, tipo, voce, correzione FROM menzioni"):
         if tipo in ("luogo", "santo", "opera"):
             unita = [(testo, tipo)]
@@ -223,10 +224,17 @@ def main():
                         a, b = a.strip("[]"), b.strip("[]")
                         if a != b and not a.startswith("["):
                             correzioni[a] = b
+            else:
+                for m in RX_PAROLA.finditer(testo):
+                    senza_corr[m.group(0)] += 1
         for forma, t in unita:
             occ[(forma, t)] += 1
             if len(voci[(forma, t)]) < 8 and numeri[voce] not in voci[(forma, t)]:
                 voci[(forma, t)].append(numeri[voce])
+
+    # una correzione tra quadre vale per tutto l'indice solo se la parola non compare altrove senza
+    # correzione: «Maniago [Mantica]» (339) corregge quella voce, non i tanti Maniago veri
+    correzioni = {a: b for a, b in correzioni.items() if not senza_corr[a]}
 
     # doppia lettura: parole dei nomi di persona che sono anche nomi ufficiali di luoghi del Friuli
     # e del Veneto, escluse le città («Savorgnano», «Colloredo», «Toppo», non «Udine»)

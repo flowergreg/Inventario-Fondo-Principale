@@ -7,7 +7,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 | alta | 762 |
 | media | 46 |
 | bassa | 34 |
-| nessuna | 3023 |
+| nessuna | 3027 |
 
 ## 1. Affidabilità media: da verificare
 
@@ -39,7 +39,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
   - altri: [Q10984182](https://www.wikidata.org/wiki/Q10984182) Gorgo (-700–-600) — Lesbo [0]; [Q5586370](https://www.wikidata.org/wiki/Q5586370) Gorgo (?–?) [0]; [Q1538246](https://www.wikidata.org/wiki/Q1538246) Gorgo (-500–?) [0]; [Q1538244](https://www.wikidata.org/wiki/Q1538244) Gorgo (-700–-600) — Grecia [0]
 - **Grossi, Pier Luigi** (voci 323; anni ?–?) → [Q124750573](https://www.wikidata.org/wiki/Q124750573) Pier Luigi Grossi (1741–1812)
 - **Ivancich, Alessandro** (voci 3223; anni ?–?) → [Q102284107](https://www.wikidata.org/wiki/Q102284107) Alessandro Ivancich (?–?): _compositore_
-- **Manin, Romanello** (voci 622, 1202; anni 1737–1749) → [Q109858633](https://www.wikidata.org/wiki/Q109858633) Romanello Manin (1672–1726)
+- **Manin, Romanello** (voci 541, 622, 623, 651; anni 1513–1749) → [Q109858633](https://www.wikidata.org/wiki/Q109858633) Romanello Manin (1672–1726)
 - **Mariani, Andrea** (voci 465; anni ?–?) → [Q77538479](https://www.wikidata.org/wiki/Q77538479) Andrea Mariani (1593–1661): _filosofo (-1661)_ — Bologna
   - altri: [Q91398094](https://www.wikidata.org/wiki/Q91398094) Andrea Mariani (?–?) [0]; [Q77538493](https://www.wikidata.org/wiki/Q77538493) Andrea Mariani (1967–?): _sacerdote e teologo italiano (1967-)_ — Lissone [-0.5]; [Q108321134](https://www.wikidata.org/wiki/Q108321134) Andrea Mariani (1944–?): _americanista italiano (1944-)_ — Roma [-0.5]; [Q108321160](https://www.wikidata.org/wiki/Q108321160) Andrea Mariani (1993–?): _ingegnere biomedico italiano (1993-)_ [-0.5]
 - **Marini, Leonardo** (voci 597; anni 1772–1781) → [Q87252822](https://www.wikidata.org/wiki/Q87252822) Leonardo Marini (1737–1806): _pittore_ — date compatibili
@@ -397,7 +397,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Del Torre, Filippo** (voci 519, 751, 868, 923; anni 1323–1852) → [Q27150629](https://www.wikidata.org/wiki/Q27150629) Filippo della Torre (1657–1717): _vescovo cattolico italiano_ — Cividale del Friuli, Rovigo — nato o morto in Friuli/Veneto
 - **Del Torso, Enrico** (voci 1668, 2379, 2422, 2582; anni 1739–1959) → [Q52148568](https://www.wikidata.org/wiki/Q52148568) Enrico Del Torso (1876–1955): _saggista, fotografo, storico_ — Trieste, Udine — nato o morto in Friuli/Veneto; date compatibili
 - **Delfino, Daniele** (voci 78, 411, 470, 476; anni 1420–1833) → [Q3014934](https://www.wikidata.org/wiki/Q3014934) Daniele Dolfin (1688–1762): _cardinale, ultimo patriarca di Aquileia e primo arcivescovo di Udine (1688-1762)_ — fase 6, blocco 4: patriarca d'Aquileia
-- **Delfino, Dionisio** (voci 143, 481, 507, 555; anni 1207–1762) → [Q3708533](https://www.wikidata.org/wiki/Q3708533) Dionisio Dolfin (1663–1734): _patriarca cattolico italiano_ — Venezia, San Vito al Tagliamento — nato o morto in Friuli/Veneto; date compatibili
+- **Delfino, Dionisio** (voci 143, 481, 484, 507; anni 1207–1762) → [Q3708533](https://www.wikidata.org/wiki/Q3708533) Dionisio Dolfin (1663–1734): _patriarca cattolico italiano_ — Venezia, San Vito al Tagliamento — nato o morto in Friuli/Veneto; date compatibili
 - **Delfino, Giovanni** (voci 161, 441, 465, 481; anni 1207–1762) → [Q3107157](https://www.wikidata.org/wiki/Q3107157) Giovanni Dolfin (1617–1699): _cardinale, patriarca cattolico e drammaturgo italiano (1617-1699)_ — fase 6, blocco 4: cardinale, tragedie (1657-1699)
 - **Delfino, Marco** (voci 481; anni ?–?) → [Q3015062](https://www.wikidata.org/wiki/Q3015062) Daniele Dolfin (1653–1704): _cardinale, nunzio apostolico e arcivescovo cattolico italiano (1653-1704)_ — Venezia, Brescia — nato o morto in Friuli/Veneto
 - **Delfino, Pietro** (voci 468; anni 1517–1568) → [Q3903841](https://www.wikidata.org/wiki/Q3903841) Pietro Dolfin (1444–1525): _abate e umanista italiano_ — Venezia, Murano — nato o morto in Friuli/Veneto; date compatibili
@@ -646,7 +646,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Montelongo, Gregorio** (voci 626, 668, 761, 1741; anni 1342–1876) → [Q3776550](https://www.wikidata.org/wiki/Q3776550) Gregorio da Montelongo (1200–1269): _patriarca cattolico italiano_ — Ferentino, Cividale del Friuli — nato o morto in Friuli/Veneto
 - **Monti, Vincenzo** (voci 18, 291, 323, 336; anni 1797–1832) → [Q723643](https://www.wikidata.org/wiki/Q723643) Vincenzo Monti (1754–1828): _poeta italiano_ — Alfonsine, Milano — date compatibili
 - **Monticoli, Andrea** (voci 1552; anni ?–?) → [Q87267392](https://www.wikidata.org/wiki/Q87267392) Andrea Monticoli (?–1413) — fase 6, blocco 4: Andrea Monticoli, giurista e vicario patriarcale (morto nel 1413)
-- **Monticoli, Nicolò** (voci 621, 651, 681, 878; anni 1273–1678) → [Q21548692](https://www.wikidata.org/wiki/Q21548692) Nicolo Monticoli (1464–1523) — date compatibili
+- **Monticoli, Nicolò** (voci 621, 651, 681, 825; anni 1273–1802) → [Q21548692](https://www.wikidata.org/wiki/Q21548692) Nicolo Monticoli (1464–1523) — date compatibili
 - **Mora, Bartolomeo** (voci 606; anni 1660–1731) → [Q28763735](https://www.wikidata.org/wiki/Q28763735) Bartolomeo Mora (?–?): _capitano della repubblica di Venezia_ — confermato dal contesto
 - **Mora, Giovanni Francesco** (voci 476; anni 1741–1795) → [Q64733838](https://www.wikidata.org/wiki/Q64733838) Giovanni Francesco Mora (1706–1766): _vescovo cattolico_ — date compatibili
 - **Morandi, Luigi** (voci 497; anni 1878–1892) → [Q3839916](https://www.wikidata.org/wiki/Q3839916) Luigi Morandi (1844–1922): _politico, educatore, scrittore, grammatico, e poeta italiano (1844–1922)_ — Todi, Roma — confermato dal contesto
@@ -654,7 +654,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Moretti, Giuseppe** (voci 492; anni 1840–1844) → [Q2267751](https://www.wikidata.org/wiki/Q2267751) Giuseppe Moretti (1782–1853): _botanico italiano (1782-1853)_ — Roncaro, Pavia — confermato dal contesto
 - **Morlacchi, Francesco** (voci 3329; anni ?–?) → [Q571408](https://www.wikidata.org/wiki/Q571408) Francesco Morlacchi (1784–1841): _compositore italiano_ — Perugia, Innsbruck
 - **Morlupino, Nicolò** (voci 71, 401; anni 1915–1915) → [Q55753834](https://www.wikidata.org/wiki/Q55753834) Nicolò Morlupino (1528–1570) — confermato dal contesto
-- **Moro, Anton Lazzaro** (voci 875, 1124; anni ?–?) → [Q3618871](https://www.wikidata.org/wiki/Q3618871) Anton Lazzaro Moro (1687–1764): _ecclesiastico, rettore di scuola, musicista, naturalista_ — San Vito al Tagliamento — nato o morto in Friuli/Veneto
+- **Moro, Anton Lazzaro** (voci 557, 875, 1124; anni ?–?) → [Q3618871](https://www.wikidata.org/wiki/Q3618871) Anton Lazzaro Moro (1687–1764): _ecclesiastico, rettore di scuola, musicista, naturalista_ — San Vito al Tagliamento — nato o morto in Friuli/Veneto
 - **Moro, Cristoforo** (voci 868; anni 1291–1620) → [Q1140460](https://www.wikidata.org/wiki/Q1140460) Cristoforo Moro (1390–1471): _doge della Repubblica di Venezia dal 1462 al 1471_ — Venezia — nato o morto in Friuli/Veneto; date compatibili
 - **Morosini, Fortunato** (voci 483; anni 1713–1757) → [Q3748840](https://www.wikidata.org/wiki/Q3748840) Fortunato Morosini (1666–1727): _vescovo cattolico italiano_ — Venezia, Padova — nato o morto in Friuli/Veneto; date compatibili
 - **Morosini, Giovanni Francesco** (voci 483, 606; anni 1692–1757) → [Q87451149](https://www.wikidata.org/wiki/Q87451149) Giovan Francesco Morosini (1658–1739): _1658-1739_ — date compatibili
@@ -715,7 +715,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **Pieri, Gino** (voci 4189; anni 1943–1943) → [Q20888927](https://www.wikidata.org/wiki/Q20888927) Gino Pieri (1881–1952): _medico, partigiano e politico italiano (1881-1952)_ — Anagni, Roma — date compatibili
 - **Pilato, Ponzio** (voci 199; anni 1739–1751) → [Q17131](https://www.wikidata.org/wiki/Q17131) Ponzio Pilato (-11–?): _politico romano, figura importante nelle vicende di Gesù Cristo_ — Abruzzo
 - **Pilot, Antonio** (voci 3515; anni ?–?) → [Q17341053](https://www.wikidata.org/wiki/Q17341053) Antonio Pilot (1880–1930): _poeta veneziano (1880-1930)_ — confermato dal contesto
-- **Pindemonte, Giovanni** (voci 323, 338; anni ?–?) → [Q3767945](https://www.wikidata.org/wiki/Q3767945) Giovanni Pindemonte (1751–1812): _poeta e drammaturgo italiano_ — Verona — nato o morto in Friuli/Veneto
+- **Pindemonte, Giovanni** (voci 323, 338, 926; anni 1444–1807) → [Q3767945](https://www.wikidata.org/wiki/Q3767945) Giovanni Pindemonte (1751–1812): _poeta e drammaturgo italiano_ — Verona — nato o morto in Friuli/Veneto; date compatibili
 - **Pindemonte, Ippolito** (voci 323; anni ?–?) → [Q1236766](https://www.wikidata.org/wiki/Q1236766) Ippolito Pindemonte (1753–1828): _poeta e letterato italiano_ — Verona — nato o morto in Friuli/Veneto
 - **Pio IX** (voci 804, 1385, 1919, 3245; anni 1793–1891) → [Q43720](https://www.wikidata.org/wiki/Q43720) papa Pio IX (1792–1878): _255° vescovo di Roma e papa della Chiesa cattolica dal 1846 al 1878_ — Senigallia, Palazzo Apostolico — date compatibili
 - **Pio VI** (voci 31, 296, 476, 598; anni 1755–1885) → [Q128019](https://www.wikidata.org/wiki/Q128019) papa Pio VI (1717–1799): _250° vescovo di Roma e papa della Chiesa cattolica dal 1775 al 1799_ — Cesena, Valence — date compatibili
@@ -912,7 +912,7 @@ Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni d
 - **di San Genesio, Bertrando** (voci 102, 519, 533, 541; anni 1207–1938) → [Q828634](https://www.wikidata.org/wiki/Q828634) Bertrando di San Genesio (1258–1350): _patriarca cattolico francese_ — Saint-Geniès, San Giorgio della Richinvelda — nato o morto in Friuli/Veneto; date compatibili
 - **di Toppo, Francesco** (voci 14, 17, 340, 490; anni 1338–1863) → [Q105098383](https://www.wikidata.org/wiki/Q105098383) Francesco Di Toppo (1797–1883): _collezionista_ — Udine — nato o morto in Friuli/Veneto; date compatibili
 
-## 4. Nessun candidato su Wikidata: 3023 persone
+## 4. Nessun candidato su Wikidata: 3027 persone
 
 Elenco completo nella tabella `entita` (persone senza righe in `identificatori`).
 
