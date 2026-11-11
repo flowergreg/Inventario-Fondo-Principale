@@ -7,10 +7,10 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
 | persona | 3865 | 767 | 9106 |
-| luogo | 572 | 65 | 4690 |
+| luogo | 572 | 65 | 4689 |
 | santo | 124 | 46 | 495 |
 
-Menzioni collegate a un'entità: 14291 su 20587. Senza entità: nome o cognome singolo 5871, esclusa dal curatore 363, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 14290 su 20586. Senza entità: nome o cognome singolo 5871, esclusa dal curatore 363, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -1027,7 +1027,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Chiusaforte**: Chiusa (533, 568); Chiusaforte (525, 2427)
 - **Cinto Caomaggiore**: Cinto Caomaggiore [fonte_esterna]; Cinto (1444)
 - **Cittanova d'Istria**: Cittanova d'Istria [manuale]; Cittanova (891); Città Nuova (598)
-- **Cividale del Friuli**: Cividale (164, 170, 355, 371, 372, 394, 469, 471, 476, 486, 488, 491, 525, 573, 596, 606, 610, 614, 617, 618, 619, 621, 669, 706, 707, 708, 716, 741, 742, 744, 752, 824, 862, 874, 876, 877, 905, 906, 914, 915, 923, 924, 974, 979, 1010, 1046, 1130, 1135, 1197, 1223, 1227, 1228, 1230, 1236, 1265, 1266, 1267, 1304, 1307, 1310, 1311, 1366, 1367, 1368, 1369, 1370, 1390, 1437, 1438, 1439, 1440, 1441, 1457, 1537, 1547, 1550, 1552, 1562, 1567, 1576, 1577, 1593, 1710, 1738, 1798, 1799, 1803, 1877, 2435, 2506, 2658, 3047, 3049, 3655, 3673, 3674, 3727, 3762, 3782, 3786, 4226); Cividale del Friuli (752, 1537, 4259); Cividale di Friuli (610); Civitas Austriae (744); Ecclesiae Forojuliensis (773); Iulium Castrum (744); Patti fra Cividale (1562)
+- **Cividale del Friuli**: Cividale (164, 170, 355, 371, 372, 394, 469, 471, 476, 486, 488, 491, 525, 573, 596, 606, 610, 614, 617, 618, 619, 621, 669, 706, 707, 708, 716, 741, 742, 744, 752, 824, 862, 874, 876, 877, 905, 906, 914, 915, 923, 924, 974, 979, 1010, 1046, 1130, 1135, 1197, 1223, 1227, 1228, 1230, 1236, 1265, 1266, 1267, 1304, 1307, 1310, 1311, 1366, 1367, 1368, 1369, 1370, 1390, 1437, 1438, 1439, 1440, 1441, 1457, 1537, 1547, 1550, 1552, 1562, 1567, 1576, 1577, 1593, 1710, 1738, 1798, 1799, 1803, 1877, 2435, 2506, 2658, 3047, 3049, 3655, 3673, 3674, 3727, 3762, 3782, 3786, 4226); Cividale del Friuli (752, 1537, 4259); Cividale di Friuli (610); Civitas Austriae (744); Iulium Castrum (744); Patti fra Cividale (1562)
 - **Clauiano**: Clauiano (1685); Claujano (2078)
 - **Comeglians**: Comeglians [manuale]; Comeglons (2076)
 - **Concordia Sagittaria**: Concordia Sagittaria [manuale]; di Concordia (340, 483, 618, 875, 888, 1000, 1489, 1552)

@@ -9,7 +9,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 | abbreviazione | 0 | 1 | 0 | 286 | 287 | 593 |
 | cognome | 67 | 290 | 321 | 4848 | 5526 | 14150 |
 | iniziale | 20 | 0 | 0 | 0 | 20 | 1830 |
-| luogo | 402 | 189 | 84 | 4 | 679 | 4645 |
+| luogo | 402 | 188 | 84 | 4 | 678 | 4644 |
 | nome_abbreviato | 0 | 1 | 0 | 0 | 1 | 4 |
 | nome_di_battesimo | 1246 | 143 | 0 | 0 | 1389 | 9109 |
 | numerale | 29 | 0 | 0 | 0 | 29 | 125 |
@@ -21,7 +21,7 @@ Ogni parola dei nomi di persona (e ogni forma intera di luogo e di santo) compar
 
 ## 1. Luoghi da normalizzare
 
-Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 193.
+Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua forma breve: latine, storiche, dialettali, o assenti dalle liste. Le corrispondenze «incerte» (forma lontana dal nome trovato: Homo → Qom) sono da controllare. Forme: 192.
 
 | Forma | Occ. | Forma normalizzata proposta | Origine | Voci |
 |---|---|---|---|---|
@@ -125,7 +125,6 @@ Forme di luogo che non sono il nome ufficiale (ISTAT, GeoNames) né una sua form
 | Coneglano | 1 | Conegliano | curatore: 888 | 888 |
 | Cormóns | 1 | Cormons | stessa forma normalizzata del nome ufficiale | 1782 |
 | Cortiel | 1 | Cortello | contesto: «Cortello. … Villa di Cortiel» (525) | 525 |
-| Ecclesiae Forojuliensis | 1 | — | nessuna corrispondenza nelle liste | 773 |
 | Erbe | 1 | Erbè | GeoNames | 2118 |
 | Feletto | 1 | Feletto Umberto | contesto | 618 |
 | Fori Julij | 1 | — | nessuna corrispondenza nelle liste | 553 |
@@ -694,12 +693,12 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Girol. | 2 | Girolamo | abbreviazione (lista manuale) | 606 |
 | Io. | 2 | Giovanni | curatore | 12, 414 |
 | Jacobum | 2 | Giacomo o Jacopo | contesto: ambiguo: da decidere con le fonti | 606, 622 |
-| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardo» | 620, 2521 |
+| Leonardum | 2 | Leonardo | forma latina declinata di «Leonardus» | 620, 2521 |
 | Lunardo | 2 | Leonardo | variante (lista manuale) | 10, 473 |
 | Martij | 2 | Marzio | forma latina declinata di «Martio» | 597, 3872 |
 | Matheo | 2 | Matteo | variante (lista manuale) | 10 |
 | Mattheo | 2 | Matteo | variante (lista manuale) | 504, 525 |
-| Paulum | 2 | Paulo | forma latina declinata di «Paulo» | 621, 761 |
+| Paulum | 2 | Paulo | forma latina declinata di «Paulus» | 621, 761 |
 | Philippo | 2 | Filippo | variante (lista manuale) | 30, 819 |
 | Seb. | 2 | Sebastiano | abbreviazione (lista manuale) | 340, 568 |
 | Venerium | 2 | Venerio | forma latina declinata di «Venerio» | 606, 622 |
@@ -720,7 +719,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Bernardum | 1 | Bernardo | forma latina declinata di «Bernardo» | 606 |
 | Bortolamio | 1 | Bartolomeo | variante (lista manuale) | 606 |
 | Bortolomio | 1 | Bartolomeo | variante (lista manuale) | 473 |
-| Carolum | 1 | Carolo | forma latina declinata di «Carolus» | 617 |
+| Carolum | 1 | Carolo | forma latina declinata di «Carolo» | 617 |
 | Cesarea | 1 | — | Wikidata (la), forma italiana per regola | 606 |
 | Clarae | 1 | Clara | forma latina declinata di «Clara» | 1225 |
 | Clorinda | 1 | — | Wikidata (la), forma italiana per regola | 340 |
@@ -729,7 +728,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Dorotheae | 1 | Dorotea | curatore: 773 | 773 |
 | Elis. | 1 | Elisabetta | abbreviazione (lista manuale) | 473 |
 | Erasmae | 1 | Erasma | forma latina declinata di «Erasma» | 773 |
-| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenius» | 2623/3 |
+| Eugenii | 1 | Eugenio | forma latina declinata di «Eugenio» | 2623/3 |
 | Fabricij | 1 | Fabrizio | forma latina declinata di «Fabricio» | 603 |
 | Fabricium | 1 | Fabrizio | forma latina declinata di «Fabricio» | 622 |
 | Florae | 1 | Flora | forma latina declinata di «Flora» | 1147 |
@@ -779,7 +778,7 @@ Abbreviazioni, forme latine (anche declinate), friulane, venete e antiche. «—
 | Valentinum | 1 | Valentino | forma latina declinata di «Valentinus» | 622 |
 | Vinc.zo | 1 | Vincenzo | abbreviazione (lista manuale) | 464 |
 | Vincentii | 1 | Vincenzo | curatore: 606 | 606 |
-| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilius» | 11 |
+| Virgilii | 1 | Virgilio | forma latina declinata di «Virgilio» | 11 |
 
 ## 4. Cognomi: varianti grafiche e correzioni del curatore
 
