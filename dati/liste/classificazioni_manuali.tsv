@@ -327,8 +327,8 @@ voce	forma	tipo	forma_riferimento	nota
 836	Paradiso	nessuno		fase 7, controllo luoghi: non è un luogo
 905	Sacramento	nessuno		fase 7, controllo luoghi: non è un luogo
 923	Rata	nessuno		fase 7, controllo luoghi: non è un luogo
-924	Madrisio	persona		fase 7, controllo luoghi
-1000	Madrisio	persona		fase 7, controllo luoghi
+924	Madrisio	luogo	Madrisio	curatore: luogo (filiale della pieve di Fagagna)
+1000	Madrisio	luogo	Madrisio	curatore: luogo (feudo)
 1006	Ronconi	persona		fase 7, controllo luoghi
 1010	Frattina	persona		fase 7, controllo luoghi
 1010	Cergneu	persona		fase 7, controllo luoghi

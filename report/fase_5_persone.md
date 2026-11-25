@@ -1,6 +1,6 @@
 # Fase 5 — Persone: collegamento a Wikidata (VIAF, SBN, DBI)
 
-Verifica del 2026-11-11. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
+Verifica del 2026-11-25. Collegamenti **proposti**. Date, luoghi e descrizioni di Wikidata compaiono solo qui, per scegliere; nel database restano identificativo, URL e forma autorizzata.
 
 | Affidabilità | Persone |
 |---|---|

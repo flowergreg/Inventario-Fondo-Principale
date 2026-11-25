@@ -1,11 +1,11 @@
 # Fase 5 — Luoghi: collegamento a GeoNames e Wikidata
 
-Verifica del 2026-11-11. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
+Verifica del 2026-11-25. Tutti i collegamenti sono **proposti**. Per ogni luogo: forma del curatore → forma autorizzata italiana, identificativi e (per Wikidata) la descrizione breve, mostrata solo qui per scegliere e non salvata. Gli alias di Wikidata (it, la, fur) sono in `alias_esterni` e diventeranno varianti di ricerca dopo la conferma.
 
 | Affidabilità | Luoghi |
 |---|---|
 | alta | 553 |
-| media | 1 |
+| media | 2 |
 | bassa | 2 |
 | nessuna | 16 |
 
@@ -13,6 +13,8 @@ Verifica del 2026-11-11. Tutti i collegamenti sono **proposti**. Per ogni luogo:
 
 - **Lodi** (1 menz.; voci 593) → Lodi — GeoNames [3174638](https://www.geonames.org/3174638) PPLA2, reg. 09 (LO) — Wikidata [Q6244](https://www.wikidata.org/wiki/Q6244): _comune italiano, capoluogo dell'omonima provincia in Lombardia_ — più elementi Wikidata omonimi
   - altri: [Q852647](https://www.wikidata.org/wiki/Q852647) comune statunitense della California; [Q852647](https://www.wikidata.org/wiki/Q852647) comune statunitense della California; [Q1085972](https://www.wikidata.org/wiki/Q1085972) comune statunitense del New Jersey
+- **Madrisio** (2 menz.; voci 924, 1000) → Madrisio — GeoNames [3220280](https://www.geonames.org/3220280) PPL, Friuli-Venezia Giulia (UD) — Wikidata [Q33459603](https://www.wikidata.org/wiki/Q33459603) — più località omonime in regione
+  - altri: [3174311](https://www.geonames.org/3174311) Madrisio PPL Friuli-Venezia Giulia UD
 
 ## 2. Affidabilità bassa: solo GeoNames fuori regione
 

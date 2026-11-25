@@ -6,11 +6,11 @@ Le entità sono in stato **proposto** finché il curatore non le conferma (dati/
 
 | Tipo | Entità | con più forme | Menzioni collegate |
 |---|---|---|---|
-| persona | 3869 | 771 | 9141 |
-| luogo | 572 | 65 | 4688 |
+| persona | 3869 | 771 | 9140 |
+| luogo | 573 | 65 | 4690 |
 | santo | 124 | 46 | 494 |
 
-Menzioni collegate a un'entità: 14323 su 20588. Senza entità: nome o cognome singolo 5839, esclusa dal curatore 364, opera 44, titolo o parola con S. 18.
+Menzioni collegate a un'entità: 14324 su 20589. Senza entità: nome o cognome singolo 5839, esclusa dal curatore 364, opera 44, titolo o parola con S. 18.
 
 Le menzioni senza entità restano trovabili con la ricerca per forma normalizzata e con il lessico (fase 3): sono soprattutto cognomi o nomi isolati («Pirona», «Ciceronis»), che possono indicare una famiglia o più persone.
 
@@ -788,7 +788,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Luigi XIV**: Luigi XIV (23); Luigi XIV. Versione (3797)
 - **Luigi XV**: Luigi 15° (1095); Luigi XV (926)
 - **Luzzatto, Oscar**: Dr Oscar Luzzatto (2617); Oscar Luzzatto (3788, 3951)
-- **Madrisio, Gian Francesco**: G. Fr. Madrisio (1212); Gian Francesco Madrisio (411, 470); Gianfrancesco Madrisio (470); Madrisio (407, 408, 409, 924, 1000)
+- **Madrisio, Gian Francesco**: G. Fr. Madrisio (1212); Gian Francesco Madrisio (411, 470); Gianfrancesco Madrisio (470); Madrisio (407, 408, 409)
 - **Madrisio, Nicolò**: Madrisio (de) Nicolò (2325); Madrisio Co. Nicolò (410); Nicolò Madrisio (15, 47)
 - **Magazzari, Gaetano**: Gaetano Magazzari (3335); Magazzari Gaetano (3335)
 - **Malacrida, Marzio**: Malacrida Marzio (65, 73); Marzio Malacrida (66, 606)
@@ -952,6 +952,7 @@ Nessuna parola è stata riconosciuta come cognome: è stata presa la parola prec
 - **Treo, Servilio**: Servilio (796); Servilio Secondo (105); Servilio Treo (1055, 1083, 1972); Servilio Treo. (51, 1055); Treo (796)
 - **Trevisanato, Giuseppe Luigi**: A Monsignor Gius. Luigi Travisanato (356); G. L. Trevisanato (1224, 1317); G. Trevisanato (926); Trevisanato Giuseppe Luigi (2134)
 - **Usubellis, Francesco**: Francesco de Usubellis (1613); Usubellis (De) Francesco (1613)
+- **Valentinis, Daniele**: Daniello (4124); Valentinis (4124); d'Aquileia Daniello Valentinis (4124)
 - **Valentinis, Elena**: Beata Elena V. (2275); Elena Valentinis (875)
 - **Valussi, Antonio**: Valussi Antonio (4173); Valussi, Antonio (4173)
 - **Valussi, Pacifico**: Pacifico (2559); Pacifico Valussi (491, 2604); Valussi, Pacifico (3800)
